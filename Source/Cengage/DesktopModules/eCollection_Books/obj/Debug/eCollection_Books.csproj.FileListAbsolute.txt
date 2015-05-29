@@ -1,0 +1,100 @@
+X:\dotnetnuke\bin\eCollection_Books.dll
+X:\dotnetnuke\bin\eCollection_Books.pdb
+X:\dotnetnuke\bin\eCollection_Books.xml
+X:\dotnetnuke\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+X:\dotnetnuke\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+X:\dotnetnuke\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+C:\inetpub\wwwroot\CengageStaging\bin\eCollection_Books.dll
+C:\inetpub\wwwroot\CengageStaging\bin\eCollection_Books.xml
+C:\inetpub\wwwroot\CengageStaging\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\CengageStaging\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\CengageeCollectionWork\bin\eCollection_Books.dll
+D:\CengageeCollectionWork\bin\eCollection_Books.pdb
+D:\CengageeCollectionWork\bin\eCollection_Books.xml
+D:\CengageeCollectionWork\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+D:\CengageeCollectionWork\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\CengageeCollectionWork\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+C:\inetpub\wwwroot\Integrated\bin\eCollection_Books.dll
+C:\inetpub\wwwroot\Integrated\bin\eCollection_Books.pdb
+C:\inetpub\wwwroot\Integrated\bin\eCollection_Books.xml
+C:\inetpub\wwwroot\Integrated\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+C:\inetpub\wwwroot\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+D:\CengageAus\bin\eCollection_Books.dll
+D:\CengageAus\bin\eCollection_Books.pdb
+D:\CengageAus\bin\eCollection_Books.xml
+D:\CengageAus\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+D:\CengageAus\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\CengageAus\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+D:\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Books.dll
+D:\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Books.pdb
+D:\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Books.xml
+D:\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Books.dll
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Books.pdb
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Books.xml
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+D:\NewCenAus\bin\eCollection_Books.dll
+D:\NewCenAus\bin\eCollection_Books.pdb
+D:\NewCenAus\bin\eCollection_Books.xml
+D:\NewCenAus\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+D:\NewCenAus\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\NewCenAus\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+D:\May20\Integrated\bin\eCollection_Books.dll
+D:\May20\Integrated\bin\eCollection_Books.pdb
+D:\May20\Integrated\bin\eCollection_Books.xml
+D:\May20\Integrated\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+D:\May20\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\May20\Integrated\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+E:\eCollection Test\bin\eCollection_Books.dll
+E:\eCollection Test\bin\eCollection_Books.pdb
+E:\eCollection Test\bin\eCollection_Books.xml
+E:\eCollection Test\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+E:\eCollection Test\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+E:\eCollection Test\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+E:\eCollectionTest\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+E:\eCollectionTest\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+E:\eCollectionTest\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+E:\eCollectionTest\bin\eCollection_Books.dll
+E:\eCollectionTest\bin\eCollection_Books.pdb
+E:\eCollectionTest\bin\eCollection_Books.xml
+E:\Newcode\Deploy\bin\eCollection_Books.dll
+E:\Newcode\Deploy\bin\eCollection_Books.pdb
+E:\Newcode\Deploy\bin\eCollection_Books.xml
+E:\Newcode\Deploy\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+E:\Newcode\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+E:\Newcode\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+D:\Newcode\Deploy\bin\eCollection_Books.dll
+D:\Newcode\Deploy\bin\eCollection_Books.pdb
+D:\Newcode\Deploy\bin\eCollection_Books.xml
+D:\Newcode\Deploy\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+D:\Newcode\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\Newcode\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+E:\SVNCODE\Deploy\bin\eCollection_Books.dll
+E:\SVNCODE\Deploy\bin\eCollection_Books.pdb
+E:\SVNCODE\Deploy\bin\eCollection_Books.xml
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+E:\SVN\Deploy\bin\eCollection_Books.dll
+E:\SVN\Deploy\bin\eCollection_Books.pdb
+E:\SVN\Deploy\bin\eCollection_Books.xml
+E:\SVN\Deploy\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+E:\SVN\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+E:\SVN\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+D:\SVNCODE\Deploy\bin\eCollection_Books.dll
+D:\SVNCODE\Deploy\bin\eCollection_Books.pdb
+D:\SVNCODE\Deploy\bin\eCollection_Books.xml
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb
+E:\Deployterm\Deploy\bin\eCollection_Books.dll
+E:\Deployterm\Deploy\bin\eCollection_Books.pdb
+E:\Deployterm\Deploy\bin\eCollection_Books.xml
+E:\Deployterm\Deploy\DesktopModules\eCollection_Books\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.dll
+E:\Deployterm\Deploy\DesktopModules\eCollection_Books\obj\Debug\eCollection_Books.pdb

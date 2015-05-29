@@ -1,0 +1,124 @@
+X:\dotnetnuke\bin\eCollection_Groups.dll
+X:\dotnetnuke\bin\eCollection_Groups.pdb
+X:\dotnetnuke\bin\eCollection_Groups.xml
+X:\dotnetnuke\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+X:\dotnetnuke\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+X:\dotnetnuke\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Groups.dll
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Groups.xml
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\Working\Integrated\bin\eCollection_Groups.dll
+D:\Working\Integrated\bin\eCollection_Groups.pdb
+D:\Working\Integrated\bin\eCollection_Groups.xml
+D:\Working\Integrated\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\Working\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\eCollectionWork\bin\eCollection_Groups.dll
+D:\eCollectionWork\bin\eCollection_Groups.xml
+D:\eCollectionWork\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\eCollectionWork\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+C:\inetpub\wwwroot\CengageStaging\bin\eCollection_Groups.dll
+C:\inetpub\wwwroot\CengageStaging\bin\eCollection_Groups.xml
+C:\inetpub\wwwroot\CengageStaging\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\CengageStaging\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\eCollectionWork\bin\eCollection_Groups.pdb
+D:\eCollectionWork\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+C:\inetpub\wwwroot\Integrated\bin\eCollection_Groups.dll
+C:\inetpub\wwwroot\Integrated\bin\eCollection_Groups.pdb
+C:\inetpub\wwwroot\Integrated\bin\eCollection_Groups.xml
+C:\inetpub\wwwroot\Integrated\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+C:\inetpub\wwwroot\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Groups.pdb
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\CengageeCollectionWork\bin\eCollection_Groups.dll
+D:\CengageeCollectionWork\bin\eCollection_Groups.pdb
+D:\CengageeCollectionWork\bin\eCollection_Groups.xml
+D:\CengageeCollectionWork\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\CengageeCollectionWork\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\CengageeCollectionWork\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\CengageAus\bin\eCollection_Groups.dll
+D:\CengageAus\bin\eCollection_Groups.pdb
+D:\CengageAus\bin\eCollection_Groups.xml
+D:\CengageAus\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\CengageAus\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\CengageAus\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Groups.dll
+D:\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Groups.pdb
+D:\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Groups.xml
+D:\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\NewCenAus\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\NewCenAus\bin\eCollection_Groups.dll
+D:\NewCenAus\bin\eCollection_Groups.pdb
+D:\NewCenAus\bin\eCollection_Groups.xml
+D:\NewCenAus\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\NewCenAus\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\New folder\bin\eCollection_Groups.dll
+D:\New folder\bin\eCollection_Groups.pdb
+D:\New folder\bin\eCollection_Groups.xml
+D:\New folder\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\New folder\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\New folder\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\May20\Integrated\bin\eCollection_Groups.dll
+D:\May20\Integrated\bin\eCollection_Groups.pdb
+D:\May20\Integrated\bin\eCollection_Groups.xml
+D:\May20\Integrated\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\May20\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\May20\Integrated\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+E:\eCollection Test\bin\eCollection_Groups.dll
+E:\eCollection Test\bin\eCollection_Groups.pdb
+E:\eCollection Test\bin\eCollection_Groups.xml
+E:\eCollection Test\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+E:\eCollection Test\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+E:\eCollection Test\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+E:\eCollectionTest\bin\eCollection_Groups.dll
+E:\eCollectionTest\bin\eCollection_Groups.pdb
+E:\eCollectionTest\bin\eCollection_Groups.xml
+E:\eCollectionTest\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+E:\eCollectionTest\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+E:\eCollectionTest\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+E:\New code\Deploy\bin\eCollection_Groups.dll
+E:\New code\Deploy\bin\eCollection_Groups.pdb
+E:\New code\Deploy\bin\eCollection_Groups.xml
+E:\New code\Deploy\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+E:\New code\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+E:\New code\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+E:\Newcode\Deploy\bin\eCollection_Groups.dll
+E:\Newcode\Deploy\bin\eCollection_Groups.pdb
+E:\Newcode\Deploy\bin\eCollection_Groups.xml
+E:\Newcode\Deploy\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+E:\Newcode\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+E:\Newcode\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+E:\SVNCODE\Deploy\bin\eCollection_Groups.dll
+E:\SVNCODE\Deploy\bin\eCollection_Groups.pdb
+E:\SVNCODE\Deploy\bin\eCollection_Groups.xml
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+E:\SVN\Deploy\bin\eCollection_Groups.dll
+E:\SVN\Deploy\bin\eCollection_Groups.pdb
+E:\SVN\Deploy\bin\eCollection_Groups.xml
+E:\SVN\Deploy\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+E:\SVN\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+E:\SVN\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\SVNCODE\Deploy\bin\eCollection_Groups.dll
+D:\SVNCODE\Deploy\bin\eCollection_Groups.pdb
+D:\SVNCODE\Deploy\bin\eCollection_Groups.xml
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+D:\Deploy_1.0.13\Deploy\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+D:\Deploy_1.0.13\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+D:\Deploy_1.0.13\Deploy\bin\eCollection_Groups.dll
+D:\Deploy_1.0.13\Deploy\bin\eCollection_Groups.pdb
+D:\Deploy_1.0.13\Deploy\bin\eCollection_Groups.xml
+D:\Deploy_1.0.13\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb
+E:\Deployterm\Deploy\bin\eCollection_Groups.dll
+E:\Deployterm\Deploy\bin\eCollection_Groups.pdb
+E:\Deployterm\Deploy\bin\eCollection_Groups.xml
+E:\Deployterm\Deploy\DesktopModules\eCollection_Groups\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.dll
+E:\Deployterm\Deploy\DesktopModules\eCollection_Groups\obj\Debug\eCollection_Groups.pdb

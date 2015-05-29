@@ -1,0 +1,12 @@
+D:\HE\Deploy\bin\NewAndNotable.dll
+D:\HE\Deploy\bin\NewAndNotable.pdb
+D:\HE\Deploy\bin\NewAndNotable.xml
+D:\HE\Deploy\DesktopModules\NewAndNotable\obj\Debug\ResolveAssemblyReference.cache
+D:\HE\Deploy\DesktopModules\NewAndNotable\obj\Debug\NewAndNotable.dll
+D:\HE\Deploy\DesktopModules\NewAndNotable\obj\Debug\NewAndNotable.pdb
+E:\Deployterm\Deploy\bin\NewAndNotable.dll
+E:\Deployterm\Deploy\bin\NewAndNotable.pdb
+E:\Deployterm\Deploy\bin\NewAndNotable.xml
+E:\Deployterm\Deploy\DesktopModules\NewAndNotable\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\NewAndNotable\obj\Debug\NewAndNotable.dll
+E:\Deployterm\Deploy\DesktopModules\NewAndNotable\obj\Debug\NewAndNotable.pdb

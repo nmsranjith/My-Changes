@@ -1,0 +1,518 @@
+.MainDiv
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 8px;
+}
+input[type="text"], input[type="password"]
+{
+    outline: none;
+}
+input[type=submit][disabled]
+{
+    cursor: default;
+    background-color: transparent;
+    color: #A5A3A3;
+}
+.TopRightEditbtn
+{
+    display: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 16px;
+    padding: 10px;
+    background-image: url('/dotnetnuke/images/editprofile.png');
+    font-size: 8.45pt;
+    color: white;
+    padding-left: 35px;
+    height: 37px;
+    border: 0px solid transparent;
+    width: 124px;
+    margin-top: 12px;
+}
+#eCollBookstabstrip li
+{
+    background: none !important;
+}
+.eCollectionMenuStyle
+{
+    float: left !important;
+    position: absolute;
+}
+.eCollectionContentStyle
+{
+    float: right !important;
+}
+.ShadowBox
+{
+    width: 99.6%;
+    float: left;
+    box-shadow: 0px 0px 8px gray;
+    -moz-box-shadow: 0 8px 8px gray;
+    -webkit-box-shadow: 8 0px 0px gray;
+    height: 15px;
+}
+.RightTopCancelButton
+{
+    cursor: pointer;
+    float: right;
+    margin-right: 16px;
+    background-image: url('/dotnetnuke/images/cancelbutton.png');
+    font-size: 8.45pt;
+    color: white;
+    height: 38px;
+    border: 0px solid transparent;
+}
+input[type=checkbox]
+{
+    width: 12px;
+    color: Black;
+}
+.ButtonStyle
+{
+    width: 79%;
+    height: 35px;
+}
+.ButtonStyle, .AddButton, .CancelButton, .UploadButton
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background: white;
+    font-size: 8pt;
+    cursor: pointer;
+    color: white;
+    font-family: Arial;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding-left: 44px;
+    text-align: left;
+    background-repeat: no-repeat;
+}
+.AddButton, .UploadButton
+{
+    width: 180px;
+    height: 39px;
+    padding-left: 60px;
+    background-image: url('/dotnetnuke/images/ButtonBG.jpg');
+}
+.CancelButton
+{
+    width: 180px;
+    padding-left: 68px;
+    height: 39px;
+    background-image: url('/dotnetnuke/images/cancelbutton.png');
+}
+
+.TodaySearchDiv
+{
+    float: left;
+    width: 100%;
+    padding: 0;
+    height: 90px;
+    margin-top: -40px;
+}
+.TodaySearchDiv img
+{
+    margin-left: 2px;
+    margin-top: 36px;
+}
+
+.MenuItems
+{
+    background-image: url('/dotnetnuke/images/eCollectionMenu.jpg');
+    background-repeat: no-repeat;
+    height: 13px;
+    padding: 10px 100px 12px 50px;
+    border: 1px solid Lightgray;
+    margin-bottom: 10px;
+    width: 50px;
+    margin-left: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    color: gray;
+    font-size: 9pt;
+}
+
+/*****************Books***************/
+.BooksDivset
+{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.BooksSearchdiv
+{
+    float: left;
+    width: 93%;
+    margin-left: 25px;
+    border: 1px solid lightgray;
+    margin-top: 0px;
+    height: 40px;
+}
+.BooksSearchdiv input[type=text]
+{
+    border: 0px solid white;
+    width: 320px;
+    height: 30px;
+    position: absolute;
+}
+.BooksSearchdiv input[type=submit]
+{
+    color: #1479A4;
+    float: right;
+    width: 173px;
+    height: 33px;
+    margin-top: 3px;
+    margin-right: 3px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 2px lightgray;
+    border-radius: 5px;
+    background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+}
+.BooksSliderdiv
+{
+    float: left;
+    width: 650px;
+    margin-left: 25px;
+    border: 1px solid lightgray;
+    margin-top: 14px;
+    height: 100px;
+}
+.BooksContentDiv
+{
+    width: 93%;
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.ClassBookcheckimg
+{
+    margin-left: 15px;
+    width: 20px;
+}
+
+.ClassBookitemdiv
+{
+    width: 100%;
+    float: left;
+}
+.ClassBooknmlbl
+{
+    color: #707070;
+    font-size: 12pt;
+    font-family: Raleway, Arial, Sans-Serif;
+    font-weight: 700;
+}
+.ClassBooknmspn
+{
+    color: #707070;
+    font-size: 12pt;
+    font-family: Raleway, Arial, Sans-Serif;
+    font-weight: 700;
+}
+.ClassBookauthorlbl
+{
+    color: #707070;
+    margin-top: 5px;
+    font-family: Arial-Regular, Sans-Serif;
+    font-size: 10pt;
+    float: left;
+}
+.ClassBookinnerdiv
+{
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    color: #707070;
+    font-size: 10pt;
+    font-family: Arial-Regular, Sans-Serif;
+}
+
+.ClassBookindivlbl
+{
+    margin-top: 5px;
+}
+
+/******kenduocombobox*********/
+#CategoriesDrpList-list
+{
+    width: 125px !important;
+}
+.BooksSearchdiv .k-dropdown-wrap
+{
+    background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9)) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0') !important;
+    box-shadow: 1px 2px lightgray;
+    width: 105px !important;
+    height: 26px !important;
+}
+.BooksSearchdiv .k-list-container
+{
+    width: 125px !important;
+    color: #1479A4 !important;
+}
+.BooksSearchdiv .k-dropdown-wrap .k-input
+{
+    height: 1.3em !important;
+    margin-top: 3px !important;
+    text-indent: 18px !important;
+    color: #707070 !important;
+    font-weight: bold;
+    font-size: 12px !important;
+}
+.BooksSearchdiv .k-dropdown-wrap .k-select
+{
+    margin-top: 4px !important;
+    cursor: pointer;
+}
+.BooksSearchdiv .k-dropdown-wrap .k-state-hover
+{
+    color: #1479A4 !important;
+    background-color: white !important;
+}
+.BooksSearchdiv .k-state-selected.k-state-focused
+{
+    background-color: #4578A5 !important;
+    border-color: #4578A5 !important;
+}
+.BooksContentDiv table tr:not(:last-child)
+{
+    background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 5px lightgray;
+}
+
+.BooksSearchdiv select
+{
+    height: 33px;
+}
+.GpNamediv
+{
+    box-shadow: 1px 1px 5px lightgray;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+    color: #707070;
+    border: 1px solid lightgray;
+    margin-left: 25px;
+    float: left;
+    width: 93.5%;
+    height: 130px;
+    background: -moz-linear-gradient(center top , white 0%, #F8FDFF 5%, #E3F5FF 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F9FDFF), to(#E3F5FF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9FDFF', endColorstr='#E3F5FF', gradientType='0');
+}
+.SeeSelectedBookdiv:hover
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#537A37), color-stop(32%,#59833A), color-stop(43%,#557D38), color-stop(95%,#436A32)) !important;
+        background: -webkit-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -o-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -ms-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: linear-gradient(to bottom, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#537A37', endColorstr='#436A32',GradientType=0 ) !important;
+}
+.GpNamediv span
+{
+    float: left;
+font-size: 19pt;
+margin-left: 17px;
+font-family: Raleway, Arial, sans-serif;
+margin-top: 20px;
+color: rgb(90, 90, 90);
+}
+.GpNamediv p
+{
+    margin-left: 19px;
+margin-top: 14px;
+font-family: Raleway,Arial,Sans-Serif;
+font-size: 9.5pt;
+color: #707070;
+line-height: 17px;
+margin-right: 3px;
+}
+
+.GpMemberCountdiv
+{
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: White;
+    -khtml-border-radius: 3px;
+    box-shadow: 1px 1px 5px lightgray;
+    color: #707070;
+    border: 1px solid lightgray;
+    float: left;
+    height: 100px;
+    width: 30%;
+    background: -moz-linear-gradient(center top , white 0%, #F8FDFF 5%, #E3F5FF 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F8FDFF), to(#E3F5FF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8FDFF', endColorstr='#E3F5FF', gradientType='0') DXImageTransform.Microsoft.Shadow(Direction=144, Strength=4, Color='gray');
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.GPMemCountlbl
+{
+    position: absolute;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 40pt;
+    color: #707070;
+}
+.GPMemSpan
+{
+    float: right;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-top: 63px;
+    padding-right: 33px;
+    color: #707070;
+    position: absolute;
+}
+
+#BookSearchdiv .k-icon
+{
+    background-image: url('../../Portals/0/images/scroll.png') !important;
+    background-position: 1px 2px !important;
+    opacity: 1 !important;
+}
+
+.divgradient
+{
+    height: 135px;
+    background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+}
+
+.LevelBtnclass
+{
+    text-shadow: 1px 2px 2px #557183;
+    padding: 10px;
+    width: 100px;
+    height: 35px;
+    color: White !important;
+    cursor: pointer;
+    float: left;
+    border: 1px solid #6EB8C6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0EB3D1), to(#0F8797));
+    background: -moz-linear-gradient(center top , white 0%, #0EB3D1 5%, #0F8797 130%) repeat scroll 0 0 transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0EB3D1', endColorstr='#0F8797', gradientType='0');
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+.LevelBtnaltclass:hover
+{
+     background: -moz-linear-gradient(center top , #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent ! important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) ! important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') ! important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000') !important;
+    text-shadow:none !important;
+    color:White !important;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+}
+.LevelBtnaltclass
+{
+    text-shadow: 1px 2px 2px #F6F6F6;
+    padding: 10px;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+    color: #707070;
+    font-family: Raleway, Arial, Sans-Serif;
+    font-size: 9pt;
+    cursor: pointer;
+    float: left;
+    border: 0px solid #6EB8C6;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.iegradient
+{
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+}
+
+#BookSearchButton:hover
+{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#537A37), color-stop(32%,#59833A), color-stop(43%,#557D38), color-stop(95%,#436A32)) !important;
+        background: -webkit-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -o-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -ms-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: linear-gradient(to bottom, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#537A37', endColorstr='#436A32',GradientType=0 ) !important;
+}
+
+#BookSearchButton:hover
+{
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#537A37), color-stop(32%,#59833A), color-stop(43%,#557D38), color-stop(95%,#436A32)) !important;
+        background: -webkit-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -o-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -ms-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: linear-gradient(to bottom, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#537A37', endColorstr='#436A32',GradientType=0 ) !important;
+}
+
+#AddtosubsButton:hover
+{
+     background: -moz-linear-gradient(center top , #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000') !important;
+    text-shadow:none !important;
+}
+
+#BottomAdsubButton:hover
+{
+     background: -moz-linear-gradient(center top , #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000') !important;
+    text-shadow:none !important;
+}
+
+#SeeallcurrentLevel:hover
+{
+    
+     background: -moz-linear-gradient(center top , #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000') !important;
+    text-shadow:none !important;
+}
+
+#SeeallcurrentCategories:hover
+{
+     background: -moz-linear-gradient(center top , #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000') !important;
+    text-shadow:none !important;
+}
+
+#RemovetosubsButtontop:hover
+{
+    background: -moz-linear-gradient(center top , #D308AF 5%, #A8066A 5%, #A8066A 130%) repeat scroll 0 0 transparent !important;
+                background: -webkit-gradient(linear, left top, left bottom, from(#A8066A), to(#A8066A)) !important;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A8066A', endColorstr='#A8066A', gradientType='0') !important;
+}
+
+#RemoveSubButtonbot:hover
+{
+      background: -moz-linear-gradient(center top , #D308AF 5%, #A8066A 5%, #A8066A 130%) repeat scroll 0 0 transparent !important;
+                background: -webkit-gradient(linear, left top, left bottom, from(#A8066A), to(#A8066A)) !important;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A8066A', endColorstr='#A8066A', gradientType='0') !important;
+}

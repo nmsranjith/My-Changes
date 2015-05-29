@@ -1,0 +1,243 @@
+.MainDiv
+    {
+        width: 100%;
+        height: 100%;
+        margin-top: 8px;
+    }
+    input[type="text"], input[type="password"]
+    {
+        outline: none;
+    }
+    input[type=submit][disabled]
+    {
+        cursor: default;
+        background-color: transparent;
+        color: #A5A3A3;
+    }
+    .TopRightEditbtn
+    {
+        display: none;
+        cursor: pointer;
+        float: right;
+        margin-right: 16px;
+        padding: 10px;
+        background-image: url('/dotnetnuke/images/editprofile.png');
+        font-size: 8.45pt;
+        color: white;
+        padding-left: 35px;
+        height: 37px;
+        border: 0px solid transparent;
+        width: 124px;
+        margin-top: 12px;
+    }
+    .eCollectionMenuStyle
+    {
+        float: left;
+        width: 254px;
+        margin: 0 0 0 0;
+        position:absolute;
+    }
+    .eCollectionContentStyle
+    {
+        float: right;
+        width: 699px;
+        margin: -14px 0px 0 0;
+        background-color: white;
+    }
+    .TopBand
+    {
+        background-image: url('/dotnetnuke/images/topband.png');
+        border-top: 2px solid lightgray;
+        border-bottom: 3px solid lightgray;
+        height: 95px;
+        font-size: 29pt;
+        padding-left: 35px;
+        padding-top: 45px;
+        color: #727272;
+        font-family: Euphemia;
+        margin-top: -40px;
+    }
+    .ShadowBox
+    {
+        width: 99.6%;
+        float: left;
+        box-shadow: 0px 0px 8px gray;
+        -moz-box-shadow: 0 8px 8px gray;
+        -webkit-box-shadow: 8 0px 0px gray;
+        height: 15px;
+    }
+    .RightTopCancelButton
+    {
+        cursor: pointer;
+        float: right;
+        margin-right: 16px;
+        background-image: url('/dotnetnuke/images/cancelbutton.png');
+        font-size: 8.45pt;
+        color: white;
+        height: 38px;
+        border: 0px solid transparent;
+    }
+    input[type=checkbox]
+    {
+        width: 12px;
+        color: Black;
+    }
+    .ButtonStyle
+    {
+        width: 79%;
+        height: 35px;
+    }
+    .ButtonStyle, .AddButton, .CancelButton,.UploadButton
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        background: white;
+        font-size: 8pt;
+        cursor: pointer;
+        color: white;
+        font-family: Arial;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        padding-left: 44px;
+        text-align: left;
+        background-repeat: no-repeat;
+        
+    }
+    .AddButton,.UploadButton
+    {
+        width: 180px;
+        height: 39px;
+        padding-left: 60px;
+        background-image: url('/dotnetnuke/images/ButtonBG.jpg');
+    }
+    .CancelButton
+    {
+        width: 180px;
+        padding-left: 68px;
+        height: 39px;
+        background-image: url('/dotnetnuke/images/cancelbutton.png');
+    }
+    
+     .TodaySearchDiv
+    {
+        float: left;
+        width: 100%;
+        padding: 0;
+        height: 90px;
+        margin-top: -40px;
+    }
+    .TodaySearchDiv img
+    {
+        margin-left: 2px;
+        margin-top: 36px;
+    }
+    
+    .MenuItems
+    {
+        background-image: url('/dotnetnuke/images/eCollectionMenu.jpg');
+        background-repeat: no-repeat;
+        height: 13px;
+        padding: 10px 100px 12px 50px;
+        border: 1px solid Lightgray;
+        margin-bottom: 10px;
+        width: 50px;
+        margin-left: 24px;
+        cursor: pointer;
+        font-weight: bold;
+        color: gray;
+        font-size: 9pt;
+    }
+    
+    /*************************jQuerySlider Span*************************/
+    .slideroverspan
+	{
+		
+		 background: -moz-linear-gradient(center top , white 0%, #7A7A7A 5%, #5D5D5D 130%) repeat scroll 0 0 transparent !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#7A7A7A), to(#5D5D5D)) !important;
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7A7A7A', endColorstr='#5D5D5D', gradientType='0') !important;
+	border-left: 1px solid #818181 !important;
+		border-right: 1px solid #818181 !important;
+	}
+	.Slidernospan
+	{
+		margin-top: 17px;
+		float: left;
+		margin-left: 7px;
+		position: relative;
+		z-index: 100000;
+		color: white;
+		font-weight: bold;
+	}
+	.sliderSpan13
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #EB66AF 5%, #E5007D 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#EB66AF), to(#E5007D));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#EB66AF', endColorstr='#E5007D', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+       .sliderSpan45
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #F2595E 5%, #E51E25 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F2595E), to(#E51E25));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F2595E', endColorstr='#E51E25', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+	.sliderSpan68
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #FF9D44 5%, #FF7A04 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FF9D44), to(#FF7A04));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9D44', endColorstr='#FF7A04', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+	.sliderSpan911
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #FECB55 5%, #FDBA14 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FECB55), to(#FDBA14));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FECB55', endColorstr='#FDBA14', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+	.sliderSpan1214
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #A0CA64 5%, #7AB72B 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#A0CA64), to(#7AB72B));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#A0CA64', endColorstr='#7AB72B', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+	.sliderSpan1516
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #5DADA2 5%, #219485 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#5DADA2), to(#219485));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5DADA2', endColorstr='#219485', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+	.sliderSpan1718
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #49AADD 5%, #0389D0 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#49AADD), to(#0389D0));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#49AADD', endColorstr='#0389D0', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+	.sliderSpan1921
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #A176CF 5%, #8244C3 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#A176CF), to(#8244C3));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#A176CF', endColorstr='#8244C3', gradientType='0');
+	float: left;height: 50px;width: 25px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}
+	.sliderSpan2224
+	{	
+		 background: -moz-linear-gradient(center top , white 0%, #BF689F 5%, #AD2F80 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#BF689F), to(#AD2F80));
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#BF689F', endColorstr='#AD2F80', gradientType='0');
+	float: left;height: 50px;width: 28px;position: relative;border-left: 1px solid #666;
+		border-right: 1px solid #666;font-family: Arial,sans-serif;
+	}

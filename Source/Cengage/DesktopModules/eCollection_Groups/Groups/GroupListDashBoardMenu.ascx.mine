@@ -1,0 +1,131 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GroupListDashBoardMenu.ascx.cs"
+    Inherits="DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu" %>
+<div>
+    <center>
+        <br />
+        <div id="CreateGroupDiv" class="ActiveAddButtonsHolder" style="float: left; margin-left: 23px;">
+            <asp:Button ID="CreateGroupButton" runat="server" Text="CREATE A GROUP" CssClass="BtnStyle creategroupbtn"
+                OnClick="CreateGroupButton_Click" Enabled="true" />
+        </div>
+        <br />
+        <div id="StartReadingSessionDiv" class="DisabledAddButtonHolder" style="float: left;
+            margin-left: 23px;">
+            <asp:Button ID="StartReadingSessionButton" runat="server" ClientIDMode="static" Text="CREATE A READING SEESION"
+                CssClass="DbldBtn startreadingsesionbtn" Enabled="false" OnClick="StartReadingSessionButton_Click" />
+        </div>
+        <br />
+        <div id="EditGroupDiv" class="DisabledAddButtonHolder" style="float: left; margin-left: 23px;">
+            <asp:Button ID="EditGroupButton" runat="server" Text="EDIT GROUP" ClientIDMode="static"
+                CssClass="DbldBtn editgroupbtn" Enabled="false" OnClick="EditGroupButton_Click" />
+        </div>
+        <br />
+        <div id="MergeGroupDiv" class="DisabledAddButtonHolder" style="float: left; margin-left: 23px;">
+            <asp:Button ID="MergeGroupButton" runat="server" ClientIDMode="static" Text="MERGE GROUPS"
+                CssClass="DbldBtn mergegroupbtn" Enabled="false" OnClick="MergeGroupButton_Click" />
+        </div>
+        <br />
+        <div id="DeleteGroupDiv" class="DisabledDeleteButtonHolder" style="float: left; margin-left: 23px;">
+            <asp:Button ID="DeleteGroupButton" runat="server" ClientIDMode="static" Text="DELETE GROUP"
+                CssClass="DbldDelBtn deletegroupbtn" Enabled="false" OnClick="DeleteGroupButton_Click" />
+        </div>
+        <div id="CengageStagingDiv" style="float: left; margin-left: 23px; width: 86%;">
+            <asp:Button ID="CengageStagingButton" runat="server" Text="Click to see CengageStaging"
+                Style="float: left; background: transparent; border: none; color: #707070; cursor: pointer;"
+                Enabled="true" OnClick="CengageStagingButton_Click" />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <a id="ClicktoAfterRenewel" style="float: left; margin-left: 30px;" clientidmode="Static"
+            runat="server" href="#">Click to see After Renewel</a>
+    </center>
+</div>
+<div id="AfterRenewelPopUp" style="display: none;" class="AfterRenewelPopUpClass">
+    <div style="background-image: url('../Portals/0/images/topband.png'); height: 110px;
+        margin-top: -9px; width: 102%; margin-left: -7px;">
+        <span class="AfterRenewelHeaderSpan" style="margin-top: 13px;">Welcome to </span>
+        <asp:Label ID="AfterRenewelYear" CssClass="AfterRenewelYearLabel" Style="margin-top: 13px;
+            float: left" runat="server" Text="2014"></asp:Label><br />
+        <span class="AfterRenewelHeaderSpan">Thanks for renewing your subscription:</span>
+    </div>
+    <div style="box-shadow: 0px 0px 8px gray; -moz-box-shadow: 0 8px 8px gray; -webkit-box-shadow: 8 0px 0px gray;
+        float: left; width: 103%; margin-left: -7px; height: 87%;">
+        <center>
+            <div class="AfterRenewelContentDiv" style="margin-top: 50px !important">
+                <div class="AfterRenewelPopUpClassimg">
+                </div>
+                <asp:CheckBox ID="CheckAllTeachers" runat="server" Checked="true" />
+                <span class="AfterRenewelContentSpan">Keep all teacher profiles</span>
+            </div>
+            <div class="AfterRenewelContentDiv">
+                <div class="AfterRenewelPopUpClassimg">
+                </div>
+                <asp:CheckBox ID="CheckAllStudents" runat="server" Checked="true" />
+                <span class="AfterRenewelContentSpan">Keep all student profiles</span>
+                <asp:Label ID="licencesCount" Text="(you have 14 more students than licences)" CssClass="AfterRenewelContentLabel"
+                    runat="server"></asp:Label>
+            </div>
+            <div class="AfterRenewelContentDiv">
+                <div class="AfterRenewelPopUpClassimg">
+                </div>
+                <asp:CheckBox ID="CheckMoveall" runat="server" Checked="true" />
+                <span class="AfterRenewelContentSpan">Move all students up one year level</span>
+            </div>
+            <div class="AfterRenewelContentDiv">
+                <div class="AfterRenewelPopUpClassimg">
+                </div>
+                <asp:CheckBox ID="CheckStart" runat="server" Checked="true" />
+                <span class="AfterRenewelContentSpan">Start with same books as last year</span>
+                <asp:Label ID="DaysLeftLabel" Text="(you will have 30 days to make swap books)" CssClass="AfterRenewelContentDays"
+                    runat="server"></asp:Label>
+            </div>
+            <asp:Button ID="StartButton" runat="server" class="ActiveAddButtonsHolder" Text="Start 2014" Style="font-family: Raleway,Arial;
+                font-weight: 700; font-size: 10pt;" />
+            <asp:LinkButton ID="AdvancedSetUp" runat="server" PostBackUrl="http://localhost:49784/cengageecollectionwork/eCollection/AfterRenewalAdvance.aspx" Text="Advanced Set Up >>"></asp:LinkButton>
+        </center>
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $("#AfterRenewelPopUp div div.AfterRenewelPopUpClassimg").click(function () {
+            this.parentNode.children[1].click();
+            if (this.parentNode.children[1].checked) {
+                this.parentNode.children[0].className = " "; // ("AfterRenewelPopUpClassimg");
+                this.parentNode.children[0].className = "AfterRenewelPopUpClassimg";
+            }
+            else {
+                this.parentNode.children[0].className = " ";
+                this.parentNode.children[0].className = "AfterRenewelPopUpClassunimg";
+
+            }
+
+        });
+        function onResize() {
+            return 0;
+        }
+        $("#ClicktoAfterRenewel").click(function () {
+            $("#AfterRenewelPopUp").css({ 'display': 'block' });
+            $('.k-window-actions.k-header').css('cursor', 'pointer');
+            var window = $("#AfterRenewelPopUp"); //Give ur div id here
+            if (!window.data("kendoWindow")) {
+                window.kendoWindow({
+                    width: "730px",
+                    height: "610px",
+                    modal: true,
+                    draggable: false
+                });
+                window.data("kendoWindow").center();
+            }
+            window.data("kendoWindow").open();
+            $(".k-icon.k-i-close").hide();
+            $('a.k-window-action.k-link').mouseover(function () {
+                $('a.k-window-action.k-link').parent().css("background-image", "url('./Portals/0/images/close.png') !important");
+                return false;
+            });
+            return false;
+        });
+
+    });
+    
+</script>

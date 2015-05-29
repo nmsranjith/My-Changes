@@ -1,0 +1,80 @@
+.lib-images
+{
+width:960px;
+text-align:center;
+margin-right:auto;
+border-bottom: 1px solid #CCB;
+display: block;
+padding-bottom: 20px;
+}
+.lib-images .inline
+{
+display: inline-block;
+margin-right:5px;
+}
+
+.lib-images .inline:last-child
+{
+    margin-right:0 !important;
+}
+.prodformat
+{
+    float:left;
+    width:960px;
+    margin:20px;
+}
+.formatheader
+{
+    float: left;
+    width: 12%;
+}
+
+.formatupload
+{
+    float: left;
+width: 50%;
+text-align:center;
+}
+.formaturl
+{
+    float: left;
+width: 30%;
+}
+.formatheader h5
+{
+	color:#707070 !important; 
+	margin: 0 0 4px;
+	font-family: KievitCL_OT-Bold;
+	font-size: 16px;
+	font-weight: normal
+}
+.prodformatbtndiv
+{
+    text-align: center;
+}
+.prodformatsubmit
+{
+	width: 100px;
+	text-align: center;
+	font-family: KievitCL_OT-Regular;
+	font-size: 16px;
+	font-weight: bold;
+	color:#707070;
+	margin-right:5px;
+}
+
+.formatimg
+{
+    width:35px;
+   float:right;
+   margin-right: 30px;
+
+}
+.ie .formatimg
+{
+	margin-left:50px;
+}
+.ie8 .lib-images
+{
+width:965px;
+}

@@ -1,0 +1,12 @@
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Sessions.dll
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Sessions.pdb
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Sessions.xml
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Sessions\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Sessions\obj\Release\eCollection_Sessions.dll
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Sessions\obj\Release\eCollection_Sessions.pdb
+D:\Code-Dec-12\Integrated\bin\eCollection_Sessions.dll
+D:\Code-Dec-12\Integrated\bin\eCollection_Sessions.pdb
+D:\Code-Dec-12\Integrated\bin\eCollection_Sessions.xml
+D:\Code-Dec-12\Integrated\DesktopModules\eCollection_Sessions\obj\Release\ResolveAssemblyReference.cache
+D:\Code-Dec-12\Integrated\DesktopModules\eCollection_Sessions\obj\Release\eCollection_Sessions.dll
+D:\Code-Dec-12\Integrated\DesktopModules\eCollection_Sessions\obj\Release\eCollection_Sessions.pdb

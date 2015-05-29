@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FavouriteAndRecentlyViewed</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.FavouriteAndRecentlyViewed.FavouriteAndRecentlyViewedSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from FavouriteAndRecentlyViewedSettingsBase
+            
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.FavouriteAndRecentlyViewed.FavouriteAndRecentlyViewedModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from FavouriteAndRecentlyViewedModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.FormatImageURL">
+            <summary>
+            Book image format url function
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.FormatURL(System.String,System.String)">
+            <summary>
+            Product detail page's url format  function
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.favUpdatePanel">
+            <summary>
+            favUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.divFavourite">
+            <summary>
+            divFavourite control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.spanTitle">
+            <summary>
+            spanTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.divSeeAll">
+            <summary>
+            divSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.btnFavSeeAll">
+            <summary>
+            btnFavSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.divHideAll">
+            <summary>
+            divHideAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.btnFavHideALL">
+            <summary>
+            btnFavHideALL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.ProductResultsRptr">
+            <summary>
+            ProductResultsRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.hdnDivision">
+            <summary>
+            hdnDivision control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.View.hdnDisplayCount">
+            <summary>
+            hdnDisplayCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Edit.titleOfModule">
+            <summary>
+            titleOfModule control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Edit.favChkbx">
+            <summary>
+            favChkbx control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Edit.recentChkbx">
+            <summary>
+            recentChkbx control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Edit.displayCount">
+            <summary>
+            displayCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Edit.btnSave">
+            <summary>
+            btnSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Edit.divisionHidden">
+            <summary>
+            divisionHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from FavouriteAndRecentlyViewedSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.FavouriteAndRecentlyViewed.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for FavouriteAndRecentlyViewed
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

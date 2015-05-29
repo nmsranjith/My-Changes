@@ -1,0 +1,57 @@
+.ModInformationBannerC{margin-left:-10px}#border{margin-bottom:6px;}.icon-new{height:30px!important;width:30px!important}.info-msg{border:1px solid #707070;color:#707070;min-height:38px;width:960px;background-color:#F5F5F5;text-align:center;clear:both}.ico-flag{background-position:-205px -52px!important;background-repeat:no-repeat;display:inline-block;float:left!important}.message{text-align:center;font-family:KievitCL_OT-Regular;font-size:12pt;width: 838px;display: inline-block;line-height: 22px;padding-top: 8px;}.ico-close-black{cursor:pointer;background-position:-250px -51px!important;background-repeat:no-repeat;display:inline-block;float:right!important}.success-msg{border:1px solid #73A638;color:#fff;min-height:40px;width:960px;background-color:#73A638;text-align:center;clear:both}.ico-check{background-position:-303px -52px!important;background-repeat:no-repeat;display:inline-block;float:left!important}.ico-close-green{cursor:pointer;background-position:-348px -52px!important;background-repeat:no-repeat;display:inline-block;float:right!important}.error-msg{min-height:40px;border:1px solid #EF676C;color:#fff;height:auto;width:960px;background-color:#EF676C;text-align:center;clear:both}.ico-cancel-white{background-position:-397px -50px!important;margin-top: 0 !Important;background-repeat:no-repeat;display:inline-block;float:left!important}.ico-close-red{cursor:pointer;background-position:-441px -52px!important;background-repeat:no-repeat;display:inline-block;float:right!important}.warning-msg{border:1px solid #F59E48;color:#fff;min-height:40px;width:960px;background-color:#F59E48;text-align:center;clear:both}.ico-warning{background-position:-14px -101px!important;margin-top: 0 !important;background-repeat:no-repeat;display:inline-block;float:left!important}.ico-close-orange{cursor:pointer;background-position:-58px -101px !important;background-repeat:no-repeat;display:inline-block;float:right!important}
+.left-module
+{
+margin-left:50px;
+}
+
+
+
+
+
+.ico-check, .ico-error, .ico-warning, .ico-flag, .ico-cancel-white
+{
+margin-left:12px;
+}
+.ico-close-green, .ico-close-red, .ico-close-orange, .ico-close-black
+{
+margin-right:7px;
+}
+
+.ui-widget-content {
+border: 1px solid #aaaaaa;
+background: #38A1C0 url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+color: #222222;
+}
+.datepickertxt,.datepickeredittxt{
+float: left;
+height: 22px;
+text-indent: 10px;
+width: 120px;
+}
+
+.ui-widget-header .ui-icon 
+{
+	background-image: url('/portals/0/images/sprite.png') !important; 
+	width: 10px !important; 
+}
+.ui-icon-circle-triangle-e
+{
+	background-position: 0px -15px !important; 
+}
+.ui-icon-circle-triangle-w
+{
+	background-position: -2px -47px !important; 
+}
+.ui-state-active {
+background: #121071 url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x !important; 
+color : white !important; 
+}
+.ui-datepicker-trigger
+{
+float:left;
+margin-top:3px;
+}
+.editspandatetxt
+{
+margin-left: 30px;
+}

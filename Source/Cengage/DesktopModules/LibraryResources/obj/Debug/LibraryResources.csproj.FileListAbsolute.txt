@@ -1,0 +1,6 @@
+E:\Deployterm\Deploy\bin\LibraryResources.dll
+E:\Deployterm\Deploy\bin\LibraryResources.pdb
+E:\Deployterm\Deploy\bin\LibraryResources.xml
+E:\Deployterm\Deploy\DesktopModules\LibraryResources\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\LibraryResources\obj\Debug\LibraryResources.dll
+E:\Deployterm\Deploy\DesktopModules\LibraryResources\obj\Debug\LibraryResources.pdb

@@ -1,0 +1,6 @@
+E:\Deployterm\Deploy\bin\FeaturedSearch.dll
+E:\Deployterm\Deploy\bin\FeaturedSearch.pdb
+E:\Deployterm\Deploy\bin\FeaturedSearch.xml
+E:\Deployterm\Deploy\DesktopModules\FeaturedSearch\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\FeaturedSearch\obj\Debug\FeaturedSearch.dll
+E:\Deployterm\Deploy\DesktopModules\FeaturedSearch\obj\Debug\FeaturedSearch.pdb

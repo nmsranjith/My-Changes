@@ -1,0 +1,107 @@
+
+.FeatureSlider
+{
+    background: url('../../Portals/0/images/SliderFrame.png') no-Repeat;
+}
+.FS
+{
+  height: 128px;  
+}
+.FSSliderImages
+{
+    width:401px;height: 299px;margin-left: 10%;
+}
+h4
+{
+    font-weight:700  !important;
+    text-align:justify !important;
+    margin-right:15px;
+}
+.EditFirstDiv
+{
+    width:70%;
+    float:left;
+    margin: 20px 20px 5px 100px;
+}
+.EditFirstDiv1
+{
+    width: 607px !important;
+}
+.EditSecondDiv
+{
+    width:70%;
+    float:left;
+    margin-left:100px;
+}
+.EditFirstInner1
+{
+    width: 30%;
+    float:left;
+}
+.EditFirstInnerDiv1
+{
+    width: 199px !important;
+}
+.EditFirstInner2
+{
+    width: 40%;
+    margin-top: 16px;
+    float:left;
+}
+.SlidesCountTxt
+{
+    text-indent: 5px;   
+}
+.SlidesCountTxt,.SlidesDrpDwn
+{
+    height:25px;
+    font-weight: 700;
+}
+.SlideHeaderTxt
+{
+    width: 323px !important;
+}
+.SlideTextMultiLine
+{
+    width: 323px;
+    height: 102px;
+    text-indent: 5px;   
+}
+.SliderSetSave_Buttons
+{
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+}
+
+
+.Fslidertopdiv
+{
+    width:960px;float:left;
+}
+.Fsliderscnddiv
+{
+    float: left; width: 340px; margin-top: 10px; margin-left: 15px;
+}
+.Fsliderh3
+{
+    font-weight: 700; color: #0089c5;
+}
+.Fsliderh4
+{
+    color: #90bf60; font-weight: 700; margin-bottom: 0px; padding-top: 25px;
+}
+.Fsliderp
+{
+    color: #707070; font-family: Raleway, Arial; font-size: 11pt;
+}
+.Fsliderbtndiv
+{
+    float: left; margin-left: -3px;
+}
+.Fsliderimgdiv
+{
+    width: 460px; height: 100%;
+        padding: 41px; clear: both; display: inline-block; z-index: 5; padding-top: 43px;
+        padding-left: 1px; padding-bottom: 75px; margin-top: 38px; margin-left: 25px;
+}

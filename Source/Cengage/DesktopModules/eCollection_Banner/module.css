@@ -1,0 +1,45 @@
+.ecbntopdiv
+{
+  background-color: #FAB74D;
+  color: #fff;
+  font-size: 19px;
+  text-align: center;
+  padding: 13px 0px 14px 0px;
+  font-family: KievitCL_OT-Bold;
+  width: 940px;
+  float: left;
+}
+.ecbnalnk
+{
+  font-size: 12px;
+  border: 1px #fff solid;
+  border-radius: 10px;
+  padding: 7px 10px 7px 10px;
+}
+.ecbnlogo
+{
+  background: url('../../portals/0/images/pm-logo.png') no-repeat;
+  height: 54px;
+  width: 55px;
+  float: left;
+  margin-left: 19px;
+}
+.ecobnlbl
+{
+	padding-top:15px;
+}
+.ecobnlbl span:hover
+{
+	-moz-text-decoration-style: wavy; /* Code for Firefox */
+    text-decoration: underline;
+	cursor:pointer;
+}
+.ecobnlbl a
+{
+	color:#fff;
+}
+.ecobnlbl a:hover
+{
+	color:#fff;
+	background-color:#F69500;
+}

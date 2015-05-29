@@ -1,0 +1,6 @@
+E:\Deployterm\Deploy\bin\HESearchResults.dll
+E:\Deployterm\Deploy\bin\HESearchResults.pdb
+E:\Deployterm\Deploy\bin\HESearchResults.xml
+E:\Deployterm\Deploy\DesktopModules\HESearchResults\obj\Release\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\HESearchResults\obj\Release\HESearchResults.dll
+E:\Deployterm\Deploy\DesktopModules\HESearchResults\obj\Release\HESearchResults.pdb

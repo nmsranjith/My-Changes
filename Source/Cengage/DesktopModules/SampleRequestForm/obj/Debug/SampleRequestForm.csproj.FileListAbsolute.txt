@@ -1,0 +1,12 @@
+E:\Deployterm\Deploy\DesktopModules\SampleRequestForm\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\bin\SampleRequestForm.dll
+E:\Deployterm\Deploy\bin\SampleRequestForm.pdb
+E:\Deployterm\Deploy\bin\SampleRequestForm.xml
+E:\Deployterm\Deploy\DesktopModules\SampleRequestForm\obj\Debug\SampleRequestForm.dll
+E:\Deployterm\Deploy\DesktopModules\SampleRequestForm\obj\Debug\SampleRequestForm.pdb
+E:\Code\Cengage\bin\SampleRequestForm.dll
+E:\Code\Cengage\bin\SampleRequestForm.pdb
+E:\Code\Cengage\bin\SampleRequestForm.xml
+E:\Code\Cengage\DesktopModules\SampleRequestForm\obj\Debug\SampleRequestForm.csprojResolveAssemblyReference.cache
+E:\Code\Cengage\DesktopModules\SampleRequestForm\obj\Debug\SampleRequestForm.dll
+E:\Code\Cengage\DesktopModules\SampleRequestForm\obj\Debug\SampleRequestForm.pdb

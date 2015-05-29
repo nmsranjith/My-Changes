@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E450CC2-B013-4E73-B8ED-E260823A4645}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DotNetNuke.Modules.eCollection_Students</RootNamespace>
+    <AssemblyName>eCollection_Students</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DocumentationFile>eCollection_Students.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DocumentationFile>eCollection_Students.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetNuke, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="eCollection_Dashboards, Version=0.0.1.35821, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\eCollection_Dashboards.dll</HintPath>
+    </Reference>
+    <Reference Include="eCollection_Groups, Version=0.0.1.42663, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\eCollection_Groups.dll</HintPath>
+    </Reference>
+    <Reference Include="eCollection_Sessions, Version=0.0.1.17555, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\eCollection_Sessions\obj\Debug\eCollection_Sessions.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=10.0.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Z:\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DotNetNuke" />
+    <Import Include="DotNetNuke.Common" />
+    <Import Include="DotNetNuke.Common.Utilities" />
+    <Import Include="DotNetNuke.Data" />
+    <Import Include="DotNetNuke.Entities" />
+    <Import Include="DotNetNuke.Entities.Tabs" />
+    <Import Include="DotNetNuke.Framework" />
+    <Import Include="DotNetNuke.Modules" />
+    <Import Include="DotNetNuke.Security" />
+    <Import Include="DotNetNuke.Services" />
+    <Import Include="DotNetNuke.Services.Exceptions" />
+    <Import Include="DotNetNuke.Services.Localization" />
+    <Import Include="DotNetNuke.UI" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Common\Constants.cs" />
+    <Compile Include="Components\Common\IDCollection.cs" />
+    <Compile Include="Components\Common\MyEnums.cs" />
+    <Compile Include="Components\FeatureController.cs" />
+    <Compile Include="Components\Model\Groups.cs" />
+    <Compile Include="Components\Model\Messages.cs" />
+    <Compile Include="Components\Model\Student.cs" />
+    <Compile Include="Components\Controllers\StudentsController.cs" />
+    <Compile Include="Components\Model\StudentReadingHistory.cs" />
+    <Compile Include="Dashboard\CreateStudentProfileDashboard.ascx.cs">
+      <DependentUpon>CreateStudentProfileDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CreateStudentProfileDashboard.ascx.designer.cs">
+      <DependentUpon>CreateStudentProfileDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\StudentsListDashboard.ascx.cs">
+      <DependentUpon>StudentsListDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\StudentsListDashboard.ascx.designer.cs">
+      <DependentUpon>StudentsListDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\StudentsProfileBulkUploadDashboard.ascx.cs">
+      <DependentUpon>StudentsProfileBulkUploadDashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\StudentsProfileBulkUploadDashboard.ascx.designer.cs">
+      <DependentUpon>StudentsProfileBulkUploadDashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\eCollectionHandler.ashx.cs">
+      <DependentUpon>eCollectionHandler.ashx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AddToGroup.ascx.cs">
+      <DependentUpon>AddToGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\AddToGroup.ascx.designer.cs">
+      <DependentUpon>AddToGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateStudentProfile.ascx.cs">
+      <DependentUpon>CreateStudentProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CreateStudentProfile.ascx.designer.cs">
+      <DependentUpon>CreateStudentProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\eCollectionMessages.ascx.cs">
+      <DependentUpon>eCollectionMessages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\eCollectionMessages.ascx.designer.cs">
+      <DependentUpon>eCollectionMessages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditStudentProfile.ascx.cs">
+      <DependentUpon>EditStudentProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EditStudentProfile.ascx.designer.cs">
+      <DependentUpon>EditStudentProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UnallocatedStudentsPager.ascx.cs">
+      <DependentUpon>UnallocatedStudentsPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UnallocatedStudentsPager.ascx.designer.cs">
+      <DependentUpon>UnallocatedStudentsPager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MyGroups.ascx.cs">
+      <DependentUpon>MyGroups.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MyGroups.ascx.designer.cs">
+      <DependentUpon>MyGroups.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MyWords.ascx.cs">
+      <DependentUpon>MyWords.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\MyWords.ascx.designer.cs">
+      <DependentUpon>MyWords.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReadingHistory.ascx.cs">
+      <DependentUpon>ReadingHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\ReadingHistory.ascx.designer.cs">
+      <DependentUpon>ReadingHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Recordings.ascx.cs">
+      <DependentUpon>Recordings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Recordings.ascx.designer.cs">
+      <DependentUpon>Recordings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SeeAllList.ascx.cs">
+      <DependentUpon>SeeAllList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\SeeAllList.ascx.designer.cs">
+      <DependentUpon>SeeAllList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StartCreateStudents.ascx.cs">
+      <DependentUpon>StartCreateStudents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StartCreateStudents.ascx.designer.cs">
+      <DependentUpon>StartCreateStudents.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentProfile.ascx.cs">
+      <DependentUpon>StudentProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StudentProfile.ascx.designer.cs">
+      <DependentUpon>StudentProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentsList.ascx.cs">
+      <DependentUpon>StudentsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StudentsList.ascx.designer.cs">
+      <DependentUpon>StudentsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="Views\UnallocatedStudents.ascx.cs">
+      <DependentUpon>UnallocatedStudents.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\UnallocatedStudents.ascx.designer.cs">
+      <DependentUpon>UnallocatedStudents.ascx</DependentUpon>
+    </Compile>
+    <Content Include="CSS\jplayer.blue.monday.css" />
+    <Content Include="CSS\jplayer.css" />
+    <Content Include="CSS\jQuery.ui.smoothness.css" />
+    <Content Include="Dashboard\CreateStudentProfileDashboard.ascx" />
+    <Content Include="Dashboard\StudentsListDashboard.ascx" />
+    <Content Include="Dashboard\StudentsProfileBulkUploadDashboard.ascx" />
+    <Content Include="Scripts\jplayer.playerlist.min.js" />
+    <Content Include="Scripts\Jplayer.swf" />
+    <Content Include="Scripts\jquery.corner.js" />
+    <Content Include="Scripts\jquery.jplayer.min.js" />
+    <Content Include="Views\AddToGroup.ascx" />
+    <Content Include="Views\CreateStudentProfile.ascx" />
+    <Content Include="Views\eCollectionMessages.ascx" />
+    <Content Include="Views\EditStudentProfile.ascx" />
+    <Content Include="Views\UnallocatedStudentsPager.ascx" />
+    <Content Include="Views\MyGroups.ascx" />
+    <Content Include="Views\MyWords.ascx" />
+    <Content Include="Views\ReadingHistory.ascx" />
+    <Content Include="Views\Recordings.ascx" />
+    <Content Include="Views\SeeAllList.ascx" />
+    <Content Include="Views\StartCreateStudents.ascx" />
+    <Content Include="Views\StudentProfile.ascx" />
+    <Content Include="Views\StudentsList.ascx" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\DataProviders\SqlDataProvider\SqlDataProvider.cs" />
+    <Compile Include="Edit.ascx.designer.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.ascx.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eCollection_StudentsSettingsBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StudentsProfileBulkUpload.ascx.cs">
+      <DependentUpon>StudentsProfileBulkUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\StudentsProfileBulkUpload.ascx.designer.cs">
+      <DependentUpon>StudentsProfileBulkUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="View.ascx.designer.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="View.ascx.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eCollection_StudentsModuleBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Views\UnallocatedStudents.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_LocalResources\Edit.ascx.resx" />
+    <None Include="App_LocalResources\Settings.ascx.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_LocalResources\View.ascx.resx" />
+    <None Include="BuildScripts\ModulePackage.targets" />
+    <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+    <Content Include="Handlers\eCollectionHandler.ashx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
+    <None Include="eCollection_Students.dnn" />
+    <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
+    <None Include="module.css" />
+    <None Include="ReleaseNotes.txt" />
+    <None Include="License.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Edit.ascx" />
+    <Content Include="Settings.ascx" />
+    <Content Include="Views\StudentsProfileBulkUpload.ascx" />
+    <Content Include="View.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="'$(Solutions.VSVersion)' == '8.0'" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="'$(Solutions.VSVersion)' == '9.0'" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53530</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://dnndev/desktopmodules/eCollection_Students/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://dnndev/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <Extension>zip</Extension>
+    <DNNFileName>eCollection_Students</DNNFileName>
+    <PackageName>eCollection_Students</PackageName>
+    <MSBuildCommunityTasksPath>$(MSBuildProjectDirectory)\BuildScripts</MSBuildCommunityTasksPath>
+  </PropertyGroup>
+  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <Target Name="AfterBuild" DependsOnTargets="PackageModule">
+  </Target>
+</Project>

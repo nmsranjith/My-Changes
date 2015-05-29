@@ -1,0 +1,179 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CreateGroup.ascx.cs"
+    Inherits="DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup" %>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#<%=SubscriptionDrpList.ClientID %>").kendoDropDownList();
+        $(".TeacherDetailsDiv #TeacherDetailsRepeaterDiv #TeacherDetailsRepeaterContentDiv img").click(function () {
+            this.parentNode.children[0].click();
+            if (this.parentNode.children[0].checked) {
+                for (var i = 0; i < $(".TeacherDetailsDiv #TeacherDetailsRepeaterDiv #TeacherDetailsRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($(".TeacherDetailsDiv #TeacherDetailsRepeaterDiv #TeacherDetailsRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $(".TeacherDetailsDiv #TeacherDetailsRepeaterDiv #TeacherDetailsRepeaterContentDiv img")[i].src = "../../Portals/0/images/tick_student.png";
+                    }
+                }
+
+            }
+            else {
+                for (var i = 0; i < $(".TeacherDetailsDiv #TeacherDetailsRepeaterDiv #TeacherDetailsRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (!$(".TeacherDetailsDiv #TeacherDetailsRepeaterDiv #TeacherDetailsRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $(".TeacherDetailsDiv #TeacherDetailsRepeaterDiv #TeacherDetailsRepeaterContentDiv img")[i].src = "../../Portals/0/images/circle_big.png";
+                    }
+                }
+
+            }
+        });
+
+        $(".StudentDetailsDiv #StudentDetailsRepeaterDiv #StudentDetailsRepeaterContentDiv img").click(function () {
+            this.parentNode.children[0].click();
+            if (this.parentNode.children[0].checked) {
+                for (var i = 0; i < $(".StudentDetailsDiv #StudentDetailsRepeaterDiv #StudentDetailsRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($(".StudentDetailsDiv #StudentDetailsRepeaterDiv #StudentDetailsRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $(".StudentDetailsDiv #StudentDetailsRepeaterDiv #StudentDetailsRepeaterContentDiv img")[i].src = "../../Portals/0/images/tick_student.png";
+                    }
+                }
+
+            }
+            else {
+                for (var i = 0; i < $(".StudentDetailsDiv #StudentDetailsRepeaterDiv #StudentDetailsRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (!$(".StudentDetailsDiv #StudentDetailsRepeaterDiv #StudentDetailsRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $(".StudentDetailsDiv #StudentDetailsRepeaterDiv #StudentDetailsRepeaterContentDiv img")[i].src = "../../Portals/0/images/circle_big.png";
+                    }
+                }
+            }
+        });
+        $("#TeacherDetailsRepeaterDiv input[type=image]").click(function () {
+            $(this.parentNode.parentNode.parentNode).remove();
+        });
+        $("#StudentDetailsRepeaterDiv input[type=image]").click(function () {
+            $(this.parentNode.parentNode.parentNode).remove();
+        });
+
+        $('#<%=GroupNameTextBox.ClientID%>').keypress(function () {
+            if ($(this).val().length != 0 && $(this).val() != this.title) {
+                $('#<%=AddTeachersButton.ClientID%>').removeAttr("disabled").css("color", "Black");
+                $('#<%=AddStudentButton.ClientID%>').removeAttr("disabled").css("color", "Black"); ;
+            }
+            else {
+                $('#<%=AddTeachersButton.ClientID%>').attr("disabled", "disabled").css("color", "#7A7777");
+                $('#<%=AddStudentButton.ClientID%>').attr("disabled", "disabled").css("color", "#7A7777");
+            }
+        });
+        $("#<%=GroupNameTextBox.ClientID%>").focus(function () {
+            if ($(this).val() == this.title) {
+                $(this).val("");
+                $(this).removeClass("classSearchwater");
+            }
+            if ($(this).val().length != 0 && $(this).val() != this.title) {
+                $('#<%=AddTeachersButton.ClientID%>').removeAttr("disabled").css("color", "Black");
+                $('#<%=AddStudentButton.ClientID%>').removeAttr("disabled").css("color", "Black"); ;
+            }
+            else {
+                $('#<%=AddTeachersButton.ClientID%>').attr("disabled", "disabled").css("color", "#7A7777");
+                $('#<%=AddStudentButton.ClientID%>').attr("disabled", "disabled").css("color", "#7A7777");
+            }
+        });
+        $("#<%=GroupNameTextBox.ClientID%>").blur(function () {
+            if ($(this).val().trim() == "") {
+                $(this).val(this.title);
+                $(this).addClass("classSearchwater");
+            }
+            if ($(this).val().length != 0 && $(this).val() != this.title) {
+                $('#<%=AddTeachersButton.ClientID%>').removeAttr("disabled").css("color", "Black"); ;
+                $('#<%=AddStudentButton.ClientID%>').removeAttr("disabled").css("color", "Black"); ;
+            }
+            else {
+                $('#<%=AddTeachersButton.ClientID%>').attr("disabled", "disabled").css("color", "#7A7777"); ;
+                $('#<%=AddStudentButton.ClientID%>').attr("disabled", "disabled").css("color", "#7A7777"); ;
+            }
+        });
+        var checkboxchecked = true;
+        $('#CheckBoxDiv').click(function () {
+            if (checkboxchecked) {
+                $('#CheckBoxDiv').css("background-image", "url('../../Portals/0/images/uncheck.png')");
+                checkboxchecked = false;
+            }
+            else {
+                $('#CheckBoxDiv').css("background-image", "url('../../Portals/0/images/checkicon.png')");
+                checkboxchecked = true;
+            }
+        });
+    });
+
+</script>
+<div class="CreateEditGroupDivSet">
+    <div class="CreateGroupDiv">
+        <span class="CreateEditGroupName">Group name:</span><br />
+        <div>
+            <input type="text" id="GroupNameTextBox" style="width:65%" class="classSearchwater" runat="server" />
+                <div id="CheckBoxDiv" style="border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;border-width: initial;border-color: initial;width: 20px;height: 20px;margin-right: 10px;margin-top: 7px;float: right;margin-right: 10px;background-image: url('../../Portals/0/images/checkicon.png');background-repeat: no-repeat no-repeat;"></div><span style="margin-right: 19px;" class="CreateditGrpNmSpan">
+                Class</span>
+           <%-- <asp:CheckBox ID="ClassCheckBox" CssClass="CheckBoxClass" runat="server" Checked="true" />--%>
+        </div>
+        <select id="SubscriptionDrpList" runat="server" class="SubscriptionDrpList">
+            <option>Subscription1</option>
+            <option>Subscription2</option>
+            <option>Subscription3</option>
+            <option>Subscription4</option>
+            <option>Subscription5</option>
+        </select>
+        <asp:Button ID="AddTeachersButton" Enabled="false" CssClass="SortRead" runat="server"
+            Text="+ Add Teachers" OnClick="AddTeachersButton_Click" />
+        <asp:Button ID="AddStudentButton" Enabled="false" CssClass="SortRead" runat="server" style="margin-right: 7px;"
+            Text="+ Add Students" OnClick="AddStudentButton_Click" />
+    </div>
+    <div class="TeacherDetailsDiv">
+        <asp:Repeater ID="TeacherDetailsRepeater" runat="server">
+            <ItemTemplate>
+                <div id="TeacherDetailsRepeaterDiv" class="TeacherDtlssRptrContDiv">
+                    <div id="TeacherDetailsRepeaterContentDiv" class="TeacherDtlsFirst">
+                        <div class="TeacherDtlsFirstDiv">
+                            <input id="TeacherDetailsCheckBoxes" clientidmode="Static" type="checkbox" style="display: none" />
+                            <img id="TeacherDetailsCheckBoxImg" alt="" clientidmode="Static"
+                                src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" />
+                        </div>
+                        <div class="TeacherDtlsSecondDiv">
+                            <asp:Label ID="Label1" CssClass="TeacherDtlslbl" runat="server"
+                                Text='<%# Eval("TeacherName") %>'></asp:Label>
+                        </div>
+                        <div  class="TeacherDtlsThrdDiv">
+                            <input type="image" id="TeacherDeleteImgButton" alt="" src="<%=Page.ResolveUrl("Portals/0/images/close.jpg")%>" />
+                        </div>
+                    </div>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+    <div class="StudentDetailsDiv">
+        <asp:Repeater ID="StudentDetailsRepeater" runat="server">
+            <ItemTemplate>
+                <div id="StudentDetailsRepeaterDiv" class="TeacherDtlssRptrContDiv">
+                    <div id="StudentDetailsRepeaterContentDiv" class="TeacherDtlsFirst">
+                        <div class="TeacherDtlsFirstDiv">
+                            <input id="StudentDetailsCheckBoxes" clientidmode="Static" type="checkbox" style="display: none" />
+                            <img id="StudentDetailsCheckBoxImg" alt="" clientidmode="Static"
+                                src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" />
+                        </div>
+                        <div class="TeacherDtlsSecondDiv">
+                            <asp:Label ID="StudentNameLabel" CssClass="TeacherDtlslbl" runat="server"
+                                Text='<%# Eval("StudentName") %>'></asp:Label>
+                        </div>
+                        <div class="TeacherDtlsThrdDiv">
+                            <input type="image" id="StudentDeleteImgButton" src="<%=Page.ResolveUrl("Portals/0/images/close.jpg")%>" />
+                        </div>
+                    </div>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+    <div id="CreateEditGroupFooterDiv">
+        <span style="padding-top: 18px; float: left; font-size: large;">FINISHED CREATING?</span>
+        <asp:Button ID="CreateGroupButton" runat="server" Style="float: right; width: 170px !important;
+            min-width: 0px; margin-right: 3px; margin-left: 12px; background-image: url('../../Portals/0/images/ButtonBG.jpg');
+            background-repeat: no-repeat;" CssClass="ButtonStyle " Enabled="true" Text="CREATE GROUP" />
+        <asp:Button ID="CancelCreateGroup" runat="server" Text="CANCEL GROUP" Style="float: right;
+            width: 170px !important; padding-top:4px; min-width: 0px; background-image: url('../../Portals/0/images/cancelbutton.png');
+            background-repeat: no-repeat;" CssClass="ButtonStyle" OnClick="CancelCreateGroup_Click">
+        </asp:Button>
+    </div>
+</div>

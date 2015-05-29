@@ -1,0 +1,6 @@
+D:\Working\Integrated\bin\eCollection_Groups.dll
+D:\Working\Integrated\bin\eCollection_Groups.pdb
+D:\Working\Integrated\bin\eCollection_Groups.xml
+D:\Working\Integrated\DesktopModules\eCollection_Groups\obj\Release\ResolveAssemblyReference.cache
+D:\Working\Integrated\DesktopModules\eCollection_Groups\obj\Release\eCollection_Groups.dll
+D:\Working\Integrated\DesktopModules\eCollection_Groups\obj\Release\eCollection_Groups.pdb

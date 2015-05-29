@@ -1,0 +1,2536 @@
+.Panes {
+    padding: 0 !important
+}
+input[type="text"],
+input[type="password"] {
+    outline: none;
+}
+.Div_FullWidth input[type=submit][disabled] {
+    cursor: default;
+    background-color: transparent;
+    color: #A5A3A3 !important;
+    text-shadow: 1px 1px #F4F4F4;
+}
+.safari .k-textbox > input,
+.k-autocomplete .k-input,
+.k-combobox .k-input,
+.k-picker-wrap .k-input {
+    -webkit-box-shadow: transparent 0px 0px 1px 1px inset !important;
+}
+.bannertitle h1 {
+    display: none;
+    float: left;
+}
+.TopRightEditbtn {
+    cursor: pointer;
+    float: right;
+    margin-right: 16px;
+    padding: 10px;
+    background-image: url('../../Portals/0/images/editprofile.png');
+    font-size: 8.45pt;
+    color: white;
+    padding-left: 35px;
+    height: 37px;
+    border: 0px solid transparent;
+    width: 124px;
+    margin-top: 12px;
+}
+.BackBtn {
+    float: right !important;
+    width: 16.5% !important;
+    background-color: transparent !important;
+    margin-top: 11px !important;
+    margin-right: 15px !important;
+}
+#overlay {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: whiteSmoke;
+    opacity: 0.45;
+    -moz-opacity: 0.45;
+    filter: alpha(opacity=45);
+    visibility: hidden;
+}
+.ECollectionLeftModule {
+    z-index: 100000;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.RightTopCancelButton {
+    cursor: pointer;
+    float: right;
+    margin-right: 16px;
+    background-image: url('../../Portals/0/images/cancelbutton.png');
+    font-size: 8.45pt;
+    color: white;
+    height: 38px;
+    border: 0px solid transparent;
+}
+input[type=checkbox] {
+    width: 12px;
+    color: Black;
+}
+.Searchbtndiv {
+    position: relative;
+    border: 1px solid #707070 !important;
+    width: 32px !important;
+    height: 34px !important;
+    float: right !important;
+    background: #9e9e9e;
+    margin: -1px;
+}
+.Searchbtndiv input[type=submit] {
+    cursor: pointer;
+    border: 0 none;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../Portals/0/images/search_icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ClassSearchDiv {
+    float: left;
+    width: 100%;
+	padding:20px 0px 5px 0px;
+}
+.TodaySearchDiv {
+    float: left;
+    width: 100%;
+    padding: 0;
+    height: 90px;
+    margin-top: -40px;
+}
+.TodaySearchDiv img {
+    margin-left: 2px;
+    margin-top: 36px;
+}
+.MenuItems {
+    background-image: url('../../Portals/0/images/eCollectionMenu.jpg');
+    background-repeat: no-repeat;
+    height: 13px;
+    padding: 10px 100px 12px 50px;
+    border: 1px solid Lightgray;
+    margin-bottom: 10px;
+    width: 50px;
+    margin-left: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 9pt;
+}
+.StudentsList,
+.TeachersList {
+    min-height: 500px;
+    margin-top: 37px;
+}
+.StudentList_TopDiv,
+.TeachersList_TopDiv {
+    padding: 7px 0px 0px 45px;
+    float: left;
+    width: 88.5%;
+    color: #727272;
+}
+.KenduoComboBoxClassDiv {
+    width: 200px;
+    float: left;
+    height: 50px;
+    color: #717171;
+    position: relative;
+    background-color: #FFF;
+}
+.StudentDashboard_CheckAllDiv,
+.TeachersList_CheckAllDiv {
+    width: 40%;
+    float: left;
+    height: 19px;
+    padding: 0px;
+    margin-left: 10px;
+}
+.StudentDashboard_SortingDiv,
+.TeachersList_SortingDiv {
+    width: 53.5%;
+    float: left;
+    height: 19px;
+    text-align: right;
+}
+.StudentDashboard_SearchDiv,
+.EditStudentProfile_Div,
+.TeachersList_SearchDiv,
+.EditSessionProfile_Div {
+    width: 99.4%;
+    margin: 10px 0px 0px 0px;
+    float: left;
+    border-style: solid;
+    border-width: 2px;
+}
+.StudentDashboard_SearchDiv,
+.TeachersList_SearchDiv {
+    border-color: Gray;
+}
+.StudentDashboard_SearchTextBox,
+.TeachersList_SearchTextBox {
+    width: 86%;
+    border: 0px solid White;
+    margin-top: 1px;
+}
+.StudentDashBoard_StudentNames,
+.TeacherDashBoard_StudentNames {
+    color: #6F6F6F;
+    font-weight: bold;
+    font-size: 12pt;
+}
+.Students_CheckBoxes,
+.TeachersList_CheckBoxes {
+    background: none;
+    border: none;
+}
+.StudentDashBoard_GuidedImage,
+.TeachersList_GuidedImage {
+    padding-left: 0px;
+}
+.StudentDashBoard_TextBoxes {
+    border-radius: 8px;
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    width: 92%;
+    height: auto;
+    margin-top: 7px;
+    font-size: 11pt;
+}
+.StudentDashboard_ReadingLevelAscSortingButtons,
+.StudentDashboard_NamesAscSortingButtons,
+.StudentDashboard_ReadingLevelDescSortingButtons,
+.StudentDashboard_NamesDescSortingButtons,
+.TeachersList_NamesDescSortingButtons,
+.TeachersList_NamesAscSortingButtons {
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    min-height: 16px;
+    font-size: 8pt;
+    font-family: KievitCL_OT-Bold;
+    cursor: pointer;
+    color: Black;
+    background-color: transparent;
+    background-position: right;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.StudentDashboard_NamesAscSortingButtons,
+.StudentDashboard_NamesDescSortingButtons,
+.TeachersList_NamesAscSortingButtons,
+.TeachersList_NamesDescSortingButtons {
+    border: 0px solid lightgrey;
+    min-width: 18px;
+    width: 18px;
+}
+.StudentDashboard_ReadingLevelAscSortingButtons,
+.StudentDashboard_ReadingLevelDescSortingButtons {
+    min-width: 18px;
+    border: 0px solid lightgrey;
+    width: 18px;
+}
+.StudentDashboard_ReadingLevelAscSortingButtons,
+.StudentDashboard_NamesAscSortingButtons,
+.TeachersList_NamesAscSortingButtons {
+    background: url('../../Portals/0/images/asc.png') no-repeat right;
+}
+.StudentDashboard_ReadingLevelDescSortingButtons,
+.StudentDashboard_NamesDescSortingButtons,
+.TeachersList_NamesDescSortingButtons {
+    background: url('../../Portals/0/images/desc.png') no-repeat right;
+}
+.TeachersStudentsList_ProfileButton,
+.GroupProfileButton {
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    background-image: url('../../Portals/0/images/profilebutton.png');
+    color: white;
+    width: 110px;
+    height: 34px;
+    border: 1px solid #6A9641;
+    padding-left: 26px;
+}
+.ui-spinner {
+    position: relative;
+    border: 0px solid white;
+}
+.ui-spinner-buttons {
+    position: absolute;
+}
+.ui-spinner-button {
+    overflow: hidden;
+}
+.dropdowns {
+    padding-left: 5px;
+    margin-left: 10px;
+}
+.AddStudentProfile_AddButton,
+.UploadStudentProfile_AddButton,
+.UploadBooks_AddButton {
+    height: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+    background-color: #67A64D;
+    /*#479353;*/
+    
+    color: White;
+    font-size: 1.11em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ui-slider .ui-slider-range {
+    margin-left: -2px !important;
+}
+.ui-widget-header {
+    border: 1px solid #aaaaaa !important;
+    background: url(http://dotnetqsvr/dotnetnuke/desktopmodules/AusPearsonModule/images/sidr.jpg) !important;
+    color: #222222 !important;
+    font-weight: bold !important;
+}
+#demo-frame > div.demo {
+    padding: 10px !important;
+}
+.AddStudentProfile_AddButton {
+    width: 150px;
+}
+.CreateStudentProfile_TopDiv {
+    margin-top: 15px;
+    width: 100%;
+    padding-bottom: 10px;
+    float: left;
+    border: 1px solid lightgray;
+}
+.CreateStudentProfile_TopDiv,
+.CreateStudentProfile_MessageInnerDiv,
+.CreateStudentProfile_MessagePrintDiv,
+.BulkUpload_SecondDiv {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: -moz-linear-gradient(center top, white 0%, white 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+    background: -ms-linear-gradient(top, #fdfdfd 5%, #EAE9E9 130%) !important;
+}
+.CreateStudentProfile_MessageInnerDiv {
+    float: left;
+    width: 70%;
+    border: thin inset Green;
+    height: 45px;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+.CreateStudentProfile_MessagePrintDiv {
+    float: right;
+    width: 26%;
+    border: thin ridge Green;
+    height: 38px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.ReadingRecovery,
+.ESL {
+    width: 151px;
+    margin-right: 5px;
+    float: left;
+    height: 36px;
+    background-position: 0px -58px;
+}
+.ReadingRecovery {
+    background-image: url('../../Portals/0/images/reading_recovery.png');
+}
+.ESL {
+    background-image: url('../../Portals/0/images/ESL.png');
+}
+.EditStudentProfile_Div {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: inline-block;
+    height: 30px;
+    width: 90%;
+    border: 1px outset lightgrey;
+    background-color: White;
+}
+.EditStudentProfile_TextBox {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: inline-block;
+    color: #4578A5;
+    width: 97%;
+    height: 26px;
+    border: 0px solid white;
+    font-weight: bold;
+    padding-left: 5px;
+    margin-top: 1px;
+    font-size: 1em;
+}
+.EditStudentProfile_Span {
+    width: 5%;
+    font-size: 2.6em;
+    color: #2E5083;
+    float: left;
+    text-align: center;
+    padding-top: 2px;
+}
+.StudentProfile_MainDiv {
+    width: 94.5%;
+    margin: 32px 0px 3px 20px;
+    float: left;
+}
+.StudentProfile_Name_H2 {
+    font-family: KievitCL_OT-Bold;
+    font-size: 28pt;
+    font-weight: 100;
+    margin: 3px 3px 3px 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    padding: 0px;
+}
+.StudentProfile_ReadingLevelSliderTopDiv,
+.StudentProfile_ReadingLevelSliderBottomDiv {
+    width: 97%;
+    margin-left: 10px;
+}
+.StudentProfile_IncrementButton {
+    background-image: url('../../Portals/0/images/plus.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.StudentProfile_DecrementButton {
+    background-image: url('../../Portals/0/images/minus.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.StudentProfile_IncrementButton,
+.StudentProfile_DecrementButton {
+    width: 33px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    height: 24px;
+}
+.StudentProfile_IncrementButton:hover,
+.StudentProfile_DecrementButton:hover {
+    text-decoration: none;
+    color: transparent;
+}
+.StudentProfile_DecrementButtonDiv {
+    width: 18%;
+    float: left;
+    margin-top: 21px;
+    margin-left: 17px;
+}
+.StudentProfile_IncrementButtonDiv {
+    width: 30%;
+    float: right;
+    margin-top: 21px;
+}
+.StudentProfile_ReadingLevelValueDiv {
+    width: 41%;
+    text-align: center;
+}
+.StudentProfile_FourBoxes_OuterBox {
+    width: 100%;
+    float: left;
+    margin-top: 18px;
+    height: 148px;
+}
+.StudentProfile_FourBoxes_InnerBox {
+    width: 48.8%;
+    float: left;
+}
+.LevelBooksRead {
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.ReadingTypeDiv_TypeLabel {
+    color: #707070;
+    font-weight: bold;
+    float: left;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+.ReadingTypeDiv_TopDiv {
+    display: inline-block;
+    float: left;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+.RecordingsTable {
+    border-top: 1px solid lightgray;
+    width: 93.4%;
+    float: left;
+    display: none;
+    padding-top: 20px;
+    padding: 20px;
+}
+.UploadBooks_AddButton {
+    width: 116px;
+}
+.BorderLines {
+    float: left;
+    margin-top: -12px;
+    min-height: 30px;
+    margin-left: 77px;
+    width: 90%;
+}
+.Independent_PaddingStyle {
+    padding-bottom: 40px;
+    padding-left: 29px;
+}
+.Independent_NodePaddingStyle {
+    padding-bottom: 40px;
+}
+.Guided_CoverPaddingStyle {
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 15px;
+}
+.Independent_CoverPaddingStyle {
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+}
+.Guided_NodePaddingStyle {
+    padding-left: 4px;
+}
+.Guided_PaddingStyle {
+    padding-left: 26px;
+}
+.RecordingsGridViewstyle {
+    float: left;
+}
+.RecordingsMax {
+    background-image: url('../../Portals/0/images/record.png');
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 27px;
+    border: 0px;
+    cursor: pointer;
+}
+.RecordingsMin {
+    background-image: url('../../Portals/0/images/mini.png');
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 27px;
+    border: 0px;
+    cursor: pointer;
+}
+.classSearchwater {
+    font-family: KievitCL_OT-Bold;
+    color: #717171;
+    font-weight: normal;
+    font-size: 10pt !important;
+}
+.EditSessionProfile_Div {
+    border-radius: 3px;
+    display: inline-block;
+    height: 30px;
+    width: 76%;
+    border: 1px solid lightgrey;
+    background-color: White;
+    margin: 10px 0px 0px 23px;
+}
+.EditSessionProfile_TextBox {
+    border-radius: 3px;
+    display: inline-block;
+    width: 97%;
+    height: 22px;
+    border: 0px solid white;
+    padding-left: 5px;
+    margin-top: 1px;
+    font-size: 1em;
+    font-style: italic;
+}
+.EditSessionProfile_Span {
+    width: 5%;
+    font-size: 2.6em;
+    color: #2E5083;
+    float: left;
+    text-align: center;
+    padding-top: 2px;
+}
+.Session {
+    font-size: 12pt;
+    color: #7A7A7A;
+    float: left;
+    font-weight: 500;
+}
+.CancelSession {
+    color: White;
+    font-family: KievitCL_OT-Bold;
+    font-weight: normal;
+    font-size: 8.45pt;
+    cursor: pointer;
+    float: right;
+    margin-right: 0px;
+    padding: 6px;
+    background-image: url('../../Portals/0/images/cancelbutton.png');
+    color: white;
+    padding-left: 39px;
+    height: 36px;
+    width: 183px;
+    border: 0px solid transparent;
+    margin-top: 10px;
+}
+.SessionAddButton {
+    width: 100% !important;
+    cursor: pointer;
+    float: right;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-image: none !important;
+    color: white;
+    padding-left: 25px !important;
+    height: 35px !important;
+    border: 0px solid transparent;
+    width: 122px;
+    background: transparent !important;
+}
+.SessionAddStudentButton {
+    padding-left: 40px;
+    height: 35px;
+    font-size: smaller;
+    background-image: url('../../Portals/0/images/ButtonBG.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px -133px;
+    font-family: KievitCL_OT-Bold;
+    font-size: 8pt;
+    color: #6A6A6A;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: normal;
+}
+.SortRead {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 4px;
+    font-size: smaller;
+    background-color: White;
+    cursor: pointer;
+    background-image: url('../../Portals/0/images/asc.png');
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.SortReadDesc {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 4px;
+    font-size: smaller;
+    background-color: White;
+    cursor: pointer;
+    background-image: url('../../Portals/0/images/desc.png');
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    border: none;
+}
+.UpSortRead {
+    width: 150px;
+    height: 16px;
+    float: right;
+    margin-right: 4px;
+    display: inline-block;
+    text-align: center;
+    font-size: smaller;
+    background-color: White;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -khtml-border-radius: 10px;
+    cursor: pointer;
+    background-image: url('../../Portals/0/images/asc.png');
+    background-position: right 50%;
+    background-color: #F7F5F6;
+    background-repeat: no-repeat;
+    border: 1px solid lightgray;
+}
+.AllOtherGroupsDiv {
+    float: left;
+    width: 100%;
+    padding-bottom: 6px;
+}
+.ArchivedSessionOuterDiv
+{
+  float: left;
+}
+.AllOtherGroupsImgDiv {
+    float: left;
+    width: 8%;
+    padding-left: 62px;
+}
+.AllOtherGroupsImgDiv img {
+    margin-left: -17px;
+    float: left;
+    margin-top: 37px;
+}
+.AllotherGroupDivBtn {
+    margin-right: 26px;
+    height: 50px;
+    float: left;
+    position: relative;
+}
+.AllOtherGroupBtn {
+    color: #717171;
+    text-align: left;
+    text-indent: 9px;
+    width: 96%;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px solid white;
+    background-color: white;
+    margin-top: 10px;
+    background-image: url('../../Portals/0/images/Arrow_up.png');
+    background-repeat: no-repeat;
+    background-position: right 60%;
+    font-size: 12pt;
+    font-weight: normal;
+    font-family: KievitCL_OT-Bold;
+    padding-left: 72px;
+    outline: none;
+}
+.LevelBooksRead {
+    margin-top: 10px;
+    text-align: justify;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.HeaderStyle {
+    color: #20B3E6;
+}
+.TodayDateItalics {
+    margin-top: 5px;
+    text-align: center;
+    height: 10px;
+    margin-bottom: 2px;
+    margin-left: 25px;
+    font-size: 9.5pt;
+    font-weight: bold;
+}
+.ReadingTypeDiv_PercentageLabel {
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.ReadingTypeDiv_TypeLabel {
+    float: left;
+    margin-top: 8px;
+    margin-left: 3px;
+}
+.ReadingTypeDiv_TopDiv {
+    display: inline-block;
+    float: left;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+.LastNodeDiv {
+    width: 100%;
+    float: left;
+    margin-left: 36px;
+}
+.KenduoSearchTextBox {
+    color: #707070 !important;
+    width: 100% !important;
+    font-weight: bold !important;
+}
+.RepeaterContentDiv {
+    float: left;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.RepeaterContentFstDiv {
+    float: left;
+    margin-top: 23px;
+    margin-left: -8px;
+}
+
+.RepeaterFstCol {
+    float: left;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+#RepeaterFstCol {
+    float: left;
+    width: 40px;
+    display: inline-block;
+}
+.RepeaterFstCol img {
+    width: 20px;
+    margin-top: 3px;
+}
+.CreateSession {
+    color: White;
+    font-family: KievitCL_OT-Bold, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 8.45pt;
+    cursor: pointer;
+    float: right;
+    margin-right: 0;
+    padding: 6px;
+    background-image: url('../../Portals/0/images/ButtonBG.jpg');
+    color: white;
+    padding-left: 39px;
+    height: 35px;
+    width: 150px;
+    border: 0px solid transparent;
+    margin-top: 10px;
+}
+.Notes {
+    resize: none;
+    color: #707070;
+    height: 90px;
+    border: 0px solid white !important;
+    width: 99%;
+    float: left;
+}
+.H1Heading {
+    color: #707070;
+    font-size: 20pt;
+}
+.H2Heading {
+    color: #707070;
+    font-size: 28pt;
+}
+.H3Heading {
+    color: #707070;
+    font-family: KievitCL_OT-Bold;
+    font-size: 13pt;
+}
+.H4Heading {
+    color: #707070;
+    font-family: KievitCL_OT-Bold;
+    font-size: 11pt;
+    font-weight: normal;
+}
+.H5Heading {
+    color: #707070;
+    font-family: KievitCL_OT-Bold;
+    font-size: 10pt;
+}
+.H6Heading {
+    color: #707070;
+    font-size: 10.5pt;
+}
+.PaddingL5{
+   padding-left:5px !important;
+}
+.EditSessionImage {
+    width: 33px;
+    height: 33px;
+    float: left;
+    margin-right: 4px;
+    cursor: pointer;
+    background-image: url('../../Portals/0/images/editsession.png');
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+}
+.EndSessionImage {
+    width: 33px;
+    height: 33px;
+    float: left;
+    margin-right: 4px;
+    font-size: smaller;
+    cursor: pointer;
+    background-image: url('../../Portals/0/images/endsession.png');
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+}
+/*****************Books***************/
+
+.BooksDivset {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+.BooksSearchdiv {
+    float: left;
+    width: 93%;
+    margin-left: 25px;
+    border: 1px solid lightgray;
+    margin-top: 0px;
+    height: 40px;
+}
+.BooksSearchdiv input[type=text] {
+    border: 0px solid white;
+    width: 320px;
+    height: 30px;
+    position: absolute;
+}
+.BooksSearchdiv input[type=submit] {
+    color: #1479A4;
+    float: right;
+    width: 173px;
+    height: 33px;
+    margin-top: 3px;
+    margin-right: 3px;
+    border: 1px solid lightgray;
+    box-shadow: 1px 2px lightgray;
+    border-radius: 5px;
+    background: -moz-linear-gradient(center top, white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+    background: -ms-linear-gradient(top, #fdfdfd 5%, #EAE9E9 130%) !important;
+}
+.BooksSliderdiv {
+    float: left;
+    width: 650px;
+    margin-left: 25px;
+    border: 1px solid lightgray;
+    margin-top: 14px;
+    height: 122px;
+}
+.BooksContentDiv {
+    width: 93%;
+    float: left;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.ClassBookcheckimg {
+    margin-left: 15px;
+    width: 20px;
+}
+.ClassBookitemdiv {
+    width: 100%;
+    float: left;
+}
+.ClassBooknmlbl {
+    color: #707070;
+    font-size: 12pt;
+    font-family: KievitCL_OT-Bold;
+    font-weight: normal;
+}
+.ClassBooknmspn {
+    color: #707070;
+    font-size: 12pt;
+    font-family: KievitCL_OT-Bold;
+    font-weight: nomral;
+}
+.ClassBookauthorlbl {
+    color: #707070;
+    margin-top: 5px;
+    font-size: 10pt;
+    float: left;
+}
+.ClassBookinnerdiv {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    color: #707070;
+    font-size: 10pt;
+}
+.ClassBookindivlbl {
+    margin-top: 5px;
+    float: left;
+}
+.TeacherDashBoard_TeacherNames {
+    color: #727272 !important;
+    font-weight: bold;
+    font-size: 12pt;
+}
+.BooksAddedDiv {
+    float: left;
+    width: 88%;
+    margin-top: 17px;
+    margin-left: 13px;
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+.BooksAddedDiv_Label {
+    float: left;
+    width: 25%;
+    font-weight: bold;
+}
+.BooksAddedDiv_Content {
+    min-height: 90px;
+}
+.DashBoard_Items_books_Holder {
+    float: left;
+    width: 103%;
+    margin-top: 5px;
+}
+.DashBoard_Items_books {
+    float: left;
+    width: 12%;
+    padding: 10px 0px 5px 0px;
+}
+.DashBoard_Items_books_images {
+    width: 140px;
+    height: 122px;
+    border: 1px solid lightgray;
+}
+#DropdownDiv {
+    width: 100%;
+    float: left;
+}
+#DropdownDiv .k-dropdown-wrap {
+    background: -moz-linear-gradient(center top, white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9)) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0') !important;
+    background: -ms-linear-gradient(top, #fdfdfd 5%, #EAE9E9 130%) !important;
+    box-shadow: 1px 1px 2px lightgray;
+}
+.ActiveSessionsButton {
+    width: 571px;
+    height: 20px;
+    float: left;
+    margin-right: 7px;
+    background-color: White;
+    cursor: pointer;
+/*    background-image: url('../../Portals/0/images/arrow_up.png'); */
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    border: none;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #717171;
+    text-align: left;
+    text-indent: 5px;
+    padding: 0px;
+}
+.ActiveSessionsButtondown {
+    background-image: url('../../Portals/0/images/arrow_down.png');
+}
+.FinishedSessionsButton {
+    float: left;
+    margin-right: 7px;
+    background-color: White;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    padding: 0px;
+    padding: 20px 0 0 0;
+    float: left;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: KievitCL_OT-Bold;
+    color: #707070
+}
+.ArchivedSessionsButton {
+    color: #717171;
+    text-align: left;
+    text-indent: 5px;
+    padding: 0px;
+    width: 569px;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px solid white;
+    background-color: white;
+    margin-top: 10px;
+    background-image: url('../../Portals/0/images/Arrow_up.png');
+    background-repeat: no-repeat;
+    background-position: 99.5% 60%;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.ArchivedSessionsButtondown {
+    background-image: url('../../Portals/0/images/Arrow_down.png');
+}
+.BackToSession {
+    cursor: pointer;
+    float: right;
+    margin-right: 2px;
+    padding: 6px 10px 10px 27px;
+    font-size: 8.45pt;
+    color: white;
+    height: 32px;
+    border: 0px solid transparent;
+    width: 122px;
+    margin-top: 5px;
+    background-color: transparent;
+}
+.TeachersList_Contents {
+    /*width: 93.76%;*/
+    
+    width: 102%;
+    float: left;
+    border: 1px solid lightgray;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: -moz-linear-gradient(center top, white 0%, white 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+    background: -ms-linear-gradient(top, #fdfdfd 5%, #EAE9E9 130%) !important;
+    height: 50px;
+    margin-left: -21px;
+}
+.Session_WordCountBG {
+    background-image: url('../../Portals/0/images/circle_white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/***index****/
+
+.greenBtn,
+.dbldgreenBtn {
+    border-radius: 3px;
+    height: 34px;
+    width: 91%;
+    float: right;
+    margin-right: 8px;
+}
+.His_LabelDivUp {
+    background-image: url('../../Portals/0/images/Arrow_Up.png') !important;
+}
+.His_LabelDivDown {
+    background-image: url('../../Portals/0/images/Arrow_down.png') !important;
+}
+.TodayHistory_LabelDiv {
+    float: left;
+    width: 85%;
+    background-repeat: no-repeat !important;
+    background-position: 100% 82% !important;
+    margin-top: 11px;
+    margin-left: 0px;
+    font-size: 11.5pt !important;
+    color: #707070;
+    font-weight: bold !important;
+}
+.HistoryNodeDIv {
+    float: left;
+    width: 6.5%;
+    padding-top: 15px;
+}
+.HistoryDiv {
+    width: 100%;
+    float: left;
+    margin-left: -8px;
+    margin-top: 20px;
+    min-height: 40px;
+}
+.HistoryContent {
+    width: 91%;
+    float: left;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 5px lightgray;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -khtml-border-radius: 2px;
+    background: -moz-linear-gradient(center top, white 0%, #F9F9F9 5%, #E8E8E8 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#E8E8E8));
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E8E8E8', gradientType='0');
+    background: -ms-linear-gradient(top, #F9F9F9 5%, #E8E8E8 130%) !important;
+    margin-left: 12px;
+}
+.HistoryContent_BookCover {
+    width: 19%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.HistoryContent_SessionType {
+    width: 9%;
+    float: left;
+    margin-top: 58px;
+    margin-left: 20px;
+}
+.HistoryContent_BookName {
+    margin: 5px 0px 5px 30px !important;
+    padding: 0;
+    font-weight: 700 !important;
+    font-size: 11pt !important;
+    color: #707070;
+}
+.PlayAll {
+    float: left;
+    padding-top: 2px;
+    margin-right: 9px;
+    font-style: italic;
+    font-weight: bold;
+    color: #707070;
+    font-size: 10pt;
+}
+.HistoryContent_DateTime {
+    padding: 0px !important;
+    width: 100% !important;
+    font-size: 9pt !important;
+    margin-bottom: 12px !important;
+    padding-left: 30px !important;
+    margin-top: 8px !important;
+}
+.PageCountLabel,
+.HistoryContent_DateTime {
+    font-style: italic;
+    color: #707070;
+    font-size: 10pt;
+}
+.HistoryContent_BookDetails {
+    width: 53.8%;
+    float: left;
+    padding-top: 23px;
+}
+.HistoryContent_ReadDetails {
+    width: 14%;
+    float: left;
+    text-align: center;
+    border-left: 1px solid lightgray;
+}
+.RecordingsTable {
+    border-top: 1px solid lightgray;
+    width: 93.4%;
+    float: left;
+    display: none;
+    padding-top: 20px;
+    padding: 20px;
+}
+.MyHistory_Calendar {
+    float: left;
+    width: 8%;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.HistoryContentHolder {
+    width: 100.5%;
+    float: left;
+    margin-bottom: 10px;
+}
+.History_Book_ReadingDetails {
+    margin-top: 6px;
+    float: left;
+    padding-bottom: 10px;
+    width: 105%;
+    margin-bottom: 5px;
+    font-size: 10pt;
+    color: Gray;
+    border-bottom: 1px solid lightgray;
+}
+.History_MyWordsLabel {
+    width: 90%;
+    float: left;
+    margin-left: 4px;
+    font-size: 11pt;
+    color: #707070;
+}
+.History_ReadingTime {
+    width: 100%;
+    float: left;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: Gray;
+    padding-bottom: 6px;
+}
+.Div_FullWidth {
+    font-size: 10pt;
+    color: #707070;
+}
+.RecordingButtonGradient {
+    background: -moz-linear-gradient(top, #689A2E 1%, #74A738 32%, #74A738 43%, #5E872E 95%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #689A2E), color-stop(32%, #74A738), color-stop(43%, #74A738), color-stop(95%, #5E872E));
+    background: -webkit-linear-gradient(top, #689A2E 1%, #74A738 32%, #74A738 43%, #5E872E 95%);
+    background: -o-linear-gradient(top, #689A2E 1%, #74A738 32%, #74A738 43%, #5E872E 95%);
+    background: -ms-linear-gradient(top, #689A2E 1%, #74A738 32%, #74A738 43%, #5E872E 95%);
+    background: linear-gradient(to bottom, #689A2E 1%, #74A738 32%, #74A738 43%, #5E872E 95%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#689A2E', endColorstr='#5E872E', GradientType=0);
+    border: 1px solid #97af82;
+    float: left;
+    cursor: pointer;
+    height: 27px;
+    width: 122px;
+    box-shadow: none;
+    border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.RecordingButtonGradient:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #537A37), color-stop(32%, #59833A), color-stop(43%, #557D38), color-stop(95%, #436A32)) !important;
+    background: -webkit-linear-gradient(top, #537A37 1%, #59833A 32%, #557D38 43%, #436A32 95%) !important;
+    background: -o-linear-gradient(top, #537A37 1%, #59833A 32%, #557D38 43%, #436A32 95%) !important;
+    background: -ms-linear-gradient(top, #537A37 1%, #59833A 32%, #557D38 43%, #436A32 95%) !important;
+    background: linear-gradient(to bottom, #537A37 1%, #59833A 32%, #557D38 43%, #436A32 95%) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#537A37', endColorstr='#436A32', GradientType=0) !important;
+}
+.RecordButtonRevBackground {
+    height: 10px;
+    padding-left: 0px;
+    width: 11px;
+    border: none;
+    background: url('../../Portals/0/images/minmax.png') 90% 47% no-repeat transparent;
+    float: right;
+    margin-top: 10px;
+    margin-right: 9px;
+}
+.RecordButtonBackground {
+    height: 27px;
+    text-align: left;
+    padding-left: 14px;
+    width: 81%;
+    text-shadow: 1px 2px 2px rgb(103, 141, 26);
+    font-weight: 700;
+    font-size: 8pt;
+    border: none;
+    color: White;
+    background: none;
+    cursor: pointer;
+}
+.sortimage {
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    /* Firefox */
+    
+    -webkit-transform: rotate(180deg);
+    /* Safari and Chrome */
+    
+    -o-transform: rotate(180deg);
+    background-position: 20% 69% !important;
+    filter: progid: DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=-1, M12=0, M21=0, M22=-1);
+    /* IE6,IE7 */
+    
+    -ms-filter: progid: DXImageTransform.Microsoft.Matrix(M11 -1, M12 0, M21 0, M22 -1, SizingMethod 'auto expand');
+    /*IE8+*/
+}
+.dnnFormMessage {
+    width: 88.6%;
+    margin: 20px 0px 0px 14px;
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 10px 10px 10px 40px;
+    text-transform: uppercase;
+    text-shadow: none !important;
+}
+.dnnFormWarning {
+    border-color: #EE3873;
+    background-color: #ED165D;
+    background-image: url(../../portals/0/images/error_icon.png);
+    background-position: 25px center;
+}
+.dnnFormSuccess {
+    background-color: #73A638;
+    background-image: url(../../portals/0/images/success_icon.png);
+    background-position: 35px center;
+    border: 1px solid #639624;
+}
+.dnnFormSuccess,
+.dnnFormWarning {
+    color: white;
+    margin-bottom: -10px;
+    background-repeat: no-repeat;
+}
+.dnnMsgHolder {
+    width: 94%;
+    margin-left: 35px;
+}
+.dnnMsgScript {
+    width: 81.5% !important;
+    padding: 10px 10px 10px 75px !important;
+}
+/****popup***/
+
+.AfterRenewelHeaderSpan {
+    font-size: 28pt;
+    float: left;
+    margin-left: 34px;
+    margin-bottom: auto;
+    color: #707070;
+}
+.popupokbtn {
+    font-weight: 700;
+    font-size: 10pt;
+    border-radius: 3px;
+    color: White;
+    width: 135px;
+    height: 35px;
+    margin-left: 250px;
+    float: left;
+    border: 1px solid #6EB8C6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#01B3D7), to(#008FAC));
+    background: -moz-linear-gradient(center top, white 0%, #01B3D7 5%, #008FAC 130%) repeat scroll 0 0 transparent;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#01B3D7', endColorstr='#008FAC', gradientType='0');
+    padding: 5px;
+    cursor: pointer;
+}
+.popupokbtn:hover {
+    background: -moz-linear-gradient(center top, #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000')";
+    background: -ms-linear-gradient(top, #0B82A5 5%, #15617B 130%) !important;
+}
+.k-widget .k-window {
+    margin-top: 10%;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.k-window .k-resize-handle {
+    display: none !important;
+}
+.k-window {
+    box-shadow: none;
+    background: transparent;
+}
+.k-window div.k-window-content {
+    overflow: hidden;
+}
+div.k-window {
+    border: 0px solid white;
+}
+.k-header {
+    background-color: white;
+    border: none;
+}
+.k-block > .k-window-titlebar {
+    border-bottom-style: none;
+}
+.k-window-titlebar {
+    background: transparent !important;
+    border: none !important;
+}
+.k-window-action {
+    background-image: url('../../Portals/0/images/close.png') !important;
+    opacity: 1 !important;
+    height: 26px !important;
+    width: 26px !important;
+    z-index: 1003 !important;
+    margin-right: -32px !important;
+    margin-top: 8px !important;
+    border: none !important;
+    margin-left: -10px;
+}
+.k-window-action.k-link.k-state-hover:hover {
+    background-image: url('/Portals/0/images/glyphicons.png') !important;
+    background-position: -12px -10px !important;
+}
+.k-window-actions {
+    background: transparent;
+}
+.kclose {
+    background-image: url('../../Portals/0/images/close.png') !important;
+    height: 28px !important;
+    width: 28px !important;
+}
+.k-i-close {
+    background-image: initial !important;
+}
+.k-window-titlebar .k-state-hover {
+    padding: -1px !important;
+}
+.k-window-action .k-link {
+    display: block !important;
+    position: fixed !important;
+}
+.k-icon .k-i-close {
+    background-image: none !important;
+}
+div.k-window {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.StudentAllOtherButton {
+    background-image: url('../../Portals/0/images/Allothers.png') !important;
+}
+.GrpClassSearchDiv {
+    margin-left: 2px;
+    margin-top: 36px;
+}
+/*****CreatSessionDashBoard***/
+
+.CancelButtonHolder {
+    background: -moz-linear-gradient(center top, white 0%, #fdfdfd 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+    margin-left: 24px;
+    float: left;
+    background: -ms-linear-gradient(top, #fdfdfd 5%, #EAE9E9 130%) !important;
+}
+.CancelButtonHolder input[type=submit] {
+    color: #707070 !important;
+    text-shadow: none;
+}
+.DisabledAddButtonHolder input[type=submit][disabled] {
+    cursor: default;
+    background-color: transparent;
+    color: #A5A3A3 !important;
+    text-shadow: 1px 1px #F4F4F4;
+    /*filter:alpha(opacity=5);*/
+    
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.DisabledDeleteButtonHolder input[type=submit][disabled] {
+    cursor: default;
+    background-color: transparent;
+    color: #A5A3A3 !important;
+    text-shadow: 1px 1px #F4F4F4;
+    /*filter:alpha(opacity=5);*/
+    
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.popupokbtn {
+    font-weight: 700;
+    font-size: 10pt;
+    border-radius: 3px;
+    color: White;
+    width: 135px;
+    height: 35px;
+    margin-left: 250px;
+    float: left;
+    border: 1px solid #6EB8C6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#01B3D7), to(#008FAC));
+    background: -moz-linear-gradient(center top, white 0%, #01B3D7 5%, #008FAC 130%) repeat scroll 0 0 transparent;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#01B3D7', endColorstr='#008FAC', gradientType='0');
+    padding: 5px;
+    cursor: pointer;
+}
+.popupokbtn:hover {
+    background: -moz-linear-gradient(center top, #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000')";
+    background: -ms-linear-gradient(top, #0B82A5 5%, #15617B 130%) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px !important;
+    padding: 0px !important;
+    color: #707070 !important;
+}
+/* Top header*/
+
+h1 {
+    font-size: 29pt !important;
+}
+h3 {
+    font-size: 21pt !important;
+}
+/*Page sub headings. ex:Create page*/
+
+h5 {
+    font-weight: 700 !important;
+    font-size: 11pt !important;
+    margin-bottom: 10px !important;
+}
+.AfterRenewelHeaderSpan {
+    font-size: 28pt;
+    float: left;
+    margin-left: 34px;
+    margin-bottom: auto;
+    color: #707070;
+}
+.CalendarDiv {
+    width: 117% !important;
+    float: left;
+}
+.CalendarDiv span.k-widget.k-datepicker.k-header {
+    height: 32px !important;
+}
+.CalendarDiv .k-icon {
+    background-image: url('../../Portals/0/images/sprite.png') !important;
+}
+.Highlight {
+    background-color: #8D8D8D !important;
+    background-image: none !important;
+    color: White !important;
+    border: 1px solid #707070 !important;
+}
+.page {
+    background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#E9E9E9));
+    background: -moz-linear-gradient(to bottom, #F9F9F9, #E9E9E9);
+    background: progid: DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E9E9E9', gradientType='0');
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#F9F9F9', gradientType='0');*/
+    
+    background-color: rgb(234, 233, 233);
+    padding: 5px 8px;
+    margin-right: 6px;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    background: -ms-linear-gradient(top, #F9F9F9 5%, #EAE9E9 130%) !important;
+}
+.SortText {
+    margin-left: 0px;
+    font-weight: 700;
+    text-decoration: none !important;
+    color: #707070;
+    cursor: pointer;
+}
+.Pager {
+    width: 106%;
+    float: left;
+    margin-top: 12px;
+}
+.Pager a[disabled] {
+    cursor: default;
+    background-color: rgb(234, 233, 233);
+    color: #A5A3A3 !important;
+}
+.dottedlink {
+    background: none;
+    border: none !important;
+    text-decoration: underline !important;
+    color: blue !important;
+    margin-left: 0px;
+    font-weight: 700;
+    padding: 0px;
+    margin-right: 0px;
+    background-color: White !important;
+}
+.circle_big {
+    background-image: url('../../Portals/0/images/circle_big.png');
+}
+.tick_student {
+    background-image: url('../../Portals/0/images/tick_student.png');
+}
+#DrpSubscription-list .k-state-selected,
+#DrpSubscription-list .k-list > .k-state-selected,
+#DrpSubscription-list .k-list > .k-state-focused,
+#DrpSubscription-list .k-panelbar > .k-state-selected,
+#DrpSubscription-list .k-panel > .k-state-selected,
+#SearchTextBox-list .k-state-selected,
+#SearchTextBox-list .k-list > .k-state-selected,
+#SearchTextBox-list .k-list > .k-state-focused,
+#SearchTextBox-list .k-panelbar > .k-state-selected,
+#SearchTextBox-list .k-panel > .k-state-selected,
+#classSearchTextBox-list .k-state-selected,
+#classSearchTextBox-list .k-list > .k-state-selected,
+#classSearchTextBox-list .k-list > .k-state-focused,
+#classSearchTextBox-list .k-panelbar > .k-state-selected,
+#classSearchTextBox-list .k-panel > .k-state-selected,
+#GroupSearchTextBox-list .k-state-selected,
+#GroupSearchTextBox-list .k-list > .k-state-selected,
+#GroupSearchTextBox-list .k-list > .k-state-focused,
+#GroupSearchTextBox-list .k-panelbar > .k-state-selected,
+#GroupSearchTextBox-list .k-panel > .k-state-selected {
+    background: #707070 !important;
+    border: 1px solid #707070 !important;
+    color: White !important;
+}
+#DrpSubscription-list .k-state-hover,
+#SearchTextBox-list .k-state-hover,
+#classSearchTextBox-list .k-state-hover,
+#GroupSearchTextBox-list .k-state-hover {
+    background: #CCC !important;
+    border: 1px solid #707070 !important;
+    color: Black !important;
+}
+#DrpSubscription-list ul,
+#SearchTextBox-list ul,
+#classSearchTextBox-list ul,
+#GroupSearchTextBox-list ul {
+    background: -moz-linear-gradient(center top, white 0%, white 5%, #DBD9D9 130%) repeat scroll 0 0 transparent !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9)) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0') !important;
+    background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+}
+.finishBtns {
+    opacity: 1 !important;
+}
+.StudentProfile_Sub_Div {
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FAFDFD', endColorstr='#E5F6FE', gradientType='0');
+}
+.StudentProfile_Sub_Div2 {
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FAFDFD', endColorstr='#F9EFD1', gradientType='0');
+}
+.FinishedSessionUpdatePanelSubDiv {
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+}
+.ClassRepeaterSubDiv {
+    float: left;
+    border: 1px solid #9e9e9e;
+    background: #FFF !important;
+    position: relative;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    width: 598px !important;
+    padding: 8px;
+	margin-bottom:8px;
+}
+.SessionHeadClass {
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FDFDFD', endColorstr='#E7E7E7', gradientType='0');
+}
+.k-window-action.k-link {
+    margin-top: -25px !important;
+}
+.CreateSwitch {
+    display: inline-block;
+    float: left;
+    margin-top: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 39px;
+    margin-left: 100px;
+    background-image: url("../../Portals/0/images/guided_on.png");
+}
+.independant_on {
+    background-image: url("../../Portals/0/images/independant_on.png") !important;
+}
+.AudPlayBtn {
+    background-image: url('../../Portals/0/images/play_button.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 22px;
+    height: 20px;
+    border: none;
+    margin-left: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+    float: left;
+}
+.pgNameAdj {
+    float: left;
+    margin-top: 3px;
+}
+.GroupsDivtest h2 {
+    margin: 10px 0 !important;
+    font-size: 30px;
+}
+#SessionListDiv {
+    padding: 20px;
+    float: left;
+}
+#eClSearchLabel {
+    background: none repeat scroll 0 0 #f5f5f5;
+    border-right: 1px solid #707070;
+    color: #707070;
+    float: left;
+    font-family: KievitCL_OT-Bold;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 10px 0 10px 14px;
+    text-align: left;
+    width: 100px;
+}
+.search-bar {
+    width: 654px;
+    height: 34px;
+    border: 1px solid #707070;
+    float: left;
+    background-color: #FFF;
+    position: relative;
+    z-index: 50;
+    margin-bottom: 20px;
+}
+.SearchTextCss {
+    width: 490px !important;
+    padding-left: 7px !important;
+    font-size: 10pt !important;
+    float: left;
+    background: transparent !important;
+    padding-top: 4px;
+    color: Gray;
+    height: 29px;
+    border: 0px solid white !important;
+    box-shadow: none !important;
+    padding-top: 4px !important;
+}
+.counts {
+    display: none
+}
+#ClassProfileButton,
+#GroupsProfileButton {
+    float: right;
+}
+#GroupRepeaterContentDiv,
+#FinishedSessionOuterDiv {
+    float: left;
+}
+#GroupRepeaterContentDiv {
+    width: 40px;
+}
+#GroupsRepeaterDiv {
+    float: left;
+    border: 1px solid #9e9e9e;
+    background: #FFF !important;
+    position: relative;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    width: 598px !important;
+    padding: 8px;
+	margin-bottom:8px !important;
+}
+.contents-list {
+    float: left;
+    display: inline-block;
+    width: 375px;
+}
+.contents-list .contents-msg
+{
+  float: left;
+  width: 375px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+.repeater-btn-ctrls
+{
+float: right;
+  padding-right: 5px;
+  padding-top: 2px;
+    margin-top: -10px;
+  margin-bottom: -10px;
+}
+}
+.repeater-btn-ctrls  a
+{
+ float:left;
+}
+.repeater-btn-ctrls  input
+{
+float:right;
+}
+.repeater-btn-ctrls .btn-general {
+  background: #F5F5F5 !important;
+  color: #707070 !important;
+  border: 1px solid #707070 !important;
+  padding: 7px 28px !important;
+  margin-right: 8px !important;
+  cursor: pointer;
+  float:left;
+  }
+.select-all {
+    height: 19px;
+    padding: 5px 15px;
+    width: 100px;
+    border: 1px solid #707070;
+    float: left;
+    display: inline-block;
+}
+.KenduoComboBoxClassDiv .k-combobox .k-icon {
+    margin-top: 2px !important;
+    cursor: pointer;
+    background-image: url('Portals/0/images/Arrow_down.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    margin-right: 10px;
+}
+.KenduoComboBoxClassDiv .k-dropdown-wrap {
+    border-color: white !important;
+    background-color: white !important;
+    text-indent: 20px;
+}
+.KenduoComboBoxClassDiv .k-dropdown-wrap .k-state-hover {
+    border-color: white !important;
+    background-color: white !important;
+}
+.KenduoComboBoxClassDiv .k-combobox {
+    width: 99% !important;
+    top: 7px !important;
+    float: left;
+    margin-left: -2px !important;
+}
+.KenduoComboBoxClassDiv .k-combobox .k-input {
+    box-shadow: inset 0 0 1px 1px white;
+    -webkit-box-shadow: inset 0 0 1px 1px white;
+}
+.KenduoComboBoxClassDiv .k-state-selected.k-state-focused {
+    background-color: #4578A5 !important;
+    border-color: #4578A5 !important;
+}
+.KenduoComboBoxClassDiv .k-item.k-state-focused {
+    background-color: #4578A5 !important;
+    border-color: #4578A5 !important;
+}
+.KenduoComboBoxClassDiv .k-input[type="text"] {
+    font-weight: bold;
+    font-size: 12pt;
+}
+.KenduoComboBoxClassDiv .k-state-hover:hover {
+    background: transparent !important;
+    border: none;
+    height: 100%;
+}
+#divfinish span {
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    margin-top: 5px;
+}
+.GroupsDivtest {
+    width: 100%;
+    float: left;
+}
+.SelectAllSpan {
+    cursor: pointer;
+    float: left;
+    margin: 3px 0 0 12px;
+    font-size: 12px;
+    font-family: KievitCL_OT-Bold;
+    letter-spacing: 1px;
+}
+.SelectallCheckBox {
+    float: left;
+    height: 21px;
+    width: 20px;
+    cursor: pointer;
+    display: none;
+}
+.GroupsSortReaddiv {
+    float: right;
+    font-size: 10pt;
+    display: none;
+}
+.SearchInnerDiv {
+    width: 654px;
+    float: left;
+}
+#SearchTextBox-list {
+    width: 500px !important;
+}
+.GroupSearchbtn {
+    width: 85px;
+    background-color: #EAEAEA;
+    border: 0px solid gray;
+    cursor: pointer;
+    height: 24px;
+    display: inline-block;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 5px;
+    -khtml-border-radius: 6px;
+}
+.KenduoSearchTextBox::-webkit-input-placeholder {
+    color: #707070;
+}
+.KenduoSearchTextBox::-moz-placeholder {
+    color: #707070;
+    opacity: 1;
+}
+input:-moz-placeholder {
+    color: #707070;
+    opacity: 1;
+}
+.eClUserSearchDiv:-ms-input-placeholder {
+    color: #707070;
+    font-size: 10pt;
+}
+.KenduoSearchTextBox:-ms-input-placeholder {
+    color: #707070;
+}
+.classSearchTextBox:-ms-input-placeholder {
+    color: #707070;
+    font-size: 10pt;
+}
+.classSearchTextBox::-moz-placeholder {
+    color: #707070;
+    opacity: 1;
+    font-size: 10pt;
+}
+.eClUserSearchDiv::-moz-placeholder {
+    color: #707070;
+    opacity: 1;
+    font-size: 10pt;
+}
+.eClUserSearchDiv::-webkit-input-placeholder {
+    color: #707070;
+    opacity: 1;
+    font-size: 10pt;
+}
+
+#SessionListDiv .eClUserSearchDiv
+{
+width: 615px !important;
+}
+.classSearchTextBox::-webkit-input-placeholder {
+    color: #707070;
+    font-size: 10pt;
+}
+.Sessions_WordCountBG {
+    float: left;
+    margin-bottom: 7px;
+    height: 37px;
+    margin-top: -26px;
+    margin-left: 15px;
+}
+.SessionsWordCountBG {
+    width: 28px;
+    margin-top: 10px;
+}
+.Sessions_WordCount {
+    margin-left: -36px;
+    font-size: 11pt;
+    float: left;
+    z-index: 10000;
+    margin-top: 44px;
+    font-weight: bold;
+    position: relative;
+}
+.ArchivedSessions_WordCountBG {
+    float: left;
+    margin-bottom: 7px;
+    height: 37px;
+    margin-top: 2px;
+    margin-left: 20px;
+}
+.CreateLinkStyle {
+    float: left;
+    color: #47C5DC !important;
+    margin-left: 124px;
+}
+ 
+.categorybysort .k-dropdown-wrap .k-input {
+    height: 22px;
+    line-height: 22px;
+	margin-top: 1px;
+  padding-bottom: 0px;
+}
+.categorybysort label {
+    float: left;
+    padding: 9px 0 0 6px;
+}
+.categorybysort .k-dropdown {
+    width: 90px;
+    background: #F5F5F5 !important;
+}
+.categorybysort .k-dropdown-wrap {
+    float: left;
+    display: inline-block;
+    background: #FFF;
+    border: 0 none;
+}
+.categorybysort .k-widget .k-dropdown-wrap,
+.k-dropdown-wrap.k-state-focused,
+.k-dropdown-wrap.k-state-focused:hover {
+    background: #F5F5F5 !important;
+    border: 0 none !important;
+    float: right;
+}
+.categorybysort.k-dropdown {
+    float: left;
+    width: 165px !important;
+    display: inline-block;
+}
+.categorybysort .k-dropdown-wrap.k-icon {
+    display: inline-block!important;
+    vertical-align: text-top;
+    background-image: url('/Portals/0/images/glyphicons.png')!important;
+    background-position: -151px -7px!important;
+    width: 30px!important;
+    height: 22px!important;
+    float: right;
+    margin-top: 0;
+}
+.categorybysort .k-popup .k-item {
+    background: #FFF;
+    color: #707070;
+    padding: 6px 0 6px 15px !important
+}
+.categorybysort .k-state-selected.k-state-focused,
+.categorybysort .k-state-hover {
+    color: #0089D1!important;
+    background: #FFF !important;
+    border: 0 none !important;
+}
+#sessionssortdpn-list {
+    width: 160px !important;
+    margin-left: -62px;
+    border: 1px solid #707070;
+    background: #FFF;
+    padding: 0;
+}
+#sessionssortdpn_listbox li {
+    border-bottom: 1px solid #707070 !important;
+    color: #707070;
+    padding: 5px;
+}
+#sessionssortdpn_listbox .k-state-hover,
+#sessionssortdpn_listbox .k-state-focused,
+#sessionssortdpn_listbox .k-state-selected {
+    background: transparent !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0 none;
+    padding: 5px;
+    color: #0089c5;
+    line-height: 1.8em;
+}
+.categorybysort .k-state-border-down {
+    box-shadow: none !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 0 none !important;
+}
+.categorybysort .k-icon {
+    display: inline-block!important;
+    vertical-align: text-top;
+    background-image: url('/Portals/0/images/glyphicons.png')!important;
+    background-position: -162px -11px!important;
+    width: 12px!important;
+    height: 20px!important;
+    float: right;
+    margin-top: 0;
+}
+.ico-uncheck {
+    height: 22px !important;
+    background-position: -207px -14px !important;
+    width: 22px !important;
+    margin-top: 15px;
+}
+.ico-check {
+    background-position: -255px -14px !important;
+    width: 22px !important;
+    height: 22px !important;
+    margin-top: 15px;
+    float: left;
+}
+#SelectAllDiv .ico-check,
+#SelectAllDiv .ico-uncheck {
+    margin-top: 0 !important;
+
+	}
+#SessionListDiv .ico-check,#SessionListDiv .ico-uncheck
+{
+	margin-top:15px;
+}
+.student-class
+{
+padding: 20px 0 0 0;
+  float: left;
+  width: 115px;
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: KievitCL_OT-Bold;
+}
+.student-line {
+  height: 2px;
+  background: #9e9e9e;
+  width: 440px;
+  display: inline-block;
+  float: left;
+  margin: 28px 10px 0 0;
+}
+
+.hide-show
+{
+  width: 655px;
+  float: left;
+}
+
+.hide-show .btn
+{
+  margin: 0;
+  float: right;
+  margin-top: 12px
+}
+
+ 
+.contents-list .session-date
+{
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; 
+	float: left;
+    width: 375px;
+}
+.contents-list .H4Heading{
+	text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; 
+	float: left;
+    max-width: 290px;
+}
+
+/***/
+.ess-messageouterDiv
+{
+width:100%;
+position:static ;
+}
+.HideItems
+{
+display:none;
+}
+.ess-ReadinglevelButton
+{
+width: 135px;
+color:gray;
+}
+.ess-UpdatePanel1
+{
+width: 20px;
+float: left;
+}
+.ess-DateCreatedAscButton
+{
+width: 124px;
+color: #707070;
+font-size: 9pt;
+}
+
+.ess-DateCreatedDescButton
+{ 
+color: #707070;
+font-size: 9pt;
+width: 124px; 
+} 
+.ess-b
+{
+margin: 0px 1px 0px 10px;
+float: left;
+}
+.ess-UpdatePanel5
+{
+width: 20px;
+float: left;
+}
+.ess-NamesAscButton
+{
+width: 56px;
+text-indent: -9px;
+font-size: 9pt;
+color: #707070;
+}
+.ess-NamesDescButton
+{
+width: 56px;
+text-indent: -9px;
+font-size: 9pt;
+color: #707070;
+}
+
+.List_Contents {
+  float: left;
+  border: 1px solid #9e9e9e;
+  background: #FFF !important;
+  position: relative;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  width: 602px !important;
+  padding: 0px 6px;
+}
+
+.TeachersList_TeacherNames {
+  float: left;
+  padding: 16px 10px;
+}
+.srtbtnshide
+{
+display:none;
+}
+.List_Contents .btn {
+  float: right;
+  margin-right: 5px;
+}
+
+.checkdiv {
+  float: left;
+  cursor: pointer;
+  width: 40px;
+  padding-top: 3px;
+}
+
+.teacher-lists {
+  margin-bottom: 10px;
+  margin-left:21px;
+  float: left;
+}
+.ess-SearchDiv
+{
+width: 654px;
+  float: left;
+  border: 1px solid #707070;
+  height: 34px;
+  position: relative;
+  margin-left: 21px;
+  margin-top: 20px;
+}
+.SearchInnerDiv label {
+  background: none repeat scroll 0 0 #f5f5f5;
+  border-right: 1px solid #707070;
+  color: #707070;
+  float: left;
+  font-family: KievitCL_OT-Bold;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 14px;
+  text-align: left;
+  width: 100px;
+}
+.classSearchwater {
+  height: 29px !important;
+  background: transparent !important;
+  padding-left: 7px !important;
+  padding-top: 1px !important;
+  box-shadow: none !important;
+  border: none !important;
+  font-size: 10pt !important;
+  width: 500px;
+}
+
+.ess-gp-RepeaterContentDiv {
+  float: left;
+  width: 100%;
+   
+}
+.eg-hide {
+  display: none;
+}
+.Repeater1stCol {
+  width: 60px;
+  padding-right: 15px;
+  float: left;
+  padding-left: 10px;
+  margin-top: 7px;
+}
+.Repeater1stCol div:first-child, .RepeaterSndCol div:first-child {
+  text-align: center;
+}
+.Repeater1stCol div:last-child, .RepeaterSndCol div:last-child {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.RepeaterContentScndDiv {
+  float: left;
+  border: 1px solid #9e9e9e;
+  background: #FFF !important;
+  position: relative;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  width: 608px !important;
+  padding: 0px 8px;
+}
+.Repeater3rdCol {
+  float: right;
+  padding-right: 5px;
+}
+.RepeaterSndColSpan {
+  font-size: 11pt;
+  color: #707070;
+  font-weight: bold;
+}
+.RepeaterThrdCollbl {
+  color: #1479A4 !important;
+  font-size: 11pt;
+  font-weight: bold;
+}
+.RepeaterSndCollbl {
+  font-size: 12pt;
+  color: #707070;
+  font-weight: bold;
+}
+.RepeaterSndCol {
+  width: 200px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 7px;
+}
+
+.ess-eg-RepeaterFstCol {
+  float: left;
+  width: 40px;
+}
+
+.GroupTopDiv {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.GroupSelectAll {
+  height: 20px;
+  border: 1px solid #707070;
+  float: left;
+  display: inline-block;
+  padding: 5px 15px;
+  margin-left: 21px;
+}
+.eg-lfloat {
+  float: left;
+}
+.SelectAllSpan {
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  font-family: KievitCL_OT-Bold;
+  letter-spacing: 1px;
+  margin: 4px 0 0 8px;
+}
+.categorybysort {
+  border: 1px solid #707070!important;
+  list-style: none!important;
+  float: right !important;
+  text-align: left;
+  background: #F5F5F5 !important;
+  width: 160px;
+  margin-left: 7px!important;
+  margin-right: 23px!important;
+  height: 30px !important;
+  font-size: 11px;
+}
+/***/
+#SelectallCheckBox, #ClassCheckBoxImg, #groupImage1, #Img2, #Img1,#CheckBoxAll {
+  display: none;
+}
+.SelectallCheckBoxclass {
+  float: left;
+  height: 21px;
+  width: 20px;
+  cursor: pointer;
+}
+.GroupSelectAll .ico-uncheck {
+  margin-top:1px;
+}
+.teacher-lists .ico-uncheck{
+  margin-top: 10px;
+}
+.SearchDiv {
+  width: 654px;
+  float: left;
+  border: 1px solid #707070;
+  height: 34px;
+  position: relative;
+  margin-left: 21px;
+  margin-top: 20px;
+}
+.SearchInnerDiv label {
+  background: none repeat scroll 0 0 #f5f5f5;
+  border-right: 1px solid #707070;
+  color: #707070;
+  float: left;
+  font-family: KievitCL_OT-Bold;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 14px;
+  text-align: left;
+  width: 100px;
+}
+.GroupsDivtest .ClassSearchDiv{
+  padding: 0px 0px 0px 21px;
+}
+.GroupsDivtest .KenduoComboBoxClassDiv
+{
+	width: 100px;
+}
+.ess-gp-RepeaterContentDiv .RepeaterContentScndDiv
+{
+width: 598px !important;
+}
+.ess-gp-RepeaterContentDiv .RepeaterContentDiv
+{
+padding-left: 21px;
+}
+.GroupsDivtest .student-line
+{
+width: 444px;
+}
+.eCollectionContentInnerStyle  
+{
+  width: 100%;
+  float: left;
+  z-index: -1000;
+  background-color: white;
+}
+.RepeaterLftConntrLine{
+width: 100%; 
+float: left;  
+padding-bottom: 0px; 
+margin-top: -6px;
+}
+ 
+#groupssortdpn_listbox
+{
+ width: 160px !important;
+  margin-left: -65px;
+  border: 1px solid #707070;
+  background: #FFF;
+  padding: 0;
+  margin-top: -2px;
+}
+ #groupssortdpn_listbox li
+ {
+ border-bottom:1px solid #707070 !important;
+ color:#707070;
+   padding:5px;
+ }
+
+ #groupssortdpn_listbox .k-state-hover, #groupssortdpn_listbox .k-state-focused,  #groupssortdpn_listbox  .k-state-selected
+ {
+ background:transparent !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+  border-radius: 0; 
+  border-bottom:1px solid #707070 !important;
+    border-top:0 none !important;
+	  border-right:0 none !important;
+	    border-left:0 none !important;
+     padding:5px;
+  color:#0089c5 !important;
+line-height: 1.8em;
+ }
+
+.categorybysort .k-state-border-down
+{
+box-shadow:none !important;
+   -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+  border-radius: 0; 
+  border:0 none !important;
+}
+
+.categorybysort .k-icon {
+   display: inline-block!important;
+  vertical-align: text-top;
+  background-image: url('/Portals/0/images/glyphicons.png')!important;
+  background-position: -162px -11px!important;
+  width: 12px!important;
+  height: 20px!important;
+  float: right;
+  margin-top: 0;
+}

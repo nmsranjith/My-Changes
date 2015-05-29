@@ -1,0 +1,100 @@
+Z:\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+Z:\bin\eCollection_Dashboards.dll
+Z:\bin\eCollection_Dashboards.pdb
+Z:\bin\eCollection_Dashboards.xml
+Z:\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+Z:\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\eCollection_Students\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\eCollection_Students\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\eCollection_Students\eCommerce\Code\Integrated\bin\eCollection_Dashboards.dll
+D:\eCollection_Students\eCommerce\Code\Integrated\bin\eCollection_Dashboards.pdb
+D:\eCollection_Students\eCommerce\Code\Integrated\bin\eCollection_Dashboards.xml
+D:\eCollection_Students\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Dashboards.dll
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Dashboards.xml
+D:\test\bin\eCollection_Dashboards.dll
+D:\test\bin\eCollection_Dashboards.pdb
+D:\test\bin\eCollection_Dashboards.xml
+D:\test\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\test\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\test\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\Dec-11\bin\eCollection_Dashboards.dll
+D:\Dec-11\bin\eCollection_Dashboards.pdb
+D:\Dec-11\bin\eCollection_Dashboards.xml
+D:\Dec-11\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\Dec-11\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\Dec-11\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\Mar-28\Integrated\bin\eCollection_Dashboards.dll
+D:\Mar-28\Integrated\bin\eCollection_Dashboards.pdb
+D:\Mar-28\Integrated\bin\eCollection_Dashboards.xml
+D:\Mar-28\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\Mar-28\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\Mar-28\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Dashboards.dll
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Dashboards.pdb
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\bin\eCollection_Dashboards.xml
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+C:\d - Backup\WorkingIIS\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\May13\Integrated\bin\eCollection_Dashboards.dll
+D:\May13\Integrated\bin\eCollection_Dashboards.xml
+D:\May13\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\May13\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\May13\Integrated\bin\eCollection_Dashboards.pdb
+D:\May13\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\May20\Integrated\bin\eCollection_Dashboards.dll
+D:\May20\Integrated\bin\eCollection_Dashboards.pdb
+D:\May20\Integrated\bin\eCollection_Dashboards.xml
+D:\May20\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\May20\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\May20\Integrated\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+E:\eCollection Test\bin\eCollection_Dashboards.dll
+E:\eCollection Test\bin\eCollection_Dashboards.pdb
+E:\eCollection Test\bin\eCollection_Dashboards.xml
+E:\eCollection Test\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+E:\eCollection Test\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+E:\eCollection Test\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+E:\eCollectionTest\bin\eCollection_Dashboards.dll
+E:\eCollectionTest\bin\eCollection_Dashboards.pdb
+E:\eCollectionTest\bin\eCollection_Dashboards.xml
+E:\eCollectionTest\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+E:\eCollectionTest\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+E:\eCollectionTest\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+E:\Newcode\Deploy\bin\eCollection_Dashboards.dll
+E:\Newcode\Deploy\bin\eCollection_Dashboards.pdb
+E:\Newcode\Deploy\bin\eCollection_Dashboards.xml
+E:\Newcode\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+E:\Newcode\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+E:\Newcode\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+E:\SVNCODE\Deploy\bin\eCollection_Dashboards.dll
+E:\SVNCODE\Deploy\bin\eCollection_Dashboards.pdb
+E:\SVNCODE\Deploy\bin\eCollection_Dashboards.xml
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+E:\SVNCODE\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+E:\SVN\Deploy\bin\eCollection_Dashboards.dll
+E:\SVN\Deploy\bin\eCollection_Dashboards.pdb
+E:\SVN\Deploy\bin\eCollection_Dashboards.xml
+E:\SVN\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+E:\SVN\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+E:\SVN\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\SVNCODE\Deploy\bin\eCollection_Dashboards.dll
+D:\SVNCODE\Deploy\bin\eCollection_Dashboards.pdb
+D:\SVNCODE\Deploy\bin\eCollection_Dashboards.xml
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\SVNCODE\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+E:\Deployterm\Deploy\bin\eCollection_Dashboards.dll
+E:\Deployterm\Deploy\bin\eCollection_Dashboards.pdb
+E:\Deployterm\Deploy\bin\eCollection_Dashboards.xml
+E:\Deployterm\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+E:\Deployterm\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb
+D:\Deploy_1.0.13\Deploy\bin\eCollection_Dashboards.dll
+D:\Deploy_1.0.13\Deploy\bin\eCollection_Dashboards.pdb
+D:\Deploy_1.0.13\Deploy\bin\eCollection_Dashboards.xml
+D:\Deploy_1.0.13\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\ResolveAssemblyReference.cache
+D:\Deploy_1.0.13\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.dll
+D:\Deploy_1.0.13\Deploy\DesktopModules\eCollection_Dashboards\obj\Debug\eCollection_Dashboards.pdb

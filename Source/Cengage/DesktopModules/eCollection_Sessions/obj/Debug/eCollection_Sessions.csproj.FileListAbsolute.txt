@@ -1,0 +1,6 @@
+E:\Deployterm\Deploy\bin\eCollection_Sessions.dll
+E:\Deployterm\Deploy\bin\eCollection_Sessions.pdb
+E:\Deployterm\Deploy\bin\eCollection_Sessions.xml
+E:\Deployterm\Deploy\DesktopModules\eCollection_Sessions\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\eCollection_Sessions\obj\Debug\eCollection_Sessions.dll
+E:\Deployterm\Deploy\DesktopModules\eCollection_Sessions\obj\Debug\eCollection_Sessions.pdb

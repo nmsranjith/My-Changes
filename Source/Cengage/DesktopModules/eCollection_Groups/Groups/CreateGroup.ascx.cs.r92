@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using DotNetNuke.Common;
+using DotNetNuke.Entities.Portals;
+
+namespace DotNetNuke.Modules.eCollection_Groups.Groups
+{
+    public partial class CreateGroup : eCollection_GroupsModuleBase
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable dt1 = new DataTable();
+            DataRow dr1;
+
+            dt1.Columns.Add("TeacherName", typeof(string));
+
+            dr1 = dt1.NewRow();
+
+            dr1["TeacherName"] = "You";
+            dt1.Rows.Add(dr1);
+            DataRow dr2;
+            dr2 = dt1.NewRow();
+            dr2["TeacherName"] = "Briana";
+            dt1.Rows.Add(dr2);
+
+            TeacherDetailsRepeater.DataSource = dt1.DefaultView;
+            TeacherDetailsRepeater.DataBind();
+
+            DataTable dt2 = new DataTable();
+            DataRow dr4;
+
+            dt2.Columns.Add("StudentName", typeof(string));
+
+            dr4 = dt2.NewRow();
+
+            dr4["StudentName"] = "Ben";
+            dt2.Rows.Add(dr4);
+            DataRow dr5;
+            dr5 = dt2.NewRow();
+            dr5["StudentName"] = "Brendan";
+            dt2.Rows.Add(dr5);
+            DataRow dr3;
+            dr3 = dt2.NewRow();
+            dr3["StudentName"] = "Briana";
+            dt2.Rows.Add(dr3);
+            StudentDetailsRepeater.DataSource = dt2.DefaultView;
+            StudentDetailsRepeater.DataBind();
+
+        }
+
+        protected void CancelCreateGroup_Click(object sender, EventArgs e)
+        {
+          Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID));
+        }
+
+        protected void AddStudentButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=" + ADDSTUDENTTOCREATEGROUP);
+        }
+
+        protected void AddTeachersButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=" + ADDTEACHERTOCREATEGROUP);
+        }
+    }
+}

@@ -1,0 +1,325 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using DotNetNuke.Common;
+using DotNetNuke.Entities.Portals;
+using DotNetNuke.Modules.eCollection_Groups.Components;
+using System.Web.UI.HtmlControls;
+using _Groups = DotNetNuke.Modules.eCollection_Groups.Components.Groups;
+using System.Text;
+using DotNetNuke.Services.Exceptions;
+
+namespace DotNetNuke.Modules.eCollection_Groups.Groups
+{
+    public partial class GroupList : eCollection_GroupsModuleBase
+    {
+        #region Private Members
+        private List<_Groups> _groupList;
+        private List<_Groups> _classList;
+
+        private SortDirection GroupsSortDirection
+        {
+            get
+            {
+                if (Session["GroupsSortDirection"] == null)
+                    Session["GroupsSortDirection"] = SortDirection.Ascending;
+                return (SortDirection)Session["GroupsSortDirection"];
+            }
+            set { Session["GroupsSortDirection"] = value; }
+        }
+
+        private string GroupsSortExpression
+        {
+            get
+            {
+                if (Session["GroupsSortExpression"] == null)
+                    Session["GroupsSortExpression"] = "Name";
+                return (string)Session["GroupsSortExpression"];
+            }
+            set { Session["GroupsSortExpression"] = value; }
+        }
+
+        #endregion
+
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!IsPostBack)
+                {
+                    StudentList = null;
+                    HttpContext.Current.Response.Cookies["SelectedGroupId"].Value = "0";
+                    Session["studentList"] = null;
+                    TeachersList = null;
+                    Session["teacherList"] = null;
+                    Session["deletedStudent"] = null;
+                    DeletedStudentList = null;
+                    Session["deletedTeacher"] = null;
+                    DeletedTeachersList = null;
+                    FillClassList(ClassList);
+                    FillGroupsList(GroupLists);
+                    //SortAndBind();
+                }
+                else
+                {
+                    GroupListDashBoardMenu.studentSelected += new GroupListDashBoardMenu.PassSelectedValues(passValuesHandlerMethod);
+                    GroupListDashBoardMenu.GroupsSelected += new GroupListDashBoardMenu.PassSelectedValues(GetSelectedGroups);
+                }
+                classUpdatePanel.Update();
+                GroupUpdatePanel.Update();
+            }
+            catch (Exception exc)
+            {
+                Exceptions.ProcessModuleLoadException(this, exc);
+            }
+        }
+        protected void passValuesHandlerMethod()
+        {
+
+            List<int> classSk = new List<int>();
+
+            foreach (RepeaterItem rpItm in ClassRepeater.Items)
+            {
+                HtmlInputCheckBox checkbox = (HtmlInputCheckBox)rpItm.FindControl("ClassCheckBoxes");
+                if (checkbox.Checked)
+                {
+                    classSk.Add(int.Parse((rpItm.FindControl("classid") as Label).Text));
+                }
+            }
+            foreach (RepeaterItem rpItm in GroupsRepeater.Items)
+            {
+                HtmlInputCheckBox checkbox = (HtmlInputCheckBox)rpItm.FindControl("GroupCheckBoxes");
+                if (checkbox.Checked)
+                {
+                    classSk.Add(int.Parse((rpItm.FindControl("groupid") as Label).Text));
+                }
+            }
+            Components.Groups groups = new Components.Groups();
+            groups.ActiveFlag = 'N';//char.Parse(MyEnums.Active.Yes.ToString());
+            groups.UserCreated = "ADMIN";
+            groups.DateCreated = DateTime.Now;
+            GroupController.Instance.DeleteGroup(groups, classSk);
+            FillClassList(ClassList);
+            FillGroupsList(GroupLists);
+        }
+        protected void ClassProfileButton_Click(object sender, EventArgs e)
+        {
+            //Get the reference of the clicked button.
+            Button button = (sender as Button);
+            //Get the Repeater Item reference
+            RepeaterItem item = button.NamingContainer as RepeaterItem;
+            HttpContext.Current.Response.Cookies["SelectedGroupName"].Value = (item.FindControl("ClassNameSpan") as Label).Text;
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=groupprofile");
+        }
+        protected void GroupsProfileButton_Click(object sender, EventArgs e)
+        {
+            //Get the reference of the clicked button.
+            Button button = (sender as Button);
+            //Get the Repeater Item reference
+            RepeaterItem item = button.NamingContainer as RepeaterItem;
+
+            HttpContext.Current.Response.Cookies["SelectedGroupName"].Value = (item.FindControl("GroupNameSpan") as Label).Text;
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=groupprofile");
+        }
+        protected void AllOtherGroupButton_Click(object sender, EventArgs e)
+        {
+            AllotherGroupDivBtn.Style.Add("display", "none");
+
+            GroupsRepeater.DataSource = GroupLists;
+            GroupsRepeater.DataBind();
+            CheckALLUpdatePanel.Update();
+            classUpdatePanel.Update();
+            GroupUpdatePanel.Update();
+        }
+
+        protected void SortingButton_Click(object sender, EventArgs e)
+        {
+            GroupsSortExpression = "Name";
+
+            if (SortingButton.CommandName == "Ascending")
+            {
+                GroupsSortDirection = SortDirection.Descending;
+                SortingButton.CommandName = "Descending";
+                SortingButton.CssClass = String.Join(" ", SortingButton
+               .CssClass
+               .Split(' ')
+               .Except(new string[] { "", "sortimage" })
+               .Concat(new string[] { "sortimage" })
+               .ToArray());
+            }
+            else
+            {
+                GroupsSortDirection = SortDirection.Ascending;
+                SortingButton.CommandName = "Ascending";
+                SortingButton.CssClass = String.Join(" ", SortingButton
+               .CssClass
+               .Split(' ')
+               .Except(new string[] { "", "sortimage" })
+               .ToArray());
+            }
+
+            SortAndBind();
+            CheckALLUpdatePanel.Update();
+            classUpdatePanel.Update();
+            GroupUpdatePanel.Update();
+        }
+
+        protected void ReadingLevelButton_Click(object sender, EventArgs e)
+        {
+            GroupsSortExpression = "ReadingLevel";
+
+            if (ReadingLevelButton.CommandName == "Ascending")
+            {
+                GroupsSortDirection = SortDirection.Descending;
+                ReadingLevelButton.CommandName = "Descending";
+                ReadingLevelButton.CssClass = String.Join(" ", ReadingLevelButton
+               .CssClass
+               .Split(' ')
+               .Except(new string[] { "", "sortimage" })
+               .Concat(new string[] { "sortimage" })
+               .ToArray());
+            }
+            else
+            {
+                GroupsSortDirection = SortDirection.Ascending;
+                ReadingLevelButton.CommandName = "Ascending";
+                ReadingLevelButton.CssClass = String.Join(" ", ReadingLevelButton
+              .CssClass
+              .Split(' ')
+              .Except(new string[] { "", "sortimage" })
+              .ToArray());
+            }
+
+            SortAndBind();
+            CheckALLUpdatePanel.Update();
+            classUpdatePanel.Update();
+            GroupUpdatePanel.Update();
+        }
+
+        private void SortAndBind()
+        {
+            _groupList = GroupLists;
+            _classList = ClassList;
+
+            switch (GroupsSortExpression)
+            {
+                case "Name":
+                    _groupList.Sort();
+                    _classList.Sort();
+                    break;
+                case "ReadingLevel":
+                    _groupList.Sort(_Groups.GroupsReadingLevelSorter);
+                    _classList.Sort(_Groups.GroupsReadingLevelSorter);
+                    break;
+                case "DropDown":
+                    GroupsSortExpression = "";
+                    break;
+                default:
+                    break;
+            }
+
+            if (GroupsSortDirection == SortDirection.Descending)
+            {
+                _groupList.Reverse();
+                _classList.Reverse();
+            }
+
+            if (GroupsRepeater.Items.Count > 1)
+                FillGroupsList(_groupList);
+            if (ClassRepeater.Items.Count > 1)
+                FillClassList(_classList);
+        }
+        private void FillClassList(List<_Groups> _Classes)
+        {
+            if (_Classes != null && _Classes.Count > 0)
+            {
+                ClassRepeater.DataSource = _Classes;
+                ClassRepeater.DataBind();
+            }
+            else
+            {
+                ClassRepeater.DataSource = null;
+                ClassRepeater.DataBind();
+            }
+        }
+
+        private void FillGroupsList(List<_Groups> _Groups)
+        {
+            if (_Groups != null && _Groups.Count > 0)
+            {
+                GroupsRepeater.DataSource = _Groups;
+                GroupsRepeater.DataBind();
+            }
+            else
+            {
+                GroupsRepeater.DataSource = null;
+                GroupsRepeater.DataBind();
+            }
+        }
+
+        protected void GetSelectedGroups()
+        {
+            foreach (RepeaterItem rpItm in ClassRepeater.Items)
+            {
+                HtmlInputCheckBox checkbox = (HtmlInputCheckBox)rpItm.FindControl("ClassCheckBoxes");
+                if (checkbox.Checked)
+                {
+                    Components.Groups groups = ClassList.Find(delegate(Components.Groups _cus)
+                    {
+                        if (_cus.GroupId == int.Parse((rpItm.FindControl("classid") as Label).Text))
+                        {
+                            HttpContext.Current.Response.Cookies["SelectedGroupId"].Value = _cus.GroupId.ToString();
+                            return true;
+                        }
+                        return false;
+                    });
+                    TeachersList = groups.TeachersList;
+                    StudentList = groups.StudentList;
+                }
+            }
+            foreach (RepeaterItem rpItm in GroupsRepeater.Items)
+            {
+                HtmlInputCheckBox checkbox = (HtmlInputCheckBox)rpItm.FindControl("GroupCheckBoxes");
+                if (checkbox.Checked)
+                {
+                    Components.Groups groups = GroupLists.Find(delegate(Components.Groups _cus)
+                    {
+                        if (_cus.GroupId == int.Parse((rpItm.FindControl("groupid") as Label).Text))
+                        {
+                            HttpContext.Current.Response.Cookies["SelectedGroupId"].Value = _cus.GroupId.ToString();
+                            return true;
+                        }
+                        return false;
+                    });
+                    TeachersList = groups.TeachersList;
+                    StudentList = groups.StudentList;
+                }
+            }
+
+
+        }
+
+        protected void classSearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+           
+            ClassRepeater.DataSource = GroupController.Instance.GetGroupsByGroupID(5, ClassType, LoginName);
+            ClassRepeater.DataBind();
+            classUpdatePanel.Update();
+           
+        }
+
+        protected void GroupSearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            GroupsRepeater.DataSource = GroupController.Instance.GetGroupsByGroupID(5, GroupType, LoginName);
+            GroupsRepeater.DataBind();
+            GroupUpdatePanel.Update();
+
+        }
+
+    }
+}

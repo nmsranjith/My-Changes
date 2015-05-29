@@ -1,0 +1,15 @@
+D:\HE_CODE\Deploy\bin\SavedSearch.dll
+D:\HE_CODE\Deploy\bin\SavedSearch.pdb
+D:\HE_CODE\Deploy\bin\SavedSearch.xml
+D:\HE_CODE\Deploy\DesktopModules\SavedSearch\obj\Debug\ResolveAssemblyReference.cache
+D:\HE_CODE\Deploy\DesktopModules\SavedSearch\obj\Debug\SavedSearch.pdb
+D:\HECODE\Deploy\bin\SavedSearch.dll
+D:\HECODE\Deploy\bin\SavedSearch.pdb
+D:\HECODE\Deploy\bin\SavedSearch.xml
+D:\HECODE\Deploy\DesktopModules\SavedSearch\obj\Debug\ResolveAssemblyReference.cache
+D:\HECODE\Deploy\DesktopModules\SavedSearch\obj\Debug\SavedSearch.pdb
+E:\Deployterm\Deploy\bin\SavedSearch.dll
+E:\Deployterm\Deploy\bin\SavedSearch.pdb
+E:\Deployterm\Deploy\bin\SavedSearch.xml
+E:\Deployterm\Deploy\DesktopModules\SavedSearch\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\SavedSearch\obj\Debug\SavedSearch.pdb

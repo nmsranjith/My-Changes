@@ -1,0 +1,2244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eCollection_Dashboards</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.eCollection_DashboardsModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_DashboardsModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.eCollection_DashboardsModuleBase.WriteAudioPath(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Insert all path,word and context audio file details of a book
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.eCollection_DashboardsModuleBase.ImportExcelXLS(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="FileName"></param>
+            <param name="hasHeaders"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.BackBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.ContinueStepsBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.TeachersCheck">
+            <summary>
+            TeachersCheck control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.StudCheck">
+            <summary>
+            StudCheck control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.GrpsCheckDiv">
+            <summary>
+            GrpsCheckDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.GroupsCheck">
+            <summary>
+            GroupsCheck control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.MOveAllStudentDiv">
+            <summary>
+            MOveAllStudentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.MOveAllStudent">
+            <summary>
+            MOveAllStudent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.BooksCheck">
+            <summary>
+            BooksCheck control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.BackBtn">
+            <summary>
+            BackBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.ContinueBtn">
+            <summary>
+            ContinueBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.Upgradeflaghdn">
+            <summary>
+            Upgradeflaghdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.UpgradeStepCnt">
+            <summary>
+            UpgradeStepCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.IsLicLesshdn">
+            <summary>
+            IsLicLesshdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.IsQtyLesshdn">
+            <summary>
+            IsQtyLesshdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.BackClickhdn">
+            <summary>
+            BackClickhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.jscheck">
+            <summary>
+            jscheck control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStepOne.renewupgradehdn">
+            <summary>
+            renewupgradehdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AsianUsersSetUp.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AsianUsersSetUp.txtAttachment">
+            <summary>
+            txtAttachment control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AsianUsersSetUp.AttachAFile">
+            <summary>
+            AttachAFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AsianUsersSetUp.UploadBooksButton">
+            <summary>
+            UploadBooksButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AsianUsersSetUp.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AsianUsersSetUp.UploadBooksButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Upload the excel file to do bulk upload of teacher and admin profiles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.btnSubmit_Click(System.Object,System.EventArgs)">
+            <summary>
+            Report Generation button event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.MainListView_ItemDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+             Main ListView databinding event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.AccountsSection_ItemDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            Account Section databinding event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.UserSection_ItemDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            User Section databinding event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.BooksSection_ItemDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            Books Section databinding event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SessionsSection_ItemDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+             Sessions Section databinding event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.ErrorsSection_ItemDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            Error Section databinding event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.hdnFrom">
+            <summary>
+            hdnFrom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.hdnTo">
+            <summary>
+            hdnTo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.ddlAccount">
+            <summary>
+            ddlAccount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.Panel1">
+            <summary>
+            Panel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.ckblInfo">
+            <summary>
+            ckblInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.btnSubmit">
+            <summary>
+            btnSubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.maindiv">
+            <summary>
+            maindiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleAccountSection">
+            <summary>
+            SingleAccountSection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleAccountSectionTable">
+            <summary>
+            SingleAccountSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleAccountSectionList">
+            <summary>
+            SingleAccountSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleUserSectionTable">
+            <summary>
+            SingleUserSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleUserSectionList">
+            <summary>
+            SingleUserSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleBooksSectionTable">
+            <summary>
+            SingleBooksSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleBooksSectionList">
+            <summary>
+            SingleBooksSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleSessionsSectionTable">
+            <summary>
+            SingleSessionsSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleSessionsSectionList">
+            <summary>
+            SingleSessionsSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleErrorsSectionTable">
+            <summary>
+            SingleErrorsSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SingleErrorsSectionList">
+            <summary>
+            SingleErrorsSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.MultipleAccountsSection">
+            <summary>
+            MultipleAccountsSection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.AccountSectionTable">
+            <summary>
+            AccountSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.AccountSectionMainList">
+            <summary>
+            AccountSectionMainList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.UserSectionTable">
+            <summary>
+            UserSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.UserSectionList">
+            <summary>
+            UserSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.BooksSectionTable">
+            <summary>
+            BooksSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.BooksSectionList">
+            <summary>
+            BooksSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SessionsSectionTable">
+            <summary>
+            SessionsSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.SessionsSectionList">
+            <summary>
+            SessionsSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.ErrorsSectionTable">
+            <summary>
+            ErrorsSectionTable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.ErrorsSectionList">
+            <summary>
+            ErrorsSectionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.AppDataCollection.DateValidation">
+            <summary>
+            DateValidation control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.UserDetails(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users)">
+            <summary>
+            Get logged in user details
+            </summary>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.VideoGetStartedClose(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users)">
+            <summary>
+            Close the video / get started steps
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetSubscriptionsList(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users)">
+            <summary>
+            Get all the subscriptions for the user
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.ValidateSubs(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.MigrateRenewalSubscription(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.UpgradeFlags)">
+            <summary>
+            
+            </summary>
+            <param name="flags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.UpgradeSubscription(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.UpgradeFlags)">
+            <summary>
+            
+            </summary>
+            <param name="flags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.AddSubscriptionName(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            Add a name to a subscription
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.SubscriptionDetails(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users)">
+            <summary>
+            Get subscription details
+            </summary>
+            <param name="subsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetStartedDetails(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetPurchaseDetails(System.Int32)">
+            <summary>
+            Get Purchased Details of the subscription
+            </summary>
+            <param name="subsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetAllDates(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            Get all dates of the activities done by the user
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetDailyActivities(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            Get all particular activity data of the user
+            </summary>
+            <param name="subscriptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetUpgradedActivities(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            Get all upgraded details of the subscription
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetAllBooksAdded(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            Get all added books of the subscription with added date
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.ClearAllCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.StartRenewal(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="loginName"></param>
+            <param name="RenewType"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetRenewalLicenseCount(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="loginName"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.UpdateInActiveAndArchive(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="loginName"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetRenewalSubscriptionName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetRenewalBookCount(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="loginName"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetAllrenewels(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subsid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetCountries">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetAccountDetails">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetReportInfo(System.DateTime,System.DateTime,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fromdate"></param>
+            <param name="todate"></param>
+            <param name="accountsk"></param>
+            <param name="reportType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetAccountInformation(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="Account_Sk"></param>
+            <param name="fromdate"></param>
+            <param name="todate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.UploadTeacherProfiles(System.Xml.XmlDocument)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.InsertAudioFiles(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Audio)">
+            <summary>
+            
+            </summary>
+            <param name="audio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+            <param name="errorMessage"></param>
+            <param name="SubsSk"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Controller.DashboardController.GetUserinfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.pl_error">
+            <summary>
+            pl_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.lit_error">
+            <summary>
+            lit_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.pl_success">
+            <summary>
+            pl_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.lit_success">
+            <summary>
+            lit_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.pl_info">
+            <summary>
+            pl_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.lit_info">
+            <summary>
+            lit_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.ClearMessages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.ShowError(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.ShowWarning(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.ShowSuccess(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.eCollectionMessages.ShowInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.BindActivities">
+            <summary>
+            
+            </summary>
+            <param name="activityListView"></param>
+            <param name="activityList"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.LoadMore_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.ActivityRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.BookRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.SeeAllBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.LoadMorepanel">
+            <summary>
+            LoadMorepanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.ActivityRepeater">
+            <summary>
+            ActivityRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.LoadMoreImg">
+            <summary>
+            LoadMoreImg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.LoadMoreButton">
+            <summary>
+            LoadMoreButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.BoolCount">
+            <summary>
+            BoolCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.ItemCount">
+            <summary>
+            ItemCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.SelectedrprPanel">
+            <summary>
+            SelectedrprPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.DailyActivities.SelectedBkRpr">
+            <summary>
+            SelectedBkRpr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from eCollection_DashboardsSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.eCollection_DashboardsSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_DashboardsSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.Handlers.Dashboard_Handler">
+            <summary>
+            Summary description for Dashboard_Handler
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Handlers.Dashboard_Handler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Processes all the request done from javascript
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from eCollection_DashboardsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.eCollectionMenuPlaceHolder">
+            <summary>
+            eCollectionMenuPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.FunctionalityPlaceHolder">
+            <summary>
+            FunctionalityPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.ContentPlaceHolder">
+            <summary>
+            ContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.SubsDetailsPlaceHdr">
+            <summary>
+            SubsDetailsPlaceHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.VideoPlaceHdr">
+            <summary>
+            VideoPlaceHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.DailyActivitiesPlaceHdr">
+            <summary>
+            DailyActivitiesPlaceHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.PurchaseDetailsPlaceHdr">
+            <summary>
+            PurchaseDetailsPlaceHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.PurchasePlaceHolder">
+            <summary>
+            PurchasePlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.SubsCnt">
+            <summary>
+            SubsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.SelectedSubscription">
+            <summary>
+            SelectedSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.View.schoolname">
+            <summary>
+            schoolname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.PurchaseDetails.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.PurchaseDetails.FillPurchaseDetails">
+            <summary>
+            Fill the Purchase Details
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.PurchaseDetails.PurchaseDetailrepeater">
+            <summary>
+            PurchaseDetailrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.customerservice.UploadBooksButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Upload the excel file to do bulk upload of teacher and admin profiles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.customerservice.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.customerservice.txtAttachment">
+            <summary>
+            txtAttachment control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.customerservice.AttachAFile">
+            <summary>
+            AttachAFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.customerservice.UploadBooksButton">
+            <summary>
+            UploadBooksButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.customerservice.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.FillSubscriptionDetails">
+            <summary>
+            Fill the Subscription Details
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.UsedLicenses">
+            <summary>
+            UsedLicenses control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.TotalLicenses">
+            <summary>
+            TotalLicenses control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.AddedBooks">
+            <summary>
+            AddedBooks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.upgradeDivEcoll">
+            <summary>
+            upgradeDivEcoll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.DaysLeft">
+            <summary>
+            DaysLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.UpgradeLink">
+            <summary>
+            UpgradeLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.UpgradeTrialLink">
+            <summary>
+            UpgradeTrialLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.renewDiv">
+            <summary>
+            renewDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.expdate">
+            <summary>
+            expdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.btnRenew">
+            <summary>
+            btnRenew control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.DaysLeftDiv">
+            <summary>
+            DaysLeftDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.GraceDaysLeft">
+            <summary>
+            GraceDaysLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.renewPanePlaceHolder">
+            <summary>
+            renewPanePlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionDetails.parentsubsid">
+            <summary>
+            parentsubsid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.BackBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.FinishStepsBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.MoveStudDiv">
+            <summary>
+            MoveStudDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.MoveStudArchDiv">
+            <summary>
+            MoveStudArchDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.FinishBtn">
+            <summary>
+            FinishBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.upgradeFlaghdn">
+            <summary>
+            upgradeFlaghdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeStep2.renewupgradehdn1">
+            <summary>
+            renewupgradehdn1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeMainScreen.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeMainScreen.FreshStartBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeMainScreen.UpgradeWizardBtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.UpgradeMainScreen.jscheck">
+            <summary>
+            jscheck control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for eCollection_Dashboards
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditeCollection_Dashboards class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from eCollection_DashboardsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditeCollection_Dashboards class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.CreateLink">
+            <summary>
+            CreateLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.SubstopDiv">
+            <summary>
+            SubstopDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.SubsHeadingid">
+            <summary>
+            SubsHeadingid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.SubscriptionTypeRptr">
+            <summary>
+            SubscriptionTypeRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.SelectedSubsHdn">
+            <summary>
+            SelectedSubsHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.renewPanePlaceHolder">
+            <summary>
+            renewPanePlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.UserRoleHdn">
+            <summary>
+            UserRoleHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.parentsubsid">
+            <summary>
+            parentsubsid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.FillSubscription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.UseButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.SubscriptionsList.SubscriptionTypeRptr_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.RenewalButton">
+            <summary>
+            RenewalButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.BackButton">
+            <summary>
+            BackButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.BackToDashboard">
+            <summary>
+            BackToDashboard control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.AfterRenewelYear">
+            <summary>
+            AfterRenewelYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.lblSubscriptionName">
+            <summary>
+            lblSubscriptionName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.CheckAllTeachers">
+            <summary>
+            CheckAllTeachers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.CheckAllStudents">
+            <summary>
+            CheckAllStudents control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.licencesCount">
+            <summary>
+            licencesCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.CheckMoveall">
+            <summary>
+            CheckMoveall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.BooksRenewel">
+            <summary>
+            BooksRenewel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.CheckStart">
+            <summary>
+            CheckStart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.DaysLeftLabel">
+            <summary>
+            DaysLeftLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.StartButton">
+            <summary>
+            StartButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.AdvancedSetupLink">
+            <summary>
+            AdvancedSetupLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.lnkStartButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Common.LeftDashboard.StartButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.UserDetails(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users)">
+            <summary>
+            Get logged in user details
+            </summary>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetSubscriptionsList(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.AddSubscriptionName(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.SubscriptionDetails(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetPurchaseDetails(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetStartedDetails(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetAllDates(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetDailyActivities(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            
+            </summary>
+            <param name="subscription"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.VideoGetStartedClose(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Users)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetUpgradedActivities(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            
+            </summary>
+            <param name="subscriptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetAllBooksAdded(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Subscription)">
+            <summary>
+            
+            </summary>
+            <param name="subscriptions"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.StartAfterRenewal(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="UserCreated"></param>
+            <param name="RenewalType"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetRenewalLicenseCount(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="loginName"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.UpdateInActiveAndArchive(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="loginName"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetRenewalSubscriptionName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="UserCreated"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetRenewalBookCount(System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="UserCreated"></param>
+            <param name="NewCustSubs"></param>
+            <param name="OldCustSubs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetAllRenewels(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="UserCreated"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            Inserts data into util email table to send email on an occurrence of any exception
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetCountries">
+            <summary>
+            Method to get List Of Countries
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetAccountDetails">
+            <summary>
+            Method to get Account Details
+            </summary>
+            <returns>Account Details as Dataset</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetReportInfo(System.DateTime,System.DateTime,System.Int32,System.String)">
+            <summary>
+            Method to get Account Details
+            </summary>
+            <returns>Account Details as Dataset</returns>
+            
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetAccountInformation(System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="Account_Sk"></param>
+            <param name="fromdate"></param>
+            <param name="todate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.UploadTeacherProfiles(System.Xml.XmlDocument)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.ValidateSubs(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.MigrateRenewalSubscription(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.UpgradeFlags)">
+            <summary>
+            Migrate Renewal Subscription 
+            </summary>
+            <param name="flags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.UpgradeSubscription(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.UpgradeFlags)">
+            <summary>
+            
+            </summary>
+            <param name="flags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.InsertAudioFiles(DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Audio)">
+            <summary>
+            
+            </summary>
+            <param name="audio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Data.SqlDataProvider.GetUserinfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Model.DateCollection.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Activity.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.VideoPlaceHdr">
+            <summary>
+            VideoPlaceHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.VideoCloseButton">
+            <summary>
+            VideoCloseButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.GetStartedPlaceHdr">
+            <summary>
+            GetStartedPlaceHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.StepsDiv_Label">
+            <summary>
+            StepsDiv_Label control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.StepsCloseButton">
+            <summary>
+            StepsCloseButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.BooksStep">
+            <summary>
+            BooksStep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.AddedBooks">
+            <summary>
+            AddedBooks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.BooksStepTick">
+            <summary>
+            BooksStepTick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.TeachersStep">
+            <summary>
+            TeachersStep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.TeachersStepTick">
+            <summary>
+            TeachersStepTick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.StudentsStep">
+            <summary>
+            StudentsStep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.StudentsStepSno">
+            <summary>
+            StudentsStepSno control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.StudentsStepTick">
+            <summary>
+            StudentsStepTick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.VideoHdn">
+            <summary>
+            VideoHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.GetStartedHdn">
+            <summary>
+            GetStartedHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Views.Video_GetStarted.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Dashboards.Components.Model.Messages.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+    </members>
+</doc>

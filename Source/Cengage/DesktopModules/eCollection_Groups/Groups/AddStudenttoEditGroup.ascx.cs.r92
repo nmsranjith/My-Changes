@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Text;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
+
+namespace DotNetNuke.Modules.eCollection_Groups.Groups
+{
+    public partial class AddStudenttoEditGroup : System.Web.UI.UserControl
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable dt3 = new DataTable();
+            DataRow dr3;
+
+            dt3.Columns.Add("StudentName", typeof(string));
+            dr3 = dt3.NewRow();
+            dr3["StudentName"] = "Brendan";
+            dt3.Rows.Add(dr3);
+            DataRow dr4;
+            dr4 = dt3.NewRow();
+            dr4["StudentName"] = "Briana";
+            dt3.Rows.Add(dr4);
+            DataRow dr5;
+            dr5 = dt3.NewRow();
+            dr5["StudentName"] = "Brendan";
+            dt3.Rows.Add(dr5);
+            DataRow dr6;
+            dr6 = dt3.NewRow();
+            dr6["StudentName"] = "Ben";
+            dt3.Rows.Add(dr6);
+
+            StudentRepeater.DataSource = dt3.DefaultView;
+            StudentRepeater.DataBind();
+            //StringBuilder classnames = new StringBuilder();
+            //using (SqlConnection objSqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["SiteSqlServer1"].ConnectionString))
+            //{
+            //    using (SqlCommand objSqlCommand = new SqlCommand("Select Top 10 StudentID,StudentName from Students Order By StudentName", objSqlConnection))
+            //    {
+            //        // objSqlCommand.CommandType = CommandType.StoredProcedure;
+            //        //  objSqlCommand.Parameters.Add("@classnames", " WHERE Groups.GroupName NOT IN ("+Classes[PortalSettings.Current.UserInfo.FirstName].ToString()+")");
+            //        objSqlConnection.Open();
+            //        StudentRepeater.DataSource = objSqlCommand.ExecuteReader();
+            //        StudentRepeater.DataBind();
+
+            //        objSqlConnection.Close();
+            //    }
+            //}
+        }
+
+        protected void AllOtherGroupButton_Click(object sender, EventArgs e)
+        {
+            AllotherGroupDivBtn.Style.Add("display", "none");
+            DataTable dt3 = new DataTable();
+            DataRow dr3;
+
+            dt3.Columns.Add("StudentName", typeof(string));
+            dr3 = dt3.NewRow();
+            dr3["StudentName"] = "Brendan";
+            dt3.Rows.Add(dr3);
+            DataRow dr4;
+            dr4 = dt3.NewRow();
+            dr4["StudentName"] = "Ben";
+            dt3.Rows.Add(dr4);
+            DataRow dr5;
+            dr5 = dt3.NewRow();
+            dr5["StudentName"] = "Brendan";
+            dt3.Rows.Add(dr5);
+            DataRow dr6;
+            dr6 = dt3.NewRow();
+            dr6["StudentName"] = "Briana";
+            dt3.Rows.Add(dr6);
+            DataRow dr7;
+            dr7 = dt3.NewRow();
+            dr7["StudentName"] = "Ben";
+            dt3.Rows.Add(dr7);
+            DataRow dr8;
+            dr8 = dt3.NewRow();
+            dr8["StudentName"] = "Briana";
+            dt3.Rows.Add(dr8);
+            DataRow dr9;
+            dr9 = dt3.NewRow();
+            dr9["StudentName"] = "Brendan";
+            dt3.Rows.Add(dr9);
+            DataRow dr10;
+            dr10 = dt3.NewRow();
+            dr10["StudentName"] = "Ben";
+            dt3.Rows.Add(dr10);
+            StudentRepeater.DataSource = dt3.DefaultView;
+            StudentRepeater.DataBind();
+            //StringBuilder classnames = new StringBuilder();
+            //using (SqlConnection objSqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["SiteSqlServer1"].ConnectionString))
+            //{
+            //    using (SqlCommand objSqlCommand = new SqlCommand("Select Top 15 StudentID,StudentName from Students Order By StudentName", objSqlConnection))
+            //    {
+            //        // objSqlCommand.CommandType = CommandType.StoredProcedure;
+            //        //  objSqlCommand.Parameters.Add("@classnames", " WHERE Groups.GroupName NOT IN ("+Classes[PortalSettings.Current.UserInfo.FirstName].ToString()+")");
+            //        objSqlConnection.Open();
+            //        StudentRepeater.DataSource = objSqlCommand.ExecuteReader();
+            //        StudentRepeater.DataBind();
+
+            //        objSqlConnection.Close();
+            //    }
+            //}
+        }
+    }
+}

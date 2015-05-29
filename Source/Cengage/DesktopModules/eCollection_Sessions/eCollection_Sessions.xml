@@ -1,0 +1,3916 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eCollection_Sessions</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.eCollection_SessionsModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_SessionsModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.FillTeachersList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection},System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_teachers"></param>
+            <param name="totalCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.NamesAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.NamesDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.BackToSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SearchButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.GetSelectedTeachers">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.BuildSelectedItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SortAndBind(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="take"></param>
+            <param name="pageSize"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.TruncateName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.DetailsDiv">
+            <summary>
+            DetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.BackToSession">
+            <summary>
+            BackToSession control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SelectedValueGroupTextBox">
+            <summary>
+            SelectedValueGroupTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SelectedValueTeacherTextBox">
+            <summary>
+            SelectedValueTeacherTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.UpdatePanel5">
+            <summary>
+            UpdatePanel5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.NamesAscButton">
+            <summary>
+            NamesAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.NamesDescButton">
+            <summary>
+            NamesDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.BookUpdatePanel">
+            <summary>
+            BookUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.UpdatePanel2">
+            <summary>
+            UpdatePanel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.TeacherList">
+            <summary>
+            TeacherList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddTeachersToSession.SelectedTeachers">
+            <summary>
+            SelectedTeachers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group.CompareTo(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group.FillReadingLevel(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group.ConcatTeacherName(System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group.GroupsReadingLevelSorter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group.GroupsReadingLevelComparer.Compare(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group,DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group)">
+            <summary>
+            
+            </summary>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.ExceptionHandling.SessionValidationException.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.ExceptionHandling.SessionValidationException.#ctor(System.String,DotNetNuke.Modules.eCollection_Sessions.Components.Common.MyEnums.CrudState)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <param name="errorState"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.ExceptionHandling.SessionValidationException.getErrorMessage">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.ExceptionHandling.SessionValidationException.getErrorState">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from eCollection_SessionsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.PageHeader">
+            <summary>
+            PageHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.PageHeaderButton">
+            <summary>
+            PageHeaderButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.eCollectionMenuPlaceHolder">
+            <summary>
+            eCollectionMenuPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.FunctionalityPlaceHolder">
+            <summary>
+            FunctionalityPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.ContentPlaceHolder">
+            <summary>
+            ContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.SubsCnt">
+            <summary>
+            SubsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.SelectedSubscription">
+            <summary>
+            SelectedSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.PageName">
+            <summary>
+            PageName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.View.schoolname">
+            <summary>
+            schoolname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.CreateLink">
+            <summary>
+            CreateLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.SessionListDiv">
+            <summary>
+            SessionListDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.DateCreatedAscButton">
+            <summary>
+            DateCreatedAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.DateCreatedDescButton">
+            <summary>
+            DateCreatedDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.NamesAscButton">
+            <summary>
+            NamesAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.NamesDescButton">
+            <summary>
+            NamesDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.lblActiveSessionCount">
+            <summary>
+            lblActiveSessionCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.ActiveSessionsButton">
+            <summary>
+            ActiveSessionsButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.ActiveSessionList">
+            <summary>
+            ActiveSessionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.lblFinishedSessionCount">
+            <summary>
+            lblFinishedSessionCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.FinishedSessionsButton">
+            <summary>
+            FinishedSessionsButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.FinishedSessionList">
+            <summary>
+            FinishedSessionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.AllOtherGroupsDiv">
+            <summary>
+            AllOtherGroupsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.AllotherGroupDivBtn">
+            <summary>
+            AllotherGroupDivBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.lblArchivedSessionsCount">
+            <summary>
+            lblArchivedSessionsCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.AllOtherGroupButton">
+            <summary>
+            AllOtherGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.ArchivedSessionList">
+            <summary>
+            ArchivedSessionList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.ClassProfileButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.ClassProfileButton2_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.NamesAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.NamesDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.DateCreatedAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.DateCreatedDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.BindUpdatePanel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.SearchButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.FillActiveSessionsList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions})">
+            <summary>
+            
+            </summary>
+            <param name="_AllSessions"></param>      
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.FillFinishedSessionsList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions})">
+            <summary>
+            
+            </summary>
+            <param name="_AllSessions"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.FillArchivedSessionsList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions})">
+            <summary>
+            
+            </summary>
+            <param name="_AllSessions"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.Sessions.SortAndBind">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.pl_error">
+            <summary>
+            pl_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.lit_error">
+            <summary>
+            lit_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.pl_success">
+            <summary>
+            pl_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.lit_success">
+            <summary>
+            lit_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.pl_info">
+            <summary>
+            pl_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.lit_info">
+            <summary>
+            lit_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.ClearMessages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.ShowError(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.ShowWarning(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.ShowSuccess(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.eCollectionMessages.ShowInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.RisePopUp">
+            <summary>
+            RisePopUp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.AddStudentButton">
+            <summary>
+            AddStudentButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.AddGroupsButton">
+            <summary>
+            AddGroupsButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.AddTeachersButton">
+            <summary>
+            AddTeachersButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.SelectedValueGroupTextBox">
+            <summary>
+            SelectedValueGroupTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.SelectedValueProductTextBox">
+            <summary>
+            SelectedValueProductTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.BookAddedRepeater">
+            <summary>
+            BookAddedRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.Switch">
+            <summary>
+            Switch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.lblSessiontype">
+            <summary>
+            lblSessiontype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.txtNotes">
+            <summary>
+            txtNotes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.txtSessionName">
+            <summary>
+            txtSessionName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.DOBHdFld">
+            <summary>
+            DOBHdFld control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.CancelSessionButton">
+            <summary>
+            CancelSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.CreateSessionButton">
+            <summary>
+            CreateSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.SessionNameHdn">
+            <summary>
+            SessionNameHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.CancelMakingSessionLinkButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>  
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.CancelCreateSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.AddStudentButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.AddGroupsButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.AddTeachersButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.AttachBooks_Click1(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.CreateSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.SetSessionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.BindSession(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SessionId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.GetValidGroupsTeachStudents">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.BuildSelectedItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.TruncateName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CreateSession.BookAddedRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.AllOtherGroupButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SortingButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.ReadingLevelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.BackToSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.classSearchTextBox_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SearchButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.BuildSelectedItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SortAndBind(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="take"></param>
+            <param name="pageSize"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.FillStudentsList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Student},System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="_studentList"></param>
+            <param name="totalCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.StudentRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.GetSelectedStudents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.TruncateName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.DetailsDiv">
+            <summary>
+            DetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.BackToSession">
+            <summary>
+            BackToSession control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SelectedValueGroupTextBox">
+            <summary>
+            SelectedValueGroupTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SelectedValueTeacherTextBox">
+            <summary>
+            SelectedValueTeacherTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.StudentDiv">
+            <summary>
+            StudentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.CheckALLUpdatePanel">
+            <summary>
+            CheckALLUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.ReadingLevelButton">
+            <summary>
+            ReadingLevelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SortingButton">
+            <summary>
+            SortingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.UpdatePanel2">
+            <summary>
+            UpdatePanel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.StudentRepeaterUpdatePanel">
+            <summary>
+            StudentRepeaterUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.ClassContainer">
+            <summary>
+            ClassContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.classSearchTextBox">
+            <summary>
+            classSearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.StudentRepeater">
+            <summary>
+            StudentRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.AllOtherGroupsDiv">
+            <summary>
+            AllOtherGroupsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.AllotherGroupUpdatePanel">
+            <summary>
+            AllotherGroupUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.AllotherGroupDivBtn">
+            <summary>
+            AllotherGroupDivBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddStudentToSession.AllOtherGroupButton">
+            <summary>
+            AllOtherGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Student.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Student.CompareTo(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Student)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Student.SessionReadingLevelComparer.Compare(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Student,DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Student)">
+            <summary>
+            
+            </summary>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Teacher.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions.CompareTo(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions.SessionCreatedDateSorter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions.SessionCreatedDateComparer.Compare(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions,DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions)">
+            <summary>
+            
+            </summary>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for eCollection_Sessions
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.DetailsDiv">
+            <summary>
+            DetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.BackToSession">
+            <summary>
+            BackToSession control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SelectedValueGroupTextBox">
+            <summary>
+            SelectedValueGroupTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SelectedValueTeacherTextBox">
+            <summary>
+            SelectedValueTeacherTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.BookUpdatePanel">
+            <summary>
+            BookUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.CategoriesDrpList">
+            <summary>
+            CategoriesDrpList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.ReadingLevelSlider">
+            <summary>
+            ReadingLevelSlider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SliderValue">
+            <summary>
+            SliderValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.MessageDivUpdatePanel">
+            <summary>
+            MessageDivUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.custItmSKHidden">
+            <summary>
+            custItmSKHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SliderRange">
+            <summary>
+            SliderRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.BooksUpdatePanel">
+            <summary>
+            BooksUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.hiddenbtn">
+            <summary>
+            hiddenbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.CollectionRepeater">
+            <summary>
+            CollectionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.BackToSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.BackToSession_Click1(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.BindBooks(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="take"></param>
+            <param name="pageSize"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.hiddenbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.CollectionRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.itemSelected(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.BuildSelectedItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.GetSelectedBooks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.TruncateName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddBooksToSession.SearchButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.AddSession(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions)">
+            <summary>
+            
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.sbc_SqlRowsCopied(System.Object,System.Data.SqlClient.SqlRowsCopiedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSessions(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetAllSessions(System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="SubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetAllSessions(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="portalId"></param>
+            <param name="sortAsc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.UpdateSession(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions)">
+            <summary>
+            
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.DeleteSession(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <param name="loginName"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetBookListByReadingLevel(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.DeleteSessions(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="moduleId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSubscription(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetTeachers(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetGroups(DotNetNuke.Modules.eCollection_Sessions.Components.Common.MyEnums.GroupType,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupType"></param>
+            <param name="loginName"></param>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetTeacherName(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetBooks(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetStudentsList(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.UpdateSessionExpiryDate(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="IDCollectionLists"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.DeleteSession(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="IDCollectionLists"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSessionOpenedStudents(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSessionUnOpenedStudents(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSessionMembers(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSessionProducts(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetBookListBySearch(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.UpdateSessionExpiryDateAlone(System.Int32,System.DateTime,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <param name="SessionExpiryDate"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetReadingHistory(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <param name="MonthName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetRecordingHistory(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <param name="month"></param>
+            <param name="studentId"></param>
+            <param name="sessHistoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetReadingHistoryLastSeven(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetRecordingHistoryLastSeven(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <param name="studentId"></param>
+            <param name="sessHistoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSessionHistoryBySessionMonthNames(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetReadingLevel(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetStudentByGroup(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetClassListBySubscription(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CustomerSubSK"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetGroupsByGroupID(System.Int32,System.Char,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <param name="groupType"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetgroupListBySubscription(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CustomerSubSK"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetBooksByReadingLevel(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetAllLookUpNames(System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="SubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetNamesForSearch(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="SubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetStudentLookupNames(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSearchStudentDetails(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSearchGroup(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetGroupName(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSearchTeachers(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetBooksCategories(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <param name="Attribute_Type"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.GetSearchGroup(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Data.SqlDataProvider.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            Inserts data into util email table to send email on an occurrence of any exception
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetAll(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="portalId"></param>
+            <param name="sortAsc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.Add(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions)">
+            <summary>
+            
+            </summary>
+            <param name="session"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.Update(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Sessions)">
+            <summary>
+            
+            </summary>
+            <param name="session"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetCachedSessions(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="roleID"></param>
+            <param name="portalID"></param>
+            <param name="sortAsc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.ClearCachedMembers(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="roleID"></param>
+            <param name="portalID"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSortedSessions(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSessionsArrayList(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetAllActiveSessions(System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetAllFinishedSessions(System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetAllArchivedSessions(System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSubscription(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetTeachers(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetAllTeachersList(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetGroups(DotNetNuke.Modules.eCollection_Sessions.Components.Common.MyEnums.GroupType,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupType"></param>
+            <param name="loginName"></param>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetTeacherName(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.ClearAllCaches">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetBooks(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetStudentsList(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetStudentsFullList(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.UpdateSessionExpiryDate(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="IDCollectionLists"></param>
+            <param name="loginName"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.UpdateSessionExpiryDateAlone(System.Int32,System.DateTime,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <param name="SessionExpiryDate"></param>
+            <param name="loginName"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.DeleteSession(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection},System.String)">
+            <summary>
+            
+            </summary>
+            <param name="IDCollectionLists"></param>
+            <param name="loginName"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSessionOpenedStudents(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSessionUnOpenedStudents(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSessionMembers(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSessionProducts(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetReadingHistoryBySession(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="SessionId"></param>
+            <param name="MonthName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetRecordingHistoryBySession(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SessionId"></param>
+            <param name="month"></param>
+            <param name="studentId"></param>
+            <param name="sessHistoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetReadingHistoryBySessionLastSeven(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetRecordingHistoryBySessionLastSeven(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SessionId"></param>
+            <param name="studentId"></param>
+            <param name="sessHistoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSessionHistoryBySessionMonthNames(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sessionId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetReadingLevel(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetStudentByGroup(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetClassListBySubscription(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CustomerSubSK"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetGroupsByGroupID(System.Int32,System.Char,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <param name="groupType"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetGroupListBySubscription(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="CustomerSubSK"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetBooksByReadingLevel(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetBookListByLevels(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetAllLookUpNames(System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="SubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetNamesForSearch(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userId"></param>
+            <param name="loginName"></param>
+            <param name="SubId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetLookupStudentsName(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSearchStudentDetails(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSearchGroup(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetGroupName(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetTeachersLookUp(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSearchTeacherDetails(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="userLoginName"></param>
+            <param name="custSubId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetBooksLookUp(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <param name="Attribute_type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetBookListBySearch(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.GetSearchBook(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Controllers.SessionController.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+            <param name="errorMessage"></param>
+            <param name="SubsSk"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.imgEditSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.imgEndSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.TodaysIndependentRecordings_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.YesterDayGuidedRecordings_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.YesterDayIndependentRecordings_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Last7DaysGuidedRecordings_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Last7DaysIndependentRecordings_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.RestMonthRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.RestIndependentHistory_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.RestGuidedRecordings_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.BooksRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.BindSession(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SessionId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.BindReadingHistory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.BindBooks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.BindOpenStudents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.BindUnOpenStudents">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.FillBookHistory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.DisplayNotes(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Notes"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.SessionName">
+            <summary>
+            SessionName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.lblSessionCreatedDate">
+            <summary>
+            lblSessionCreatedDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.imgEditSession">
+            <summary>
+            imgEditSession control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.imgEndSession">
+            <summary>
+            imgEndSession control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.DOBHdFld">
+            <summary>
+            DOBHdFld control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.repOpenedStudents">
+            <summary>
+            repOpenedStudents control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.repUnOpenedStudents">
+            <summary>
+            repUnOpenedStudents control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.txtNotes">
+            <summary>
+            txtNotes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.BooksRepeater">
+            <summary>
+            BooksRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.selectedSessionID">
+            <summary>
+            selectedSessionID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.SecondDiv">
+            <summary>
+            SecondDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.TodaysDiv">
+            <summary>
+            TodaysDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.TodayNodeImage">
+            <summary>
+            TodayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.TodayCalImage">
+            <summary>
+            TodayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.TodayLabel">
+            <summary>
+            TodayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.TodaysIndependentRecordings">
+            <summary>
+            TodaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.YesterDayGuidedRecordingsDiv">
+            <summary>
+            YesterDayGuidedRecordingsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.YesterdayNodeImage">
+            <summary>
+            YesterdayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.YesterdayCalImage">
+            <summary>
+            YesterdayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.YesterdayLabel">
+            <summary>
+            YesterdayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.YesterDayIndependentRecordings">
+            <summary>
+            YesterDayIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Last7DaysGuidedRecordingsDiv">
+            <summary>
+            Last7DaysGuidedRecordingsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Last7DaysNodeImage">
+            <summary>
+            Last7DaysNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Last7DaysCalImage">
+            <summary>
+            Last7DaysCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Last7DaysLabel">
+            <summary>
+            Last7DaysLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.Last7DaysIndependentRecordings">
+            <summary>
+            Last7DaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.RestMonthDiv">
+            <summary>
+            RestMonthDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.RestMonthRepeater">
+            <summary>
+            RestMonthRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.SessionsProfile.LastMonthNodeImage">
+            <summary>
+            LastMonthNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.BindSession(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="SessionId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.BindSubscription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.CancelMakingSessionLinkButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.CancelCreateSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.CreateSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.Button6_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.AddStudentButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.AddGroupsButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.AddTeachersButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.AttachBooks_Click1(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.BuildSelectedItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.DrpSubscription">
+            <summary>
+            DrpSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.AddStudentButton">
+            <summary>
+            AddStudentButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.AddGroupsButton">
+            <summary>
+            AddGroupsButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.AddTeachersButton">
+            <summary>
+            AddTeachersButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.SelectedValueGroupTextBox">
+            <summary>
+            SelectedValueGroupTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.lblSessiontype">
+            <summary>
+            lblSessiontype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.txtNotes">
+            <summary>
+            txtNotes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.txtSessionName">
+            <summary>
+            txtSessionName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.SessionDropDownList">
+            <summary>
+            SessionDropDownList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.CreateSessionButton">
+            <summary>
+            CreateSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.EditSession.CancelSessionGroup">
+            <summary>
+            CancelSessionGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.SessionHandler">
+            <summary>
+            Summary description for SessionHandler
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.CreateSessionDashBoardMenu.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.CreateSessionDashBoardMenu.Backtocreategroupbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.CreateSessionDashBoardMenu.Backtocreategroupbtn">
+            <summary>
+            Backtocreategroupbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Books.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.CreateSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.EndSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.DeleteSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.StartReadingSessionButton">
+            <summary>
+            StartReadingSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.EndSessionButton">
+            <summary>
+            EndSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.DeleteSessionButtonNew">
+            <summary>
+            DeleteSessionButtonNew control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.selectedSessionID">
+            <summary>
+            selectedSessionID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.MessageLiteralEnd">
+            <summary>
+            MessageLiteralEnd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu.MessageLiteralDelete">
+            <summary>
+            MessageLiteralDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.eCollection_SessionsSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_SessionsSettingsBase
+            
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.Edit">
+            <summary>
+            EditeCollection_Sessions class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditeCollection_Sessions class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from eCollection_SessionsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Sessions.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from eCollection_SessionsSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Common.Helper.ToDataTable``1(System.Collections.Generic.List{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Common.Helper.DiffInMonths(System.DateTime,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="oldDate"></param>
+            <param name="newDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu.EditSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu.EndSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu.EditSessionButton">
+            <summary>
+            EditSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu.imgEndSession">
+            <summary>
+            imgEndSession control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu.MessageLiteralEnd">
+            <summary>
+            MessageLiteralEnd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.SessionMembers.Equals(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.SessionMembers)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.SessionMembers.StudentNameSorterComparer.Compare(DotNetNuke.Modules.eCollection_Sessions.Components.Modal.SessionMembers,DotNetNuke.Modules.eCollection_Sessions.Components.Modal.SessionMembers)">
+            <summary>
+            
+            </summary>
+            <param name="first"></param>
+            <param name="second"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Messages.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.StudentPagerDiv">
+            <summary>
+            StudentPagerDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.PreviousButton">
+            <summary>
+            PreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.ShowPreviousButton">
+            <summary>
+            ShowPreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.plcPaging">
+            <summary>
+            plcPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.pageNumber">
+            <summary>
+            pageNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.ShowNextLink">
+            <summary>
+            ShowNextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.NextLink">
+            <summary>
+            NextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.Paging(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="currentPage"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.DisplayPropertyForPage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="display"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.PageButtonStyle(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.GetCurrentPageNo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.CreatePagingControl(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.linkbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.PreviousButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.NextLink_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.ShowPreviousButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.CustomPaging.ShowNextLink_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.DetailsDiv">
+            <summary>
+            DetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.BackToSession">
+            <summary>
+            BackToSession control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SelectedValueGroupTextBox">
+            <summary>
+            SelectedValueGroupTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SelectedValueTeacherTextBox">
+            <summary>
+            SelectedValueTeacherTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SortingPanel">
+            <summary>
+            SortingPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.PMAscButton">
+            <summary>
+            PMAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.PMDescButton">
+            <summary>
+            PMDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.NamesAscButton">
+            <summary>
+            NamesAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.NamesDescButton">
+            <summary>
+            NamesDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SecondDiv">
+            <summary>
+            SecondDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.BtnPnl">
+            <summary>
+            BtnPnl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.ClassPanel">
+            <summary>
+            ClassPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.ClassRepeater">
+            <summary>
+            ClassRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.GroupPanel">
+            <summary>
+            GroupPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.GroupsRepeater">
+            <summary>
+            GroupsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.OtherGrpPanel">
+            <summary>
+            OtherGrpPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.OtherGrpRepeater">
+            <summary>
+            OtherGrpRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.OtherClsPanel">
+            <summary>
+            OtherClsPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.OtherClsRepeater">
+            <summary>
+            OtherClsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SelectedGrpIds">
+            <summary>
+            SelectedGrpIds control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SelectedStudIds">
+            <summary>
+            SelectedStudIds control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.searchhdn">
+            <summary>
+            searchhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.lastsearch">
+            <summary>
+            lastsearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.newsearch">
+            <summary>
+            newsearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.NamesAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.NamesDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.PmAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.PmDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.GroupSearch_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.CancelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.BackToSession_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.GetSelectedGroups">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.FillClassList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group})">
+            <summary>
+            
+            </summary>
+            <param name="_Classes"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.FillGroupsList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group})">
+            <summary>
+            
+            </summary>
+            <param name="_Groups"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.FillOtherGroupsList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group})">
+            <summary>
+            
+            </summary>
+            <param name="_Groups"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.FillOtherClassesList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Group})">
+            <summary>
+            
+            </summary>
+            <param name="_Groups"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.SortAndBind">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.BuildSelectedItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Session.AddGroupsToSession.TruncateName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection.CompareTo(DotNetNuke.Modules.eCollection_Sessions.Components.Common.IDCollection)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,3038 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HESearchResults</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.HESearchResults.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from HESearchResultsSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.HESearchResultsSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from HESearchResultsSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.HESearchResultsModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from HESearchResultsModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.HESearchResultsModuleBase.LogFileWrite(System.Exception)">
+            <summary>
+             Writes Exceptions to log file in user readable format
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.HESearchResultsModuleBase.LogValues(System.String)">
+            <summary>
+             Writes values to log file for developer verification
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:DotNetNuke.Modules.HESearchResults.HESearchResultsModuleBase.constatRowCount">
+            <summary>
+            Product result controw count function
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.ResultCountPlaceHldr">
+            <summary>
+            ResultCountPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.CurrentPgStartSizeLbl">
+            <summary>
+            CurrentPgStartSizeLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.CurrentPgEndSizeLbl">
+            <summary>
+            CurrentPgEndSizeLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.TotalResultLbl">
+            <summary>
+            TotalResultLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.DivisionLbl">
+            <summary>
+            DivisionLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.CMSSiteResultsRptr">
+            <summary>
+            CMSSiteResultsRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.HECMSPager">
+            <summary>
+            HECMSPager control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.NoResultPlaceHldr">
+            <summary>
+            NoResultPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.LoadNoResult">
+            <summary>
+            Loads No result page
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.FormatURL(System.Int32,System.String)">
+            <summary>
+            Cms page result format url function
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSResults.SetPagingDefaults(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            product result set paging default function
+            </summary>
+            <param name="TotalNoOfRecords"></param>
+            <param name="NoOfRecordsPerPage"></param>
+            <param name="FirstValue"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.CmsPageResultRepeaterControl">
+            <summary>
+            CmsPageResultRepeaterControl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.Cmspage">
+            <summary>
+            Cmspage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.Pagenum">
+            <summary>
+            Pagenum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.hdnProdCountcms">
+            <summary>
+            hdnProdCountcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.hdnItemCountcms">
+            <summary>
+            hdnItemCountcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.OnInit(System.EventArgs)">
+            <summary>
+            Cms page result page init function
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.InitializeComponent">
+            <summary>
+            Cms page result initialize function
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.SetPagingDefaults(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Cms page result set paging default function
+            </summary>
+            <param name="TotalNoOfRecords"></param>
+            <param name="NoOfRecordsPerPage"></param>
+            <param name="FirstValue"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.FormatURL(System.Int32,System.String)">
+            <summary>
+            Cms page result format url function
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.train(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            goruping train of words
+            </summary>
+            <param name="features"></param>
+            <returns>words as funtion delegate</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.words(System.String)">
+            <summary>
+            Matching with only alphabets
+            </summary>
+            <param name="text"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.edits1(System.String)">
+            <summary>
+            All word correction happens here
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.known_edits2(System.String)">
+            <summary>
+            after edit the word, it will send current word
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.known(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            returns words after cross check with all words
+            </summary>
+            <param name="words"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.correct(System.String)">
+            <summary>
+            finally returns corrected word
+            </summary>
+            <param name="word"></param>
+            <returns>word as string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSResults.GetDictionary">
+            <summary>
+            Product result getdictionary function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from HESearchResultsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.View.SearchResultsPlaceHldr">
+            <summary>
+            SearchResultsPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.View.AdvSearchOpenFlagHdn1">
+            <summary>
+            AdvSearchOpenFlagHdn1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.StudentPagerDiv">
+            <summary>
+            StudentPagerDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.PreviousButton">
+            <summary>
+            PreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.ShowPreviousButton">
+            <summary>
+            ShowPreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.plcPaging">
+            <summary>
+            plcPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.pageNumber">
+            <summary>
+            pageNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.ShowNextLink">
+            <summary>
+            ShowNextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.NextLink">
+            <summary>
+            NextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.Hdnpagecount">
+            <summary>
+            Hdnpagecount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Product result paging page load function
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.DisplayPropertyForPage(System.String)">
+            <summary>
+            Product result display property function
+            </summary>
+            <param name="display"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.PageButtonStyle(System.Int32)">
+            <summary>
+            product result pagebutton style function
+            </summary>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.GetCurrentPageNo">
+            <summary>
+            product result getcurrentpagenumber function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.CreatePagingControl(System.Int32,System.Int32)">
+            <summary>
+            Product result create paging control
+            </summary>
+            <param name="rowCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductsPager.getPageURL(System.String)">
+            <summary>
+            Product result getpageurl
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.FillProductResults(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Fills product results
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.LoadNoResult(System.String)">
+            <summary>
+            Loads No result page
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ReturnWordsSearched(System.String,System.String)">
+            <summary>
+            Returns all the searched words
+            </summary>
+            <param name="qString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetFacetAttributeTable(System.String)">
+            <summary>
+            Returns all the selected facets as a datatable
+            </summary>
+            <param name="facetString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetShowOnlyAttributeTable(System.String)">
+            <summary>
+            Returns all the Show only search options as a datatable
+            </summary>
+            <param name="showOnlyString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetAdvFacetTable(System.String[])">
+            <summary>
+            Returns all the selected advanced search facets as a datatable
+            </summary>
+            <param name="facetString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.FormatImageURL">
+            <summary>
+            Function to format book thumbnail path
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.FormatURL(System.String,System.String,System.String)">
+            <summary>
+            Product detail page's url format  function
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.BindHtml(System.String,System.String,System.String)">
+            <summary>
+            Function to construct html elements for products
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.SetPagingDefaults(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            product result set paging default function
+            </summary>
+            <param name="TotalNoOfRecords"></param>
+            <param name="NoOfRecordsPerPage"></param>
+            <param name="FirstValue"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.FacetsRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Facets Repeater Item Data bound event to bind all the respective facet attributes
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.DisciplineCategoryRptr_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Discipline Category Repeater Item Databound event is to bind all the respective disciplines.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.train(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            goruping train of words
+            </summary>
+            <param name="features"></param>
+            <returns>words as funtion delegate</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.words(System.String)">
+            <summary>
+            Matching with only alphabets
+            </summary>
+            <param name="text"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.correct(System.String)">
+            <summary>
+            finally returns corrected word
+            </summary>
+            <param name="word"></param>
+            <returns>word as string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.edits1(System.String)">
+            <summary>
+            All word correction happens here
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.known_edits2(System.String)">
+            <summary>
+            after edit the word, it will send current word
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.known(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            returns words after cross check with all words
+            </summary>
+            <param name="words"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetCorrectText(System.String)">
+            <summary>
+            product result getcorrect text function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetCorrectedInputString(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Returns the corrected text for search with forms,weightage
+            </summary>
+            <param name="mc"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetDictionary">
+            <summary>
+            Product result getdictionary function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetWeitageForText(System.String,System.String,System.String)">
+            <summary>
+            Product result get weightage text for search - Title and Author 
+            </summary>
+            <param name="inputText"></param>
+            <param name="weight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetCorrectTextForAdv(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - Title and Author function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetCorrectTextForAdvExact(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - Exact Words function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetCorrectTextForAdvSubject(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - Subject function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.GetCorrectTextForAdvAll(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - All these words and None of these words function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.SearchPlaceHolder">
+            <summary>
+            SearchPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.Isbntextarea">
+            <summary>
+            Isbntextarea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.DisciplineCategoryRptr">
+            <summary>
+            DisciplineCategoryRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.FacetsRepeater">
+            <summary>
+            FacetsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.AdvAttrTypesDrpDwn0">
+            <summary>
+            AdvAttrTypesDrpDwn0 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ResultCountPlaceHldr">
+            <summary>
+            ResultCountPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ProdCurrentPgStartSizeLbl">
+            <summary>
+            ProdCurrentPgStartSizeLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ProdCurrentPgEndSizeLbl">
+            <summary>
+            ProdCurrentPgEndSizeLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ProdTotalResultLbl">
+            <summary>
+            ProdTotalResultLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ProdDivisionLbl">
+            <summary>
+            ProdDivisionLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.NoResultPlaceHldr">
+            <summary>
+            NoResultPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ProductResultsRptr">
+            <summary>
+            ProductResultsRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.CmsPgResPlaceHldr">
+            <summary>
+            CmsPgResPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.HEProductsPagers">
+            <summary>
+            HEProductsPagers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.InitialNoResultpHldr">
+            <summary>
+            InitialNoResultpHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.SearchTextHdn">
+            <summary>
+            SearchTextHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.DivisionHdn">
+            <summary>
+            DivisionHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.ProductsPageNumberHdn">
+            <summary>
+            ProductsPageNumberHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.CMSPageNumberHdn">
+            <summary>
+            CMSPageNumberHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.LoadCMSHdn">
+            <summary>
+            LoadCMSHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.NoOfResultsHdn">
+            <summary>
+            NoOfResultsHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.MultiIsbnHdn">
+            <summary>
+            MultiIsbnHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.HierarchyFilterHdn">
+            <summary>
+            HierarchyFilterHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.SNewHdn">
+            <summary>
+            SNewHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.SAudienceHdn">
+            <summary>
+            SAudienceHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.SPublishedHdn">
+            <summary>
+            SPublishedHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.GaleProductResults.MultipleISBNBrowse">
+            <summary>
+            MultipleISBNBrowse control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.Handlers.HESearchHandler">
+            <summary>
+            Summary description for HESearchHandler
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.HESearchHandler.Deserialize``1(System.Web.HttpContext)">
+            <summary>
+            This function will take httpcontext object and will read the input stream
+            It will use the built in JavascriptSerializer framework to deserialize object based given T object type value
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.HESearchHandler.GetCurrentFacetTable(System.Web.HttpContext)">
+            <summary>
+            product result handler ToDataTable function
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.HESearchHandler.LogHandlerExceptions(System.Exception)">
+            <summary>
+             Writes Exceptions to log file in user readable format
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.AttributeState.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            product result handler processrequest function
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.AttributeState.ToDataTable(System.Collections.Generic.List{Cengage.eCommerce.Lib.Facets})">
+            <summary>
+            product result handler ToDataTable function
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.FillProductResults(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Fills product results
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.LoadNoResult(System.String)">
+            <summary>
+            Loads No result page
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ReturnWordsSearched(System.String,System.String)">
+            <summary>
+            Returns all the searched words
+            </summary>
+            <param name="qString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetFacetAttributeTable(System.String)">
+            <summary>
+            Returns all the selected facets as a datatable
+            </summary>
+            <param name="facetString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetShowOnlyAttributeTable(System.String)">
+            <summary>
+            Returns all the Show only search options as a datatable
+            </summary>
+            <param name="showOnlyString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetAdvFacetTable(System.String[])">
+            <summary>
+            Returns all the selected advanced search facets as a datatable
+            </summary>
+            <param name="facetString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.FormatImageURL">
+            <summary>
+            Function to format book thumbnail path
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.FormatURL(System.String,System.String)">
+            <summary>
+            Product detail page's url format  function
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.SetPagingDefaults(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            product result set paging default function
+            </summary>
+            <param name="TotalNoOfRecords"></param>
+            <param name="NoOfRecordsPerPage"></param>
+            <param name="FirstValue"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.BindHtml(System.String,System.String,System.String)">
+            <summary>
+            Function to construct html elements for products
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.BindLoggedInHtml(System.String,System.String,System.String,System.String)">
+            <summary>
+            Function to construct html elements for products
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ShowFavourite(System.String,System.String,System.String,System.String)">
+            <summary>
+            Function to construct html elements for products
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.FacetsRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Facets Repeater Item Data bound event to bind all the respective facet attributes
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.DisciplineCategoryRptr_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Discipline Category Repeater Item Databound event is to bind all the respective disciplines.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.DisciplineRptr_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Discipline Item Databound Repeater event is to bind all the respective subjects.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.train(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            goruping train of words
+            </summary>
+            <param name="features"></param>
+            <returns>words as funtion delegate</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.words(System.String)">
+            <summary>
+            Matching with only alphabets
+            </summary>
+            <param name="text"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.correct(System.String)">
+            <summary>
+            finally returns corrected word
+            </summary>
+            <param name="word"></param>
+            <returns>word as string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.edits1(System.String)">
+            <summary>
+            All word correction happens here
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.known_edits2(System.String)">
+            <summary>
+            after edit the word, it will send current word
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.known(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            returns words after cross check with all words
+            </summary>
+            <param name="words"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetCorrectText(System.String)">
+            <summary>
+            product result getcorrect text function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetCorrectedInputString(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Returns the corrected text for search with forms,weightage
+            </summary>
+            <param name="mc"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetDictionary">
+            <summary>
+            Product result getdictionary function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetWeitageForText(System.String,System.String,System.String)">
+            <summary>
+            Product result get weightage text for search - Title and Author 
+            </summary>
+            <param name="inputText"></param>
+            <param name="weight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetCorrectTextForAdv(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - Title and Author function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetCorrectTextForAdvExact(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - Exact Words function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetCorrectTextForAdvSubject(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - Subject function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.GetCorrectTextForAdvAll(System.String,System.String)">
+            <summary>
+            Product result get correct text for advance search - All these words and None of these words function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.SearchPlaceHolder">
+            <summary>
+            SearchPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.MultipleISBNBrowse">
+            <summary>
+            MultipleISBNBrowse control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.Isbntextarea">
+            <summary>
+            Isbntextarea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.DisciplineCategoryRptr">
+            <summary>
+            DisciplineCategoryRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.FacetsRepeater">
+            <summary>
+            FacetsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.AdvAttrTypesDrpDwn0">
+            <summary>
+            AdvAttrTypesDrpDwn0 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ResultCountPlaceHldr">
+            <summary>
+            ResultCountPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ProdCurrentPgStartSizeLbl">
+            <summary>
+            ProdCurrentPgStartSizeLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ProdCurrentPgEndSizeLbl">
+            <summary>
+            ProdCurrentPgEndSizeLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ProdTotalResultLbl">
+            <summary>
+            ProdTotalResultLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ProdDivisionLbl">
+            <summary>
+            ProdDivisionLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.NoResultPlaceHldr">
+            <summary>
+            NoResultPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ProductResultsRptr">
+            <summary>
+            ProductResultsRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.CmsPgResPlaceHldr">
+            <summary>
+            CmsPgResPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.HEProductsPagers">
+            <summary>
+            HEProductsPagers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.InitialNoResultpHldr">
+            <summary>
+            InitialNoResultpHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.SearchTextHdn">
+            <summary>
+            SearchTextHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.DivisionHdn">
+            <summary>
+            DivisionHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.ProductsPageNumberHdn">
+            <summary>
+            ProductsPageNumberHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.CMSPageNumberHdn">
+            <summary>
+            CMSPageNumberHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.LoadCMSHdn">
+            <summary>
+            LoadCMSHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.NoOfResultsHdn">
+            <summary>
+            NoOfResultsHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.HierarchyFilterHdn">
+            <summary>
+            HierarchyFilterHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.SNewHdn">
+            <summary>
+            SNewHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.SAudienceHdn">
+            <summary>
+            SAudienceHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductResults.SPublishedHdn">
+            <summary>
+            SPublishedHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEInitialNoResult.ForLabel">
+            <summary>
+            ForLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEInitialNoResult.SearchTextLbl">
+            <summary>
+            SearchTextLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEInitialNoResult.didyoumeanPara">
+            <summary>
+            didyoumeanPara control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEInitialNoResult.DidYouMeanLink">
+            <summary>
+            DidYouMeanLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for HESearchResults
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.GetProduct(System.String,System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            product result getproduct function
+            </summary>
+            <param name="flag"></param>
+            <param name="userListQuoteSK"></param>
+            <param name="userSK"></param>
+            <param name="genericFlag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.GetQuoteProducts(System.Int32)">
+            <summary>
+            product result getquoteproducts function
+            </summary>
+            <param name="userListQuoteSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.EditQuoteDetails(DotNetNuke.Modules.HESearchResults.Components.QuoteInfo)">
+            <summary>
+            product result editquotedetails function
+            </summary>
+            <param name="Quote"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.AddListQuote(System.String,System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            product result addlistquote function
+            </summary>
+            <param name="flag"></param>
+            <param name="_userSK"></param>
+            <param name="_productSKQuantity"></param>
+            <param name="_userListQuoteSK"></param>
+            <param name="_genericFlag"></param>
+            <param name="_output"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.Selectsub(System.Int32,System.String)">
+            <summary>
+            product result select function
+            </summary>
+            <param name="PrdSk"></param>
+            <param name="division"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.SelectSearchStudProd(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            product result selectsearchstud function
+            </summary>
+            <param name="PrdSk"></param>
+            <param name="division"></param>
+            <param name="store_sk"></param>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.GetUserRole(System.Int32)">
+            <summary>
+            product result getuserrole function
+            </summary>
+            <param name="usersk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.GetExistingQuotes(System.Int32,System.String,System.Int32)">
+            <summary>
+            product result getexistingquotes function
+            </summary>
+            <param name="userSk"></param>
+            <param name="Role"></param>
+            <param name="TradeSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.SearchController.SelectCms(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Cms search result controller select cms function
+            </summary>
+            <param name="Division"></param>
+            <param name="Keywords"></param>
+            <param name="ItemCount"></param>
+            <param name="PageNumber"></param>
+            <param name="Storesk"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.StudentPagerDiv">
+            <summary>
+            StudentPagerDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.PreviousButton">
+            <summary>
+            PreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.ShowPreviousButton">
+            <summary>
+            ShowPreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.plcPaging">
+            <summary>
+            plcPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.pageNumber">
+            <summary>
+            pageNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.ShowNextLink">
+            <summary>
+            ShowNextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.NextLink">
+            <summary>
+            NextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.Hdnpagecount">
+            <summary>
+            Hdnpagecount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.AdvSearchOpenFlagHdn2">
+            <summary>
+            AdvSearchOpenFlagHdn2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Product result paging page load function
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.DisplayPropertyForPage(System.String)">
+            <summary>
+            Product result display property function
+            </summary>
+            <param name="display"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.PageButtonStyle(System.Int32)">
+            <summary>
+            product result pagebutton style function
+            </summary>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.GetCurrentPageNo">
+            <summary>
+            product result getcurrentpagenumber function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.CreatePagingControl(System.Int32,System.Int32)">
+            <summary>
+            Product result create paging control
+            </summary>
+            <param name="rowCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HEProductsPager.getPageURL(System.String)">
+            <summary>
+            Product result getpageurl
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.ListHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            product result handler processrequest function
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.ListHandler.SplitValueToCart(Cengage.eCommerce.Lib.Cart,System.String)">
+            <summary>
+            product result handler Splitvaluetocart function
+            </summary>
+            <param name="cart"></param>
+            <param name="cartItems"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.ListHandler.GetCart(System.Int32)">
+            <summary>
+            product result handler getcart function
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Cms page result page number page load
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.DisplayPropertyForPage(System.String)">
+            <summary>
+            Cms page result display property for page function
+            </summary>
+            <param name="display"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.PageButtonStyle(System.Int32)">
+            <summary>
+            Cms page result for page button style function
+            </summary>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.GetCurrentPageNo">
+            <summary>
+            Cms page result get curent page number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.CreatePagingControl(System.Int32,System.Int32)">
+            <summary>
+            Cms page result cretae paging control
+            </summary>
+            <param name="rowCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.getPageURL(System.String)">
+            <summary>
+            Cms page result get page url
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.StudentPagerDivcms">
+            <summary>
+            StudentPagerDivcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.PreviousButtoncms">
+            <summary>
+            PreviousButtoncms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.ShowPreviousButtoncms">
+            <summary>
+            ShowPreviousButtoncms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.plcPagingcms">
+            <summary>
+            plcPagingcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.pageNumbercms">
+            <summary>
+            pageNumbercms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.ShowNextLinkcms">
+            <summary>
+            ShowNextLinkcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.NextLinkcms">
+            <summary>
+            NextLinkcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsCMSPager.hdnpagecountcms">
+            <summary>
+            hdnpagecountcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.StudentPagerDivcms">
+            <summary>
+            StudentPagerDivcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.PreviousButtoncms">
+            <summary>
+            PreviousButtoncms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.ShowPreviousButtoncms">
+            <summary>
+            ShowPreviousButtoncms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.plcPagingcms">
+            <summary>
+            plcPagingcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.pageNumbercms">
+            <summary>
+            pageNumbercms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.ShowNextLinkcms">
+            <summary>
+            ShowNextLinkcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.NextLinkcms">
+            <summary>
+            NextLinkcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.hdnpagecountcms">
+            <summary>
+            hdnpagecountcms control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.AdvSearchOpenFlagHdn3">
+            <summary>
+            AdvSearchOpenFlagHdn3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Cms page result page number page load
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.DisplayPropertyForPage(System.String)">
+            <summary>
+            Cms page result display property for page function
+            </summary>
+            <param name="display"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.PageButtonStyle(System.Int32)">
+            <summary>
+            Cms page result for page button style function
+            </summary>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.GetCurrentPageNo">
+            <summary>
+            Cms page result get curent page number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.CreatePagingControl(System.Int32,System.Int32)">
+            <summary>
+            Cms page result cretae paging control
+            </summary>
+            <param name="rowCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.HECMSPager.getPageURL(System.String)">
+            <summary>
+            Cms page result get page url
+            </summary>
+            <param name="p"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.SearchrepeareHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            product result handler processrequest function
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.GetDictionary">
+            <summary>
+            Product result getdictionary function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.words(System.String)">
+            <summary>
+            Matching with only alphabets
+            </summary>
+            <param name="text"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.train(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            goruping train of words
+            </summary>
+            <param name="features"></param>
+            <returns>words as funtion delegate</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.edits1(System.String)">
+            <summary>
+            All word correction happens here
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.known_edits2(System.String)">
+            <summary>
+            after edit the word, it will send current word
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.known(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            returns words after cross check with all words
+            </summary>
+            <param name="words"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.correct(System.String)">
+            <summary>
+            finally returns corrected word
+            </summary>
+            <param name="word"></param>
+            <returns>word as string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.GetCorrectTextForAdv(System.String)">
+            <summary>
+            Product result get correct text for adv function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.GetCorrectText(System.String)">
+            <summary>
+            product result getcorrect text function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.SetPagingDefaults(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            product result set paging default function
+            </summary>
+            <param name="TotalNoOfRecords"></param>
+            <param name="NoOfRecordsPerPage"></param>
+            <param name="FirstValue"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.RightBind(System.Collections.Generic.List{CengageSearchResult},System.Collections.Generic.List{Cengage.Ecommerce.CengageServiceLibrary.Product},System.Collections.Generic.List{Cengage.Ecommerce.CengageServiceLibrary.Product})">
+            <summary>
+            Product result right bind function
+            </summary>
+            <param name="searResults"></param>
+            <param name="ProductPriceList"></param>
+            <param name="ProductAvailableList"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.LeftmainHeading_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Product result leftmain heading bind
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.BindListHeader(System.Nullable{System.Int32},System.String)">
+            <summary>
+            Product result bindlistheader
+            </summary>
+            <param name="userSk"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.CheckAddToList(System.Int32)">
+            <summary>
+            Product result check add to list function
+            </summary>
+            <param name="userSk"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.BindQuoteHeader(System.Int32)">
+            <summary>
+            Product result bind quote header
+            </summary>
+            <param name="userSk"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.leftSubHeading_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Product result lefsubheading function
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.ProductPlace">
+            <summary>
+            ProductPlace control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.didumeanword">
+            <summary>
+            didumeanword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.msglbl">
+            <summary>
+            msglbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.MsgDiv">
+            <summary>
+            MsgDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.MainHold">
+            <summary>
+            MainHold control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.LeftmainHeading">
+            <summary>
+            LeftmainHeading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnselectedvalue">
+            <summary>
+            hdnselectedvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnNonOutofStockSelectedValues">
+            <summary>
+            hdnNonOutofStockSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.PrdCount">
+            <summary>
+            PrdCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.PagesCount">
+            <summary>
+            PagesCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Selectsort">
+            <summary>
+            Selectsort control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.SortOrderHidden">
+            <summary>
+            SortOrderHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.SelectedAttributeList">
+            <summary>
+            SelectedAttributeList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.MainChk">
+            <summary>
+            MainChk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.selqty">
+            <summary>
+            selqty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.addedLabel">
+            <summary>
+            addedLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.addtolstdiv1">
+            <summary>
+            addtolstdiv1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.HeaderAddtoList">
+            <summary>
+            HeaderAddtoList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.UserIDHiddenField">
+            <summary>
+            UserIDHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.QuoteAdded">
+            <summary>
+            QuoteAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.AddtoQuoteDiv">
+            <summary>
+            AddtoQuoteDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.AddtoQuote">
+            <summary>
+            AddtoQuote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnusersk">
+            <summary>
+            hdnusersk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnrole">
+            <summary>
+            hdnrole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnLoginTPsk">
+            <summary>
+            hdnLoginTPsk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.AddedToCart">
+            <summary>
+            AddedToCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.CartAdd">
+            <summary>
+            CartAdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.rdProducts">
+            <summary>
+            rdProducts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Custompage">
+            <summary>
+            Custompage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Cmsplace">
+            <summary>
+            Cmsplace control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Cmspageview">
+            <summary>
+            Cmspageview control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.StoreAttributeNames">
+            <summary>
+            StoreAttributeNames control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Ok">
+            <summary>
+            Ok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Spanisbnquote">
+            <summary>
+            Spanisbnquote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.OKQuote">
+            <summary>
+            OKQuote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.OkStock">
+            <summary>
+            OkStock control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.SitemcOk">
+            <summary>
+            SitemcOk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.SitemcOks">
+            <summary>
+            SitemcOks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Div5">
+            <summary>
+            Div5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.CreateListAnonTextBox">
+            <summary>
+            CreateListAnonTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.messagelabel">
+            <summary>
+            messagelabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.CreateListLoginButton">
+            <summary>
+            CreateListLoginButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.CreateListSignUpButton">
+            <summary>
+            CreateListSignUpButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.txtcreatelistbox">
+            <summary>
+            txtcreatelistbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.CancelCreateListButton">
+            <summary>
+            CancelCreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.CreateListButton">
+            <summary>
+            CreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.txtQuoteName">
+            <summary>
+            txtQuoteName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.txtAccountName">
+            <summary>
+            txtAccountName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnAccountSK">
+            <summary>
+            hdnAccountSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.btnCreate">
+            <summary>
+            btnCreate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnProductDetails">
+            <summary>
+            hdnProductDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnProdCount">
+            <summary>
+            hdnProdCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdnItemCount">
+            <summary>
+            hdnItemCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Hidpagecnt">
+            <summary>
+            Hidpagecnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.ProductPrice">
+            <summary>
+            ProductPrice control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.SelectedCount">
+            <summary>
+            SelectedCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.PrskHd">
+            <summary>
+            PrskHd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.Noresult">
+            <summary>
+            Noresult control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.hdncmsclick">
+            <summary>
+            hdncmsclick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.SchoolsProductResults.cmsPagenum">
+            <summary>
+            cmsPagenum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.NoResult.DivisionLbl">
+            <summary>
+            DivisionLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.HESearchResults.Views.NoResult.AdvSearchOpenFlagHdn3">
+            <summary>
+            AdvSearchOpenFlagHdn3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Views.NoResult.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult">
+            <summary>
+            Summary description for CmsResult
+            </summary>
+            
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.GetDictionary">
+            <summary>
+            Product result getdictionary function
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.words(System.String)">
+            <summary>
+            Matching with only alphabets
+            </summary>
+            <param name="text"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.train(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            goruping train of words
+            </summary>
+            <param name="features"></param>
+            <returns>words as funtion delegate</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.edits1(System.String)">
+            <summary>
+            All word correction happens here
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.known_edits2(System.String)">
+            <summary>
+            after edit the word, it will send current word
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.known(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            returns words after cross check with all words
+            </summary>
+            <param name="words"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.correct(System.String)">
+            <summary>
+            finally returns corrected word
+            </summary>
+            <param name="word"></param>
+            <returns>word as string</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.GetCorrectTextForAdv(System.String)">
+            <summary>
+            Product result get correct text for adv function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.GetCorrectText(System.String)">
+            <summary>
+            product result getcorrect text function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.GetInputText(System.String)">
+            <summary>
+            Getinput text function
+            </summary>
+            <param name="SearchText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.CmsResult.FormatURL(System.Int32,System.String)">
+            <summary>
+            Cms page result format url function
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditHESearchResults class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from HESearchResultsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.GetProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+             Get the Product Search results
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.GetGaleProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+             Get the Product Search results for Gale
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.GetAdvanceSearchProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+             Get the Advance Search Product results
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.GetGaleAdvanceSearchProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+             Get the Advance Search Product results for Gale
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.CheckForHEDidYouMeanWordExist(System.String,System.String,System.String)">
+            <summary>
+             Check for the existence of did you mean word for HE,VPG and Gale
+            </summary>
+            <param name="word"></param>
+            <param name="division"></param>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.GetSiteResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+             Get the CMS Site Search results
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.GetHEAdvanceIsbnResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+             Get the Multiple ISBN Advance Search Product results
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.GetGaleAdvanceIsbnResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+             Get the Multiple ISBN Advance Search Product results for Gale
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.SaveSearchAndFavorites(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            Saves the user's Favorites and Search inputs
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.UpdateSaveSearchAndFavorites(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            Updates the user's Favorites and Save Search values
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Controller.HESearchResultController.ClearAllCache">
+            <summary>
+            Clear all the Caches
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Modal.SearchEngineModel.GetComponentResults(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            product result getcomponent function
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Modal.SearchEngineModel.GetFacetResultsAttributes(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            product result getfacetattributes function
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Modal.SearchEngineModel.GetAdvanceKeywordResults(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            product result getadvancekeywordresult function
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Components.Modal.SearchEngineModel.GetAdvanceIsbnResults(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            product result getadvanceisbnresult function
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.HESearchResults.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            For Product Search Results
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetGaleProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            For Product Search Results
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.FormParameters(System.String[],System.String@,System.String@)">
+            <summary>
+            Product result formparameter function
+            </summary>
+            <param name="SearchText"></param>
+            <param name="Condition"></param>
+            <param name="Weightage"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.CheckForHEDidYouMeanWordExist(System.String,System.String,System.String)">
+            <summary>
+             Check for the existence of did you mean word for HE,VPG and Gale
+            </summary>
+            <param name="word"></param>
+            <param name="division"></param>
+            <param name="storeSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetAdvanceSearchProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            For Advance Search Keyword results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetGaleAdvanceSearchProductResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            For Advance Search Keyword results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetHEAdvanceIsbnResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            For Advance Multi isbns results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetGaleAdvanceIsbnResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            For Advance Multi isbns results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetCmsResults(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            Cms page result selectcmsresult function
+            </summary>
+            <param name="Division"></param>
+            <param name="Keywords"></param>
+            <param name="ItemCount"></param>
+            <param name="PageNumber"></param>
+            <param name="Storesk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.SaveSearchAndFavorites(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            To save the Search and favorite products of the user
+            </summary>
+            <param name="sParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.UpdateSaveSearchAndFavorites(DotNetNuke.Modules.HESearchResults.Components.Modal.SearchParameters)">
+            <summary>
+            To remove/update the Search and favorite products of the user
+            </summary>
+            <param name="sParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.FormParameters(System.String,System.String@,System.String@,System.String@,System.String@)">
+            <summary>
+            Product result formparameter function
+            </summary>
+            <param name="SearchText"></param>
+            <param name="Condition"></param>
+            <param name="Weightage"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetComponentResults(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            For Main Search Results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.SelectSearchStudProd(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            Product result selectsearchprod function
+            </summary>
+            <param name="PrdSk"></param>
+            <param name="division"></param>
+            <param name="store_sk"></param>
+            <param name="country"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.AddListQuote(System.String,System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            Product result addlistquote function
+            </summary>
+            <param name="flag"></param>
+            <param name="_userSK"></param>
+            <param name="_productSKQuantity"></param>
+            <param name="_userListQuoteSK"></param>
+            <param name="_genericFlag"></param>
+            <param name="_output"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.SelectStdPrd(System.Int32,System.String)">
+            <summary>
+            product result select prd function
+            </summary>
+            <param name="PrdSk"></param>
+            <param name="division"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.EditQuoteDetails(DotNetNuke.Modules.HESearchResults.Components.QuoteInfo)">
+            <summary>
+            Product result edit quote details
+            </summary>
+            <param name="Quote"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetAdvanceKeywordResults(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            For Advance Search Keyword results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetExistingQuotes(System.Int32,System.String,System.Int32)">
+            <summary>
+            product result getexistingquote function
+            </summary>
+            <param name="UserSk"></param>
+            <param name="Role"></param>
+            <param name="TradeSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetFacetResultsAttributes(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            Product result getfacetresultattributes
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetProduct(System.String,System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            Product result getproduct function
+            </summary>
+            <param name="flag"></param>
+            <param name="userListQuoteSK"></param>
+            <param name="userSK"></param>
+            <param name="genericFlag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetQuoteProducts(System.Int32)">
+            <summary>
+            Product result getquoteproducts function
+            </summary>
+            <param name="userListQuoteSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetUserRole(System.Int32)">
+            <summary>
+            product result getuser role function
+            </summary>
+            <param name="usersk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.SelectCmsResult(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Cms page result selectcmsresult function
+            </summary>
+            <param name="Division"></param>
+            <param name="Keywords"></param>
+            <param name="ItemCount"></param>
+            <param name="PageNumber"></param>
+            <param name="Storesk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Data.SqlDataProvider.GetAdvanceIsbnResults(DotNetNuke.Modules.HESearchResults.Controls.SearchEngine)">
+            <summary>
+            For Advance Multi isbns results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.HESearchResults.Handlers.SearchrFacetHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            product result handler processrequest function
+            </summary>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>

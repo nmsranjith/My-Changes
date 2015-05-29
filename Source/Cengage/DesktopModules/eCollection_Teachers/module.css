@@ -1,0 +1,2611 @@
+.Panes
+{
+padding:0 !important
+}
+    h1, h2, h3, h4, h5, h6
+    {
+        margin: 0px;
+        padding: 0px;
+        color: #707070 !important;
+    }
+    
+    h1
+    {
+        font-size: 29pt !important;
+        font-weight: normal !important;
+    }
+    h3
+    {
+        font-size: 21pt !important;
+        font-weight: normal !important;
+    }
+    h4
+    {
+        font-size: 15pt !important;
+        font-weight: normal !important;
+    }
+    h5
+    {
+        font-size: 11pt !important;
+        margin-bottom: 10px;
+    }
+    .bannertitle  h1
+    {
+        display:none;
+        float:left;
+    }
+    .cancelBtnHdr
+    {
+        width: 40%;
+        float: left;
+        margin-left: 30px;
+    }
+    .safari .k-textbox > input, .k-autocomplete .k-input, .k-combobox .k-input, .k-picker-wrap .k-input {
+    -webkit-box-shadow: transparent 0px 0px 1px 1px inset !important;
+    }
+    .AddBtnHdr
+    {
+        width: 50%;
+        float: right;
+    }
+    .BtnsHdr
+    {
+        width: 48%;
+        float: right;
+        height: 50px;
+        margin-right: 19px;
+    }
+    #SelectedTeacherList
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .addBtns
+    {
+        margin-left: 0px !important;
+        float: right !important;
+    }
+    .cancelBtns
+    {
+        margin-left: 52px !important;
+    }
+    
+    .createHrs
+    {
+        width: 94.4%;
+        float: left;
+        background-color: gray;
+        border: 0px solid gray;
+        height: 1px;
+        margin-left: 20px;
+        margin-top: 19px;
+    }
+    
+    .ButtonsDiv input[type=submit][disabled]
+    {
+        cursor: default;
+        background-color: transparent;
+        color: #A5A3A3 !important;
+        text-shadow: 1px 1px #F4F4F4;
+    }
+    
+    .SubsrtDiv
+    {
+        width: 100% !important;
+        font-size: 10pt;
+    }
+    .SubsCheckBoxes
+    {
+        width: 33%;
+        float: left;
+    }
+    #HeaderBtn
+    {
+        float: right;
+        padding: 7px 0px 7px 0px;
+        margin-right: 32px;
+        font-size: 8pt;
+    }
+    .List_Contents
+    {
+         float: left;
+  border: 1px solid #9e9e9e;
+  background: #FFF !important;
+  position: relative;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  width: 602px !important;
+  padding: 0px 8px;
+  
+    }
+    .TopRightEditbtn:link, .TopRightEditbtn:visited, .TopRightEditbtn:active, .BackBtn:link, .BackBtn:visited, .BackBtn:active
+    {
+        cursor: pointer;
+        font-size: 8pt;
+        color: white;
+        width: 100%;
+        height: 37px;
+        border: 0px solid transparent;
+        color: White !important;
+        text-decoration: none;
+    }
+    .BackBtn:link, .BackBtn:visited, .BackBtn:active
+    {
+        padding: 10px 37px;
+    }
+   
+    .BackBtnHeader
+    {
+        width: 40% !important;
+        margin-right: 38px !important;
+        margin-top: 6px !important;
+    }
+    
+    
+    .TopRightEditbtn
+    {
+        cursor: pointer;
+        float: right;
+        margin-right: 16px;
+        padding: 10px;
+        background-image: url('../../Portals/0/images/editprofile.png');
+        font-size: 8pt;
+        color: white;
+        padding-left: 35px;
+        height: 37px;
+        border: 0px solid transparent;
+        width: 124px;
+        margin-top: 12px;
+    }
+    
+    input[type=checkbox]
+    {
+        width: 12px;
+        color: Black;
+    }
+    
+    .Searchbtndiv
+    {
+         position: relative;
+  border: 1px solid #707070 !important;
+  width: 34px !important;
+  height: 34px !important;
+  margin: -1px;
+  float: right !important;
+  background: #9e9e9e;
+    }
+    .Searchbtndiv input[type=submit]
+    {
+        cursor: pointer;
+        border: 0px;
+        float: left;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../Portals/0/images/search_icon.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .SearchDiv
+    {
+        float: left;
+        width: 592px;
+    }
+    
+    .ClassSearchDiv
+    {
+        float: left;
+        width: 100%;
+		padding: 20px 0;
+    }
+    .ClassSearchDiv img
+    {
+        margin-left: 2px;
+        margin-top: 36px;
+    }
+    
+    .ClassSearchDiv ::-webkit-input-placeholder
+    {
+        color: #707070;
+      }
+    .ClassSearchDiv ::-moz-placeholder
+    {
+        color: #707070;
+        opacity: 1;
+    }
+    /* ie */
+    .ClassSearchDiv :-ms-input-placeholder
+    {
+        color: #707070;
+    }
+    /* firefox 19+ */
+    input:-moz-placeholder
+    {
+        color: #707070;
+        opacity: 1;
+    }
+    
+    .TodaySearchDiv
+    {
+        float: left;
+        width: 100%;
+        padding: 0;
+        height: 90px;
+        margin-top: -40px;
+    }
+    .TodaySearchDiv img
+    {
+        margin-left: 2px;
+        margin-top: 36px;
+    }
+    /* Content TAB MENU   
+        ----------------------------------------------------------*/
+    
+    .MenuItems
+    {
+        background-image: url('../../Portals/0/images/eCollectionMenu.jpg');
+        background-repeat: no-repeat;
+        height: 13px;
+        padding: 10px 100px 12px 50px;
+        border: 1px solid lightgray;
+        margin-bottom: 10px;
+        width: 50px;
+        margin-left: 24px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 9pt;
+    }
+    
+    
+    
+    
+    
+    .ButtonsDiv
+    {
+        float: left;
+        width: 100%;
+    }
+    .TeachersList
+    {
+        min-height: 500px;
+        padding:20px;
+    }
+
+    .canBtn
+    {
+        border-bottom: 1px solid #168CA5 !important;
+        border-top: 1px solid #1bbadd !important;
+        border-left: 1px solid #1bbadd !important;
+        border-right: 1px solid #168CA5 !important;
+    }
+    .greenBtn
+    {
+        border-radius: 3px;
+        height: 34px;
+        width: 91%;
+        float: right;
+        margin-right: 4px;
+    }
+    
+    .KenduoComboBoxClassDiv
+    {
+        width: 86.8%;
+        float: right;
+        border: 1px solid lightgray !important;
+        margin-top: -37px;
+        margin-right: 5px;
+        height: 41px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+    .StudentsList_Content, .TeachersList_Content
+    {
+        width: 93%;
+        float: left;
+        border: 1px solid lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+        height: 60px;
+    }
+    .StudentDashboard_AllOthers
+    {
+        background-color: transparent;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 8px;
+        display: inline-block;
+        border-style: solid;
+        border-color: lightgray;
+        width: 111%;
+        height: 40px;
+        padding-left: 92px;
+    }
+    .StudentsList_RowStyles
+    {
+        margin-bottom: 10px;
+        text-align: justify;
+        border: 1px solid lightgray;
+    }
+    .StudentDashboard_SearchButton, .TeachersList_SearchButton
+    {
+        width: 84px;
+        padding: 6px;
+        cursor: pointer;
+        border-radius: 8px;
+        display: inline-block;
+        border: none;
+        font-size: 8pt;
+        background-color: #EAEAEA;
+    }
+    .TeachersList_CheckBoxes
+    {
+        background-image: url("'../../Portals/0/images/CheckBox.png");
+        background-color: #707070;
+    }
+    .TeachersList_CheckAllDiv
+    {
+        width: 40%;
+        float: left;
+        height: 19px;
+        padding: 0px;
+    }
+   
+    .EditStudentProfile_Div, .TeachersList_SearchDiv, .EditSessionProfile_Div
+    {
+        width: 99.4%;
+        margin: 10px 0px 0px 0px;
+        float: left;
+        border-style: solid;
+        border-width: 2px;
+    }
+    .CreateTabSelected
+    {
+        margin-top: -225px !important;
+    }
+    .CreateTabECollLeftModule
+    {
+        margin-top: -207px  !important;
+    }
+    .CreateTab
+    {
+        height: 380px  !important;
+        min-height: 380px  !important;
+    }
+    .CreateTabMenu
+    {
+        height: 375px  !important;
+        min-height: 375px  !important;
+    }
+    
+    .CreateTabSuccess
+    {
+        height: 435px  !important;
+        min-height: 435px  !important;
+    }
+    .CreateTabMenuSuccess
+    {
+        height: 430px  !important;
+        min-height: 430px  !important;
+    }
+    .TeachersList_SearchDiv
+    {
+        border-color: #707070;
+    }
+    .TeachersList_SearchTextBox
+    {
+        width: 86%;
+        border: 0px solid White;
+        margin-top: 1px;
+    }
+    
+    
+    .StudentGridRowStyle
+    {
+        border-radius: 8px;
+        display: inline-block;
+        text-align: justify;
+        height: 62px;
+        margin: 0 0 3px 0px;
+        padding: 0px 15px 0px 32px;
+        width: 99%;
+    }
+    
+    .Students_CheckBoxes, .TeachersList_CheckBoxes
+    {
+        background: none;
+        border: none;
+    }
+    .StudentDashBoard_GuidedImage, .TeachersList_GuidedImage
+    {
+        padding-left: 0px;
+    }
+    
+    .StudentRowStyle
+    {
+        background-color: yellow;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: inline-block;
+    }
+    
+    /**********************************************************************************************************************************/
+    /************************************************* Create Student profile *********************************************************/
+    /**********************************************************************************************************************************/
+    
+    .dropdowns
+    {
+        padding-left: 5px;
+        margin-left: 10px;
+    }
+    
+    .Subscription_Label
+    {
+        width: 90%;
+        float: left;
+        margin-top: 2px;
+    }
+    
+    .Subscription_ChkBx
+    {
+        width: 10%;
+        float: left;
+    }
+    
+    
+    .AddStudentProfile_AddButton, .UploadStudentProfile_AddButton, .UploadBooks_AddButton
+    {
+        height: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: inline-block;
+        background-color: #67A64D; /*#479353;*/
+        color: White;
+        font-size: 1.11em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .borderleftdivIn
+    {
+        width: 100%; 
+        border-left: 1px solid #CCC; 
+        float: left; 
+        margin-left: 54px; 
+        margin-top: -19px;
+        height: 27px;
+        position: relative;
+    }
+  .eClSearchbox,.eClSearchbox:hover
+    {
+     padding-left: 7px !important;
+float: left;
+background: #FFF !important;
+background-color: #FFF !important;
+font-size: 10pt !important;
+padding-top: 1px !important;
+color: #707070 !important;
+border: 0 none !important;
+height: 29px !important;
+box-shadow: none !important;
+    }
+  
+    
+    .AddStudentProfile_AddButton
+    {
+        width: 150px;
+    }
+    .CreateTeacherProfile_TopDiv
+    {
+        margin-top: 15px;
+        width: 100%;
+        padding-bottom: 30px;
+        float: left;
+        border: 1px solid lightgray;
+    }
+    .CreateStudentProfile_TopDiv, .CreateStudentProfile_MessageInnerDiv, .CreateStudentProfile_MessagePrintDiv, .BulkUpload_SecondDiv, .CreateTeacherProfile_MessageInnerDiv, .CreateTeacherProfile_TopDiv
+    {
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    .CreateStudentProfile_MessageInnerDiv, .CreateTeacherProfile_MessageInnerDiv
+    {
+        float: left;
+        border: thin inset Green;
+        height: 51px;
+        padding-top: 14px;
+        padding-left: 20px;
+    }
+    .CreateStudentProfile_MessageInnerDiv
+    {
+        width: 70%;
+    }
+    .CreateTeacherProfile_MessageInnerDiv
+    {
+        width: 97%;
+    }
+    
+     .blkAfterNum,.blkAfterName
+    {       
+        text-shadow: none !important;
+    }
+  
+    .blkSeeall
+    {
+        color: blue !important;
+        padding-left: 15px;
+    }
+    .blkSubChange
+    {
+        height: 18px !important;
+    }
+    
+    .CreateStudentProfile_MessagePrintDiv
+    {
+        float: right;
+        width: 26%;
+        border: thin ridge Green;
+        height: 38px;
+        text-align: center;
+        padding-top: 27px;
+        font-weight: bold;
+    }
+    .CreateStudentProfile_MessageDiv, .CreateTeacherProfile_MessageDiv
+    {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        height: 63px;
+        font-size: 1.2em;
+    }
+    .ReadingRecovery, .ESL
+    {
+        width: 151px;
+        margin-right: 5px;
+        float: left;
+        height: 36px;
+        background-position: 0px -58px;
+    }
+    .ReadingRecovery
+    {
+        background-image: url('../../Portals/0/images/reading_recovery.png');
+    }
+    .ESL
+    {
+        background-image: url('../../Portals/0/images/ESL.png');
+    }
+    
+    /**********************************************************************************************************************************/
+    /************************************************* Bulk Upload Student profile *********************************************************/
+    /**********************************************************************************************************************************/
+    .UploadStudentProfile_AddButton
+    {
+        width: 111px;
+    }
+    .BulkUpload_MainDiv
+    {
+        width: 94%;
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    .BulkUpload_TopDiv
+    {
+        border: thin solid #d5d2d0;
+        width: 100%;
+        float: left;
+        height: 50px;
+    }
+    .BulkUpload_SecondDiv
+    {
+        margin-top: 10px;
+        border: thin solid #d5d2d0;
+        width: 100%;
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .blkSubs
+    {
+        margin-left: 0px !important;
+    }
+    .BulkUpload_FinishLinkButton
+    {
+        width: 47%;
+        float: right;
+        text-align: right;
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+    .BulkUpload_Uploadlabel
+    {
+        background-color: #838383;
+        color: white !important;
+        padding: 4px 108px 4px 10px;
+    }
+    .BulkUpload_UploadDiv
+    {
+        margin: 0px 10px 0px 30px;
+        float: left;
+        width: 100%;
+    }
+    .BulkUpload_UploadHdr
+    {
+        margin: 0px 10px 0px 30px;
+        width: 38%;
+    }
+    .BulkUpload_CreateDiv
+    {
+        width: 47%;
+        float: left;
+        font-size: medium;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .BulkUpload_DownLoadFormatDiv
+    {
+        margin: 20px 30px 10px 30px;
+        border: 2px solid #B4DDFA;
+        padding: 10px 10px 20px 17px;
+        border-radius: 3px;
+        width: 81%;
+        float: left;
+        font-size: 10pt;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #F3F8FC 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#F3F8FC));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#F3F8FC', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #F3F8FC 130%) !important;
+    }
+    
+    .ProfileSwitchON, .ProfileSwitchOFF
+    {
+        display: inline-block;
+        float: left;
+        margin-top: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 229px;
+    }
+    .ProfileSwitchON
+    {
+        background-image: url('../../Portals/0/images/ReadingHistory_ON.png');
+    }
+    .ProfileSwitchOFF
+    {
+        background-image: url('../../Portals/0/images/Groups_ON.png');
+    }
+    
+    .BulkUpload_HeaderColor
+    {
+        color: #357AB4;
+        margin-top: 10px;
+    }
+    
+    .BulkUpload_Header
+    {
+        font-size: 12pt;
+    }
+    .BulkUpload_TxtBxHolder
+    {
+        width: 70%;
+        height: 33px;
+        float: left;
+        margin-right: 5px;
+        border: 1px solid #CCC;
+        background-color: white;
+    }
+    .BulkUpload_TxtBx
+    {
+        width: 99%;
+        height: 84%;
+        border: 0px solid transparent;
+    }
+    .BulkUpload_BwsBtnHolder
+    {
+        width: 16%;
+        margin-left: 5px;
+    }
+    .DLExcelFormatBtnHolder
+    {
+        width: 33.7%;
+    }
+    
+    .BulkUpload_BwsBtnHolder, .DLExcelFormatBtnHolder
+    {
+        float: left;
+        border-radius: 6px;
+    }
+    .BulkUpload_BwsBtn, .DownLoadExcelFormatBtn
+    {
+        cursor: pointer;
+        color: white !important;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        padding: 10px 15px 10px 0px;
+        font-size: 8pt;
+        text-align: left;
+        text-indent: 24px;
+        background-color: transparent;
+        text-shadow: 1px 1px #168CA5;
+        width: 100%;
+        margin: 0;
+        outline: 0;
+    }
+    
+    
+    
+    .BulkUpload_BrowseDiv
+    {
+        margin: 5px 10px 0px 0px;
+        padding: 0px 10px 5px 0px;
+    }
+    
+    
+    .blkHrHdr
+    {
+        width: 91.2%;
+        float: left;
+        text-align: center;
+        margin: 0px 10px 15px 10px;
+    }
+    /*************************** Edit Student Profile ******************************/
+    .EditProfile_TopDiv
+    {
+        width: 94%;
+        margin-top: 16px;
+        float: left;
+        margin-left: 20px;
+        height: 450px;
+        border: 1px solid lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    .EditProfile_SaveButton
+    {
+        -moz-text-blink: none;
+        -moz-text-decoration-color: -moz-use-text-color;
+        -moz-text-decoration-line: none;
+        -moz-text-decoration-style: solid;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-image: none;
+        background-origin: padding-box;
+        background-position: 0 0;
+        background-repeat: repeat;
+        background-size: auto auto;
+        border-radius: 10px;
+        color: White;
+        display: inline-block;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        margin-bottom: 10px;
+    }
+    .CreateProfile_ReadingRecovery
+    {
+        width: 60%;
+    }
+    .EditProfile_ReadingRecovery, .EditProfile_ESL
+    {
+        width: 20%;
+    }
+    .CreateProfile_ESL
+    {
+        width: 27%;
+    }
+    .EditProfile_ReadingRecovery, .CreateProfile_ReadingRecovery
+    {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: #707070;
+        display: inline-block;
+        float: left;
+        background: #DDE3EE;
+        margin-right: 5px;
+        border-style: ridge;
+    }
+    .EditProfile_ESL, .CreateProfile_ESL
+    {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: #707070;
+        display: inline-block;
+        float: left;
+        background: #DDE3EE;
+        border-style: ridge;
+    }
+    
+    .EditStudentProfile_Div, .CreateTeacherProfile_Div
+    {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: inline-block;
+        height: 30px;
+        width: 90%;
+        border: 1px outset lightgrey;
+        background-color: White;
+    }
+    .EditStudentProfile_TextBox, .CreateTeacherProfile_TextBox
+    {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: inline-block;
+        color: #4578A5;
+        width: 97%;
+        height: 26px;
+        border: 0px solid white;
+        font-weight: bold;
+        padding-left: 5px;
+        margin-top: 1px;
+        font-size: 1em;
+    }
+    .EditStudentProfile_Span, .CreateTeacherProfile_Span
+    {
+        width: 5%;
+        font-size: 2.6em;
+        color: #2E5083;
+        float: left;
+        text-align: center;
+        padding-top: 2px;
+    }
+    /********************************** Student Profile ***********************/
+    
+    .TeacherProfile_MainDiv
+    {
+        width: 94.5%;
+        margin: 32px 0px 3px 20px;
+    }
+    .DurationDiv
+    {
+        width: 99.9%;
+        float: left;
+        margin-top: -1px;
+        font-size: 11pt;
+        color: Gray;
+        border-right: 1px solid #CCC;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+    }
+    .ClassDetails
+    {
+        color: #20B3E6;
+        float: left;
+        width: 96%;
+        font-size: 11pt;
+        margin: 0px 0px 5px 15px;
+        font-style: italic;
+    }
+    .TeacherProfile_NameDiv
+    {
+        float: left;
+        height: 102px;
+        color: #707070;
+        width: 94%;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, #EDF9FF 1%, #D8F1FF 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#EDF9FF), to(#D8F1FF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EDF9FF', endColorstr='#D8F1FF', gradientType='0');
+        background: -ms-linear-gradient(top, #EDF9FF 5%, #D8F1FF 130%) !important;
+    }
+    
+    .StudentProfile_ReadingLevelDiv, .TeacherProfile_ReadingLevelDiv
+    {
+        color: #707070;
+        border: 1px solid lightgray;
+        box-shadow: 1px 1px 5px lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, #F8FDFF 5%, #E3F5FF 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F9FDFF), to(#E3F5FF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9FDFF', endColorstr='#E3F5FF', gradientType='0');
+        background: -ms-linear-gradient(top, #F9FDFF 5%, #E3F5FF 130%) !important;
+        height: 102px;
+        float: left;
+        width: 24%;
+        margin-left: 17px;
+    }
+    .RecordingsMax
+    {
+        background-image: url('../../Portals/0/images/record.png');
+        background-repeat: no-repeat;
+        width: 109px;
+        height: 27px;
+        border: 0px;
+        cursor: pointer;
+    }
+    .RecordingsMin
+    {
+        background-image: url('../../Portals/0/images/mini.png');
+        background-repeat: no-repeat;
+        width: 109px;
+        height: 27px;
+        border: 0px;
+        cursor: pointer;
+    }
+    
+    .GroupRepeaterContentDiv
+    {
+        border: 1px solid lightgray;
+        width: 109.1%;
+        height: 55px;
+        margin-left: -23px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, #fdfdfd 55%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    
+    .TeacherProfile_ReadingLevelSliderDiv
+    {
+        width: 97.7%;
+        margin-top: 3px;
+        height: 125px;
+        float: left;
+        border: 1px solid lightgray;
+        box-shadow: 1px 1px 5px lightgray;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -khtml-border-radius: 2px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #E8E8E8 130%) repeat scroll 0 0 transparent !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#E8E8E8));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E8E8E8', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #E8E8E8 130%) !important;
+        margin: 3px 10px 3px 0px;
+        padding: 20px 0px 15px 13px;
+    }
+    .ProfileSliderLabel
+    {
+        border-bottom: 1px solid #CCC;
+        padding-bottom: 10px;
+        width: 94%;
+    }
+    .StudentProfile_ReadingLevelSliderTopDiv, .StudentProfile_ReadingLevelSliderBottomDiv, .TeacherProfile_ReadingLevelSliderTopDiv, .TeacherProfile_ReadingLevelSliderBottomDiv
+    {
+        width: 97%;
+        margin-left: 10px;
+    }
+    .sliderDivProfSaf
+    {
+        width: 95.3% !important;
+        margin-left: 10px;
+    }
+    .sliderHolderChr
+    {
+        width: 96.2% !important;
+    }
+    .sliderHolderIE
+    {
+        width: 94.2% !important;
+        margin-left:11px !important;
+    }
+    .sliderHolderMoz
+    {
+         width: 96.1% !important;
+    }
+    .TeacherProfile_ReadingLevelValueDiv
+    {
+        width: 41%;
+        text-align: center;
+    }
+    .TeacherProfile_ReadingLevelLabel
+    {
+        font-size: 43pt; /*font-family: Dotum;*/
+    }
+    .TeacherProfile_ThreeBoxes_OuterBox
+    {
+        width: 100%;
+        float: left;
+        margin-top: 18px;
+        height: 148px;
+    }
+    .TeacherProfile_ThreeBoxes_InnerBox1
+    {
+        width: 32%;
+        float: left;
+    }
+    .TeacherProfile_ThreeBoxes_InnerBox2
+    {
+        margin-left: 21px;
+        width: 64.82%;
+        float: left;
+    }
+    .TeacherProfile_ThreeBoxes1, .TeacherProfile_ThreeBoxes2, .TeacherProfile_ThreeBoxes3
+    {
+        float: left;
+        border: 1px solid lightgray;
+        height: 130px;
+        text-align: center;
+        font-size: 8.7pt;
+        background: -moz-linear-gradient(center top , white 0%, #F0FAFF 1%, #D8F1FF 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F0FAFF), to(#D8F1FF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0FAFF', endColorstr='#D8F1FF', gradientType='0');
+        background: -ms-linear-gradient(top, #F0FAFF 5%, #D8F1FF 130%) !important;
+        border-radius: 2px;
+    }
+    .TeacherProfile_ThreeBoxes1
+    {
+        width: 100%;
+    }
+    .TeacherProfile_ThreeBoxes2
+    {
+        width: 48%;
+    }
+    .TeacherProfile_ThreeBoxes3
+    {
+        width: 47%;
+        float: right;
+    }
+    
+    .LevelBooksRead
+    {
+        margin-top: 10px;
+        text-align: justify;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+    
+    .ReadingTypeDiv_PercentageLabel
+    {
+        float: left;
+        margin-top: 8px;
+        margin-left: 10px;
+        text-indent: 27px;
+    }
+    .ReadingTypeDiv_TypeLabel
+    {
+        float: left;
+        margin-top: 9px;
+        margin-left: 3px;
+    }
+    
+    .ReadingTypeDiv_Label
+    {
+        font-weight: normal;
+        float: left;
+        font-size: 10.5pt;
+        margin-top: 3px;
+        font-family:KievitCL_OT-Bold;
+    }
+    .ReadingTypeDiv_TopDiv
+    {
+        display: inline-block;
+        float: left;
+        margin-bottom: 5px;
+        padding-top: 15px;
+    }
+    .RecordingsCountDiv, .MyWordsCountDiv
+    {
+        float: left;
+        padding-top: 12px;
+        width: 94%;
+    }
+    
+    .RecordingsLabelDiv, .MyWordsLabelDiv
+    {
+        display: inline-block;
+        float: left;
+        width: 100%;
+    }
+    .RecordingsLabel, .MyWordsLabel
+    {
+        margin-bottom: 0px !important;
+        font-size:11pt !important;
+    }
+    .MyWordsLabel1
+    {
+        font-weight: bold;
+        font-size: 11pt;
+    }
+    .RecordingsListenLink, .SeeMyWordsLink
+    {
+        text-indent: 17px;
+        font-size: 10.45pt;
+        text-decoration: none;
+        background-color: transparent;
+        border: 0px solid white;
+        cursor: pointer;
+        color: #1FB5E7;
+        font-weight: bold;
+    }
+    .RecordingsListenLink
+    {
+        background-image: url('../../Portals/0/images/listen.png');
+        background-repeat: no-repeat;
+        background-position: 3% 38%;
+        padding-left: 22px;
+    }
+    .RecordingsListenButton:hover, .SeeMyWordsLink
+    {
+        text-decoration: none;
+        color: #1FB5E7;
+    }
+    .Percentage_ReadingLevel
+    {
+        width: 99.7%;
+        float: left;
+        height: 40px;
+        border: 1px solid lightgray;
+        -moz-border-radius: 1px;
+        -webkit-border-radius: 1px;
+        border-radius: 1px;
+        -khtml-border-radius: 1px;
+        background: -moz-linear-gradient(center top , white 0%, #white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+        margin-left: 1px;
+    }
+    
+    
+    .HeaderStyle
+    {
+        color: #20B3E6; /*padding-left: 16px;*/
+    }
+    
+    .ReadingType_Indept, .ReadingType_Dept
+    {
+        background-color: White;
+        box-shadow: 1px 1px 5px lightgray;
+        font-weight: bold;
+        color: #707070;
+        -khtml-border-radius: 3px;
+        width: 85%;
+        margin-left: 14px;
+        height: 35px;
+        float: left;
+        border: 1px solid lightgray;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    .ReadingType_Dept
+    {
+        -moz-border-bottom-right-radius: 3px;
+        -moz-border-bottom-right-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top: 0px solid #707070;
+    }
+    .ReadingType_Indept
+    {
+        -moz-border-top-right-radius: 3px;
+        -moz-border-top-right-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        -webkit-border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+    
+    .TodayDateItalics
+    {
+        margin-top: 5px;
+        text-align: center;
+        height: 10px;
+        margin-bottom: 2px;
+        margin-left: 25px;
+        font-size: 9.3pt;
+    }
+    .ReadingTypeDiv_PercentageLabel
+    {
+        float: left;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+    .ReadingTypeDiv_CountLabel
+    {
+        color: #1FB5E7;
+        float: left;
+        padding-right: 6px;
+        padding-left: 5px;
+        font-size: 14pt;
+        text-indent: 30px;
+    }
+    .ReadingTypeDiv_TopDiv
+    {
+        display: inline-block;
+        float: left;
+        margin-bottom: 5px;
+        padding-top: 15px;
+    }
+    .RecordingsCountDiv, .MyWordsCountDiv, .ReadingAgeCountDiv
+    {
+        float: left;
+        padding-top: 12px;
+        width: 94%;
+    }
+    .RecordingsCount, .WordsCount, .ReadingAgeCount
+    {
+         color: #707070;
+        font-size: 55px;
+    }
+    
+    .RecordingsLabelDiv, .MyWordsLabelDiv, .ReadingAgeLabelDiv
+    {
+        display: inline-block;
+        float: left;
+        width: 100%;
+    }
+    
+    .RecordingsListenLink, .SeeMyWordsLink
+    {
+        text-indent: 17px;
+        font-size: 10.45pt;
+        text-decoration: none;
+        background-color: transparent;
+        border: 0px solid white;
+        cursor: pointer;
+        color: #1FB5E7;
+        font-weight: bold;
+    }
+    .RecordingsListenLink
+    {
+        background-image: url('../../Portals/0/images/listen.png');
+        background-repeat: no-repeat;
+        background-position: 3% 38%;
+        padding-left: 22px;
+    }
+    .RecordingsListenButton:hover, .SeeMyWordsLink
+    {
+        text-decoration: none;
+        color: #1FB5E7;
+    }
+    
+    
+    
+    
+    /*************************************************************************************************************************************************/
+    /***************************************************************** Staging Server ****************************************************************/
+    /************************************************************************************************************************************************/
+    .UploadBooks_AddButton
+    {
+        width: 116px;
+    }
+    
+    
+    /************************************************************************************************************************************************/
+    /***************************************************************** My Words Log ****************************************************************/
+    /************************************************************************************************************************************************/
+    
+    .UnderLine
+    {
+        background-color: #2863A6;
+        width: 460px;
+        float: left;
+    }
+    .UnderLineDiv
+    {
+        width: 100%;
+        float: left;
+    }
+    
+    .Guided_CoverPaddingStyle
+    {
+        padding-top: 10px;
+        padding-left: 35px;
+        padding-bottom: 15px;
+    }
+    .Guided_NodePaddingStyle
+    {
+        padding-left: 4px;
+    }
+    .Guided_PaddingStyle
+    {
+        padding-left: 26px;
+    }
+    
+    
+    /*************************************************************************************************************************************************/
+    /***************************************************************** Staging Server ****************************************************************/
+    /************************************************************************************************************************************************/
+    .UploadBooks_AddButton
+    {
+        width: 116px;
+    }
+    
+    
+    /************************************************************************************************************************************************/
+    /***************************************************************** My Words Log ****************************************************************/
+    /************************************************************************************************************************************************/
+    
+    
+    .Independent_PaddingStyle
+    {
+        padding-bottom: 40px;
+        padding-left: 29px;
+    }
+    .Independent_NodePaddingStyle
+    {
+        padding-bottom: 40px;
+    }
+    .Guided_CoverPaddingStyle
+    {
+        padding-top: 10px;
+        padding-left: 35px;
+        padding-bottom: 15px;
+    }
+    .Independent_CoverPaddingStyle
+    {
+        padding-top: 10px;
+        padding-left: 35px;
+        padding-bottom: 30px;
+    }
+    .Guided_NodePaddingStyle
+    {
+        padding-left: 4px;
+    }
+    .Guided_PaddingStyle
+    {
+        padding-left: 26px;
+    }
+    .MyWordsLog_Label
+    {
+        cursor: pointer;
+        border-style: inset;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: inline-block;
+        border: 1px solid #707070;
+        width: 80%;
+        height: 30px;
+        background-image: url('../../Portals/0/images/downArrow.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        font-size: 1.2em;
+            }
+    
+    .classSearchwater
+    {
+        color: lightgray;
+    }
+    .Sort_btnholder
+    {
+        width: 20px;
+        float: left;
+        height: 10px;
+        margin-top: 1px;
+    }
+    .NamesAscSortingButtons, .NamesDescSortingButtons, .ReadingLevelAscSortingButtons, .ReadingLevelDescSortingButtons
+    {
+        border: 0 solid lightgrey;
+                cursor: pointer; float: left; height: 17px; width: 10%; margin-left: 5px; 
+    }
+    .ReadingLevelAscSortingButtons, .NamesAscSortingButtons, .NamesAscSortingButtons
+    {
+        background: url('../../Portals/0/images/asc.png') no-repeat center;
+    }
+    .ReadingLevelDescSortingButtons, .NamesDescSortingButtons, .NamesDescSortingButtons
+    {
+        background: url('../../Portals/0/images/desc.png') no-repeat center;
+    }
+    .checkdiv
+    {
+          width: 40px;
+  float: left;
+  padding-top: 3px;
+    }
+    
+    .Grp_SortingDiv
+    {
+        float: right;
+        height: 19px;
+        text-align: right;
+    }
+    .srtbtnshide
+    {
+        display: none;
+    }
+    
+    .NoBackground
+    {
+        background-color: transparent !important;
+    }
+    
+    .MandatoryClass
+    {
+        border: 1px solid #ED175B;
+        height: 32px;
+        border-radius: 3px;
+    }
+    
+    
+    /************************************* ADD TO GROUP*****************************/
+     .AllOtherGroupsDiv
+    {
+        float: left;
+        width: 100%;
+        padding: 0;
+        height: 90px;
+    }
+    .AllOtherGroupsImgDiv
+    {
+        float: left;
+        width: 8%;
+        padding-left: 62px;
+    }
+    
+    .AllOtherGroupsImgDiv img
+    {
+        margin-left: -17px;
+        float: left;
+        margin-top: 37px;
+    }
+  .AllotherGroupDivBtn
+    {
+        width: 84.5%;
+        margin-right: 26px;
+        height: 50px;
+        float: right;
+        border: 1px solid lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background-color: white;
+    }
+    .borderleftdiv 
+    {
+        height: 40px !important;
+    }
+    .AllOtherGroupBtn
+    {
+        font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+        text-align: left;
+        text-indent: 0px;
+        width: 96.4%;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        border-radius: 10px;
+        border: 0px solid white;
+        background-color: white;
+        margin-top: 10px;
+        background-image: url('../../Portals/0/images/Arrow_Up.png');
+        background-repeat: no-repeat;
+        background-position: right 60%;
+        padding-left: 93px;
+    }
+    
+    .GroupsDivset
+    {
+        width: 100%;
+        float: left;
+    }
+    .SelectAllSpan
+    {
+        float: left;
+        padding-top: 50px;
+        padding-left: 17px;
+        font-size: 10pt;
+    }
+     .GroupsDivtest
+    {
+        width: 100%;
+        float: left;
+    }
+    
+    .SelectallCheckBoxclass
+    {
+        float: left;
+        margin-left: 45px;
+        margin-top: 45px;
+        height: 21px;
+        width: 20px;
+    }
+    
+    .SelectedTeacherItem
+    {
+        background-color: #21B4E6;
+    }   
+       
+  
+    .SelectedTeacherItem
+    {
+        float: left;
+        width: 20%;
+        background-image: none;
+        border-radius: 2px;
+        font-weight: bold;
+        height: 33px;      
+        margin: 0px 5px 5px 0px;
+        list-style-type: none;
+    }
+    
+    .SelectedTeacherItem span
+    {
+        float: left;
+        display: inline;
+        margin: 0px;
+        margin-top: 8px;
+        margin-left: 20px;
+        color: white;
+        font-size: 9.4pt;
+        font-weight: bold;
+    }    
+    
+    .SelectedTeacherItem a
+    {
+        float: right;
+        margin-top: 9px;
+        margin-right: 11px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 10pt;
+    } 
+    
+    .SelectedTeacherItem a:hover
+    {
+        color: Red;
+    }
+    .GroupAddtoinnersnddiv
+    {
+        float: left;
+        width: 99%;
+        height: auto;
+        margin: 20px 0px 10px 10px;
+        border: 0px solid lightGray;
+    }
+    
+    #SelectedStudentList
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #SelectedStudentList li
+    {
+        list-style-type: none;
+        display: inline;
+    }
+    #SelectedStudentList ul li
+    {
+        list-style-type: none;
+        display: inline;
+    }    
+    .RepeaterContentScndDiv
+    {
+        border: 1px solid lightgray !important;
+        width: 96.1% !important;
+        height: 50px !important;
+        margin-left: -30px !important;
+        -moz-border-radius: 3px !important;
+        -webkit-border-radius: 3px !important;
+        border-radius: 3px !important;
+        -khtml-border-radius: 3px !important;
+        background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9)) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0') !important;
+    }
+    .GroupsSortReaddiv
+    {
+        float: right;
+        width: 40%;
+        margin-top: 45px;
+        font-size: 10pt;
+        color: #707070;
+    }
+    .GroupSearchbtn
+    {
+        width: 85px;
+        background-color: #EAEAEA;
+        border: 0px solid gray;
+        cursor: pointer;
+        height: 24px;
+        display: inline-block;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 5px;
+        -khtml-border-radius: 6px;
+    }
+ 
+    
+    .SearchDiv
+    {
+        width: 647px;
+        float: left;
+        margin-left: 24px;
+        margin-top: -7px;
+        background-color: #EEEEEE;
+        border: 1px solid #CCCCCC;
+    }
+  
+    .SortPM
+    {
+        width: 155px;
+        margin-right: 10px;
+    }
+    .SortNm
+    {
+        width: 60px;
+        margin-right:4px;
+    }
+    .SortRead,.SortReadDesc
+    {      
+        height: 16px;  
+        float: left;
+        font-size: smaller;
+        background-color: White;
+        cursor: pointer;       
+        background-position: right 50%;
+        background-repeat: no-repeat;
+        border: none;
+        font-size:10pt;
+        color:#707070;
+    }
+    .SortRead
+    { 
+         background-image: url('../../Portals/0/images/asc.png');
+    }
+    .SortReadDesc
+    { 
+        background-image: url('../../Portals/0/images/desc.png');
+    }
+    
+   .RepeaterContentDiv 
+   {
+        float: left;
+        width: 96.4%;
+        height: 50px;
+        margin-top: 20px;
+        z-index: 10;
+        position: relative;
+    }
+    
+    .grpBorders
+    {
+        width: 100%; 
+        float: left; 
+        margin-left: 54px; 
+        min-height: 25px; 
+        border-left: 1px solid lightgray;
+        margin-top: -36px;
+    }
+    
+    .RepeaterContentFstDiv
+    {
+        float: left;
+        margin-top: 23px;
+        margin-left: -8px;
+    }
+    
+    .RepeaterContentScndDiv
+    {
+        border: 1px solid lightgray;
+        width: 84.4%;
+        height: 50px;
+        margin-left: 26px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    
+    .RepeaterFstCol
+    {
+        float: left;
+        margin-top: 12px;
+        margin-left: 18px;
+    }
+    
+    .RepeaterSndCol
+    {
+        float: left;
+        margin-top: 6px;
+    }
+    
+    .RepeaterSndCollbl
+    {       
+
+        font-size: 12pt;
+        color: #707070;
+        font-weight: bold;
+    }
+    
+    .RepeaterSndColSpan
+    {
+
+        font-size: 11pt;       
+        color: #707070;
+        font-weight: bold;
+    }
+    
+    .RepeaterThrdCollbl
+    {       
+        color: #1479A4 !important;
+   
+        font-size: 11pt;
+        font-weight: bold;
+    }
+    
+    .RepeaterFrthCol
+    {
+        float: right;
+        margin-top: 6px;
+        background: -moz-linear-gradient(top, #689A2E 1%, #74A738 32%, #74A738 43%, #5E872E 95%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#689A2E), color-stop(32%,#74A738), color-stop(43%,#74A738), color-stop(95%,#5E872E));
+        background: -webkit-linear-gradient(top, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        background: -o-linear-gradient(top, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        background: -ms-linear-gradient(top, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        background: linear-gradient(to bottom, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#689A2E', endColorstr='#5E872E',GradientType=0 );
+        border: 1px solid #5E872E;
+        text-indent: 0px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        color: white;
+        height: 35px;
+        margin-right: 8px;
+    }
+    .RepeaterFrthCol:hover
+    {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#537A37), color-stop(32%,#59833A), color-stop(43%,#557D38), color-stop(95%,#436A32)) !important;
+        background: -webkit-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -o-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -ms-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: linear-gradient(to bottom, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#537A37', endColorstr='#436A32',GradientType=0 ) !important;
+    }
+    .GroupProfilebtn
+    {
+        border: 0px solid #6C9E2D;
+        width: 120px;
+        height: 35px;
+        text-indent: 19px;
+        cursor: pointer;
+        background: url('../../Portals/0/images/eye.png') 20% 48% no-repeat;
+        color: white !important;
+        font-size: 10pt;
+        text-shadow: 1px 2px 2px rgb(103, 141, 26);
+    }
+    
+    .ToBox
+    {
+        width: 93%;
+        float: left;
+        border: 1px solid #CCC;
+        margin: 40px 0px -20px 23px;
+        min-height: 61px;
+    }
+    .ToBoxText
+    {
+        width: 98%;
+        float: left;
+        margin: 12px 0 10px 12px;
+    }
+    
+    .KenduoComboBoxClassDivGroups
+    {
+        width: 95.3% !important;
+        float: right !important;
+        border: 1px solid lightgray !important;
+        margin-top: 20px !important;
+        margin-right: 5px !important;
+        height: 50px !important;
+        -moz-border-radius: 3px !important;
+        -webkit-border-radius: 3px !important;
+        border-radius: 3px !important;
+        -khtml-border-radius: 3px !important;
+        background-color: white;
+        position: relative;
+        cursor:pointer;
+    }
+    .KenduoComboBoxClassDivGroups .k-combobox .k-icon
+    {
+        margin-top: 4px !important;
+        cursor: pointer;
+        background-image: url('../../Portals/0/images/Arrow_down.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: right !important;
+        margin-right: 10px;
+    }
+    .KenduoComboBoxClassDivGroups .k-dropdown-wrap
+    {
+        border-color: white !important;
+        background-color: white !important;
+        text-indent: 20px;
+    }
+    
+    .KenduoComboBoxClassDivGroups .k-dropdown-wrap .k-state-hover
+    {
+        border-color: white !important;
+        background-color: white !important;
+    }
+    .KenduoComboBoxClassDivGroups .k-combobox
+    {
+        width: 88% !important;
+        top: 10px !important;
+        float: left;
+        margin-left: 68px !important;
+    }
+    .KenduoComboBoxClassDivGroups .k-combobox .k-input
+    {
+        box-shadow: inset 0 0 1px 1px white;
+        -webkit-box-shadow: inset 0 0 1px 1px white;
+        color: #727272 !important;
+        font-size: 12pt !important;
+        font-family: Calibri !important;  
+        box-shadow: inset 0 0 1px 1px white;
+        -webkit-box-shadow: inset 0 0 1px 1px white;
+    }
+    .KenduoComboBoxClassDivGroups .k-state-selected.k-state-focused
+    {
+        background-color: #4578A5 !important;
+        border-color: #4578A5 !important;
+    }
+    .KenduoComboBoxClassDivGroups .k-item.k-state-focused
+    {
+        background-color: #4578A5 !important;
+        border-color: #4578A5 !important;
+    } 
+     .KenduoSearchTextBox
+    {
+        color: #707070 !important;
+        width: 100% !important;
+        font-weight: bold !important;
+    }
+    .KenduoSearchTextBox ::-webkit-input-placeholder
+    {
+        font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+    }
+    .KenduoSearchTextBox ::-moz-placeholder
+    {
+        font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+    }
+    .KenduoSearchTextBox ::-ms-input-placeholder
+    {
+        font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+    } 
+    
+    
+    
+  
+    
+    /************************************** end - Add to group **********************************************/
+    
+    /****************************************************** DNN MESSAGES *************************************************************************/
+    .dnnFormMessage
+    {
+        width: 86.7%;
+        margin: 20px 0px 0px 20px;
+        font-size: 10pt;
+        font-weight: bold;
+        padding: 10px 10px 10px 40px;
+        text-transform:none;
+        text-shadow: none !important;
+    }
+    .dnnFormWarning
+    {
+        border-color: #EE3873;
+        background-color: #ED165D;
+        background-image: url(../../portals/0/images/error_icon.png);
+        background-position: 25px center;
+    }
+    
+    .dnnFormSuccess
+    {
+        background-color: #73A638;
+        background-image: url(../../portals/0/images/success_icon.png);
+        background-position: 35px center;
+        border: 1px solid #639624;
+    }
+    .dnnFormInfo
+    {
+        background-color: #C20896;
+        background-image: url(../../portals/0/images/alert_icon.png);
+        background-position: 35px center;
+        border: 1px solid #E9D38D;
+    }
+    .dnnFormSuccess, .dnnFormWarning, .dnnFormInfo
+    {
+        color: white;
+        margin-bottom: -10px;
+        background-repeat: no-repeat;
+    }
+    .dnnMsgHolder
+    {
+        width: 94%;
+        margin-left: 40px;
+    }
+    
+    .dnnMsgScript
+    {
+        width: 81.5% !important;
+        padding: 10px 10px 10px 75px !important;
+    }
+    
+    /****************************************************** end DNN MESSAGES *************************************************************************/
+    
+    
+    /**************************** Paging *******************************/
+    
+    .TeacherLstPagerBtns
+    {
+        margin-left: -17px;
+        position: relative;
+    }
+    .Highlight, .TeacherListPager .k-state-selected
+    {
+        background-color: #8D8D8D !important;
+        background-image: none !important;
+        color: White !important;
+        border: 1px solid #707070 !important;
+    }
+    .TeacherListPager .k-link
+    {
+        color: #707070 !important;
+    }
+    .page1, .TeacherListPager .k-link, .TeacherListPager a.k-state-disabled:hover
+    {
+        background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#E9E9E9)) !important;
+        background: -moz-linear-gradient(to bottom,#F9F9F9, #E9E9E9);
+        background: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E9E9E9', gradientType='0') !important;
+        background: -ms-linear-gradient(top, #F9F9F9 5%, #E9E9E9 130%) !important;
+        border: 1px solid #D8D8D8 !important;
+        position: relative !important;
+    }
+    .TeacherListPager .k-state-disabled, .TeacherListPager a.k-state-disabled:hover
+    {
+        color: #ccc !important;
+    }
+    .TeacherListPager .k-link span
+    {
+        background-image: none !important;
+    }
+    
+    .SortText
+    {
+        margin-left: 3px;
+        font-weight: 700;
+        text-decoration: none !important;
+        color: #707070;
+        cursor: pointer;
+    }
+    
+    .Pager
+    {
+        width: 106%;
+        float: left;
+        margin-top: 13px;
+    }
+    
+    .TeacherListPager
+    {
+        background-color: transparent !important;
+        border: 0px solid transparent !important;
+        width: 100%;
+    }
+    
+    .TeacherListPager ul li
+    {
+        list-style-type: none;
+    }
+    
+    .TeacherListPager .k-link, .TeacherListPager .k-state-selected
+    {
+        margin: 0 3px !important;
+        border-radius: 2px !important;
+        font-size: 10pt;
+        font-weight: bold;
+          padding: 0px 9px !important;
+        height: 22px;
+        width: 26px;
+        padding: 0px !important;
+    }
+    .PagerHdr
+    {
+        float: left;
+        width: 88%;
+        margin-top: 27px;
+        margin-left: 9%;
+        display: none;
+    }
+    .pagerDisabled
+    {
+        opacity:0.4;
+        cursor:default !important;
+    }  
+    .SearchFirst,.pagerDisabled
+    {
+        float: left;
+        color: #707070;
+        border: 1px solid #CCC;
+        z-index: 100;
+        position: relative;
+        margin-left: 4px;
+        margin-right: 3px;
+        height: 22px;
+        width: 25px;
+        border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+        text-align: center;
+        line-height: 21px;
+        cursor:pointer;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+    
+    .SearchFirst:hover
+    {
+        background: #707070 !important;
+        border: 1px solid #707070 !important;
+        color: White !important;
+    }
+    
+    .popUpClose
+    {
+        background-image: url('../../Portals/0/images/close.png') !important;
+    }
+    
+    /**************************** end - Paging *******************************/
+    
+    .popupClosebg
+    {
+        background-image: url('../../Portals/0/images/close.png') !important;
+    }
+    .popupokbtn
+    {
+        font-weight: 700;
+        font-size: 10pt;
+        border-radius: 3px;
+        color: White;
+        width: 135px;
+        height: 35px;
+        margin-left: 250px;
+        float: left;
+        border: 1px solid #6EB8C6;
+        background: -webkit-gradient(linear, left top, left bottom, from(#01B3D7), to(#008FAC));
+        background: -moz-linear-gradient(center top , white 0%, #01B3D7 5%, #008FAC 130%) repeat scroll 0 0 transparent;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01B3D7', endColorstr='#008FAC', gradientType='0');
+        background: -ms-linear-gradient(top, #01B3D7 5%, #008FAC 130%) !important;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    .popupokbtn:hover
+    {
+        background: -moz-linear-gradient(center top , #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#ff000000')";
+        background: -ms-linear-gradient(top, #0B82A5 5%, #15617B 130%) !important;
+    }
+    
+    .PopupHeaderSpan
+    {
+        font-size: 28pt;
+        float: left;
+        margin-left: 34px;
+        margin-bottom: auto;
+        color: #707070;
+    }
+    
+    /***********crerateleftdashboard**************/
+    .CancelButtonHolder
+    {
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+        margin-left: 24px;
+        float: left;
+    }
+    
+    .CancelButtonHolder input[type=submit]
+    {
+        color: #707070 !important;
+        text-shadow: none;
+    }
+    
+    #ClassSearchTextBox-list .k-state-selected, #ClassSearchTextBox-list .k-list > .k-state-selected, #ClassSearchTextBox-list .k-list > .k-state-focused, #ClassSearchTextBox-list .k-panelbar > .k-state-selected, #ClassSearchTextBox-list .k-panel > .k-state-selected, #GroupSearchTextBox-list .k-state-selected, #GroupSearchTextBox-list .k-list > .k-state-selected, #GroupSearchTextBox-list .k-list > .k-state-focused, #GroupSearchTextBox-list .k-panelbar > .k-state-selected, #GroupSearchTextBox-list .k-panel > .k-state-selected, #SubscriptionDrpList-list .k-state-selected, #SubscriptionDrpList-list .k-list > .k-state-selected, #SubscriptionDrpList-list .k-list > .k-state-focused, #SubscriptionDrpList-list .k-panelbar > .k-state-selected, #SubscriptionDrpList-list .k-panel > .k-state-selected, #GradeDropDown-list .k-state-selected, #GradeDropDown-list .k-list > .k-state-selected, #GradeDropDown-list .k-list > .k-state-focused, #GradeDropDown-list .k-panelbar > .k-state-selected, #GradeDropDown-list .k-panel > .k-state-selected, #GenderDropDown-list .k-state-selected, #GenderDropDown-list .k-list > .k-state-selected, #GenderDropDown-list .k-list > .k-state-focused, #GenderDropDown-list .k-panelbar > .k-state-selected, #GenderDropDown-list .k-panel > .k-state-selected
+    ,#SearchTextBox-list .k-state-selected, #SearchTextBox-list .k-list > .k-state-selected, #SearchTextBox-list .k-list > .k-state-focused, #SearchTextBox-list .k-panelbar > .k-state-selected, #SearchTextBox-list .k-panel > .k-state-selected,#SearchTextBox-list .k-state-hover
+    {
+        background: #707070 !important;
+        border: 1px solid #707070 !important;
+        color: White !important;
+    }
+    
+    #pager a:hover,#GroupSearchTextBox-list .k-state-hover, #ClassSearchTextBox-list .k-state-hover, #SubscriptionDrpList-list .k-state-hover, #GradeDropDown-list .k-state-hover, #GenderDropDown-list .k-state-hover
+    {
+        background: #CCC !important;
+        border: 1px solid #CCC !important;
+        color: Black !important;
+    }
+    
+    #pager ul,#GroupSearchTextBox-list ul, #ClassSearchTextBox-list ul, #SubscriptionDrpList-list ul, #GradeDropDown-list ul, #GenderDropDown-list ul, #SearchTextBox-list ul
+    {
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+     #SearchTextBox-list
+    {
+        width: 503px !important;
+        margin-top: 6px !important;
+    }
+    .finishBtns
+    {
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+    }
+    
+    .BtmBtnsHdr
+    {
+        width: 99%;
+        float: left;
+    }
+  .jp-repeat,.jp-repeat-off,.jp-shuffle,.jp-shuffle-off
+   {
+       display:none !important;
+   }
+   .MyWordsUl {
+padding-left: 50px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.WordsLogMainDiv
+{
+    margin: 70px 0px 0px 43px !important;
+}
+    .His_LabelDivUp
+    {
+        background-image: url('../../Portals/0/images/Arrow_Up.png') !important;
+    }
+    .His_LabelDivDown
+    {
+        background-image: url('../../Portals/0/images/Arrow_down.png') !important;
+    }
+    
+       .AudioPlayBack
+    {
+        box-shadow: 0px -1px 1px gray;
+        padding: 12px;
+        border: 1px solid lightgray;
+        background-color: white;
+        float: left;
+        width: 96%;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+    .AudioPlayButton
+    {
+        background-image: url('../../Portals/0/images/play_button.png');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 35px;
+        height: 20px;
+        border: none;
+        margin-left: 5px;
+        margin-top: 2px;
+        cursor: pointer;
+        float: left;
+    }
+    
+  .ClearWords
+    {
+        color: #01b4d8;
+    }
+    .RemoveWords
+    {
+        color: #707070 !important;
+        cursor:default !important;
+    }
+.k-window-action.k-link
+{
+    margin-top:-25px !important;
+}
+
+    
+
+ .TeachersList_CheckAllDiv
+    {
+
+   height: 19px;
+  padding: 5px 15px;
+  width: 100px;
+  border: 1px solid #707070;
+  float: left;
+  display: inline-block;
+    }
+.TeachersList_SortingDiv
+    {
+        float: right;       
+        height: 19px;
+        text-align: right;
+		display:none !important;   
+    }
+    
+	.teacher-lists
+	{
+	  margin-bottom: 10px;
+  float: left;
+	}
+	
+	.checkdiv {
+  float: left;
+  cursor: pointer;
+}
+
+.TeachersList_TeacherNames
+{
+  float: left;
+  padding: 16px 10px;
+}
+
+
+.List_Contents .btn
+{
+float:right;
+margin-right:5px;
+}
+
+.TeachersList_TopDiv h2
+{
+margin: 10px 0;
+font-size: 30px;
+}
+
+
+#eClSearchLabel
+{
+    background: none repeat scroll 0 0 #f5f5f5;
+  border-right: 1px solid #707070;
+  color: #707070;
+  float: left;
+  font-family: KievitCL_OT-Bold;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 14px;
+  text-align: left;
+  width: 100px;
+}
+
+
+.eClUserSearchDiv
+{
+width: 658px !important;
+height: 34px;
+border: 1px solid #707070;
+float: left;
+background-color: #FFF;
+position: relative;
+z-index: 50;
+margin-bottom: 20px;
+
+}
+
+
+.select-all
+{
+  cursor: pointer;
+  float: left;
+  margin: 3px 0 0 12px;
+  font-size: 12px;
+  font-family: KievitCL_OT-Bold;
+  letter-spacing:1px;
+
+}
+
+
+
+	.categorybysort {
+	border:  1px solid #707070!important;
+	list-style: none!important;
+	float: right !important;
+	text-align: left;
+	background: #F5F5F5 !important;
+	width: 160px;
+	margin-left: 7px!important;
+	
+	height:30px !important;
+	font-size:11px;
+}
+
+.categorybysort  .k-dropdown-wrap .k-input
+{
+  height: 22px;
+  line-height: 22px;
+   margin-top: 1px;
+  padding-bottom: 0px;
+}
+.categorybysort label { 
+  float: left;
+  padding: 9px 0 0 10px;
+  }
+
+.categorybysort .k-dropdown
+{
+width:90px;
+background:#F5F5F5 !important;
+}
+.categorybysort .k-dropdown-wrap
+{
+  float: left;
+  display: inline-block;
+  background: #FFF;
+  border: 0 none;
+}
+
+.categorybysort .k-widget .k-dropdown-wrap, .k-dropdown-wrap.k-state-focused,.k-dropdown-wrap.k-state-focused:hover
+{
+ background: #F5F5F5 !important;
+ border:0 none !important;
+ float:right;
+}
+
+
+.categorybysort.k-dropdown
+	{
+	  float: left;
+	     width: 165px !important;
+		   display: inline-block;
+	}
+   
+   
+      
+   
+    .categorybysort .k-dropdown-wrap.k-icon 
+	{
+  display: inline-block!important;
+  vertical-align: text-top;
+  background-image: url('/Portals/0/images/glyphicons.png')!important;
+  background-position: -151px -7px!important;
+  width: 30px!important;
+  height: 22px!important;
+  float: right;
+  margin-top: 0;
+  }
+  
+ 
+  
+   .categorybysort .k-popup .k-item
+	 {
+	 background:#FFF ;
+	 color:#707070 ;
+	 padding:6px 0 6px 15px !important
+	 }
+	 
+	 
+ .categorybysort .k-state-selected.k-state-focused,.categorybysort .k-state-hover {
+	color: #0089D1!important;
+	background: #FFF !important;
+	border:0 none !important;
+	}
+	
+
+#teacherssortdpn-list
+{
+  width: 160px !important;
+  margin-left: -67px;
+  border:1px solid #707070;
+  background:#FFF;
+  padding:0;
+}
+ #teacherssortdpn_listbox li
+ {
+ border-bottom:1px solid #707070 !important;
+ color:#707070;
+   padding:5px;
+ }
+
+ #teacherssortdpn_listbox .k-state-hover, #teacherssortdpn_listbox .k-state-focused,  #teacherssortdpn_listbox   .k-state-selected
+ {
+ background:transparent !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+  border-radius: 0; 
+  border:0 none ;
+     padding:5px;
+  color:#0089c5;
+
+line-height: 1.8em;
+ }
+
+.categorybysort .k-state-border-down
+{
+box-shadow:none !important;
+   -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+  border-radius: 0; 
+  border:0 none !important;
+}
+
+.categorybysort .k-icon {
+   display: inline-block!important;
+  vertical-align: text-top;
+  background-image: url('/Portals/0/images/glyphicons.png')!important;
+  background-position: -162px -11px!important;
+  width: 12px!important;
+  height: 20px!important;
+  float: right;
+  margin-top: 0;
+}
+
+.student-class
+{
+padding: 20px 0 0 0;
+float: left;
+width: 80px;
+display: inline-block;
+font-size: 12px;
+letter-spacing: 1px;
+font-family: KievitCL_OT-Bold;
+}
+.student-line
+{
+height: 2px;
+background: #9e9e9e;
+width: 580px;
+display: inline-block;
+float: left;
+margin: 28px 0 0 0;
+}
+.checkdiv img, #CheckAllDiv img
+{
+display:none;
+}
+
+#CheckAllDiv .ico-uncheck , #CheckAllDiv .ico-check 
+{
+ margin-top: 0;
+}
+
+.ico-uncheck
+{
+  height: 22px !important;
+  background-position: -207px -14px !important;
+  width: 22px !important;
+    margin-top: 9px;
+}
+
+.ico-check
+{
+  background-position: -255px -14px !important;
+  width: 22px !important;
+  height: 22px !important;
+    margin-top: 6px;
+  float: left;
+}
+.TeachersList_CheckAllDiv .ico-check{
+margin-top: 0px;
+}
+
+.eClUserSearchDiv .eClSearchbox , .eClUserSearchDiv .k-state-hover 
+{
+background-color:#FFF !important;
+width:490px;
+}
+.TeacherAddtoGroup_SearchList
+{
+  width: 92.6%;
+  border-style: solid;
+  height: 34px;
+  margin-left: 24px;
+  border: 1px solid #CCCCCC;
+  float: left;
+  position: relative;
+  margin-top: 30px; 
+}
+.SearchInnerDiv 
+{
+  width: 647px;
+  float: left;
+  height: 34px;
+}
+.SearchInnerDiv label
+{
+background: none repeat scroll 0 0 #f5f5f5;
+  border-right: 1px solid #707070;
+  color: #707070;
+  float: left;
+  font-family: KievitCL_OT-Bold;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 10px 0 10px 14px;
+  text-align: left;
+  width: 100px;
+}
+.TeacherAddtoGroup_SelectAllDiv{
+  height: 19px;
+  padding: 5px 15px;
+  width: 100px;
+  border: 1px solid #707070;
+  float: left;
+  display: inline-block;
+  margin: 20px 0px 20px 24px;
+}
+.eg-lfloat {
+  float: left;
+}
+.TeacherAddtoGroup_SelectAllDiv .ico-uncheck {
+  margin-top: 0px;
+}
+.TeacherAddtoGroup_SelectAllDiv .SelectAllSpan {
+  float: left;
+  padding-top: 3px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: KievitCL_OT-Bold;
+}
+.AddtoGroupsSortReaddiv {
+  float: right;
+  width: 40%;
+  margin-top: 20px;
+  font-size: 10pt;
+  color: #707070;
+  margin-right: 25px;
+}
+#SelectallCheckBox {
+  display: none;
+}

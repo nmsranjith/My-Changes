@@ -1,0 +1,439 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GroupList.ascx.cs" Inherits="DotNetNuke.Modules.eCollection_Groups.Groups.GroupList" %>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<script src="<%=Page.ResolveUrl("Resources/Shared/scripts/kendoui/js/kendo.web.min.js")%>" type="text/javascript"></script>
+<link href="<%=Page.ResolveUrl("Resources/Shared/scripts/kendoui/styles/kendo.common.min.css")%>" rel="stylesheet"
+    type="text/css" />
+<link href="<%=Page.ResolveUrl("Resources/Shared/scripts/kendoui/styles/kendo.default.min.css")%>" rel="stylesheet"
+    type="text/css" />
+    <link href="<%=Page.ResolveUrl("Resources/Shared/scripts/jquery/jquery-ui.css")%>" rel="stylesheet"
+    type="text/css" />
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var checkallFlag = true;
+        var popupFlag = false;
+        $("#SelectallCheckBox").click(function () {
+            if (checkallFlag) {
+                checkallFlag = false;
+                for (var i = 0; i < $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (!$("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv img")[i].src = "../Portals/0/images/tick_student.png";
+                        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]")[i].click();
+                    }
+
+
+                }
+                $('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                $('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                $('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+                popupFlag = true;
+                for (var i = 0; i < $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (!$("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv img")[i].src = "../Portals/0/images/tick_student.png";
+                        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]")[i].click();
+                    }
+
+                }
+                $("#SelectallCheckBox")[0].src = "../Portals/0/images/tick_student.png";
+
+            }
+            else {
+                $("#SelectallCheckBox")[0].src = "../Portals/0/images/circle_big.png";
+                checkallFlag = true;
+                for (var i = 0; i < $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv img")[i].src = "../Portals/0/images/circle_big.png";
+                        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]")[i].click();
+                    }
+
+                }
+                for (var i = 0; i < $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv img")[i].src = "../Portals/0/images/circle_big.png";
+                        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]")[i].click();
+                    }
+
+                }
+                $('#EditGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                $('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                $('#DeleteGroupButton').attr("disabled", "disabled").css("background-position", "0px -90px");
+                $('#StartReadingSessionButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                popupFlag = false;
+            }
+
+        });
+        $("#EditGroupButton").click(function () {
+
+            if (popupFlag) {
+                //$("#dialog-message").css({ 'display': 'block' });
+                //$("#dialog-message").dialog("open");
+		alert("Please select only one group to edit");
+                return false;
+            }
+        });
+
+
+        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv img").click(function () {
+            this.parentNode.children[0].click();
+            if (this.parentNode.children[0].checked) {
+                var count = 0;
+                for (var i = 0; i < $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv img")[i].src = "../Portals/0/images/tick_student.png";
+                        count++;
+                    }
+                    else {
+
+                    }
+                }
+                var Groupcheckedcount = 0;
+                for (var i = 0; i < $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv div img")[i].src = "../Portals/0/images/tick_student.png";
+                        Groupcheckedcount++;
+                    }
+                }
+                if ($("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]").length == count && $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]").length == Groupcheckedcount) {
+                    $("#SelectallCheckBox")[0].src = "../Portals/0/images/tick_student.png";
+                    checkallFlag = false;
+                }
+                //                else {
+                //                    checkallFlag = true;
+                //                }
+
+                if (count >= 2) {
+                    $('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = true;
+                }
+                else {
+                    $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = false;
+                }
+                $('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                $('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+            }
+            else {
+                var count = 0;
+                $("#SelectallCheckBox")[0].src = "../Portals/0/images/circle_big.png";
+                //checkallFlag = true;
+                for (var i = 0; i < $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        count++;
+                    }
+                    else {
+                        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv img")[i].src = "../Portals/0/images/circle_big.png";
+                    }
+                }
+                if (count != 0)
+                    checkallFlag = true;
+                if (count != 0) {
+                    if (count >= 2) {
+                        $('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        popupFlag = true;
+                    }
+                    else {
+                        $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        $('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                        popupFlag = false;
+                    }
+                    $('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                    $('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+                }
+                else {
+                    $('#EditGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    $('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    $('#DeleteGroupButton').attr("disabled", "disabled").css("background-position", "0px -90px");
+                    $('#StartReadingSessionButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    popupFlag = false;
+                }
+
+            }
+        });
+
+        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv img").click(function () {
+            this.parentNode.children[0].click();
+            if (this.parentNode.children[0].checked) {
+                var count = 0;
+                for (var i = 0; i < jQuery("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv img")[i].src = "../Portals/0/images/tick_student.png";
+                        count++;
+                    }
+                }
+                var classcheckedcount = 0;
+                for (var i = 0; i < $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv div img")[i].src = "../Portals/0/images/tick_student.png";
+                        classcheckedcount++;
+                    }
+                }
+                if ($("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]").length == count && $("#RepeaterClassDiv #ClassRepeaterDiv #ClassRepeaterContentDiv input[type=checkbox]").length == classcheckedcount) {
+                    $("#SelectallCheckBox")[0].src = "../Portals/0/images/tick_student.png";
+                    checkallFlag = false;
+                }
+                //                else {
+                //                    checkallFlag = true;
+                //                }
+
+                if (count >= 2) {
+                    $('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = true;
+                }
+                else {
+                    $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = false;
+                }
+                $('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                $('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+            }
+            else {
+                var count = 0;
+                $("#SelectallCheckBox")[0].src = "../Portals/0/images/circle_big.png";
+                for (var i = 0; i < jQuery("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        count++;
+                    }
+                    else {
+                        $("#RepeaterGroupDiv #GroupsRepeaterDiv #GroupRepeaterContentDiv div img")[i].src = "../Portals/0/images/circle_big.png";
+                    }
+                }
+                if (count != 0)
+                    checkallFlag = true;
+                if (count != 0) {
+                    if (count >= 2) {
+                        $('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        popupFlag = true;
+                    }
+                    else {
+                        $('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        $('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                        popupFlag = false;
+                    }
+                    $('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                    $('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+                }
+                else {
+                    $('#EditGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    $('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    $('#DeleteGroupButton').attr("disabled", "disabled").css("background-position", "0px -90px");
+                    $('#StartReadingSessionButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    popupFlag = false;
+                }
+
+            }
+        });
+        var pathname = window.location.pathname;
+        var temppath = pathname.split('/');
+        var url = temppath[1] + "/DesktopModules/eCollection_Groups/GroupsHandler.ashx";
+        $("#classSearchTextBox").kendoComboBox({
+            placeholder: "Your Class",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            dataSource: {
+                transport: {
+                    read: {
+                        url: url,
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        serverFiltering: true,
+                        serverPaging: true,
+                        pageSize: 20
+                    }
+                }
+            }
+        });
+        $("#<%=GroupSearchTextBox.ClientID %>").kendoComboBox({
+            placeholder: "Your Group",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            dataSource: [
+                            { Name: "Cengage", Id: "1" },
+                            { Name: "HTC", Id: "2" },
+                            { Name: "eCommerce", Id: "3" },
+                            { Name: "eCollection", Id: "4" }
+                        ]
+        });
+        $("#dialog-message").dialog({
+            modal: true,
+            autoOpen: false,
+            show: "blind",
+            hide: "explode",
+            buttons: {
+                Ok: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+
+
+        jQuery("#<%=SearchTextBox.ClientID%>").focus(function () {
+            if (jQuery(this).val() == this.title) {
+                jQuery(this).val("");
+            }
+        });
+        jQuery("#<%=SearchTextBox.ClientID%>").blur(function () {
+            if (jQuery(this).val().trim() == "") {
+                jQuery(this).val(this.title);
+            }
+        });
+    });
+    
+    </script>
+
+<div class="GroupsDivset"><div id="dialog-message" title="Alert message!"  style="display:none;"><p>Please select only one group to edit</p></div>
+<asp:UpdatePanel ID="CheckALLUpdatePanel" runat="server" UpdateMode="Conditional">
+<ContentTemplate>
+<div class="GroupTopDiv">
+        <div class="GroupSelectAll">
+               <div id="SelectAllDiv"><img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" class="SelectallCheckBoxclass" id="SelectallCheckBox" alt="Image cannot be displayed"  /><literal id="literal" ></literal></div>
+               <span class="SelectAllSpan"> SELECT ALL</span>
+        </div>
+        
+        <div class="GroupsSortReaddiv">
+       
+            <asp:Button ID="SortingButton" 
+            CssClass="SortRead Sort" runat="server"  Text="A to Z" /><b style="float:right">|</b>
+            <asp:Button ID="ReadingLevelButton" runat="server" CssClass="SortRead Reading" Text="PM READING LEVEL" />
+            
+        </div>
+
+    </div>
+</ContentTemplate>
+</asp:UpdatePanel>
+    
+    <div  class="LeftLineDiv"></div>
+    <div class="SearchDiv">
+        <div class="SearchInnerDiv">
+           <input type="text" id="SearchTextBox" class="classSearchwater" runat="server" value="Enter your search here..." title="Enter your search here..." />
+            <div class="Searchbtndiv">
+            <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+        <ContentTemplate>
+            <asp:Button ID="SearchButton" runat="server" CssClass="SearchButton" />
+            </ContentTemplate>
+            </asp:UpdatePanel>
+            </div>
+            
+        </div>
+    </div>
+    <div class="LeftSecondLineDiv"></div>
+    <div class="ClassSearchDiv">
+        <div class="LeftImgDiv">
+            <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>"/>
+        </div>
+        <div id="KenduoComboBoxDiv" class="KenduoComboBoxClassDiv">
+            <input type="text" id="classSearchTextBox" class="KenduoSearchTextBox"  clientidmode="Static"  runat="server" />
+        </div>
+    </div>
+     <div class="GroupContentDiv">
+        <div id="RepeaterClassDiv" class="RepeaterDiv">
+        <asp:UpdatePanel ID="classUpdatePanel" runat="server" UpdateMode="Conditional">
+        <ContentTemplate>
+        <asp:Repeater ID="ClassRepeater" runat="server">
+            <ItemTemplate>
+                <div id="ClassRepeaterDiv" class="RepeaterContentDiv">
+                    <div class="RepeaterContentFstDiv">
+                        <img src="<%=Page.ResolveUrl("Portals/0/images/circle_small.png")%>" alt="" />
+                    </div>
+                    <div id="ClassRepeaterContentDiv" class="RepeaterContentScndDiv">
+                        <div class="RepeaterFstCol">
+                         <input id="ClassCheckBoxes" clientidmode="Static" type="checkbox" style="display:none" />
+                         <img id="ClassCheckBoxImg"  alt=""  clientidmode="Static" src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>"/>
+                        </div>
+                        <div class="RepeaterSndCol">
+                            <asp:Label ID="MembersLabel" CssClass="RepeaterSndCollbl" runat="server" Text='<%# Eval("MembersCount") %>'></asp:Label><br />
+                            <span class="RepeaterSndColSpan">Members</span>
+                        </div>
+                        <div  class="RepeaterSndCol">
+                            <span class="RepeaterSndColSpan">Group Name</span><br />
+                            <asp:Label ID="TeacherNameLabel" CssClass="RepeaterThrdCollbl" runat="server" Text='<%# Eval("TeacherName") %>'></asp:Label>                        
+                       </div>
+                       <div class="RepeaterFrthCol">
+                       
+                              <asp:Button ID="ClassProfileButton" runat="server" CssClass="GroupProfilebtn" 
+                              ForeColor="White" onclick="ClassProfileButton_Click"/>
+                       </div>
+                   </div>
+                </div> 
+        </ItemTemplate>
+        </asp:Repeater>
+
+        </ContentTemplate>
+        </asp:UpdatePanel>
+        
+        </div>
+     </div>
+
+      <div class="ClassSearchDiv"  style="margin-top: -68px;">
+        <div class="LeftImgDiv">
+            <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>"/>
+        </div>
+        <div  class="KenduoComboBoxClassDiv">
+            <input type="text" id="GroupSearchTextBox"  class="KenduoSearchTextBox" clientidmode="Static"  runat="server" />
+        </div>
+      </div>
+       <div class="GroupContentDiv">
+        <div id="RepeaterGroupDiv" class="RepeaterDiv">
+        <asp:UpdatePanel ID="GroupUpdatePanel" runat="server" UpdateMode="Conditional"> 
+     <ContentTemplate>
+        <asp:Repeater ID="GroupsRepeater" runat="server">
+            <ItemTemplate>
+                <div id="GroupsRepeaterDiv" class="RepeaterContentDiv">
+                    <div class="RepeaterContentFstDiv">
+                        <img src="<%=Page.ResolveUrl("Portals/0/images/circle_small.png")%>" alt="" />
+                    </div>
+                    <div id="GroupRepeaterContentDiv" class="RepeaterContentScndDiv">
+                        <div  class="RepeaterFstCol">
+                             <input ID="GroupCheckBoxes" clientidmode="Static" type="checkbox" style="display:none"    runat="server"/>
+                            <img  id="groupImage1" alt="" clientidmode="Static" src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>"/>
+                        </div>
+                        <div class="RepeaterSndCol">
+                            <asp:Label ID="MembersLabel" CssClass="RepeaterSndCollbl" runat="server" Text='<%# Eval("MembersCount") %>'></asp:Label><br />
+                            <span class="RepeaterSndColSpan">Members</span>
+                        </div>
+                        <div class="RepeaterSndCol">
+                            <span class="RepeaterSndColSpan">Group Name</span><br />
+                            <asp:Label ID="TeacherNameLabel" CssClass="RepeaterThrdCollbl" runat="server" Text='<%# Eval("TeacherName") %>'></asp:Label>                        
+                       </div>
+                       <div class="RepeaterFrthCol">
+
+                              <asp:Button ID="GroupsProfileButton" runat="server" CssClass="GroupProfilebtn" 
+                              ForeColor="White" onclick="GroupsProfileButton_Click"/>
+                       </div>
+                   </div>
+                </div> 
+        </ItemTemplate>
+        </asp:Repeater>
+        </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+     </div>
+     
+                         
+      <div id="AllOtherGroupsDiv" class="AllOtherGroupsDiv" runat="server">
+        <div class="AllOtherGroupsImgDiv">
+            <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" alt="" />
+        </div>
+        <div id="AllotherGroupDivBtn" class="AllotherGroupDivBtn" runat="server">
+
+            <asp:Button ID="AllOtherGroupButton" runat="server" Text="All Other Groups" 
+                CssClass="AllOtherGroupBtn"
+                onclick="AllOtherGroupButton_Click" />
+              
+        </div>
+    </div>
+ <div style="border-right: white 10px solid; float: left; margin-top: -33px; margin-left: 47px;
+        height: 50px; width: 5px; z-index: 1000;">
+    </div>
+
+</div>
+
+

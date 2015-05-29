@@ -1,0 +1,17 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SessionProfileDashBoardMenu.ascx.cs" Inherits="DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu" %>
+<style type="text/css">
+input[type=submit][disabled]
+{
+    cursor:default; 
+}
+</style>
+<div>
+    <center>
+    <br />
+        <asp:Button ID="EditSessionButton" runat="server"  clientIdMode="static" style="background-image: url('../../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;"
+            Text="Edit Session" CssClass="ButtonStyle" onclick="EditSessionButton_Click" />
+        <br />
+        <asp:Button ID="EndSessionButton" runat="server" style="background-image: url('../../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;"  Text="End Session" CssClass="ButtonStyle" onclick="EndSessionButton_Click"/> 
+    </center>
+</div>
+

@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55741AD6-941F-44E6-9484-0DCD96E76052}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DotNetNuke.Modules.eCollection_Sessions</RootNamespace>
+    <AssemblyName>eCollection_Sessions</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DocumentationFile>eCollection_Sessions.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DocumentationFile>eCollection_Sessions.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CengageLib">
+      <HintPath>D:\May20\Integrated\bin\CengageLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetNuke, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="eCollection_Dashboards, Version=0.0.1.19628, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\eCollection_Dashboards.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DotNetNuke" />
+    <Import Include="DotNetNuke.Common" />
+    <Import Include="DotNetNuke.Common.Utilities" />
+    <Import Include="DotNetNuke.Data" />
+    <Import Include="DotNetNuke.Entities" />
+    <Import Include="DotNetNuke.Entities.Tabs" />
+    <Import Include="DotNetNuke.Framework" />
+    <Import Include="DotNetNuke.Modules" />
+    <Import Include="DotNetNuke.Security" />
+    <Import Include="DotNetNuke.Services" />
+    <Import Include="DotNetNuke.Services.Exceptions" />
+    <Import Include="DotNetNuke.Services.Localization" />
+    <Import Include="DotNetNuke.UI" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\Common\Constants.cs" />
+    <Compile Include="Components\Common\Helper.cs" />
+    <Compile Include="Components\ExceptionHandling\SessionValidationException.cs" />
+    <Compile Include="Components\FeatureController.cs" />
+    <Compile Include="Components\Controllers\SessionController.cs" />
+    <Compile Include="Components\Interfaces\IDataRepository.cs" />
+    <Compile Include="Components\Common\IDCollection.cs" />
+    <Compile Include="Components\Modal\Books.cs" />
+    <Compile Include="Components\Modal\Group.cs" />
+    <Compile Include="Components\Modal\Messages.cs" />
+    <Compile Include="Components\Modal\SessionMembers.cs" />
+    <Compile Include="Components\Modal\SessionProducts.cs" />
+    <Compile Include="Components\Modal\Sessions.cs" />
+    <Compile Include="Components\Common\MyEnums.cs" />
+    <Compile Include="Components\Modal\Student.cs" />
+    <Compile Include="Dashboard\CreateSessionDashBoardMenu.ascx.cs">
+      <DependentUpon>CreateSessionDashBoardMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\CreateSessionDashBoardMenu.ascx.designer.cs">
+      <DependentUpon>CreateSessionDashBoardMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataProvider.cs" />
+    <Content Include="Dashboard\CreateSessionDashBoardMenu.ascx" />
+    <Content Include="Documentation\Documentation.css" />
+    <Content Include="Documentation\Documentation.html" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\DataProviders\SqlDataProvider\SqlDataProvider.cs" />
+    <Compile Include="Edit.ascx.designer.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.ascx.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SessionHandler.ashx.cs">
+      <DependentUpon>SessionHandler.ashx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\AddBooksToSession.ascx.cs">
+      <DependentUpon>AddBooksToSession.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\AddBooksToSession.ascx.designer.cs">
+      <DependentUpon>AddBooksToSession.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\AddGroupsToSession.ascx.cs">
+      <DependentUpon>AddGroupsToSession.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\AddGroupsToSession.ascx.designer.cs">
+      <DependentUpon>AddGroupsToSession.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\AddStudentToSession.ascx.cs">
+      <DependentUpon>AddStudentToSession.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\AddStudentToSession.ascx.designer.cs">
+      <DependentUpon>AddStudentToSession.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\AddTeachersToSession.ascx.cs">
+      <DependentUpon>AddTeachersToSession.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\AddTeachersToSession.ascx.designer.cs">
+      <DependentUpon>AddTeachersToSession.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\CreateSession.ascx.cs">
+      <DependentUpon>CreateSession.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\CreateSession.ascx.designer.cs">
+      <DependentUpon>CreateSession.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\CustomPaging.ascx.cs">
+      <DependentUpon>CustomPaging.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\CustomPaging.ascx.designer.cs">
+      <DependentUpon>CustomPaging.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\eCollectionMessages.ascx.cs">
+      <DependentUpon>eCollectionMessages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\eCollectionMessages.ascx.designer.cs">
+      <DependentUpon>eCollectionMessages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\EditSession.ascx.cs">
+      <DependentUpon>EditSession.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\EditSession.ascx.designer.cs">
+      <DependentUpon>EditSession.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\SessionDashBoardMenu.ascx.cs">
+      <DependentUpon>SessionDashBoardMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SessionDashBoardMenu.ascx.designer.cs">
+      <DependentUpon>SessionDashBoardMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\SessionProfileDashBoardMenu.ascx.cs">
+      <DependentUpon>SessionProfileDashBoardMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard\SessionProfileDashBoardMenu.ascx.designer.cs">
+      <DependentUpon>SessionProfileDashBoardMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\Sessions.ascx.cs">
+      <DependentUpon>Sessions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\Sessions.ascx.designer.cs">
+      <DependentUpon>Sessions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Session\SessionsProfile.ascx.cs">
+      <DependentUpon>SessionsProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Session\SessionsProfile.ascx.designer.cs">
+      <DependentUpon>SessionsProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eCollection_SessionsSettingsBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View.ascx.designer.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="View.ascx.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eCollection_SessionsModuleBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_LocalResources\Edit.ascx.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_LocalResources\Settings.ascx.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App_LocalResources\View.ascx.resx">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BuildScripts\ModulePackage.targets" />
+    <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+    <None Include="ClassDiagram7.cd" />
+    <Content Include="packages\eCollection_Sessions_00.00.01_Install.zip" />
+    <None Include="packages\eCollection_Sessions_00.00.01_Install.zip.r103" />
+    <None Include="packages\eCollection_Sessions_00.00.01_Install.zip.r45" />
+    <Content Include="packages\eCollection_Sessions_00.00.01_Source.zip" />
+    <None Include="packages\eCollection_Sessions_00.00.01_Source.zip.r103" />
+    <None Include="packages\eCollection_Sessions_00.00.01_Source.zip.r45" />
+    <None Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
+    <None Include="eCollection_Sessions.dnn" />
+    <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
+    <None Include="module.css" />
+    <None Include="ReleaseNotes.txt" />
+    <None Include="License.txt" />
+    <Content Include="jplayer.blue.monday.css" />
+    <Content Include="jplayer.css" />
+    <Content Include="SessionHandler.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Edit.ascx" />
+    <Content Include="Session\AddBooksToSession.ascx" />
+    <Content Include="Session\AddGroupsToSession.ascx" />
+    <Content Include="Session\AddStudentToSession.ascx" />
+    <Content Include="Session\AddTeachersToSession.ascx" />
+    <Content Include="Session\CreateSession.ascx" />
+    <Content Include="Session\CustomPaging.ascx" />
+    <Content Include="Session\eCollectionMessages.ascx" />
+    <Content Include="Session\EditSession.ascx" />
+    <Content Include="Dashboard\SessionDashBoardMenu.ascx" />
+    <Content Include="Dashboard\SessionProfileDashBoardMenu.ascx" />
+    <Content Include="Session\Sessions.ascx" />
+    <Content Include="Session\SessionsProfile.ascx" />
+    <Content Include="Settings.ascx" />
+    <Content Include="View.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\EditSession.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\" />
+    <Folder Include="obj\Release\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="'$(Solutions.VSVersion)' == '8.0'" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="'$(Solutions.VSVersion)' == '9.0'" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49716</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://dnndev/desktopmodules/eCollection_Sessions/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://dnndev/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <Extension>zip</Extension>
+    <DNNFileName>eCollection_Sessions</DNNFileName>
+    <PackageName>eCollection_Sessions</PackageName>
+    <MSBuildCommunityTasksPath>$(MSBuildProjectDirectory)\BuildScripts</MSBuildCommunityTasksPath>
+  </PropertyGroup>
+  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <Target Name="AfterBuild" DependsOnTargets="PackageModule">
+  </Target>
+</Project>

@@ -1,0 +1,6 @@
+E:\Deployterm\Deploy\bin\eCollection_Banner.dll
+E:\Deployterm\Deploy\bin\eCollection_Banner.pdb
+E:\Deployterm\Deploy\bin\eCollection_Banner.xml
+E:\Deployterm\Deploy\DesktopModules\eCollection_Banner\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\eCollection_Banner\obj\Debug\eCollection_Banner.dll
+E:\Deployterm\Deploy\DesktopModules\eCollection_Banner\obj\Debug\eCollection_Banner.pdb

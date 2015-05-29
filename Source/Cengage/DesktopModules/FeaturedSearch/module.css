@@ -1,0 +1,227 @@
+.ftopdiv{
+min-height:23px !important;
+font-family: KievitCL_OT-Bold;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+.ftopoptions
+{
+padding: 5px !important;
+width: 100% !important;
+margin-bottom: 20px !important;
+}
+#AdvanceSearchDiv ,.fsave-cont
+{
+	float: left;
+	margin: 0px 0 3px 10px;
+	border: solid 1px #707070;
+	height: auto;
+	padding: 20px 0 6px 18px;
+	width: 100%;
+	min-height: 115px;
+	position: relative;
+}
+.fopspan
+{
+cursor:pointer;
+}
+.fspan
+{
+float: left;
+font-size: 15px;
+color: #707070;
+margin: 2px 15px 0px 10px !important;
+}
+.pull-left
+{
+float:left;
+}
+.fsearch_nav
+{
+ float:left;
+ width:100%;
+}
+.fsearch-top
+{
+	overflow: hidden;
+	float: left;
+	 width:98%;
+}
+.frows,.frows1 {
+	border: 1px solid #707070;
+	clear: both;
+	height: 34px;
+	margin-top: 5px;
+}
+.frows label ,.frows1 label{
+	background: none repeat scroll 0 0 #F5F5F5;
+	padding: 7px 15px 8px 15px;
+	color: #707070;
+	font-size: 12px;
+	width: 150px;
+	font-family: KievitCL_OT-Bold;
+	font-weight: normal;
+	letter-spacing: 1px;
+	border-right: 1px solid #707070;
+	float:left;
+}
+.frows1 label
+{
+width:175px !important;
+}
+.ftxt ,.ftxt1{
+	border: 0;
+	padding: 0 10px;
+	width: 79%;
+	color: #707070;
+	height: 31px;
+}
+.ftxt1
+{
+width: 76% !important;
+}
+.frecommand span.k-dropdown {
+	float: left;
+	padding: 0!important;
+	border-right: 1px solid #707070!important;
+	font-size: 12px;
+	width: 160px;
+	font-family: KievitCL_OT-Bold;
+	font-weight: normal;
+}
+.ffillterTxt {
+	color: #707070;
+	font: 13px KievitCL_OT-Medium;
+	margin: 20px 0 10px;
+}
+.ficoninput {
+	margin: 0;
+	vertical-align: top;
+	display: inline-block;
+	font-size: 14px;
+	width: 70%;
+	background: #FFF;
+	border: none;
+	padding: 6px 25px;
+	color: #707070;
+	height: 14px;
+}
+.k-list-container {
+background-color: #FFF!important;
+border-color: #767676!important;
+position: absolute;
+margin: 1px 0 0 -1px!important;
+width: 161px!important;
+padding: 0!important;
+}
+element.style {
+height: 202px;
+display: none;
+font-family: KievitCL_OT-Bold;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+width: 160px;
+position: absolute;
+}
+
+
+.fsave-cont p , .ffindTxt{
+color: #707070;
+float: left;
+font-family: KievitCL_OT-Bold;
+clear: both;
+font-size: 15px;
+letter-spacing: 1px;
+margin: 0 0 15px 0;
+width:100%;
+}
+.fsave-cont p label {
+background: none repeat scroll 0 0 #F5F5F5;
+border: 1px solid #707070;
+font-size: 12px;
+font-family: KievitCL_OT-Medium;
+font-weight: normal;
+height: 27px;
+padding: 10px 0 0 16px;
+width: 100px;
+float: left;
+letter-spacing: 1px;
+}
+.fsave-cont p input.ftxt {
+border-bottom: 1px solid #707070;
+border-right: 1px solid #707070;
+border-top: 1px solid #707070;
+border-left: 0;
+padding: 5px 20px;
+width: 80%;
+color: #939393;
+font-style: italic;
+float: left;
+height: 27px;
+}
+#AdvanceSearchDiv .alert.alert-primary{
+width: 100%;
+float: left;
+margin-bottom: 0;
+}
+.fsave-cont .alert.alert-primary{
+width: 98%;
+float: left;
+margin-bottom: 0;
+}
+.ui-dialog
+{
+height:auto !important;
+}
+.searchname {
+float: left;
+width: auto;
+padding: 5px;
+font-family: KievitCL_OT-Regular;
+font-size: 15px;
+}
+.flisttop
+{
+margin-top: 10px;
+float: left;
+margin-left: 5px;
+width:100%;
+}
+.flistitems
+{
+border: 1px solid #707070;
+padding: 5px;
+margin: -1px 0 0 5px;
+}
+.flistheader
+{
+float: left;
+color: #707070;
+margin:2px 15px 10px 6px;
+font-size: 18px;
+}
+.flistedit{
+float:left;
+margin:5px;
+}
+.fadvanced-search-btn
+{
+margin-left:5px;
+}
+.frowssearchname
+{
+width: 98% !important;
+}
+
+.feditbtn 
+{
+    background-image: url("../../Images/manage-icn.png");
+    background-color: transparent !important;
+    border: 0px solid transparent !important;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 15px;
+    float: left;
+}

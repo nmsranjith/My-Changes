@@ -1,0 +1,2700 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eCollection_Books</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from eCollection_BooksModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.eCollection_BooksModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_BooksModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.eCollection_BooksModuleBase.GetTabID(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ModuleName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.eCollection_BooksModuleBase.isBooksExceeded(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="productCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.eCollection_BooksModuleBase.GetMessage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Message_Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.eCollection_BooksModuleBase.LogFileWrite(System.Exception)">
+            <summary>
+             Logs the exception
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.eCollection_BooksModuleBase.LogValues(System.String)">
+            <summary>
+             Writes values to log file for developer verification
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.PageHeaderLabel">
+            <summary>
+            PageHeaderLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.PageHeaderButton">
+            <summary>
+            PageHeaderButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.eCollectionMenuPlaceHolder">
+            <summary>
+            eCollectionMenuPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.FunctionalityPlaceHolder">
+            <summary>
+            FunctionalityPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.ContentPlaceHolder">
+            <summary>
+            ContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.SubsCnt">
+            <summary>
+            SubsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.SelectedSubscription">
+            <summary>
+            SelectedSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.PageName">
+            <summary>
+            PageName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.schoolname">
+            <summary>
+            schoolname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblGracePeriod">
+            <summary>
+            lblGracePeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblBooksSelected">
+            <summary>
+            lblBooksSelected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblBooksLeft">
+            <summary>
+            lblBooksLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblDaysLeft">
+            <summary>
+            lblDaysLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SeeSelectedBokks">
+            <summary>
+            SeeSelectedBokks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.BacktoCollectionButton">
+            <summary>
+            BacktoCollectionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SelectedBookscount">
+            <summary>
+            SelectedBookscount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.RemovetosubsButtontop">
+            <summary>
+            RemovetosubsButtontop control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.ReadingLevelSlider">
+            <summary>
+            ReadingLevelSlider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SliderValue">
+            <summary>
+            SliderValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.custItmSKHidden">
+            <summary>
+            custItmSKHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SliderRange">
+            <summary>
+            SliderRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.BooksUpdatePanel">
+            <summary>
+            BooksUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.hiddenbtn">
+            <summary>
+            hiddenbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.CollectionRepeater">
+            <summary>
+            CollectionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SelectedBookscountBot">
+            <summary>
+            SelectedBookscountBot control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.RemoveSubButtonbot">
+            <summary>
+            RemoveSubButtonbot control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.BacktoCollectionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SeeSelectedBokks_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.RemoveFromSubscriptionBottom_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.RemoveFromSubscription_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.RemoveFromsubscription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.GetSelectedBooks">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.BindGracePeriodinfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.BindBooks(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="take"></param>
+            <param name="pageSize"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.CollectionRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.hiddenbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.BindBooksSelectedInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.BacktoCollection_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.BindReadingAgeBooks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.test_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.AddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.botAddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.toggleEventButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.AddBooksToSubscription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.GetSelectedBooks">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.RepSeeAllBooks_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.LevelCollection">
+            <summary>
+            LevelCollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.headSpan">
+            <summary>
+            headSpan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.hiddenfieldtext">
+            <summary>
+            hiddenfieldtext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.SelectedBookCountSeeAll">
+            <summary>
+            SelectedBookCountSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.lblBooksExceededSeeAll">
+            <summary>
+            lblBooksExceededSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.BacktoCollection">
+            <summary>
+            BacktoCollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.SelectedBookscountSeeAll">
+            <summary>
+            SelectedBookscountSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.AddtosubsButtonSeeAll">
+            <summary>
+            AddtosubsButtonSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.RepSeeAllBooks">
+            <summary>
+            RepSeeAllBooks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.SelectedBookscountBotSeeAll">
+            <summary>
+            SelectedBookscountBotSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.BottomAddToSeeAll">
+            <summary>
+            BottomAddToSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookPacks.DaysLeftLbl">
+            <summary>
+            DaysLeftLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookPacks.BookPackRptr">
+            <summary>
+            BookPackRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookPacks.CustomButton">
+            <summary>
+            CustomButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookPacks.SetButton">
+            <summary>
+            SetButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookPacks.pageurlhdn">
+            <summary>
+            pageurlhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.StudentPagerDiv">
+            <summary>
+            StudentPagerDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.PreviousButton">
+            <summary>
+            PreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.ShowPreviousButton">
+            <summary>
+            ShowPreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.plcPaging">
+            <summary>
+            plcPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.pageNumber">
+            <summary>
+            pageNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.ShowNextLink">
+            <summary>
+            ShowNextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.NextLink">
+            <summary>
+            NextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.Paging(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="currentPage"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.DisplayPropertyForPage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="display"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.PageButtonStyle(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.GetCurrentPageNo">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.CreatePagingControl(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="rowCount"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.linkbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.PreviousButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.NextLink_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.ShowPreviousButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.ShowNextLink_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.DaysLeftLbl1">
+            <summary>
+            DaysLeftLbl1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.DaysLeftLbl">
+            <summary>
+            DaysLeftLbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.BookPackRptr">
+            <summary>
+            BookPackRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.CustomButton">
+            <summary>
+            CustomButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.SetButton">
+            <summary>
+            SetButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.ContentsRptr">
+            <summary>
+            ContentsRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.pageurlhdn">
+            <summary>
+            pageurlhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.Duringgraceperiod">
+            <summary>
+            Duringgraceperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.BookUpdatePanel">
+            <summary>
+            BookUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.CategoriesDrpList">
+            <summary>
+            CategoriesDrpList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.ReadingLevelSlider">
+            <summary>
+            ReadingLevelSlider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.SliderValue">
+            <summary>
+            SliderValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.custItmSKHidden">
+            <summary>
+            custItmSKHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.SliderRange">
+            <summary>
+            SliderRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.MessageDivUpdatePanel">
+            <summary>
+            MessageDivUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.BooksUpdatePanel">
+            <summary>
+            BooksUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.hiddenbtn">
+            <summary>
+            hiddenbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.CollectionRepeater">
+            <summary>
+            CollectionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.Duringgraceperiod_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.BindBooks(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="take"></param>
+            <param name="pageSize"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.hiddenbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.CollectionRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.itemSelected(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BPBooksList.SearchButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Sessions.Components.Modal.Messages.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.lblIsBookAlreadyAdded">
+            <summary>
+            lblIsBookAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.SelectedBookCountCategory">
+            <summary>
+            SelectedBookCountCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.lblBooksExceededCategory">
+            <summary>
+            lblBooksExceededCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.CategoriesDrpList">
+            <summary>
+            CategoriesDrpList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.SelectedBookscountCategories">
+            <summary>
+            SelectedBookscountCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.AddtosubsButtonCategory">
+            <summary>
+            AddtosubsButtonCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.CategoriesRepeater">
+            <summary>
+            CategoriesRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.SelectedBookscountBotCategories">
+            <summary>
+            SelectedBookscountBotCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.BottomAddToSubscriptionCategory">
+            <summary>
+            BottomAddToSubscriptionCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.LiteralBooksRange">
+            <summary>
+            LiteralBooksRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.LiteralAlreadyAdded">
+            <summary>
+            LiteralAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.AlreadySelectedBookCnt">
+            <summary>
+            AlreadySelectedBookCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.BindBooksSelectedInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.AddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.botAddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.toggleEventButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.AddBooksToSubscription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.CategoriesDrpList_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.SeeallcurrentCategories_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.BindCategories">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.GetSelectedBooks">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.CategoriesRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from eCollection_BooksSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.eCollection_BooksSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_BooksSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Modal.Book.Fill(System.Data.IDataReader)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Edit">
+            <summary>
+            EditeCollection_Books class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditeCollection_Books class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from eCollection_BooksModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.ReadingAgeSelect">
+            <summary>
+            ReadingAgeSelect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.hiddenfieldtext">
+            <summary>
+            hiddenfieldtext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.lblIsBookAlreadyAdded">
+            <summary>
+            lblIsBookAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.SelectedBookCountReading">
+            <summary>
+            SelectedBookCountReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.lblBooksExceededReading">
+            <summary>
+            lblBooksExceededReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.SelectedBookscountReadingAge">
+            <summary>
+            SelectedBookscountReadingAge control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.AddtosubsReading">
+            <summary>
+            AddtosubsReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.ReadingAgeRepeater">
+            <summary>
+            ReadingAgeRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.SelectedBookscountBotReadingAge">
+            <summary>
+            SelectedBookscountBotReadingAge control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.BottomAddToSubscriptionReading">
+            <summary>
+            BottomAddToSubscriptionReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.LiteralAlreadyAdded">
+            <summary>
+            LiteralAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.AlreadySelectedBookCnt">
+            <summary>
+            AlreadySelectedBookCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.BindBooksSelectedInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.AddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.botAddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.toggleEventButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.ReadingAgeSelect_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.SeeallcurrentReadingAge_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.BacktoCollectionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.BindReadingAge">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.AddBooksToSubscription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.GetSelectedBooks">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.ReadingAgeRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookList.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookList.Duringgraceperiod_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookList.BindBooks(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="take"></param>
+            <param name="pageSize"></param>
+            <param name="startCount"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookList.hiddenbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookList.CollectionRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookList.itemSelected(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookList.SearchButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.Duringgraceperiod">
+            <summary>
+            Duringgraceperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.BookUpdatePanel">
+            <summary>
+            BookUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.CategoriesDrpList">
+            <summary>
+            CategoriesDrpList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.ReadingLevelSlider">
+            <summary>
+            ReadingLevelSlider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SliderValue">
+            <summary>
+            SliderValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.custItmSKHidden">
+            <summary>
+            custItmSKHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SliderRange">
+            <summary>
+            SliderRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.MessageDivUpdatePanel">
+            <summary>
+            MessageDivUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.BooksUpdatePanel">
+            <summary>
+            BooksUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.hiddenbtn">
+            <summary>
+            hiddenbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.CollectionRepeater">
+            <summary>
+            CollectionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.lblIsBookAlreadyAdded">
+            <summary>
+            lblIsBookAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.hiddenfieldtext">
+            <summary>
+            hiddenfieldtext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.SelectedBookCount">
+            <summary>
+            SelectedBookCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.SelectedBookscountLevels">
+            <summary>
+            SelectedBookscountLevels control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.lblBooksExceeded">
+            <summary>
+            lblBooksExceeded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.AddtosubsButton">
+            <summary>
+            AddtosubsButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BooksRepeater">
+            <summary>
+            BooksRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.SelectedBookscountBotLevels">
+            <summary>
+            SelectedBookscountBotLevels control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BottomAddToSubscription">
+            <summary>
+            BottomAddToSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.LiteralAlreadyAdded">
+            <summary>
+            LiteralAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.AlreadySelectedBookCnt">
+            <summary>
+            AlreadySelectedBookCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BindBookSelectedInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.AddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.botAddToSub_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.toggleEventButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.SeeallcurrentLevel_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BooksRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BooksLevelRepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BacktoCollectionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BindLevels">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.AddBooksToSubscription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.GetSelectedBooks">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblGracePeriod">
+            <summary>
+            lblGracePeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblBooksSelected">
+            <summary>
+            lblBooksSelected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblBooksLeft">
+            <summary>
+            lblBooksLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblDaysLeft">
+            <summary>
+            lblDaysLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeSelectedBokks">
+            <summary>
+            SeeSelectedBokks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.LevelsLink">
+            <summary>
+            LevelsLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ReadingAgeLink">
+            <summary>
+            ReadingAgeLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.CategoriesLink">
+            <summary>
+            CategoriesLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.BookSelectionWizardPlace">
+            <summary>
+            BookSelectionWizardPlace control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SelectionContentDiv">
+            <summary>
+            SelectionContentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.BookSelectionContentPlaceHolder">
+            <summary>
+            BookSelectionContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeAlldiv">
+            <summary>
+            SeeAlldiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeAllPlaceHolder">
+            <summary>
+            SeeAllPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ReadingAge_ToggleGracePeriodInfo(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.Level_ToggleGracePeriodInfo(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.Categories_ToggleGracePeriodInfo(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.Categories_ToggleDivOnOuter1(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ReadingAge_ToggleDivOnOuter1(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.Page_Init(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ReadingAge_ToggleDivOnOuter(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.Level_ToggleDivOnOuter(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.LoadSeeAllBooks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.Categories_ToggleDivOnOuter(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeallcurrentLevel_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeallcurrentCategories_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeallcurrentReadingAge_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.BacktoCollectionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeSelectedBokks_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ApplyLevelsCSS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ApplyReadingAgeCSS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ApplyCategoriesCSS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.BindGracePeriodinfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBooks(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBooksGracePeriod(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetReadingAge(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="years"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetReadingAgeBooks(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="AttributeValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetReadingCategories(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBooksByCategories(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="AttributeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetLevels(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="AttributeValue"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.AddBooksToSubscription(System.Int32,System.Xml.XmlDocument,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="products"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.RemoveBooksfromSubscription(System.Int32,System.Xml.XmlDocument,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="products"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBooksByReadingLevel(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBookListByReadingLevel(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBookListByReadingAge(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="AttributeValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBookListBySearch(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.IsBooksAdded(System.Int32,System.Xml.XmlDocument)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="products"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBooksCategories(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subsId"></param>
+            <param name="Attribute_Type"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetSearchGroup(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.AutoAssignBooks(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetSelectedBooksCount(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Values"></param>
+            <param name="Type"></param>
+            <param name="SubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBooksCountForPageRedirection(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            Inserts data into util email table to send email on an occurrence of any exception
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.RunScheduleForGracePeriodNotification(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="today"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBookPacks(DotNetNuke.Modules.eCollection_Books.Components.Modal.BookPack)">
+            <summary>
+            Get all book packs
+            </summary>
+            <param name="bookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBookPackeBooks(System.Int32,System.String)">
+            <summary>
+            Get all the eBooks of a book pack
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetCustomPackeBooks(System.Int32,System.String)">
+            <summary>
+            Get all the eBooks of a custom book pack
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.SearchBookPackeBooks(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Search eBooks of a Book pack across title,Reading level,Reading age,Text type
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.SearchCustomPackeBooks(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Search eBooks of a custom pack across title,Reading level,Reading age,Text type
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.SaveCustomBookPack(DotNetNuke.Modules.eCollection_Books.Components.Modal.BookPack)">
+            <summary>
+            Save custom Book Pack
+            </summary>
+            <param name="customBookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.SetBookPack(DotNetNuke.Modules.eCollection_Books.Components.Modal.BookPack)">
+            <summary>
+            Set book pack to a subscription
+            </summary>
+            <param name="customBookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.GetBookPackStatus(System.Int32,System.String)">
+            <summary>
+            Get book pack status
+            </summary>
+            <param name="customBookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.DashBoard.BookListDashBoard.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.DashBoard.BookListDashBoard.StartReadingSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.DashBoard.BookListDashBoard.StartReadingSessionButton">
+            <summary>
+            StartReadingSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.DashBoard.BookListDashBoard.selectedSessionID">
+            <summary>
+            selectedSessionID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.ClearAllCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBooks(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBooksGracePeriod(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetReadingAge(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="Years"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetReadingAgeBooks(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="AttributeValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetCategories(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBooksByCategories(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="AttributeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetLevels(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="AttributeValue"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.AddBooksToSubscription(System.Int32,System.Xml.XmlDocument,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="products"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.RemoveBooksFromSubscription(System.Int32,System.Xml.XmlDocument,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="products"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBooksByReadingLevel(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.IsBooksAdded(System.Int32,System.Xml.XmlDocument)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="products"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBooksLookUp(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <param name="Attribute_type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetSearchBook(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBookListByLevels(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="fromReadLvl"></param>
+            <param name="toReadLvl"></param>
+            <param name="LoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBookListBySearch(System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchString"></param>
+            <param name="custSubId"></param>
+            <param name="Attribute_Type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBookListByAge(System.Int32,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="AttributeType"></param>
+            <param name="AttributeValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetSelectedBooksCount(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Values"></param>
+            <param name="Type"></param>
+            <param name="SubId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+            <param name="errorMessage"></param>
+            <param name="SubsSk"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.RunScheduleForGracePeriodNotification(System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="today"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.AutoAssignBooks(System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <param name="loginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBooksCountForPageRedirection(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="subId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBookPacks(DotNetNuke.Modules.eCollection_Books.Components.Modal.BookPack)">
+            <summary>
+            Get all book packs
+            </summary>
+            <param name="bookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBookPackeBooks(System.Int32,System.String)">
+            <summary>
+            Get all the eBooks of a book pack
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetCustomPackeBooks(System.Int32,System.String)">
+            <summary>
+            Get all the eBooks of a custom book pack
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.SearchBookPackeBooks(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Search eBooks of a Book pack across title,Reading level,Reading age,Text type
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.SearchCustomPackeBooks(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Search eBooks of a Custom pack across title,Reading level,Reading age,Text type
+            </summary>
+            <param name="bookPackID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.SaveCustomBookPack(DotNetNuke.Modules.eCollection_Books.Components.Modal.BookPack)">
+            <summary>
+            Save custom Book Pack
+            </summary>
+            <param name="customBookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.SetBookPack(DotNetNuke.Modules.eCollection_Books.Components.Modal.BookPack)">
+            <summary>
+            Set book pack to a subscription
+            </summary>
+            <param name="customBookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Components.Controllers.BooksController.GetBookPackStatus(System.Int32,System.String)">
+            <summary>
+            Get book pack status
+            </summary>
+            <param name="customBookPack"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for eCollection_Books
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.BooksHandler">
+            <summary>
+            Summary description for BooksHandler
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.BooksHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.BooksHandler.Deserialize``1(System.Web.HttpContext)">
+            <summary>
+            This function will take httpcontext object and will read the input stream
+            It will use the built in JavascriptSerializer framework to deserialize object based given T object type value
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.BooksHandler.GetCorrectText(System.String,System.Boolean)">
+            <summary>
+            product result getcorrect text function
+            </summary>
+            <param name="inputText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.BooksHandler.GetCorrectedInputString(System.Collections.Generic.List{System.String},System.String,System.Boolean)">
+            <summary>
+            Returns the corrected text for search with forms,weightage
+            </summary>
+            <param name="mc"></param>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

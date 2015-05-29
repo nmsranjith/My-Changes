@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Common.eCollection_Menu">
+    <Position X="0.5" Y="2" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Common\eCollection_Menu.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Common.ProfileGroups" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>BCARAEAAQQABAAgAAAAAAAAAAAAAABACBIgACAIAAoA=</HashCode>
+      <FileName>Common\ProfileGroups.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Common.ReadingHistory" Collapsed="true">
+    <Position X="15.5" Y="3.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAgEBAkCAAQACAgQAAASAIAAAYAQAYQACAbBAEA=</HashCode>
+      <FileName>Common\ReadingHistory.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Common.ReadingLevelSlider" Collapsed="true">
+    <Position X="24.5" Y="3" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Common\ReadingLevelSlider.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Components.FeatureController" Collapsed="true">
+    <Position X="38.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Dashboard.CreateStudentProfileDashboard" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Dashboard.StudentsListDashboard" Collapsed="true">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Dashboard.StudentsProfileBulkUploadDashboard" Collapsed="true">
+    <Position X="17.75" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Data.DataProvider" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Data.SqlDataProvider" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.eCollection_StudentsModuleBase" Collapsed="true">
+    <Position X="19" Y="0.5" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.eCollection_StudentsSettingsBase" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Edit" Collapsed="true">
+    <Position X="20" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Settings" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.View" Collapsed="true">
+    <Position X="33.5" Y="2" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Teachers.Edit" Collapsed="true">
+    <Position X="38.75" Y="3" Width="3.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Handlers.eCollectionHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="0.5" Width="5.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Views.CreateStudentProfile" Collapsed="true">
+    <Position X="22.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Views.EditStudentProfile" Collapsed="true">
+    <Position X="29" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Views.MyRecordings" Collapsed="true">
+    <Position X="32.75" Y="3.5" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AEAIAAgEBAkCAAQACAgQAAASAIAAAYAQAYQACAbBAEA=</HashCode>
+      <FileName>Students\MyRecordings.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Views.MyWords" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AEAIACAAFAkQAAACAAAQAAASAIAAARAAAYAAiAKAAAA=</HashCode>
+      <FileName>Students\MyWords.ascx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Views.StudentProfile" Collapsed="true">
+    <Position X="13.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Views.StudentsList" Collapsed="true">
+    <Position X="24.5" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DotNetNuke.Modules.eCollection_Students.Views.StudentsProfileBulkUpload" Collapsed="true">
+    <Position X="31.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

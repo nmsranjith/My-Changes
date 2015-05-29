@@ -1,0 +1,26 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SessionProfileDashBoardMenu.ascx.cs" Inherits="DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionProfileDashBoardMenu" %>
+<style type="text/css">
+input[type=submit][disabled]
+{
+    cursor:default; 
+}
+</style>
+<div>
+    <center>
+    <br />
+<<<<<<< .mine
+        <asp:Button ID="EditSessionButton" runat="server"  clientIdMode="static" 
+            Text="EDIT SESSION" CssClass="ButtonStyle" onclick="EditSessionButton_Click" />
+=======
+        <asp:Button ID="EditSessionButton" runat="server"  clientIdMode="static" style="background-image: url('../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;"
+            Text="EDIT SESSION" CssClass="ButtonStyle" onclick="EditSessionButton_Click" />
+>>>>>>> .r100
+        <br />
+<<<<<<< .mine
+        <asp:Button ID="EndSessionButton" runat="server" style="background-position:0px -220px"  Text="END SESSION" CssClass="ButtonStyle" onclick="EndSessionButton_Click"/> 
+=======
+        <asp:Button ID="EndSessionButton" runat="server" style="background-image: url('../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;background-position:0px -225px"  Text="END SESSION" CssClass="ButtonStyle" onclick="EndSessionButton_Click"/> 
+>>>>>>> .r100
+    </center>
+</div>
+

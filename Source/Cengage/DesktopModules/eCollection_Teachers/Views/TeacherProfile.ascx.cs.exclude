@@ -1,0 +1,38 @@
+﻿using System;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
+using System.Text;
+using System.Web.UI.WebControls;
+using DotNetNuke.Common;
+using System.Web.Services;
+using DotNetNuke.Entities.Portals;
+
+namespace DotNetNuke.Modules.eCollection_Teachers.Views
+{
+    public partial class TeacherProfile :eCollection_TeachersModuleBase
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable teachersTable = new DataTable();
+            teachersTable.Columns.Add("teachername", typeof(string));
+            DataRow row = teachersTable.NewRow();
+            row["teachername"] = "Christopher Stephen";
+            teachersTable.Rows.Add(row);
+            TeacherProfileRepeater.DataSource = teachersTable;
+            TeacherProfileRepeater.DataBind();
+        }
+
+        [WebMethod]
+        protected string MyRecordingsUrl()
+        {
+            return Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=" + MYRECORDINGS;
+        }
+        [WebMethod]
+        protected string MyWordsUrl()
+        {
+            return Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=" + MYWORDS;
+        }
+      
+    }
+}

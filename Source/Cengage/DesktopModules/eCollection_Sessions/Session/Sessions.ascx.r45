@@ -1,0 +1,440 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Sessions.ascx.cs" Inherits="DotNetNuke.Modules.eCollection_Sessions.Session.Sessions" %>
+
+<link href="<%=Page.ResolveUrl("Resources/Shared/scripts/kendoui/styles/kendo.common.min.css")%>"   rel="stylesheet" type="text/css" />
+<link href="<%=Page.ResolveUrl("Resources/Shared/scripts/kendoui/styles/kendo.default.min.css")%>"   rel="stylesheet" type="text/css" />
+<%--<script src="<%=Page.ResolveUrl("Resources/Shared/scripts/jquery/jquery.min.js")%>"   type="text/javascript"></script>--%>
+<script src="<%=Page.ResolveUrl("Resources/Shared/scripts/kendoui/js/kendo.web.min.js")%>"   type="text/javascript"></script>
+<script src="<%=Page.ResolveUrl("Resources/Shared/scripts/kendoui/js/kendo.dropdownlist.min.js")%>"   type="text/javascript"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {      
+        var checkallFlag = true;
+        var popupFlag = false;
+        jQuery("#SelectallCheckBox").click(function () {
+            if (checkallFlag) {
+                this.src = "../../Portals/0/images/tick_student.png";
+                jQuery("#ClassRepeaterContentDiv div img").click();
+                jQuery("#GroupRepeaterContentDiv div img").click();
+                checkallFlag = false;
+            }
+            else {
+                this.src = "../../Portals/0/images/circle_big.png";
+                jQuery("#ClassRepeaterContentDiv div img").click();
+                jQuery("#GroupRepeaterContentDiv div img").click();
+                checkallFlag = true;
+            }
+
+        });
+        jQuery("#EditGroupButton").click(function () {
+
+            if (popupFlag) {
+                jQuery("#dialog-message").dialog("open");
+                return false;
+            }
+        });
+        jQuery("#dialog-message").dialog({
+            modal: true, autoOpen: false,
+            buttons: {
+                Ok: function () {
+                    $(this).dialog("close");
+                }
+            }
+        });
+        jQuery("#ClassRepeaterContentDiv div img").click(function () {
+            // this.previousElementSibling.click();
+            this.parentNode.children[0].click();
+            if (this.parentNode.children[0].checked) {
+                var count = 0;
+                for (var i = 0; i < jQuery("#ClassRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (jQuery("#ClassRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        jQuery("#ClassRepeaterContentDiv div img")[i].src = "../../Portals/0/images/tick_student.png";
+                        count++;
+                    }
+                }
+                if (count >= 2) {
+                    jQuery('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = true;
+                }
+                else {
+                    jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = false;
+                }
+                jQuery('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                jQuery('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+            }
+            else {
+                var count = 0;
+                for (var i = 0; i < jQuery("#ClassRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (jQuery("#ClassRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        count++;
+                    }
+                    else {
+                        jQuery("#ClassRepeaterContentDiv div img")[i].src = "../../Portals/0/images/circle_big.png";
+                    }
+                }
+                if (count == 0)
+                    jQuery("#SelectallCheckBox").src = "../../Portals/0/images/circle_big.png";
+                if (count != 0) {
+                    if (count >= 2) {
+                        jQuery('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        popupFlag = true;
+                    }
+                    else {
+                        jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        jQuery('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                        popupFlag = false;
+                    }
+                    jQuery('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                    jQuery('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+                }
+                else {
+                    jQuery('#EditGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    jQuery('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    jQuery('#DeleteGroupButton').attr("disabled", "disabled").css("background-position", "0px -90px");
+                    jQuery('#StartReadingSessionButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    popupFlag = false;
+                }
+
+            }
+        });
+
+        jQuery("#GroupRepeaterContentDiv div img").click(function () {
+            this.parentNode.children[0].click();
+            if (this.parentNode.children[0].checked) {
+                var count = 0;
+                for (var i = 0; i < jQuery("#GroupRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (jQuery("#GroupRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        jQuery("#GroupRepeaterContentDiv div img")[i].src = "../../Portals/0/images/tick_student.png";
+                        count++;
+                    }
+                }
+                if (count >= 2) {
+                    jQuery('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = true;
+                }
+                else {
+                    jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                    popupFlag = false;
+                }
+                jQuery('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                jQuery('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+            }
+            else {
+                var count = 0;
+                for (var i = 0; i < jQuery("#GroupRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (jQuery("#GroupRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        count++;
+                    }
+                    else {
+                        jQuery("#GroupRepeaterContentDiv div img")[i].src = "../../Portals/0/images/circle_big.png";
+                    }
+                }
+                if (count != 0) {
+                    if (count >= 2) {
+                        jQuery('#MergeGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        popupFlag = true;
+                    }
+                    else {
+                        jQuery('#EditGroupButton').removeAttr("disabled").css("background-position", "0px -2px");
+                        jQuery('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                        popupFlag = false;
+                    }
+                    jQuery('#DeleteGroupButton').removeAttr("disabled").css("background-position", "0px -175px");
+                    jQuery('#StartReadingSessionButton').removeAttr("disabled").css("background-position", "0px -2px");
+                }
+                else {
+                    jQuery('#EditGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    jQuery('#MergeGroupButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    jQuery('#DeleteGroupButton').attr("disabled", "disabled").css("background-position", "0px -90px");
+                    jQuery('#StartReadingSessionButton').attr("disabled", "disabled").css("background-position", "0px -133px");
+                    popupFlag = false;
+                }
+
+            }
+        });
+        jQuery("#<%=classSearchTextBox.ClientID %>").kendoComboBox({
+            placeholder: "Active Sessions",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/dotnetnuke/DesktopModules/eCollection/Handlers/eCollectionHandlers.ashx?Page=Groups",
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        serverFiltering: true,
+                        serverPaging: true,
+                        pageSize: 20
+                    }
+                }
+            }
+        });
+        jQuery("#<%=GroupSearchTextBox.ClientID %>").kendoComboBox({
+            placeholder: "Finished Sessions",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/dotnetnuke/DesktopModules/eCollection/Handlers/eCollectionHandlers.ashx?Page=Groups",
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        serverFiltering: true,
+                        serverPaging: true,
+                        pageSize: 20
+                    }
+                }
+            }
+        });
+    });
+    </script>
+<style type="text/css">
+    /****************jquery-ui-css for dialog**********************/
+      .ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; }
+.ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative;  }
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .1em 0; }
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 54%; width: 19px; margin: -7px -8px 0 0; padding: 1px; height: 18px; background-image:url("../../Portals/0/images/crosswhite.png"); background-repeat:no-repeat;}
+.ui-dialog .ui-dialog-titlebar-close span { display: none; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 1px; }
+.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+        .ui-widget { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1.1em/*{fsDefault}*/; }
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1em; }
+.ui-widget-content { border: 1px solid #aaaaaa/*{borderColorContent}*/; background: #ffffff/*{bgColorContent}*/ url(images/ui-bg_flat_75_ffffff_40x100.png)/*{bgImgUrlContent}*/ 50%/*{bgContentXPos}*/ 50%/*{bgContentYPos}*/ repeat-x/*{bgContentRepeat}*/; color: #222222/*{fcContent}*/; }
+.ui-widget-content a { color: #222222/*{fcContent}*/; }
+.ui-widget-header { border: 0px solid #aaaaaa/*{borderColorHeader}*/!important; background: #cccccc/*{bgColorHeader}*/ url("../../Portals/0/images/crosswhite.png")/*{bgImgUrlHeader}*/ 50%/*{bgHeaderXPos}*/ 50%/*{bgHeaderYPos}*/ repeat-x/*{bgHeaderRepeat}*/; color: #222222/*{fcHeader}*/; font-weight: bold; }
+.ui-widget-header a { color: #222222/*{fcHeader}*/; }
+
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 4px/*{cornerRadius}*/; -webkit-border-top-left-radius: 4px/*{cornerRadius}*/; -khtml-border-top-left-radius: 4px/*{cornerRadius}*/; border-top-left-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 4px/*{cornerRadius}*/; -webkit-border-top-right-radius: 4px/*{cornerRadius}*/; -khtml-border-top-right-radius: 4px/*{cornerRadius}*/; border-top-right-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 4px/*{cornerRadius}*/; -webkit-border-bottom-left-radius: 4px/*{cornerRadius}*/; -khtml-border-bottom-left-radius: 4px/*{cornerRadius}*/; border-bottom-left-radius: 4px/*{cornerRadius}*/; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 4px/*{cornerRadius}*/; -webkit-border-bottom-right-radius: 4px/*{cornerRadius}*/; -khtml-border-bottom-right-radius: 4px/*{cornerRadius}*/; border-bottom-right-radius: 4px/*{cornerRadius}*/; }
+
+/* Overlays */
+.ui-widget-overlay { background: #aaaaaa/*{bgColorOverlay}*/ url(images/ui-bg_flat_0_aaaaaa_40x100.png)/*{bgImgUrlOverlay}*/ 50%/*{bgOverlayXPos}*/ 50%/*{bgOverlayYPos}*/ repeat-x/*{bgOverlayRepeat}*/; opacity: .3;filter:Alpha(Opacity=30)/*{opacityOverlay}*/; }
+.ui-widget-shadow { margin: -8px/*{offsetTopShadow}*/ 0 0 -8px/*{offsetLeftShadow}*/; padding: 8px/*{thicknessShadow}*/; background: #aaaaaa/*{bgColorShadow}*/ url(images/ui-bg_flat_0_aaaaaa_40x100.png)/*{bgImgUrlShadow}*/ 50%/*{bgShadowXPos}*/ 50%/*{bgShadowYPos}*/ repeat-x/*{bgShadowRepeat}*/; opacity: .3;filter:Alpha(Opacity=30)/*{opacityShadow}*/; -moz-border-radius: 8px/*{cornerRadiusShadow}*/; -khtml-border-radius: 8px/*{cornerRadiusShadow}*/; -webkit-border-radius: 8px/*{cornerRadiusShadow}*/; border-radius: 8px/*{cornerRadiusShadow}*/; }   
+
+    /**********Kenduo********/
+    .k-combobox .k-icon {
+margin-top: 2px !important;
+cursor:pointer;
+background-image: url('../../Portals/0/images/Arrow_down.png') !important;
+background-repeat: no-repeat !important;
+background-position: right !important;
+margin-right: 10px;
+}
+.k-dropdown-wrap
+{
+    border-color: white !important;
+background-color: white !important;
+text-indent: 20px;
+}
+
+.k-dropdown-wrap .k-state-hover
+{
+    border-color: white !important;
+background-color: white !important;
+}
+.k-combobox
+{
+    width: 99% !important;
+top: 7px !important;
+float: left;
+margin-left: 1px !important;
+}
+.k-combobox .k-input
+{
+    box-shadow: inset 0 0 1px 1px white;
+-webkit-box-shadow: inset 0 0 1px 1px white;
+}
+.k-state-selected.k-state-focused {
+background-color: #4578A5 !important;
+border-color:#4578A5 !important;
+}
+.k-item.k-state-focused
+{
+background-color: #4578A5 !important;
+border-color:#4578A5 !important;
+}
+
+.k-input[type="text"]
+{
+      font-size:125%;      
+      
+}
+
+/*************Groups*****************/
+.GroupsDivtest
+{
+   
+width: 100%;
+float: left;
+
+}
+.SelectAllSpan
+{
+    float: left;padding-top: 48px;padding-left: 13px;
+}
+.SelectallCheckBox
+    {
+    float: left;
+    margin-left: 45px;
+    margin-top: 45px;
+    height: 21px;
+    width: 20px;
+    }
+    .GroupsSortReaddiv
+    {
+        float:right; width:50%;
+        margin-top: 45px;font-size: 14px;
+    }
+    .SearchDiv
+    {
+    width: 647px;float: left;margin-left: 24px;margin-top: -7px;background-color: #EEEEEE;border: 1px solid #CCCCCC;
+    }
+    .SearchInnerDiv
+    {
+   width: 647px;float: left;
+    }
+    .SearchDiv input[type=text]
+    {
+    width:609px;float:left; height:30px; border:none; border-right:0px; background-color: #EEEEEE; color:gray; text-indent:20px;
+    }
+     .GroupSearchbtn
+    {
+        width:85px; background-color:#EAEAEA; border:0px solid gray;cursor: pointer;height: 24px;display: inline-block;-moz-border-radius: 6px;-webkit-border-radius: 6px;border-radius:5px;-khtml-border-radius: 6px;
+    }
+ 
+     
+</style>
+<div class="GroupsDivtest"><div id="dialog-message"><p>Please select only one group to edit</p></div>
+    <div style="float: left;width:100%">
+        <div style="float:left; width:50%">
+               <div id="SelectAllDiv"><img src="../../Portals/0/images/circle_big.png" class="SelectallCheckBox" id="SelectallCheckBox" alt="Image cannot be displayed"  /></div>
+               <span class="SelectAllSpan" style="color:lightgray;"> SELECT ALL</span>
+        </div>
+        <div class="GroupsSortReaddiv">
+            <asp:Button ID="SortingButton" 
+            style="width: 61px;margin-right: 42px;color:lightgray;" 
+            CssClass="SortRead" runat="server"  Text="A to Z" /><b style="float:right">|</b>
+            <asp:Button ID="ReadingLevelButton" runat="server" style="width: 135px;color:lightgray;"  CssClass="SortRead"  Text="DATE CREATED" />
+        </div>
+
+    </div>
+    <div style="width: 87%; float: left; margin-left:54px; border-left: 1px solid lightgray; min-height: 20px;margin-top:-1px"></div>
+    <div class="SearchDiv">
+        <div class="SearchInnerDiv">
+            <asp:TextBox ID="SearchTextBox" runat="server" Text="Enter your search here..."></asp:TextBox>
+            <div class="Searchbtndiv">
+            <asp:Button ID="SearchButton" runat="server" />
+            </div>
+            
+        </div>
+    </div>
+    <div style="width: 87%; float: left; margin-left: 54px; border-left: 1px solid lightgray;min-height: 40px;"></div>
+    <div class="ClassSearchDiv">
+        <div style="width: 8%; padding-left:43px;">
+            <img id="Image1" src="../../Portals/0/images/circle_big.png"/>
+        </div>
+        <div  class="KenduoComboBoxClassDiv">
+            <input type="text" id="classSearchTextBox"  class="classSearchwater" clientidmode="Static"  runat="server" />
+        </div>
+    </div>
+     <div style="width: 100%; float: left; margin-left: 54px; min-height: 80px; border-left: 1px solid lightgray;
+        margin-top: -36px; padding-bottom: 55px;">
+        <div style="float:left;width: 100%;margin-top: 15px;">
+        <asp:Repeater ID="ClassRepeater" runat="server">
+            <ItemTemplate>
+                <div id="ClassRepeaterDiv" style="float:left;width: 100%;height:65px;margin-top: 15px;">
+                    <div style="float:left;margin-top: 23px;margin-left: -8px;"> 
+                        <img src="../../Portals/0/images/circle_small.png" alt="" />
+                    </div>
+                    <div id="ClassRepeaterContentDiv" style="border: 1px solid lightgray;width: 84.4%;height: 65px;margin-left: 26px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius:3px;-khtml-border-radius: 3px; background: -moz-linear-gradient(center top , white 0%, white 55%, #DBD9D9 130%) repeat scroll 0 0 transparent; background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                        <div style="float:left;margin-top: 18px;margin-left: 18px;">
+                         <input id="ClassCheckBoxes" clientidmode="Static" type="checkbox" style="display:none" />
+                            <img ID="ClassCheckBoxImg" style="height:28px;width:27px;"  alt="image cannot be displayed" clientidmode="Static" src="../../Portals/0/images/circle_big.png"/>
+                        </div>
+                        <div  style="float:left;margin-top: 8px;">
+                            <asp:Label ID="MembersLabel" style="padding-left:30px; font-family:Raleway;font-size:11.6pt; font-weight:bolder" runat="server" Text='<%# Eval("MembersCount") %>'></asp:Label><br />
+                            <span style="padding-left:30px;font-style:italic; font-family:Raleway;font-size:8.6pt; ">-01/06/2012</span>
+                        </div>
+                        <div  style="float:left;margin-top: 8px;">
+                            <span style="font-family:Raleway;font-size:11.6pt; padding-left:5px;">(15 Unopened)</span><br />
+                            <asp:Label ID="TeacherNameLabel" style="padding-left:30px;color: #2A62C9;font-weight: bold;" runat="server" Text='<%# Eval("TeacherName") %>'></asp:Label>                        
+                       </div>
+                       <div  style="float:right;margin-top: 18px;">
+                              <asp:Button ID="ClassProfileButton" runat="server" style="border:0px solid #6C9E2D; width: 110px;height: 34px;text-indent: 19px;margin-right: 15px; cursor:pointer;background-image: url('../../Portals/0/images/view.png');background-repeat: no-repeat;color: white;" 
+                              ForeColor="White" onclick="ClassProfileButton_Click"/>
+                       </div>
+                   </div>
+                </div> 
+        </ItemTemplate>
+        </asp:Repeater>
+        </div>
+     </div>
+      <div class="ClassSearchDiv"  style="margin-top: -55px;">
+        <div style="width: 8%; padding-left:43px;">
+            <img ID="Image2" src="../../Portals/0/images/circle_big.png"/>
+        </div>
+        <div  class="KenduoComboBoxClassDiv">
+            <input type="text" id="GroupSearchTextBox"  class="classSearchwater" clientidmode="Static"  runat="server" />
+        </div>
+      </div>
+       <div style="width: 100%; float: left; margin-left: 54px; min-height: 80px; border-left: 1px solid lightgray;
+        margin-top: -36px; padding-bottom: 55px;">
+        <div style="float:left;width: 100%;margin-top: 15px;">
+        <asp:Repeater ID="GroupsRepeater" runat="server">
+            <ItemTemplate>
+                <div id="GroupsRepeaterDiv" style="float:left;width: 100%;height:65px;margin-top: 15px;">
+                    <div style="float:left;margin-top: 23px;margin-left: -8px;">
+                        <img src="../../Portals/0/images/circle_small.png" alt="" />
+                    </div>
+                    <div id="GroupRepeaterContentDiv" style="border: 1px solid lightgray;width: 84.4%;height: 65px;margin-left: 26px; -moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius:3px;-khtml-border-radius: 3px; background: -moz-linear-gradient(center top , white 0%, white 55%, #DBD9D9 130%) repeat scroll 0 0 transparent; background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));       filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                        <div  style="float:left;margin-top: 18px;margin-left: 18px;">
+                             <input ID="GroupCheckBoxes" clientidmode="Static" type="checkbox" style="display:none"    runat="server"/>
+                            <asp:Image ID="Image1" style="height:28px;width:27px" ImageUrl="../../Portals/0/images/circle_big.png"/>
+                        </div>
+                        <div  style="float:left;margin-top: 8px;">
+                            <asp:Label ID="MembersLabel" style="padding-left:30px; font-family:Raleway;font-size:11.6pt; font-weight:bolder" runat="server" Text='<%# Eval("MembersCount") %>'></asp:Label><br />
+                            <span style="padding-left:30px;font-style:italic; font-family:Raleway;font-size:8.6pt; ">-01/06/2012</span>
+                        </div>
+                        <div  style="float:left;margin-top: 8px;">
+                            <span style="font-family:Raleway;font-size:11.6pt; padding-left:5px">(15 Unopened)</span><br />
+                            <asp:Label ID="TeacherNameLabel" style="padding-left:30px;color: #2A62C9;font-weight: bold;" runat="server" Text='<%# Eval("TeacherName") %>'></asp:Label>                        
+                       </div>
+                       <div  style="float:right;margin-top: 18px;">
+                              <asp:Button ID="GroupsProfileButton" runat="server" style="border:0px solid #6C9E2D; width: 110px;height: 34px;text-indent: 19px;margin-right: 15px; cursor:pointer;background-image: url('../../Portals/0/images/view.png');background-repeat: no-repeat;color: white;" 
+                              ForeColor="White" onclick="ClassProfileButton1_Click"/>
+                       </div>
+                   </div>
+                </div> 
+        </ItemTemplate>
+        </asp:Repeater>
+        </div>
+     </div>
+      <div id="AllOtherGroupsDiv" class="AllOtherGroupsDiv" runat="server">
+        <div class="AllOtherGroupsImgDiv">
+            <img src="../../Portals/0/images/circle_big.png" alt="" />
+        </div>
+        <div id="AllotherGroupDivBtn" class="AllotherGroupDivBtn" runat="server">
+            <asp:Button ID="AllOtherGroupButton" runat="server" Text="Archived Sessions" 
+                CssClass="AllOtherGroupBtn"
+                onclick="AllOtherGroupButton_Click" />
+        </div>
+    </div>
+</div>
+
+

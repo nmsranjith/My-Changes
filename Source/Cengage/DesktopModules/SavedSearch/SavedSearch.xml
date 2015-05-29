@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SavedSearch</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.SavedSearch.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from SavedSearchModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.SavedSearchModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SavedSearchModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.SavedSearchModuleBase.LogFileWrite(System.Exception)">
+            <summary>
+             Writes Exceptions to log file in user readable format
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.SavedSearchUpdatePanel">
+            <summary>
+            SavedSearchUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.SShomesearchdiv">
+            <summary>
+            SShomesearchdiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.a1">
+            <summary>
+            a1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.lblTitle">
+            <summary>
+            lblTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.cmdSeeAll">
+            <summary>
+            cmdSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.SavedSearchDeleteButton">
+            <summary>
+            SavedSearchDeleteButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.SearchRepeater">
+            <summary>
+            SearchRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.hndToggle">
+            <summary>
+            hndToggle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.tempHdn">
+            <summary>
+            tempHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.hndTotalSeeAll">
+            <summary>
+            hndTotalSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.hndSavedSearchID">
+            <summary>
+            hndSavedSearchID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.View.hndCount">
+            <summary>
+            hndCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Data.DataProvider.GetModuleInformation(System.Int32)">
+            <summary>
+            getting module information
+            </summary>
+            <param name="moduleID"></param>
+            <returns>IDataReader</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Data.DataProvider.InsertModuleInformation(System.Int32,System.String,System.Int32)">
+            <summary>
+            saving module information
+            </summary>
+            <param name="moduleID"></param>
+            <param name="content"></param>
+            <param name="Usersk"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Data.DataProvider.UpdateModuleInformation(System.Int32,System.String,System.Int32)">
+            <summary>
+            updating module information
+            </summary>
+            <param name="moduleID"></param>
+            <param name="content"></param>
+            <param name="Usersk"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSavedSearch class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from SavedSearchModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.Edit.txtTitle">
+            <summary>
+            txtTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.Edit.lblErorTitle">
+            <summary>
+            lblErorTitle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.Edit.chkModuleWidth">
+            <summary>
+            chkModuleWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.Edit.lblerrorModuleWidth">
+            <summary>
+            lblerrorModuleWidth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.Edit.txtDefaultDisplayCount">
+            <summary>
+            txtDefaultDisplayCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.Edit.lblDefaultDisplayCount">
+            <summary>
+            lblDefaultDisplayCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SavedSearch.Edit.cmdSave">
+            <summary>
+            cmdSave control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.Handlers.AlertDeleteHandler">
+            <summary>
+            Summary description for AlertDeleteHandler
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.SavedSearchSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SavedSearchSettingsBase
+            
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from SavedSearchSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for SavedSearch
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Conrollers.SavedSearchController.GetModuleInformation(System.Int32)">
+            <summary>
+            getting module information
+            </summary>
+            <param name="moduleID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Conrollers.SavedSearchController.InsertModuleInformation(System.Int32,System.String,System.Int32)">
+            <summary>
+            saving module information
+            </summary>
+            <param name="moduleID"></param>
+            <param name="content"></param>
+            <param name="usersk"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Conrollers.SavedSearchController.UpdateModuleInformation(System.Int32,System.String,System.Int32)">
+            <summary>
+            updating module information
+            </summary>
+            <param name="moduleID"></param>
+            <param name="content"></param>
+            <param name="usersk"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.SavedSearch.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Data.SqlDataProvider.GetModuleInformation(System.Int32)">
+            <summary>
+            getting module information 
+            </summary>
+            <param name="moduleID"></param>
+            <returns>IDataReader</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Data.SqlDataProvider.InsertModuleInformation(System.Int32,System.String,System.Int32)">
+            <summary>
+            saving module information
+            </summary>
+            <param name="moduleID"></param>
+            <param name="content"></param>
+            <param name="Usersk"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SavedSearch.Data.SqlDataProvider.UpdateModuleInformation(System.Int32,System.String,System.Int32)">
+            <summary>
+            update the module information
+            </summary>
+            <param name="moduleID"></param>
+            <param name="content"></param>
+            <param name="Usersk"></param>
+            <returns>bool</returns>
+        </member>
+    </members>
+</doc>

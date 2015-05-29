@@ -1,0 +1,807 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GroupProfile.ascx.cs"
+    Inherits="DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile" %>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+<script src="<%=Page.ResolveUrl("DesktopModules/eCollection_Groups/Scripts/jquery.corner.js")%>"
+    type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+
+    jQuery(document).ready(function () {
+        var contentheit = $('#eCollectionContent').height();
+
+        $('#eCollectionMenu').height(contentheit + 'px');
+        if ($.browser.msie || $.browser.mozilla) {
+        }
+        else {
+            if (contentheit != 1617)
+                $('#eCollectionContent').height((contentheit + 250) + 'px');
+        }
+        var constantheight = $('#eCollectionContent').height();
+        jQuery("#YesterDayContentDiv input[type=button]").click(function () {
+            return false;
+        });
+
+
+        jQuery('#eCollectionMenu').height(jQuery('#eCollectionContent').height() + 'px');
+        jQuery('#eCollectionContent').height((jQuery('#eCollectionContent').height() + 14) + 'px');
+        jQuery("#ClassRepeaterDiv input[type=button]").click(function () {
+            return false;
+        });
+        //jQuery('#Switch').css({ 'background-image': 'url("../Portals/0/images/history on.png")' });
+        jQuery("#StudentsButton").click(function () {
+            jQuery("#StudentDiv").css("display", "block");
+            jQuery("#HistoryDiv").css("display", "none");
+            jQuery('#Switch').css({ 'background-image': 'url("../Portals/0/images/students on.png")' });
+            return false;
+        });
+        jQuery("#HistoryButton").click(function () {
+            jQuery("#HistoryDiv").css("display", "block");
+            jQuery("#StudentDiv").css("display", "none");
+            jQuery('#Switch').css({ 'background-image': 'url("../Portals/0/images/history on.png")' });
+            return false;
+        });
+        jQuery("#RecordingsDiv div input[type=image]").click(function () {
+            var contentht;
+            var element = this.nextSibling.nextSibling.nextSibling.nextSibling;
+            if (element.style.display == "none") {
+                contentht = $('#PlayRecordDiv').height();
+                element.style.display = "block";
+                var contentheight = $('#eCollectionContent').height();
+                $('#eCollectionMenu').height(contentheight + 'px');
+                $('#eCollectionContent').height((contentheight + contentht) + 'px');
+            }
+            else {
+                element.style.display = "none";
+                contentht = $('#PlayRecordDiv').height();
+                var contentheight = $('#eCollectionContent').height();
+                $('#eCollectionMenu').height(contentheight + 'px');
+                contentht = contentht + 10;
+                $('#eCollectionContent').height(contentheight + 'px');
+            }
+            return false;
+        });
+        jQuery("#IndependentContentDiv div input[type=button]").click(function () {
+            var contentht;
+            if (this.className == "RecordingsMax") {
+                contentht = $('#RecordingsDiv').height();
+                jQuery(this.parentNode.nextSibling).hide();
+                jQuery("#RecordingsDiv").css("display", "block");
+                jQuery(this).removeClass("RecordingsMax");
+                jQuery(this).addClass("RecordingsMin");
+                var contentheight = $('#eCollectionContent').height();
+                $('#eCollectionMenu').height(contentheight + 'px');
+                $('#eCollectionContent').height((contentheight + contentht) + 'px');
+            }
+            else {
+                jQuery(this.parentNode.nextSibling).show();
+                jQuery("#RecordingsDiv").css("display", "none");
+                jQuery(this).removeClass("RecordingsMin");
+                jQuery(this).addClass("RecordingsMax");
+                contentht = $('#RecordingsDiv').height();
+                var contentheight = $('#eCollectionContent').height();
+                $('#eCollectionMenu').height((constantheight + 8) + 'px');
+
+                $('#eCollectionContent').height((constantheight + 8) + 'px');
+            }
+
+            return false;
+        });
+        jQuery("#<%=IndependentRepeater.ClientID%> table input[type=image]").click(function () {
+            if (this.nextSibling.nextSibling.style.display == "none") {
+                this.nextSibling.nextSibling.style.display = "block";
+                this.src = "../Portals/0/images/DownPlayButton.png";
+                this.parentNode.nextSibling.style.display = "none";
+
+            }
+            else {
+                this.nextSibling.nextSibling.style.display = "none";
+                this.parentNode.nextSibling.style.display = "";
+                this.src = "../Portals/0/images/PlayButton.png";
+            }
+            return false;
+        });
+        jQuery("#YesterdayTextBox").kendoComboBox({
+            placeholder: "Yesterday",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            dataSource: [
+                            { Name: "Cotton", Id: "1" },
+                            { Name: "Polyester", Id: "2" },
+                            { Name: "Cotton/Polyester", Id: "3" },
+                            { Name: "Rib Knit", Id: "4" }
+                        ]
+        });
+        jQuery("#<%=SearchTextBox.ClientID%>").focus(function () {
+            if (jQuery(this).val() == this.title) {
+                jQuery(this).val("");
+            }
+        });
+        jQuery("#<%=SearchTextBox.ClientID%>").blur(function () {
+            if (jQuery(this).val().trim() == "") {
+                jQuery(this).val(this.title);
+            }
+        });
+        jQuery("#<%=TodaySearchTextBox.ClientID %>").kendoComboBox({
+            placeholder: "Today",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/dotnetnuke/DesktopModules/eCollection/Handlers/eCollectionHandlers.ashx?Page=Groups",
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        serverFiltering: true,
+                        serverPaging: true,
+                        pageSize: 20
+                    }
+                }
+            }
+        });
+        var checkallFlag = true;
+        $("#SelectallCheckBox").click(function () {
+            if (checkallFlag) {
+                checkallFlag = false;
+                for (var i = 0; i < $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if (!$("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv img")[i].src = "../Portals/0/images/tick_student.png";
+                        $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]")[i].click();
+                    }
+
+
+                }
+                $("#SelectallCheckBox")[0].src = "../Portals/0/images/tick_student.png";
+
+            }
+            else {
+                $("#SelectallCheckBox")[0].src = "../Portals/0/images/circle_big.png";
+                checkallFlag = true;
+                for (var i = 0; i < $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv img")[i].src = "../Portals/0/images/circle_big.png";
+                        $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]")[i].click();
+                    }
+
+                }
+            }
+
+        });
+        $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv img").click(function () {
+            this.parentNode.children[0].click();
+            if (this.parentNode.children[0].checked) {
+                var count = 0;
+                for (var i = 0; i < $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv img")[i].src = "../Portals/0/images/tick_student.png";
+                        count++;
+                    }
+                    else {
+
+                    }
+                }
+
+                if ($("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]").length == count) {
+                    $("#SelectallCheckBox")[0].src = "../Portals/0/images/tick_student.png";
+                    checkallFlag = false;
+                }
+
+            }
+            else {
+                var count = 0;
+                $("#SelectallCheckBox")[0].src = "../Portals/0/images/circle_big.png";
+                //checkallFlag = true;
+                for (var i = 0; i < $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]").length; i++) {
+                    if ($("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv input[type=checkbox]")[i].checked) {
+                        count++;
+                    }
+                    else {
+                        $("#RepeaterStudentDiv #StudentRepeaterDiv #StudentRepeaterContentDiv img")[i].src = "../Portals/0/images/circle_big.png";
+                    }
+                }
+                if (count != 0)
+                    checkallFlag = true;
+
+            }
+        });
+
+        jQuery("#StudentSearchTextBox").kendoComboBox({
+            placeholder: "Today",
+            dataTextField: "Name",
+            dataValueField: "Id",
+            filter: "contains",
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/dotnetnuke/DesktopModules/eCollection/Handlers/eCollectionHandlers.ashx?Page=Groups",
+                        type: "GET",
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        serverFiltering: true,
+                        serverPaging: true,
+                        pageSize: 20
+                    }
+                }
+            }
+        });
+        //         jQuery('#HistoryAccordion').accordion({ active: false, alwaysOpen: false, event: "mouseover", autoHeight: false });
+        jQuery("div.divcircle").corner("30px");
+        var sampleData = [
+{ City: 'N', SalesQ1: 330500, SalesQ2: 210500, YoYGrowth: 1.05 },
+             { City: 'L', SalesQ1: 120000, SalesQ2: 169000, YoYGrowth: 1.15 },
+                   { City: 'P', SalesQ1: 205000, SalesQ2: 275500, YoYGrowth: 1.45 },
+                 { City: 'T', SalesQ1: 187000, SalesQ2: 130100, YoYGrowth: 0.45 },
+                 { City: 'B', SalesQ1: 187000, SalesQ2: 113000, YoYGrowth: 1.65 },
+                 { City: 'S', SalesQ1: 142000, SalesQ2: 102000, YoYGrowth: 1.25 },
+                  { City: 'C', SalesQ1: 171000, SalesQ2: 124000, YoYGrowth: 0.75 }
+          ];
+        var settings = {
+            title: "",
+            description: "",
+            enableAnimations: true,
+            showLegend: true,
+            padding: { left: 5, top: 5, right: 5, bottom: 5 },
+            titlePadding: { left: 90, top: 0, right: 0, bottom: 10 },
+            source: sampleData,
+            categoryAxis: {
+                dataField: 'City',
+                valuesOnTicks: false
+            }, colorScheme: 'scheme04',
+            seriesGroups: [
+              {
+                  type: 'scatter',
+                  valueAxis:
+ {
+     unitInterval: 50000,
+     minValue: 50000,
+     maxValue: 350000
+ },
+                  series: [
+     { dataField: 'SalesQ1', radius: 0, displayText: '6 Months', color: '#1100EE' },
+      { dataField: 'SalesQ2', radius: 0, displayText: '6 Months', color: '' }
+                      ]
+              }]
+        };
+
+        //         jQuery("#jxChart").jqxChart(settings);
+    });
+</script>
+<style type="text/css">
+    .KenduoComboBoxClassDiv .k-combobox
+    {
+        width: 94% !important;
+        top: 7px !important;
+        float: left;
+        margin-left: 1px !important;
+    }
+</style>
+<div style="width: 95%; margin-top: 20px; float: left; margin-left: 20px;">
+    <div style="background-color: #D76565; width: 99.4%; height: 30px; color: White;
+        text-align: center;">
+        <span style="font-weight: bold; display: block; padding-top: 6px; text-align: center;
+            height: 100%; margin-right: auto; margin-top: auto; margin-bottom: auto;">THIS IS
+            YOUR CLASS</span></div>
+    <br />
+    <div style="width: 99.2%; border: 0px solid silver; float: left; height: 104px;">
+        <div style="box-shadow: 1px 1px 5px lightgray; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+            border-radius: 3px; -khtml-border-radius: 3px; color: #888988; border: 1px solid lightgray;
+            margin-right: 5px; float: left; width: 68%; height: 104px; background: -moz-linear-gradient(center top , white 0%, #F8FDFF 5%, #E3F5FF 130%) repeat scroll 0 0 transparent;
+            background: -webkit-gradient(linear, left top, left bottom, from(#F9FDFF), to(#E3F5FF));
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9FDFF', endColorstr='#E3F5FF', gradientType='0'">
+            <asp:Label ID="GroupNameLabel" Style="float: left; font-size: 30px; padding-top: 33px;
+                padding-left: 20px;" runat="server" Text="Name of Group"></asp:Label>
+        </div>
+        <div style="-moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+            -khtml-border-radius: 3px; box-shadow: 1px 1px 5px lightgray; color: #888988;
+            border: 1px solid lightgray; float: right; height: 104px; width: 28%; background: -moz-linear-gradient(center top , white 0%, #F8FDFF 5%, #E3F5FF 130%) repeat scroll 0 0 transparent;
+            background: -webkit-gradient(linear, left top, left bottom, from(#F8FDFF), to(#E3F5FF));
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8FDFF', endColorstr='#E3F5FF', gradientType='0'">
+            <asp:Label ID="MemebersCountLabel" runat="server" Style="font-size: 40px; margin-left: 70px;
+                position: absolute; margin-top: 17px;" Text="14"></asp:Label>
+            <span style="float: right; font-size: 20px; margin-top: 63px; padding-right: 40px;">
+                MEMBERS</span>
+        </div>
+    </div>
+    <div style="width: 99.2%; border: 1px solid silver; float: left; margin-top: 17px;
+        height: 140px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+        -khtml-border-radius: 3px; background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+        <div style="margin-right: auto; margin-top: 10px; margin-bottom: 6px; margin-left: 270px;
+            width: 304px; float: left;">
+            <div class="divcircle" style="float: left; background-color: rgb(215, 139, 177);
+                border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;">
+            </div>
+            <div class="divcircle" style="float: left; background-color: rgb(156, 203, 161);
+                border-top-left-radius: 30px; border-top-right-radius: 30px; border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;">
+            </div>
+            <div style="float: left; border: 1px solid black; width: 12.4%; margin-top: 26px;
+                margin-left: -120px; border-top: none; border-bottom: none; height: 10px; position: absolute;
+                display: inline-block;">
+                <div style="border: 1px solid Black; border-bottom: none; margin-top: 4px;">
+                </div>
+            </div>
+        </div>
+        <br />
+        <div>
+            <span style="display: inline-block; text-align: center; font-weight: bolder; width: 100%;
+                margin-right: auto; margin-top: auto; margin-bottom: auto;">READING SPAN</span>
+        </div>
+        <div style="margin-right: auto; margin-top: auto; margin-bottom: auto; margin-left: 240px;
+            height: 30px; border-radius: 8px; float: left; background: -moz-linear-gradient(center top , white 0%, #FAFAFA 5%, #F5F1F0 130%) repeat scroll 0 0 transparent;
+            background: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#F5F1F0));
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#F5F1F0', gradientType='0');
+            border: 1px solid silver;">
+            <asp:Label ID="FromLevelLabel" Text="Level 9 " Style="color: #C960A2; float: left;
+                padding-left: 14px; padding-top: 4px; font-weight: bold; font-size: 18px;" runat="server"></asp:Label>
+            <span style="float: left; padding-top: 4px; padding-left: 4px; font-weight: bold;
+                font-size: 18px;">to </span>
+            <asp:Label ID="ToLevelLabel" runat="server" Text="Level 11 " Style="color: #5FAF6A;
+                float: left; padding-top: 4px; font-weight: bold; font-size: 18px; padding-right: 10px;
+                padding-left: 4px;"></asp:Label>
+        </div>
+    </div>
+    <br />
+    <div style="width: 99.2%; float: left; margin-top: 17px; margin-bottom: 17px;">
+        <div style="float: left; width: 32%; height: 135px; border: 1px solid silver; background-color: #E3F5FF;
+            margin-right: 16px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+            -khtml-border-radius: 3px;">
+            <div style="padding-top: 16px; padding-left: 2px; display: inline-block; float: left;">
+                <asp:Label ID="NoOfBoooksOpenedLabel" runat="server" Style="color: #1FB5E7; font-size: 20px;
+                    float: left; padding-left: 21px; padding-right: 6px;" Text="51"></asp:Label>
+                <span style="color: #707070; font-weight: bold; font-size: medium; float: left;">BOOKS
+                    OPENED</span><br />
+            </div>
+            <div style="border-bottom-left-radius: 0px !important; border-bottom-right-radius: 0px !important;
+                background-color: White; border-radius: 3px; width: 77%; border: 1px solid Gray;
+                height: 40px; margin-left: 24px; float: left; box-shadow: 0px 3px 6px lightgray;
+                background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+                background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                <asp:Label ID="IndependentCountLabel" runat="server" Text="75%" Style="color: #707070;
+                    font-weight: bold; float: left; margin-left: 29px; margin-top: 12px;"></asp:Label>
+                <span style="color: #707070; font-weight: bold; float: left; margin-left: 5px; margin-top: 12px;
+                    position: absolute;">INDEPENDENT</span>
+            </div>
+            <div style="border-top-left-radius: 0px !important; border-top-right-radius: 0px !important;
+                background-color: White; border-radius: 3px; width: 77%; border: 1px solid Gray;
+                margin-top: 0px; height: 40px; margin-left: 24px; box-shadow: 0px 3px 6px lightgray;
+                float: left; background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+                background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                <asp:Label ID="GuidedCountLabel" runat="server" Text="25%" Style="color: #707070;
+                    font-weight: bold; float: left; margin-left: 42px; margin-top: 12px;"></asp:Label>
+                <span style="color: #707070; font-weight: bold; float: left; margin-left: 5px; margin-top: 12px;
+                    position: absolute;">GUIDED</span>
+            </div>
+        </div>
+        <div style="width: 31%; height: 135px; margin-left: 4px; float: right; border: 1px solid silver;
+            background-color: #E3F5FF; margin-right: 0px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+            border-radius: 3px; -khtml-border-radius: 3px;">
+            <div style="float: left; padding-top: 6px; width: 94%;">
+                <asp:Label ID="NoOfWordsLabel" runat="server" Text="11" Style="color: #707070; font-size: 62px;
+                    margin-left: 66px;"></asp:Label>
+            </div>
+            <div style="display: inline-block; float: left; width: 100%;">
+                <span style="color: #707070; font-size: 16px; font-weight: bold; margin-left: 41px;
+                    float: left;">WORDS SAVED</span><br />
+                <span style="color: #707070; font-size: 16px; font-weight: bold; margin-left: 40px;
+                    float: left">TO</span>
+                <asp:Button ID="WordLogButton" Text="MY WORD" Style="width: 98px; font-size: 16px;
+                    border: 0px solid white; cursor: pointer; margin-left: -5px; float: left; margin-top: -1px;
+                    background-color: transparent; color: #1FB5E7; font-weight: bold;" runat="server"
+                    OnClick="WordLogButton_Click" />
+            </div>
+        </div>
+        <div style="width: 31.2%; height: 135px; border: 1px solid silver; background-color: #E3F5FF;
+            float: left; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+            -khtml-border-radius: 3px;">
+            <div style="float: left; padding-top: 6px; padding-left: 13px; width: 94%;">
+                <asp:Label ID="NoOfRecordingsLabel" runat="server" Text="7" Style="color: #707070;
+                    font-size: 62px; margin-left: 70px;"></asp:Label>
+            </div>
+            <div style="display: inline-block; float: left; width: 100%;">
+                <span style="color: #707070; font-size: 16px; font-weight: bold; margin-left: 22px;">
+                    RECORDINGS MADE</span><br />
+                <asp:Button ID="ListenButton" runat="server" Text="LISTEN" Style="text-indent: 17px;
+                    background-color: transparent; font-size: 16px; margin-left: 56px; padding-right: 17px;
+                    border: 0px solid white; cursor: pointer; color: #1FB5E7; font-weight: bold;
+                    background-image: url('../Portals/0/images/listen.png'); background-repeat: no-repeat;
+                    background-position: 3% 38%;" OnClick="ListenButton_Click" />
+            </div>
+        </div>
+    </div>
+    <div style="width: 99.8%; margin: 3px 3px -4px 0px; float: left; padding-top: 2px;">
+        <img id="Image3" src="<%=Page.ResolveUrl("Portals/0/images/Graph.jpg")%>" style="width: 662px;
+            border-width: 0px;">
+    </div>
+    <%--<div id="jxChart" style="width: 680px; height: 340px;background-image:url('../Portals/0/images/Graph.jpg'); background-repeat:no-repeat;float:left;">
+
+</div>--%>
+    <div style="width: 100%; float: left; margin-right: 0px; margin-top: -58px; font-size: 11pt;
+        color: Gray;">
+        <div style="width: 20%; float: left; height: 50px;">
+            <i style="margin-top: 5px; text-align: center; height: 10px; margin-bottom: 2px;
+                margin-left: 25px; font-size: 9.5pt;"><span id="sixmonthBefore" style="font-weight: bold">
+                    26 / 01 / 2012</span></i>
+            <p style="font-weight: bold; margin-top: 1px; text-align: center; height: 10px;">
+                LEVEL 4/6</p>
+        </div>
+        <div style="width: 59%; font-weight: bold; float: left; margin-top: 11px;">
+            <center>
+                6 MONTHS
+            </center>
+        </div>
+        <div style="width: 20%; float: right; margin-left: 4px; height: 50px;">
+            <i style="margin-top: 5px; text-align: center; height: 10px; margin-bottom: 2px;
+                margin-left: 25px; font-size: 9.5pt;"><span id="TodayDate" style="font-weight: bold">
+                    26 / 06 / 2012</span></i>
+            <p style="font-weight: bold; margin-top: 1px; text-align: center; height: 10px;">
+                LEVEL 9/11</p>
+        </div>
+    </div>
+    <%--<div style="display:inline-block;float: left;margin-top: 5px;">
+<asp:Button ID="HistoryButton"  runat="server" Text="HISTORY" style="font-weight:bold; margin-left: 214px;border:none;border: 1px solid lightgray; border-right:none; width:150px; background-color:#E8EAEC;border-radius: 3px 0px 0px 3px;height: 40px;cursor:pointer;box-shadow: 0px 2px 5px lightgray;"/>
+<asp:Button ID="StudentsButton" runat="server" Text="STUDENTS" style="font-weight:bold;margin-left:-6px; border:none; border: 1px solid lightgray; border-left:none; width:150px;background-color:#CFD1D6; border-radius: 0px 3px 3px 0px;height: 40px; cursor:pointer;border-right: 20px solid #EDEFF1;box-shadow: 0px 2px 5px lightgray;"/>
+</div>--%>
+    <div id="Switch" style="display: inline-block; float: left; margin-top: 30px;background-image: url('../Portals/0/images/history on.png');
+        background-position: center; background-repeat: no-repeat; margin-left: 229px;">
+        <div id="HistoryButton" style="width: 144px; height: 51px; border: 0px solid white;
+            cursor: pointer; background-color: transparent; float: left;">
+        </div>
+        <div id="StudentsButton" style="border: 0px solid white; width: 144px; height: 51px;
+            cursor: pointer; background-color: transparent; float: left;">
+        </div>
+    </div>
+    <div id="HistoryDiv" style="display: block">
+        <div class="TodaySearchDiv" style="margin-top: 0px">
+            <div style="width: 8%; padding-left: 45px;">
+                <img id="Image8" src="<%=Page.ResolveUrl("Portals/0/images/circle_small.png")%>" />
+            </div>
+            <div class="KenduoComboBoxClassDiv">
+                <img src="<%=Page.ResolveUrl("Portals/0/images/callender.png")%>" alt="" style="float: left;
+                    margin-top: 10px; margin-left: 12px;" />
+                <input type="text" id="TodaySearchTextBox" style="color: #707070; width: 100%; font-size: 12pt;
+                    font-weight: bold;" clientidmode="Static" runat="server" />
+            </div>
+        </div>
+        <div style="width: 100%; float: left; margin-left: 54px; min-height: 80px; border-left: 1px solid lightgray;
+            margin-top: -40px; padding-bottom: 15px;">
+            <div style="float: left; width: 100%; margin-top: 15px;">
+                <asp:Repeater ID="GuidedRepeater" runat="server">
+                    <ItemTemplate>
+                        <div id="GuidedRepeaterDiv" style="float: left; width: 100%; margin-top: 15px;">
+                            <div style="float: left; margin-top: 69px; margin-left: -11px;">
+                                <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" alt="" />
+                            </div>
+                            <div id="GuidedContentDiv" style="border: 1px solid lightgray; width: 86.8%; min-height: 155px;
+                                margin-left: 26px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+                                -khtml-border-radius: 3px; background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+                                background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                                <div style="float: left; margin-top: 69px; margin-left: 18px; width: 2%">
+                                    <img id="GuidedImg" style="" alt="" clientidmode="Static" src="<%=Page.ResolveUrl("Portals/0/images/groups.png")%>" />
+                                </div>
+                                <div style="float: left; margin-top: 38px; margin-left: 18px; width: 20%">
+                                    <img id="BookCoverImage" alt="Cover" src="<%=Page.ResolveUrl("Portals/0/images/TheLittleBlueHorse.png")%>"
+                                        style="margin-left: 10px; margin-top: -4px;" width="73px" />
+                                </div>
+                                <div style="float: left; margin-top: 25px; width: 50%">
+                                    <div style="float: left; margin-top: 25px;">
+                                        <%--<asp:Label ID="StudentNameLabel" ForeColor="#1479A4" Font-Bold="true" runat="server" Text='<%# Eval("Student") %>'></asp:Label><br />--%>
+                                        <asp:Label ID="BookNameLabel" ForeColor="Black" Font-Bold="true" Style="color: #707070;
+                                            font-weight: bold; float: left; margin-top: -5px; font-size: 12pt;" runat="server"
+                                            Text='<%# Eval("BookName") %>'></asp:Label><br />
+                                        <asp:Label ID="DateTimeLabel" Style="margin-top: 5px; font-weight: bold; font-style: italic;
+                                            float: left; color: #707070;" runat="server" Text='<%# Eval("DateTime") %>'></asp:Label><br />
+                                        <div style="float: left; width: 100%;">
+                                            <span style="font-style: italic; float: left; margin-top: 5px;">(Book Opened</span>
+                                            <asp:Label ID="StudentNameLabel" Style="font-style: italic; float: left; margin-top: 5px;
+                                                padding-left: 5px;" runat="server" Text='<%# Eval("BookOpenTime") %>'></asp:Label>
+                                            <span style="font-style: italic; float: left; margin-top: 5px;">mins)</span></div>
+                                    </div>
+                                </div>
+                                <div style="float: right; margin-top: 18px; width: 16%">
+                                    <div style="border: 1px solid lightgray; float: right; height: 76px; margin-top: -19px;
+                                        width: 90px;">
+                                        <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" alt="" style="height: 28px;
+                                            width: 27px; margin-left: 33px; float: left; margin-top: 17px;" />
+                                        <asp:Label ID="VocabLogCountLabel" runat="server" Style="color: black; font-weight: bold;
+                                            padding-right: 70px; float: right; margin-top: 22px; position: absolute; margin-left: -17px;"
+                                            ForeColor="Black" Font-Bold="true" Text='<%# Eval("VocabLogCount") %>'></asp:Label>
+                                        <br />
+                                        <span style="float: left; padding-left: 21px; padding-top: 3px;">My Words</span>
+                                    </div>
+                                    <div style="border: 1px solid lightgray; height: 76px; margin-top: 0px; width: 90px;
+                                        float: right">
+                                        <span style="padding-left: 32px; margin-top: 5px; float: left;">Book</span><br />
+                                        <span style="padding-left: 24px; float: left;">opened</span><br />
+                                        <asp:Label ID="BookOpenLabel" Text='<%# Eval("BookOpenTime") %>' runat="server" Style="padding-left: 19px;
+                                            font-weight: bold; font-size: 12pt; color: black;"></asp:Label>
+                                        <span>mins</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+        </div>
+        <div style="width: 100%; float: left; margin-left: 54px; min-height: 80px; border-left: 1px solid lightgray;
+            margin-top: -40px; padding-bottom: 40px;">
+            <div style="float: left; width: 100%; margin-top: 30px;">
+                <asp:Repeater ID="IndependentRepeater" runat="server" OnItemDataBound="IndependentRepeater_ItemDataBound">
+                    <ItemTemplate>
+                        <div id="IndependentRepeaterDiv" style="float: left; width: 100%; margin-top: 15px;">
+                            <div style="float: left; margin-top: 69px; margin-left: -11px;">
+                                <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" alt="" />
+                            </div>
+                            <div id="IndependentContentDiv" style="border: 1px solid lightgray; width: 86.8%;
+                                min-height: 155px; margin-left: 26px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+                                border-radius: 3px; -khtml-border-radius: 3px; background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+                                background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                                <div style="float: left; margin-top: 69px; margin-left: 18px; width: 2%">
+                                    <img id="IndependentImg" style="" alt="" clientidmode="Static" src="<%=Page.ResolveUrl("Portals/0/images/students.png")%>" />
+                                </div>
+                                <div style="float: left; margin-top: 38px; margin-left: 18px; width: 20%">
+                                    <img id="IndependentBookCoverImage" alt="Cover" src="<%=Page.ResolveUrl("Portals/0/images/TheLittleBlueHorse.png")%>"
+                                        style="margin-left: 10px; margin-top: -4px;" width="73px" />
+                                </div>
+                                <div style="float: left; margin-top: 25px; width: 50%">
+                                    <div style="float: left; margin-top: 25px;">
+                                        <asp:Label ID="BookNameLabel" ForeColor="Black" Font-Bold="true" Style="color: #707070;
+                                            font-weight: bold; float: left; margin-top: -5px; font-size: 12pt;" runat="server"
+                                            Text='<%# Eval("BookName") %>'></asp:Label><br />
+                                        <asp:Label ID="DateTimeLabel" runat="server" Style="float: left; margin-top: 1px;
+                                            margin-bottom: 5px; color: #707070; font-weight: bold; font-style: italic" Text='<%# Eval("DateTime") %>'></asp:Label><br />
+                                        <input type="button" id="RecordingsButton" runat="server" class="RecordingsMax" />
+                                    </div>
+                                </div>
+                                <div style="float: right; margin-top: 18px; width: 16%">
+                                    <div style="border: 1px solid lightgray; float: right; height: 76px; margin-top: -19px;
+                                        width: 90px;">
+                                        <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" alt="" style="height: 28px;
+                                            width: 27px; margin-left: 33px; float: left; margin-top: 17px;" />
+                                        <asp:Label ID="VocabLogCountLabel" runat="server" Style="color: black; font-weight: bold;
+                                            padding-right: 70px; float: right; margin-top: 22px; position: absolute; margin-left: -17px;"
+                                            ForeColor="Black" Font-Bold="true" Text='<%# Eval("VocabLogCount") %>'></asp:Label>
+                                        <br />
+                                        <span style="float: left; padding-left: 21px; padding-top: 3px;">My Words</span>
+                                    </div>
+                                    <div style="border: 1px solid lightgray; height: 76px; margin-top: 0px; width: 90px;
+                                        float: right">
+                                        <span style="padding-left: 32px; margin-top: 15px; float: left;">Book</span><br />
+                                        <span style="padding-left: 24px; float: left;">opened</span><br />
+                                        <asp:Label ID="BookOpenLabel" Text='<%# Eval("BookOpenTime") %>' runat="server" Style="padding-left: 19px;
+                                            font-weight: bold; font-size: 12pt; color: black;"></asp:Label>
+                                        <span>mins</span>
+                                    </div>
+                                </div>
+                                <%--<br />--%>
+                                <div id="RecordingsDiv" style="display: none; border: 1px solid lightgray; margin-top: 155px;">
+                                    <div style="margin-bottom: 12px;">
+                                        <div style="margin-top: 15px; margin-left: 15px;">
+                                            <span style="font-style: italic;">Play all</span>
+                                            <img id="PlaYImageButton" src="<%=Page.ResolveUrl("Portals/0/images/play.png")%>"
+                                                alt="" style="margin-left: 14px; margin-top: -3px; position: absolute;" />
+                                        </div>
+                                    </div>
+                                    <div id="PlayRecordDiv" style="background-color: white; border: 1px solid lightgray;
+                                        width: 94%; margin-left: 16px; margin-bottom: 16px;">
+                                        <asp:Repeater ID="PlayRecordRepeater" runat="server">
+                                            <ItemTemplate>
+                                                <div style="background-color: White; width: 95%; margin-left: 13px; margin-bottom: 10px;
+                                                    margin-top: 8px;">
+                                                    <input type="image" src="<%=Page.ResolveUrl("Portals/0/images/play.png")%>" alt=""
+                                                        id="ImageButton1" style="width: 16px; float: left" />
+                                                    <asp:Label runat="server" ID="Videocontentlbl" Style="font-style: italic; margin-left: 23px;
+                                                        color: gray;" Text='<%# Eval("PageCount") %>'></asp:Label>
+                                                    <div id="AudioPlayDiv" style="display: none">
+                                                        <audio controls="controls" style="width: 266px;">
+                                            <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                                            <source src="horse.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                            </audio>
+                                                    </div>
+                                                </div>
+                                            </ItemTemplate>
+                                            <AlternatingItemTemplate>
+                                                <div style="background-color: #EAE9E9; width: 95%; margin-left: 13px; margin-bottom: 10px;
+                                                    height: 25px;">
+                                                    <input type="image" src="<%=Page.ResolveUrl("Portals/0/images/play.png")%>" alt=""
+                                                        id="ImageButton9" style="width: 16px; float: left; margin-top: 4px;" />
+                                                    <asp:Label runat="server" ID="Videocontentlblalt" Style="font-style: italic; margin-left: 23px;
+                                                        color: gray;" Text='<%# Eval("PageCount") %>'></asp:Label>
+                                                    <div id="AudioPlayDiv" style="display: none">
+                                                        <audio controls="controls" style="width: 266px;">
+                                            <source src="http://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                                            <source src="horse.mp3" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                            </audio>
+                                                    </div>
+                                                </div>
+                                            </AlternatingItemTemplate>
+                                        </asp:Repeater>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </div>
+        </div>
+        <div class="TodaySearchDiv" style="margin-top: -38px">
+            <div style="width: 8%; padding-left: 45px;">
+                <img id="Image1" src="<%=Page.ResolveUrl("Portals/0/images/circle_small.png")%>" />
+            </div>
+            <div class="KenduoComboBoxClassDiv">
+                <img src="<%=Page.ResolveUrl("Portals/0/images/callender.png")%>" alt="" style="float: left;
+                    margin-top: 10px; margin-left: 12px;" />
+                <input type="text" id="YesterdayTextBox" style="color: #707070; width: 100%; font-size: 12pt;
+                    font-weight: bold;" clientidmode="Static" runat="server" />
+            </div>
+        </div>
+        <div style="width: 100%; float: left; margin-left: 54px; min-height: 80px; border-left: 1px solid lightgray;
+            margin-top: -40px; padding-bottom: 215px;">
+            <div style="float: left; width: 100%; margin-top: 15px;">
+                <asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:Repeater ID="YesterDayRepeater" runat="server">
+                            <ItemTemplate>
+                                <div id="YesterDayRepeaterDiv" style="float: left; width: 100%; height: 75px; margin-top: 15px;">
+                                    <div style="float: left; margin-top: 97px; margin-left: -11px;">
+                                        <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" alt="" />
+                                    </div>
+                                    <div id="YesterDayContentDiv" style="border: 1px solid lightgray; width: 86.8%; min-height: 240px;
+                                        margin-left: 26px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
+                                        -khtml-border-radius: 3px; background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+                                        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                                        <div style="float: left; width: 100%; margin-top: 15px;">
+                                            <div style="float: left; width: 40%; margin-left: 15px">
+                                                <span style="font-weight: bold; color: Gray">Reading Session</span>
+                                                <asp:Label ID="ReadingSessionSentTime" runat="server" Text='<%# Eval("ReadingSessionSentTime") %>'></asp:Label>
+                                            </div>
+                                            <div style="float: right; margin-right: 25px; width: 20%">
+                                                <asp:Button ID="ReviewButton" Style="border: 0px solid #6C9E2D; width: 123px; height: 34px;
+                                                    margin-right: 15px; cursor: pointer; background-image: url('../Portals/0/images/Review bg.png');
+                                                    background-repeat: no-repeat; color: white;" runat="server" OnClick="ReviewButton_Click" />
+                                            </div>
+                                        </div>
+                                        <div style="float: left; margin-top: 51px; margin-left: 18px; width: 2%">
+                                            <img id="GuidedImg" style="" alt="" clientidmode="Static" src="<%=Page.ResolveUrl("Portals/0/images/unopen.png")%>" />
+                                        </div>
+                                        <div style="float: left; margin-top: 18px; margin-left: 18px; width: 35%">
+                                            <img id="BookCoverImage" alt="Cover" src="<%=Page.ResolveUrl("Portals/0/images/TheLittleBlueHorse.png")%>"
+                                                style="margin-left: 10px; margin-top: -4px;" width="73px" />
+                                            <img id="BookCoverImage2" alt="Cover" src="<%=Page.ResolveUrl("Portals/0/images/book1.png")%>"
+                                                style="margin-left: 10px; margin-top: -4px;" width="70px" />
+                                        </div>
+                                        <div style="float: left; margin-top: 25px; width: 25%">
+                                            <div style="border: 0px solid lightgray; float: right; height: 40px; margin-top: -6px;
+                                                width: 143px;">
+                                                <img src="<%=Page.ResolveUrl("Portals/0/images/students.png")%>" alt="" style="height: 28px;
+                                                    width: 27px; margin-left: 39px; float: left; position: relative; margin-top: 10px;" />
+                                                <span style="float: left; padding-left: 10px; padding-top: 18px; color: #848484;
+                                                    font-weight: bold;">UNREAD</span>
+                                            </div>
+                                            <div style="border: 0px solid lightgray; height: 54px; margin-top: 18px; width: 128px;">
+                                                <img src="<%=Page.ResolveUrl("Portals/0/images/students.png")%>" alt="" style="height: 28px;
+                                                    width: 27px; margin-left: 40px; float: left; position: relative; margin-top: 10px;" />
+                                                <span style="float: left; padding-left: 12px; padding-top: 16px; color: #74B46A;
+                                                    font-weight: bold;">READ</span>
+                                            </div>
+                                        </div>
+                                        <div style="float: right; width: 100%">
+                                            <span style="font-weight: bold; margin-left: 10px;">Note:</span>
+                                            <p style="width: 100%; margin-left: 10px; margin-top: 2px;">
+                                                Lorem ipsum dolor sit amet, consectetur adipisoing elit.In accumsan, leo ao suscipit
+                                                vulputate, neque oroi vehicula lorem, vitae dignissim oroi maurie non enim. Ut vehicule,
+                                                turpis quis pretium iaculis, ante lorem semper quam, pretium venenatis quam purus
+                                                sit amet mi. Nune egestas mollis tincidunt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+        <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <div id="AllOtherGroupsDiv" class="AllOtherGroupsDiv" runat="server" style="margin-top: -56px;">
+                    <div class="AllOtherGroupsImgDiv">
+                        <img src="<%=Page.ResolveUrl("Portals/0/images/circle_small.png")%>" alt="" style="margin-left: -15px;
+                            float: left; margin-top: 40px;" />
+                    </div>
+                    <div id="AllotherGroupDivBtn" class="AllotherGroupDivBtn" runat="server" style="width: 86.6%;
+                        margin-right: 5px;">
+                        <img src="<%=Page.ResolveUrl("Portals/0/images/callender.png")%>" alt="" style="float: left;
+                            margin-top: 10px; margin-left: 12px;" />
+                        <asp:Button ID="AllOtherGroupButton" runat="server" Text="Last 7 days" Style="width: 90%"
+                            CssClass="AllOtherGroupBtn" />
+                    </div>
+                </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+</div>
+<div id="StudentDiv" style="display: none; float: left; width: 100%; margin-top: -20px">
+    <div style="float: left; width: 100%">
+        <div style="float: left; width: 49%">
+            <div id="SelectAllDiv">
+                <img src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" class="SelectallCheckBoxclass"
+                    id="SelectallCheckBox" alt="" /><literal id="literal"></literal></div>
+            <span class="SelectAllSpan">SELECT ALL</span>
+        </div>
+        <div class="GroupsSortReaddiv">
+            <asp:Button ID="SortingButton" Style="width: 63px; margin-right: 30px; padding-right: 18px;"
+                CssClass="SortRead  Sort" runat="server" Text="A-Z" /><b style="float: right">|</b>
+            <asp:Button ID="ReadingLevelButton" runat="server" Style="width: 140px; padding-right: 15px;
+                margin-right: 10px;" CssClass="SortRead" Text="PM READING LEVEL" />
+        </div>
+    </div>
+    <div style="width: 87%; float: left; margin-left: 54px; border-left: 1px solid lightgray;
+        min-height: 20px; margin-top: -1px">
+    </div>
+    <div class="SearchDiv" style="width: 654px">
+        <div class="SearchInnerDiv" style="width: 655px">
+            <input type="text" id="SearchTextBox" class="classSearchwater" runat="server" value="Enter your search here..."
+                title="Enter your search here..." />
+            <div class="Searchbtndiv">
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+                    <ContentTemplate>
+                        <asp:Button ID="SearchButton" runat="server" CssClass="SearchButton" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </div>
+    <div style="width: 87%; float: left; margin-left: 54px; border-left: 1px solid lightgray;
+        min-height: 40px;">
+    </div>
+    <div style="width: 100%; float: left; margin-left: 54px; min-height: 80px; border-left: 1px solid lightgray;
+        margin-top: -36px; padding-bottom: 0px;">
+        <div id="RepeaterStudentDiv" style="float: left; width: 100%; margin-top: 15px;">
+            <asp:Repeater ID="StudentRepeater" runat="server">
+                <ItemTemplate>
+                    <div id="StudentRepeaterDiv" style="float: left; width: 100%; height: 60px; margin-top: 21px;">
+                        <div style="float: left; margin-top: 23px; margin-left: -8px;">
+                            <img src="<%=Page.ResolveUrl("Portals/0/images/circle_small.png")%>" alt="" />
+                        </div>
+                        <div id="StudentRepeaterContentDiv" style="border: 1px solid lightgray; width: 85.4%;
+                            height: 60px; margin-left: 26px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+                            border-radius: 3px; -khtml-border-radius: 3px; background: -moz-linear-gradient(center top , white 0%, #fdfdfd 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+                            background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');">
+                            <div style="float: left; margin-top: 18px; margin-left: 18px;">
+                                <input id="StudentCheckBoxes" clientidmode="Static" type="checkbox" style="display: none" />
+                                <img id="StudentCheckBoxImg" style="height: 28px; width: 27px" alt="" clientidmode="Static"
+                                    src="<%=Page.ResolveUrl("Portals/0/images/circle_big.png")%>" />
+                            </div>
+                            <div style="float: left; margin-top: 19px;">
+                                <asp:Label ID="StudentNameLabel" CssClass="CreateStTchlbl" runat="server" Text='<%# Eval("StudentName") %>'></asp:Label>
+                            </div>
+                            <div style="float: right; margin-top: 16px;">
+                                <asp:Button ID="ClassProfileButton" runat="server" Style="border: 0px solid #6C9E2D;
+                                    width: 123px; height: 34px; text-indent: 19px; margin-right: 15px; cursor: pointer;
+                                    background-image: url('../Portals/0/images/profilebutton.png'); background-repeat: no-repeat;
+                                    color: white;" ForeColor="White" OnClick="ClassProfileButton_Click" />
+                            </div>
+                        </div>
+                    </div>
+                </ItemTemplate>
+            </asp:Repeater>
+        </div>
+    </div>
+    <div style="border-right: white 10px solid; float: left; margin-top: -20px; margin-left: 47px;
+        height: 50px; width: 5px; z-index: 1000;">
+    </div>
+</div>

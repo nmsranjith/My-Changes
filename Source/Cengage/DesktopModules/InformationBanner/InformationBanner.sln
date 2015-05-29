@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{00000000-0000-0000-0000-000000000000}") = "InformationBanner", "InformationBanner.csproj", "{623236C4-EFA0-48E4-98A0-63AB3E9D57BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{623236C4-EFA0-48E4-98A0-63AB3E9D57BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623236C4-EFA0-48E4-98A0-63AB3E9D57BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623236C4-EFA0-48E4-98A0-63AB3E9D57BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623236C4-EFA0-48E4-98A0-63AB3E9D57BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

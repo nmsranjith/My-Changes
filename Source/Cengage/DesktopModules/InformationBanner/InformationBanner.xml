@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InformationBanner</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.InformationBanner.Handlers.AlertDeleteHandler">
+            <summary>
+            Summary description for AlertDeleteHandler
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.InformationBannerModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from InformationBannerModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.InformationBannerModuleBase.LogFileWrite(System.Exception)">
+            <summary>
+             Writes Exceptions to log file in user readable format
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Components.Controllers.InformationBannerController.GetAlerts(System.String,System.String,System.String)">
+            <summary>
+            Get All banner messages
+            </summary>
+            <param name="val"></param>
+            <param name="currentDate"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Components.Controllers.InformationBannerController.AddAlerts(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Add a new banner message
+            </summary>
+            <param name="usersk"></param>
+            <param name="ErrorMsg"></param>
+            <param name="ErrorType"></param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Components.Controllers.InformationBannerController.DeleteAlerts(System.Int32)">
+            <summary>
+            Delete a banner message
+            </summary>
+            <param name="AlertID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Components.Controllers.InformationBannerController.UpdateAlerts(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Update a banner message
+            </summary>
+            <param name="AlertID"></param>
+            <param name="ErrorMsg"></param>
+            <param name="ErrorType"></param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Components.Controllers.InformationBannerController.DeleteUserInfoID(System.Int32,System.String,System.String)">
+            <summary>
+            Delete a banner message for the paritcular user
+            </summary>
+            <param name="AlertID"></param>
+            <param name="userLoginName"></param>
+            <param name="pageUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditInformationBanner class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from InformationBannerModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.InformationBanner.Edit.lblError">
+            <summary>
+            lblError control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.InformationBanner.Edit.grdAlert">
+            <summary>
+            grdAlert control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.InformationBannerSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from InformationBannerSettingsBase
+            
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Data.SqlDataProvider.GetAlerts(System.String,System.String,System.String)">
+            <summary>
+            Get All banner messages
+            </summary>
+            <param name="val"></param>
+            <param name="currentDate"></param>
+            <param name="userLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Data.SqlDataProvider.AddAlerts(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Add a new banner message
+            </summary>
+            <param name="usersk"></param>
+            <param name="ErrorMsg"></param>
+            <param name="ErrorType"></param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Data.SqlDataProvider.DeleteAlerts(System.Int32)">
+            <summary>
+            Delete a banner message
+            </summary>
+            <param name="AlertID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Data.SqlDataProvider.UpdateAlerts(System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Update a banner message
+            </summary>
+            <param name="AlertID"></param>
+            <param name="ErrorMsg"></param>
+            <param name="ErrorType"></param>
+            <param name="StartDate"></param>
+            <param name="EndDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Data.SqlDataProvider.DeleteUserInfoID(System.Int32,System.String,System.String)">
+            <summary>
+            Delete a banner message for the paritcular user
+            </summary>
+            <param name="AlertID"></param>
+            <param name="userLoginName"></param>
+            <param name="pageUrl"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from InformationBannerModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.InformationBanner.View.AlertRepeater">
+            <summary>
+            AlertRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.InformationBanner.View.InfoBannerUserName">
+            <summary>
+            InfoBannerUserName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.InformationBanner.View.PageUrlHdn">
+            <summary>
+            PageUrlHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from InformationBannerSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.InformationBanner.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.InformationBanner.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for InformationBanner
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+D:\Code-Dec-12\Integrated\bin\eCollection_Books.dll
+D:\Code-Dec-12\Integrated\bin\eCollection_Books.pdb
+D:\Code-Dec-12\Integrated\bin\eCollection_Books.xml
+D:\Code-Dec-12\Integrated\DesktopModules\eCollection_Books\obj\Release\ResolveAssemblyReference.cache
+D:\Code-Dec-12\Integrated\DesktopModules\eCollection_Books\obj\Release\eCollection_Books.dll
+D:\Code-Dec-12\Integrated\DesktopModules\eCollection_Books\obj\Release\eCollection_Books.pdb

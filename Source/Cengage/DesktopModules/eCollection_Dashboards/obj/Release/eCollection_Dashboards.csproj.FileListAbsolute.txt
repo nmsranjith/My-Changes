@@ -1,0 +1,12 @@
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Dashboards.dll
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Dashboards.pdb
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\bin\eCollection_Dashboards.xml
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Release\eCollection_Dashboards.dll
+D:\Projects\CENGAGE\eCommerce\Code\Integrated\DesktopModules\eCollection_Dashboards\obj\Release\eCollection_Dashboards.pdb
+D:\May13\Integrated\bin\eCollection_Dashboards.dll
+D:\May13\Integrated\bin\eCollection_Dashboards.pdb
+D:\May13\Integrated\bin\eCollection_Dashboards.xml
+D:\May13\Integrated\DesktopModules\eCollection_Dashboards\obj\Release\ResolveAssemblyReference.cache
+D:\May13\Integrated\DesktopModules\eCollection_Dashboards\obj\Release\eCollection_Dashboards.dll
+D:\May13\Integrated\DesktopModules\eCollection_Dashboards\obj\Release\eCollection_Dashboards.pdb

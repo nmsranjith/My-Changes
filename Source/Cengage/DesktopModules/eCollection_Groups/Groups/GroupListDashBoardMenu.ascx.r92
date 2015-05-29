@@ -1,0 +1,42 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="GroupListDashBoardMenu.ascx.cs" Inherits="DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu" %>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery("#DeleteGroupButton").click(function () {
+            return false;
+        });
+      
+    });
+    
+</script>
+<style type="text/css">
+input[type=submit][disabled]
+{
+    cursor:default; 
+}
+</style>
+<div>
+    <center>
+    <br />
+        <asp:Button ID="CreateGroupButton" runat="server" style="background-image: url('../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;text-indent:0px;"
+            Text="CREATE A GROUP" CssClass="ButtonStyle" 
+            onclick="CreateGroupButton_Click"  Enabled="true" />
+        <br />
+        <asp:Button ID="StartReadingSessionButton" 
+            style="background-image: url('../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;background-position: 0px -133px;" 
+            runat="server" clientIdMode="static" Text="CREATE A READING SEESION" 
+            CssClass="ButtonStyle" Enabled="false" 
+            onclick="StartReadingSessionButton_Click" />
+        <br />
+        <hr style="height: 1px; background-color: lightgray; float: right; width: 90%; border: 0px solid lightgray;" />
+        <asp:Button ID="EditGroupButton" runat="server" Text="EDIT GROUP" clientIdMode="static" style="text-indent:0px;background-image: url('../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;background-position: 0px -133px;"
+            CssClass="ButtonStyle" Enabled="false" onclick="EditGroupButton_Click"/>
+        <br />
+        <asp:Button ID="MergeGroupButton" runat="server" clientIdMode="static" 
+            Text="MERGE GROUPS" CssClass="ButtonStyle" Enabled="false" 
+            style="text-indent:0px;background-image: url('../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;background-position: 0px -133px;" 
+            onclick="MergeGroupButton_Click" />
+        <br />
+        <asp:Button ID="DeleteGroupButton" runat="server" clientIdMode="static" Text="DELETE GROUP" CssClass="ButtonStyle" Enabled="false" style="text-indent:0px;background-image: url('../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;background-position: 0px -90px;" />
+    </center>
+</div>
+

@@ -1,0 +1,125 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using DotNetNuke.Common;
+using DotNetNuke.Entities.Portals;
+
+namespace DotNetNuke.Modules.eCollection_Groups.Groups
+{
+    public partial class GroupList : System.Web.UI.UserControl
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
+            DataTable dt = new DataTable();
+            DataRow dr;
+
+            dt.Columns.Add("MembersCount", typeof(string));
+            dt.Columns.Add("TeacherName", typeof(string));
+
+            dr = dt.NewRow();
+
+            dr["MembersCount"] = "15";
+            dr["TeacherName"] = "Brendan";
+            dt.Rows.Add(dr);
+            DataRow dr1;
+            dr1 = dt.NewRow();
+
+            dr1["MembersCount"] = "15";
+            dr1["TeacherName"] = "Ben and Briana";
+            dt.Rows.Add(dr1);
+            ClassRepeater.DataSource = dt.DefaultView;
+            ClassRepeater.DataBind();
+
+            DataTable dt1 = new DataTable();
+            DataRow dr01;
+            // eCollectionMenuPlaceHolder
+            dt1.Columns.Add("MembersCount", typeof(string));
+            dt1.Columns.Add("TeacherName", typeof(string));
+
+
+
+            dr01 = dt1.NewRow();
+
+            dr01["MembersCount"] = "15";
+            dr01["TeacherName"] = "Brendan";
+            dt1.Rows.Add(dr01);
+            DataRow dr2;
+            dr2 = dt1.NewRow();
+            dr2["MembersCount"] = "14";
+            dr2["TeacherName"] = "Brendan and Briana";
+            dt1.Rows.Add(dr2);
+            DataRow dr3;
+            dr3 = dt1.NewRow();
+            dr3["MembersCount"] = "12";
+            dr3["TeacherName"] = "Brendan";
+            dt1.Rows.Add(dr3);
+            GroupsRepeater.DataSource = dt1.DefaultView;
+            GroupsRepeater.DataBind();
+        }
+
+        protected void ClassProfileButton_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=groupprofile");
+        }
+        protected void GroupsProfileButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=groupprofile");
+        }
+        protected void AllOtherGroupButton_Click(object sender, EventArgs e)
+        {
+            AllotherGroupDivBtn.Style.Add("display", "none");
+            DataTable dt1 = new DataTable();
+            DataRow dr1;
+
+            dt1.Columns.Add("MembersCount", typeof(string));
+            dt1.Columns.Add("TeacherName", typeof(string));
+
+            dr1 = dt1.NewRow();
+
+            dr1["MembersCount"] = "15";
+            dr1["TeacherName"] = "Brendan";
+            dt1.Rows.Add(dr1);
+            DataRow dr2;
+            dr2 = dt1.NewRow();
+            dr2["MembersCount"] = "14";
+            dr2["TeacherName"] = "Brendan and Briana";
+            dt1.Rows.Add(dr2);
+            DataRow dr3;
+            dr3 = dt1.NewRow();
+            dr3["MembersCount"] = "12";
+            dr3["TeacherName"] = "Ben and Briana";
+            dt1.Rows.Add(dr3);
+            DataRow dr4;
+            dr4 = dt1.NewRow();
+            dr4["MembersCount"] = "17";
+            dr4["TeacherName"] = "Ben";
+            dt1.Rows.Add(dr4);
+            DataRow dr5;
+            dr5 = dt1.NewRow();
+            dr5["MembersCount"] = "10";
+            dr5["TeacherName"] = "Briana and Ben";
+            dt1.Rows.Add(dr5);
+            DataRow dr6;
+            dr6 = dt1.NewRow();
+            dr6["MembersCount"] = "16";
+            dr6["TeacherName"] = "Briana";
+            dt1.Rows.Add(dr6);
+            DataRow dr7;
+            dr7 = dt1.NewRow();
+            dr7["MembersCount"] = "12";
+            dr7["TeacherName"] = "Brendan";
+            dt1.Rows.Add(dr7);
+            GroupsRepeater.DataSource = dt1.DefaultView;
+            GroupsRepeater.DataBind();
+            CheckALLUpdatePanel.Update();
+            classUpdatePanel.Update();
+            GroupUpdatePanel.Update();
+        }
+    }
+}

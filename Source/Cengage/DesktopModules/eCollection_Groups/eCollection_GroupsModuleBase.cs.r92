@@ -1,0 +1,63 @@
+/*
+' Copyright (c) 2012 DotNetNuke Corporation
+'  All rights reserved.
+' 
+' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+' TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+' THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+' CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+' DEALINGS IN THE SOFTWARE.
+' 
+*/
+
+using System.Collections;
+using DotNetNuke.Entities.Modules;
+using System;
+namespace DotNetNuke.Modules.eCollection_Groups
+{
+
+    /// <summary>
+    /// This base class can be used to define custom properties for multiple controls. 
+    /// An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+    /// 
+    /// Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+    /// are accessible to your module's controls (that inherity from eCollection_GroupsModuleBase
+    /// 
+    /// </summary>
+
+    public class eCollection_GroupsModuleBase : DotNetNuke.Entities.Modules.PortalModuleBase
+    {
+        protected const string GroupsModule = "eCollection_Groups";
+        protected const string SessionsModule = "eCollection_Sessions";
+        protected const string SessionParameter = "createsession";
+        protected const string Sessionprofile = "sessionprofile";
+        protected const string StudentsModule = "eCollection_Students";
+        protected const string Studentprofile = "profile";
+
+        protected const string GROUPPROFILE = "groupprofile";
+        protected const string CREATEGROUP = "creategroup";
+        protected const string EDITGROUP = "editgroup";
+        protected const string ADDSTUDENTTOCREATEGROUP = "addstudenttocreategroup";
+        protected const string ADDSTUDENTTOEDITGROUP = "addstudenttoeditgroup";
+        protected const string ADDTEACHERTOCREATEGROUP = "addteachertocreategroup";
+        protected const string ADDTEACHERTOEDITGROUP = "addteachertoeditgroup";
+        protected const string RECORDINGS = "recordings";
+        protected const string LISTEN = "listen";
+
+        protected int GetTabID(string ModuleName)
+        {
+            int modID = 0;
+            DotNetNuke.Entities.Modules.ModuleController mc = new ModuleController();
+            ArrayList existMods = mc.GetModulesByDefinition(this.PortalId, ModuleName);
+            foreach (DotNetNuke.Entities.Modules.ModuleInfo mi in existMods)
+            {
+                if (!mi.IsDeleted)
+                {
+                    modID = mi.TabID;
+                }
+            }
+            int iProfileTabId = Convert.ToInt32(modID);
+            return iProfileTabId;
+        }
+    }
+}

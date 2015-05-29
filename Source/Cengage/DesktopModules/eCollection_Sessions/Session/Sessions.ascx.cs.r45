@@ -1,0 +1,212 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using DotNetNuke.Common;
+using DotNetNuke.Entities.Portals;
+
+namespace DotNetNuke.Modules.eCollection_Sessions.Session
+{
+    public partial class Sessions : eCollection_SessionsModuleBase
+    {
+        //protected void Page_Load(object sender, EventArgs e)
+        //{
+        //    //Page.ClientScript.RegisterStartupScript(GetType(), "id", "changeGroupsStyle()", true);
+        //    DataTable dt = new DataTable();
+        //    DataRow dr;
+
+        //    dt.Columns.Add("SessionName", typeof(string));
+        //    dt.Columns.Add("SessionOpenDate", typeof(string));            
+
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test1](5 opened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test2](5 opened/15 unopened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test2](5 opened/15 unopened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    ActiveGridView.DataSource = dt.DefaultView;
+        //    ActiveGridView.DataBind();
+        //    FinishedGridView.DataSource = dt.DefaultView;
+        //    FinishedGridView.DataBind();
+        //    ArchivedGridView.DataSource = dt.DefaultView;
+        //    ArchivedGridView.DataBind();
+        
+           
+        //}
+
+      
+
+        //protected void FinishedButton_Click(object sender, EventArgs e)
+        //{
+        //    DataTable dt = new DataTable();
+        //    DataRow dr;
+
+
+        //    dt.Columns.Add("SessionName", typeof(string));
+        //    dt.Columns.Add("SessionOpenDate", typeof(string));
+
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test1](5 opened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test2](5 opened/15 unopened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test2](5 opened/15 unopened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    FinishedGridView.Visible = true;
+        //    FinishedGridView.DataSource = dt.DefaultView;
+        //    FinishedGridView.DataBind();
+        //}
+
+        //protected void ArchivedButton_Click(object sender, EventArgs e)
+        //{
+        //    DataTable dt = new DataTable();
+        //    DataRow dr;
+
+
+        //    dt.Columns.Add("SessionName", typeof(string));
+        //    dt.Columns.Add("SessionOpenDate", typeof(string));
+
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test1](5 opened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test2](5 opened/15 unopened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    dr = dt.NewRow();
+        //    dr["SessionName"] = "[Test2](5 opened/15 unopened)";
+        //    dr["SessionOpenDate"] = "12/12/2012";
+        //    dt.Rows.Add(dr);
+        //    ArchivedGridView.Visible = true;
+        //    ArchivedGridView.DataSource = dt.DefaultView;
+        //    ArchivedGridView.DataBind();
+        //}
+
+        protected void ClassProfileButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=sessionprofile");
+        }
+
+        protected void ClassProfileButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect(Globals.NavigateURL(PortalSettings.Current.ActiveTab.TabID) + "?pagename=sessionprofile"); ;
+        }
+
+        //protected void ClassProfileButton2_Click(object sender, EventArgs e)
+        //{
+        //    Response.Redirect(Globals.NavigateURL(611));
+        //}
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            DataRow dr;
+
+            dt.Columns.Add("MembersCount", typeof(string));
+            dt.Columns.Add("TeacherName", typeof(string));
+
+            dr = dt.NewRow();
+
+            dr["MembersCount"] = "Session Name";
+            dr["TeacherName"] = "";
+            dt.Rows.Add(dr);
+            DataRow dr1;
+            dr1 = dt.NewRow();
+
+            dr1["MembersCount"] = "Session Name";
+            dr1["TeacherName"] = "";
+            dt.Rows.Add(dr1);
+            ClassRepeater.DataSource = dt.DefaultView;
+            ClassRepeater.DataBind();
+
+            DataTable dt1 = new DataTable();
+            DataRow dr01;
+
+            dt1.Columns.Add("MembersCount", typeof(string));
+            dt1.Columns.Add("TeacherName", typeof(string));
+
+            dr01 = dt1.NewRow();
+
+            dr01["MembersCount"] = "Session Name";
+            dr01["TeacherName"] = "";
+            dt1.Rows.Add(dr01);
+            DataRow dr2;
+            dr2 = dt1.NewRow();
+            dr2["MembersCount"] = "Session Name";
+            dr2["TeacherName"] = "";
+            dt1.Rows.Add(dr2);
+            DataRow dr3;
+            dr3 = dt1.NewRow();
+            dr3["MembersCount"] = "Session Name";
+            dr3["TeacherName"] = "";
+            dt1.Rows.Add(dr3);
+            GroupsRepeater.DataSource = dt1.DefaultView;
+            GroupsRepeater.DataBind();
+        }
+
+     
+        protected void AllOtherGroupButton_Click(object sender, EventArgs e)
+        {
+            AllotherGroupDivBtn.Style.Add("display", "none");
+            DataTable dt1 = new DataTable();
+            DataRow dr1;
+
+            dt1.Columns.Add("MembersCount", typeof(string));
+            dt1.Columns.Add("TeacherName", typeof(string));
+
+            dr1 = dt1.NewRow();
+
+            dr1["MembersCount"] = "Session Name";
+            dr1["TeacherName"] = "";
+            dt1.Rows.Add(dr1);
+            DataRow dr2;
+            dr2 = dt1.NewRow();
+            dr2["MembersCount"] = "Session Name";
+            dr2["TeacherName"] = "";
+            dt1.Rows.Add(dr2);
+            DataRow dr3;
+            dr3 = dt1.NewRow();
+            dr3["MembersCount"] = "Session Name";
+            dr3["TeacherName"] = "";
+            dt1.Rows.Add(dr3);
+            DataRow dr4;
+            dr4 = dt1.NewRow();
+            dr4["MembersCount"] = "Session Name";
+            dr4["TeacherName"] = "";
+            dt1.Rows.Add(dr4);
+            DataRow dr5;
+            dr5 = dt1.NewRow();
+            dr5["MembersCount"] = "Session Name";
+            dr5["TeacherName"] = "";
+            dt1.Rows.Add(dr5);
+            DataRow dr6;
+            dr6 = dt1.NewRow();
+            dr6["MembersCount"] = "Session Name";
+            dr6["TeacherName"] = "";
+            dt1.Rows.Add(dr6);
+            DataRow dr7;
+            dr7 = dt1.NewRow();
+            dr7["MembersCount"] = "Session Name";
+            dr7["TeacherName"] = "";
+            dt1.Rows.Add(dr7);
+            GroupsRepeater.DataSource = dt1.DefaultView;
+            GroupsRepeater.DataBind();
+        }
+
+    }
+}

@@ -1,0 +1,6 @@
+E:\Deployterm\Deploy\bin\ProductFormat.dll
+E:\Deployterm\Deploy\bin\ProductFormat.pdb
+E:\Deployterm\Deploy\bin\ProductFormat.xml
+E:\Deployterm\Deploy\DesktopModules\ProductFormat\obj\Debug\ResolveAssemblyReference.cache
+E:\Deployterm\Deploy\DesktopModules\ProductFormat\obj\Debug\ProductFormat.dll
+E:\Deployterm\Deploy\DesktopModules\ProductFormat\obj\Debug\ProductFormat.pdb

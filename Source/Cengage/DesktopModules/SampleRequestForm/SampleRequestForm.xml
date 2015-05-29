@@ -1,0 +1,1216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SampleRequestForm</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from SampleRequestFormSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.SampleRequestFormSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SampleRequestFormSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from SampleRequestFormModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.SampleRequestFormModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SampleRequestFormModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.SampleRequestFormModuleBase.LogFileWrite(System.Exception)">
+            <summary>
+             Writes Exceptions to log file in user readable format
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.SampleRequestFormModuleBase.LogValues(System.String)">
+            <summary>
+             Writes values to log file for developer verification
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.SampleRequestFormModuleBase.UpdateSSOErrorMailBody(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Generate the email template body
+            </summary>
+            <param name="registrationParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.SampleRequestFormModuleBase.UpdateMailBody(System.Collections.Generic.List{Cengage.eCommerce.Lib.SRFItems},System.Collections.Generic.List{Cengage.eCommerce.Lib.SRFSupplements},System.String,System.String,DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.String,System.String,System.String)">
+            <summary>
+            Generate the email template body
+            </summary>
+            <param name="registrationParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.SampleRequestFormModuleBase.BindHtml(System.String,System.String)">
+            <summary>
+            Function to construct html elements for products
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.View.SRFPlaceHldr">
+            <summary>
+            SRFPlaceHldr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSampleRequestForm class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from SampleRequestFormModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditSampleRequestForm class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for SampleRequestForm
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.SecLvlDisciplineLnk">
+            <summary>
+            SecLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.ThirdLvlDisciplineLnk">
+            <summary>
+            ThirdLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.SRFProductName">
+            <summary>
+            SRFProductName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.SuccessHeader">
+            <summary>
+            SuccessHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.ErrorHeader">
+            <summary>
+            ErrorHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg1">
+            <summary>
+            Error_Msg1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg2">
+            <summary>
+            Error_Msg2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg3">
+            <summary>
+            Error_Msg3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg4">
+            <summary>
+            Error_Msg4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg5">
+            <summary>
+            Error_Msg5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg6">
+            <summary>
+            Error_Msg6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg7">
+            <summary>
+            Error_Msg7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg8">
+            <summary>
+            Error_Msg8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg9">
+            <summary>
+            Error_Msg9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg10">
+            <summary>
+            Error_Msg10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg11">
+            <summary>
+            Error_Msg11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg12">
+            <summary>
+            Error_Msg12 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg13">
+            <summary>
+            Error_Msg13 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.Error_Msg14">
+            <summary>
+            Error_Msg14 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessVerifiedUser.ContactRep">
+            <summary>
+            ContactRep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessNonVerifiedUser.SecLvlDisciplineLnk">
+            <summary>
+            SecLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessNonVerifiedUser.ThirdLvlDisciplineLnk">
+            <summary>
+            ThirdLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessNonVerifiedUser.SRFProductName">
+            <summary>
+            SRFProductName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SuccessNonVerifiedUser.ContactRep">
+            <summary>
+            ContactRep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.HideSecondaryEmailContent">
+            <summary>
+            To hide the secondary email content for unverified/anonymous users
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SubmitRequest_OnClick(System.Object,System.EventArgs)">
+            <summary>
+            Send Request Button click event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SendErrorEmails(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Sends SSO error emails to Castley Will
+            </summary>
+            <param name="responseCode"></param>
+            <param name="userName"></param>
+            <param name="isbns"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.ProcessEmailItems(System.Collections.Generic.List{Cengage.eCommerce.Lib.SRFItems},System.Collections.Generic.List{Cengage.eCommerce.Lib.SRFSupplements},System.String,System.String,System.String,System.String,DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Processes emails for print and digital items seperately for SSO Verified Instructors
+            </summary>
+            <param name="formatItems"></param>
+            <param name="teachingSuplements"></param>
+            <param name="repName"></param>
+            <param name="repEmail"></param>
+            <param name="orderNumber1"></param>
+            <param name="orderNumber2"></param>
+            <param name="sRFParameters"></param>
+            <param name="title"></param>
+            <param name="printTemplatePath"></param>
+            <param name="digitalTemplatePath"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.ProcessEmailItemsForNVFUsers(System.Collections.Generic.List{Cengage.eCommerce.Lib.SRFItems},System.Collections.Generic.List{Cengage.eCommerce.Lib.SRFSupplements},System.String,System.String)">
+            <summary>
+            Process emails for Non verified instructors or anonymous users 
+            </summary>
+            <param name="formatItems"></param>
+            <param name="teachingSuplements"></param>
+            <param name="toAddress"></param>
+            <param name="salesRepName"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.FormatImageURL">
+            <summary>
+            Function to format book thumbnail path
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.BindHtml(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Function to construct html elements for products
+            </summary>
+            <param name="TabID"></param>
+            <param name="Link"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.LoadingUpdatePanel">
+            <summary>
+            LoadingUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFLoaderImg">
+            <summary>
+            SRFLoaderImg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFUpdatePanel">
+            <summary>
+            SRFUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SecLvlDisciplineLnk">
+            <summary>
+            SecLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.ThirdLvlDisciplineLnk">
+            <summary>
+            ThirdLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFProductName">
+            <summary>
+            SRFProductName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFLoggedInPara">
+            <summary>
+            SRFLoggedInPara control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFLoggedOutDiv">
+            <summary>
+            SRFLoggedOutDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFLoggedOutPara2">
+            <summary>
+            SRFLoggedOutPara2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFPersonalName">
+            <summary>
+            SRFPersonalName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFEmailid">
+            <summary>
+            SRFEmailid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFContactDpn">
+            <summary>
+            SRFContactDpn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFPhone">
+            <summary>
+            SRFPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.ContactMobNumber">
+            <summary>
+            ContactMobNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.ContactWorkNumber">
+            <summary>
+            ContactWorkNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFAddressDiv">
+            <summary>
+            SRFAddressDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFShippingAddressTxt1">
+            <summary>
+            SRFShippingAddressTxt1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFShippingAddressTxt2">
+            <summary>
+            SRFShippingAddressTxt2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFShippingAddressTxt3">
+            <summary>
+            SRFShippingAddressTxt3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSuburbTxt">
+            <summary>
+            SRFSuburbTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFPostcode">
+            <summary>
+            SRFPostcode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFStateDiv">
+            <summary>
+            SRFStateDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFStateDpn">
+            <summary>
+            SRFStateDpn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFCountry">
+            <summary>
+            SRFCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFcourseName">
+            <summary>
+            SRFcourseName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFcoursesCode">
+            <summary>
+            SRFcoursesCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSemesterDpn">
+            <summary>
+            SRFSemesterDpn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSemesterEnrolment">
+            <summary>
+            SRFSemesterEnrolment control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFBookCurrently">
+            <summary>
+            SRFBookCurrently control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFInstitution">
+            <summary>
+            SRFInstitution control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSecondaryEmailDiv1">
+            <summary>
+            SRFSecondaryEmailDiv1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSecondaryEmailDiv2">
+            <summary>
+            SRFSecondaryEmailDiv2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.CurrentSecEmailId">
+            <summary>
+            CurrentSecEmailId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFContactUsLnk">
+            <summary>
+            SRFContactUsLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSecondaryEmailDiv">
+            <summary>
+            SRFSecondaryEmailDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSecondaryEmail">
+            <summary>
+            SRFSecondaryEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSecondaryEmailPara">
+            <summary>
+            SRFSecondaryEmailPara control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSecondaryPasswordDiv">
+            <summary>
+            SRFSecondaryPasswordDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFPassword">
+            <summary>
+            SRFPassword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFResourceDpn">
+            <summary>
+            SRFResourceDpn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFResourceTxt">
+            <summary>
+            SRFResourceTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFForTeachingChkbx">
+            <summary>
+            SRFForTeachingChkbx control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFAlreadyUsingChkbx">
+            <summary>
+            SRFAlreadyUsingChkbx control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFNeedHelpChkbx">
+            <summary>
+            SRFNeedHelpChkbx control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SelectedFormatsRptr">
+            <summary>
+            SelectedFormatsRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.TeachingSupplementsTopDiv">
+            <summary>
+            TeachingSupplementsTopDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFSuppMsgPara">
+            <summary>
+            SRFSuppMsgPara control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.TeachingSupplementsDiv">
+            <summary>
+            TeachingSupplementsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.TeachingSupplementsRptr">
+            <summary>
+            TeachingSupplementsRptr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFCommentTxt">
+            <summary>
+            SRFCommentTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SRFBtnUpdatePanel">
+            <summary>
+            SRFBtnUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.SubmitRequestBtn">
+            <summary>
+            SubmitRequestBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.UserTypeHdn">
+            <summary>
+            UserTypeHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.SRFBasic.UserStatusHdn">
+            <summary>
+            UserStatusHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.RequestError.SecLvlDisciplineLnk">
+            <summary>
+            SecLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.RequestError.ThirdLvlDisciplineLnk">
+            <summary>
+            ThirdLvlDisciplineLnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.RequestError.SRFProductName">
+            <summary>
+            SRFProductName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.SampleRequestForm.Views.RequestError.ContactRep">
+            <summary>
+            ContactRep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOandBMcontroller.PostingDetailsToServer(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.Collections.Generic.List{System.String},DotNetNuke.Modules.SampleRequestForm.ItemType)">
+            <summary>
+            Posting orders to Server using SSO Calls
+            </summary>
+            <param name="sRFParameters"></param>
+            <param name="srfItems"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters.Fill(System.Data.IDataReader)">
+            <summary>
+            CBO Fill Method
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Data.SqlDataProvider.SRFSendMail(System.String,System.String,System.String)">
+            <summary>
+            Send mail to sales representative
+            </summary>
+            <param name="toAddress"></param>
+            <param name="mailBody"></param>
+            <param name="mailSubject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Data.SqlDataProvider.SaveSSOInstructorInfo(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters)">
+            <summary>
+            Save Instructor Info
+            </summary>
+            <param name="user"></param>
+            <returns>returns integer</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Data.SqlDataProvider.GetInstructorInfo(System.String)">
+            <summary>
+             Get Instructor Info
+            </summary>
+            <param name="UserLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SamplingService">
+            <remarks/>
+        </member>
+        <member name="M:SamplingService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:SamplingService.CreateSample(System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:SamplingService.BeginCreateSample(System.String,System.String[],System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:SamplingService.EndCreateSample(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:SamplingService.CreateSampleAsync(System.String,System.String[])">
+            <remarks/>
+        </member>
+        <member name="M:SamplingService.CreateSampleAsync(System.String,System.String[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:SamplingService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:SamplingService.CreateSampleCompleted">
+            <remarks/>
+        </member>
+        <member name="T:ReturnCreateSamples">
+            <remarks/>
+        </member>
+        <member name="P:ReturnCreateSamples.Success">
+            <remarks/>
+        </member>
+        <member name="P:ReturnCreateSamples.resultDescription">
+            <remarks/>
+        </member>
+        <member name="P:ReturnCreateSamples.SampleInfoArray">
+            <remarks/>
+        </member>
+        <member name="T:SampleInfo">
+            <remarks/>
+        </member>
+        <member name="P:SampleInfo.Success">
+            <remarks/>
+        </member>
+        <member name="P:SampleInfo.ISBN">
+            <remarks/>
+        </member>
+        <member name="P:SampleInfo.Id">
+            <remarks/>
+        </member>
+        <member name="P:SampleInfo.Description">
+            <remarks/>
+        </member>
+        <member name="T:CreateSampleCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:CreateSampleCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:CreateSampleCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOAPIController.CheckUserExists(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.Int32@)">
+            <summary>
+            Checking User exists in SSO or not
+            </summary>
+            <param name="sRFParameters"></param>
+            <param name="ResponceCode"></param>
+            <returns>returns json data</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOAPIController.CreateStudentAccount(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.Int32@)">
+            <summary>
+            Creating Student Account in SSO
+            </summary>
+            <param name="sRFParameters"></param>
+            <param name="ResponceCode"></param>
+            <returns>returns json data</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOAPIController.GetUserProductsByTitle(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.Int32@)">
+            <summary>
+            Getting Product details of the SSO User.
+            </summary>
+            <param name="sRFParameters"></param>
+            <param name="ResponceCode"></param>
+            <returns>returns as Json</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOAPIController.CreateIROrder(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.Int32@)">
+            <summary>
+            Creating digital(eac,ess) request forms
+            </summary>
+            <param name="sRFParameters"></param>
+            <param name="ResponceCode"></param>
+            <returns>retuens as Json</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOAPIController.GenerateConsumeIacForEisbn(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.Int32@)">
+            <summary>
+            Generating samples for core isbn
+            </summary>
+            <param name="sRFParameters"></param>
+            <param name="ResponceCode"></param>
+            <returns>retuens as json</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOAPIController.CreateSample(System.String,System.String[])">
+            <summary>
+            Creating Sample request form in BM
+            </summary>
+            <param name="contactID"></param>
+            <param name="isbns"></param>
+            <returns>returns "successfield as true/false"</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SSOAPIController.SSOAPICalling(System.String,System.Int32@)">
+            <summary>
+            Calling SSO API
+            </summary>
+            <param name="SSOUrl"></param>
+            <param name="ResponceCode"></param>
+            <returns>returns json data</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SampleRequestFormController.SRFSendMail(System.String,System.String,System.String)">
+            <summary>
+            Send mail to sales representative
+            </summary>
+            <param name="toAddress"></param>
+            <param name="mailBody"></param>
+            <param name="mailSubject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SampleRequestFormController.InsertOrders(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters,System.Data.DataTable,System.String,System.String)">
+            <summary>
+            Insert Orders
+            </summary>
+            <param name="sRFParameters"></param>
+            <param name="orderDt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SampleRequestFormController.SaveSSOInstructorInfo(DotNetNuke.Modules.SampleRequestForm.Components.Modal.SRFParameters)">
+            <summary>
+            
+            </summary>
+            <param name="sRFParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SampleRequestFormController.GetInstructorInfo(System.String)">
+            <summary>
+            Get Instructor Info
+            </summary>
+            <param name="UserLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Components.Controller.SampleRequestFormController.GetString(System.String[])">
+            <summary>
+            Convertion of array of isbn to isbn with comma seperated
+            </summary>
+            <param name="isbn"></param>
+            <returns>string of Isbns</returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.SampleRequestForm.Handlers.SRFHandler">
+            <summary>
+            Summary description for SRFHandler
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.SampleRequestForm.Handlers.SRFHandler.Deserialize``1(System.Web.HttpContext)">
+            <summary>
+            This function will take httpcontext object and will read the input stream
+            It will use the built in JavascriptSerializer framework to deserialize object based given T object type value
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

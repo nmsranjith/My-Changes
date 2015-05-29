@@ -1,0 +1,32 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SessionDashBoardMenu.ascx.cs" Inherits="DotNetNuke.Modules.eCollection_Sessions.Dashboard.SessionDashBoardMenu" %>
+<style type="text/css">
+input[type=submit][disabled]
+{
+    cursor:default; 
+}
+</style>
+<div>
+    <center>
+    <br />
+        
+        <asp:Button ID="StartReadingSessionButton" runat="server" style="background-image: url('../../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;font-family: Arial;font-weight:bold;font-size: 7.6pt;" clientIdMode="static" Text="CREATE A READING SESSION" CssClass="ButtonStyle" onclick="CreateSessionButton_Click"/>
+        <br />
+        <div>
+        <hr style="background-color: #A4A0A1; width: 78%;border:0px solid transparent; height:1px;color:#A4A0A1; " />
+        </div>
+        <asp:Button ID="EndSessionButton" runat="server"  clientIdMode="static"  style="background-image: url('../../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;background-position: 0px -43px;font-family: Raleway;font-weight:bold;font-size: 7.6pt;"
+            CssClass="ButtonStyle" Enabled="false" onclick="EndSessionButton_Click"/>
+        <br />        
+        <%--<asp:Button ID="DeleteSessionButton" runat="server" clientIdMode="static" Text="Delete reading session" CssClass="ButtonStyle" Enabled="false" onclick="DeleteSessionButton_Click" />--%>
+        <input type="submit" id="DeleteSessionButton" class="ButtonStyle" disabled="disabled" value="DELETE READING SESSION" onclick="deletestudents()"  style="background-image: url('../../Portals/0/images/ButtonBG.jpg');background-repeat: no-repeat;background-position: 0px -88px;font-family: Arial;font-weight:bold;font-size: 7.6pt;color:#4E4E4E" />
+          <div>
+        <hr style="background-color: #A4A0A1; width: 78%;border:0px solid transparent; height:1px;color:#A4A0A1; " />
+        </div>
+    </center>
+</div>
+<script language="javascript" type="text/javascript">
+    var count = 0;
+    function deletestudents() {
+        alert('Student(s) Deleted Successfully');
+    }
+</script>

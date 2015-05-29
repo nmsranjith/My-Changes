@@ -1,0 +1,3771 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+a img {
+   border:none;
+}
+.Panes
+{
+padding:0 !important
+}
+ .contCentr
+    {
+        width: 960px !important;
+    }
+
+    h1, h2, h3, h4, h5, h6
+    {
+         margin: 0px;
+        padding: 0px;
+        color: #707070 !important;
+    }
+    
+    h1
+    {
+        font-size: 29pt !important;
+        font-weight: normal !important;
+    }
+    h3
+    {
+        font-size: 21pt !important;
+        font-weight: normal !important;
+    }
+    h4
+    {
+        font-size: 15pt !important;
+        font-weight: normal !important;
+    }
+.safari .k-textbox > input, .k-autocomplete .k-input, .k-combobox .k-input, .k-picker-wrap .k-input {
+-webkit-box-shadow: transparent 0px 0px 1px 1px inset !important;
+}
+
+    h5
+    {
+        font-weight: 700 !important;
+        font-size: 11pt !important;
+        margin-bottom: 10px;
+    }
+
+    .bannertitle  h1
+    {
+        display:none;
+        float:left;
+    }
+    .cancelBtnHdr
+    {
+        float: right;
+        margin-right: 10px;
+    }
+    /*.AddBtnHdr
+    {
+        width: 50%;
+        float: right;
+    }*/
+    .BtnsHdr
+    {
+        width: 48%;
+        float: right;
+        height: 50px;
+        margin-right: 19px;
+    }
+    .addBtns
+    {
+        margin-left: 0px !important;
+        float: right !important;
+    }
+
+    
+    .createHrs
+    {
+        width: 94.4%;
+        float: left;
+        background-color: gray;
+        border: 0px solid gray;
+        height: 1px;
+        margin-left: 20px;
+        margin-top: 19px;
+    }
+    .ButtonsDiv input[type=submit][disabled]
+    {
+        cursor: default;
+        background-color: transparent;
+        color: #A5A3A3 !important;
+        text-shadow: 1px 1px #F4F4F4;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.5;
+    }
+    .dnnFormError
+    {
+        padding: 11px 93px !important;
+        margin-left: 75px !important;
+        margin-top: 22px !important;
+        font-weight: bold !important;
+    }
+ /*   input[type=submit], input[type=button]
+    {
+        outline: 0px none;
+    }*/
+    .eClSearchbox,.eClSearchbox:hover
+    {
+  
+          padding-left: 7px !important;
+        float: left;
+        background:#FFF !important;
+        background-color: #FFF !important;
+        font-size: 10pt !important;
+        padding-top: 1px  !important;
+        color: #707070 !important;
+        border: 0px solid transparent !important; 
+        height: 29px !important;
+		line-height: 29px !important;
+        box-shadow: none !important; 
+    }
+    .eClUserSearchDiv span.k-state-hover
+    {
+        border: 0px solid transparent !important; 
+    }
+    #HeaderBtn
+    {
+        border-radius: 3px 3px 3px 3px;
+        float: right;
+        font-size: 8pt;
+         width: 83%;
+    }
+    .HeaderHdr
+    {
+        width: 69%;
+        float: left;
+    }
+	.ProgressDivClass
+	{
+  margin-top: 5% !important;
+	}
+    .TopBtnHdr
+    {       
+        float: right;
+        margin-right: 19px;
+    }
+    .EditBtnHdr
+    {
+        width: 83% !important;
+    }
+    .ProfileStudentName
+    {
+        width: 78% !important;
+    }
+    .FinishCreateProfile
+    {
+        margin-right: 25px !important;
+    }
+    .Finish
+    {
+        width: 85% !important;
+        margin-right: 26px !important;
+    }
+    .EditBtnHeader
+    {
+        width: 70% !important;
+        padding: 10px 0px 10px 2px !important;
+        border-radius: 3px;
+        margin-right: 25px !important;
+    }
+    
+    
+    .BackBtnHeader
+    {
+        width: 55% !important;
+        padding: 10px 0px 10px 0px !important;
+        border-radius: 3px;
+        margin-right: 28px !important;
+    }
+    .Back
+    {
+        margin-right: 33px !important;
+        margin-top: 7px !important;
+    }
+    
+    .TopRightEditbtn:link, .TopRightEditbtn:visited, .TopRightEditbtn:active, .BackBtn:link, .BackBtn:visited, .BackBtn:active
+    {
+        cursor: pointer;
+        font-size: 8pt;
+        color: white;
+        width: 100%;
+        height: 37px;
+        border: 0px solid transparent;
+        color: White !important;
+        text-decoration: none;
+    }
+    
+    .TopRightEditbtn:link, .TopRightEditbtn:visited, .TopRightEditbtn:active
+    {
+        padding: 10px 28px;
+    }
+    .BackBtn:link, .BackBtn:visited, .BackBtn:active
+    {
+        padding: 10px 37px;
+    }
+ 
+    
+    .canBtn
+    {
+        border-bottom: 1px solid #168CA5 !important;
+        border-top: 1px solid #1bbadd !important;
+        border-left: 1px solid #1bbadd !important;
+        border-right: 1px solid #168CA5 !important;
+    }
+    
+    .UserNameLbl
+    {
+        margin-top: 7px !important;
+        padding-left: 7px !important;
+        background-color: transparent !important;
+    }
+    .UserNameLblhlder
+    {
+        background-color: transparent !important;
+        border: 0px solid transparent !important;
+    }
+    
+    input[type=checkbox]
+    {
+        width: 12px;
+        color: Black;
+    }
+    .Searchbtndiv
+    {
+        position: relative;
+        border: 1px solid #707070 !important;
+        width: 34px !important;
+        height: 34px !important;
+        margin: -1px;
+        float: right !important;
+        background: #9e9e9e;
+      }
+    
+    .Searchbtndiv:hover
+    {
+        color: #0089c5;
+        border: 1px solid #CBCBCB;
+        background: #FFF;
+    }
+    
+    .Searchbtndiv input[type=submit]
+    {
+        cursor: pointer;
+        border: 0px;
+        float: left;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../Portals/0/images/search_icon.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+ 
+    
+   .ClassSearchDiv
+    {
+float:left;
+width:100%;
+    }
+    .ClassSearchDiv img
+    {
+        margin-left: 2px;
+        margin-top: 35px;
+    }
+    .finishBtns
+    {
+        opacity: 1 !important;
+        filter: alpha(opacity=100) !important;
+    }
+    .ClassSearchDiv ::-webkit-input-placeholder
+    {
+        color: #707070;
+    }
+    .ClassSearchDiv ::-moz-placeholder
+    {
+        color: #707070;
+        opacity: 1;
+
+    }
+    /* ie */
+    .ClassSearchDiv :-ms-input-placeholder
+    {
+        color: #707070;
+        filter: alpha(opacity=100);
+    }
+    /* firefox 19+ */
+    input:-moz-placeholder
+    {
+        color: #707070;
+        opacity: 1;
+    }
+    
+    
+    
+    
+    .TodaySearchDiv
+    {
+        float: left;
+        width: 100%;
+        padding: 0;
+        height: 90px;
+        margin-top: -40px;
+    }
+    .TodaySearchDiv img
+    {
+        margin-left: 2px;
+        margin-top: 36px;
+    }
+    
+    
+    /**********************************************************************************************************************************/
+    /********************************************************** Student DashBoard *****************************************************/
+    /**********************************************************************************************************************************/
+    
+    .ecstulistmsg
+    {
+        width: 100%; position: static; display: none;
+    }
+    .ecstulistcka
+    {
+        float: left; height: 20px; cursor: pointer;
+    }
+    .ecstulistucka
+    {
+        float: left; height: 20px; cursor: pointer;
+                        display: none;
+    }
+    .ecstulistsadiv
+    {
+          cursor: pointer;
+  float: left;
+  margin: 3px 0 0 12px;
+  font-size: 12px;
+    font-family: KievitCL_OT-Bold;
+	letter-spacing:1px;
+    }
+    .ecstulistpmsort
+    {
+        float: left; margin-top: 4px;
+    }
+    .ecstulistpmsortsp
+    {
+        float: left; cursor: pointer;
+    }
+    .ecstulistbold
+    {
+        margin: 4px 11px 0px 11px; float: left;
+    }
+    .ecstulistsaztext
+    {
+        float: left; margin-right: 2px; cursor: pointer;
+    }
+    .ecstulistazsort
+    {
+        float: left; margin-top: 4px;
+    }
+    
+    .ecstulistsrch
+    {
+        width: 654px; height: 34px; border: 1px solid #707070;
+        float: left; background-color: #FFF; position: relative; z-index: 50;
+		margin-bottom:20px;
+    }
+    .ecstulistfirstdiv
+    {
+        float: left; 
+                position: relative;
+    }
+    
+    .ecstulistclmain
+    {
+       float: left; min-height: 60px;
+    }
+    
+    .ecstulistclsnmspan
+    {
+        
+    }
+  
+    
+    
+    .ecstulistRPdiv4
+    {
+        width:40px; float: left; padding-top: 9px;
+    }
+    .ecstulistRPNamediv1
+    {
+      float: left; 
+	  padding:18px 10px;
+    }
+    .ecstulistRPprofilebtn
+    {
+     float: left; 
+	 display:inline-block;
+	 margin-left:5px;
+    }
+    
+    .stuListChildImg
+    {
+        border-width: 0px;
+        margin-top: 21px;
+        margin-left: 1px;
+        position: relative;
+    }
+    .StudentsList, .TeachersList
+    {
+        min-height: 500px;
+		padding:20px;
+    }
+    .StudentList_TopDiv, .TeachersList_TopDiv
+    {
+        float: left;
+        color: #707070;
+        font-size: 10pt;
+		width:656px;
+    }
+    .StudentList_TopDivIE
+    {
+        width:99% !important;
+    }
+    .StudentList_TopDivFX
+    {
+        width:99.5% !important;
+    }
+    .KenduoComboBoxClassDiv
+{
+ float: left;
+margin-top: 20px;
+background-color: #FFF;
+position: relative;
+z-index: 100;
+cursor: pointer;
+display: inline-block;
+    }
+    
+ 
+    
+   
+    
+    .StudentDashboard_AllOthers
+    {
+        background-color: transparent;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 8px;
+        display: inline-block;
+        border-style: solid;
+        border-color: lightgray;
+        width: 111%;
+        height: 40px;
+        padding-left: 92px;
+    }
+    .StudentsList_RowStyles
+    {
+        margin-bottom: 10px;
+        text-align: justify;
+        border: 1px solid lightgray;
+    }
+    .StudentDashboard_SearchButton, .TeachersList_SearchButton
+    {
+        width: 84px;
+        padding: 6px;
+        cursor: pointer;
+        border-radius: 8px;
+        display: inline-block;
+        border: none;
+        font-size: 8pt;
+        background-color: #EAEAEA;
+    }
+    .StudentDashboard_CheckBoxes, .TeachersList_CheckBoxes
+    {
+        background-image: url("http://dotnetqsvr../../Portals/0/images/CheckBox.png");
+        background-color: Gray;
+    }
+    .StudentDashboard_CheckAllDiv, .TeachersList_CheckAllDiv
+    {
+
+   height: 19px;
+  padding: 5px 15px;
+  width: 100px;
+  border: 1px solid #707070;
+  float: left;
+  display: inline-block;
+    }
+    .StudentDashboard_SortingDiv, .TeachersList_SortingDiv
+    {
+        float: right;       
+        height: 19px;
+        text-align: right;
+		display:none !important;   
+    }
+    
+    .Sort_btnholder
+    {        
+        float: left;
+        height: 17px;
+        margin-top: 1px;
+    }
+    .StudentDashboard_SearchDiv, .EditStudentProfile_Div, .TeachersList_SearchDiv, .EditSessionProfile_Div
+    {
+        width: 99.4%;
+        margin: 10px 0px 0px 0px;
+        float: left;
+        border-style: solid;
+        border-width: 2px;
+    }
+    
+    .StudentDashboard_SearchDiv, .TeachersList_SearchDiv
+    {
+        border-color: Gray;
+    }
+    .StudentDashboard_SearchTextBox, .TeachersList_SearchTextBox
+    {
+        width: 86%;
+        border: 0px solid White;
+        margin-top: 1px;
+    }
+    .StudentDashBoard_StudentNames, .TeachersList_TeacherNames
+    {
+        color: #707070 !important;
+        font-size: 13px;
+		width: 355px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+float: left;
+     }
+    
+    .StudentGridRowStyle
+    {
+        border-radius: 8px;
+        display: inline-block;
+        text-align: justify;
+        height: 62px;
+        margin: 0 0 3px 0px;
+        padding: 0px 15px 0px 32px;
+        width: 99%;
+    }
+    
+    .Students_CheckBoxes, .TeachersList_CheckBoxes
+    {
+        background: none;
+        border: none;
+    }
+    .StudentDashBoard_GuidedImage, .TeachersList_GuidedImage
+    {
+        padding-left: 0px;
+    }
+    
+    .StudentDashBoard_TextBoxes
+    {
+        border-radius: 8px;
+        display: inline-block;
+        border-style: solid;
+        border-color: white;
+        width: 92%;
+        height: auto;
+        margin-top: 7px;
+        font-size: 11pt;
+    }
+    .StudentDashboard_NamesAscSortingButtons, .StudentDashboard_NamesDescSortingButtons, .StudentDashboard_ReadingLevelAscSortingButtons, .StudentDashboard_ReadingLevelDescSortingButtons
+    {
+       border: 0 solid lightgrey;
+                cursor: pointer; float: left; height: 17px;  margin-left: 5px; width: 0;
+    }  
+    .srtbtnshide
+    {
+        display: none;
+    }
+    .StudentDashboard_ReadingLevelAscSortingButtons, .StudentDashboard_NamesAscSortingButtons
+    {
+        background: url('../../Portals/0/images/asc.png') no-repeat right;
+    }
+    .StudentDashboard_ReadingLevelDescSortingButtons, .StudentDashboard_NamesDescSortingButtons
+    {
+        background: url('../../Portals/0/images/desc.png') no-repeat right;
+    }
+    
+    .StudentRowStyle
+    {
+        background-color: yellow;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: inline-block;
+    }
+    
+    .LoadAllDiv
+    {
+        float: left;
+        width: 100%;
+        margin-bottom: -32px;
+        margin-left: -55px;
+        position: relative;
+    }
+    .LoadAllDivCl
+    {
+        margin-bottom: -16px;
+        margin-top: 45px;
+    }
+    
+    .checkdiv
+    {     
+        float: left;
+        cursor:pointer;
+    }
+    
+    
+    /**********************************************************************************************************************************/
+    /************************************************* Create Student profile *********************************************************/
+    /**********************************************************************************************************************************/
+    
+    .ui-spinner
+    {
+        position: relative;
+        border: 0px solid white;
+    }
+    .ui-spinner-buttons
+    {
+        position: absolute;
+    }
+    .ui-spinner-button
+    {
+        overflow: hidden;
+    }
+    .popupHdrBG
+    {
+    background-image: url('../../Portals/0/images/topband.png'); background-color: White;
+        height: 110px; margin-top: -9px; width: 102%; margin-left: -7px;
+        }
+    
+    .popupClosebg
+    {
+        background-image: url('../../Portals/0/images/close.png') !important;
+    }
+    .popupokbtn
+    {
+        font-weight: 700;
+        font-size: 10pt;
+        border-radius: 3px;
+        color: White;
+        width: 135px;
+        height: 35px;
+        margin-left: 250px;
+        float: left;
+        border: 1px solid #6EB8C6;
+        background: -webkit-gradient(linear, left top, left bottom, from(#01B3D7), to(#008FAC));
+        background: -moz-linear-gradient(center top , white 0%, #01B3D7 5%, #008FAC 130%) repeat scroll 0 0 transparent;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01B3D7', endColorstr='#008FAC', gradientType='0');
+        background: -ms-linear-gradient(top, #01B3D7 5%, #008FAC 130%) !important;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    .popupokbtn:hover
+    {
+        background: -moz-linear-gradient(center top , #0B82A5 5%, #0B82A5 1%, #15617B 130%) repeat scroll 0 0 transparent !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#0B82A5), to(#15617B)) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0B82A5', endColorstr='#15617B', gradientType='0') !important;
+        background: -ms-linear-gradient(top, #0B82A5 5%, #15617B 130%) !important;
+    }
+    
+    .PopupHeaderSpan
+    {
+        font-size: 28pt;
+        float: left;
+        margin-left: 34px;
+        margin-bottom: auto;
+          color: #707070;
+    }
+    .dropdowns
+    {
+        padding-left: 5px;
+        margin-left: 10px;
+    }
+    
+    #SeeAllLink
+    {        
+        font-size: 8.2pt;
+        background-color: rgb(244,244,244);
+        font-weight:normal;
+        text-decoration:none;
+        border-color:lightgray;
+        border-width:1px;
+        border-style:solid;
+        text-align:center;    
+        color:#707070;
+        display: inline-block;
+        width: 43%;
+        padding: 5px 0px;
+        
+    }
+    
+    .AddStudentProfile_AddButton, .UploadStudentProfile_AddButton, .UploadBooks_AddButton
+    {
+        height: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: inline-block;
+        background-color: #67A64D; /*#479353;*/
+        color: White;
+        font-size: 1.11em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .PwdTxtBox
+    {
+        height: 19px !important;
+        margin-top: 6px !important;
+    }
+    .CreatePageContent
+    {
+        
+        min-height:700px !important;
+    }
+    .CreatePageMenu
+    {
+        /*height :640px !important;*/
+        min-height:694px !important;
+    }
+    
+    .UploadPageContent
+    {
+        height :670px !important;
+        min-height:670px !important;
+    }
+    .UploadPageMenu
+    {
+        height :660px !important;
+        min-height:660px !important;
+    }
+    
+    .EditPageContent
+    {
+        height :510px !important;
+        min-height:510px !important;
+    }
+    .EditPageMenu
+    {
+        height :500px !important;
+        min-height:500px !important;
+    }
+    
+    .AddStudentProfile_AddButton
+    {
+        width: 150px;
+    }
+    .CreateStudentProfile_TopDiv
+    {
+        margin-top: -5px;
+		padding-top: 10px;
+        width: 659px;
+        height: 450px;
+        float: left;
+        border: 1px solid #707070;border-top: 0 none;
+    }
+    .CreateStudentProfile_TopDiv, .CreateStudentProfile_MessageInnerDiv, .CreateStudentProfile_MessagePrintDiv, .BulkUpload_SecondDiv
+    {
+		background:#fff;
+        /*-moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#F9F9F9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;*/
+    }
+    .CreateStudentProfile_MessageInnerDiv
+    {
+        float: left;
+        width: 70%;
+        border: 1px solid Green;
+        height: 57px;
+        padding-top: 9px;
+        padding-left: 20px;
+    }
+    .CreateStudentProfile_MessagePrintDiv
+    {
+        float: right;
+        width: 26%;
+        border: 1px solid green;
+        height: 41px;
+        text-align: center;
+        padding-top: 24px;
+        font-weight: bold;
+    }
+    .CreateStudentProfile_MessageDiv
+    {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        height: 63px;
+        font-size: 1.2em;
+    }
+    .ReadingRecovery, .ESL
+    {
+        padding: 3px 3px 0px 5px;
+        float: left;
+        color: White;
+        font-size: 8.5pt;
+        border-radius: 2px;
+        text-shadow: 1px 1px #649623;
+        cursor:pointer;
+    }
+    .ReadingRecovery
+    {
+        width: 98%;
+    }
+    .ESL
+    {
+        width: 78%;
+    }
+    .RRChk, .EslChk
+    {
+        background: url('../../Portals/0/images/tick_student.png') no-repeat 0px center;
+        z-index: 995;
+        position: relative;
+        width: 33px;
+        height: 19px;
+        float: left;
+    }
+    .RRUnchk, .EslUnchk
+    {
+        background: url('../../Portals/0/images/circle_big.png') no-repeat 0px center;
+        z-index: 995;
+        position: relative;
+        width: 33px;
+        height: 19px;
+        float: left;
+    }
+    
+    .His_LabelDivUp
+    {
+        background-image: url('../../Portals/0/images/Arrow_Up.png') !important;
+    }
+    .His_LabelDivDown
+    {
+        background-image: url('../../Portals/0/images/Arrow_down.png') !important;
+    }
+    /**********************************************************************************************************************************/
+    /************************************************* Bulk Upload Student profile *********************************************************/
+    /**********************************************************************************************************************************/
+    .UploadStudentProfile_AddButton
+    {
+        width: 111px;
+    }
+    
+    .greenBtn
+    {
+        border-radius: 3px;
+        height: 34px;
+        width: 91%;
+        /*width: 75%;*/
+        float: right;
+        margin-right: 4px;
+    }
+    
+    .blkAfterNum,.blkAfterName
+    {       
+        text-shadow: none !important;
+        
+     
+    }
+    
+    
+    
+    .blkAfterNum
+    {
+        font-weight: normal;     
+    }
+    .blktext,.blkAfterName
+    {
+        text-transform: uppercase;
+font-size: 9pt;}
+    
+    
+    .blkSeeall, .blkPrnt
+    {
+        color: blue !important;
+    }
+    .blkPrnt 
+    {
+        float: right;
+        width: 34%;
+        height: 20px;
+        margin-top: -10px;
+    }
+    .blkSubChange
+    {
+        height: 18px !important;
+    }
+    .blkSubs
+    {
+        margin-top: 0px !important;
+        display: none;
+        height: 95px !important;
+        margin-left: 0px !important;
+    }
+    .BulkUpload_MainDiv
+    {
+        width: 94%;
+        float: left;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    .BulkUpload_TopDiv
+    {
+        border: thin solid #d5d2d0;
+        width: 100%;
+        height: 50px;
+        float: left;
+    }
+    .BulkUpload_SecondDiv
+    {
+        margin-top: -5px;
+        border: 1px solid #707070;
+        width: 659px;
+        float: left;
+        padding-top: 30px;
+    }
+    .BulkUpload_FinishLinkButton
+    {
+        width: 47%;
+        float: right;
+        text-align: right;
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+    .BulkUpload_Uploadlabel
+    {
+        background-color: #838383;
+        color: white !important;
+        padding: 4px 108px 4px 10px;
+    }
+    .BulkUpload_UploadDiv
+    {
+        margin: 0px 10px 0px 30px;
+        width: 98%;
+    }
+    .BulkUpload_CreateDiv
+    {
+        width: 47%;
+        float: left;
+        font-size: medium;
+        font-weight: bold;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .BulkUpload_DownLoadFormatDiv
+    {
+        margin: 20px 30px 10px 30px;
+        border: 2px solid #B4DDFA;
+        padding: 10px 10px 20px 17px;
+        border-radius: 3px;
+        width: 81%;
+        float: left;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        font-size: 15px;
+        -khtml-border-radius: 3px;
+        background: #F9FCFE;
+    }
+    .BulkUpload_HeaderColor
+    {
+        color: #357AB4;
+        margin-top: 10px;
+		font-weight:bold !important;
+		font-size:22px !important;
+    }
+    .BulkUpload_UploadHdr
+    {
+        margin: 0px 10px 0px 30px;
+        width: 36%;
+    }
+    
+    .blkHrHdr
+    {
+        width: 91.2%;
+        float: left;
+        text-align: center;
+        margin: 0px 10px 15px 10px;
+    }
+    .BulkUpload_Header
+    {
+        font-size: 12pt;
+    }
+    .BulkUpload_TxtBxHolder
+    {
+        width: 55%;
+        height: 36px;
+        float: left;
+        margin-right: 0;
+    }
+    .BulkUpload_TxtBx
+    {
+        width: 99%;
+        height: 81%;
+        border: 1px solid #707070;
+    }
+    .BlkUpld_TxtBx_Others
+    {
+        padding-left: 7px;
+        padding-top: 4px;
+    }
+    .BlkUpld_TxtBx_Mox
+    {
+        padding-bottom: 4px;
+        padding-left: 6px;
+        padding-top: 4px;
+    }
+    .BulkUpload_BwsBtnHolder
+    {
+        width: 16%;
+        margin-left: 5px;
+    }
+    .DLExcelFormatBtnHolder
+    {
+        width: 33.7%;
+    }
+    .BulkUpload_BwsBtnHolder, .DLExcelFormatBtnHolder
+    {
+        float: left;
+        border-radius: 6px;
+    }
+    .BulkUpload_BwsBtn, .DownLoadExcelFormatBtn
+    {
+        cursor: pointer;
+        color: white !important;
+     /*   border-radius: 3px;*/
+        padding: 10px 15px 10px 0px;
+        font-size: 8pt;
+        text-align: left;
+        text-indent: 24px;
+        background-color: #0089c5;
+        text-shadow: 1px 1px #168CA5;
+        width: 100%;
+        margin: 0;
+        outline: 0;
+        border-bottom: 1px solid #0089c5;
+        border-top: 1px solid #0089c5;
+        border-left: 1px solid #0089c5;
+        border-right: 1px solid #0089c5;
+    }
+    
+    .BulkUpload_hr
+    {
+        text-align: center;
+        background-color: Black;
+        width: 100%;
+    }
+    
+    .BulkUpload_BrowseDiv
+    {
+        margin: 5px 10px 25px 0px;
+        padding: 0px 10px 5px 0px;
+        width: 95%;
+        float: left;
+    }
+    
+    
+    
+    /*************************** Edit Student Profile ******************************/
+    .EditProfile_TopDiv
+    {
+        width: 94%;
+        margin-top: 25px;
+        float: left;
+        margin-left: 20px;
+        height: 450px;
+        border: 1px solid lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+	.editstudprofsavediv
+	{
+		width: 94%;
+	margin-left: 21px;
+	padding-top: 3px;
+	padding-bottom: 15px;
+	float: left;
+	}
+    .EditProfile_SaveButton
+    {
+        -moz-text-blink: none;
+        -moz-text-decoration-color: -moz-use-text-color;
+        -moz-text-decoration-line: none;
+        -moz-text-decoration-style: solid;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-image: none;
+        background-origin: padding-box;
+        background-position: 0 0;
+        background-repeat: repeat;
+        background-size: auto auto;
+        border-radius: 10px;
+        color: White;
+        display: inline-block;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        margin-bottom: 10px;
+    }
+    .CreateProfile_ReadingRecovery
+    {
+        width: 60%;
+    }
+    .EditProfile_ReadingRecovery, .EditProfile_ESL
+    {
+        width: 20%;
+    }
+    .CreateProfile_ESL
+    {
+        width: 27%;
+    }
+    .EditProfile_ReadingRecovery, .CreateProfile_ReadingRecovery
+    {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: gray;
+        display: inline-block;
+        float: left;
+        background: #DDE3EE;
+        margin-right: 5px;
+        border-style: ridge;
+    }
+    .EditProfile_ESL, .CreateProfile_ESL
+    {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        color: gray;
+        display: inline-block;
+        float: left;
+        background: #DDE3EE;
+        border-style: ridge;
+    }
+    
+    /********************************** Student Profile ***********************/
+    .GroupRepeaterContentDiv
+    {
+        border: 1px solid lightgray;
+        width: 109.1%;
+        height: 55px;
+        margin-left: -23px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, #fdfdfd 55%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    .StudentProfile_MainDiv
+    {
+        width: 94.5%;
+        margin: 32px 0px 3px 20px;
+    }
+    .StudentProfile_NameDiv
+    {
+        float: left;
+        height: 102px;
+        width: 67.5%;
+        color: #707070;
+        border: 1px solid lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, #EDF9FF 1%, #D8F1FF 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#EDF9FF), to(#D8F1FF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EDF9FF', endColorstr='#D8F1FF', gradientType='0');
+        background: -ms-linear-gradient(top, #EDF9FF 5%, #D8F1FF 130%) !important;
+    }
+    .StudentProfile_Name_H2
+    {
+    
+        font-size: 19pt;
+        margin: 3px 3px 3px 0;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        padding: 0px;
+    }
+    .AudioPlayBack
+    {
+        box-shadow: 0px -1px 1px gray;
+        padding: 12px;
+        border: 1px solid lightgray;
+        background-color: white;
+        float: left;
+        width: 96%;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+    .ClearWords
+    {
+        color: #01b4d8;
+    }
+    .RemoveWords
+    {
+        color: #707070 !important;
+        cursor:default !important;
+    }
+    .AudioPlayButton
+    {
+        background-image: url('../../Portals/0/images/play_button.png');
+        background-repeat: no-repeat;
+        background-color: transparent;
+        width: 35px;
+        height: 20px;
+        border: none;
+        margin-left: 5px;
+        margin-top: 2px;
+        cursor: pointer;
+        float: left;
+    }
+    .StudentProfile_ReadingLevelDiv
+    {
+        color: Gray;
+        border: 1px solid lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, #EDF9FF 1%, #D8F1FF 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#EDF9FF), to(#D8F1FF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EDF9FF', endColorstr='#D8F1FF', gradientType='0');
+        background: -ms-linear-gradient(top, #EDF9FF 5%, #D8F1FF 130%) !important;
+        height: 102px;
+        float: left;
+        width: 24%;
+        margin-left: 17px;
+    } 
+  
+    .StudentProfile_ReadingLevelSliderDiv
+    {
+        width: 97.4%; 
+        padding: 15px 0px 25px 15px;
+        float: left; 
+        border: 1px solid #CCC;
+        margin-top: 3px;
+        height: 125px;
+        float: left;
+        border: 1px solid lightgray;
+        box-shadow: 1px 1px 5px lightgray;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        -khtml-border-radius: 2px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #E8E8E8 130%) repeat scroll 0 0 transparent !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#E8E8E8));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E8E8E8', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #E8E8E8 130%) !important;      
+    }
+    .StudentProfile_IncrementButton
+    {
+        background-image: url('../../Portals/0/images/plus_gray.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+    .StudentProfile_DecrementButton
+    {
+        background-image: url('../../Portals/0/images/minus_gray.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+    .StudentProfile_IncrementButton, .StudentProfile_DecrementButton
+    {
+        width: 33px;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+        height: 24px;
+    }
+    .StudentProfile_IncrementButton:hover, .StudentProfile_DecrementButton:hover
+    {
+        text-decoration: none;
+        color: transparent;
+    }
+    .StudentProfile_DecrementButtonDiv
+    {
+        width: 18.1%;
+        float: left;
+        margin-top: 27px;
+        margin-left: 17px;
+    }
+    .StudentProfile_IncrementButtonDiv
+    {
+        width: 30%;
+        float: right;
+        margin-top: 27px;
+    }
+    .DurationDiv
+    {
+        width: 99.9%;
+        float: left;
+        margin-top: -1px;
+        font-size: 11pt;
+        color: Gray;
+        border-right: 1px solid #CCC;
+        border-left: 1px solid #CCC;
+        border-bottom: 1px solid #CCC;
+    }
+    
+    .StudentProfile_ReadingLevelValueDiv
+    {
+        width: 41%;
+        text-align: center;
+        float: left;
+    }
+    .StudentProfile_ReadingLevelLabel
+    {
+        font-size: 43pt;
+     }
+    .StudentProfile_FourBoxes_OuterBox
+    {
+        width: 100%;
+        float: left;
+        margin-top: 18px;
+        height: 148px;
+    }
+    .StudentProfile_FourBoxes_InnerBox
+    {
+        width: 48.8%;
+        float: left;
+    }
+    .StudentProfile_FourBoxes
+    {
+        width: 47%;
+        float: left;
+        border: 1px solid lightgray;
+        height: 130px;
+        text-align: center;
+        font-size: 7.7pt;
+        background: -moz-linear-gradient(center top , white 0%, #F0FAFF 1%, #D8F1FF 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F0FAFF), to(#D8F1FF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0FAFF', endColorstr='#D8F1FF', gradientType='0');
+        background: -ms-linear-gradient(rgb(237, 249, 255) 5%, rgb(216, 241, 255) 130%);
+        border-radius: 2px;
+    }
+    .LevelBooksRead
+    {
+        margin-top: 10px;
+        text-align: justify;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 11pt;
+    }
+    .HeaderStyle, .HeaderStyle1
+    {
+        color: #20B3E6;
+        padding-left: 21px;
+    }
+    
+    .HeaderStyle1
+    {
+        font-size: 23pt;
+    }
+    .ProfileSliderLabel
+    {
+        border-bottom: 1px solid #CCC;
+        padding-bottom: 10px;
+        width: 94%;
+    }
+    .ReadingType_Indept, .ReadingType_Dept
+    {
+        background-color: White;
+        box-shadow: 1px 1px 5px lightgray;
+        font-weight: bold;
+        color: #707070;
+        -khtml-border-radius: 3px;
+        width: 85%;
+        margin-left: 10px;
+        height: 35px;
+        float: left;
+        border: 1px solid lightgray;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    .ReadingType_Dept
+    {
+        -moz-border-bottom-right-radius: 3px;
+        -moz-border-bottom-right-radius: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top: 0px solid Gray;
+    }
+    .ReadingType_Indept
+    {
+        -moz-border-top-right-radius: 3px;
+        -moz-border-top-right-radius: 3px;
+        -webkit-border-top-right-radius: 3px;
+        -webkit-border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+    .ClassDetails
+    {
+            color: #20B3E6;
+        float: left;
+        width: 61%;
+        font-size: 12px;
+        margin: 0px 0px 5px 15px;
+        font-style: italic;
+    }
+    .bannersec
+    {
+        position: inherit !important;
+    }
+    .ContentPlaceHolder
+    {
+        width: 100%;
+        float: left;
+        z-index: 995;
+        background-color: white;
+    }
+    .TodayDateItalics
+    {
+        margin-top: 5px;
+        text-align: center;
+        height: 10px;
+        margin-bottom: 2px;
+        margin-left: 31px;
+        font-size: 9.3pt;
+    }
+    .ReadingTypeDiv_PercentageLabel
+    {
+        float: left;
+        margin-top: 10px;
+        margin-left: 7px;
+        font-size: 8.8pt;
+    }
+    .ReadingTypeDiv_TypeLabel
+    {
+        float: left;
+        margin-top: 11px;
+        margin-left: 3px;
+        font-size: 8pt;
+    }
+    .ReadingTypeDiv_CountLabel
+    {
+        color: #1FB5E7;
+        padding-left: 5px;
+        font-size: 13pt;
+        font-family: KievitCL_OT-Bold;
+    }
+    .ReadingTypeDiv_Label
+    {
+        font-family: KievitCL_OT-Bold;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+    .ReadingTypeDiv_TopDiv
+    {
+        display: inline-block;
+        float: left;
+        margin-bottom: 5px;
+        padding-top: 15px;
+    }
+    .RecordingsCountDiv, .MyWordsCountDiv, .ReadingAgeCountDiv
+    {
+        float: left;
+        padding-top: 12px;
+        width: 94%;
+    }
+    .RecordingsLabel, .MyWordsLabel, .ReadingAgeLabel
+    {
+        font-size:10pt !important;
+    }
+    .RecordingsCount, .WordsCount, .ReadingAgeCount
+    {
+        color: #707070;
+        font-size: 55px;
+    }
+    .RecordingsLabelDiv, .MyWordsLabelDiv, .ReadingAgeLabelDiv
+    {
+        display: inline-block;
+        float: left;
+        width: 100%;
+    }
+   #ReadLvllbl
+   {
+       text-align:center !important;
+   }
+    .MyWordsLabel1
+    {
+        font-weight: bold;
+        font-size: 10.45pt;
+    }
+    .RecordingsListenLink, .SeeMyWordsLink
+    {
+        text-indent: 17px;
+        text-decoration: none;
+        background-color: transparent;
+        border: 0px solid white;
+        cursor: pointer;
+        font-family: KievitCL_OT-Bold;
+        font-weight: normal;
+        font-size: 10pt;
+    }
+    
+    .MyWordsUl
+    {
+        padding-left: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .RecordingsListenLink
+    {
+        background-image: url('../../Portals/0/images/listen.png');
+        background-repeat: no-repeat;
+        background-position: 3% 38%;
+        padding-left: 22px;
+    }
+    
+    .ProfileSwitchON, .ProfileSwitchOFF
+    {
+        display: inline-block;
+        float: left;
+        margin-top: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-left: 229px;
+    }
+    .ProfileSwitchON
+    {
+        background-image: url('../../Portals/0/images/ReadingHistory_ON.png');
+    }
+    .ProfileSwitchOFF
+    {
+        background-image: url('../../Portals/0/images/Groups_ON.png');
+    }
+    .Percentage_ReadingLevel
+    {
+        width: 99.9%;
+        float: left;
+        height: 40px;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        -moz-border-radius: 1px;
+        -webkit-border-radius: 1px;
+        border-radius: 1px;
+        -khtml-border-radius: 1px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+    
+    
+    /*************************************************************************************************************************************************/
+    /***************************************************************** Staging Server ****************************************************************/
+    /************************************************************************************************************************************************/
+    .UploadBooks_AddButton
+    {
+        width: 116px;
+    }
+    
+    
+    /************************************************************************************************************************************************/
+    /***************************************************************** My Words Log ****************************************************************/
+    /************************************************************************************************************************************************/
+    
+    .UnderLine
+    {
+        background-color: #2863A6;
+        width: 460px;
+        float: left;
+    }
+    .UnderLineDiv
+    {
+        width: 100%;
+        float: left;
+    }
+    
+    .Guided_CoverPaddingStyle
+    {
+        padding-top: 10px;
+        padding-left: 35px;
+        padding-bottom: 15px;
+    }
+    .Guided_NodePaddingStyle
+    {
+        padding-left: 4px;
+    }
+    .Guided_PaddingStyle
+    {
+        padding-left: 26px;
+    }
+    
+    .MyWordsLog_Label
+    {
+        cursor: pointer;
+        border-style: inset;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        display: inline-block;
+        border: 1px solid Gray;
+        width: 80%;
+        height: 30px;
+        background-image: url('http://dotnetqsvr../../Portals/0/images/downArrow.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        font-size: 1.2em;
+    }
+    .RecordingsGridViewstyle
+    {
+        float: left;
+    }
+    .RecordingsMax
+    {
+        background-image: url('../../Portals/0/images/record.png');
+        background-repeat: no-repeat;
+        width: 109px;
+        height: 27px;
+        border: 0px;
+        cursor: pointer;
+    }
+    .RecordingsMin
+    {
+        background-image: url('../../Portals/0/images/mini.png');
+        background-repeat: no-repeat;
+        width: 109px;
+        height: 27px;
+        border: 0px;
+        cursor: pointer;
+    }
+    
+    
+    .classSearchwater
+    {
+        font-weight: bold;
+        color: #707070 !important;
+        margin-left: 10px !important;
+        width: 95% !important;
+        margin: 0 !important;
+        padding: 0 0 0 10px !important;
+    }
+    
+    .AllOthersButton
+    {
+        border-width: 0px;
+        margin-top: 13px;
+        width: 595px;
+        height: 45px;
+    }
+    .GradesDD
+    {
+        width: 42.4%;
+        float: left;
+    }
+    .GenderDD
+    {
+        width: 50%;
+        float: left;
+    }
+    
+    /*******************************************************************Kendo Styles Overridden ******************************************************************/
+    
+    .Div_FullWidth .k-numerictextbox .k-i-arrow-n
+    {
+        background-position: 0px -17px !important;
+    }
+    .Div_FullWidth .k-numerictextbox .k-i-arrow-s
+    {
+        background-position: -65px -18px !important;
+    }
+    
+    
+    .KenduoComboBoxClassDiv .k-combobox .k-icon
+    {
+        margin-top: 2px !important;
+        cursor: pointer;
+        background-image: url('../../Portals/0/images/Arrow_down.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: right !important;
+        margin-right: 10px;
+    }
+    
+    .KenduoComboBoxClassDiv .k-combobox
+    {
+        width: 86% !important;
+        top: 12px !important;
+        float: left;
+        margin-left: 72px !important;
+    }
+    .k-combobox .k-input
+    {
+        box-shadow: inset 0 0 1px 1px white;
+        -webkit-box-shadow: inset 0 0 1px 1px white;
+        font-size: 12pt !important;
+		}
+    .KenduoComboBoxClassDiv .k-combobox .k-input
+    {
+        box-shadow: inset 0 0 1px 1px white;
+        -webkit-box-shadow: inset 0 0 1px 1px white;
+    }
+    .KenduoComboBoxClassDiv .k-state-selected.k-state-focused
+    {
+        background-color: #4578A5 !important;
+        border-color: #4578A5 !important;
+    }
+    .KenduoComboBoxClassDiv .k-item.k-state-focused
+    {
+        background-color: #4578A5 !important;
+        border-color: #4578A5 !important;
+    }
+    
+    .MandatoryClass
+    {
+        border: 1px solid #ED175B;
+        height: 32px;
+        border-radius: 3px;
+    }
+    .CalendarDiv
+    {
+        width: 70%;
+        float: left;
+    }
+    .CalendarDiv span.k-widget.k-datepicker.k-header
+    {
+        height: 32px !important;
+    }
+    /****************************************************** end-Kendo Styles Overridden **********************************************************************/
+    
+    
+    
+    /************************************* ADD TO GROUP*****************************/
+    .AllOtherGroupsDiv
+    {
+        float: left;
+        width: 100%;
+        padding: 0;
+        height: 90px;
+    }
+    .AllOtherGroupsImgDiv
+    {
+        float: left;
+        width: 8%;
+        padding-left: 62px;
+    }
+    
+    .AllOtherGroupsImgDiv img
+    {
+        margin-left: -17px;
+        float: left;
+        margin-top: 37px;
+    }
+    .AllotherGroupDivBtn
+    {
+        width: 84.5%;
+        margin-right: 26px;
+        height: 50px;
+        float: right;
+        border: 1px solid lightgray;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        background-color: white;
+    }
+    .AllOtherGroupBtn
+    {
+        font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+        text-align: left;
+        text-indent: 0px;
+        width: 96.4%;
+        cursor: pointer;
+        float: left;
+        height: 30px;
+        border-radius: 10px;
+        border: 0px solid white;
+        background-color: white;
+        margin-top: 10px;
+        background-image: url('../../Portals/0/images/Arrow_Up.png');
+        background-repeat: no-repeat;
+        background-position: right 60%;
+        padding-left: 93px;
+    }
+    
+    .GroupsDivset
+    {
+        width: 100%;
+        float: left;
+    }
+    .SelectAllSpan
+    {
+        float: left;
+        padding-top: 50px;
+        padding-left: 17px;
+        font-size: 10pt;
+    }
+     .GroupsDivtest
+    {
+        width: 100%;
+        float: left;
+    }
+    
+    .SelectallCheckBoxclass
+    {
+        float: left;
+        margin-left: 45px;
+        margin-top: 45px;
+        height: 21px;
+        width: 20px;
+    }
+    .SelectedGroupItem
+    {
+        background-color: #67A024;
+    }    
+    .SelectedStudentItem
+    {
+        background-color: #BB078A;
+    }    
+    .SelectedTeacherItem
+    {
+        background-color: #21B4E6;
+    } 
+    .SelectedStudentItem
+    {
+        float: left;
+        width: 20%;
+        background-image: none;
+        border-radius: 2px;
+        font-weight: bold;
+        height: 33px;      
+        margin: 0px 5px 5px 0px;
+        list-style-type: none;
+    }
+    .SelectedStudentItem span
+    {
+        float: left;
+        display: inline;
+        margin: 0px;
+        margin-top: 8px;
+        margin-left: 20px;
+        color: white;
+           font-size: 9.4pt;
+        font-weight: bold;
+    }
+    .SelectedGroupItem a
+    {
+        float: right;
+        margin-top: 5px;
+        margin-right: 11px;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }   
+    .SelectedStudentItem a
+    {
+        float: right;
+        margin-top: 9px;
+        margin-right: 11px;
+        color: white;
+         text-decoration: none;
+        cursor: pointer;
+        font-size: 10pt;
+    }  
+    .SelectedGroupItem a:hover
+    {
+        color: Red;
+    }    
+    .SelectedStudentItem a:hover
+    {
+        color: Red;
+    }
+    
+          
+    .GroupAddtoinnersnddiv
+    {
+        float: left;
+        width: 99%;
+        height: auto;
+        margin: 20px 0px 10px 10px;
+        border: 0px solid lightGray;
+    }
+    
+    #SelectedStudentList
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #SelectedStudentList li
+    {
+        list-style-type: none;
+        display: inline;
+    }
+    #SelectedStudentList ul li
+    {
+        list-style-type: none;
+        display: inline;
+    }    
+  
+    .GroupsSortReaddiv
+    {
+        float: right;
+        width: 40%;
+        margin-top: 45px;
+        font-size: 10pt;
+        color: #707070;
+    }
+    .GroupSearchbtn
+    {
+        width: 85px;
+        background-color: #EAEAEA;
+        border: 0px solid gray;
+        cursor: pointer;
+        height: 24px;
+        display: inline-block;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 5px;
+        -khtml-border-radius: 6px;
+    }
+ 
+    
+    .SearchDiv
+    {
+        width: 647px;
+        float: left;
+        margin-left: 24px;
+        margin-top: -7px;
+        background-color: #EEEEEE;
+        border: 1px solid #CCCCCC;
+    }
+    .SearchInnerDiv
+    {
+        width: 647px;
+        float: left;
+		  height: 34px;
+    }
+    
+    .SortPM
+    {
+        width: 155px;
+        margin-right: 10px;
+    }
+    .SortNm
+    {
+        width: 60px;
+        margin-right:4px;
+    }
+    .SortRead,.SortReadDesc
+    {      
+        height: 16px;  
+        float: left;
+        font-size: smaller;
+        background-color: White;
+        cursor: pointer;       
+        background-position: right 50%;
+        background-repeat: no-repeat;
+        border: none;
+        font-size:10pt;
+        color:#707070;
+    }
+    .SortRead
+    { 
+         background-image: url('../../Portals/0/images/asc.png');
+    }
+    .SortReadDesc
+    { 
+        background-image: url('../../Portals/0/images/desc.png');
+    }
+    
+    
+    .RepeaterContentDiv
+    {
+        float: left;
+        width: 96.4%;
+        height: 50px;
+        margin-top: 0px;
+        z-index: 10;
+        position: relative;
+    }
+    
+    .borderleftdiv
+    {
+        height:40px !important;
+    }
+    .borderleftdivIn
+    {
+        width: 100%; border-left: 1px solid #CCC; float: left; margin-left: 54px; margin-top: -19px;height: 22px;position: relative;
+    }
+    .RepeaterContentFstDiv
+    {
+        float: left;
+        margin-top: 23px;
+        margin-left: -8px;
+    }
+    
+   .RepeaterContentScndDiv {
+  float: left;
+  border: 1px solid #9e9e9e;
+  background: #FFF !important;
+  position: relative;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  width: 596px !important;
+  padding: 0px 8px;
+  padding-bottom: 7px;
+}
+    
+    .RepeaterFstCol
+    {
+        float: left;
+        margin-top: 12px;
+        margin-left: 18px;
+    }
+    
+   .RepeaterSndCol
+    {
+        float: left;
+        margin-top: 6px;
+    }
+    
+    .RepeaterSndCollbl
+    {
+        font-size: 12pt;
+        color: #707070;
+        font-weight: bold;
+    }
+    
+    .RepeaterSndColSpan
+    {
+            font-size: 11pt;
+        color: #707070;
+        font-weight: bold;
+    }
+    
+    .RepeaterThrdCollbl
+    {
+        color: #1479A4 !important;
+        font-size: 11pt;
+        font-weight: bold;
+    }
+    
+    .RepeaterFrthCol
+    {
+        float: right;
+        margin-top: 6px;
+        background: -moz-linear-gradient(top, #689A2E 1%, #74A738 32%, #74A738 43%, #5E872E 95%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#689A2E), color-stop(32%,#74A738), color-stop(43%,#74A738), color-stop(95%,#5E872E));
+        background: -webkit-linear-gradient(top, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        background: -o-linear-gradient(top, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        background: -ms-linear-gradient(top, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        background: linear-gradient(to bottom, #689A2E 1%,#74A738 32%,#74A738 43%,#5E872E 95%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#689A2E', endColorstr='#5E872E',GradientType=0 );
+        border: 1px solid #5E872E;
+        text-indent: 0px;
+        border-radius: 3px;
+        -khtml-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        color: white;
+        height: 35px;
+        margin-right: 8px;
+    }
+    .RepeaterFrthCol:hover
+    {
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#537A37), color-stop(32%,#59833A), color-stop(43%,#557D38), color-stop(95%,#436A32)) !important;
+        background: -webkit-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -o-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: -ms-linear-gradient(top, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        background: linear-gradient(to bottom, #537A37 1%,#59833A 32%,#557D38 43%,#436A32 95%) !important;
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#537A37', endColorstr='#436A32',GradientType=0 ) !important;
+    }
+    .GroupProfilebtn
+    {
+        border: 0px solid #6C9E2D;
+        width: 120px;
+        height: 35px;
+        text-indent: 19px;
+        cursor: pointer;
+        background: url('../../Portals/0/images/eye.png') 20% 48% no-repeat;
+        color: white !important;
+        font-size: 10pt;
+        text-shadow: 1px 2px 2px rgb(103, 141, 26);
+    }
+    .SearchInnerDiv ::-webkit-input-placeholder
+{
+    color: #707070;
+   }
+.SearchInnerDiv ::-moz-placeholder
+{
+opacity:1;
+    color: #707070;
+}
+/* firefox 19+ */
+.SearchInnerDiv:-ms-input-placeholder
+{
+
+    color: #707070;
+}
+/* ie */
+.SearchInnerDiv input:-moz-placeholder
+{
+    color: #707070;
+
+}
+    .ToBox
+    {
+        width: 93%;
+        float: left;
+        border: 1px solid #CCC;
+        margin: 40px 0px -20px 23px;
+        min-height: 61px;
+    }
+   .ToBoxText 
+   {
+        width: 98%;
+        float: left;
+        margin: 15px 0 15px 15px;
+   }
+    
+        .KenduoComboBoxClassDivGroups
+    {
+        width: 95.3% !important;
+        float: right !important;
+        border: 1px solid lightgray !important;
+        margin-top: 20px !important;
+        margin-right: 5px !important;
+        height: 50px !important;
+        -moz-border-radius: 3px !important;
+        -webkit-border-radius: 3px !important;
+        border-radius: 3px !important;
+        -khtml-border-radius: 3px !important;
+        background-color: white;
+        position: relative;
+        cursor:pointer;
+    }
+    .KenduoComboBoxClassDivGroups .k-combobox .k-icon
+    {
+        margin-top: 4px !important;
+        cursor: pointer;
+        background-image: url('../../Portals/0/images/Arrow_down.png') !important;
+        background-repeat: no-repeat !important;
+        background-position: right !important;
+        margin-right: 10px;
+    }
+    .KenduoComboBoxClassDivGroups .k-dropdown-wrap
+    {
+        border-color: white !important;
+        background-color: white !important;
+        text-indent: 20px;
+    }
+    
+    .KenduoComboBoxClassDivGroups .k-dropdown-wrap .k-state-hover
+    {
+        border-color: white !important;
+        background-color: white !important;
+    }
+    .KenduoComboBoxClassDivGroups .k-combobox
+    {
+        width: 88% !important;
+        top: 10px !important;
+        float: left;
+        margin-left: 68px !important;
+    }
+    .KenduoComboBoxClassDivGroups .k-combobox .k-input
+    {
+        box-shadow: inset 0 0 1px 1px white;
+        -webkit-box-shadow: inset 0 0 1px 1px white;
+        color: #727272 !important;
+        font-size: 12pt !important;
+        box-shadow: inset 0 0 1px 1px white;
+        -webkit-box-shadow: inset 0 0 1px 1px white;
+    }
+    .KenduoComboBoxClassDivGroups .k-state-selected.k-state-focused
+    {
+        background-color: #4578A5 !important;
+        border-color: #4578A5 !important;
+    }
+    .KenduoComboBoxClassDivGroups .k-item.k-state-focused
+    {
+        background-color: #4578A5 !important;
+        border-color: #4578A5 !important;
+    } 
+     .KenduoSearchTextBox
+    {
+        color: #707070 !important;
+        width: 100% !important;
+        font-weight: bold !important;
+    }
+    .KenduoSearchTextBox ::-webkit-input-placeholder
+    {
+            font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+    }
+    .KenduoSearchTextBox ::-moz-placeholder
+    {
+         font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+    }
+    .KenduoSearchTextBox ::-ms-input-placeholder
+    {
+          font-weight: bold;
+        font-size: 12pt;
+        color: #707070;
+    } 
+    /************************************** end - Add to group **********************************************/
+    
+    /**************************** Paging *******************************/
+    
+    .StuLstPagerBtns
+    {
+        margin-left: -17px;
+        position: relative;
+    }
+    .Highlight, .StuListPager .k-state-selected
+    {
+        background-color: #8D8D8D !important;
+        background-image: none !important;
+        color: White !important;
+        border: 1px solid #707070 !important;
+    }
+    .StuListPager .k-link
+    {
+        color: #707070 !important;
+    }
+    .page1, .StuListPager .k-link
+    {
+        /*background-image: url("../../Portals/0/Images/pagebk.png");*/
+        background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#E9E9E9)) !important;
+        background: -moz-linear-gradient(to bottom,#F9F9F9, #E9E9E9);
+        background: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E9E9E9', gradientType='0') !important;
+        background: -ms-linear-gradient(top, #F9F9F9 5%, #E9E9E9 130%) !important;
+        border: 1px solid #D8D8D8 !important;
+        position: relative !important;
+        font-size: 10pt !important;
+        font-weight: bold;
+    }
+    .StuListPager .k-state-disabled, .StuListPager .k-state-disabled:hover
+    {
+        color: #ccc !important;        
+    }
+    .StuListPager .k-link span
+    {
+        background-image: none !important;
+    }
+    
+    .SortText
+    {
+        margin-left: 3px;
+        font-weight: 700;
+        text-decoration: none !important;
+        color: #707070;
+        cursor: pointer;
+    }
+    
+    .Pager
+    {
+        width: 106%;
+        float: left;
+        margin-top: 13px;
+    }
+    
+    .StuListPager
+    {
+        background-color: transparent !important;
+        border: 0px solid transparent !important;
+        width: 100%;
+    }
+    
+    .StuListPager ul li
+    {
+        list-style-type: none;
+    }
+    
+    .StuListPager .k-link, .StuListPager .k-state-selected
+    {
+        margin: 0 3px !important;
+        border-radius: 2px !important;
+        font-size: 10pt;
+        font-weight: bold;
+           padding: 0px 9px !important;
+        height: 22px;
+        width: 26px;
+        padding: 0px !important;
+        border:1px solid #CCC;
+        text-decoration:none;
+    }
+    .PagerHdr
+    {
+        float: left;
+        width: 88%;
+        margin-top: -3px;
+        margin-left: 12%;
+    }
+    
+    .pagerDisabled
+    {
+        opacity:0.4;
+        cursor:default !important;
+    }    
+    
+    .popUpClose
+    {
+        background-image: url('../../Portals/0/images/close.png') !important;
+    }
+    
+    /**************************** end - Paging *******************************/
+    
+    /****************************************************** DNN MESSAGES *************************************************************************/
+    .dnnFormMessage
+    {
+        width: 86.7%;
+        margin: 20px 0px 0px 20px;
+        font-size: 10pt;
+        font-weight: bold;
+        padding: 10px 10px 10px 40px;
+        text-transform:inherit;
+        text-shadow: none !important;
+    }
+    .dnnFormWarning
+    {
+        border-color: #EE3873;
+        background-color: #ED165D;
+        background-image: url(../../portals/0/images/error_icon.png);
+        background-position: 25px center;
+    }
+    
+    .dnnFormSuccess
+    {
+        background-color: #73A638;
+        background-image: url(../../portals/0/images/success_icon.png);
+        background-position: 35px center;
+        border: 1px solid #639624;
+    }
+    .dnnFormInfo
+    {
+        background-color: #C20896;
+        background-image: url(../../portals/0/images/alert_icon.png);
+        background-position: 35px center;
+        border: 1px solid #E9D38D;
+    }
+    .dnnFormSuccess, .dnnFormWarning, .dnnFormInfo
+    {
+        color: white;
+        margin-bottom: -10px;
+        background-repeat: no-repeat;
+    }
+    .dnnMsgHolder
+    {
+        width: 94%;
+        margin-left: 40px;
+    }
+    
+    .dnnMsgScript
+    {
+        width: 81.5% !important;
+        padding: 10px 10px 10px 75px !important;
+    }
+    
+    /****************************************************** end DNN MESSAGES *************************************************************************/
+    
+    .NoBackground
+    {
+        background-color: transparent !important;
+    }
+    
+    
+    /************************CreateStudentProfile***********************/
+    .CancelButtonHolder
+    {
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #EAE9E9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+        margin-left: 24px;
+        float: left;
+    }
+    
+    .CancelButtonHolder input[type=submit]
+    {
+        color: #707070 !important;
+        text-shadow: none;
+    }
+    .CalendarDiv .k-icon
+    {
+        background-image: url('../../portals/0/images/sprite.png') !important;
+    }
+    .graphArrowhdr1
+    {
+        float: left;
+        margin-left: 12.18%;
+        margin-top: -3px;
+        background-color: white;
+        z-index: 1000;
+        width: 10px;
+        height: 4px;
+    }
+    .graphArrowhdr2
+    {
+        float: right;
+        margin-right: 11.6%;
+        margin-top: -3px;
+        background-color: white;
+        z-index: 1000;
+        width: 10px;
+        height: 4px;
+    }
+    .grpahArrow1
+    {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -ms-filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474,M12=-0.7071067811865477,M21=0.7071067811865477,M22=0.7071067811865474,SizingMethod='auto expand');
+        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865474,M12=-0.7071067811865477,M21=0.7071067811865477,M22=0.7071067811865474,sizingMethod='auto expand');
+        float: left;
+        border-left: 1px solid #CCC;
+        height: 8px;
+        width: 4px;
+        margin-top: -3px;
+        background-color: white;
+    }
+    .grpahArrow2
+    {
+        -webkit-transform: rotate(-48deg);
+        -moz-transform: rotate(-48deg);
+        transform: rotate(-48deg);
+        -ms-filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483,M12=0.7071067811865467,M21=-0.7071067811865467,M22=0.7071067811865483,SizingMethod='auto expand');
+        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483,M12=0.7071067811865467,M21=-0.7071067811865467,M22=0.7071067811865483,sizingMethod='auto expand');
+        float: left;
+        float: left;
+        border-left: 1px solid #CCC;
+        height: 9px;
+        width: 4px;
+        margin-left: 6px;
+        margin-top: -11px;
+    }
+    
+    .GraphLineHdr
+    {
+        width: 7%;
+        min-height: 120px;
+        float: left;
+    }
+    .GraphLine
+    {
+        margin-left: 90%;
+        border-left: 1px solid lightgray;
+        float: left;
+        padding-top: 20px;
+        margin-right: 20px;
+        min-height: 120px;
+    }
+    
+    .GraphPoint
+    {
+        width: 12px;
+        min-height: 12px;
+        border-radius: 12px;
+        margin: 0px 0 0 -7px;
+    }
+    
+    .GraphPt12
+    {
+        background-color:  rgb(195, 0, 95);/*#E5007D;*/
+    }
+    .GraphPt345
+    {
+        background-color:rgb(194,0,22); /* red;*/
+    }
+    .GraphPt678
+    {
+        background-color: rgb(234,184,20);/*orange;*/
+    }
+    .GraphPt91011
+    {
+        background-color: rgb(0,95,170); /*gold;*/
+    }
+    .GraphPt121314
+    {
+        background-color: rgb(0,105,50);/*green;*/
+    }
+    .GraphPt1516
+    {
+        background-color: rgb(208,101,25);/*#019875;*/
+    }
+    .GraphPt1718
+    {
+        background-color: rgb(117,176,160);/*#10CDE1;*/
+    }
+    .GraphPt1920
+    {
+        background-color: rgb(73,40,127);/*Purple;*/
+    }
+    .GraphPt2122
+    {
+        background-color: rgb(217,138,0); /*#951B30;*/
+    }
+    .GraphPt2324
+    {
+        background-color: rgb(152,165,174);/*#951B30;*/
+    }
+    .GraphPt1
+    {
+        margin: 0px 0 15px -7px;
+    }
+    .WordsLogMainDiv
+    {
+        margin: 70px 0px 0px 43px !important;
+    }
+    
+    #ClassSearchTextBox-list .k-state-selected, #ClassSearchTextBox-list .k-list > .k-state-selected, #ClassSearchTextBox-list .k-list > .k-state-focused, #ClassSearchTextBox-list .k-panelbar > .k-state-selected, #ClassSearchTextBox-list .k-panel > .k-state-selected, #GroupSearchTextBox-list .k-state-selected, #GroupSearchTextBox-list .k-list > .k-state-selected, #GroupSearchTextBox-list .k-list > .k-state-focused, #GroupSearchTextBox-list .k-panelbar > .k-state-selected, #GroupSearchTextBox-list .k-panel > .k-state-selected, #SubscriptionDrpList-list .k-state-selected, #SubscriptionDrpList-list .k-list > .k-state-selected, #SubscriptionDrpList-list .k-list > .k-state-focused, #SubscriptionDrpList-list .k-panelbar > .k-state-selected, #SubscriptionDrpList-list .k-panel > .k-state-selected, #GradeDropDown-list .k-state-selected, #GradeDropDown-list .k-list > .k-state-selected, #GradeDropDown-list .k-list > .k-state-focused, #GradeDropDown-list .k-panelbar > .k-state-selected, #GradeDropDown-list .k-panel > .k-state-selected, #GenderDropDown-list .k-state-selected, #GenderDropDown-list .k-list > .k-state-selected, #GenderDropDown-list .k-list > .k-state-focused, #GenderDropDown-list .k-panelbar > .k-state-selected, #GenderDropDown-list .k-panel > .k-state-selected,#PMReadingLevel-list .k-state-selected, #PMReadingLevel-list .k-list > .k-state-selected, #PMReadingLevel-list .k-list > .k-state-focused, #PMReadingLevel-list .k-panelbar > .k-state-selected, #PMReadingLevel-list .k-panel > .k-state-selected 
+    ,#pager .k-link:hover, #classpager .k-link:hover,#SearchTextBox-list .k-state-selected, #SearchTextBox-list .k-list > .k-state-selected, #SearchTextBox-list .k-list > .k-state-focused, #SearchTextBox-list .k-panelbar > .k-state-selected, #SearchTextBox-list .k-panel > .k-state-selected,#SearchTextBox-list .k-state-hover
+    {
+        background: #707070 !important;
+        border: 1px solid #707070 !important;
+        color: White !important;
+    }   
+ 
+    #GroupSearchTextBox-list .k-state-hover, #ClassSearchTextBox-list .k-state-hover, #SubscriptionDrpList-list .k-state-hover, #GradeDropDown-list .k-state-hover, #GenderDropDown-list .k-state-hover,#PMReadingLevel-list .k-state-hover
+    {
+        background: #CCC !important;
+        border: 1px solid #CCC !important;
+        color: Black !important;
+    }
+    
+    
+    #pager ul,#classpager ul,#GroupSearchTextBox-list ul, #ClassSearchTextBox-list ul, #SubscriptionDrpList-list ul, #GradeDropDown-list ul, #GenderDropDown-list ul,#PMReadingLevel-list ul, #SearchTextBox-list ul
+    {
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+    }
+
+    #SubscriptionDrpList-list
+    {
+        width: 291.53px !important;
+        margin-top: 4px;
+    }
+    #SearchTextBox-list
+    {
+        width: 495px !important;
+        margin-top: 6px !important;
+        box-shadow:none !important;
+        -webkit-box-shadow:none !important;
+    }
+    #GenderDropDown-list
+    {
+        margin-top: 4px;
+    }
+    
+    .BtmBtnsHdr
+    {
+        width:99%;
+        float:left;
+    }    
+  
+    
+     .ui-widget-header
+    {
+        border: 0px solid transparent !important;
+    }
+  
+    
+    .bannertitle
+    {
+        z-index:100 !important;
+    }
+    
+    .RepeaterSndColSpan:first-letter 
+    {
+        text-transform: uppercase !important;
+    }
+    
+    .SearchFirst,.pagerDisabled
+    {
+        float: left;
+        color: #707070;
+        border: 1px solid #CCC;
+        z-index: 100;
+        position: relative;
+        margin-left: 4px;
+        margin-right: 3px;
+        height: 22px;
+        width: 25px;
+        border-radius: 3px;
+        background: -moz-linear-gradient(center top , white 0%, white 5%, #DBD9D9 130%) repeat scroll 0 0 transparent;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FDFDFD), to(#EAE9E9));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#EAE9E9', gradientType='0');
+        background: -ms-linear-gradient(top, white 5%, #EAE9E9 130%) !important;
+        text-align: center;
+        line-height: 21px;
+        cursor:pointer;
+        font-weight: bold;
+        font-size: 10pt;
+    }
+    
+    .SearchFirst:hover
+    {
+        background: #707070 !important;
+        border: 1px solid #707070 !important;
+        color: White !important;
+    }
+   
+   .jp-repeat,.jp-repeat-off,.jp-shuffle,.jp-shuffle-off
+   {
+       display:none !important;
+   }
+ 
+.k-window-action.k-link
+{
+    margin-top:-25px !important;
+}
+
+.k-window-action 
+{
+    background-image: url('../../Portals/0/images/close.png') !important;
+}
+
+
+  .stublkimgprv
+  {  
+    margin-left: 17%;
+    width: 50%; height: 19%; text-align: center; padding-top: 25px; margin-top: 18%;
+    border: 1px solid #707070; display: none;
+  }
+  .stublkMsgfirstdiv
+  {
+      float: left; width: 94%; margin: 15px 0px -15px 20px
+  }
+  .stublkMsgspHolder
+  {
+      width: 63%; float: left;
+  }
+  .stublkFileUpload
+  {
+      width: 15.5%; margin-top: -35px; float: left; opacity: 0; filter: alpha(opacity=0);
+                    background-color: transparent; color: transparent; height: 32px; margin-left: 7px;
+  }
+  .stublkhrdiv
+  {
+      width: 100%; float: left; text-align: center;
+  }
+  .stublkpopup
+  {
+       background: white !important;
+  }
+  .stublkpopuphdrbg
+  {
+      background-image: url('../../Portals/0/images/topband.png'); background-color: White;
+        height: 110px; margin-top: -9px; width: 102%; margin-left: -7px;
+  }
+  .stublkPPMsgDiv
+  {
+      moz-box-shadow: -1px -1px 8px #B8B8B8; -webkit-box-shadow: -1px -1px 8px #B8B8B8;
+        box-shadow: -1px -1px 8px #B8B8B8; float: left; width: 103%; margin-left: -7px;
+        height: 87%;
+  }
+  .stublkPPMsgInnerdiv
+  {
+      width: 91.5%; height: 76px; float: left; margin: 25px; border: 1px solid lightgray;
+            box-shadow: -2px 7px 5px -6px lightgray; -moz-box-shadow: 2px 7px 5px -6px lightgray;
+            -webkit-box-shadow: 2px 7px 5px -6px lightgray;
+  }
+  .stublkPPMsgliteral
+  {
+      font-size: 10pt; color: #707070;
+                padding: 30px; float: left;
+  }
+  .stublkPPBtnDiv
+  {
+      width: 92%;
+  }
+  .stublkMsgPPspan
+  {
+      margin-top: 36px !important;
+  }
+  .HiddenClass
+  {
+      visibility: hidden;
+  }
+  .stuprfinnerdiv
+  {
+      width: 105.8%; height: 116px; float: left; margin: 0px 10px 5px 0px;
+  }
+  .stuprfNameDiv
+  {
+      float: left; width: 61%; margin: 20px 0px 10px 15px;
+  }
+  /*****students menu*****/
+  .std-menu{display:inline-block;margin-left: 20px;margin-top: 20px;width: 659px;border: 1px solid #707070;background: #F3F3F3;border-bottom: 0;}
+ .menu{color: #707070;font-weight:Bold;padding:24px 0 24px; text-align:center;display:inline-block; width:164px;float:left;background:#F3F3F3;font-size:14px;cursor:pointer;border-bottom:1px solid #707070;}
+  .empty-menu{height: 14px;cursor:default!important;}
+  #UnallocatedDiv{min-height:550px;margin-left:20px;border: 1px solid #707070;border-top:0 none;padding:20px;width:619px;margin-top:-5px;float:left;padding-top:25px;}
+  #UnallocatedDiv .commontextdiv {
+border: 1px solid #707070;
+float: left;
+margin: 0 0 30px 0;
+position: relative;display:inline-block;
+background: #FFF;width:100%;
+}
+#SrchDiv {
+border-right: 1px solid #707070;
+float: left;
+padding: 10px 30px 7px 15px;
+background: #F5F5F5;
+font-family: KievitCL_OT-Bold;
+font-weight: normal;
+height: 18px;
+color: #707070;
+font-size: 12px;
+box-shadow: none;
+border-left: none;
+border-top: none;
+border-bottom: none;
+}
+#UnallocatedDiv input.Srchbtntop {
+border-bottom: medium none !important;
+border-right: medium none !important;
+border-top: medium none !important;
+height: 35px !important;
+border-left: 1px solid #707070 !important;
+}
+
+#UnallocatedDiv .inputStyle {
+float: left;
+height: 15px;
+background: none repeat scroll 0 0 #FFF;
+}
+.ser-prisecsearchdiv {
+background-color: #FFF !important;
+box-shadow: none !important;padding: 8px 0px;
+}
+
+span.ser-secauto, .ser-secauto {
+margin-top: 6px;
+box-shadow: none !important;
+}
+#ServiceSearch{
+margin-left: 3px;
+margin-top: 0 !important;
+color: #707070;
+width: 400px !important;
+font-style: italic;
+border: none;
+box-shadow: none;
+-webkit-box-shadow: none;
+background-color: rgba(0, 0, 0, 0) !important;
+width: 100%;
+background-position: initial !important;
+background-repeat: initial !important;
+}
+.addbtn {
+color: #737272!important;
+width: 86px;
+height: 23px;
+line-height:20px;
+margin: 5px;
+font-size: 11px;
+cursor: pointer;
+font-weight: bold;
+border: 1px solid #D3D3D3;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-khtml-border-radius: 2px;
+background: #f5f5f5;float:right;
+}
+.full-name {
+border: 1px solid #707070;
+width: 95%;
+float: left;
+padding: 10px 15px;
+min-height: 20px;
+margin-bottom:10px;
+}
+
+.ico-person{
+height: 30px;
+width: 30px;
+background-position:-195px -264px !important;
+}
+span.user-name {
+height: 15px;
+font-size: 14px;
+padding: 9px 0 0 15px;
+position: absolute;
+}
+.different-sub {
+color: #0088c7;
+font-size: 12px;
+float: left;
+text-decoration: underline;
+padding-top: 20px;
+letter-spacing: 0.5px;cursor:pointer;font-weight: bold;
+}
+.titlelabel{font-size:20px;letter-spacing:0.5px;padding-bottom: 15px;display: inline-block;}
+.SubsContent {
+margin-bottom: 10px;
+margin-top: 6px;
+border: 1px solid #CCC;
+width: 94%;
+float: left;
+padding: 20px 10px 20px 25px;
+min-height: 40px;
+display: inline-block;
+}
+.Div_leftwidth{width:80%;float: left;}
+.Div_rightwidth{width:20%;float: left;margin-top:5px;}
+.create-students{padding:30px 35px;}
+.UseBtn {
+color: #737272!important;
+font-weight: bold;
+float:right;
+margin: 0 10px 5px 0;
+font-size: 13px;
+cursor: pointer;
+font-weight: bold;
+border: 1px solid #D3D3D3;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-khtml-border-radius: 2px;
+background:  #f5f5f5;
+}
+.sub-title-label{
+color: #01AFD2;
+font-size: 16px;
+float: left;font-weight: bold;
+letter-spacing: 0.5px;}
+.sub-title,.SubsManageDiv{display:inline-block;width:100%;}
+.startdatespan{
+font-size: 13px;
+letter-spacing: 0.5px;}
+.move-studentname{padding: 0 !important;width:566px;height:404px;background:  #fff !important;float:left;clear:both;font-family: KievitCL_OT-Regular;border: 1px solid #707070;}
+.std-title h1 {
+clear: both;
+color: #707070;
+float: left;
+padding: 25px 25px 20px 25px;
+margin: 0;
+font-size: 20px !important;
+font-weight: normal !important;
+font-family: KievitCL_OT-Bold  !important;
+}
+.std-title {
+padding: 0;
+border-bottom: 1px solid #707070;
+height: 70px;
+background: #F5F5F5;
+}
+.std-msg{padding:35px 40px 25px 30px;}
+.txt-red{color: #BE1F16;font-size: 12px;margin-bottom: 15px;padding: 0;font-family: KievitCL_OT-Bold !important;display:inline-block;margin-top:22px;}
+.std-msg ul li{list-style-type:disc;}
+.std-msg ul {padding-left: 16px;line-height: 24px;font-size: 12px;margin: 5px 0;}
+.std-btn{float:right;padding-right:10px;margin-bottom: 5px;}
+.std-msg h6,.std-msg span{font-family: KievitCL_OT-Bold !important;font-size: 12px;}
+.std-msg h5{font-family: KievitCL_OT-Bold !important;font-size: 13px;}
+.std-btn .btn-affermative{padding:8px 48px !important;margin-left:3px;}
+.std-crt-use-btn{padding: 5px 37px;text-decoration: none !important;}
+.blue-clr{color: #0088c7;}
+.bdr-left{border-left:1px solid #707070;}
+.bdr-right{border-right:1px solid #707070;}
+.bdr-btm{border-bottom:1px solid #fff;}
+.bdr-btmb{border-bottom:1px solid #707070;}
+.bdr-top{border-top:1px solid #707070;}
+.bgd-white{background:#fff;}
+.BulkUpload_label{
+  font-weight: bold;
+  font-size: 12px;
+  float: left;
+  background: #F5F5F5;
+  height: 31px;
+  line-height: 31px;
+  width: 105px;
+  text-indent: 16px;
+}
+.BulkUpload_BrowseDiv .btn-general{padding: 8px 28px !important; font-weight: bold; margin:0 0 0 7px;}
+.add-remove{background: #707070;
+color: #FFF !important;
+border: 0 none !important;}
+.add-remove:hover {
+background: #C6C6C6;
+color: #FFF;
+}
+#MoveSubscriptionsDpn-list{
+border: 1px solid #707070 !important;
+border-radius: 0 !important;
+}
+#MoveSubscriptionsDpn-list{
+background-color: #FFF !important;
+border-color: #767676 !important;
+padding: 0 !important;
+position: absolute;
+}
+#MoveSubscriptionsDpn-list .k-list .k-item, #MoveSubscriptionsDpn-list.k-popup .k-group .k-reset {
+background: #f5f5f5 !important;
+cursor: pointer;
+font-family: KievitCL_OT-Bold;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+}
+#MoveSubscriptionsDpn-list .k-list .k-item {
+border-bottom: 1px solid #707070 !important;
+border-left: 0 none !important;
+border-top: 0 none !important;
+border-right: 0 none !important;
+padding: 6px 0 6px 15px !important;
+color: #707070 !important;}
+.std-msg span.k-dropdown {
+float: left;
+font-family: KievitCL_OT-Bold;
+font-size: 12px;
+font-weight: normal;
+padding: 0 !important;
+width: 460px;display:block;
+}
+#MoveSubscriptionsDpn-list.k-state-hover
+{
+border-top:0 none !important;
+border-bottom:0 none !important;border-radius: 0 !important;
+}
+#MoveSubscriptionsDpn-list .k-list .k-item.k-state-hover,#MoveSubscriptionsDpn-list .k-list .k-state-selected{
+color: #0089d1 !important;
+background:#fff !important;
+border-radius: 0 none !important;
+}
+.std-msg .k-dropdown-wrap {
+background: none repeat scroll 0 0 #F5F5F5 !important;
+border: 1px solid #707070 !important;
+border-radius: 0 !important;
+}
+.std-msg .k-dropdown-wrap .k-input {
+color: #707070 !important;
+height: 27px !important;
+letter-spacing: 1px;
+line-height: 26px !important;
+text-indent: 15px !important;
+}
+.std-msg .k-dropdown-wrap .k-select{padding: 0 !important;}
+.std-msg .k-state-active, .k-state-border-down {
+box-shadow: none !important;
+}
+.std-msg span  .k-state-focused.k-state-hover,.std-msg span  .k-state-focused,.std-msg .k-dropdown .k-header .k-state-border-down{border: 1px solid #707070 !important;background:#f5f5f5 !important;}
+.std-msg .k-icon {
+background-image: url("/Portals/0/images/glyphicons.png") !important;
+background-position: -151px -7px !important;
+display: inline-block !important;
+float: right;
+height: 22px !important;
+margin-top: 0;
+vertical-align: text-top;
+width: 30px !important;
+}
+.UnallocatedSrhStudents{font-style: italic;
+float: left;
+width: 100%;
+margin-left: 1px;
+height: 27px;
+margin-top: -8px;
+border: 0px solid transparent !important;
+text-indent: 5px;}
+.UnallocatedSearchTopDiv{width: 65%;}
+.BtnsHdr .btn-affermative,.BtnsHdr .btn-cancel{font-weight: normal;}
+
+#UnallocatedStudentSearch
+{
+font-size: 12px;
+margin-top: 5px;
+text-indent: 10px;
+}
+.search-kautocomplete,.search-kautocomplete:hover
+{
+width: 100% !important;
+height: 1px !important;
+border: 0px solid transparent !important;
+box-shadow: none !important;
+background-color:transparent !important;
+}
+#UnallocatedStudentSearch-list
+{
+margin-top: 29px !important;
+margin-left: -2px !important;
+border: 1px solid #707070 !important;
+width: 404px !important;
+}
+  /***Student menu ends***/
+
+  
+  
+  .BulkUpload_UploadDiv h5
+  {
+  float:left;
+  }
+  
+  .AddBtnHdr .ActiveAddButtonsHolder 
+{
+width:130px !important;
+  }
+.movedmsg{
+float: left;
+width: 627px !important;
+margin: 24px 20px 0px 24px;
+text-align: center;
+padding: 10px !important;
+background-color: #73A638;
+background-image: url(../../portals/0/images/success_icon.png);
+background-position: 35px center;
+border: 1px solid #639624;
+font-size: 14px;
+}
+.movedmsgstudname
+{
+max-width: 350px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+display: inline-block;
+}
+.movedmsg1{
+overflow: hidden;
+display: inline-block;
+margin-left: 3px;
+}
+.width350{ width:350px;}
+.searchnoresult{
+text-align: center;
+float: left;
+width: 100%;
+color: rgb(32, 179, 230);
+}
+.redtext{color:#BE1F16 !important;}
+.SortText {
+margin-left: 0;
+font-weight: 700;
+text-decoration: none!important;
+color: #707070;
+cursor: pointer;
+padding-right: 10px;
+padding-left: 10px;
+padding-bottom: 6PX;
+padding-top: 6px;
+}
+.page {
+background: -webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#E9E9E9));
+background: -moz-linear-gradient(to bottom,#F9F9F9,#E9E9E9);
+background: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9',endColorstr='#E9E9E9',gradientType='0');
+background: -ms-linear-gradient(left,#F9F9F9 55%,#E9E9E9 130%);
+background-color: #EAE9E9;
+padding: 5px 8px;
+margin-right: 6px;
+border: 1px solid #D8D8D8;
+border-radius: 5px;
+font-family: Helvetica,Arial,sans-serif;
+font-weight: bold;
+box-shadow: 1px 2px 0 0 #CCC;
+}
+#PreviousButton {
+background: url('/portals/0/Images/DoubleLeft.png') center center,-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#E9E9E9));
+background: url('/portals/0/Images/DoubleLeft.png') center center,-moz-linear-gradient(to bottom,#F9F9F9,#E9E9E9)!important;
+background: url('/portals/0/Images/DoubleLeft.png') center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9',endColorstr='#E9E9E9',gradientType='0');
+background: url('/portals/0/Images/DoubleLeft.png') center center,-ms-linear-gradient(left,#F9F9F9 55%,#E9E9E9 130%);
+background-color: #EAE9E9;
+padding: 5px 10px;
+margin-right: 6px;
+border: 1px solid #D8D8D8;
+border-radius: 5px;
+font-family: Helvetica,Arial,sans-serif;
+font-weight: bold;
+box-shadow: 1px 2px 0 0 #CCC;
+background-repeat: no-repeat!important;
+color:transparent;
+}
+#ShowPreviousButton {
+background: url('/portals/0/Images/SingleLeft.png') center center,-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#E9E9E9));
+background: url('/portals/0/Images/SingleLeft.png') center center,-moz-linear-gradient(to bottom,#F9F9F9,#E9E9E9)!important;
+background: url('/portals/0/Images/SingleLeft.png') center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9',endColorstr='#E9E9E9',gradientType='0');
+background: url('/portals/0/Images/SingleLeft.png') center center,-ms-linear-gradient(left,#F9F9F9 55%,#E9E9E9 130%);
+background-color: #EAE9E9;
+padding: 5px 10px;
+margin-right: 6px;
+border: 1px solid #D8D8D8;
+border-radius: 5px;
+font-family: Helvetica,Arial,sans-serif;
+font-weight: bold;
+box-shadow: 1px 2px 0 0 #CCC;
+background-repeat: no-repeat!important;
+color:transparent;
+}
+#ShowNextLink {
+background: url('/portals/0/Images/SingleRight.png') center center,-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#E9E9E9));
+background: url('/portals/0/Images/SingleRight.png') center center,-moz-linear-gradient(to bottom,#F9F9F9,#E9E9E9)!important;
+background: url('/portals/0/Images/SingleRight.png') center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9',endColorstr='#E9E9E9',gradientType='0');
+background: url('/portals/0/Images/SingleRight.png') center center,-ms-linear-gradient(left,#F9F9F9 55%,#E9E9E9 130%);
+background-color: #EAE9E9;
+padding: 5px 10px;
+margin-right: 6px;
+border: 1px solid #D8D8D8;
+border-radius: 5px;
+font-family: Helvetica,Arial,sans-serif;
+font-weight: bold;
+box-shadow: 1px 2px 0 0 #CCC;
+background-repeat: no-repeat!important;
+color:transparent;
+}
+#NextLink {
+background: url('/portals/0/Images/DoubleRight.png') center center,-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#E9E9E9));
+background: url('/portals/0/Images/DoubleRight.png') center center,-moz-linear-gradient(to bottom,#F9F9F9,#E9E9E9)!important;
+background: url('/portals/0/Images/DoubleRight.png') center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9',endColorstr='#E9E9E9',gradientType='0');
+background: url('/portals/0/Images/DoubleRight.png') center center,-ms-linear-gradient(left,#F9F9F9 55%,#E9E9E9 130%);
+background-color: #EAE9E9;
+padding: 5px 10px;
+margin-right: 6px;
+border: 1px solid #D8D8D8;
+border-radius: 5px;
+font-family: Helvetica,Arial,sans-serif;
+font-weight: bold;
+box-shadow: 1px 2px 0 0 #CCC;
+background-repeat: no-repeat!important;
+color:transparent;
+}
+.UnallocatedPager
+{
+float: left;
+text-align: center;
+width: 100%;
+margin: 20px 0 20px 0;
+}
+.PreviousButton:hover {
+    background: url(/portals/0/images/DoubleLeft_hover.png) center center,-webkit-gradient(linear,left top,left bottom,from(#707070),to(#707070));
+    background: url(/portals/0/images/DoubleLeft_hover.png) center center,-ms-linear-gradient(top,#707070 5%,#707070 130%)!important;
+    background: url(/portals/0/images/DoubleLeft_hover.png) center center,-moz-linear-gradient(to bottom,#707070,#707070)!important;
+    background: url(/portals/0/images/DoubleLeft_hover.png) center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070',endColorstr='#707070',gradientType='0');
+    background-color: #707070;
+    color: White!important;
+    background-repeat: no-repeat!important;
+}
+.ShowPreviousButton:hover {
+    background: url(/portals/0/images/SingleLeft_hover.png) center center,-webkit-gradient(linear,left top,left bottom,from(#707070),to(#707070));
+    background: url(/portals/0/images/SingleLeft_hover.png) center center,-ms-linear-gradient(top,#707070 5%,#707070 130%)!important;
+    background: url(/portals/0/images/SingleLeft_hover.png) center center,-moz-linear-gradient(to bottom,#707070,#707070)!important;
+    background: url(/portals/0/images/SingleLeft_hover.png) center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070',endColorstr='#707070',gradientType='0');
+    background-color: #707070;
+    color: White!important;
+    background-repeat: no-repeat!important;
+}
+.Rightrovercod {
+background: url('/portals/0/Images/SingleRight.png') center center,-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#E9E9E9));
+background: url('/portals/0/Images/SingleRight.png') center center,-moz-linear-gradient(to bottom,#F9F9F9,#E9E9E9)!important;
+background: url('/portals/0/Images/SingleRight.png') center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9',endColorstr='#E9E9E9',gradientType='0');
+background: url('/portals/0/Images/SingleRight.png') center center,-ms-linear-gradient(left,#F9F9F9 55%,#E9E9E9 130%);
+background-color: #EAE9E9;
+margin-right: 6px;
+padding-bottom: 5px!important;
+border: 1px solid #D8D8D8;
+border-radius: 5px;
+font-family: Helvetica,Arial,sans-serif;
+font-weight: bold;
+box-shadow: 1px 2px 0 0 #CCC;
+font-size: 10pt;
+padding-bottom: 4px;
+background-repeat: no-repeat!important;
+padding-right: 18px!important;
+}
+.Rightovercod {
+background: url('/portals/0/Images/DoubleRight.png') center center,-webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#E9E9E9));
+background: url('/portals/0/Images/DoubleRight.png') center center,-moz-linear-gradient(to bottom,#F9F9F9,#E9E9E9)!important;
+background: url('/portals/0/Images/DoubleRight.png') center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9',endColorstr='#E9E9E9',gradientType='0');
+background: url('/portals/0/Images/DoubleRight.png') center center,-ms-linear-gradient(left,#F9F9F9 55%,#E9E9E9 130%);
+background-color: #EAE9E9;
+padding: 5px 10px;
+margin-right: 6px;
+border: 1px solid #D8D8D8;
+border-radius: 5px;
+font-family: Helvetica,Arial,sans-serif;
+font-weight: bold;
+box-shadow: 1px 2px 0 0 #CCC;
+background-repeat: no-repeat!important;
+color:transparent;
+}
+.whoverr:hover {
+    background: url(/portals/0/images/SingleRight_hover.png) center center,-webkit-gradient(linear,left top,left bottom,from(#707070),to(#707070));
+    background: url(/portals/0/images/SingleRight_hover.png) center center,-ms-linear-gradient(top,#707070 5%,#707070 130%)!important;
+    background: url(/portals/0/images/SingleRight_hover.png) center center,-moz-linear-gradient(to bottom,#707070,#707070)!important;
+    background: url(/portals/0/images/SingleRight_hover.png) center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070',endColorstr='#707070',gradientType='0');
+    background-color: #707070;
+    color: White!important;
+    background-repeat: no-repeat!important;
+}
+.whover:hover {
+    background: url(/portals/0/images/DoubleRight_hover.png) center center,-webkit-gradient(linear,left top,left bottom,from(#707070),to(#707070));
+    background: url(/portals/0/images/DoubleRight_hover.png) center center,-ms-linear-gradient(top,#707070 5%,#707070 130%)!important;
+    background: url(/portals/0/images/DoubleRight_hover.png) center center,-moz-linear-gradient(to bottom,#707070,#707070)!important;
+    background: url(/portals/0/images/DoubleRight_hover.png) center center,progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070',endColorstr='#707070',gradientType='0');
+    background-color: #707070;
+    color: White!important;
+    background-repeat: no-repeat!important;
+}
+.page:hover {
+    background: -webkit-gradient(linear,left top,left bottom,from(#707070),to(#707070));
+    background: -ms-linear-gradient(top,#707070 5%,#707070 130%)!important;
+    background: -moz-linear-gradient(to bottom,#707070,#707070)!important;
+    background: progid:DXImageTransform.Microsoft.gradient(startColorstr='#707070',endColorstr='#707070',gradientType='0');
+    background-color: #707070;
+    color: White!important;
+}
+
+
+.k-state-border-down
+{
+background-color: #e9e9e9 !important;
+ border:1px solid #c5c5c5 !important;
+border-radius: 4px !important;
+ box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3) !important;
+	}
+	
+	
+	.ui-widget
+	{
+	font-family: KievitCL_OT-Regular !important;
+	}
+	
+	
+	
+	.List_Contents
+	{	
+  float: left;
+  border: 1px solid #9e9e9e;
+  background: #FFF !important;
+  position: relative;
+    -webkit-border-radius:0 !important; 
+  -moz-border-radius:0 !important; 
+  border-radius:0 !important;
+  width:598px !important;
+ padding: 0px 8px;  
+		}
+		
+		
+		.eClUserSearchDiv
+		{
+		float:none !important;
+		}
+		
+		
+		.ecstulistRPprofilebtn .btn-general
+		{
+		float:left;
+		padding:8px 28px !important;
+		margin-right:3px !important;
+		}
+		
+		.ecstulistRPprofilebtn .btn-affermative
+		{
+		float: left;
+		padding: 9px 24px !important;
+		margin-left: 5px;
+	 
+		}
+		 
+		
+		#Class-1
+		{
+		margin-top:50px;
+		}
+		
+		
+		
+		.ecstulistRPst
+		{
+		margin-bottom: 10px;
+  float: left;
+		}
+		
+		
+		.ClassnameSpan
+		{
+		float:right
+		}
+		
+		
+#eClSearchLabel
+{
+    background: none repeat scroll 0 0 #f5f5f5;
+  border-right: 1px solid #707070;
+  color: #707070;
+  float: left;
+  font-family: KievitCL_OT-Bold;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 11px 0 11px 14px;
+  text-align: left;
+  width: 100px;
+}
+.student-class
+{
+padding: 20px 0 0 0;
+float: left;
+width: 142px;
+display: inline-block;
+font-size: 12px;
+letter-spacing: 1px;
+font-family: KievitCL_OT-Bold;
+}
+.student-line
+{
+height: 2px;
+background: #9e9e9e;
+width: 414px;
+display: inline-block;
+float: left;
+margin: 28px 10px 0 0;
+}
+
+.eCollection_Menu_Holder
+{
+margin-left:0 !important
+}
+
+
+.StudentsList h2
+{
+  margin: 10px 0;
+font-size:30px;
+}
+    .StudentList_TopDivIE
+    {
+        width: 99.5% !important;
+    }
+    .ProfileButton
+    {
+        text-align: center;
+        height: 24px;
+        padding-top: 9px;
+        text-decoration: none;
+        font-weight: normal;
+        background: url('./portals/0/images/eye.png') no-repeat 22px center;
+    }
+    
+    .k-widget
+    {
+        border: 0px solid transparent;
+    }
+   
+    #pager .k-state-disabled:hover
+    {
+        background: -webkit-gradient(linear, left top, left bottom, from(#F9F9F9), to(#E9E9E9)) !important;
+        background: -moz-linear-gradient(to bottom,#F9F9F9, #E9E9E9);
+        background: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F9F9F9', endColorstr='#E9E9E9', gradientType='0') !important;
+        background: -ms-linear-gradient(top, #F9F9F9 5%, #E9E9E9 130%) !important;
+        color: #CCC !important;
+    }
+    .Searchbtndiv input[type=submit][disabled]
+    {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.5;
+        cursor: default;
+    }
+    .CreateLinkStyle
+    {
+        float: left;
+        color: #47C5DC !important;
+        margin-left: 124px;
+    }
+    .ArrowPanel
+    {
+        float: right;
+        width: 13px;
+        height: 48px;
+    }
+	.ClassSearchDiv
+	{
+	padding:20px 0;
+	}
+	.AddtoGroupClassSearchDiv
+	{
+	padding-left:21px;
+	}
+	.AddtoGroupClassSearchDiv .KenduoComboBoxClassDiv
+	{
+		margin-top:0px;
+	}
+	.categorybysort {
+	border:  1px solid #707070!important;
+	list-style: none!important;
+	float: right !important;
+	text-align: left;
+	background: #F5F5F5 !important;
+	width: 166px;
+	margin-left: 7px!important;
+	height:30px !important;
+	font-size:11px;
+}
+
+.categorybysort  .k-dropdown-wrap .k-input
+{
+  height: 22px;
+  line-height: 22px;
+     margin-top: 1px;
+  padding-bottom: 0px;
+}
+.categorybysort label { 
+  float: left;
+  padding: 10px 0 0 10px;
+  }
+
+.categorybysort .k-dropdown
+{
+width:90px;
+background:#F5F5F5 !important;
+}
+.categorybysort .k-dropdown-wrap
+{
+  float: left;
+  display: inline-block;
+  background: #FFF;
+  border: 0 none;
+}
+
+.categorybysort .k-widget .k-dropdown-wrap, .k-dropdown-wrap.k-state-focused,.k-dropdown-wrap.k-state-focused:hover
+{
+ background: #F5F5F5 !important;
+ border:0 none !important;
+ float:right;
+}
+
+
+.categorybysort.k-dropdown
+	{
+	  float: left;
+	     width: 165px !important;
+		   display: inline-block;
+	}
+   
+   
+      
+   
+    .categorybysort .k-dropdown-wrap.k-icon 
+	{
+  display: inline-block!important;
+  vertical-align: text-top;
+  background-image: url('/Portals/0/images/glyphicons.png')!important;
+  background-position: -151px -7px!important;
+  width: 30px!important;
+  height: 22px!important;
+  float: right;
+  margin-top: 0;
+  }
+  
+ 
+  
+   .categorybysort .k-popup .k-item
+	 {
+	 background:#FFF ;
+	 color:#707070 ;
+	 padding:6px 0 6px 15px !important
+	 }
+	 
+	 
+ .categorybysort .k-state-selected.k-state-focused,.categorybysort .k-state-hover {
+	color: #0089D1!important;
+	background: #FFF !important;
+	border:0 none !important;
+	}
+	
+
+#studentssortdpn-list 
+{
+  width: 166px !important;
+  margin: 0px;
+  margin-left: -66px;
+  border:1px solid #707070;
+  background:#FFF;
+  padding:0;
+  
+}
+#groupssortdpn_listbox
+{
+  width: 166px !important;
+  margin: 0px;
+  margin-left: -69px;
+  border:1px solid #707070;
+  background:#FFF;
+  padding:0;
+  margin-top:-2px;
+  
+}
+.ie8 #studentssortdpn-list, ie8 #groupssortdpn_listbox
+{
+  width: 160px !important;
+  margin-left: -60px;
+  margin-top:5px;
+  border:1px solid #707070;
+  background:#FFF;
+  padding:0;
+  
+}
+ #studentssortdpn_listbox li,#groupssortdpn_listbox li
+ {
+ border-bottom:1px solid #707070 !important;
+ color:#707070;
+   padding:5px;
+   
+ }
+  .ie8 #studentssortdpn_listbox li, .ie8 #groupssortdpn_listbox li
+ {
+ border-bottom:1px solid #707070 !important;
+ color:#707070;
+   padding:5px;
+   font-size: 11px;
+   line-height:18px;
+ }
+
+ #studentssortdpn_listbox .k-state-hover, #studentssortdpn_listbox .k-state-focused,  #studentssortdpn_listbox   .k-state-selected,
+ #groupssortdpn_listbox  .k-state-hover, #groupssortdpn_listbox .k-state-focused,  #groupssortdpn_listbox   .k-state-selected
+ {
+ background:transparent !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+  border-radius: 0; 
+  border:0 none ;
+     padding:5px;
+  color:#0089c5;
+
+line-height: 1.8em;
+ }
+ .ie8 #studentssortdpn_listbox .k-state-hover, .ie8 #studentssortdpn_listbox .k-state-focused,  .ie8 #studentssortdpn_listbox   .k-state-selected,
+ .ie8 #groupssortdpn_listbox .k-state-hover, .ie8 #groupssortdpn_listbox .k-state-focused,  .ie8 #groupssortdpn_listbox   .k-state-selected
+ {
+ background:transparent !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+  border-radius: 0; 
+  border:0 none ;
+     padding:5px;
+  color:#0089c5;
+font-size: 11px;
+ }
+
+.categorybysort .k-state-border-down
+{
+box-shadow:none !important;
+   -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+  border-radius: 0; 
+  border:0 none !important;
+}
+
+.categorybysort .k-icon {
+   display: inline-block!important;
+  vertical-align: text-top;
+  background-image: url('/Portals/0/images/glyphicons.png')!important;
+  background-position: -162px -11px!important;
+  width: 12px!important;
+  height: 20px!important;
+  float: right;
+  margin-top: 0;
+}
+
+.checkdiv img
+{
+border:0 none;
+}
+
+
+.KenduoComboBoxClassDiv .btn-general
+{
+  padding: 7px 28px !important;
+  margin-left: 3px !important;
+  margin-right: 0px;
+}
+
+.StudentDashboard_CheckAllDiv .ico-uncheck, .StudentDashboard_CheckAllDiv .ico-check
+{
+margin:0;
+}
+.ico-uncheck
+{
+  height: 22px !important;
+  background-position: -207px -14px !important;
+  width: 22px !important;
+    margin-top: 9px;
+}
+
+.ico-check
+{
+  background-position: -255px -14px !important;
+  width: 22px !important;
+  height: 22px !important;
+    margin-top: 9px;
+  float: left;
+}
+.StudentAddtoGroup_SelectAllDiv
+{
+height: 19px;
+  padding: 5px 15px;
+  width: 100px;
+  border: 1px solid #707070;
+  float: left;
+  display: inline-block;
+  margin: 20px 0px 20px 24px;
+}
+.StudentAddtoGroup_SearchList{
+width: 92.6%; 
+border-style: solid; 
+height: 34px; 
+margin-left: 24px; 
+border: 1px solid #CCCCCC;
+float: left; 
+position: relative;
+margin-top:30px;
+}
+.eg-lfloat {
+  float: left;
+}
+.SearchInnerDiv label {
+  background: none repeat scroll 0 0 #f5f5f5;
+  border-right: 1px solid #707070;
+  color: #707070;
+  float: left;
+  font-family: KievitCL_OT-Bold;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding: 11px 0 11px 14px;
+  text-align: left;
+  width: 100px;
+}
+#SelectallCheckBox  {
+  display: none;
+}
+.StudentAddtoGroup_SelectAllDiv  .ico-uncheck
+{
+margin-top:0px;
+}
+.StudentAddtoGroup_SelectAllDiv .SelectAllSpan {
+  float: left;
+  padding-top: 3px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-family: KievitCL_OT-Bold;
+}
+ .categorybysort .k-dropdown-wrap .k-input {
+  height: 22px;
+  line-height: 22px;
+  margin-top: 1px;
+  padding-bottom: 0px;
+}
+.categorybysort .k-dropdown {
+  width: 90px;
+  background: #F5F5F5 !important;
+}
+.AddtoGroupsSortReaddiv
+    {
+        float: right;
+        width: 40%;
+        margin-top: 20px;
+        font-size: 10pt;
+        color: #707070;
+		margin-right: 25px;
+    }
+.AddtoGroupsSortReaddiv .categorybysort select 
+{
+float: left;
+  width: 100px;
+  margin-top: 4px;
+}
+.eCollectionContentStyle1
+{
+  padding: 20px;
+  min-height: 900px;
+  width: 666px !important;
+}
+.RepeaterContentDiv {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.RepeaterFstCol {
+  float: left;
+  margin-top: 4px;
+  width: 40px;
+  margin-left: 21px;
+}
+.Repeater1stCol
+{
+    width: 60px;
+    padding-right: 15px;
+    float: left;
+    padding-left: 10px;
+    margin-top: 7px;
+}
+
+.RepeaterSndCol
+{
+    width: 200px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 7px;
+}
+
+.Repeater1stCol div:first-child, .RepeaterSndCol div:first-child
+{
+    text-align: center;
+}
+.Repeater1stCol div:last-child,.RepeaterSndCol div:last-child
+{
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Repeater3rdCol
+{
+	float:right;
+	padding-right: 5px;
+}
+.Repeater3rdCol .btn
+{
+ float:left !important;
+}
+.Repeater3rdCol .btn-general
+{
+  background: #F5F5F5 !important;
+  color: #707070 !important;
+  border: 1px solid #707070 !important;
+  padding: 8px 28px !important;
+  margin-right: 8px !important;
+  cursor: pointer;
+}

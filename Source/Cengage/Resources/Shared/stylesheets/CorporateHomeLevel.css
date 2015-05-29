@@ -1,0 +1,115 @@
+    .k-widget .k-window
+    {
+        margin-top: 10%;
+        background: transparent;
+    }
+    .k-window
+    {
+        box-shadow: none;
+        background: transparent;
+    }
+    .k-window div.k-window-content
+    {
+        overflow: hidden;
+        background: transparent;
+    }
+    div.k-window
+    {
+        border: 0px solid white;
+    }
+    .k-widget .k-window
+    {
+        margin-top: 10%;
+        background: transparent;
+    }
+    .k-window
+    {
+        box-shadow: none;
+        background: transparent;
+    }
+    .k-window div.k-window-content
+    {
+        overflow: hidden;
+        background: transparent;
+    }
+    div.k-window
+    {
+        border: 0px solid white;
+    }
+    .k-header
+    {
+        background-color: white;
+        border: none;
+    }
+    .k-block > .k-window-titlebar
+    {
+        border-bottom-style: none;
+    }
+    .k-window-titlebar
+    {
+        background: transparent;
+    }
+    #window1
+    {
+        background: transparent;
+    }
+    .k-window-action.k-link
+    {
+        background-image: url('./Portals/0/images/close.png');
+        opacity: 1 !important;
+        height: 26px !important;
+        width: 26px !important;
+        z-index: 1003 !important;
+        margin-right: -19px !important;
+        margin-top: 15px;
+        border: none !important;
+        margin-left: -10px;
+    }
+    .k-window-action.k-link.k-state-hover:hover
+    {
+        background-image: url('./Portals/0/images/close.png') !important;
+        opacity: 1 !important;
+        height: 28px !important;
+        width: 28px !important;
+        z-index: 1003 !important;
+        margin-right: -19px !important;
+        margin-top: 15px !important;
+        border: none !important;
+        margin-left: -10px;
+        background-color: transparent !important; /* background:transparent !important;*/
+    }
+    .k-window-actions
+    {
+        background: transparent;
+    }
+    .k-i-close
+    {
+        background-image: initial !important;
+    }
+    .k-window-titlebar .k-state-hover
+    {
+        padding: -1px !important;
+    }
+    .k-window-action .k-link
+    {
+        display: block !important;
+        position: fixed !important;
+    }
+    .k-icon .k-i-close
+    {
+        background-image: none !important;
+    }
+  
+  #megaStore .k-widget.k-menu-horizontal > .k-last
+    {
+        border: 0;
+    }
+   #dnn_dnnBreadcrumb_lblBreadCrumb
+    {
+        font-weight:400;color:#B7AAAA;
+        letter-spacing:1px !important;margin-top:25px;float:left;
+    }
+    #dnn_dnnBreadcrumb_lblBreadCrumb a
+    {
+    color:#B7AAAA;text-decoration:none;
+    }

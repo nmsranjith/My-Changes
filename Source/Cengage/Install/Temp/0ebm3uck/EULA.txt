@@ -1,0 +1,72 @@
+
+MEDIAANT END USER LICENSE AGREEMENT (EULA)
+BY PLACING AN ORDER ON THIS SITE YOU AGREE TO ABIDE BY THESE CONDITIONS.
+
+This End-User Software License Agreement ("EULA") is a legal agreement between you (either as an individual user, corporation or single entity) and mediaANT, for a product which includes computer software, and may include associated media, printed materials, and online or electronic documentation ("SOFTWARE PRODUCT" or "SOFTWARE"). By exercising your rights to install the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA, including the limitations and warranty disclaimers. 
+
+1. GRANT OF NON-EXCLUSIVE LICENSE
+mediaANT grants you a non-exclusive, non-transferable right to use the Software Product on your DotNetNuke(DNN) installation based on your purchase history and the fact that you are not in competition with our module development sponsor. Web sites in competition with our module development sponsor are web sites that include subject matter that focuses application website/module development. Web sites in competition with our module development sponsor may not use the module private assemblies in any manner. 
+If you purchase a STANDARD EDITION of the Software Product, you can use the SOFTWARE PRODUCT on 1 DNN installation as long as you are not in violation of this agreement. A DNN installation is defined as a single DNN database which can host multiple child portals. These portals may have their own unique web addresses, but they are managed from a single DNN host. If you purchased a PROFESSIONAL EDITION you are granted a license to install the SOFTWARE PRODUCT on multiple DNN installation within 1 server as long as you are not in violation of this agreement. If you purchased an UNLIMITED EDITION you are granted a license to install the SOFTWARE PRODUCT on any number of servers/DNN installations as long as you are not in violation of this agreement.
+Although rights to modification of the Software Product are granted by this EULA, you may not tamper with, alter, or use the Software Product in a way that disables, circumvents, or otherwise defeats its built-in licensing verification and enforcement capabilities. The right to modification of the Software Product also does not include the right to remove or alter any trademark, logo, copyright or other proprietary notice, legend, symbol or label in the Software Product.
+Any modifications made to the Software Product will render it non-supportable by mediaANT. You may, at your discretion, contact mediaANT about distribution of the altered Software Product, and if agreeable terms can be determined, the software product may be distributed according to the agreement. The altered Software Product will become supported by the party designated in the agreement between mediaANT and the user. Ownership of the altered SOFTWARE PRODUCT is transferred to the party designated in the agreement between mediaANT and the user. You may not distribute or redistribute changes made to the Software Product to anyone other than groups designated by the agreement between mediaANT and the user.  Contact mediaANT using the information included at the end of this document.
+You may make copies of the Software Product as is reasonably necessary for its use. Each copy must reproduce all copyright and other proprietary rights notices on or in the Software Product.
+Each copy must reproduce all copyright and other proprietary rights notices on or in the Software Product License. You may not modify or create derivative copies of the Software Product License.
+All rights not expressly granted to you are retained by mediaANT.
+
+2. INTELLECTUAL PROPERTY RIGHTS RESERVED BY MEDIAANT 
+The Software Product is owned by mediaANT and is protected by German and international copyright laws and treaties, as well as other intellectual property laws and treaties. You must not remove or alter any copyright notices on any copies of the Software Product. 
+This Software Product copy is licensed, not sold. You may not use, copy, or distribute the Software Product, except as granted by this EULA, without written authorization from mediaANT or its designated agents. Furthermore, this EULA does not grant you any rights in connection with any trademarks or service marks of mediaANT. mediaANT reserves all intellectual property rights, including copyrights, and trademark rights.
+
+3. INSTRUCTION TO RIGHT TO REVOCATION
+
+3.1 RIGHT TO REVOCATION: As a consumer, you will have a legal "cooling off period" during which you may revoke your order for any reason without statements of reasons. This period is up to two weeks and commences not earlier than the delivery of this instruction. In case of delivery of a physical product this period starts with delivery of the product. The right to revocation will be treated as exercised on the date of posting the notice of revocation or the date of dispatching the returned product. All revocation notices must be in textform (e.g. mail, e-mail) and have to be addressed to mediaANT@email.de
+
+3.2 PLEASE NOTE: YOU HAVE NO RIGHT TO REVOCATION
+3.2.1 Where you order audio records or video records or software, where you have unsealed the software.  
+3.2.2 Where you order bespoke or customised products made specifically to your order or your needs or can not be returned because of their nature, e.g. download products. 
+
+3.3 LEGAL CONSEQUENCE: If you exercise the above right to revocation, you are required to return the relevant products to us including fruits thereof and we are required to reimburse your prepayments including fruits thereof (e.g. interests). If you are not able to return the products or if the products are defective, you are required to pay compensation. This does not apply to products, which deterioration is due solely to the inspection of the products - like you would do it in shops. You may prevent yourself from having to pay compensation for damaged products, if you do not make use of the products in your possesion and if you take reasonable care of the products in your possesion. You have to bear the costs of returning the products, unless your order has a value of more than 40 EUR. In case your order has a value of more than 40 EUR, we will only bear the costs of returning the products, if you had already made payment or part contractual part payments by the time of revocation. Where wrong products have been delivered to you, we will bear the costs of returning the products regardless of the value of your order. Any compensation payments for damaged products have to be made by you within 30 days after you have given your declaration of revocation.
+The product must be returned to the return address stated on the delivery note that was accompanied with the product.
+
+3.4 PLEASE NOTE: such right to revocation, where you order services, terminates if those services commence with your agreement before the cooling off period expires (e.g. download of products). 
+If you require more information on your rights, you should contact customer support.
+
+4. NO RIGHT TO TRANSFER
+You may not rent, lease, lend, or in any way distribute or transfer any rights in this EULA or the Software Product to third parties without mediaANT's written approval, and subject to written agreement by the recipient of the terms of this EULA.
+
+5. INDEMNIFICATION
+You hereby agree to indemnify mediaANT against and hold harmless mediaANT from any claims, lawsuits or other losses that arise out of your breach of any provision of this EULA.
+
+6. THIRD PARTY RIGHTS
+Any software provided along with the Software Product that is associated with a separate license agreement is licensed to you under the terms of that license agreement. This license does not apply to those portions of the Software Product. Copies of these third party licenses are included in all copies of the Software Product.
+
+7. SUPPORT SERVICES
+mediaANT may provide you with support services related to the Software Product. Use of any such support services is governed by mediaANT policies and programs described in online documentation and/or other mediaANT-provided materials.
+As part of these support services, mediaANT may make available bug lists, planned feature lists, and other supplemental informational materials. mediaANT MAKES NO WARRANTY OF ANY KIND FOR THESE MATERIALS AND ASSUMES NO LIABILITY WHATSOEVER FOR DAMAGES RESULTING FROM ANY USE OF THESE MATERIALS.  FURTHERMORE, YOU MAY NOT USE ANY MATERIALS PROVIDED IN THIS WAY TO SUPPORT ANY CLAIM MADE AGAINST MEDIA ANT.
+Any supplemental software code or related materials that mediaANT provides to you as part of the support services, in periodic updates to the Software Product or otherwise, is to be considered part of the Software Product and is subject to the terms and conditions of this EULA.
+With respect to any technical information you provide to mediaANT as part of the support services, mediaANT may use such information for its business purposes without restriction, including product support and development. mediaANT will not use such technical information in a form that personally identifies you without first obtaining your permission.
+
+8. TERMINATION WITHOUT PREJUDICE TO ANY OTHER RIGHTS
+mediaANT may terminate this EULA if you fail to comply with any term or condition of this EULA. In such event, you must destroy all copies of the Software Product and Software Product Licenses.
+
+9. NO WARRANTIES
+YOU ACCEPT THE SOFTWARE PRODUCT AND SOFTWARE PRODUCT LICENSE "AS IS," AND mediaANT AND ITS THIRD PARTY SUPPLIERS AND LICENSORS MAKE NO WARRANTY AS TO ITS USE, PERFORMANCE, OR OTHERWISE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, mediaANT AND ITS THIRD PARTY SUPPLIERS AND LICENSORS DISCLAIM ALL OTHER REPRESENTATIONS, WARRANTIES, AND CONDITIONS, EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OR CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE ENTIRE RISK ARISING OUT OF USE OR PERFORMANCE OF THE SOFTWARE PRODUCT REMAINS WITH YOU.
+
+10. LIMITATION OF LIABILITY
+THIS LIMITATION OF LIABILITY IS TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW. IN NO EVENT SHALL mediaANT OR ITS THIRD PARTY SUPPLIERS AND LICENSORS BE LIABLE FOR ANY COSTS OF SUBSTITUTE PRODUCTS OR SERVICES, OR FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, OR LOSS OF BUSINESS INFORMATION) ARISING OUT OF THIS EULA OR THE USE OF OR INABILITY TO USE THE SOFTWARE PRODUCT OR THE FAILURE TO PROVIDE SUPPORT SERVICES, EVEN IF mediaANT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN ANY CASE, mediaANT'S, AND ITS THIRD PARTY SUPPLIERS' AND LICENSORS', ENTIRE LIABILITY ARISING OUT OF THIS EULA SHALL BE LIMITED TO THE LESSER OF THE AMOUNT ACTUALLY PAID BY YOU FOR THE SOFTWARE PRODUCT OR THE PRODUCT LIST PRICE; PROVIDED, HOWEVER, THAT IF YOU HAVE ENTERED INTO A mediaANT SUPPORT SERVICES AGREEMENT, mediaANT'S ENTIRE LIABILITY REGARDING SUPPORT SERVICES SHALL BE GOVERNED BY THE TERMS OF THAT AGREEMENT.
+
+11. HIGH RISK ACTIVITIES
+The Software Product is not fault-tolerant and is not designed, manufactured or intended for use or resale as on-line control equipment in hazardous environments requiring fail-safe performance, such as in the operation of nuclear facilities, aircraft navigation or communication systems, air traffic control, direct life support machines, or weapons systems, in which the failure of the Software Product, or any software, tool, process, or service that was developed using the Software Product, could lead directly to death, personal injury, or severe physical or environmental damage ("High Risk Activities").  Accordingly, mediaANT and its suppliers and licensors specifically disclaim any express or implied warranty of fitness for High Risk Activities. You agree that mediaANT and its suppliers and licensors will not be liable for any claims or damages arising from the use of the Software Product, or any software, tool, process, or service that was developed using the Software Product, in such applications.
+
+12. GOVERNING LAW; ENTIRE AGREEMENT; DISPUTE RESOLUTION
+This EULA is governed by the laws of Germany, excluding the application of any conflict of law rules. The United Nations Convention on Contracts for the International Sale of Goods shall not apply.
+This EULA is the entire agreement between mediaANT and you, and supersedes any other communications or advertising with respect to the Software Product. This EULA may be modified only by written agreement signed by authorized representatives of you and mediaANT.
+Unless otherwise agreed in writing, all disputes relating to this EULA (except any dispute relating to intellectual property rights) shall be subject to final and binding arbitration in the State of Maryland, in accordance with the Licensing Agreement Arbitration Rules of the American Arbitration Association, with the losing party paying all costs of arbitration. Arbitration must be by a member of the American arbitration Association. If any dispute arises under this EULA, the prevailing party shall be reimbursed by the other party for any and all legal fees and costs associated therewith.
+
+13. GENERAL
+If any provision of this EULA is held invalid, the remainder of this EULA shall continue in full force and effect.
+A waiver by either party of any term or condition of this EULA or any breach thereof, in any one instance, shall not waive such term or condition or any subsequent breach thereof.
+
+14. CONTACT INFORMATION
+If you have any questions about this EULA, or if you want to contact mediaANT for any reason, please direct all correspondence to:
+mediaANT@email.de

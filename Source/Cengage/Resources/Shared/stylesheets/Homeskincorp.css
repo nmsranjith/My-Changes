@@ -1,0 +1,182 @@
+#TextSearchFooter{height:100% !important;width:715px !important;}
+.backgrdimage 
+   {
+        background-image: url('./Portals/0/Images/av_search.png');
+        background-repeat: no-repeat;
+		float: left;
+		height: 20px;
+		width: 30px;
+		padding-bottom: 18px;
+		background-position: 14px 10px;
+    }
+    .backgrdimageopen
+    {
+        background-image: url('./Portals/0/Images/av_search_sel.png');
+        background-repeat: no-repeat;
+		float: left;
+		height: 20px;
+		width: 30px;
+		padding-bottom: 18px;
+		background-position: 14px 10px;
+    }
+    .k-widget .k-window
+    {
+        margin-top: 10%;
+        background: transparent;
+    }
+    .k-window
+    {
+        box-shadow: none;
+        background: transparent;
+    }
+    .k-window div.k-window-content
+    {
+        overflow: hidden;
+        background: transparent;
+    }
+    div.k-window
+    {
+        border: 0px solid white;
+    }
+    .k-widget .k-window
+    {
+        margin-top: 10%;
+        background: transparent;
+    }
+    .k-window
+    {
+        box-shadow: none;
+        background: transparent;
+    }
+    .k-window div.k-window-content
+    {
+        overflow: hidden;
+        background: transparent;
+    }
+    div.k-window
+    {
+        border: 0px solid white;
+    }
+    .k-header
+    {
+        background-color: white;
+        border: none;
+    }
+    .k-block > .k-window-titlebar
+    {
+        border-bottom-style: none;
+    }
+    .k-window-titlebar
+    {
+        background: transparent;
+    }
+    #window1
+    {
+        background: transparent;
+    }
+    .k-window-action.k-link
+    {
+        opacity: 1 ;
+        height: 26px;
+        width: 26px ;
+        z-index: 1003;
+        margin-right: -19px;
+        margin-top: 15px;
+        border: none;
+        margin-left: -10px;
+    }
+    .k-window-action.k-link.k-state-hover:hover
+    {
+        background-image: url('./Portals/0/images/close.png') !important;
+        opacity: 1 !important;
+        height: 28px !important;
+        width: 28px !important;
+        z-index: 1003 !important;
+        margin-right: -19px !important;
+        margin-top: 15px;
+        border: none !important;
+        margin-left: -10px;
+        background-color: transparent !important; /* background:transparent !important;*/
+    }
+    .k-window-actions
+    {
+        background: transparent;
+    }
+    .k-i-close
+    {
+        background-image: initial !important;
+    }
+    .k-window-titlebar .k-state-hover
+    {
+        padding: -1px !important;
+    }
+    .k-window-action .k-link
+    {
+        display: block !important;
+        position: fixed !important;
+    }
+    .k-icon .k-i-close
+    {
+        background-image: none !important;
+    }
+     
+     
+    #megaStore .k-widget.k-menu-horizontal>.k-last{border:0;}
+	.util_rhtdiv,#SrchTop{display:none}
+	#logo{display:block;height:auto;margin:0 0 0 0;height:16px;}
+	.bannertitle,.bannersec {padding-top:30px;}
+	.bannersec {top:auto;height:207px;}
+	#masterhead {
+	 background: url('./portals/0/images/bg_middle.png') no-repeat center 12px;
+	}
+	
+	
+   #dnn_dnnBreadcrumb_lblBreadCrumb
+    {
+        font-weight:400;color:#B7AAAA;
+        letter-spacing:1px !important;margin-top:25px;float:left;
+    }    
+    #megaStore .k-widget.k-menu-horizontal > .k-last
+    {
+        border: 0;
+    }
+    .util_rhtdiv, #SrchTop
+    {
+        display: none;
+    }
+    #logo
+    {
+        display: block;
+        height: auto;
+        margin: 0 0 0 0;
+        height: 16px;
+    }
+    .bannertitle, .bannersec
+    {
+        padding-top: 30px;
+    }
+    .bannersec
+    {
+        top: auto;
+        height: 207px;
+    }
+   
+    #dnn_dnnBreadcrumb_lblBreadCrumb
+    {
+        font-weight: 400;
+        color: #B7AAAA;
+        letter-spacing: 1px !important;
+        margin-top: 25px;
+        float: left;
+    }
+
+    #dnn_dnnBreadcrumb_lblBreadCrumb a
+    {
+    color:#B7AAAA;text-decoration:none;
+    }
+	.advSrchbtn_Top
+{
+    width:195px !important;
+    margin-left:15px!important;
+    
+}

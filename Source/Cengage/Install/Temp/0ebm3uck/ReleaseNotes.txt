@@ -1,0 +1,15 @@
+
+Release 2.1
+
+* Slider now only needs to load visible slides in order to initialize which results in much faster loading.
+* New design and position of the configuration fields in "Sidebar Configuration" and "Sidebar Content".
+* New values for setting "Navigation Delay". 
+* Memory optimizations for mobile devices.
+* Amazon Search: New Subcategories for Category "Baby"
+* Amazon Search: New Subcategories for Category "Magazines"
+* Amazon Search: New Subcategories for Category "Kitchen"
+* Amazon Search: New Subcategories for Category "PC Hardware"
+
+
+Release 2.0
+* New features and functionality.

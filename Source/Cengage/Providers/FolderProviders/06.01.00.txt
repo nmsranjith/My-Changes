@@ -1,0 +1,2 @@
+﻿' remove previous .dll
+bin\Providers\DotNetNuke.Professional.CloudFolderProviders.dll

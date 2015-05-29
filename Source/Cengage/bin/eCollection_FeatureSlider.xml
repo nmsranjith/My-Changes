@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eCollection_FeatureSlider</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for eCollection_FeatureSlider
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from eCollection_FeatureSliderModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.eCollection_FeatureSliderModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_FeatureSliderModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_FeatureSlider.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.View.CustomReadingProfile">
+            <summary>
+            CustomReadingProfile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.View.Edit">
+            <summary>
+            Edit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.View.MyWords">
+            <summary>
+            MyWords control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.View.Record">
+            <summary>
+            Record control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.View.Readingsessions">
+            <summary>
+            Readingsessions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from eCollection_FeatureSliderSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.eCollection_FeatureSliderSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_FeatureSliderSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_FeatureSlider.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_FeatureSlider.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_FeatureSlider.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditeCollection_FeatureSlider class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from eCollection_FeatureSliderModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.SlidesCountTxt">
+            <summary>
+            SlidesCountTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.SubmitSlideCount">
+            <summary>
+            SubmitSlideCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.SecondDiv">
+            <summary>
+            SecondDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.SlidesDrpDwn">
+            <summary>
+            SlidesDrpDwn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.Slide_HeaderTxt">
+            <summary>
+            Slide_HeaderTxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.SlideText_MultiLine">
+            <summary>
+            SlideText_MultiLine control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.Slide_FileUpload">
+            <summary>
+            Slide_FileUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.Slide_SaveButton">
+            <summary>
+            Slide_SaveButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_FeatureSlider.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

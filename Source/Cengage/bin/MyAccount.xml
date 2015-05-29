@@ -1,0 +1,3519 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyAccount</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.Ecommerce.MyAccount.MyAccountModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from MyAccountModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.GetApplications(System.Int32)">
+            <summary>
+            Get the list of applications available to logged in user
+            </summary>
+            <param name="TradingPartnerAccountSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.GetApplicationPermissions">
+            <summary>
+            Get the list of available permissions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.GetApplicationRolePermissions(System.Int32)">
+            <summary>
+            Get the permissions available to perticular role
+            </summary>
+            <param name="RoleID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.GetApplicationRolesNotinApplicationItem">
+            <summary>
+            Get applcation role permissions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.GetAddedApplicationRoles">
+            <summary>
+            Get applcation roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.UpDateRolePrevileges(System.String,System.Xml.XmlDocument,System.Int32,System.String)">
+            <summary>
+            Update the permissions added to roles
+            </summary>
+            <param name="userLoginName"></param>
+            <param name="permissionData"></param>
+            <param name="updateFlag"></param>
+            <param name="mailCotent"></param>
+            <returns>No of roles updated</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.GetUsersToAddRole(System.String[],System.String[])">
+            <summary>
+            Get the list of users available to add to role
+            </summary>
+            <param name="appSKArr"></param>
+            <param name="roleSKArr"></param>
+            <returns>List of users</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.ConstructDataTable(System.String[])">
+            <summary>
+            Construct a temporary datatable to send the selected users to update the db
+            </summary>
+            <param name="appSKArr"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.UserLoginName">
+            <summary>
+            UserLoginName
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.TradingPartnerAccountSk">
+            <summary>
+            Get trading partneraccountsk
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.MyAccountModuleBase.LoginUserSk">
+            <summary>
+            Get logged in user sk
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            While coming from step2 if users already added have to show in step1
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.ConfirmButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Loading Users data from file and displaying
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.GetDataTableFromCsv(System.String)">
+            <summary>
+            Loading user data from file and binding
+            </summary>
+            <param name="Path"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.Nextbtn_click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to next step with user data
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.btnCancel_click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.adduserstep1">
+            <summary>
+            adduserstep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.outer">
+            <summary>
+            outer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.btnCancel">
+            <summary>
+            btnCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.txtAttachment">
+            <summary>
+            txtAttachment control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.ConfirmButton">
+            <summary>
+            ConfirmButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.AttachAFile">
+            <summary>
+            AttachAFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.UserDataPanel">
+            <summary>
+            UserDataPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.Div1">
+            <summary>
+            Div1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.txtfirstName1">
+            <summary>
+            txtfirstName1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.Div2">
+            <summary>
+            Div2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.Div3">
+            <summary>
+            Div3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.txtLastName1">
+            <summary>
+            txtLastName1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.Div4">
+            <summary>
+            Div4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.Div5">
+            <summary>
+            Div5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.txtEmail1">
+            <summary>
+            txtEmail1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.bulkUploadPanel">
+            <summary>
+            bulkUploadPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.bulkValueRepeater">
+            <summary>
+            bulkValueRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.btnAddUser">
+            <summary>
+            btnAddUser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.nextbtn">
+            <summary>
+            nextbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.userdatahdncntrl">
+            <summary>
+            userdatahdncntrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep1.errid">
+            <summary>
+            errid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser1.addrolestep2">
+            <summary>
+            addrolestep2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser1.rptpermtouser">
+            <summary>
+            rptpermtouser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser1.nextButton">
+            <summary>
+            nextButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep1.step2divouterper">
+            <summary>
+            step2divouterper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep1.addpermicancel">
+            <summary>
+            addpermicancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep1.permirepeaterper">
+            <summary>
+            permirepeaterper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep1.addbtnper">
+            <summary>
+            addbtnper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep1.StartButton">
+            <summary>
+            StartButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep1.Getpermissionlist(System.Int32,System.Int32)">
+            <summary>
+            Get and Set the Permission List using App SK
+            </summary>
+            <param name="appSK"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.addrolestep1">
+            <summary>
+            addrolestep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.outer">
+            <summary>
+            outer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.Cancel">
+            <summary>
+            Cancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.PermissionRepeater">
+            <summary>
+            PermissionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.RolesNameRepeater">
+            <summary>
+            RolesNameRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.UpdateCheckBox">
+            <summary>
+            UpdateCheckBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.Confirm">
+            <summary>
+            Confirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Load list of roles for logged in user
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.Getpermissionlist">
+            <summary>
+            Get available Permissions of the user
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.GetApplicationrole">
+            <summary>
+            Get available roles of the user
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.CancelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Empty sessions and redirect to lo permissions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.GenerateListToXML(System.Collections.Generic.List{Cengage.Ecommerce.MyAccount.Components.Modal.Permission})">
+            <summary>
+            Generate the xml of users of selected permissions
+            </summary>
+            <param name="userPermissionCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.ConfirmButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Add the selected permissions to the roles selected roles.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep2.UpdateMailBody(System.String)">
+            <summary>
+            Method to generate the email body 
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.txtSrch">
+            <summary>
+            txtSrch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.lnkSearchUser">
+            <summary>
+            lnkSearchUser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.CountBox">
+            <summary>
+            CountBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.CheckboxDivision">
+            <summary>
+            CheckboxDivision control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.selectall">
+            <summary>
+            selectall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.removeacc">
+            <summary>
+            removeacc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.lnkAddToRole">
+            <summary>
+            lnkAddToRole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.lnkcompare">
+            <summary>
+            lnkcompare control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.repeaterdivusers">
+            <summary>
+            repeaterdivusers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.rptusers">
+            <summary>
+            rptusers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.ConfirmButton">
+            <summary>
+            ConfirmButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.QtyCountHiddenField">
+            <summary>
+            QtyCountHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.selectedusers">
+            <summary>
+            selectedusers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.statusfield">
+            <summary>
+            statusfield control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Making Sessions are null and getting User details 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.GetUserdetails">
+            <summary>
+            Getting Account related Users
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.rptusers_Binding(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding Users and then corresponding roles to them in ECOMM Apllication
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.ConfirmButton_Click(System.Object,System.Web.UI.WebControls.CommandEventArgs)">
+            <summary>
+            Remove users from the Account
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.hiddenEditButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to ViewEdit User page with current userid
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.lnkAddToRole_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to addusertorolestep1 page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.SessionOfUser">
+            <summary>
+            keeping the selected users in session to filter in other pages
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.lnkSearchUser_Click(System.Object,System.EventArgs)">
+            <summary>
+            Autosuggestion for users and roles 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Users.lnkcompare_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to compare users page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.GenerateListToXML(System.Collections.Generic.List{Cengage.Ecommerce.MyAccount.Components.Modal.MyAccount})">
+            <summary>
+            This Method will generate list TO XML using LINQ
+            </summary>
+            <param name="staging">Collection of staging</param>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.outeruser">
+            <summary>
+            outeruser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.Addserstep2cancelbtn">
+            <summary>
+            Addserstep2cancelbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.Addusertorole2tab1">
+            <summary>
+            Addusertorole2tab1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.SelectedUserlistrepeater">
+            <summary>
+            SelectedUserlistrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.Applicationamerepeater">
+            <summary>
+            Applicationamerepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.SendEmailNotificationFlag">
+            <summary>
+            SendEmailNotificationFlag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.nextbtnuser">
+            <summary>
+            nextbtnuser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep2.StartButton">
+            <summary>
+            StartButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.GenerateListToXML(System.Collections.Generic.List{Cengage.Ecommerce.MyAccount.Components.Modal.Permission})">
+            <summary>
+            This Method will generate list TO XML using LINQ
+            </summary>
+            <param name="staging">Collection of staging</param>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.step2divouterper2">
+            <summary>
+            step2divouterper2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.per2cancelbtn">
+            <summary>
+            per2cancelbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.permirepeaterper2">
+            <summary>
+            permirepeaterper2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.rolesnamerepeaterstep2">
+            <summary>
+            rolesnamerepeaterstep2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.SendEmailNotificationFlag">
+            <summary>
+            SendEmailNotificationFlag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.nextbtnp2">
+            <summary>
+            nextbtnp2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddPermissionToRoleStep2.confirm">
+            <summary>
+            confirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.PermissionDetails.CancelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to permission home screen and empty all session variables
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.PermissionDetails.cen_um_permission_placeholder">
+            <summary>
+            cen_um_permission_placeholder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.PermissionDetails.cen_um_permission_maindiv">
+            <summary>
+            cen_um_permission_maindiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.PermissionDetails.outer">
+            <summary>
+            outer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.PermissionDetails.AppPermission">
+            <summary>
+            AppPermission control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.PermissionDetails.Roles">
+            <summary>
+            Roles control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.PermissionDetails.Users">
+            <summary>
+            Users control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.Fill(System.Data.IDataReader)">
+            <summary>
+            Assgning data to properties
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.Checked">
+            <summary>
+            Checbox status
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.PermissionStatus">
+            <summary>
+            Permission Status
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.ReadPermission">
+            <summary>
+            Read Permission
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.WritePermission">
+            <summary>
+            Write Permission
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.PermissionLevel">
+            <summary>
+            Permission Level
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.AppItemSK">
+            <summary>
+            Application Item
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.PermissionName">
+            <summary>
+            Name of Permission
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.DescPermission">
+            <summary>
+            Description of permission
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserPermissions.RoleName">
+            <summary>
+            Role name
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditMyAccount class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from MyAccountModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditMyAccount class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.step2divoutercomp">
+            <summary>
+            step2divoutercomp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.comparebackbtn">
+            <summary>
+            comparebackbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.FirstRoleToCompare">
+            <summary>
+            FirstRoleToCompare control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.SecondRoleToCompare">
+            <summary>
+            SecondRoleToCompare control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.BothCan">
+            <summary>
+            BothCan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.comparerep">
+            <summary>
+            comparerep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.FirstRoleNameDiv">
+            <summary>
+            FirstRoleNameDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.FirstRoleName">
+            <summary>
+            FirstRoleName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.FirstRoleRepeater">
+            <summary>
+            FirstRoleRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.SecondRoleNameDiv">
+            <summary>
+            SecondRoleNameDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.SecondRoleName">
+            <summary>
+            SecondRoleName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.SecondRoleRepeater">
+            <summary>
+            SecondRoleRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.MessageID">
+            <summary>
+            MessageID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.CompareRoles.confirm">
+            <summary>
+            confirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.UMHandler">
+            <summary>
+            Summary description for UMHandler
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.MyAccountSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from MyAccountSettingsBase
+            
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.RolePlaceHolder">
+            <summary>
+            RolePlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.RoleOuterDiv">
+            <summary>
+            RoleOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.RoleAndApplicationSearchTextBox">
+            <summary>
+            RoleAndApplicationSearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.RoleSearchImg">
+            <summary>
+            RoleSearchImg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.adduserstorole">
+            <summary>
+            adduserstorole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.compareperm">
+            <summary>
+            compareperm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.Applicationamerepeater">
+            <summary>
+            Applicationamerepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.compareflag">
+            <summary>
+            compareflag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.RoleSKHiddenField">
+            <summary>
+            RoleSKHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.ApplicationSKHiddenField">
+            <summary>
+            ApplicationSKHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.AddRolesHiddenField">
+            <summary>
+            AddRolesHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.SearchInRole">
+            <summary>
+            A boolean variable is used to check the textBox value entered by the user or not
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+             Page Load of MyAccount Screen
+            </summary>
+            <param name="sender">Object as param</param>
+            <param name="e">EventArgs as param</param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Role.ClearSessionAndFields">
+            <summary>
+            This method is to clear the sessions and form fields.
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for MyAccount
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser">
+            <summary>
+            Users Information with roles,permissions and subscriptions
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Div1">
+            <summary>
+            Div1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.userNameHeader">
+            <summary>
+            userNameHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Rolelistrepeater">
+            <summary>
+            Rolelistrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.lnkAddToRole">
+            <summary>
+            lnkAddToRole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.rptApplSubscription">
+            <summary>
+            rptApplSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.rptpermissiontouserrole">
+            <summary>
+            rptpermissiontouserrole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.lnkAddPermisssion">
+            <summary>
+            lnkAddPermisssion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Button2">
+            <summary>
+            Button2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Button3">
+            <summary>
+            Button3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.removebutton">
+            <summary>
+            removebutton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Button4">
+            <summary>
+            Button4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Button5">
+            <summary>
+            Button5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Button6">
+            <summary>
+            Button6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Show Selected user information with roles , permissions and subscriptions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.ViewEditUserInfo(System.Int32)">
+            <summary>
+            Binding user information
+            </summary>
+            <param name="currentEditUserSk"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.rptApplSubscription_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding subscriptions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.Rolelistrepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding Roles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.permissionnamerepeater_OnItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding Permissions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.rptpermissiontouserrole_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            User Permisssions information binding
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.ddlPermaccess_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Permissions Changing
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.lnkAddPermisssion_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to Addpermissiontouser page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.lnkAddToRole_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to addusertorole page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.RemoveCurrentUser_Click(System.Object,System.EventArgs)">
+            <summary>
+            Removing the current selected user
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.ViewEditUser.removebuttonuser_click(System.Object,System.EventArgs)">
+            <summary>
+            Removing the roles of current seleted user
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.adduserstep1">
+            <summary>
+            adduserstep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.outer">
+            <summary>
+            outer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.btnCancel">
+            <summary>
+            btnCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.btnBack">
+            <summary>
+            btnBack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.rptusers">
+            <summary>
+            rptusers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.txtMsgArea">
+            <summary>
+            txtMsgArea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.nextbtn">
+            <summary>
+            nextbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.archcncl">
+            <summary>
+            archcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Showing User Details
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.btnCancel_click(System.Object,System.EventArgs)">
+            <summary>
+            Redirect to User page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.btnBack_click(System.Object,System.EventArgs)">
+            <summary>
+            Redirect to createuserstep1
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.GetUserdetails">
+            <summary>
+            Showing User Data
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.rptusers_OnItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Showing Combination of FirstName and LastName as FullName
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Createuserstep2.nextbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Inviting new users and sending emails to each invitee
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.Getpermissionlist(System.String)">
+            <summary>
+            Get and Set the Permission List using App SK
+            </summary>
+            <param name="appSK"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.GenerateListToXML(System.Collections.Generic.List{Cengage.Ecommerce.MyAccount.Components.Modal.Permission})">
+            <summary>
+            This Method will generate list TO XML using LINQ
+            </summary>
+            <param name="staging">Collection of staging</param>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.addrolestep2">
+            <summary>
+            addrolestep2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.roleNameExistserrid">
+            <summary>
+            roleNameExistserrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.step2divouter">
+            <summary>
+            step2divouter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.createrolecancelbtn">
+            <summary>
+            createrolecancelbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.step1btn">
+            <summary>
+            step1btn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.permirepeater">
+            <summary>
+            permirepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.addbtn">
+            <summary>
+            addbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep2.StartButton">
+            <summary>
+            StartButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep1.adduserstep1">
+            <summary>
+            adduserstep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep1.outeruser">
+            <summary>
+            outeruser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep1.adduser1cancelbut">
+            <summary>
+            adduser1cancelbut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep1.Userlistrepeater">
+            <summary>
+            Userlistrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep1.nextbtnuser">
+            <summary>
+            nextbtnuser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep1.UserSKHiddenField">
+            <summary>
+            UserSKHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.AddUserToRoleStep1.StartButton">
+            <summary>
+            StartButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            destroy all sessions and load permissions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.GetApplicationpermission">
+            <summary>
+            Get Applications
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.GetPermissionName(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Bind application permissions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.Addpermissiontouser(System.Object,System.EventArgs)">
+            <summary>
+            Get selected permissions of applicaiton
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.PermissionSearchbtn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Search the applications after entering text into search textbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.Permission_Click(System.Object,System.EventArgs)">
+            <summary>
+            Give detail view of the user.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.cen_um_permission_placeholder">
+            <summary>
+            cen_um_permission_placeholder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.cen_um_permission_maindiv">
+            <summary>
+            cen_um_permission_maindiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.PermissionSearch">
+            <summary>
+            PermissionSearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.PermissionSearchbtn">
+            <summary>
+            PermissionSearchbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.cen_um_permission_addpermissionstorole">
+            <summary>
+            cen_um_permission_addpermissionstorole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.cen_um_permission_Applicationrepeater">
+            <summary>
+            cen_um_permission_Applicationrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.ApplicationItemIDs">
+            <summary>
+            ApplicationItemIDs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.UserManagement_ViewPermission.ApplicationSK">
+            <summary>
+            ApplicationSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Components.Modal.BulkUpload.Fill(System.Data.IDataReader)">
+            <summary>
+            Assinging data to properties
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.BulkUpload.FirstName">
+            <summary>
+            First Name of User
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.BulkUpload.LastName">
+            <summary>
+            Last Name of User
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.BulkUpload.Email">
+            <summary>
+            Email of User
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.BulkUpload.InvitedBy">
+            <summary>
+            Invited User
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.BulkUpload.InvitedOn">
+            <summary>
+            Invited On date 
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Showing Roles information
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.GetRolesByUser(System.Int32)">
+            <summary>
+            Getting roles of user
+            </summary>
+            <param name="EditUserSk"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.GetRoleslist">
+            <summary>
+            Getting Roles
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.Rolelistrepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding Roles and Permissions of them
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.nextbtnuser_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to next step with roles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.Cancelbtnuser_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to corresponding user page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.permissionnamerepeater_OnItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding priviliges of permissions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.adduserstep1">
+            <summary>
+            adduserstep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.outeruser">
+            <summary>
+            outeruser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.cancelbtnuser">
+            <summary>
+            cancelbtnuser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.confirmDiv">
+            <summary>
+            confirmDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.Rolelistrepeater">
+            <summary>
+            Rolelistrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep1InUser.nextbtnuser1">
+            <summary>
+            nextbtnuser1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.Div1">
+            <summary>
+            Div1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.RoleNameHiddenFiled">
+            <summary>
+            RoleNameHiddenFiled control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.DeleteBtn">
+            <summary>
+            DeleteBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.Backbut">
+            <summary>
+            Backbut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.rolevalue">
+            <summary>
+            rolevalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.roleNameExistserrid">
+            <summary>
+            roleNameExistserrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.RoleNameErrorDiv">
+            <summary>
+            RoleNameErrorDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.ApplicationName">
+            <summary>
+            ApplicationName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.editUserlistrepeater">
+            <summary>
+            editUserlistrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.adduser">
+            <summary>
+            adduser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.Editrepeaterper2">
+            <summary>
+            Editrepeaterper2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.addpermissionbtn">
+            <summary>
+            addpermissionbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.Confirmbut">
+            <summary>
+            Confirmbut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.Cancelbut">
+            <summary>
+            Cancelbut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.PermissioinConfirmBtn">
+            <summary>
+            PermissioinConfirmBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.PermissioinCancelBtn">
+            <summary>
+            PermissioinCancelBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.confirmdelete">
+            <summary>
+            confirmdelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Edit_Role.canceldelete">
+            <summary>
+            canceldelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser2.addrolestep1">
+            <summary>
+            addrolestep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser2.outer">
+            <summary>
+            outer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser2.permirepeater">
+            <summary>
+            permirepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser2.getSelectedUserrepeater">
+            <summary>
+            getSelectedUserrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser2.confirmbtn">
+            <summary>
+            confirmbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddPermissionToUser2.archcncl">
+            <summary>
+            archcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.Div1">
+            <summary>
+            Div1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.user1Span">
+            <summary>
+            user1Span control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.user2Span">
+            <summary>
+            user2Span control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.commonPermissionRepeater">
+            <summary>
+            commonPermissionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.User1Division">
+            <summary>
+            User1Division control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.user1Label">
+            <summary>
+            user1Label control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.User1PermissionRepeater">
+            <summary>
+            User1PermissionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.User2Division">
+            <summary>
+            User2Division control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.user2Label">
+            <summary>
+            user2Label control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.User2PermissionRepeater">
+            <summary>
+            User2PermissionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.matchPermDiv">
+            <summary>
+            matchPermDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.ToSelect">
+            <summary>
+            ToSelect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.FromSelect">
+            <summary>
+            FromSelect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.copyToUser">
+            <summary>
+            copyToUser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.copyFromUser">
+            <summary>
+            copyFromUser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.copyToUserfor">
+            <summary>
+            copyToUserfor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.copyFromUserfor">
+            <summary>
+            copyFromUserfor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.lnkMatch">
+            <summary>
+            lnkMatch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.Compare_Users.archcncl">
+            <summary>
+            archcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.addrolestep1">
+            <summary>
+            addrolestep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.outer">
+            <summary>
+            outer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.cancelcreaterole1">
+            <summary>
+            cancelcreaterole1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.rolevalue">
+            <summary>
+            rolevalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.rolevalueerrid">
+            <summary>
+            rolevalueerrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.RoleNameErrorDiv">
+            <summary>
+            RoleNameErrorDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.chooseapp1">
+            <summary>
+            chooseapp1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.chooseapp1Div">
+            <summary>
+            chooseapp1Div control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.ApplicationErrorDiv">
+            <summary>
+            ApplicationErrorDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Roles.Createrolestep1.nextbtn">
+            <summary>
+            nextbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.GetApplicationrole">
+            <summary>
+            Call database method and bind the repeater with roles available
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.GetRolename(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Get role name of each role
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.permissionstep2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to step 2 if atleast one role is selected by the user
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.CancelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to permission home screen and empty all session variables
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.addrolestep1">
+            <summary>
+            addrolestep1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.outer">
+            <summary>
+            outer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.ApplicationName">
+            <summary>
+            ApplicationName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.permissionstep2">
+            <summary>
+            permissionstep2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Permissions.AddPermissionToRoleStep1.selectedrole">
+            <summary>
+            selectedrole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo">
+            <summary>
+            Users full information controller class
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.instance">
+            <summary>
+            Singleton class creation
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetSearchData(System.Int32,System.Int32)">
+            <summary>
+            Search users and roles as Auto suggestion
+            </summary>
+            <param name="TradingAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetUserData(System.Int32,System.Int32)">
+            <summary>
+            Loading User data of trading active account
+            </summary>
+            <param name="AccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetCurrentUserData(System.Int32,System.String,System.Int32)">
+            <summary>
+            Loading Current user editor data
+            </summary>
+            <param name="AccountSK"></param>
+            <param name="SearchText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetUserRole(System.Int32,System.Int32)">
+            <summary>
+            Loading roles of user
+            </summary>
+            <param name="UserSK"></param>
+            <param name="TradAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.DeactivateTPU(System.Data.DataTable,System.Int32,System.Int32)">
+            <summary>
+            Remove Active Users from Account
+            </summary>
+            <param name="userids"></param>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetRoleNames(System.Int32,System.Int32)">
+            <summary>
+            Loading Roles
+            </summary>
+            <param name="UserSK"></param>
+            <param name="TradAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetRolesByUser(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Loading Roles by user
+            </summary>
+            <param name="LoginUserSk"></param>
+            <param name="TradingPartnerAccountSk"></param>
+            <param name="EditUserSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.ClearAllCaches">
+            <summary>
+            Clearing cache data
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetRoleWisePermission(System.Int32,System.Int32)">
+            <summary>
+            Display the list of permissions available to the current role
+            </summary>
+            <param name="RoleSK"></param>
+            <param name="ApplicationSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetCommonPermissions(System.Int32,System.Int32)">
+            <summary>
+            Laoding Common Permissions
+            </summary>
+            <param name="User1Sk"></param>
+            <param name="User2Sk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetDistictPermissions(System.Int32,System.Int32)">
+            <summary>
+            Loading distinct permissions
+            </summary>
+            <param name="User1Sk"></param>
+            <param name="User2Sk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetDistinctPermissionsOfUser(System.Int32,System.Int32)">
+            <summary>
+            Loading distinct permissions of user
+            </summary>
+            <param name="comp_get_User"></param>
+            <param name="comp_omit_user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetCountPermissionOfUsers(System.Int32)">
+            <summary>
+            Get count of user permissions
+            </summary>
+            <param name="userSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetCountPermissionOfUsers(System.Int32,System.Int32)">
+            <summary>
+            Get count permissions of users
+            </summary>
+            <param name="user1Sk"></param>
+            <param name="user2Sk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetUserApplications(System.Int32)">
+            <summary>
+            Loading User Applications
+            </summary>
+            <param name="intTradAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetApplicationPermissions(System.Int32,System.Int32)">
+            <summary>
+            Get the list of permissions available for the current user
+            </summary>
+            <param name="applicationID"></param>
+            <param name="TradingPartnerAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetApplicationPermissionsExceptEditUser(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Loading Permissions of application except edit user
+            </summary>
+            <param name="applicationID"></param>
+            <param name="intUserSK"></param>
+            <param name="TradingPartnerAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetUserPermisssions(System.Int32,System.Int32)">
+            <summary>
+            Loading User permissions
+            </summary>
+            <param name="intUserSK"></param>
+            <param name="TradingPartnerAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetSelectUserData(System.Int32,System.Int32)">
+            <summary>
+            Loading information of selected user
+            </summary>
+            <param name="TradingPartnerAccount"></param>
+            <param name="EditUserSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetApplicationsByActiveAccount(System.Int32,System.Int32)">
+            <summary>
+            Loading Applications of Active account
+            </summary>
+            <param name="UserSK"></param>
+            <param name="TradAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetSubscriptionsByAccountAndUser(System.Int32,System.Int32)">
+            <summary>
+            Loading Subscriptions of selected user
+            </summary>
+            <param name="UserSK"></param>
+            <param name="TradAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.ChangePermissionToUser(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Changing permissions of one user to another user
+            </summary>
+            <param name="PriviligeAssinged"></param>
+            <param name="PermLvl"></param>
+            <param name="PermName"></param>
+            <param name="UserSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetRoleNamesByUser(System.Int32,System.Int32)">
+            <summary>
+            Loading roles of users
+            </summary>
+            <param name="UserSK"></param>
+            <param name="TradAccountSK"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.GetCurrentUserName(System.Int32)">
+            <summary>
+            Loading current user name
+            </summary>
+            <param name="CurrentEditUserSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.DeactivateRoleFromCurrentEditUser(System.Int32,System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            Remove role from current selected user
+            </summary>
+            <param name="CurrentEditUserSk"></param>
+            <param name="RoleID"></param>
+            <param name="TradingPartnerAccountSk"></param>
+            <param name="ApplicationNameDiv"></param>
+            <param name="LoginUserSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.DeactivateCurrentUserAccount(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Remove Account of Cuurent User
+            </summary>
+            <param name="CurrentEditUserSk"></param>
+            <param name="TradingAccountSK"></param>
+            <param name="LoginUserSk"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.CreateUsers(System.Data.DataTable,System.Int32,System.Int32)">
+            <summary>
+            Creating Users
+            </summary>
+            <param name="DataTable"></param>
+            <param name="LoginUserSK"></param>
+            <param name="EmailNotificationXml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.AddUsersToRoles(System.Int32,System.Int32,System.Xml.XmlDocument,System.Int32,System.Xml.XmlDocument)">
+            <summary>
+            Adding users to roles
+            </summary>
+            <param name="LoginUserSk"></param>
+            <param name="TradingPartnerSk"></param>
+            <param name="RoleXml"></param>
+            <param name="SendEmailFlag"></param>
+            <param name="EmailNotificationDoc"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Controller.UserManagementUserInfo.Instance">
+            <summary>
+            Creation of Instance for each calling
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from MyAccountModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.View.usermgmtlnk_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to user management page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.View.subscriplnk_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to user subscription page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.View.users_lftlknk_Click(System.Object,System.EventArgs)">
+            <summary>
+            Change the labels and bradcrum text to Users
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.View.roles_lftlknk_Click(System.Object,System.EventArgs)">
+            <summary>
+            Change the labels and bradcrum text to Roles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.View.permissions_lftlknk_Click(System.Object,System.EventArgs)">
+            <summary>
+            Change the labels and bradcrum text to Permissions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.PersonalPlaceHolder">
+            <summary>
+            PersonalPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.personalDashboardLinkButton">
+            <summary>
+            personalDashboardLinkButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.userManagementLinkButton">
+            <summary>
+            userManagementLinkButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.subscriptionLinkButton">
+            <summary>
+            subscriptionLinkButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.MainTabNav">
+            <summary>
+            MainTabNav control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.personaltxt">
+            <summary>
+            personaltxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.mowraytxt">
+            <summary>
+            mowraytxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.PersonalSubTabsPlaceHolder">
+            <summary>
+            PersonalSubTabsPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.dashboardlnk">
+            <summary>
+            dashboardlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.usermgmtlnk">
+            <summary>
+            usermgmtlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.subscriplnk">
+            <summary>
+            subscriplnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.breadcrumbtxt">
+            <summary>
+            breadcrumbtxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.users_lftlknk">
+            <summary>
+            users_lftlknk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.roles_lftlknk">
+            <summary>
+            roles_lftlknk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.permissions_lftlknk">
+            <summary>
+            permissions_lftlknk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.LeftLinkHolder">
+            <summary>
+            LeftLinkHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.lnkusrrole">
+            <summary>
+            lnkusrrole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.dashboardplh">
+            <summary>
+            dashboardplh control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.BusinessSubTabsPlaceHolder">
+            <summary>
+            BusinessSubTabsPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.businessDashboardlnk">
+            <summary>
+            businessDashboardlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.businessUsermgmtlnk">
+            <summary>
+            businessUsermgmtlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.businessSubscriplnk">
+            <summary>
+            businessSubscriplnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.breadcrumbtxtBusiness">
+            <summary>
+            breadcrumbtxtBusiness control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.users_lftlknkBusiness">
+            <summary>
+            users_lftlknkBusiness control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.roles_lftlknkBusiness">
+            <summary>
+            roles_lftlknkBusiness control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.permissions_lftlknkBusiness">
+            <summary>
+            permissions_lftlknkBusiness control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.LeftBusinessLinkHolder">
+            <summary>
+            LeftBusinessLinkHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.View.cengageplh">
+            <summary>
+            cengageplh control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.MyAccount.addusercontrol.addusercontrol1">
+            <summary>
+            addusercontrol1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.MyAccount.addusercontrol.txtfirstName">
+            <summary>
+            txtfirstName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.MyAccount.addusercontrol.txtLastName">
+            <summary>
+            txtLastName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.MyAccount.addusercontrol.txtEmail">
+            <summary>
+            txtEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.outeruser">
+            <summary>
+            outeruser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.confirmDiv1">
+            <summary>
+            confirmDiv1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.SelectedUserlistrepeater">
+            <summary>
+            SelectedUserlistrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.rolesnameperrepeater">
+            <summary>
+            rolesnameperrepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.SendEmailNotificationFlag">
+            <summary>
+            SendEmailNotificationFlag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.nextbtnuser">
+            <summary>
+            nextbtnuser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.archcncl">
+            <summary>
+            archcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Showing Selected users and roles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.Getselecteduserlist(System.Int32)">
+            <summary>
+            Binding Single Selected User
+            </summary>
+            <param name="editUser"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.Getselecteduserlist">
+            <summary>
+            Binding Selected Users
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.GetRolename">
+            <summary>
+            Binding Roles
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.SelectedUserlistrepeater_ItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            While binding users, if no user exist, showing information message
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.GetPermissionName(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding permissions of roles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.SelectUsers_Click(System.Object,System.EventArgs)">
+            <summary>
+            Navigate to parent page
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.permissionnamerepeater_OnItemDataBound(System.Object,System.Web.UI.WebControls.RepeaterItemEventArgs)">
+            <summary>
+            Binding specific priviliges of permissions
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.nextbtnuser_Onclick(System.Object,System.EventArgs)">
+            <summary>
+            Adding users to roles and notifying them
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.GenerateListToXML(System.Collections.Generic.List{Cengage.Ecommerce.MyAccount.Components.Modal.EmailNotification})">
+            <summary>
+            Generating information as xml to send notification
+            </summary>
+            <param name="EmailNotification"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.GenerateListToXML(System.Collections.Generic.List{Cengage.Ecommerce.MyAccount.Components.Modal.User})">
+            <summary>
+            Collecting roles assinged to users
+            </summary>
+            <param name="UserRolesCollection"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.DynamicControls.Users.AddUserToRolesStep2InUser.UpdateMailBody(System.String,System.String)">
+            <summary>
+            Mail formation
+            </summary>
+            <param name="RoleName"></param>
+            <param name="UserName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Components.Modal.UserSubscription.Fill(System.Data.IDataReader)">
+            <summary>
+            Getting SubscriptionName for User
+            </summary>
+            <param name="DataReader"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Components.Modal.User.#ctor">
+            <summary>
+            zero parameter constructor class
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Components.Modal.User.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            Parameter Constructor
+            </summary>
+            <param name="userSk"></param>
+            <param name="firstName"></param>
+            <param name="lastName"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Components.Modal.User.Fill(System.Data.IDataReader)">
+            <summary>
+            Assigning data to properties
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.User.UserSK">
+            <summary>
+            UserSk peroperty
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.User.FirstName">
+            <summary>
+            First Name of User
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.User.LastName">
+            <summary>
+            Last Name of User
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.User.FullName">
+            <summary>
+            Full Name of user
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.User.Email">
+            <summary>
+            Email of user
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.User.RoleSk">
+            <summary>
+            Role of user
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.User.Description">
+            <summary>
+            Data information of user
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from MyAccountSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.Fill(System.Data.IDataReader)">
+            <summary>
+            Assigning data to properties
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.RoleName">
+            <summary>
+            Role name 
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.RoleID">
+            <summary>
+            Role ID
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.ApplicationName">
+            <summary>
+            Application Name
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.Checked">
+            <summary>
+            Checkbox Status
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.RoleStatus">
+            <summary>
+            Status of role
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.UserRoleSk">
+            <summary>
+            Userrole
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.ApplicationSK">
+            <summary>
+            Application
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.MyAccount.Components.Modal.UserRole.RoleStatusClass">
+            <summary>
+            Css class for rolestatus
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.MyAccount.Components.Modal.EmailNotification">
+            <summary>
+            Information to send Email notifications to user
+            </summary>
+        </member>
+    </members>
+</doc>

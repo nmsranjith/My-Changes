@@ -1,0 +1,846 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SearchModifed</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.SearchModifed.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.SearchModifed.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SearchModifed.Data.SqlDataProvider.GetComponentResults(Cengage.Ecommerce.SearchModifed.Controls.SearchEngine)">
+            <summary>
+            For Main Search Results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SearchModifed.Data.SqlDataProvider.GetAdvanceKeywordResults(Cengage.Ecommerce.SearchModifed.Controls.SearchEngine)">
+            <summary>
+            For Advance Search Keyword results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.SearchModifed.Data.SqlDataProvider.GetAdvanceIsbnResults(Cengage.Ecommerce.SearchModifed.Controls.SearchEngine)">
+            <summary>
+            For Advance Multi isbns results
+            </summary>
+            <param name="searchEngine"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.SearchModifed.SearchModifedModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SearchModifedModuleBase
+            
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.StudentPagerDiv">
+            <summary>
+            StudentPagerDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.PreviousButton">
+            <summary>
+            PreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.ShowPreviousButton">
+            <summary>
+            ShowPreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.plcPaging">
+            <summary>
+            plcPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.pageNumber">
+            <summary>
+            pageNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.ShowNextLink">
+            <summary>
+            ShowNextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.NextLink">
+            <summary>
+            NextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.CustomPaging.Hdnpagecount">
+            <summary>
+            Hdnpagecount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.SearchModifed.Handlers.SearchrepeareHandler">
+            <summary>
+            Summary description for SearchrepeareHandler
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.SearchModifed.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from SearchModifedSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SearchModifed.SearchModifedSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SearchModifedSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.SearchModifed.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SearchModifed.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.SearchModifed.Edit">
+            <summary>
+            EditSearchModifed class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSearchModifed class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from SearchModifedModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.SearchModifed.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.SearchModifed.Handlers.SearchrFacetHandler">
+            <summary>
+            Summary description for SearchrFacetHandler
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.SearchModifed.Handlers.ListHandler">
+            <summary>
+            Summary description for ListHandler
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.SearchModifed.Handlers.AttributeState">
+            <summary>
+            Summary description for AttributeState
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.SearchModifed.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for SearchModifed
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.SearchModifed.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from SearchModifedModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.SearchModifed.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.SearchModifed.View.words(System.String)">
+            <summary>
+            Matching with only alphabets
+            </summary>
+            <param name="text"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SearchModifed.View.train(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            goruping train of words
+            </summary>
+            <param name="features"></param>
+            <returns>words as funtion delegate</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SearchModifed.View.edits1(System.String)">
+            <summary>
+            All word correction happens here
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SearchModifed.View.known_edits2(System.String)">
+            <summary>
+            after edit the word, it will send current word
+            </summary>
+            <param name="word"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SearchModifed.View.known(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            returns words after cross check with all words
+            </summary>
+            <param name="words"></param>
+            <returns>words as IEnumerable string</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SearchModifed.View.correct(System.String)">
+            <summary>
+            finally returns corrected word
+            </summary>
+            <param name="word"></param>
+            <returns>word as string</returns>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.ProductPlace">
+            <summary>
+            ProductPlace control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.didumeanword">
+            <summary>
+            didumeanword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.msglbl">
+            <summary>
+            msglbl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.MsgDiv">
+            <summary>
+            MsgDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.MainHold">
+            <summary>
+            MainHold control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.LeftmainHeading">
+            <summary>
+            LeftmainHeading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnselectedvalue">
+            <summary>
+            hdnselectedvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnNonOutofStockSelectedValues">
+            <summary>
+            hdnNonOutofStockSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.PrdCount">
+            <summary>
+            PrdCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.PagesCount">
+            <summary>
+            PagesCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.Selectsort">
+            <summary>
+            Selectsort control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.SortOrderHidden">
+            <summary>
+            SortOrderHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.SelectedAttributeList">
+            <summary>
+            SelectedAttributeList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.MainChk">
+            <summary>
+            MainChk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.selqty">
+            <summary>
+            selqty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.addedLabel">
+            <summary>
+            addedLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.addtolstdiv1">
+            <summary>
+            addtolstdiv1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.HeaderAddtoList">
+            <summary>
+            HeaderAddtoList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.UserIDHiddenField">
+            <summary>
+            UserIDHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.QuoteAdded">
+            <summary>
+            QuoteAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.AddtoQuoteDiv">
+            <summary>
+            AddtoQuoteDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.AddtoQuote">
+            <summary>
+            AddtoQuote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnusersk">
+            <summary>
+            hdnusersk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnrole">
+            <summary>
+            hdnrole control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnLoginTPsk">
+            <summary>
+            hdnLoginTPsk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.AddedToCart">
+            <summary>
+            AddedToCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.CartAdd">
+            <summary>
+            CartAdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.rdProducts">
+            <summary>
+            rdProducts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.Custompage">
+            <summary>
+            Custompage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.StoreAttributeNames">
+            <summary>
+            StoreAttributeNames control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.Ok">
+            <summary>
+            Ok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.Spanisbnquote">
+            <summary>
+            Spanisbnquote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.OKQuote">
+            <summary>
+            OKQuote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.OkStock">
+            <summary>
+            OkStock control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.SitemcOk">
+            <summary>
+            SitemcOk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.SitemcOks">
+            <summary>
+            SitemcOks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.Div5">
+            <summary>
+            Div5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.CreateListAnonTextBox">
+            <summary>
+            CreateListAnonTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.messagelabel">
+            <summary>
+            messagelabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.CreateListLoginButton">
+            <summary>
+            CreateListLoginButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.CreateListSignUpButton">
+            <summary>
+            CreateListSignUpButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.txtcreatelistbox">
+            <summary>
+            txtcreatelistbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.CancelCreateListButton">
+            <summary>
+            CancelCreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.CreateListButton">
+            <summary>
+            CreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.txtQuoteName">
+            <summary>
+            txtQuoteName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.txtAccountName">
+            <summary>
+            txtAccountName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnAccountSK">
+            <summary>
+            hdnAccountSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.btnCreate">
+            <summary>
+            btnCreate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnProductDetails">
+            <summary>
+            hdnProductDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnProdCount">
+            <summary>
+            hdnProdCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdnItemCount">
+            <summary>
+            hdnItemCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.Hidpagecnt">
+            <summary>
+            Hidpagecnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.ProductPrice">
+            <summary>
+            ProductPrice control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.SelectedCount">
+            <summary>
+            SelectedCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.PrskHd">
+            <summary>
+            PrskHd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.Noresult">
+            <summary>
+            Noresult control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SearchModifed.View.hdncmsclick">
+            <summary>
+            hdncmsclick control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

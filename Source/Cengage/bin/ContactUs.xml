@@ -1,0 +1,903 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContactUs</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.ContactUs.ContactUsModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ContactUsModuleBase
+            
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from ContactUsSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.ContactUsSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ContactUsSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.ContactUs.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.ContactUs.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.ContactUs.Data.SqlDataProvider.SearchSalesRep(System.String,System.String)">
+            <summary>
+            Search the sales representative.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.Components.Handlers.ContactUsHandler">
+            <summary>
+            Summary description for ContactUsHandler
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditContactUs class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from ContactUsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.ContactUs.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.Edit.BlockTypeDropdown">
+            <summary>
+            BlockTypeDropdown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.Edit.ContactGrid">
+            <summary>
+            ContactGrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.Edit.SaveChangesBtn">
+            <summary>
+            SaveChangesBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from ContactUsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Services">
+            <summary>
+            Services control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.ContactUsRepeater">
+            <summary>
+            ContactUsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.ContactUs">
+            <summary>
+            ContactUs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.ContactUsSearch">
+            <summary>
+            ContactUsSearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.DivFilter">
+            <summary>
+            DivFilter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Label1">
+            <summary>
+            Label1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.RepDiv">
+            <summary>
+            RepDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.For">
+            <summary>
+            For control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SearchRepText">
+            <summary>
+            SearchRepText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Label3">
+            <summary>
+            Label3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Youselected">
+            <summary>
+            Youselected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.DivTechSupport">
+            <summary>
+            DivTechSupport control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblTechSupport">
+            <summary>
+            lblTechSupport control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.spnTechSupport1">
+            <summary>
+            spnTechSupport1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblTechSupEmpty">
+            <summary>
+            lblTechSupEmpty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.spnTechSupportAus">
+            <summary>
+            spnTechSupportAus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.spnTechSupportNwz">
+            <summary>
+            spnTechSupportNwz control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanTSHours">
+            <summary>
+            SpanTSHours control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lbltechSuppAusHours">
+            <summary>
+            lbltechSuppAusHours control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lbltechSuppNwzHours">
+            <summary>
+            lbltechSuppNwzHours control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanTSPhone">
+            <summary>
+            SpanTSPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lbltechSuppAusPhone">
+            <summary>
+            lbltechSuppAusPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lbltechSuppNwzPhone">
+            <summary>
+            lbltechSuppNwzPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanTSFax">
+            <summary>
+            SpanTSFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lbltechSuppAusFax">
+            <summary>
+            lbltechSuppAusFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lbltechSuppNwzFax">
+            <summary>
+            lbltechSuppNwzFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanTSEmail">
+            <summary>
+            SpanTSEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lbltechSuppEmail">
+            <summary>
+            lbltechSuppEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanTS">
+            <summary>
+            SpanTS control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.DivCustomerService">
+            <summary>
+            DivCustomerService control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCustomerService">
+            <summary>
+            lblCustomerService control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCS1">
+            <summary>
+            SpanCS1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCS">
+            <summary>
+            SpanCS control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCustSerEmpty">
+            <summary>
+            lblCustSerEmpty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCSAus">
+            <summary>
+            SpanCSAus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCSNwz">
+            <summary>
+            SpanCSNwz control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCSHours">
+            <summary>
+            SpanCSHours control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCSAusHours">
+            <summary>
+            lblCSAusHours control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCSNwzHours">
+            <summary>
+            lblCSNwzHours control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCSPhone">
+            <summary>
+            SpanCSPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCSAusPhone">
+            <summary>
+            lblCSAusPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCSNwzPhone">
+            <summary>
+            lblCSNwzPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCSFax">
+            <summary>
+            SpanCSFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCSAusFax">
+            <summary>
+            lblCSAusFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCSNwzFax">
+            <summary>
+            lblCSNwzFax control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanCSEmail">
+            <summary>
+            SpanCSEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblCSEmail">
+            <summary>
+            lblCSEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.DivAccounts">
+            <summary>
+            DivAccounts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblAccounts">
+            <summary>
+            lblAccounts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanAccounts1">
+            <summary>
+            SpanAccounts1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanAccountsEmail">
+            <summary>
+            SpanAccountsEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblAccEmail">
+            <summary>
+            lblAccEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.DivPermissions">
+            <summary>
+            DivPermissions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblPermissions">
+            <summary>
+            lblPermissions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanPer1">
+            <summary>
+            SpanPer1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanPerEmail">
+            <summary>
+            SpanPerEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.lblPerEmail">
+            <summary>
+            lblPerEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanPer2">
+            <summary>
+            SpanPer2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SpanPer3">
+            <summary>
+            SpanPer3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SalesRep">
+            <summary>
+            SalesRep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SalesRepUpdatePanel">
+            <summary>
+            SalesRepUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Service">
+            <summary>
+            Service control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.RepName">
+            <summary>
+            RepName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Representative">
+            <summary>
+            Representative control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SearchRepArea">
+            <summary>
+            SearchRepArea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Pri">
+            <summary>
+            Pri control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Sec">
+            <summary>
+            Sec control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SearchSalesRep">
+            <summary>
+            SearchSalesRep control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SearchSalesRepSec">
+            <summary>
+            SearchSalesRepSec control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.RepSearch">
+            <summary>
+            RepSearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.RepResults">
+            <summary>
+            RepResults control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.ResultLabel">
+            <summary>
+            ResultLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.Representatives">
+            <summary>
+            Representatives control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.RepDetailView">
+            <summary>
+            RepDetailView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.updateProgress">
+            <summary>
+            updateProgress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View._Division">
+            <summary>
+            _Division control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.SearchRepDiv">
+            <summary>
+            SearchRepDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContactUs.View.USelected">
+            <summary>
+            USelected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.ContactUs.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContactUs.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for ContactUs
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

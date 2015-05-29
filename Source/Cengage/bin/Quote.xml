@@ -1,0 +1,1072 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Quote</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.Ecommerce.Quote.QuoteModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from QuoteModuleBase
+            
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteRefNo">
+            <summary>
+            QuoteRefNo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteName">
+            <summary>
+            QuoteName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteRefHeader">
+            <summary>
+            QuoteRefHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteExpiry">
+            <summary>
+            QuoteExpiry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteTotalCurrency">
+            <summary>
+            QuoteTotalCurrency control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteTotalCost">
+            <summary>
+            QuoteTotalCost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteShipping">
+            <summary>
+            QuoteShipping control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteGST">
+            <summary>
+            QuoteGST control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.AddToListDropdown">
+            <summary>
+            AddToListDropdown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.LineItemRepeater">
+            <summary>
+            LineItemRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteCurrencyFooter">
+            <summary>
+            QuoteCurrencyFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteTotalFooter">
+            <summary>
+            QuoteTotalFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteShippingFooter">
+            <summary>
+            QuoteShippingFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteGSTFooter">
+            <summary>
+            QuoteGSTFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.archok">
+            <summary>
+            archok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.archcncl">
+            <summary>
+            archcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.QuoteSKHidden">
+            <summary>
+            QuoteSKHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.ActionValue">
+            <summary>
+            ActionValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.Action">
+            <summary>
+            Action control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.LoggedUserSK">
+            <summary>
+            LoggedUserSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.MessageValue">
+            <summary>
+            MessageValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.Status">
+            <summary>
+            Status control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.ActionButton">
+            <summary>
+            ActionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.hiddensearch">
+            <summary>
+            hiddensearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.txtcreatelistbox">
+            <summary>
+            txtcreatelistbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.CancelCreateListButton">
+            <summary>
+            CancelCreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.quote.CreateListButton">
+            <summary>
+            CreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.Quote.Data.SqlDataProvider.GetQuoteItems(System.String)">
+            <summary>
+            Gets datail about list associated to the user
+            </summary>
+            <param name="visitorsk">visitr id as string</param>
+            <returns></returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditQuote class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from QuoteModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditQuote class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.Quote.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.Cust_quote.placeholder1">
+            <summary>
+            placeholder1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteRefNo">
+            <summary>
+            QuoteRefNo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteNameEdit">
+            <summary>
+            QuoteNameEdit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteName">
+            <summary>
+            QuoteName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteRefHeader">
+            <summary>
+            QuoteRefHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteExpiry">
+            <summary>
+            QuoteExpiry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteTotalCurrency">
+            <summary>
+            QuoteTotalCurrency control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteTotalCost">
+            <summary>
+            QuoteTotalCost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteShipping">
+            <summary>
+            QuoteShipping control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteGST">
+            <summary>
+            QuoteGST control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.searchtxt">
+            <summary>
+            searchtxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.SearchIcon">
+            <summary>
+            SearchIcon control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.CloseIcon">
+            <summary>
+            CloseIcon control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.AddShip">
+            <summary>
+            AddShip control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.FreeShipping">
+            <summary>
+            FreeShipping control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.ShippingCost">
+            <summary>
+            ShippingCost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.HeaderDiscountDiv">
+            <summary>
+            HeaderDiscountDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.HeaderDiscountLabel">
+            <summary>
+            HeaderDiscountLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.DiscountDownHeader">
+            <summary>
+            DiscountDownHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.AddToListDropdown">
+            <summary>
+            AddToListDropdown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.LineItemRepeater">
+            <summary>
+            LineItemRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteCurrencyFooter">
+            <summary>
+            QuoteCurrencyFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteTotalFooter">
+            <summary>
+            QuoteTotalFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteShippingFooter">
+            <summary>
+            QuoteShippingFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteGSTFooter">
+            <summary>
+            QuoteGSTFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.AccountName">
+            <summary>
+            AccountName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.AccountNumber">
+            <summary>
+            AccountNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.DuplicateAccountNumber">
+            <summary>
+            DuplicateAccountNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteStatus">
+            <summary>
+            QuoteStatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteNameSelected">
+            <summary>
+            QuoteNameSelected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.ActionEvent">
+            <summary>
+            ActionEvent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.ActionValue">
+            <summary>
+            ActionValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.MessageValue">
+            <summary>
+            MessageValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteSKValue">
+            <summary>
+            QuoteSKValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.QuoteGSTSK">
+            <summary>
+            QuoteGSTSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.IsFreeShipping">
+            <summary>
+            IsFreeShipping control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.ShippingValue">
+            <summary>
+            ShippingValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.HeaderRRP">
+            <summary>
+            HeaderRRP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.HeaderDiscType">
+            <summary>
+            HeaderDiscType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.HeaderDiscValue">
+            <summary>
+            HeaderDiscValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.TradingPartnerSK">
+            <summary>
+            TradingPartnerSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.DuplicateTradingPartnerSK">
+            <summary>
+            DuplicateTradingPartnerSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.LoggedUserSK">
+            <summary>
+            LoggedUserSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.ActionButton">
+            <summary>
+            ActionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.hiddensearch">
+            <summary>
+            hiddensearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.prntokbtn">
+            <summary>
+            prntokbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.prntcnclbtn">
+            <summary>
+            prntcnclbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.Button2">
+            <summary>
+            Button2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.failcnclbtn">
+            <summary>
+            failcnclbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.failokbtn">
+            <summary>
+            failokbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.txtcreatelistbox">
+            <summary>
+            txtcreatelistbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.CancelCreateListButton">
+            <summary>
+            CancelCreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.CreateListButton">
+            <summary>
+            CreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.SearchToggleImage">
+            <summary>
+            SearchToggleImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.Panel1">
+            <summary>
+            Panel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.Literal1">
+            <summary>
+            Literal1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.cncldup">
+            <summary>
+            cncldup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.okdup">
+            <summary>
+            okdup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.sendcncl">
+            <summary>
+            sendcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.sendok">
+            <summary>
+            sendok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.archcncl">
+            <summary>
+            archcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.archok">
+            <summary>
+            archok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.DeletePopupText">
+            <summary>
+            DeletePopupText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.Popcancel">
+            <summary>
+            Popcancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.PopDelete">
+            <summary>
+            PopDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.revcncl">
+            <summary>
+            revcncl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.cen_quote.revok">
+            <summary>
+            revok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from QuoteSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.QuoteSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from QuoteSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Quote.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.Quote.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from QuoteModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.Quote.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.Quote.View.placeholder1">
+            <summary>
+            placeholder1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for Quote
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Quote.Handlers.QuoteHandler">
+            <summary>
+            Summary description for QuoteHandler
+            </summary>
+        </member>
+    </members>
+</doc>

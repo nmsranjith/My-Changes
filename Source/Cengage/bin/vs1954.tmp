@@ -1,0 +1,1783 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CheckOut</name>
+    </assembly>
+    <members>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayAccept.Head1">
+            <summary>
+            Head1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayAccept.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayAccept.successMesgDiv">
+            <summary>
+            successMesgDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayAccept.OrderNumber">
+            <summary>
+            OrderNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayAccept.errorMesgDiv">
+            <summary>
+            errorMesgDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayAccept.lblerrorcode">
+            <summary>
+            lblerrorcode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayAccept.lblerrorres">
+            <summary>
+            lblerrorres control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.CheckOutModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from CheckOutModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.CheckOut.CheckOutModuleBase.UpdateMailBody(System.String,System.String)">
+            <summary>
+            Generate the email template body
+            </summary>
+            <param name="registrationParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from CheckOutSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.CheckOutSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from CheckOutSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.CheckOut.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CheckOut.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.Div11">
+            <summary>
+            Div11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.emailSignIn">
+            <summary>
+            emailSignIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.phoneSignIn">
+            <summary>
+            phoneSignIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.nonrepDrpdwn">
+            <summary>
+            nonrepDrpdwn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.deliveryinfodiv">
+            <summary>
+            deliveryinfodiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.ddlcountry1">
+            <summary>
+            ddlcountry1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.addrAccountName">
+            <summary>
+            addrAccountName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.addrline1">
+            <summary>
+            addrline1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.addrline2">
+            <summary>
+            addrline2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.attention">
+            <summary>
+            attention control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.shippingNote">
+            <summary>
+            shippingNote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.Select1">
+            <summary>
+            Select1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.payaccount">
+            <summary>
+            payaccount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.divproductgrid">
+            <summary>
+            divproductgrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.dlproducts">
+            <summary>
+            dlproducts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.divsubscriptiongrid">
+            <summary>
+            divsubscriptiongrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.dlsubscriptions">
+            <summary>
+            dlsubscriptions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.lblshippingcost">
+            <summary>
+            lblshippingcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.lbltotalamt">
+            <summary>
+            lbltotalamt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.lblgst">
+            <summary>
+            lblgst control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.divbuynow">
+            <summary>
+            divbuynow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.btnBuyNow">
+            <summary>
+            btnBuyNow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.divsubmit">
+            <summary>
+            divsubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.Submit1">
+            <summary>
+            Submit1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.PostCode">
+            <summary>
+            PostCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.Emailcollection">
+            <summary>
+            Emailcollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.AccountNumberHiddenField">
+            <summary>
+            AccountNumberHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SalesRep_Account.SecurePayIframe">
+            <summary>
+            SecurePayIframe control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.AnonymousUserDiv">
+            <summary>
+            AnonymousUserDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.firstName">
+            <summary>
+            firstName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.lastName">
+            <summary>
+            lastName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.email">
+            <summary>
+            email control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.phone">
+            <summary>
+            phone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.divcreateacc">
+            <summary>
+            divcreateacc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.UserTypecheckbox">
+            <summary>
+            UserTypecheckbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.Div9">
+            <summary>
+            Div9 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.Div10">
+            <summary>
+            Div10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.password">
+            <summary>
+            password control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.fakepassword">
+            <summary>
+            fakepassword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.SecurityQuestion">
+            <summary>
+            SecurityQuestion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.question">
+            <summary>
+            question control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.answer">
+            <summary>
+            answer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.deliveryinfodiv">
+            <summary>
+            deliveryinfodiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.address">
+            <summary>
+            address control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.address1">
+            <summary>
+            address1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.suburb">
+            <summary>
+            suburb control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.postcode">
+            <summary>
+            postcode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.ddlcountry1">
+            <summary>
+            ddlcountry1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.HhdnUserType">
+            <summary>
+            HhdnUserType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.divproductgrid">
+            <summary>
+            divproductgrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.dlproducts">
+            <summary>
+            dlproducts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.divsubscriptiongrid">
+            <summary>
+            divsubscriptiongrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.dlsubscriptions">
+            <summary>
+            dlsubscriptions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.lblshippingcost">
+            <summary>
+            lblshippingcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.lbltotalamt">
+            <summary>
+            lbltotalamt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.lblgst">
+            <summary>
+            lblgst control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.divbuynow">
+            <summary>
+            divbuynow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.btnBuyNow">
+            <summary>
+            btnBuyNow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.divsubmit">
+            <summary>
+            divsubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.Submit">
+            <summary>
+            Submit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.AnonymousUser.SecurePayIframe">
+            <summary>
+            SecurePayIframe control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.Div11">
+            <summary>
+            Div11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.emailSignIn">
+            <summary>
+            emailSignIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.phoneSignIn">
+            <summary>
+            phoneSignIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.accountInfo">
+            <summary>
+            accountInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.nonrepDrpdwn">
+            <summary>
+            nonrepDrpdwn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.Select2">
+            <summary>
+            Select2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.deliveryinfodiv">
+            <summary>
+            deliveryinfodiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.address">
+            <summary>
+            address control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.address1">
+            <summary>
+            address1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.suburb">
+            <summary>
+            suburb control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.postcode">
+            <summary>
+            postcode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.DivstateTerritory">
+            <summary>
+            DivstateTerritory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.ddlcountry1">
+            <summary>
+            ddlcountry1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.StateDiv">
+            <summary>
+            StateDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.HhdPreferedFlag">
+            <summary>
+            HhdPreferedFlag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.divproductgrid">
+            <summary>
+            divproductgrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.dlproducts">
+            <summary>
+            dlproducts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.divsubscriptiongrid">
+            <summary>
+            divsubscriptiongrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.dlsubscriptions">
+            <summary>
+            dlsubscriptions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.lblshippingcost">
+            <summary>
+            lblshippingcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.lbltotalamt">
+            <summary>
+            lbltotalamt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.lblgst">
+            <summary>
+            lblgst control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.divbuynow">
+            <summary>
+            divbuynow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.btnBuyNow">
+            <summary>
+            btnBuyNow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.divsubmit">
+            <summary>
+            divsubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.Submit1">
+            <summary>
+            Submit1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_B2C.SecurePayIframe">
+            <summary>
+            SecurePayIframe control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.Div11">
+            <summary>
+            Div11 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.emailSignIn">
+            <summary>
+            emailSignIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.phoneSignIn">
+            <summary>
+            phoneSignIn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.nonrepDrpdwn">
+            <summary>
+            nonrepDrpdwn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.Select2">
+            <summary>
+            Select2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.deliveryinfodiv">
+            <summary>
+            deliveryinfodiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.ddlcountry1">
+            <summary>
+            ddlcountry1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.addrAccountName">
+            <summary>
+            addrAccountName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.addrline1">
+            <summary>
+            addrline1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.addrline2">
+            <summary>
+            addrline2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.attention">
+            <summary>
+            attention control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.shippingNote">
+            <summary>
+            shippingNote control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.Select1">
+            <summary>
+            Select1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.payaccount">
+            <summary>
+            payaccount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.divproductgrid">
+            <summary>
+            divproductgrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.dlproducts">
+            <summary>
+            dlproducts control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.divsubscriptiongrid">
+            <summary>
+            divsubscriptiongrid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.dlsubscriptions">
+            <summary>
+            dlsubscriptions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.lblshippingcost">
+            <summary>
+            lblshippingcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.lbltotalamt">
+            <summary>
+            lbltotalamt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.lblgst">
+            <summary>
+            lblgst control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.divbuynow">
+            <summary>
+            divbuynow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.btnBuyNow">
+            <summary>
+            btnBuyNow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.divsubmit">
+            <summary>
+            divsubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.Submit">
+            <summary>
+            Submit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.Emailcollection">
+            <summary>
+            Emailcollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.SignedIn_Account.SecurePayIframe">
+            <summary>
+            SecurePayIframe control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditCheckOut class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from CheckOutModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditCheckOut class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.CheckOut.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for CheckOut
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.creditcardpanel">
+            <summary>
+            creditcardpanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.ïmgbtn">
+            <summary>
+            ïmgbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.Image1">
+            <summary>
+            Image1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.Image2">
+            <summary>
+            Image2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_MERCHANT">
+            <summary>
+            set_EPS_MERCHANT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_TXNTYPE">
+            <summary>
+            set_EPS_TXNTYPE control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_REFERENCEID">
+            <summary>
+            set_EPS_REFERENCEID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_AMOUNT">
+            <summary>
+            set_EPS_AMOUNT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_RESULTURL">
+            <summary>
+            set_EPS_RESULTURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_TIMESTAMP">
+            <summary>
+            set_EPS_TIMESTAMP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_FINGERPRINT">
+            <summary>
+            set_EPS_FINGERPRINT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.set_EPS_IP">
+            <summary>
+            set_EPS_IP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.EPS_CARDNUMBER">
+            <summary>
+            EPS_CARDNUMBER control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.Image3">
+            <summary>
+            Image3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.EPS_CARDNAME">
+            <summary>
+            EPS_CARDNAME control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.EPS_EXPIRYMONTH">
+            <summary>
+            EPS_EXPIRYMONTH control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.EPS_EXPIRYYEAR">
+            <summary>
+            EPS_EXPIRYYEAR control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.EPS_CCV">
+            <summary>
+            EPS_CCV control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.Image4">
+            <summary>
+            Image4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.lbltotalamt">
+            <summary>
+            lbltotalamt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.Button2">
+            <summary>
+            Button2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.Submit1">
+            <summary>
+            Submit1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.progresspanel">
+            <summary>
+            progresspanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.Views.SecurePayPost.Image5">
+            <summary>
+            Image5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from CheckOutModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.divUserIdLabel">
+            <summary>
+            divUserIdLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.divUserId">
+            <summary>
+            divUserId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.divLogin">
+            <summary>
+            divLogin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.divLogintext">
+            <summary>
+            divLogintext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.divLogout">
+            <summary>
+            divLogout control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.divImgAlert">
+            <summary>
+            divImgAlert control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.divLogouttext">
+            <summary>
+            divLogouttext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.innerAccountDiv">
+            <summary>
+            innerAccountDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.creditcardpanel">
+            <summary>
+            creditcardpanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_MERCHANT">
+            <summary>
+            set_EPS_MERCHANT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_TXNTYPE">
+            <summary>
+            set_EPS_TXNTYPE control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_REFERENCEID">
+            <summary>
+            set_EPS_REFERENCEID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_AMOUNT">
+            <summary>
+            set_EPS_AMOUNT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_TIMESTAMP">
+            <summary>
+            set_EPS_TIMESTAMP control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_FINGERPRINT">
+            <summary>
+            set_EPS_FINGERPRINT control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_CARDNUMBER">
+            <summary>
+            set_EPS_CARDNUMBER control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_CARDNAME">
+            <summary>
+            set_EPS_CARDNAME control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_EXPIRYMONTH">
+            <summary>
+            set_EPS_EXPIRYMONTH control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_EXPIRYYEAR">
+            <summary>
+            set_EPS_EXPIRYYEAR control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.set_EPS_CCV">
+            <summary>
+            set_EPS_CCV control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.lbltotalamt">
+            <summary>
+            lbltotalamt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.Button2">
+            <summary>
+            Button2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.submit1">
+            <summary>
+            submit1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.progresspanel">
+            <summary>
+            progresspanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.successMesgDiv">
+            <summary>
+            successMesgDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.OrderNumber">
+            <summary>
+            OrderNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.errorMesgDiv">
+            <summary>
+            errorMesgDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.lblerrorcode">
+            <summary>
+            lblerrorcode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.lblerrorres">
+            <summary>
+            lblerrorres control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.SecurePayPost">
+            <summary>
+            SecurePayPost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CheckOut.View.SecurePayIframe">
+            <summary>
+            SecurePayIframe control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.CheckOut.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CheckOut.CheckOutHandler">
+            <summary>
+            Summary description for CheckOutHandler
+            </summary>
+        </member>
+    </members>
+</doc>

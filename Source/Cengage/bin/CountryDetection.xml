@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CountryDetection</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.Ecommerce.CountryDetection.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for CountryDetection
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.Edit">
+            <summary>
+            EditCountryDetection class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditCountryDetection class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from CountryDetectionModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.CountryDetectionModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from CountryDetectionModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Data.DataProvider.GetCountries">
+            <summary>
+            Get the list of countries available
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Data.DataProvider.GetCountryRestrictions(System.String)">
+            <summary>
+            Get the shipping restrictions and other details of the user based on country
+            </summary>
+            <param name="countryCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Data.DataProvider.CheckIPAvailability">
+            <summary>
+            Check the availability of IPAddress
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.CountryDetectionSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from CountryDetectionSettingsBase
+            
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.Components.Controllers.CountryController">
+            <summary>
+            The Controller class for CountryDetection
+            
+            The CountryController class is defined as the BusinessController
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Components.Controllers.CountryController.GetCountries">
+            <summary>
+            Method to get List Of Countries
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Components.Controllers.CountryController.GetCountryRestrictions(System.String)">
+            <summary>
+            Method to get Country Restrictions
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Components.Controllers.CountryController.CheckIPAvailability">
+            <summary>
+            Check the availability of IPAddress
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Components.Common.CountriesList.Fill(System.Data.IDataReader)">
+            <summary>
+            Get data from database and fill the CBO object
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from CountryDetectionSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from CountryDetectionModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.AusPacificStore">
+            <summary>
+            AusPacificStore control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.HeadCountryLabel">
+            <summary>
+            HeadCountryLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.InternationalStore">
+            <summary>
+            InternationalStore control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.AuDiv">
+            <summary>
+            AuDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.AustralianCountry">
+            <summary>
+            AustralianCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.Country">
+            <summary>
+            Country control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.IntCountry">
+            <summary>
+            IntCountry control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.IntCntryLabel">
+            <summary>
+            IntCntryLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ShippingLocalDiv">
+            <summary>
+            ShippingLocalDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.LocalStoreMessage1">
+            <summary>
+            LocalStoreMessage1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.CatalogueCurrencyLabel">
+            <summary>
+            CatalogueCurrencyLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.GstApplicableSpan">
+            <summary>
+            GstApplicableSpan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.LocalStoreMessage2">
+            <summary>
+            LocalStoreMessage2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.CatalogCountryLabel">
+            <summary>
+            CatalogCountryLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ShippingPacificDiv">
+            <summary>
+            ShippingPacificDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.PacificStoreMessage1">
+            <summary>
+            PacificStoreMessage1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.PacificStoreMessage2">
+            <summary>
+            PacificStoreMessage2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.PacificStoreMessage3">
+            <summary>
+            PacificStoreMessage3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ShippingLabel">
+            <summary>
+            ShippingLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.PacificStoreMessage4">
+            <summary>
+            PacificStoreMessage4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.PacificCurrencyLabel">
+            <summary>
+            PacificCurrencyLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.PacificGstApplicable">
+            <summary>
+            PacificGstApplicable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ShippingInternationalDiv">
+            <summary>
+            ShippingInternationalDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.InternationalStoreMessage1">
+            <summary>
+            InternationalStoreMessage1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.VisitInternationalButton">
+            <summary>
+            VisitInternationalButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.InternationalStoreMessage2">
+            <summary>
+            InternationalStoreMessage2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.InternationalCurrencyLabel">
+            <summary>
+            InternationalCurrencyLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.InternationalGstApplicable">
+            <summary>
+            InternationalGstApplicable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.browselink">
+            <summary>
+            browselink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ContinueDiv">
+            <summary>
+            ContinueDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.CountinueStoreButton">
+            <summary>
+            CountinueStoreButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.NotinCountryDiv">
+            <summary>
+            NotinCountryDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.NotInCountryButton">
+            <summary>
+            NotInCountryButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ContinueStore">
+            <summary>
+            ContinueStore control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ChangeCountryDropDownList">
+            <summary>
+            ChangeCountryDropDownList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.BackStorebutton">
+            <summary>
+            BackStorebutton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.ChangeLocationButton">
+            <summary>
+            ChangeLocationButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.RedirectUrl">
+            <summary>
+            RedirectUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CountryDetection.View.LocalUrl">
+            <summary>
+            LocalUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.View.LookupCountry">
+            <summary>
+            Get the country code and country name
+            </summary>
+            <returns> visitor object which consists of Country Code, Country Name and IP Address. </returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.View.CountinueStoreButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Redirect to home Page on click of CountinueStoreBtn
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.View.VisitInternationalButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Redirect to home Page on click of VisitInternational
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.View.ChangeLocationButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Redirect to home Page on click of ChangeLocation
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.Components.Common.Constants">
+            <summary>
+            Contains Store procedures names that are using to get data from database
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.CountryDetection.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Data.SqlDataProvider.GetCountries">
+            <summary>
+            Method to get List of Countries.
+            </summary>
+            <returns>Countries Dataset.</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Data.SqlDataProvider.GetCountryRestrictions(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="countryCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CountryDetection.Data.SqlDataProvider.CheckIPAvailability">
+            <summary>
+            Check the availability of IPAddress
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+    </members>
+</doc>

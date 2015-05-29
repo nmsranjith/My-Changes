@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using DotNetNuke.Entities.Content;
+using DotNetNuke.Common.Utilities;
+using System.Data;
+
+public class CengageSearchResult :ContentItem
+{
+    public string Isbn10 { get; set; }
+    public string Isbn13 { get; set; }
+    public string Author { get; set; }
+    public string Title { get; set; }
+    public string AttributeName { get; set; }
+    public string AttributeTypeValue { get; set; }
+    public string ImagePath { get; set; }
+    public int ProductSK { get; set; }
+    public string AppTargetCode { get; set; }
+    public string ProductDescription { get; set; }
+
+    
+    public override void Fill(IDataReader DataReader)
+    {
+        Isbn10 = Null.SetNullString(DataReader["ISBN_10"].ToString());
+        Isbn13 = Null.SetNullString(DataReader["ISBN_13"].ToString());
+        Author = Null.SetNullString(DataReader["PREFERRED_NAME"].ToString());
+        Title = Null.SetNullString(DataReader["TITLE"].ToString());
+       AttributeName = Null.SetNullString(DataReader["ATTRIBUTE_NAME"].ToString());
+       AttributeTypeValue = Null.SetNullString(DataReader["ATTRIBUTE_TYPE_VALUE"].ToString());
+       ImagePath = Null.SetNullString(DataReader["IMAGE_FILE_NAME"].ToString());
+       AppTargetCode = Null.SetNullString(DataReader["APP_TARGET_CODE"].ToString());
+       ProductDescription = Null.SetNullString(DataReader["DESCRIPTION"].ToString());
+       ProductSK = int.Parse(DataReader["PRODUCT_SK"].ToString());
+    }
+}

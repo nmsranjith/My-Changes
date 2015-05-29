@@ -1,0 +1,587 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CengageLogin</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.Ecommerce.CengageLogin.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from CengageLoginSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CengageLogin.CengageLoginSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from CengageLoginSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.CengageLogin.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditCengageLogin class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from CengageLoginModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditCengageLogin class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.InsertADuser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Insertion of AD users into Cenage Users Table
+            </summary>
+            <param name="AdInfo"></param>
+            <returns>returns userid of insertion user as integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.AddRole(System.Int32,Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo,System.String)">
+            <summary>
+            Adding Roles to AD Users
+            </summary>
+            <param name="UserId"></param>
+            <param name="AdInfo"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.AddRoleToSSO(System.Int32,Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Adding Role to SSO Users
+            </summary>
+            <param name="UserId"></param>
+            <param name="SsoInfo"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.InsertSSOuser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Insertion of SSO users into Cenage Users Table
+            </summary>
+            <param name="SsoInfo"></param>
+            <returns>returns userid of insertion user as integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.ValidateEmail(System.String,System.String,System.String)">
+            <summary>
+            Checking The user Email
+            </summary>
+            <param name="eMail"></param>
+            <returns> returns User information as DataTable</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.UpdateADUser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+             Updating AD User information
+            </summary>
+            <param name="Info"></param>
+            <returns>returns updation success[1]/failure[0] as integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.GetSecurityQuestions">
+            <summary>
+            Get Security Questions
+            </summary>
+            <returns>returns list of questions as DataReader</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Controllers.UserInfoController.ValidateCengageUser(System.String)">
+            <summary>
+            Validating Ecommerce User
+            </summary>
+            <param name="UserName"></param>
+            <param name="Password"></param>
+            <returns>returns Application Name as String</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.CengageLogin.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.InsertADuser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Inserting AD User
+            </summary>
+            <param name="adInfoBLL"></param>
+            <returns>UserId as Integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.AddRole(System.Int32,Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo,System.String)">
+            <summary>
+            Adding Roles to AD Users
+            </summary>
+            <param name="intUserId"></param>
+            <param name="adInfoBLL"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.AddRoleToSSO(System.Int32,Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Adding Role to SSO User
+            </summary>
+            <param name="intUserId"></param>
+            <param name="info"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.InsertSSOuser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Insertion of SSO User
+            </summary>
+            <param name="info"></param>
+            <returns>UserId as Integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.ValidateEmail(System.String,System.String,System.String)">
+            <summary>
+            Checking Email of User existing or not
+            </summary>
+            <param name="eMail"></param>
+            <returns> User Information as DataTable </returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.UpdateADUser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+             Updating AD User information
+            </summary>
+            <param name="info"></param>
+            <returns>returns updation success[1]/failure[0] as integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.GetSecurityQuestions">
+            <summary>
+            Get Security Questions
+            </summary>
+            <returns>returns list of questions as DataReader</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.DataProvider.ValidateCengageUser(System.String)">
+            <summary>
+            Validating Ecommerce User
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns>returns Application Name as String</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Common.Helper.CheckWithUMDBPassword(System.String,System.String,System.String)">
+            <summary>
+            Validating AD or SSO Password with UM If Domain is not reachable
+            </summary>
+            <param name="username"></param>
+            <param name="CurrentPassword"></param>
+            <param name="UserValid"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Common.Helper.UpdatePasswordInUM(System.String,System.String,System.String)">
+            <summary>
+            Update the Password if Domain reaches
+            </summary>
+            <param name="UserName"></param>
+            <param name="Password"></param>
+            <param name="CurrentUserInfo"></param>
+            <returns>returns true/false as boolean based on updation success</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Common.Helper.GetADInfo(Cengage.Ecommerce.CengageLogin.Components.Modal.LDAPAuthentication,System.String,System.String,System.String,System.Int32@)">
+            <summary>
+             Get Information of Active Directory Of Cenage Domain
+            </summary>
+            <param name="AdAuth"></param>
+            <param name="UserName"></param>
+            <param name="Password"></param>
+            <param name="Domain"></param>
+            <param name="LoginStatus"></param>
+            <param name="CurrentUserInfo"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Common.Helper.SSOAuthentication(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32@)">
+            <summary>
+            To Authenticate SSO and registering in UM
+            </summary>
+            <param name="UserName"></param>
+            <param name="Password"></param>
+            <param name="ssoService"></param>
+            <param name="SecurityQuestion"></param>
+            <param name="SecurityAnswer"></param>
+            <returns>returns user information as UserInfo</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Modal.UserIdApplicationCollection.Fill(System.Data.IDataReader)">
+            <summary>
+            Dnn Inbulit method to use fill the properties.
+            </summary>
+            <param name="DataReader"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.CengageLogin.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from CengageLoginModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.View.Loginhdn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Authentication of Users(AD/SSO/UM) starts Now..
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.View.UserLogin">
+            <summary>
+            Authenticate and Redirect the users to homePage.
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="loginStatus"></param>
+            <param name="CurrentUserInfo"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.View.UserADandSSOLogin(System.String,System.Int32)">
+            <summary>
+            Authenticate AD and SSO for first time and Redirect the users to homePage.
+            </summary>
+            <param name="CurrentUserInfo"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.View.ResetFields">
+            <summary>
+            To Clear Credentials if any error occurs
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.wrapperLogin">
+            <summary>
+            wrapperLogin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.ErrorWarningMessage">
+            <summary>
+            ErrorWarningMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.UserName">
+            <summary>
+            UserName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.usernameerrorDiv">
+            <summary>
+            usernameerrorDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.EncryptedPassword">
+            <summary>
+            EncryptedPassword control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.Password">
+            <summary>
+            Password control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.pwderrorDiv">
+            <summary>
+            pwderrorDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.btnLoginhdn">
+            <summary>
+            btnLoginhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.securityDialog">
+            <summary>
+            securityDialog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.ddlSecurityQuestions">
+            <summary>
+            ddlSecurityQuestions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.txtOwnSecurityQuestion">
+            <summary>
+            txtOwnSecurityQuestion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.txtSecureAnswer">
+            <summary>
+            txtSecureAnswer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.hiddenSecurityQuestion">
+            <summary>
+            hiddenSecurityQuestion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.hiddenSecurityAnswer">
+            <summary>
+            hiddenSecurityAnswer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.Securityhdn">
+            <summary>
+            Securityhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.EmptyCookie">
+            <summary>
+            EmptyCookie control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.RedirectUrlLogin">
+            <summary>
+            RedirectUrlLogin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.RedirectUrl">
+            <summary>
+            RedirectUrl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.Cancel">
+            <summary>
+            Cancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.CengageLogin.View.Confirm">
+            <summary>
+            Confirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.InsertADuser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Insertion of AD users into Cenage Users Table
+            </summary>
+            <param name="adInfo"></param>
+            <returns>returns userid of insertion user as integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.AddRole(System.Int32,Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo,System.String)">
+            <summary>
+            Adding Roles to AD Users
+            </summary>
+            <param name="UserId"></param>
+            <param name="adInfo"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.AddRoleToSSO(System.Int32,Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Adding Role to SSO Users
+            </summary>
+            <param name="UserId"></param>
+            <param name="ssoInfo"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.InsertSSOuser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)">
+            <summary>
+            Insertion of SSO users into Cenage Users Table
+            </summary>
+            <param name="ssoInfo"></param>
+            <returns>returns userid of insertion user as integer</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.ValidateEmail(System.String,System.String,System.String)">
+            <summary>
+            Checking The user Email
+            </summary>
+            <param name="eMail"></param>
+            <returns> returns User information as DataTable</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.UpdateADUser(Cengage.Ecommerce.CengageLogin.Components.Modal.CengageUserInfo)" -->
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.GetSecurityQuestions">
+            <summary>
+            Get Security Questions
+            </summary>
+            <returns>returns list of questions as DataReader</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Data.SqlDataProvider.ValidateCengageUser(System.String)">
+            <summary>
+            Validating Ecommerce User
+            </summary>
+            <param name="UserName"></param>
+            <param name="Password"></param>
+            <returns>returns Application Name as String</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.CengageLogin.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for CengageLogin
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Modal.LDAPAuthentication.IsUserAuthenticate(System.String,System.String,System.String@)">
+            <summary>
+            Authenticate AD users using LDAP against Windows
+            </summary>
+            <param name="username"></param>
+            <returns> true if Authenticate or else false as boolean</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Modal.LDAPAuthentication.IsActive(System.String,System.String)">
+            <summary>
+            Checking Whether user is active or not.
+            </summary>
+            <param name="Username"></param>
+            <returns>return true, if active or false, if inactive</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.CengageLogin.Components.Modal.LDAPAuthentication.GetADProfileInfo(System.String,System.String,System.String)">
+            <summary>
+            Getting information of AD users
+            </summary>
+            <param name="Domain"></param>
+            <param name="Username"></param>
+            <param name="Password"></param>
+            <returns>returns as HashTable</returns>
+        </member>
+    </members>
+</doc>

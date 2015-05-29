@@ -1,0 +1,488 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ResourceFinderPrimary</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.ResourceFinderPrimaryModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ResourceFinderPrimaryModuleBase
+            
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from ResourceFinderPrimarySettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.ResourceFinderPrimarySettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ResourceFinderPrimarySettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.ResourceFinderPrimary.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.ResourceFinderPrimary.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from ResourceFinderPrimaryModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.LearnigAreaSelectedValues">
+            <summary>
+            LearnigAreaSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.PrimarySeriesSelectedValues">
+            <summary>
+            PrimarySeriesSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.SubjectSelectedValues">
+            <summary>
+            SubjectSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.SecondarySeriesMultiCheckSelectedValues">
+            <summary>
+            SecondarySeriesMultiCheckSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.ProductSelectedValues">
+            <summary>
+            ProductSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.StateSelectedValues">
+            <summary>
+            StateSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.YearSelectedValues">
+            <summary>
+            YearSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.SubSeriesSelectedValues">
+            <summary>
+            SubSeriesSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.SubSubjectSelectedValues">
+            <summary>
+            SubSubjectSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.LevelingTypeSelectedvalues">
+            <summary>
+            LevelingTypeSelectedvalues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.SubLevelTypeSelectedvalues">
+            <summary>
+            SubLevelTypeSelectedvalues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.Learningareavalue">
+            <summary>
+            Learningareavalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.Seriesvalue">
+            <summary>
+            Seriesvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.subseiresvalue">
+            <summary>
+            subseiresvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.studentlevelvalue">
+            <summary>
+            studentlevelvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.subjectvalue">
+            <summary>
+            subjectvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.subsubjectvalue">
+            <summary>
+            subsubjectvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.Secondaryseries">
+            <summary>
+            Secondaryseries control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.producttype">
+            <summary>
+            producttype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.statevalue">
+            <summary>
+            statevalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.yearvalue">
+            <summary>
+            yearvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.LearingArea">
+            <summary>
+            LearingArea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.studentlevelingddl">
+            <summary>
+            studentlevelingddl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.ddlSubLevel">
+            <summary>
+            ddlSubLevel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.PrimarySearchButton">
+            <summary>
+            PrimarySearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.View.ResourcePrimaryImage">
+            <summary>
+            ResourcePrimaryImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.ResourceFinderPrimary.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditResourceFinderPrimary class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from ResourceFinderPrimaryModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.ResourceFinderPrimary.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.PrimarySeries">
+            <summary>
+            PrimarySeries control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.PrimarySeriesSelectedValues">
+            <summary>
+            PrimarySeriesSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.SubSeriesSelectedValues">
+            <summary>
+            SubSeriesSelectedValues control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.PrimarySeriesSelectedItems">
+            <summary>
+            PrimarySeriesSelectedItems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.SubSeriesSelectedItems">
+            <summary>
+            SubSeriesSelectedItems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.SubSeries">
+            <summary>
+            SubSeries control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.FilenameFileUpload">
+            <summary>
+            FilenameFileUpload control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.FilenameHidden">
+            <summary>
+            FilenameHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.UrlTextbox">
+            <summary>
+            UrlTextbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ResourceFinderPrimary.Edit.SaveChangesBtn">
+            <summary>
+            SaveChangesBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.ResourceFinderPrimary.Handlers.ButtonPostBack">
+            <summary>
+            Summary description for ButtonPostBack
+            </summary>
+        </member>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for ResourceFinderPrimary
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ResourceFinderPrimary.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.ResourceFinderPrimary.Handlers.Series">
+            <summary>
+            Summary description for Series
+            </summary>
+        </member>
+    </members>
+</doc>

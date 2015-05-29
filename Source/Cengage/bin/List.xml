@@ -1,0 +1,2016 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>List</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.Ecommerce.List.Edit">
+            <summary>
+            EditList class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditList class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from ListModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.List.ListModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ListModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.pnl">
+            <summary>
+            pnl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdnRoleType">
+            <summary>
+            hdnRoleType control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.divToMyList">
+            <summary>
+            divToMyList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.divsend">
+            <summary>
+            divsend control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.sendbut">
+            <summary>
+            sendbut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdeleteList">
+            <summary>
+            hdeleteList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.delbut">
+            <summary>
+            delbut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hduplicateList">
+            <summary>
+            hduplicateList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.dublicatebut">
+            <summary>
+            dublicatebut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.sharebut">
+            <summary>
+            sharebut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.ListName">
+            <summary>
+            ListName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdnLstName">
+            <summary>
+            hdnLstName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Header">
+            <summary>
+            Header control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Image1">
+            <summary>
+            Image1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.currencyliteralTop">
+            <summary>
+            currencyliteralTop control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.TopShipGst">
+            <summary>
+            TopShipGst control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.RemoveProduct">
+            <summary>
+            RemoveProduct control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.ListHeaderDropdown">
+            <summary>
+            ListHeaderDropdown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.ListProductDataList">
+            <summary>
+            ListProductDataList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.EmptyTemplateDiv">
+            <summary>
+            EmptyTemplateDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdnUserListQuoteSk">
+            <summary>
+            hdnUserListQuoteSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdnListProductSk">
+            <summary>
+            hdnListProductSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdnfromdd">
+            <summary>
+            hdnfromdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Footer">
+            <summary>
+            Footer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.ImageButton1">
+            <summary>
+            ImageButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.currencyliteralbottom">
+            <summary>
+            currencyliteralbottom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.BottomShipGst">
+            <summary>
+            BottomShipGst control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.dlreppopup">
+            <summary>
+            dlreppopup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.sendrepname">
+            <summary>
+            sendrepname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.sendrepemail">
+            <summary>
+            sendrepemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.repsendemail">
+            <summary>
+            repsendemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.sendemail">
+            <summary>
+            sendemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Button4">
+            <summary>
+            Button4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Button8">
+            <summary>
+            Button8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Button10">
+            <summary>
+            Button10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.btndeletecancel">
+            <summary>
+            btndeletecancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.btndelete">
+            <summary>
+            btndelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.btnduplicatecancel">
+            <summary>
+            btnduplicatecancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.btnduplicate">
+            <summary>
+            btnduplicate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.ProductDeleteCancel">
+            <summary>
+            ProductDeleteCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.ProductDeleteConfirm">
+            <summary>
+            ProductDeleteConfirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.txtQuoteName">
+            <summary>
+            txtQuoteName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.txtAccountName">
+            <summary>
+            txtAccountName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.SearchToggleImage">
+            <summary>
+            SearchToggleImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdnAccountSK">
+            <summary>
+            hdnAccountSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Panel1">
+            <summary>
+            Panel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Literal1">
+            <summary>
+            Literal1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.btnCreate">
+            <summary>
+            btnCreate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hdnProductDetails">
+            <summary>
+            hdnProductDetails control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.hiddensearch">
+            <summary>
+            hiddensearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenBusinessAccount">
+            <summary>
+            HiddenBusinessAccount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.searchClickbutton">
+            <summary>
+            searchClickbutton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Text2">
+            <summary>
+            Text2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Text1">
+            <summary>
+            Text1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Lorem">
+            <summary>
+            Lorem control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.ShareURL">
+            <summary>
+            ShareURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Spanisbn">
+            <summary>
+            Spanisbn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Cancel">
+            <summary>
+            Cancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Confirm">
+            <summary>
+            Confirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Ok">
+            <summary>
+            Ok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Div12">
+            <summary>
+            Div12 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.CreateListAnonTextBox">
+            <summary>
+            CreateListAnonTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.messagelabel">
+            <summary>
+            messagelabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.CreateListLoginButton">
+            <summary>
+            CreateListLoginButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.CreateListSignUpButton">
+            <summary>
+            CreateListSignUpButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenUsersk">
+            <summary>
+            HiddenUsersk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Hiddendirectsubmit">
+            <summary>
+            Hiddendirectsubmit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenGsttag">
+            <summary>
+            HiddenGsttag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenShippingCost">
+            <summary>
+            HiddenShippingCost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenUserlistsk">
+            <summary>
+            HiddenUserlistsk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenproductQty">
+            <summary>
+            HiddenproductQty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenRepUserSk">
+            <summary>
+            HiddenRepUserSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenTotalAmount">
+            <summary>
+            HiddenTotalAmount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenrepTotal">
+            <summary>
+            HiddenrepTotal control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Emailcollection">
+            <summary>
+            Emailcollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Hiddensendrepemail">
+            <summary>
+            Hiddensendrepemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddensendrepresEmail">
+            <summary>
+            HiddensendrepresEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.Hiddensendrepname">
+            <summary>
+            Hiddensendrepname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenuserName">
+            <summary>
+            HiddenuserName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.MyLists.HiddenUserEmail">
+            <summary>
+            HiddenUserEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.ListSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ListSettingsBase
+            
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.pnl">
+            <summary>
+            pnl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.sendbut">
+            <summary>
+            sendbut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.UserIDHiddenField">
+            <summary>
+            UserIDHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.sharebut">
+            <summary>
+            sharebut control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.ListName">
+            <summary>
+            ListName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Image1">
+            <summary>
+            Image1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.currencyliteralTop">
+            <summary>
+            currencyliteralTop control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Shippingliteraltop">
+            <summary>
+            Shippingliteraltop control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.IncludeGst_top">
+            <summary>
+            IncludeGst_top control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.ListHeaderDropdown">
+            <summary>
+            ListHeaderDropdown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.AddSelectedtocartButton">
+            <summary>
+            AddSelectedtocartButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.ListProductDataList">
+            <summary>
+            ListProductDataList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.hdnUserListQuoteSk">
+            <summary>
+            hdnUserListQuoteSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.hdnListProductSk">
+            <summary>
+            hdnListProductSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.hdnfromdd">
+            <summary>
+            hdnfromdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.ImageButton1">
+            <summary>
+            ImageButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.currencyliteralbottom">
+            <summary>
+            currencyliteralbottom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Shippingliteralbottom">
+            <summary>
+            Shippingliteralbottom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.IncludeGst_bottom">
+            <summary>
+            IncludeGst_bottom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Button8">
+            <summary>
+            Button8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Button10">
+            <summary>
+            Button10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.btndeletecancel">
+            <summary>
+            btndeletecancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.btndelete">
+            <summary>
+            btndelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.btnduplicatecancel">
+            <summary>
+            btnduplicatecancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.btnduplicate">
+            <summary>
+            btnduplicate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.ProductDeleteCancel">
+            <summary>
+            ProductDeleteCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.ProductDeleteConfirm">
+            <summary>
+            ProductDeleteConfirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.dlreppopup">
+            <summary>
+            dlreppopup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.SendButtonNext">
+            <summary>
+            SendButtonNext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.sendrepemail">
+            <summary>
+            sendrepemail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.LnkbuttonSendStep2">
+            <summary>
+            LnkbuttonSendStep2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Button4">
+            <summary>
+            Button4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Spanisbn">
+            <summary>
+            Spanisbn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Cancel">
+            <summary>
+            Cancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Confirm">
+            <summary>
+            Confirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Ok">
+            <summary>
+            Ok control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Text2">
+            <summary>
+            Text2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Text1">
+            <summary>
+            Text1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.ShareURL">
+            <summary>
+            ShareURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.sharesendbtn">
+            <summary>
+            sharesendbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Button1">
+            <summary>
+            Button1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.HiddenUsersk">
+            <summary>
+            HiddenUsersk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.HiddenShippingCost">
+            <summary>
+            HiddenShippingCost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.HiddenUserlistsk">
+            <summary>
+            HiddenUserlistsk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.HiddenproductQty">
+            <summary>
+            HiddenproductQty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.HiddenRepUserSk">
+            <summary>
+            HiddenRepUserSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.HiddenTotalAmount">
+            <summary>
+            HiddenTotalAmount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ShareList.Emailcollection">
+            <summary>
+            Emailcollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Components.Common.Common.SplitValueToCart(System.String)">
+            <summary>
+            Split the given input and generate cart object
+            </summary>
+            <param name="values">string value</param>
+            <returns>Cart object</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Components.Common.Common.SplitCartToValue(Cengage.eCommerce.Lib.Cart)">
+            <summary>
+             get an value by looking into cart object
+            </summary>
+            <param name="cart">Cart object</param>
+            <returns>string</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.ListHandler">
+            <summary>
+            Summary description for ListHandler
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.Handlers.CheckAndAddItem">
+            <summary>
+            Summary description for CheckAvailablity
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from ListSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.pnl">
+            <summary>
+            pnl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.txtsrch">
+            <summary>
+            txtsrch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.src_srchBtn">
+            <summary>
+            src_srchBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.DelteListbutton">
+            <summary>
+            DelteListbutton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.ListHeaderDataList">
+            <summary>
+            ListHeaderDataList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.EmptyTemplateDiv">
+            <summary>
+            EmptyTemplateDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.hdnUserListQuoteSk">
+            <summary>
+            hdnUserListQuoteSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.hdnListProductSk">
+            <summary>
+            hdnListProductSk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.Button8">
+            <summary>
+            Button8 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.Button10">
+            <summary>
+            Button10 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.btndeletecancel">
+            <summary>
+            btndeletecancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.btndelete">
+            <summary>
+            btndelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.ListHeader.HiddenUsersk">
+            <summary>
+            HiddenUsersk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.List.UserCart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.RemoveSessionCart(System.String,System.String)">
+            <summary>
+            Remove the item from the cart once item moves to Checkut process
+            </summary>
+            <param name="productsk">productsk infrmain</param>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.GetCart(System.Int32)">
+            <summary>
+            gets cart information from session/cookies  
+            </summary>
+            <param name="userid">userid information</param>
+            <returns>Cart object</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.GetCartDetail(Cengage.eCommerce.Lib.Cart)">
+            <summary>
+            Get Details of the product from database and webservice
+            </summary>
+            <param name="cartitems">Cart object</param>
+            <returns>Cart object</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.GetProductInfo(Cengage.eCommerce.Lib.Cart)">
+            <summary>
+            
+            </summary>
+            <param name="cartitems"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.GetProductPrice(Cengage.eCommerce.Lib.CartDetail@)">
+            <summary>
+             get price related information of each product from the service
+            </summary>
+            <param name="visitorsk">visitorSk</param>
+            <param name="cartitems">object of Cart</param>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.AssainToServiceObject(Cengage.eCommerce.Lib.CartDetail)">
+            <summary>
+            Assign values for Product object from ProductList object 
+            </summary>
+            <param name="tradingAccount">visitor trading account as string</param>
+            <param name="cart">list of Product object</param>
+            <returns>list of Product object</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.AssignServiceObjectToCart(System.Collections.Generic.List{Cengage.Ecommerce.CengageServiceLibrary.Product},System.Collections.Generic.List{Cengage.Ecommerce.CengageServiceLibrary.Product},Cengage.eCommerce.Lib.CartDetail)">
+            <summary>
+            Reassign Product object to Product object
+            </summary>
+            <param name="servicelist">list of Product object</param>
+            <param name="cartitems">Cart object</param>
+            <returns>Cart object</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.UserCart.GetSearhResults(System.String,System.String)">
+            <summary>
+            Load all product information
+            </summary>
+            <param name="SearchText"></param>
+            <param name="Division"></param>
+            <param name="AppTarget"></param>
+            <returns>products as list</returns>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartHeaderDiv">
+            <summary>
+            CartHeaderDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartTotalLabel">
+            <summary>
+            CartTotalLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartCurrencyLabel">
+            <summary>
+            CartCurrencyLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartGSTLabel">
+            <summary>
+            CartGSTLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.EligibleShipping">
+            <summary>
+            EligibleShipping control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.checkoutcartImageButton">
+            <summary>
+            checkoutcartImageButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.hiddenallselect">
+            <summary>
+            hiddenallselect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.IsCheckoutHiddenField">
+            <summary>
+            IsCheckoutHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.HiddenShippingCost">
+            <summary>
+            HiddenShippingCost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.hiddenspan">
+            <summary>
+            hiddenspan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.UserIDHiddenField">
+            <summary>
+            UserIDHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.AddToListDropdown">
+            <summary>
+            AddToListDropdown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartRepeter">
+            <summary>
+            CartRepeter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.EmptyTemplateDiv">
+            <summary>
+            EmptyTemplateDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartFooterDiv">
+            <summary>
+            CartFooterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartTotalLabelFooter">
+            <summary>
+            CartTotalLabelFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartCurrnecyLabel2">
+            <summary>
+            CartCurrnecyLabel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CartGSTLabel2">
+            <summary>
+            CartGSTLabel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.hiddensearch">
+            <summary>
+            hiddensearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.searchClickbutton">
+            <summary>
+            searchClickbutton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.checkoutcartImageButtonFooter">
+            <summary>
+            checkoutcartImageButtonFooter control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CreateShoplistInCart">
+            <summary>
+            CreateShoplistInCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.txtcreatelistbox">
+            <summary>
+            txtcreatelistbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CancelCreateListButton">
+            <summary>
+            CancelCreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CreateListButton">
+            <summary>
+            CreateListButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.Div3">
+            <summary>
+            Div3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CreateListAnonTextBox">
+            <summary>
+            CreateListAnonTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.messagelabel">
+            <summary>
+            messagelabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CreateListLoginButton">
+            <summary>
+            CreateListLoginButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.CreateListSignUpButton">
+            <summary>
+            CreateListSignUpButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.ProductDeleteCancel">
+            <summary>
+            ProductDeleteCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.UserCart.ProductDeleteConfirm">
+            <summary>
+            ProductDeleteConfirm control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.Handlers.RemoveCartItemHandler">
+            <summary>
+            Summary description for RemoveCartItemHandler
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from ListModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.dashboardpanel">
+            <summary>
+            dashboardpanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.listBreadgramdiv">
+            <summary>
+            listBreadgramdiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.lblBcLst">
+            <summary>
+            lblBcLst control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.myhidden1">
+            <summary>
+            myhidden1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.page_name">
+            <summary>
+            page_name control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.previous_page">
+            <summary>
+            previous_page control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.quotediv">
+            <summary>
+            quotediv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.creaelistbuttonimg">
+            <summary>
+            creaelistbuttonimg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.Upd1">
+            <summary>
+            Upd1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.PlaceHolderList">
+            <summary>
+            PlaceHolderList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.PlaceHolderCart">
+            <summary>
+            PlaceHolderCart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.List.View.HiddenproductQty">
+            <summary>
+            HiddenproductQty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.List.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Data.SqlDataProvider.GetCartDetail(Cengage.eCommerce.Lib.CartDetail,System.String)">
+            <summary>
+            Gets product information
+            </summary>
+            <param name="cartitem">object of Product</param>
+            <returns>DataSet object</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for List
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Components.Controller.ListController.GetList(System.String,System.Nullable{System.Int32},System.String)">
+            <summary>
+            Gets names of wish list for the user
+            </summary>
+            <param name="visitorsk">userSk </param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Components.Controller.ListController.CheckProductAvailablity(System.Collections.Generic.List{Cengage.eCommerce.Lib.CartDetail},Visitor)">
+            <summary>
+            Will check whether the selected items can mved to cart r not
+            </summary>
+            <param name="product">list of Product object</param>
+            <param name="visitorsk">visitor trading account as string</param>
+            <param name="message">message as string object</param>
+            <returns>list of Product object</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Cengage.Ecommerce.List.Components.Controller.ListController.AssignCurrentList(System.Collections.Generic.List{Cengage.Ecommerce.CengageServiceLibrary.Product},System.Collections.Generic.List{Cengage.eCommerce.Lib.CartDetail})" -->
+        <member name="M:Cengage.Ecommerce.List.Components.Controller.ListController.GetCartItemDetail(Visitor,System.Collections.Generic.List{Cengage.eCommerce.Lib.CartDetail})">
+            <summary>
+            Assign values for Product object from ProductList object 
+            </summary>
+            <param name="tradingAccount">visitor trading account as string</param>
+            <param name="cart">list of Product object</param>
+            <returns>list of Product object</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.List.Components.Controller.ListController.CheckCartItem(System.Collections.Generic.List{Cengage.eCommerce.Lib.CartDetail})">
+            <summary>
+            checkes for list of cartitem is restricted
+            </summary>
+            <param name="currentcart">list of Product object</param>
+            <returns>list of Product object</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.List.Handlers.ListHandler">
+            <summary>
+            Summary description for ListHandler
+            </summary>
+        </member>
+    </members>
+</doc>

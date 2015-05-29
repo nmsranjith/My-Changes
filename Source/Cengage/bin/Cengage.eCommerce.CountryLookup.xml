@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cengage.eCommerce.CountryLookup</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.eCommerce.Modules.CountryDetection.SqlDataProvider">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            SQL Server implementation of the abstract DataProvider class 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="T:Cengage.eCommerce.Modules.CountryDetection.DataProvider">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            An abstract class for the data access layer 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.DataProvider.objProvider">
+            <summary>
+            singleton reference to the instantiated object 
+            </summary>
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.DataProvider.#cctor">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.DataProvider.CreateProvider">
+            <summary>
+            dynamically create provider 
+            </summary>
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.DataProvider.Instance">
+            <summary>
+            return the provider 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Cengage.eCommerce.Modules.CountryDetection.Settings">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            The Settings class manages Module Settings 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.Settings.LoadSettings">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            LoadSettings loads the settings from the Database and displays them 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.Settings.UpdateSettings">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            UpdateSettings saves the modified settings to the Database 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.Settings.lblTemplate">
+            <summary>
+            lblTemplate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.Settings.txtTemplate">
+            <summary>
+            txtTemplate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.eCommerce.Modules.CountryDetection.ViewCountryModule">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            The ViewCountryModule class displays the content 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.ViewCountryModule.GeoIpCsCountryLabel">
+            <summary>
+            GeoIpCsCountryLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.ViewCountryModule.CountryDiv">
+            <summary>
+            CountryDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.ViewCountryModule.CatalogueCurrencyLabel">
+            <summary>
+            CatalogueCurrencyLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.ViewCountryModule.CatalogCountryLabel">
+            <summary>
+            CatalogCountryLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.ViewCountryModule.Page_Load(System.Object,System.EventArgs)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            Page_Load runs when the control is loaded 
+            </summary> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="T:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            The Controller class for CountryModule 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.GetCountryModules(System.Int32)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            gets an object from the database 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="ModuleId">The Id of the module</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.GetCountryModule(System.Int32,System.Int32)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            gets an object from the database 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="ModuleId">The Id of the module</param> 
+            <param name="ItemId">The Id of the item</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.AddCountryModule(Cengage.eCommerce.Modules.CountryDetection.CountryModuleInfo)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            adds an object to the database 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="objCountryModule">The CountryModuleInfo object</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.UpdateCountryModule(Cengage.eCommerce.Modules.CountryDetection.CountryModuleInfo)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            saves an object to the database 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="objCountryModule">The CountryModuleInfo object</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.DeleteCountryModule(System.Int32,System.Int32)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            deletes an object from the database 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="ModuleId">The Id of the module</param> 
+            <param name="ItemId">The Id of the item</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.GetSearchItems(DotNetNuke.Entities.Modules.ModuleInfo)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            GetSearchItems implements the ISearchable Interface 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="ModInfo">The ModuleInfo for the module to be Indexed</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.ExportModule(System.Int32)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            ExportModule implements the IPortable ExportModule Interface 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="ModuleID">The Id of the module to be exported</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.CountryModuleController.ImportModule(System.Int32,System.String,System.String,System.Int32)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            ImportModule implements the IPortable ImportModule Interface 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <param name="ModuleID">The Id of the module to be imported</param> 
+            <param name="Content">The content to be imported</param> 
+            <param name="Version">The version of the module to be imported</param> 
+            <param name="UserId">The Id of the user performing the import</param> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="T:Cengage.eCommerce.Modules.CountryDetection.CountryModuleInfo">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            The Info class for CountryModule 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="T:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            The EditCountryModule class is used to manage content 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.lblContent">
+            <summary>
+            lblContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.txtContent">
+            <summary>
+            txtContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.valContent">
+            <summary>
+            valContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.cmdUpdate">
+            <summary>
+            cmdUpdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.cmdCancel">
+            <summary>
+            cmdCancel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.cmdDelete">
+            <summary>
+            cmdDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.ctlAudit">
+            <summary>
+            ctlAudit control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.Page_Load(System.Object,System.EventArgs)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            Page_Load runs when the control is loaded 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.cmdCancel_Click(System.Object,System.EventArgs)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            cmdCancel_Click runs when the cancel button is clicked 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.cmdUpdate_Click(System.Object,System.EventArgs)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            cmdUpdate_Click runs when the update button is clicked 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+        <member name="M:Cengage.eCommerce.Modules.CountryDetection.EditCountryModule.cmdDelete_Click(System.Object,System.EventArgs)">
+            ----------------------------------------------------------------------------- 
+            <summary> 
+            cmdDelete_Click runs when the delete button is clicked 
+            </summary> 
+            <remarks> 
+            </remarks> 
+            <history> 
+            </history> 
+            ----------------------------------------------------------------------------- 
+        </member>
+    </members>
+</doc>

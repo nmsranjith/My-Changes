@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ContentManagement</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.ContentManagement.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from ContentManagementSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.ContentManagementSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ContentManagementSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.ContentManagement.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.ContentManagement.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditContentManagement class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from ContentManagementModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.ContentManagementModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from ContentManagementModuleBase
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.AttachAFile">
+            <summary>
+            AttachAFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.SizeDropDown">
+            <summary>
+            SizeDropDown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.QuantityDropDown">
+            <summary>
+            QuantityDropDown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.BoxDropDown">
+            <summary>
+            BoxDropDown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.ContentTypeDropDown">
+            <summary>
+            ContentTypeDropDown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.ImagePositionDropDown">
+            <summary>
+            ImagePositionDropDown control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.SiteInfo">
+            <summary>
+            SiteInfo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.AttachFileButton">
+            <summary>
+            AttachFileButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.ImagePreview">
+            <summary>
+            ImagePreview control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.VideoPathName">
+            <summary>
+            VideoPathName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.VideoPrevoiewIFrame">
+            <summary>
+            VideoPrevoiewIFrame control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.EmbedURL">
+            <summary>
+            EmbedURL control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.teRSummary">
+            <summary>
+            teRSummary control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.EditContent">
+            <summary>
+            EditContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.TextAreaFontColor">
+            <summary>
+            TextAreaFontColor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.TextAreaBackGroundColor">
+            <summary>
+            TextAreaBackGroundColor control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.HeadLineTextBox">
+            <summary>
+            HeadLineTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.HeaderText">
+            <summary>
+            HeaderText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.MoreButtonLink">
+            <summary>
+            MoreButtonLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.ImageLink">
+            <summary>
+            ImageLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.CMSContentSK">
+            <summary>
+            CMSContentSK control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.ContentLengthHidden">
+            <summary>
+            ContentLengthHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Edit.UpdateContent">
+            <summary>
+            UpdateContent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.ContentManagement.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for ContentManagement
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from ContentManagementModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.ContentManagement.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.View.BoxOneContentContainer">
+            <summary>
+            BoxOneContentContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.View.BoxTwoContentContainer">
+            <summary>
+            BoxTwoContentContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.View.BoxThirdContentContainer">
+            <summary>
+            BoxThirdContentContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.View.BoxFourContentContainer">
+            <summary>
+            BoxFourContentContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.ParagraphArea">
+            <summary>
+            ParagraphArea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FirstTopBigImage">
+            <summary>
+            FirstTopBigImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.ImageTopHeader">
+            <summary>
+            ImageTopHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.ImageBottomHeader">
+            <summary>
+            ImageBottomHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FirstBottomBigImage">
+            <summary>
+            FirstBottomBigImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FirstLeftBigImage">
+            <summary>
+            FirstLeftBigImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.ImageLeftHeader">
+            <summary>
+            ImageLeftHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FirstRightBigImage">
+            <summary>
+            FirstRightBigImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.ImageRightHeader">
+            <summary>
+            ImageRightHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.LeftTopHeadingArea">
+            <summary>
+            LeftTopHeadingArea control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.LeftIframeVideo">
+            <summary>
+            LeftIframeVideo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopLeftTSmallImage">
+            <summary>
+            FourTopLeftTSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopLeftBSmallImage">
+            <summary>
+            FourTopLeftBSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopLeftLSmallImage">
+            <summary>
+            FourTopLeftLSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopLeftRSmallImage">
+            <summary>
+            FourTopLeftRSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopRightTSmallImage">
+            <summary>
+            FourTopRightTSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopRightBSmallImage">
+            <summary>
+            FourTopRightBSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopRightLSmallImage">
+            <summary>
+            FourTopRightLSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FourTopRightRSmallImage">
+            <summary>
+            FourTopRightRSmallImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.FirstTopBImage">
+            <summary>
+            FirstTopBImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.Image2">
+            <summary>
+            Image2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.Image3">
+            <summary>
+            Image3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.ContentManagement.Template.FourBigContent.Image4">
+            <summary>
+            Image4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.ContentManagement.Handler.ContentManagementHandler">
+            <summary>
+            Summary description for ContentManagementHandler
+            </summary>
+        </member>
+    </members>
+</doc>

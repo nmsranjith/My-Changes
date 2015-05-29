@@ -1,0 +1,2780 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Subscriptions</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.Ecommerce.Subscriptions.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from SubscriptionsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase">
+            <summary>
+             This base class can be used to define custom properties for multiple controls..
+             Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+             are accessible to your module's controls (that inherity from SubscriptionsModuleBase
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.#ctor">
+            <summary>
+            Initialize instance of subscription controller, and assign visitor object to subscription module
+            base userid and username
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.GetCustomerSubscriptionsForUser(System.String)">
+            <summary>
+            Get All the  customer subscriptions and details for the user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.GetCustomerSubscriptionLicenseDetails(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)">
+            <summary>
+            Get Customer Subscription License Details from controller class.
+            </summary>
+            <param name="subscriptionAllocationDetail">subscriptionAllocationDetail data access object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.GetLicenseUsersDetails(System.String)">
+            <summary>
+            Get Customer Subscription License Details for the users whose name contains or starts with searck key text, from controller class.
+            </summary>
+            <param name="searchKey"> user name starts with or contain searchKey </param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.GetAllSubscriptionCategoriesNames">
+            <summary>
+            Get all subscription category names from the controller class.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.GetSubscriptionsByCategoryName(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Get all subscription which categorized under the passed category name.
+            </summary>
+            <param name="subscriptionBase">subscriptionBase data access object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.RemoveSubscription(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Remove subscription for the subscription id, passed in subscription base object.
+            </summary>
+            <param name="subscriptionBase">subscriptionBase data access object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.RemoveSubscriptionCategory(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Remove subscription category for the supplied subscriptioncategory id over the subscriptionBase object.
+            </summary>
+            <param name="subscriptionBase">subscriptionBase data access object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.NavigateToView(System.String)">
+            <summary>
+            Used for redirect the response to assigned view.
+            </summary>
+            <param name="viewName">View name</param>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.NavigateToView(System.String,System.String)">
+            <summary>
+            Used for redirect the response to assigned view.
+            </summary>
+            <param name="viewName">View name</param>
+            <param name="queryString">Query String</param>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.CustomerSubscriptionSk">
+            <summary>
+            Property used to get CustomerSubscriptionSK passed as page query string.
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.DelegatedUserSk">
+            <summary>
+            Used to get Customer service searched account usersk
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.SubscriptionSk">
+            <summary>
+             Property used to get SubscriptionSk passed as page query string.
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.SubscriptionName">
+            <summary>
+              Property used to get Subscription Name passed as page query string.
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.SubscriptionCategoryName">
+            <summary>
+              Property used to get Subscription Category Name passed as page query string.
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.UserName">
+            <summary>
+            Current context(session) User Name 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.TPAccountNumber" -->
+        <!-- Badly formed XML comment ignored for member "P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.UserSK" -->
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.LicenseDetails">
+            <summary>
+            Get or Set Customer Subscription License Detail.
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.ListOfLicenseUsersDetails">
+            <summary>
+             Get or Set Customer Subscription License Detail for individual users.
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.GetTabPermission">
+            <summary>
+             Get the permissions available to the login user
+            </summary>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.SubscriptionsModuleBase.GetSubscriptionPermissions">
+            <summary>
+            Get Subscription Management permissions
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.PersonalPlaceHolder">
+            <summary>
+            PersonalPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.personalDashboardLinkButton">
+            <summary>
+            personalDashboardLinkButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.userManagementLinkButton">
+            <summary>
+            userManagementLinkButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.subscriptionLinkButton">
+            <summary>
+            subscriptionLinkButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.MainTabNav">
+            <summary>
+            MainTabNav control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.comm_personaltxt">
+            <summary>
+            comm_personaltxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.comm_mowraytxt">
+            <summary>
+            comm_mowraytxt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.PersonalSubTabsPlaceHolder">
+            <summary>
+            PersonalSubTabsPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.Personaldashboardlnk">
+            <summary>
+            Personaldashboardlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.Personalusermgmtlnk">
+            <summary>
+            Personalusermgmtlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.PersonalSubscriplnk">
+            <summary>
+            PersonalSubscriplnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.dashboardplh">
+            <summary>
+            dashboardplh control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.BusinessSubTabsPlaceHolder">
+            <summary>
+            BusinessSubTabsPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.dashboardlnk">
+            <summary>
+            dashboardlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.usermgmtlnk">
+            <summary>
+            usermgmtlnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.BusinessSubscriplnk">
+            <summary>
+            BusinessSubscriplnk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.View.phSubscription">
+            <summary>
+            phSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from SubscriptionsSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.SubscriptionsSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SubscriptionsSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.AlertMessage">
+            <summary>
+            AlertMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.AlertSummary">
+            <summary>
+            AlertSummary control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.CategoryName">
+            <summary>
+            CategoryName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.FixedFloatList">
+            <summary>
+            FixedFloatList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.csc_enddatehidden">
+            <summary>
+            csc_enddatehidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.FixedPane">
+            <summary>
+            FixedPane control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.CscPrimarySubSeries">
+            <summary>
+            CscPrimarySubSeries control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.csc_hiddenAll">
+            <summary>
+            csc_hiddenAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.PrimarySeriesHidden">
+            <summary>
+            PrimarySeriesHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.cscprimaryserieshidden">
+            <summary>
+            cscprimaryserieshidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.FloatPane">
+            <summary>
+            FloatPane control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.Days">
+            <summary>
+            Days control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.CscDaysList">
+            <summary>
+            CscDaysList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.Months">
+            <summary>
+            Months control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.CscMonthsList">
+            <summary>
+            CscMonthsList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.Years">
+            <summary>
+            Years control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.CscYearsList">
+            <summary>
+            CscYearsList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.CheckOpenPeriod">
+            <summary>
+            CheckOpenPeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.UnCheckOpenPeriod">
+            <summary>
+            UnCheckOpenPeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.HiddenOpenPeriod">
+            <summary>
+            HiddenOpenPeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.OpenPeriodPane">
+            <summary>
+            OpenPeriodPane control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.OfficialDays">
+            <summary>
+            OfficialDays control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.GraceDays">
+            <summary>
+            GraceDays control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.btnupdateCategory">
+            <summary>
+            btnupdateCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.PopulateSubscriptionCategory">
+            <summary>
+             Populate Values for Subscription Category By Session of Category Name
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Views.EditSubscriptionCategory.getsubcriptioncategoryvalues(System.Int32,System.String,Cengage.Ecommerce.Subscriptions.Components.Model.EditSubscriptionCategoryCollection,System.String)">
+            <summary>
+            Get All the Values when fixed / floating period is Selected
+            </summary>
+            <param name="days"></param>
+            <param name="uom"></param>
+            <param name="EditSubcsriptionCategory"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.UserLicenseDetail">
+            <summary>
+             Data access class used to get and set individual user license detail.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Model.UserLicenseDetail.Fill(System.Data.IDataReader)">
+            <summary>
+             Read from data reader and fill user Licence allocation details in this Data access object. 
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSubscriptions class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from SubscriptionsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditSubscriptions class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail">
+            <summary>
+            Data access class used to get and set customer subscription allocation details.
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the Subscription module data access layer
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.GetAllCustomerSubscriptionsForUser(System.Int32)">
+            <summary>
+            Retrieve all the customer subscriptions for the user
+            </summary>
+            <param name="UserSk">UserSk</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.GetAllCustomerSubscriptionsForTradingPartner(System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.GetLicenseDetails(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)" -->
+        <member name="M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.GetLicenseUsersDetails(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)">
+            <summary>
+            Retrieve all customer subscription license detail associated for the user(id) from the Database. 
+            </summary>
+            <param name="subscriptionAllocationDetail">SubscriptionAllocationDetail Data Access Object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.AllocateAndDeAllocateLicenseToUser(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)">
+            <summary>
+            Allocate and de-allocate customer subscription to the user(id). 
+            </summary>
+            <param name="_subscriptionTranAttr">SubscriptionAllocationDetail Data Access Object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.GetAllSubscriptionCategoryNames">
+            <summary>
+            Retrieve all subscription Category names .
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.GetSubscriptionsForSubscriptionCategory(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Retrieve all Subscriptions for Subscription Category.
+            </summary>
+            <param name="subscriptionBase"> SubscriptionBase Data Access Object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.RemoveSubscriptionCategory(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Remove Subscription Category with respect to supplied Subscription category Id.
+            </summary>
+            <param name="subscriptionBase">SubscriptionBase Data Access Object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Data.SqlDataProvider.RemoveSubscription(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Remove Subscription with respect to supplied Subscription Id.
+            </summary>
+            <param name="subscriptionBase"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.AdminReqSubscriptionDetail">
+            <summary>
+             Data access class used to get and set individual subscription details used for administrator/ Customer Service.
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.LicenseDetail">
+            <summary>
+            Data access class used to get and set allocated license detail informations.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Model.LicenseDetail.Fill(System.Data.IDataReader)">
+            <summary>
+            Read from data reader and fill Licence Details in this Data access object.
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Model.AdminReqSubscriptionDetail.Fill(System.Data.IDataReader)">
+            <summary>
+             Read from data reader and fill business subscription details which is used for customer service in this Data access object. 
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Model.UserContactDetails.Fill(System.Data.IDataReader)">
+            <summary>
+             Read from data reader and fill Subscription Holder User Contact Details details 
+             which is used for customer service in this Data access object. 
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Views.manageusersubscriptions">
+            <summary>
+            Code Behind file for Manage User Subscription View, From this view user can see all his/her subscriptions
+            This view take users to manage indivdual license details and allocation details
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.manageusersubscriptions.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.manageusersubscriptions.SearchImageButton">
+            <summary>
+            SearchImageButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.manageusersubscriptions.SubsLicenseDetailsRepeater">
+            <summary>
+            SubsLicenseDetailsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.manageusersubscriptions.UserSkHiddenField">
+            <summary>
+            UserSkHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Handlers.PurchasePriceHandler">
+            <summary>
+            Summary description for PurchasePriceHandler
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Handlers.ManageLicenseHandler">
+            <summary>
+            Handler class used to get customer subscription license user's names as JSON object using HTTP handler.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Handlers.ManageLicenseHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Used to get Customer subscription license user's names as JSON object.
+            </summary>
+            <param name="context">HttpContext object</param>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.Handlers.ManageLicenseHandler.IsReusable">
+            <summary>
+            Is Reusable with in same context
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Handlers.CreateSubscriptionCategoryHandler">
+            <summary>
+            Handler class used to get subscription category Calendar type's as JSON object using HTTP handler.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Handlers.CreateSubscriptionCategoryHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Used to get subscription category calendar type's as JSON object.
+            </summary>
+            <param name="context">HttpContext object</param>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.Handlers.CreateSubscriptionCategoryHandler.IsReusable">
+            <summary>
+             Is Reusable with in same context
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for Subscriptions
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionDefault">
+            <summary>
+            Construct base values for all subscription
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.txtnoofstudents">
+            <summary>
+            txtnoofstudents control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.MinBlockQuantity">
+            <summary>
+            MinBlockQuantity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.chooseapp1">
+            <summary>
+            chooseapp1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.nextbuilbtn">
+            <summary>
+            nextbuilbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblnextyear">
+            <summary>
+            lblnextyear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblnextnextyear">
+            <summary>
+            lblnextnextyear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.build2nextbtn">
+            <summary>
+            build2nextbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblstudent">
+            <summary>
+            lblstudent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblselectpack">
+            <summary>
+            lblselectpack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblperiod">
+            <summary>
+            lblperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblperiodtype">
+            <summary>
+            lblperiodtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblcurrencty">
+            <summary>
+            lblcurrencty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lbltotalcost">
+            <summary>
+            lbltotalcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.lblgst_Type">
+            <summary>
+            lblgst_Type control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.Build3addbtnper">
+            <summary>
+            Build3addbtnper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.minquantity">
+            <summary>
+            minquantity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdntab">
+            <summary>
+            hdntab control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdnpack">
+            <summary>
+            hdnpack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdnperiod">
+            <summary>
+            hdnperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdnperiodtype">
+            <summary>
+            hdnperiodtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdnrenewtype">
+            <summary>
+            hdnrenewtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdnstartdate">
+            <summary>
+            hdnstartdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdnenddate">
+            <summary>
+            hdnenddate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdntotalcost">
+            <summary>
+            hdntotalcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.RenewSubscription.hdncustomersubsk">
+            <summary>
+            hdncustomersubsk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Views.ManageLicense">
+            <summary>
+            Code Behind file for Manage License View, This view displays  license details for customer subscription,
+            from this view user can customize allocation over the users of this subscription
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.WarningPanel">
+            <summary>
+            WarningPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.WarningLiteral">
+            <summary>
+            WarningLiteral control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.BackButton">
+            <summary>
+            BackButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.SubsNameLable">
+            <summary>
+            SubsNameLable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.UsedQuantityLabel">
+            <summary>
+            UsedQuantityLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.TotalQuantitylabel">
+            <summary>
+            TotalQuantitylabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.AvailableTagLabel">
+            <summary>
+            AvailableTagLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.ExpirationDaysLabel">
+            <summary>
+            ExpirationDaysLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.ExpirationDaysTagLabel">
+            <summary>
+            ExpirationDaysTagLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.UntillExpirationLabel">
+            <summary>
+            UntillExpirationLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.LicenseInfoLabel">
+            <summary>
+            LicenseInfoLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.SearchImageButton">
+            <summary>
+            SearchImageButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.UsrLicenseDetailRepeater">
+            <summary>
+            UsrLicenseDetailRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.CustSubscriptionSkHiddenField">
+            <summary>
+            CustSubscriptionSkHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.UserSkHiddenField">
+            <summary>
+            UserSkHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.UsrNameHiddenField">
+            <summary>
+            UsrNameHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.ManageLicense.StatusHiddenField">
+            <summary>
+            StatusHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionCategoryBase">
+            <summary>
+            Data access class used to get and set subscription category name and its id.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionCategoryBase.Fill(System.Data.IDataReader)">
+            <summary>
+             Read from data reader and fill subscription category name and its id in this Data access object .
+            </summary>
+            <param name="dr">DataReader</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionSystem" -->
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionSystem.#ctor(System.Collections.Generic.List{Cengage.Ecommerce.Subscriptions.Components.Model.ProductSubscription})">
+            <summary>
+            Constructor to maintain the subscription list locally
+            </summary>
+            <param name="products"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionSystem.ConnectSystem">
+            <summary>
+            Connect subscription system
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionSystem.DisconnectSystem">
+            <summary>
+            Disconnect Ecom system
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionSystem.CalculatePrice">
+            <summary>
+            Calculate price for all subscriptions.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionSystem.CheckAvailablity">
+            <summary>
+            Not implemented as subscription process does not require to check availablity.
+            All the subscription prices are calculated based on ECOM DB values. Not AS400
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Views.SubscriptionDetails">
+            <summary>
+            Code Behind file for Subscription Detail view, from this view user can manage his subscription,
+            upgrade his license, also this view take's user to his/her Teachers dashbord
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.SubscriptionDetails.SubsDetailFormView">
+            <summary>
+            SubsDetailFormView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.SubscriptionDetails.renewPanePlaceHolder">
+            <summary>
+            renewPanePlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions">
+            <summary>
+            Code Behind file for Manage Subscription View, This view displays  all the subscriptions based on 
+            selected subscription category. From this view user can manage subscription and subscription category
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.CreateCategoryButton">
+            <summary>
+            CreateCategoryButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.SubsCategoriesDropDownList">
+            <summary>
+            SubsCategoriesDropDownList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.DeleteSubsCategoryButton">
+            <summary>
+            DeleteSubsCategoryButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.EditSubsCategoryButton">
+            <summary>
+            EditSubsCategoryButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.AddSubsCategoryButton">
+            <summary>
+            AddSubsCategoryButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.ManageSubscriptionRepeater">
+            <summary>
+            ManageSubscriptionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.PromptCancelButton">
+            <summary>
+            PromptCancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.PromptConfirmButton">
+            <summary>
+            PromptConfirmButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.PromptCancelButton1">
+            <summary>
+            PromptCancelButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.managesubscriptions.PromptConfirmButton1">
+            <summary>
+            PromptConfirmButton1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.BackButton">
+            <summary>
+            BackButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Upgrade1">
+            <summary>
+            Upgrade1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lbllicense">
+            <summary>
+            lbllicense control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Up1licencesnumber">
+            <summary>
+            Up1licencesnumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lnkbtnnext1">
+            <summary>
+            lnkbtnnext1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Upgrade2">
+            <summary>
+            Upgrade2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lblsubsname">
+            <summary>
+            lblsubsname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Up2chooseapp1">
+            <summary>
+            Up2chooseapp1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.abc">
+            <summary>
+            abc control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lnkbtnnext2">
+            <summary>
+            lnkbtnnext2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Upgrade3">
+            <summary>
+            Upgrade3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Up3licencediv">
+            <summary>
+            Up3licencediv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lbladdedlicences">
+            <summary>
+            lbladdedlicences control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Up3packdiv">
+            <summary>
+            Up3packdiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lblselectpackname">
+            <summary>
+            lblselectpackname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lblreminmonths">
+            <summary>
+            lblreminmonths control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lbltotalcost">
+            <summary>
+            lbltotalcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lblcurrencty">
+            <summary>
+            lblcurrencty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.lblgst_Type">
+            <summary>
+            lblgst_Type control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.Up3addbtnper">
+            <summary>
+            Up3addbtnper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.hdnsubid">
+            <summary>
+            hdnsubid control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.hdnselectedsubsk">
+            <summary>
+            hdnselectedsubsk control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.hdnsubname">
+            <summary>
+            hdnsubname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.hdnperiodtype">
+            <summary>
+            hdnperiodtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.hdnrenewtype">
+            <summary>
+            hdnrenewtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.hdnstartdate">
+            <summary>
+            hdnstartdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.UpgradeSubscription.hdnenddate">
+            <summary>
+            hdnenddate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionEngine">
+            <summary>
+            This engine will calculate the susbcription price for the processes 1.Renew 2.Purchase 3.Upgrade
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionEngine.#ctor(System.Data.SqlClient.SqlConnection)">
+            <summary>
+            Constructor to keep sql connection locally
+            </summary>
+            <param name="sqlConnection"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionEngine.Renew(Cengage.Ecommerce.Subscriptions.Components.Model.ProductSubscription)">
+            <summary>
+            Calculate price when renew susbscription
+            </summary>
+            <param name="orderedSubscription"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionEngine.Upgrade(Cengage.Ecommerce.Subscriptions.Components.Model.ProductSubscription)">
+            <summary>
+            calculate price when upgrade subscription
+            </summary>
+            <param name="orderedSubscription"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.popuptrialrenewPrimDiv">
+            <summary>
+            popuptrialrenewPrimDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.SubsPopUpHeadLabel">
+            <summary>
+            SubsPopUpHeadLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.Triallblstudent">
+            <summary>
+            Triallblstudent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.Triallblselectpack">
+            <summary>
+            Triallblselectpack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.Triallblperiod">
+            <summary>
+            Triallblperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.TrialSubscriptionSkHiddenField">
+            <summary>
+            TrialSubscriptionSkHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.TrialUserSkHiddenField">
+            <summary>
+            TrialUserSkHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.TrialTradingPartnerSkHiddenField">
+            <summary>
+            TrialTradingPartnerSkHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.TrialStoresSkHiddenField">
+            <summary>
+            TrialStoresSkHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.TrialCurrencyHiddenField">
+            <summary>
+            TrialCurrencyHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.TrialCountryHiddenField">
+            <summary>
+            TrialCountryHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.OrderNumber">
+            <summary>
+            OrderNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseTrialSubscription.Trialmailtext">
+            <summary>
+            Trialmailtext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditAsAdminSubscription.AdminSubsDetailFormView">
+            <summary>
+            AdminSubsDetailFormView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditAsAdminSubscription.CancelChdWinButton">
+            <summary>
+            CancelChdWinButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditAsAdminSubscription.ConfirmChdWinButton">
+            <summary>
+            ConfirmChdWinButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.EditAsAdminSubscription.OperationStatusHiddenField">
+            <summary>
+            OperationStatusHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Controllers.CengageExtensions">
+             <summary>
+             This is extension method of DATETIME object
+             It gives the duration between two dates in Days360 scheme
+             Logic :
+             There are two cases to consider:
+             When the month and year of both dates are the same.
+             When the month and year are different.
+             For the first case, the calculation is simple, day of DT minus day of DF. 
+             For the seconde case, we can divide the calculation in three sections, considering Date From (DF) and Date To (DT)
+             From the day of DF to 30 of the same month (30 - Day(DF))
+             Complete months of 30 days
+             From 1 to the day of DT of the month of DT
+             For example, for the dates 10/01/2012 and 08/12/2012 In this case, the math would be: 20 + (10 * 30) + 8 = 328
+            
+             There are special cases to consider when the day from the date from is 31 or the month is February.
+             If both date A and B fall on the last day of February, then date B will be changed to the 30th.
+             If date A falls on the 31st of a month or last day of February, then date A will be changed to the 30th.
+             If date A falls on the 30th of a month after applying (2) above and date B falls on the 31st of a month, then date B will be changed to the 30th.
+             </summary>
+             <param name="pDateFrom"></param>
+             <param name="pDateTo"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.getsubcriptioncategoryvalues(System.Int32,System.String,Cengage.Ecommerce.Subscriptions.Components.Model.CreateSubscriptionCategoryCollection,System.String)">
+            <summary>
+            Get All the Values when fixed / floating period is Selected
+            </summary>
+            <param name="days"></param>
+            <param name="uom"></param>
+            <param name="AddSubcsriptionCategory"></param>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.AlertMessage">
+            <summary>
+            AlertMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.AlertSummary">
+            <summary>
+            AlertSummary control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.AlertWarningMessage">
+            <summary>
+            AlertWarningMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.AlertWarningMessageSummary">
+            <summary>
+            AlertWarningMessageSummary control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.CategoryName">
+            <summary>
+            CategoryName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.FixedFloatList">
+            <summary>
+            FixedFloatList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.FixedPane">
+            <summary>
+            FixedPane control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.CscPrimarySubSeries">
+            <summary>
+            CscPrimarySubSeries control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.csc_ddlprimaryvalue">
+            <summary>
+            csc_ddlprimaryvalue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.CscHiddenAll">
+            <summary>
+            CscHiddenAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.csc_primaryserieshidden">
+            <summary>
+            csc_primaryserieshidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.FloatPane">
+            <summary>
+            FloatPane control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.Days">
+            <summary>
+            Days control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.CscDaysList">
+            <summary>
+            CscDaysList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.Months">
+            <summary>
+            Months control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.CscMonthsList">
+            <summary>
+            CscMonthsList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.Years">
+            <summary>
+            Years control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.CscYearsList">
+            <summary>
+            CscYearsList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.CheckOpenPeriod">
+            <summary>
+            CheckOpenPeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.UnCheckOpenPeriod">
+            <summary>
+            UnCheckOpenPeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.HiddenOpenPeriod">
+            <summary>
+            HiddenOpenPeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.OpenPeriodPane">
+            <summary>
+            OpenPeriodPane control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.OfficialDays">
+            <summary>
+            OfficialDays control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.GraceDays">
+            <summary>
+            GraceDays control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscriptionCategory.btncreatCategory">
+            <summary>
+            btncreatCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.SubPageHeader">
+            <summary>
+            SubPageHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.CreateSubCat">
+            <summary>
+            CreateSubCat control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.ErrorMsg">
+            <summary>
+            ErrorMsg control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Editf">
+            <summary>
+            Editf control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.heading">
+            <summary>
+            heading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Snamef">
+            <summary>
+            Snamef control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Sname">
+            <summary>
+            Sname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.DimD">
+            <summary>
+            DimD control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Starf">
+            <summary>
+            Starf control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Imagef">
+            <summary>
+            Imagef control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Isbnf">
+            <summary>
+            Isbnf control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Tisbn">
+            <summary>
+            Tisbn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.DimdS">
+            <summary>
+            DimdS control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Stars">
+            <summary>
+            Stars control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Ttotal">
+            <summary>
+            Ttotal control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Tminimum">
+            <summary>
+            Tminimum control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Tuser">
+            <summary>
+            Tuser control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Div5">
+            <summary>
+            Div5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Clic">
+            <summary>
+            Clic control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.CalendarSelect">
+            <summary>
+            CalendarSelect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Tauin">
+            <summary>
+            Tauin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Tauex">
+            <summary>
+            Tauex control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Tnzin">
+            <summary>
+            Tnzin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Tnzex">
+            <summary>
+            Tnzex control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.Baddbtnper">
+            <summary>
+            Baddbtnper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.HcreateSub">
+            <summary>
+            HcreateSub control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.CreateSubscription.chkstatus">
+            <summary>
+            chkstatus control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.TrialSubscriptions">
+            <summary>
+            Data access class used to get and set trial subscriptions detail informations.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Model.TrialSubscriptions.Fill(System.Data.IDataReader)">
+            <summary>
+            Read from data reader and fill Trial Subsription Details in this Data access object.
+            </summary>
+            <param name="dr"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController">
+            <summary>
+            This class retrieve data access methods and apply bussiness logic. Also provide bussiness logics for module base component.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.GetAllCustomerSubscriptionsForUser(System.Int32,System.String)">
+            <summary>
+            Retrieve all customer subscriptions for the user
+            </summary>
+            <param name="userSk">UserSk</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.GetLicenseDetails(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)">
+            <summary>
+            Retrieve customer subscription license detail  from the data access layer.
+            </summary>
+            <param name="subscriptionAllocationDetail">subscriptionAllocationDetail data access object</param>
+            <returns></returns>
+            
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.GetLicenseUsersDetails(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)">
+            <summary>
+            Retrieve all customer subscription license detail associated for the user from data access layer.
+            </summary>
+            <param name="subscriptionAllocationDetail">subscriptionAllocationDetail data access object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.GetLicensedUsers(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)">
+            <summary>
+            Retrieve all licensed users for the customer subscription from data access layer.
+            </summary>
+            <param name="subscriptionAllocationDetail">subscriptionAllocationDetail data access object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.AllocateAndDeAllocateLicenseToUser(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionAllocationDetail)">
+            <summary>
+            Allocate and de-allocate customer subscription for the user(id) using data access layer. 
+            </summary>
+            <param name="subscriptionAllocationDetail">subscriptionAllocationDetail data access object</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.GetAllSubscriptionCategoryNames">
+            <summary>
+            Retrieve all subscription Category names from data access layer.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.GetSubscriptionsForSubscriptionCategory(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Retrieve all Subscriptions falls under this Subscription Category .
+            </summary>
+            <param name="subscriptionBase">SubscriptionBase Data Access Object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.RemoveSubscriptionCategory(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Remove Subscription Category with respect to supplied Subscription category Id .
+            </summary>
+            <param name="subscriptionBase">SubscriptionBase Data Access Object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.RemoveSubscription(Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase)">
+            <summary>
+            Remove Subscription  with respect to supplied Subscription  Id
+            </summary>
+            <param name="subscriptionBase">SubscriptionBase Data Access Object.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.Components.Controllers.SubscriptionController.Instance">
+            <summary>
+            Initialize subscription controller instance and returns instance.
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.PriceHandler">
+            <summary>
+            Summary description for PriceHandler
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Handlers.ManageSubscriptionsHandler">
+            <summary>
+            Handler class used to get Customer subscription names as JSON object using HTTP handler.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Handlers.ManageSubscriptionsHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Used to get Customer subscription names as JSON object
+            </summary>
+            <param name="context">HttpContext context</param>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.Handlers.ManageSubscriptionsHandler.IsReusable">
+            <summary>
+            Is Reusable with in same context
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase">
+             <summary>
+            Data access class used to get and set the subscription name and its id.
+             </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Components.Model.SubscriptionBase.Fill(System.Data.IDataReader)">
+            <summary>
+             Read from data reader and fill subscription name and id in this Data access object 
+            </summary>
+            <param name="dr">DataReader</param>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.txtnoofstudents">
+            <summary>
+            txtnoofstudents control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.chooseapp1">
+            <summary>
+            chooseapp1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.nextbuilbtn">
+            <summary>
+            nextbuilbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblcurrentyear">
+            <summary>
+            lblcurrentyear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblremainmonths">
+            <summary>
+            lblremainmonths control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblnextyear">
+            <summary>
+            lblnextyear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.build2nextbtn">
+            <summary>
+            build2nextbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblstudent">
+            <summary>
+            lblstudent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblselectpack">
+            <summary>
+            lblselectpack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblperiod">
+            <summary>
+            lblperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblperiodtype">
+            <summary>
+            lblperiodtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblcurrencty">
+            <summary>
+            lblcurrencty control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lbltotalcost">
+            <summary>
+            lbltotalcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.lblgst_Type">
+            <summary>
+            lblgst_Type control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.Build3addbtnper">
+            <summary>
+            Build3addbtnper control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.minquantity">
+            <summary>
+            minquantity control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdntab">
+            <summary>
+            hdntab control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdnfirstsubs">
+            <summary>
+            hdnfirstsubs control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdnpack">
+            <summary>
+            hdnpack control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdnperiod">
+            <summary>
+            hdnperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdnperiodtype">
+            <summary>
+            hdnperiodtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdnrenewtype">
+            <summary>
+            hdnrenewtype control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdnstartdate">
+            <summary>
+            hdnstartdate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdnenddate">
+            <summary>
+            hdnenddate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.PurchaseSubscription.hdntotalcost">
+            <summary>
+            hdntotalcost control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.pl_error">
+            <summary>
+            pl_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.lit_error">
+            <summary>
+            lit_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.pl_success">
+            <summary>
+            pl_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.lit_success">
+            <summary>
+            lit_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.pl_info">
+            <summary>
+            pl_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.Subscriptions.Views.eCommMessages.lit_info">
+            <summary>
+            lit_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Handlers.AddTrialSubscriptionHandler">
+            <summary>
+            Handler class used to get customer subscription license user's names as JSON object using HTTP handler.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Handlers.AddTrialSubscriptionHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Used to get Customer subscription license user's names as JSON object.
+            </summary>
+            <param name="context">HttpContext object</param>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.Handlers.AddTrialSubscriptionHandler.IsReusable">
+            <summary>
+            Is Reusable with in same context
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Handlers.PurchaseTrialSubscriptionHandler">
+            <summary>
+            Handler class used to get customer subscription license user's names as JSON object using HTTP handler.
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.Subscriptions.Handlers.PurchaseTrialSubscriptionHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Used to get Customer subscription license user's names as JSON object.
+            </summary>
+            <param name="context">HttpContext object</param>
+        </member>
+        <member name="P:Cengage.Ecommerce.Subscriptions.Handlers.PurchaseTrialSubscriptionHandler.IsReusable">
+            <summary>
+            Is Reusable with in same context
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Model.ProductSubscription">
+            <summary>
+            Subscription Entity
+            </summary>
+        </member>
+        <member name="T:Cengage.Ecommerce.Subscriptions.Components.Common.Constants">
+            <summary>
+            This class returns all the module constants values like Procedure Name, Flag used..etc
+            </summary>
+        </member>
+    </members>
+</doc>

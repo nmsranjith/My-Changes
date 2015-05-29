@@ -1,0 +1,2783 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eCollection_Teachers</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.eCollection_TeachersModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_TeachersModuleBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.eCollection_TeachersModuleBase.GetRecordingsDetails(System.Data.DataRow)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.eCollection_TeachersModuleBase.GetRHRecordingsDetails(System.Data.DataRow)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.eCollection_TeachersModuleBase.SaveRecordFile(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Teachers.Components.Model.TeacherRecordingFiles})">
+            <summary>
+            
+            </summary>
+            <param name="dataSource"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.CheckPanel">
+            <summary>
+            CheckPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.Image4">
+            <summary>
+            Image4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.Image5">
+            <summary>
+            Image5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.SortingPanel">
+            <summary>
+            SortingPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.NamesAscButton">
+            <summary>
+            NamesAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.NamesDescButton">
+            <summary>
+            NamesDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.SearchPanel">
+            <summary>
+            SearchPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.TeachersListPanel">
+            <summary>
+            TeachersListPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.TeachersListView">
+            <summary>
+            TeachersListView control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.SelTeachersCnt">
+            <summary>
+            SelTeachersCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.SelectedTeacherId">
+            <summary>
+            SelectedTeacherId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.TeachersCheckBoxes">
+            <summary>
+            TeachersCheckBoxes control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.CheckAllImage">
+            <summary>
+            CheckAllImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.Image3">
+            <summary>
+            Image3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersList.searcheditems">
+            <summary>
+            searcheditems control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.DownLoadExcelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Download the format Excel file
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.UploadFileImageButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Upload the excel file to do bulk upload of student profiles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.image_preview">
+            <summary>
+            image_preview control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.Messages1">
+            <summary>
+            Messages1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.Messages2">
+            <summary>
+            Messages2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.Messages3">
+            <summary>
+            Messages3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.TeachersCount">
+            <summary>
+            TeachersCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.TotalAddedTeachers">
+            <summary>
+            TotalAddedTeachers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.SeeAllLink">
+            <summary>
+            SeeAllLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.DownLoadExcelButton">
+            <summary>
+            DownLoadExcelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.txtAttachment">
+            <summary>
+            txtAttachment control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.AttachAFile">
+            <summary>
+            AttachAFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.UploadButton">
+            <summary>
+            UploadButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeachersBulkUpload.SelectedSubscriptions">
+            <summary>
+            SelectedSubscriptions control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.Edit">
+            <summary>
+            EditeCollection_Teachers class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditeCollection_Teachers class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from eCollection_TeachersModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.CreateTeacherProfile(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.UploadTeacherProfiles(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetTeachersList(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="TeacherLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.DeleteTeachers(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teachers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetSubscriptionsList(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetCustSubuserSk(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetGroupNames(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.UpdateBookReadLevel(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetTeacherName(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.AddTeacherToGroup(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher})">
+            <summary>
+            
+            </summary>
+            <param name="teacherList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetProfileDetails(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetReadingHistory(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetReadingHistoryMonths(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Returns the student's reading history months
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetReadingHistories(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Returns the student's reading history months
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetMyWords(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Returns all the circled words of the Teacher
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetMyRecordings(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Returns all the recordings of the Teacher
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetMyRecordedFiles(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Returns all the recording files of the Teacher
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetMyRHWordsCount(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Returns the number of words circled by the Teacher in each reading session 
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetMyWordsCount_MyRecordingsCount(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Returns the total number of words circled by the Teacher / total number of recordings done in overall.
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.ClearFromiPad(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.CheckClearedFromiPad(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Data.SqlDataProvider.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            Inserts data into util email table to send email on an occurrence of any exception
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.IndependentGrid_RowDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.GetTeacherDtTblRow(System.Data.DataRow)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.MonthIndependentGrid_RowDataBound(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.MonthWiseWordLogs_BindInfo(System.Object,System.Web.UI.WebControls.ListViewItemEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.MyRecordingsCnt">
+            <summary>
+            MyRecordingsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.BackButton">
+            <summary>
+            BackButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.SecondDiv">
+            <summary>
+            SecondDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.HistoryMainDiv">
+            <summary>
+            HistoryMainDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.TodayHistory">
+            <summary>
+            TodayHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.TodayNodeImage">
+            <summary>
+            TodayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.TodayCalImage">
+            <summary>
+            TodayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.TodayLabel">
+            <summary>
+            TodayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.TodaysIndependentRecordings">
+            <summary>
+            TodaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.YesterdayHistory">
+            <summary>
+            YesterdayHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.YesterdayNodeImage">
+            <summary>
+            YesterdayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.YesterdayCalImage">
+            <summary>
+            YesterdayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.YesterdayLabel">
+            <summary>
+            YesterdayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.YesterDayIndependentRecordings">
+            <summary>
+            YesterDayIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.Last7DaysHistory">
+            <summary>
+            Last7DaysHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.Last7DaysNodeImage">
+            <summary>
+            Last7DaysNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.Last7DaysCalImage">
+            <summary>
+            Last7DaysCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.Last7DaysLabel">
+            <summary>
+            Last7DaysLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.Last7DaysIndependentRecordings">
+            <summary>
+            Last7DaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.RestoftheMonthHistory">
+            <summary>
+            RestoftheMonthHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.RestNodeImage">
+            <summary>
+            RestNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.RestCalImage">
+            <summary>
+            RestCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.RestMonthLabel">
+            <summary>
+            RestMonthLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.RestIndependentHistory">
+            <summary>
+            RestIndependentHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.MonthwiseHistories">
+            <summary>
+            MonthwiseHistories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.MonthWiseHistory">
+            <summary>
+            MonthWiseHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.LastNodeDiv">
+            <summary>
+            LastNodeDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.LastMonthNodeImage">
+            <summary>
+            LastMonthNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.StyleApplier">
+            <summary>
+            StyleApplier control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.Recordings.MonthLabel">
+            <summary>
+            MonthLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.GetTeacherDtTblRow(System.Data.DataRow)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.FillMyWords(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.FillList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Teachers.Components.Model.TeacherWords},System.Web.UI.WebControls.ListView,System.Web.UI.HtmlControls.HtmlGenericControl)">
+            <summary>
+            
+            </summary>
+            <param name="wordsList"></param>
+            <param name="wordsListView"></param>
+            <param name="ListHolder"></param>
+            <param name="nextListHolder"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.MyWordsCnt">
+            <summary>
+            MyWordsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.BackButton">
+            <summary>
+            BackButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.SecondDiv">
+            <summary>
+            SecondDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.TodayHistory">
+            <summary>
+            TodayHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.TodayNodeImage">
+            <summary>
+            TodayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.TodayCalImage">
+            <summary>
+            TodayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.TodayLabel">
+            <summary>
+            TodayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.TodayWordLog">
+            <summary>
+            TodayWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.YesterdayHistory">
+            <summary>
+            YesterdayHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.YesterdayWordsImage">
+            <summary>
+            YesterdayWordsImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.YesterdayWordsImage1">
+            <summary>
+            YesterdayWordsImage1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.YeaterdayWordsLabel">
+            <summary>
+            YeaterdayWordsLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.YesterdayWordLog">
+            <summary>
+            YesterdayWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.Last7DaysHistory">
+            <summary>
+            Last7DaysHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.Last7DaysNodeImage">
+            <summary>
+            Last7DaysNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.Last7DaysCalImage">
+            <summary>
+            Last7DaysCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.LastSevenDaysWordLog">
+            <summary>
+            LastSevenDaysWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.RestoftheMonthHistory">
+            <summary>
+            RestoftheMonthHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.RestNodeImage">
+            <summary>
+            RestNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.RestCalImage">
+            <summary>
+            RestCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.RestMonthLabel">
+            <summary>
+            RestMonthLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.RestoftheMonthWordLog">
+            <summary>
+            RestoftheMonthWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.MonthwiseHistory">
+            <summary>
+            MonthwiseHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.MonthWiseWordLog">
+            <summary>
+            MonthWiseWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.LastMonthNodeImage">
+            <summary>
+            LastMonthNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.StyleApplier">
+            <summary>
+            StyleApplier control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.MonthLabel">
+            <summary>
+            MonthLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyWords.teacherIdLabel">
+            <summary>
+            teacherIdLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.Handlers.eCollectionHandler">
+            <summary>
+            Summary description for eCollectionHandler
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.Page_PreRender(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_PreRender runs when the control is before the page gets rendered
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.FinishLinkButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.CancelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.AddTeacherProfile_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.AddedName">
+            <summary>
+            AddedName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.TeachersCount">
+            <summary>
+            TeachersCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.SeeAllLink">
+            <summary>
+            SeeAllLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.FirstNameTextBox">
+            <summary>
+            FirstNameTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.LastNameTextBox">
+            <summary>
+            LastNameTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.EmailTxtBxParent">
+            <summary>
+            EmailTxtBxParent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.EmailTextBox">
+            <summary>
+            EmailTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.AddTeacherProfileButton">
+            <summary>
+            AddTeacherProfileButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.CreateTeacherProfile.SubsSkHdn">
+            <summary>
+            SubsSkHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.CreateTeacherProfileButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.CreateReadingSessionButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.AddTeacherToGroupButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.DeleteTeacherButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.GetSelectedTeachers">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.CreateProfileHdr">
+            <summary>
+            CreateProfileHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.CreateTeacherProfileButton">
+            <summary>
+            CreateTeacherProfileButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.CreateReadingSessionButton">
+            <summary>
+            CreateReadingSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.List_MidHdr">
+            <summary>
+            List_MidHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.AddTeacherToGroupButton">
+            <summary>
+            AddTeacherToGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.DeleteProfileHdr">
+            <summary>
+            DeleteProfileHdr control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.DeleteTeacherButton">
+            <summary>
+            DeleteTeacherButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.SelectedStuds">
+            <summary>
+            SelectedStuds control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.UserLoginNameHdn">
+            <summary>
+            UserLoginNameHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersListDashboard.SubscriptionId">
+            <summary>
+            SubscriptionId control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for eCollection_Teachers
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Common.EnumHelper.GetDescription(System.Enum)">
+            <summary>
+            Retrieve the description on the enum, e.g.
+            [Description("Bright Pink")]
+            BrightPink = 2,
+            Then when you pass in the enum, it will retrieve the description
+            </summary>
+            <param name="en">The Enumeration</param>
+            <returns>A string representing the friendly name</returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.pl_error">
+            <summary>
+            pl_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.lit_error">
+            <summary>
+            lit_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.pl_success">
+            <summary>
+            pl_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.lit_success">
+            <summary>
+            lit_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.pl_info">
+            <summary>
+            pl_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.lit_info">
+            <summary>
+            lit_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.ClearMessages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.ShowError(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.ShowWarning(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.ShowSuccess(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.eCollectionMessages.ShowInfo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SelectedTeacherList">
+            <summary>
+            SelectedTeacherList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SortingPanel">
+            <summary>
+            SortingPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.PMAscButton">
+            <summary>
+            PMAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.PMDescButton">
+            <summary>
+            PMDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.NamesAscButton">
+            <summary>
+            NamesAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.NamesDescButton">
+            <summary>
+            NamesDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SecondDiv">
+            <summary>
+            SecondDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.UpdatePanel1">
+            <summary>
+            UpdatePanel1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.BtnPnl">
+            <summary>
+            BtnPnl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.ClassPanel">
+            <summary>
+            ClassPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.ClassRepeater">
+            <summary>
+            ClassRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.GroupPanel">
+            <summary>
+            GroupPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.GroupsRepeater">
+            <summary>
+            GroupsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.OtherGrpPanel">
+            <summary>
+            OtherGrpPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.OtherGrpRepeater">
+            <summary>
+            OtherGrpRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.OtherClsPanel">
+            <summary>
+            OtherClsPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.OtherClsRepeater">
+            <summary>
+            OtherClsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.AddTeacherToGroup">
+            <summary>
+            AddTeacherToGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SelectedGrpIds">
+            <summary>
+            SelectedGrpIds control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SelectedStudIds">
+            <summary>
+            SelectedStudIds control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.searchhdn">
+            <summary>
+            searchhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.lastsearch">
+            <summary>
+            lastsearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.newsearch">
+            <summary>
+            newsearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.NamesAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.NamesDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.PmAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.PmDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.GroupSearch_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.AddTeacherToGroup_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.CancelButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.FillList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Teachers.Components.Model.Groups},System.Web.UI.WebControls.Repeater,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="_OtherGroups"></param>
+            <param name="RepeaterId"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.SortAndBind">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.AddToGroup.BuildSelectedItems">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersBulkUploadDashboard.Backtocreategroupbtn">
+            <summary>
+            Backtocreategroupbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.TeachersBulkUploadDashboard.BulkUploadButton">
+            <summary>
+            BulkUploadButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.CreateTeacherProfileDashboard.Backtocreategroupbtn">
+            <summary>
+            Backtocreategroupbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.CreateTeacherProfileDashboard.FinishButton">
+            <summary>
+            FinishButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Dashboard.CreateTeacherProfileDashboard.BulkUploadButton">
+            <summary>
+            BulkUploadButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeacherProfile.TeacherProfileRepeater">
+            <summary>
+            TeacherProfileRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeacherProfile.ReadingHistory">
+            <summary>
+            ReadingHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeacherProfile.ProfileGroupsList">
+            <summary>
+            ProfileGroupsList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeacherProfile.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeacherProfile.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeacherProfile.Message2">
+            <summary>
+            Message2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.TeacherProfile.pointsHdn">
+            <summary>
+            pointsHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.CheckingDiv">
+            <summary>
+            CheckingDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.Image4">
+            <summary>
+            Image4 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.PMRdSrt">
+            <summary>
+            PMRdSrt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.ReadingLevelAscButton">
+            <summary>
+            ReadingLevelAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.ReadingLevelDescButton">
+            <summary>
+            ReadingLevelDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.NmeSrt">
+            <summary>
+            NmeSrt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.NamesAscButton">
+            <summary>
+            NamesAscButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.NamesDescButton">
+            <summary>
+            NamesDescButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.UpdatePanel3">
+            <summary>
+            UpdatePanel3 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.UpdatePanel2">
+            <summary>
+            UpdatePanel2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.BtnPnl">
+            <summary>
+            BtnPnl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.MidleftLinePnl">
+            <summary>
+            MidleftLinePnl control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.MidleftLine">
+            <summary>
+            MidleftLine control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.GrpListPanel">
+            <summary>
+            GrpListPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.GroupsList">
+            <summary>
+            GroupsList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.GroupIdHdn">
+            <summary>
+            GroupIdHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.searchhdn">
+            <summary>
+            searchhdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.lastsearch">
+            <summary>
+            lastsearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.newsearch">
+            <summary>
+            newsearch control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.ReadingLevelAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.NamesAscButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.ReadingLevelDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.NamesDescButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.MyGroups.GroupSearch_Click(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.GetTeacherDtTblRow(System.Data.DataRow)">
+            <summary>
+            
+            </summary>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.FillReadingHistory(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.HistoryMainDiv">
+            <summary>
+            HistoryMainDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.TodayHistory">
+            <summary>
+            TodayHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.TodayNodeImage">
+            <summary>
+            TodayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.TodayCalImage">
+            <summary>
+            TodayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.TodayLabel">
+            <summary>
+            TodayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.TodaysIndependentRecordings">
+            <summary>
+            TodaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.YesterdayHistory">
+            <summary>
+            YesterdayHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.YesterdayNodeImage">
+            <summary>
+            YesterdayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.YesterdayCalImage">
+            <summary>
+            YesterdayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.YesterdayLabel">
+            <summary>
+            YesterdayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.YesterDayIndependentRecordings">
+            <summary>
+            YesterDayIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.Last7DaysHistory">
+            <summary>
+            Last7DaysHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.Last7DaysNodeImage">
+            <summary>
+            Last7DaysNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.Last7DaysCalImage">
+            <summary>
+            Last7DaysCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.Last7DaysLabel">
+            <summary>
+            Last7DaysLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.Last7DaysIndependentRecordings">
+            <summary>
+            Last7DaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.RestoftheMonthHistory">
+            <summary>
+            RestoftheMonthHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.RestNodeImage">
+            <summary>
+            RestNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.RestCalImage">
+            <summary>
+            RestCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.RestMonthLabel">
+            <summary>
+            RestMonthLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.RestIndependentHistory">
+            <summary>
+            RestIndependentHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.MonthwiseHistories">
+            <summary>
+            MonthwiseHistories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.MonthWiseHistory">
+            <summary>
+            MonthWiseHistory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.LastNodeDiv">
+            <summary>
+            LastNodeDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.LastMonthNodeImage">
+            <summary>
+            LastMonthNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.StyleApplier">
+            <summary>
+            StyleApplier control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.Views.ReadingHistory.MonthLabel">
+            <summary>
+            MonthLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from eCollection_TeachersModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.View.eCollectionMenuPlaceHolder">
+            <summary>
+            eCollectionMenuPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.View.FunctionalityPlaceHolder">
+            <summary>
+            FunctionalityPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.View.ContentPlaceHolder">
+            <summary>
+            ContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.View.PageName">
+            <summary>
+            PageName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.View.SubsCnt">
+            <summary>
+            SubsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.View.SelectedSubscription">
+            <summary>
+            SelectedSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Teachers.View.schoolname">
+            <summary>
+            schoolname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetAll(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="TeacherLoginName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.DeleteTeachers(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetProfileDetails(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.UpdateBookReadLevel(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.InviteTeacher(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.UploadTeacherProfiles(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.ClearFromiPad(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.CheckClearedFromiPad(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetReadingHistoryMonths(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Gets all the reading history months of the teacher
+            </summary>
+            <param name="Teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetReadingHistories(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Gets all the reading Histories of the teacher
+            </summary>
+            <param name="Teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetMyWords(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Gets all the circled words of the teacher
+            </summary>
+            <param name="Teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetMyRecordings(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Gets all the recordings of the teacher
+            </summary>
+            <param name="Teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetMyRecordedFiles(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Gets all the recording files of the teacher
+            </summary>
+            <param name="Teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetMyRHWordsCount(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Gets the number of words circled by the teacher in each reading session 
+            </summary>
+            <param name="Teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetMyWordsCount_MyRecordingsCount(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            Gets the total number of words circled by the Teacher / total number of recordings done in overall.
+            </summary>
+            <param name="Teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.AddTeacherToGroup(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher})">
+            <summary>
+            
+            </summary>
+            <param name="teacherList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.ClearMyCache(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="LoginName"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.ClearAllCache">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetErrorMessagesByModuleName(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="Module_Name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetSubscriptionsList(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetCustSubuserSk(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetGroupNames(DotNetNuke.Modules.eCollection_Teachers.Components.Model.Teacher)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.GetTeacherName(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Components.Controller.TeacherController.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="body"></param>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.Settings">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from eCollection_TeachersSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Teachers.eCollection_TeachersSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_TeachersSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Teachers.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

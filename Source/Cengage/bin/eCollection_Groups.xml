@@ -1,0 +1,2882 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eCollection_Groups</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.eCollection_GroupsModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_GroupsModuleBase
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfileDashBoard.EditGroupButton">
+            <summary>
+            EditGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfileDashBoard.PrintCredentialButtonDiv">
+            <summary>
+            PrintCredentialButtonDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfileDashBoard.PrintCredentialButton">
+            <summary>
+            PrintCredentialButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.CreateGroupUpdatePanel">
+            <summary>
+            CreateGroupUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.RisePopUp">
+            <summary>
+            RisePopUp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.GroupNameTextBox">
+            <summary>
+            GroupNameTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.CheckBoxDiv">
+            <summary>
+            CheckBoxDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.ClassCheckBox">
+            <summary>
+            ClassCheckBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.AddStudentButton">
+            <summary>
+            AddStudentButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.AddTeachersButton">
+            <summary>
+            AddTeachersButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.CreateGroupContentDiv">
+            <summary>
+            CreateGroupContentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.TeacherDetailsDiv">
+            <summary>
+            TeacherDetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.TeacherDetailsRepeater">
+            <summary>
+            TeacherDetailsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.StudentDetailsDiv">
+            <summary>
+            StudentDetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.StudentDetailsRepeater">
+            <summary>
+            StudentDetailsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.CreateGroupBtnHolder">
+            <summary>
+            CreateGroupBtnHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.CreateGroupButton">
+            <summary>
+            CreateGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.TeacherDelete">
+            <summary>
+            TeacherDelete control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroup.ClassCheckHiddenField">
+            <summary>
+            ClassCheckHiddenField control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.Backtocreategroupbtn">
+            <summary>
+            Backtocreategroupbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.BacktoCreateBtn">
+            <summary>
+            BacktoCreateBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.DetailsDiv">
+            <summary>
+            DetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.DeletedValueTextBox">
+            <summary>
+            DeletedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.CheckALLUpdatePanel">
+            <summary>
+            CheckALLUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.ReadingLevelButton">
+            <summary>
+            ReadingLevelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.SortingButton">
+            <summary>
+            SortingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.StudentRepeater">
+            <summary>
+            StudentRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.AllOtherGroupsDiv">
+            <summary>
+            AllOtherGroupsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.AllotherGroupDivBtn">
+            <summary>
+            AllotherGroupDivBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.AllOtherGroupButton">
+            <summary>
+            AllOtherGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToEditGroup.LastNode">
+            <summary>
+            LastNode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CustomPaging.StudentPagerDiv">
+            <summary>
+            StudentPagerDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CustomPaging.PreviousButton">
+            <summary>
+            PreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CustomPaging.ShowPreviousButton">
+            <summary>
+            ShowPreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CustomPaging.plcPaging">
+            <summary>
+            plcPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CustomPaging.pageNumber">
+            <summary>
+            pageNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CustomPaging.ShowNextLink">
+            <summary>
+            ShowNextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CustomPaging.NextLink">
+            <summary>
+            NextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.Edit">
+            <summary>
+            EditeCollection_Groups class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditeCollection_Groups class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from eCollection_GroupsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CreateGroupDashBoard.Backtocreategroupbtn">
+            <summary>
+            Backtocreategroupbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.eCollection_GroupsSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_GroupsSettingsBase
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.GroupNameLabel">
+            <summary>
+            GroupNameLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.RecordingsCount">
+            <summary>
+            RecordingsCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.BackToProfile">
+            <summary>
+            BackToProfile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.TodayNodeImage">
+            <summary>
+            TodayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.TodayCalImage">
+            <summary>
+            TodayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.TodayLabel">
+            <summary>
+            TodayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.TodaysIndependentRecordings">
+            <summary>
+            TodaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.YesterdayNodeImage">
+            <summary>
+            YesterdayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.YesterdayCalImage">
+            <summary>
+            YesterdayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.YesterdayLabel">
+            <summary>
+            YesterdayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.YesterDayIndependentRecordings">
+            <summary>
+            YesterDayIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.Last7DaysNodeImage">
+            <summary>
+            Last7DaysNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.Last7DaysCalImage">
+            <summary>
+            Last7DaysCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.Last7DaysLabel">
+            <summary>
+            Last7DaysLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.Last7DaysIndependentRecordings">
+            <summary>
+            Last7DaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.RestMonthRepeater">
+            <summary>
+            RestMonthRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupRecordings.LastMonthNodeImage">
+            <summary>
+            LastMonthNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.PageName">
+            <summary>
+            PageName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.CreateLink">
+            <summary>
+            CreateLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.GroupsMainDiv">
+            <summary>
+            GroupsMainDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllUpdates">
+            <summary>
+            AllUpdates control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.ReadingLevelButton">
+            <summary>
+            ReadingLevelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.SortingButton">
+            <summary>
+            SortingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.ClassContainer">
+            <summary>
+            ClassContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.ClassButton">
+            <summary>
+            ClassButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.ClassRepeater">
+            <summary>
+            ClassRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.GroupsContainer">
+            <summary>
+            GroupsContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.GroupButton">
+            <summary>
+            GroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.GroupsRepeater">
+            <summary>
+            GroupsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllOtherGroupBtnDiv">
+            <summary>
+            AllOtherGroupBtnDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllOtherGroupButton">
+            <summary>
+            AllOtherGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllotherGroupRepeater">
+            <summary>
+            AllotherGroupRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllOtherClassBtnDiv">
+            <summary>
+            AllOtherClassBtnDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllOtherClassButton">
+            <summary>
+            AllOtherClassButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllotherClassRepeater">
+            <summary>
+            AllotherClassRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllOtherVisible">
+            <summary>
+            AllOtherVisible control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllOtherGroupToggFlag">
+            <summary>
+            AllOtherGroupToggFlag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.AllOtherClassToggFlag">
+            <summary>
+            AllOtherClassToggFlag control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.selectedClsID">
+            <summary>
+            selectedClsID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.selectedGrpID">
+            <summary>
+            selectedGrpID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.selectedAllGrpID">
+            <summary>
+            selectedAllGrpID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.selectedAllClsID">
+            <summary>
+            selectedAllClsID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.SelectedGrps">
+            <summary>
+            SelectedGrps control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.SelectedClassGrps">
+            <summary>
+            SelectedClassGrps control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.SelectedAllOtherGrps">
+            <summary>
+            SelectedAllOtherGrps control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupList.SelectedAllOtherCls">
+            <summary>
+            SelectedAllOtherCls control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.Backtocreategroupbtn">
+            <summary>
+            Backtocreategroupbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.MessageUpdatePanel">
+            <summary>
+            MessageUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.SubscriptionDrpList">
+            <summary>
+            SubscriptionDrpList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.GroupNameTextBox">
+            <summary>
+            GroupNameTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.ClassCheckBox">
+            <summary>
+            ClassCheckBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.AddTeachersButton">
+            <summary>
+            AddTeachersButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.AddStudentButton">
+            <summary>
+            AddStudentButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.CreateGroupContentDiv">
+            <summary>
+            CreateGroupContentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.TeacherDetailsDiv">
+            <summary>
+            TeacherDetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.TeacherDetailsUpdatePanel">
+            <summary>
+            TeacherDetailsUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.TeacherDetailsRepeater">
+            <summary>
+            TeacherDetailsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.StudentDetailsDiv">
+            <summary>
+            StudentDetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.StudentDetailsUpdatePanel">
+            <summary>
+            StudentDetailsUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.StudentDetailsRepeater">
+            <summary>
+            StudentDetailsRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.CancelCreateGroup">
+            <summary>
+            CancelCreateGroup control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.EditGroup.CreateGroupButton">
+            <summary>
+            CreateGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.pl_error">
+            <summary>
+            pl_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.lit_error">
+            <summary>
+            lit_error control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.pl_warning">
+            <summary>
+            pl_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.lit_warning">
+            <summary>
+            lit_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.pl_success">
+            <summary>
+            pl_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.lit_success">
+            <summary>
+            lit_success control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.pl_info">
+            <summary>
+            pl_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.eCollectionMessages.lit_info">
+            <summary>
+            lit_info control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.Page_PreRender(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_PreRender runs when the control is before the page gets rendered
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.BuildSelectedItems(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Groups.Components.Modal.Staging})">
+            <summary>
+            
+            </summary>
+            <param name="buildCollection"></param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.ValidateeBook(System.String,System.Xml.XmlDocument,DotNetNuke.Modules.eCollection_Groups.Components.GroupController)">
+            <summary>
+            This method will validate the eBook details
+            </summary>
+            <param name="filePath"></param>
+            <param name="stagingXml"></param>
+            <param name="groupcontroller"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.GetISBNDetails(System.String)">
+            <summary>
+            This method will get the ISBN from zip
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.FillStagingList(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Groups.Components.Modal.Staging})">
+            <summary>
+            This method will give data source for repeater
+            </summary>
+            <param name="stagingCollection">Data source for repeater</param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.Unzip(System.String,System.String)">
+            <summary>
+            This Method will unzip the file and get the data for insert or update
+            </summary>
+            <param name="sourceZipFilePath">Source file path</param>
+            <param name="destinationPath_physical">Destination file path</param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.CreateLog(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Groups.Components.Modal.Staging})">
+            <summary>
+            This method will create log
+            </summary>
+            <param name="logList">collection of logs</param>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.GenerateListToXML(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Groups.Components.Modal.Staging},System.String)">
+            <summary>
+            This Method will generate list TO XML using LINQ
+            </summary>
+            <param name="staging">Collection of staging</param>
+            <returns>XmlDocument</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.StagingToPublish(System.String,System.String,System.Boolean,System.Collections.Generic.List{System.String})">
+            <summary>
+            This method will copy the file from stage to publish
+            </summary>
+            <param name="publishingPath">Publish folder physical path</param>
+            <param name="destinationPath">Stage folder physical path</param>
+            <param name="exist"></param>
+            <param name="addedBookIsbn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.GetFileNames(System.String)">
+            <summary>
+            This method will get the collection of files existed in the path
+            </summary>
+            <param name="destinationPath"></param>
+            <returns>return collection of filenames</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.GetFileNamesInPublish(System.String)">
+            <summary>
+            This method will get the collection of files existed in the path
+            </summary>
+            <param name="destinationPath"></param>
+            <returns>return collection of filenames</returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.Sort(System.Collections.Generic.List{DotNetNuke.Modules.eCollection_Groups.Components.Modal.Staging})">
+            <summary>
+            Based on the sort direction this method will sort the collection
+            </summary>
+            <param name="stagingCollection">stagingCollection</param>
+            <returns></returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.DownloadLogfile">
+            <summary>
+            DownloadLogfile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.MessageUpdatePanel">
+            <summary>
+            MessageUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.Messages_warning">
+            <summary>
+            Messages_warning control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.txtAttachment">
+            <summary>
+            txtAttachment control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.AttachAFile">
+            <summary>
+            AttachAFile control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.UploadBooksButton">
+            <summary>
+            UploadBooksButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.CancelButton">
+            <summary>
+            CancelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.ViewLiveAllCheckbox">
+            <summary>
+            ViewLiveAllCheckbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.NewBooksSortButton">
+            <summary>
+            NewBooksSortButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.StagingUpdatePanel">
+            <summary>
+            StagingUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.StagingRepeater">
+            <summary>
+            StagingRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.SelectedBook">
+            <summary>
+            SelectedBook control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.IsbnIdHidden">
+            <summary>
+            IsbnIdHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.DeleteFromStagingButton">
+            <summary>
+            DeleteFromStagingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.TakeLiveButton">
+            <summary>
+            TakeLiveButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.AlertHeaderMessage">
+            <summary>
+            AlertHeaderMessage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.CengageStaging.AlertmessageLabel">
+            <summary>
+            AlertmessageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.GroupNameLabel">
+            <summary>
+            GroupNameLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.WordsCount">
+            <summary>
+            WordsCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.BackButton">
+            <summary>
+            BackButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.TodayNodeImage">
+            <summary>
+            TodayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.TodayCalImage">
+            <summary>
+            TodayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.TodayLabel">
+            <summary>
+            TodayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.TodayClearFrmIpBtn">
+            <summary>
+            TodayClearFrmIpBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.TodayWordLog">
+            <summary>
+            TodayWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.YeaterdayWordsImage">
+            <summary>
+            YeaterdayWordsImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.YeaterdayWordsImage1">
+            <summary>
+            YeaterdayWordsImage1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.YeaterdayWordsLabel">
+            <summary>
+            YeaterdayWordsLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.YstrClearFrmBtn">
+            <summary>
+            YstrClearFrmBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.YesterdayWordLog">
+            <summary>
+            YesterdayWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.Last7DaysNodeImage">
+            <summary>
+            Last7DaysNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.Last7DaysCalImage">
+            <summary>
+            Last7DaysCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.Label2">
+            <summary>
+            Label2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.LastSvndyClrFromIpad">
+            <summary>
+            LastSvndyClrFromIpad control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.LastSevenDaysWordLog">
+            <summary>
+            LastSevenDaysWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.RestMonthDiv">
+            <summary>
+            RestMonthDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.MonthWiseWordLog">
+            <summary>
+            MonthWiseWordLog control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.LastMonthNodeImage">
+            <summary>
+            LastMonthNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.StyleApplier">
+            <summary>
+            StyleApplier control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupWords.MonthLabel">
+            <summary>
+            MonthLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.CreateGroupButton">
+            <summary>
+            CreateGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.StartReadingSessionButton">
+            <summary>
+            StartReadingSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.EditGroupButton">
+            <summary>
+            EditGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.MergeGroupButton">
+            <summary>
+            MergeGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.DeleteGroupButton">
+            <summary>
+            DeleteGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.selectedGroupID">
+            <summary>
+            selectedGroupID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.CengageStagingButton">
+            <summary>
+            CengageStagingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.ClicktoAfterRenewel">
+            <summary>
+            ClicktoAfterRenewel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.AfterRenewelYear">
+            <summary>
+            AfterRenewelYear control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.CheckAllTeachers">
+            <summary>
+            CheckAllTeachers control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.CheckAllStudents">
+            <summary>
+            CheckAllStudents control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.licencesCount">
+            <summary>
+            licencesCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.CheckMoveall">
+            <summary>
+            CheckMoveall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.CheckStart">
+            <summary>
+            CheckStart control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.DaysLeftLabel">
+            <summary>
+            DaysLeftLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.StartButton">
+            <summary>
+            StartButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.AdvancedSetUp">
+            <summary>
+            AdvancedSetUp control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupListDashBoardMenu.AlertmessageLabel">
+            <summary>
+            AlertmessageLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.BacktoCreateBtn">
+            <summary>
+            BacktoCreateBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.DetailsDiv">
+            <summary>
+            DetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.AddTeacherToGroupUpdatePanel">
+            <summary>
+            AddTeacherToGroupUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.StudentDiv">
+            <summary>
+            StudentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.SortingButton">
+            <summary>
+            SortingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.StudentRepeater">
+            <summary>
+            StudentRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.AllOtherGroupsDiv">
+            <summary>
+            AllOtherGroupsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.AllotherGroupDivBtn">
+            <summary>
+            AllotherGroupDivBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.AllOtherGroupButton">
+            <summary>
+            AllOtherGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddTeachersToCreateGroup.LastNode">
+            <summary>
+            LastNode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Data.SqlDataProvider.GetMinMaxReadingLevelByDate(System.Int32,System.DateTime)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <param name="grfRefDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Data.SqlDataProvider.GetGroupOwnerID(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="groupId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Data.SqlDataProvider.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            Inserts data into util email table to send email on an occurrence of any exception
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.GroupsHandler">
+            <summary>
+            Summary description for GroupsHandler
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Messages">
+            <summary>
+            Messages control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.GroupNameLabel">
+            <summary>
+            GroupNameLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MemebersCountLabel">
+            <summary>
+            MemebersCountLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.GpYourClass">
+            <summary>
+            GpYourClass control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.divcircle">
+            <summary>
+            divcircle control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MinReadLevel">
+            <summary>
+            MinReadLevel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.divcircletwo">
+            <summary>
+            divcircletwo control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MaxReadLevel">
+            <summary>
+            MaxReadLevel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.NoOfBoooksOpenedLabel">
+            <summary>
+            NoOfBoooksOpenedLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.BookOpenedText">
+            <summary>
+            BookOpenedText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.IndependentCountLabel">
+            <summary>
+            IndependentCountLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.GuidedCountLabel">
+            <summary>
+            GuidedCountLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.NoOfWordsLabel">
+            <summary>
+            NoOfWordsLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.WordLogButton">
+            <summary>
+            WordLogButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.NoOfRecordingsLabel">
+            <summary>
+            NoOfRecordingsLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.ListenButton">
+            <summary>
+            ListenButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.graph">
+            <summary>
+            graph control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.sixmonthBefore">
+            <summary>
+            sixmonthBefore control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MinStartReadFrom">
+            <summary>
+            MinStartReadFrom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MaxStartReadUpto">
+            <summary>
+            MaxStartReadUpto control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.TotalMonth">
+            <summary>
+            TotalMonth control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.TodayDate">
+            <summary>
+            TodayDate control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MinCurrReadFrom">
+            <summary>
+            MinCurrReadFrom control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MaxCurrReadUpto">
+            <summary>
+            MaxCurrReadUpto control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.ReadingLevelRepeater">
+            <summary>
+            ReadingLevelRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Message2">
+            <summary>
+            Message2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.TodayNodeImage">
+            <summary>
+            TodayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.TodayCalImage">
+            <summary>
+            TodayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.TodayLabel">
+            <summary>
+            TodayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.TodaysIndependentRecordings">
+            <summary>
+            TodaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.UpdatePanel7">
+            <summary>
+            UpdatePanel7 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.TodaysReadingSessionRepeater">
+            <summary>
+            TodaysReadingSessionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.YesterdayNodeImage">
+            <summary>
+            YesterdayNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.YesterdayCalImage">
+            <summary>
+            YesterdayCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.YesterdayLabel">
+            <summary>
+            YesterdayLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.YesterDayIndependentRecordings">
+            <summary>
+            YesterDayIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.UpdatePanel6">
+            <summary>
+            UpdatePanel6 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.YesterdaysReadingSessionRepeater">
+            <summary>
+            YesterdaysReadingSessionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Last7DaysNodeImage">
+            <summary>
+            Last7DaysNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Last7DaysCalImage">
+            <summary>
+            Last7DaysCalImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Last7DaysLabel">
+            <summary>
+            Last7DaysLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Last7DaysIndependentRecordings">
+            <summary>
+            Last7DaysIndependentRecordings control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.UpdatePanel5">
+            <summary>
+            UpdatePanel5 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.Last7DaysReadingSessionRepeater">
+            <summary>
+            Last7DaysReadingSessionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.RestMonthRepeater">
+            <summary>
+            RestMonthRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.LastMonthNodeImage">
+            <summary>
+            LastMonthNodeImage control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.StudentDiv">
+            <summary>
+            StudentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.StudentContentPanel">
+            <summary>
+            StudentContentPanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.CheckALLUpdatePanel">
+            <summary>
+            CheckALLUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.ReadingLevelButton">
+            <summary>
+            ReadingLevelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.SortingButton">
+            <summary>
+            SortingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.SearchUpdatePanel">
+            <summary>
+            SearchUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.StudentRepeaterUpdatePanel">
+            <summary>
+            StudentRepeaterUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.StudentRepeater">
+            <summary>
+            StudentRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.pointsHdn">
+            <summary>
+            pointsHdn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.grfHdnLine">
+            <summary>
+            grfHdnLine control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.leftcolorreading">
+            <summary>
+            leftcolorreading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.GroupProfile.rightcolorreading">
+            <summary>
+            rightcolorreading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.StudentDashboard">
+            <summary>
+            StudentDashboard control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.BacktoCreateBtn">
+            <summary>
+            BacktoCreateBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.DetailsDiv">
+            <summary>
+            DetailsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.SelectedStudentList">
+            <summary>
+            SelectedStudentList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.SelectedValueTextBox">
+            <summary>
+            SelectedValueTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.StudentsContentDiv">
+            <summary>
+            StudentsContentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.AddStudentToGroupUpdatePanel">
+            <summary>
+            AddStudentToGroupUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.StudentDiv">
+            <summary>
+            StudentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.ReadingLevelButton">
+            <summary>
+            ReadingLevelButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.SortingButton">
+            <summary>
+            SortingButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.ClassContainer">
+            <summary>
+            ClassContainer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.classSearchTextBox">
+            <summary>
+            classSearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.StudentRepeater">
+            <summary>
+            StudentRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.AllOtherGroupsDiv">
+            <summary>
+            AllOtherGroupsDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.AllotherGroupDivBtn">
+            <summary>
+            AllotherGroupDivBtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.Groups.AddStudentstoCreateGroup.AllOtherGroupButton">
+            <summary>
+            AllOtherGroupButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from eCollection_GroupsSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from eCollection_GroupsModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.PageHeader">
+            <summary>
+            PageHeader control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.ClassNameLabel">
+            <summary>
+            ClassNameLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.PageHeaderButton">
+            <summary>
+            PageHeaderButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.eCollectionMenuPlaceHolder">
+            <summary>
+            eCollectionMenuPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.FunctionalityPlaceHolder">
+            <summary>
+            FunctionalityPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.ContentPlaceHolder">
+            <summary>
+            ContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.SubsCnt">
+            <summary>
+            SubsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.SelectedSubscription">
+            <summary>
+            SelectedSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Groups.View.schoolname">
+            <summary>
+            schoolname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Groups.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Groups.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for eCollection_Groups
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

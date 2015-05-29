@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SignUp</name>
+    </assembly>
+    <members>
+        <member name="T:Cengage.Ecommerce.SignUp.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.SqlDataProvider.Insertuser(Cengage.Ecommerce.SignUp.Data.Regparam,System.Int32@,System.Int32@)">
+            <summary>
+            Insert users into into database
+            </summary>
+            <param name="regParameters">regParameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.SqlDataProvider.Updateuser(Cengage.Ecommerce.SignUp.Data.Regparam,System.Int32@,System.Int32@)">
+            <summary>
+            Update the invitee
+            </summary>
+            <param name="regParameters">regParameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.SqlDataProvider.ValidateUser(System.String)">
+            <summary>
+            Check whether the invitee is already registered into db or not
+            </summary>
+            <param name="emailID">emailID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.SqlDataProvider.GetInviteeDetails(System.String,System.Int32)">
+            <summary>
+            Get invitee details 
+            </summary>
+            <param name="inviteeSK">inviteeSK</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.SqlDataProvider.GetCountries">
+            <summary>
+            Method to get List Of Countries
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from SignUpSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.SignUpSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SignUpSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from SignUpModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.SignUpModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from SignUpModuleBase
+            
+            </summary>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.PersonalName">
+            <summary>
+            PersonalName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.SurName">
+            <summary>
+            SurName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.UserEmail">
+            <summary>
+            UserEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.ConfirmEmail">
+            <summary>
+            ConfirmEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.ConfirmPersonalEmail">
+            <summary>
+            ConfirmPersonalEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.ConfirmEmailMandatory">
+            <summary>
+            ConfirmEmailMandatory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.Password">
+            <summary>
+            Password control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.PasswordShow">
+            <summary>
+            PasswordShow control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.SecurityQuestion">
+            <summary>
+            SecurityQuestion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.UserSecurityQuestion">
+            <summary>
+            UserSecurityQuestion control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.Answer">
+            <summary>
+            Answer control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.CengagePartner">
+            <summary>
+            CengagePartner control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.IAgreeChkbox">
+            <summary>
+            IAgreeChkbox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.TermsText">
+            <summary>
+            TermsText control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.IAgreeButton">
+            <summary>
+            IAgreeButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.Businessname">
+            <summary>
+            Businessname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.SchoolList">
+            <summary>
+            SchoolList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.Applicable">
+            <summary>
+            Applicable control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.Abn">
+            <summary>
+            Abn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.SignupPartnerName">
+            <summary>
+            SignupPartnerName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.SignupPartnerPhone">
+            <summary>
+            SignupPartnerPhone control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.CenPartnerEmail">
+            <summary>
+            CenPartnerEmail control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.SignUpPartnerAddress">
+            <summary>
+            SignUpPartnerAddress control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.Line1Address">
+            <summary>
+            Line1Address control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.Suburb">
+            <summary>
+            Suburb control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.ShippingPostCode">
+            <summary>
+            ShippingPostCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.PostalAddressStateDropDownList">
+            <summary>
+            PostalAddressStateDropDownList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.PostalAddressCountryDropDownList">
+            <summary>
+            PostalAddressCountryDropDownList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.OtherCountryTextBox">
+            <summary>
+            OtherCountryTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.BillingAddressTextBoxLine1">
+            <summary>
+            BillingAddressTextBoxLine1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.BillingAddressTextBoxLine2">
+            <summary>
+            BillingAddressTextBoxLine2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.BillingAddressSuburb">
+            <summary>
+            BillingAddressSuburb control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.BillingAddressPostCodeTextBox">
+            <summary>
+            BillingAddressPostCodeTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.TextBox1">
+            <summary>
+            TextBox1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.BillingStateDropDownList">
+            <summary>
+            BillingStateDropDownList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.BillingCountryDropDownList">
+            <summary>
+            BillingCountryDropDownList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.UserCountryTextBox">
+            <summary>
+            UserCountryTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.IsInvitee">
+            <summary>
+            IsInvitee control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.BillingAddressChkd">
+            <summary>
+            BillingAddressChkd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Cengage.Ecommerce.SignUp.View.RedirectURL1">
+            <summary>
+            RedirectURL1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.View.IAgreeButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            On valid entry of fields register him into cengage db
+            </summary>
+            <param name="sender">registration Parameters</param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.View.UpdateDNNUsers(Cengage.Ecommerce.SignUp.Data.Regparam)">
+            <summary>
+            Update the user into DNN DB
+            </summary>
+            <param name="registrationParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.View.ApproveMemberShip(DotNetNuke.Entities.Users.UserInfo,Cengage.Ecommerce.SignUp.Data.Regparam)">
+            <summary>
+            Check approval of the user
+            </summary>
+            <param name="newUser"></param>
+            <param name="registrationParameters"></param>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.View.UpdateMailBody(Cengage.Ecommerce.SignUp.Data.Regparam,System.Boolean)">
+            <summary>
+            Generate the email template body
+            </summary>
+            <param name="registrationParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.View.EncryptPassword(System.String)">
+            <summary>
+            encrypt the password with SHA1 cryptography
+            </summary>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.Components.Handlers.GetErrorMessage">
+            <summary>
+            Summary description for GetErrorMessage
+            </summary>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Components.Handlers.GetErrorMessage.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Get the details of user
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.Edit">
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditSignUp class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from SignUpModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+            <summary>
+            EditSignUp class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.RegBLL.Insertuser(Cengage.Ecommerce.SignUp.Data.Regparam,System.Int32@,System.Int32@)">
+            <summary>
+            Register personal user to ecommerce application
+            </summary>
+            <param name="registrationParameter">Reginstration parameters</param>
+            <returns>Count of user which is inserted into database tables</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.RegBLL.Selectquestion">
+            <summary>
+            Get the predefined security questions of the application
+            </summary>
+            <returns>List of security questions</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.RegBLL.Updateuser(Cengage.Ecommerce.SignUp.Data.Regparam,System.Int32@,System.Int32@)">
+            <summary>
+            Register the invitee and update the necessary tables
+            </summary>
+            <param name="registrationParameter">registrationParameter</param>
+            <returns>Count of user which is inserted into database tables</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.RegBLL.ValidateUser(System.String)">
+            <summary>
+            Check whether user already register in database or not
+            </summary>
+            <param name="emailID">Entered email id in signup email feild</param>
+            <returns>user if he is already registered to ecomm</returns>
+        </member>
+        <member name="M:Cengage.Ecommerce.SignUp.Data.RegBLL.GetInviteeDetails(System.String,System.Int32)">
+            <summary>
+            Get the invitee details 
+            </summary>
+            <param name="inviteeSK">invitee id</param>
+            <returns>invitee details</returns>
+        </member>
+        <member name="T:Cengage.Ecommerce.SignUp.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for SignUp
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+    </members>
+</doc>

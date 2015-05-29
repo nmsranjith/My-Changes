@@ -1,0 +1,1 @@
+This file is used to force worker processes to restart following a data file update. It can be deleted.

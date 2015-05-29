@@ -1,0 +1,1188 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eCollection_Books</name>
+    </assembly>
+    <members>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.View">
+            -----------------------------------------------------------------------------
+            <summary>
+            The View class displays the content
+            
+            Typically your view control would be used to display content or functionality in your module.
+            
+            View may be the only control you have in your project depending on the complexity of your module
+            
+            Because the control inherits from eCollection_BooksModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.eCollection_BooksModuleBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from PortalModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_BooksModuleBase
+            
+            </summary>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.PageHeaderLabel">
+            <summary>
+            PageHeaderLabel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.PageHeaderButton">
+            <summary>
+            PageHeaderButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.eCollectionMenuPlaceHolder">
+            <summary>
+            eCollectionMenuPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.FunctionalityPlaceHolder">
+            <summary>
+            FunctionalityPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.ContentPlaceHolder">
+            <summary>
+            ContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.SubsCnt">
+            <summary>
+            SubsCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.SelectedSubscription">
+            <summary>
+            SelectedSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.PageName">
+            <summary>
+            PageName control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.View.schoolname">
+            <summary>
+            schoolname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.View.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblGracePeriod">
+            <summary>
+            lblGracePeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblBooksSelected">
+            <summary>
+            lblBooksSelected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblBooksLeft">
+            <summary>
+            lblBooksLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.lblDaysLeft">
+            <summary>
+            lblDaysLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SeeSelectedBokks">
+            <summary>
+            SeeSelectedBokks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.BacktoCollectionButton">
+            <summary>
+            BacktoCollectionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SelectedBookscount">
+            <summary>
+            SelectedBookscount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.RemovetosubsButtontop">
+            <summary>
+            RemovetosubsButtontop control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.ReadingLevelSlider">
+            <summary>
+            ReadingLevelSlider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SliderValue">
+            <summary>
+            SliderValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.custItmSKHidden">
+            <summary>
+            custItmSKHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SliderRange">
+            <summary>
+            SliderRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.BooksUpdatePanel">
+            <summary>
+            BooksUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.hiddenbtn">
+            <summary>
+            hiddenbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.CollectionRepeater">
+            <summary>
+            CollectionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.SelectedBookscountBot">
+            <summary>
+            SelectedBookscountBot control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeSelectedBooks.RemoveSubButtonbot">
+            <summary>
+            RemoveSubButtonbot control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.LevelCollection">
+            <summary>
+            LevelCollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.headSpan">
+            <summary>
+            headSpan control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.hiddenfieldtext">
+            <summary>
+            hiddenfieldtext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.SelectedBookCountSeeAll">
+            <summary>
+            SelectedBookCountSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.lblBooksExceededSeeAll">
+            <summary>
+            lblBooksExceededSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.BacktoCollection">
+            <summary>
+            BacktoCollection control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.SelectedBookscountSeeAll">
+            <summary>
+            SelectedBookscountSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.AddtosubsButtonSeeAll">
+            <summary>
+            AddtosubsButtonSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.RepSeeAllBooks">
+            <summary>
+            RepSeeAllBooks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.SelectedBookscountBotSeeAll">
+            <summary>
+            SelectedBookscountBotSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.BottomAddToSeeAll">
+            <summary>
+            BottomAddToSeeAll control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.SeeAllCollection.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.StudentPagerDiv">
+            <summary>
+            StudentPagerDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.PreviousButton">
+            <summary>
+            PreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.ShowPreviousButton">
+            <summary>
+            ShowPreviousButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.plcPaging">
+            <summary>
+            plcPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.pageNumber">
+            <summary>
+            pageNumber control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.ShowNextLink">
+            <summary>
+            ShowNextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.CustomPaging.NextLink">
+            <summary>
+            NextLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Data.DataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            An abstract class for the data access layer
+            
+            The abstract data provider provides the methods that a control data provider (sqldataprovider)
+            must implement. You'll find two commented out examples in the Abstract methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.lblIsBookAlreadyAdded">
+            <summary>
+            lblIsBookAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.SelectedBookCountCategory">
+            <summary>
+            SelectedBookCountCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.lblBooksExceededCategory">
+            <summary>
+            lblBooksExceededCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.CategoriesDrpList">
+            <summary>
+            CategoriesDrpList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.SelectedBookscountCategories">
+            <summary>
+            SelectedBookscountCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.AddtosubsButtonCategory">
+            <summary>
+            AddtosubsButtonCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.CategoriesRepeater">
+            <summary>
+            CategoriesRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.SelectedBookscountBotCategories">
+            <summary>
+            SelectedBookscountBotCategories control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.BottomAddToSubscriptionCategory">
+            <summary>
+            BottomAddToSubscriptionCategory control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.LiteralBooksRange">
+            <summary>
+            LiteralBooksRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.LiteralAlreadyAdded">
+            <summary>
+            LiteralAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksCategories.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Settings">
+            <summary>
+            Settings class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The Settings class manages Module Settings
+            
+            Typically your settings control would be used to manage settings for your module.
+            There are two types of settings, ModuleSettings, and TabModuleSettings.
+            
+            ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+            
+            TabModuleSettings apply only to the current module on the current page, if you copy that module to
+            another page the settings are not transferred.
+            
+            If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+            
+            Below we have some examples of how to access these settings but you will need to uncomment to use.
+            
+            Because the control inherits from eCollection_BooksSettingsBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.eCollection_BooksSettingsBase">
+            <summary>
+            This base class can be used to define custom properties for multiple controls. 
+            An example module, DNNSimpleArticle (http://dnnsimplearticle.codeplex.com) uses this for an ArticleId
+            
+            Because the class inherits from SettingsModuleBase, properties like ModuleId, TabId, UserId, and others, 
+            are accessible to your module's controls (that inherity from eCollection_BooksSettingsBase
+            
+            </summary>
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Settings.LoadSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            LoadSettings loads the settings from the Database and displays them
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Settings.UpdateSettings">
+            -----------------------------------------------------------------------------
+            <summary>
+            UpdateSettings saves the modified settings to the Database
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Edit">
+            <summary>
+            EditeCollection_Books class.
+            </summary>
+            <remarks>
+            Auto-generated class.
+            </remarks>
+            -----------------------------------------------------------------------------
+            <summary>
+            The EditeCollection_Books class is used to manage content
+            
+            Typically your edit control would be used to create new content, or edit existing content within your module.
+            The ControlKey for this control is "Edit", and is defined in the manifest (.dnn) file.
+            
+            Because the control inherits from eCollection_BooksModuleBase you have access to any custom properties
+            defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+            
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Edit.Page_Load(System.Object,System.EventArgs)">
+            -----------------------------------------------------------------------------
+            <summary>
+            Page_Load runs when the control is loaded
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.ReadingAgeSelect">
+            <summary>
+            ReadingAgeSelect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.hiddenfieldtext">
+            <summary>
+            hiddenfieldtext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.lblIsBookAlreadyAdded">
+            <summary>
+            lblIsBookAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.SelectedBookCountReading">
+            <summary>
+            SelectedBookCountReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.lblBooksExceededReading">
+            <summary>
+            lblBooksExceededReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.SelectedBookscountReadingAge">
+            <summary>
+            SelectedBookscountReadingAge control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.AddtosubsReading">
+            <summary>
+            AddtosubsReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.ReadingAgeRepeater">
+            <summary>
+            ReadingAgeRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.SelectedBookscountBotReadingAge">
+            <summary>
+            SelectedBookscountBotReadingAge control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.BottomAddToSubscriptionReading">
+            <summary>
+            BottomAddToSubscriptionReading control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.LiteralAlreadyAdded">
+            <summary>
+            LiteralAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksReadingAge.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.Duringgraceperiod">
+            <summary>
+            Duringgraceperiod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.BookUpdatePanel">
+            <summary>
+            BookUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SearchTextBox">
+            <summary>
+            SearchTextBox control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.CategoriesDrpList">
+            <summary>
+            CategoriesDrpList control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SearchButton">
+            <summary>
+            SearchButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.ReadingLevelSlider">
+            <summary>
+            ReadingLevelSlider control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SliderValue">
+            <summary>
+            SliderValue control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.custItmSKHidden">
+            <summary>
+            custItmSKHidden control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.SliderRange">
+            <summary>
+            SliderRange control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.MessageDivUpdatePanel">
+            <summary>
+            MessageDivUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.MessageOuterDiv">
+            <summary>
+            MessageOuterDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.Message1">
+            <summary>
+            Message1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.BooksUpdatePanel">
+            <summary>
+            BooksUpdatePanel control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.hiddenbtn">
+            <summary>
+            hiddenbtn control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.CollectionRepeater">
+            <summary>
+            CollectionRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookList.CustomPaging">
+            <summary>
+            CustomPaging control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.lblIsBookAlreadyAdded">
+            <summary>
+            lblIsBookAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.hiddenfieldtext">
+            <summary>
+            hiddenfieldtext control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.SelectedBookCount">
+            <summary>
+            SelectedBookCount control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.SelectedBookscountLevels">
+            <summary>
+            SelectedBookscountLevels control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.lblBooksExceeded">
+            <summary>
+            lblBooksExceeded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.AddtosubsButton">
+            <summary>
+            AddtosubsButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BooksRepeater">
+            <summary>
+            BooksRepeater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.SelectedBookscountBotLevels">
+            <summary>
+            SelectedBookscountBotLevels control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.BottomAddToSubscription">
+            <summary>
+            BottomAddToSubscription control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.LiteralAlreadyAdded">
+            <summary>
+            LiteralAlreadyAdded control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.toggleEventHandler">
+            <summary>
+            toggleEventHandler control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BooksLevels.AlreadySelectedBookCnt">
+            <summary>
+            AlreadySelectedBookCnt control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblGracePeriod">
+            <summary>
+            lblGracePeriod control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblBooksSelected">
+            <summary>
+            lblBooksSelected control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblBooksLeft">
+            <summary>
+            lblBooksLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.lblDaysLeft">
+            <summary>
+            lblDaysLeft control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeSelectedBokks">
+            <summary>
+            SeeSelectedBokks control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.LevelsLink">
+            <summary>
+            LevelsLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.ReadingAgeLink">
+            <summary>
+            ReadingAgeLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.CategoriesLink">
+            <summary>
+            CategoriesLink control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.BookSelectionWizardPlace">
+            <summary>
+            BookSelectionWizardPlace control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SelectionContentDiv">
+            <summary>
+            SelectionContentDiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.BookSelectionContentPlaceHolder">
+            <summary>
+            BookSelectionContentPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeAlldiv">
+            <summary>
+            SeeAlldiv control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.Books.BookSelectionWizard.SeeAllPlaceHolder">
+            <summary>
+            SeeAllPlaceHolder control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider">
+            -----------------------------------------------------------------------------
+            <summary>
+            SQL Server implementation of the abstract DataProvider class
+            
+            This concreted data provider class provides the implementation of the abstract methods 
+            from data dataprovider.cs
+            
+            In most cases you will only modify the Public methods region below.
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="M:DotNetNuke.Modules.eCollection_Books.Data.SqlDataProvider.SendExceptionMail(System.String,System.String,System.Int32)">
+            <summary>
+            Inserts data into util email table to send email on an occurrence of any exception
+            </summary>
+            <returns>List of countries as Dataset</returns>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.DashBoard.BookListDashBoard.StartReadingSessionButton">
+            <summary>
+            StartReadingSessionButton control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:DotNetNuke.Modules.eCollection_Books.DashBoard.BookListDashBoard.selectedSessionID">
+            <summary>
+            selectedSessionID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.Components.FeatureController">
+            -----------------------------------------------------------------------------
+            <summary>
+            The Controller class for eCollection_Books
+            
+            The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+            DotNetNuke will poll this class to find out which Interfaces the class implements. 
+            
+            The IPortable interface is used to import/export content from a DNN module
+            
+            The ISearchable interface is used by DNN to index the content of a module
+            
+            The IUpgradeable interface allows module developers to execute code during the upgrade 
+            process for a module.
+            
+            Below you will find stubbed out implementations of each, uncomment and populate with your own data
+            </summary>
+            -----------------------------------------------------------------------------
+        </member>
+        <member name="T:DotNetNuke.Modules.eCollection_Books.BooksHandler">
+            <summary>
+            Summary description for BooksHandler
+            </summary>
+        </member>
+    </members>
+</doc>

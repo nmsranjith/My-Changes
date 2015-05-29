@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:/DesktopModules/
+Disallow:/Portals/
+Disallow:/Images/
+Disallow:/Controls/
+Disallow:/bin/
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+Sitemap: http://s2.cengagelearning.com.au
+Sitemap: http://s2.cengagelearning.co.nz

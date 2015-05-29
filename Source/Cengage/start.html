@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>jQuery Links demo</title>
+  
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
+ 
+  
+  <style type='text/css'>
+    body {margin:20px; font-size:12px;}
+
+
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$(function() {
+   $("a[href^='http']").each(function() {
+       $(this).click(function(event) {
+             event.preventDefault();
+             event.stopPropagation();
+             window.open(this.href, '_self');
+        });
+   });
+});
+});//]]>  
+
+</script>
+
+
+</head>
+<body>
+<h1>Page- Link Three</h1>
+
+Link One:<a href="LinkOne.html">Open</a>
+<br />
+Link Two: <a href="LinkTwo.html">Open</a>
+<br />
+Link Three: <a href="LinkThree.html">Open</a>
+  
+</body>
+
+
+</html>

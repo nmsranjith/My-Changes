@@ -1,0 +1,15 @@
+<div id="dnn_ctr1174_HtmlModule_lblContent" class="Normal">
+	<!--SEO NOINDEX--><h3 class="clear">Site Navigation</h3>
+<ul class="sidebar-nav">
+<li><a href="#"></a><a href="Home.aspx">Home</a></li>
+<li><a href="#"></a><a href="AboutUs.aspx">About Us</a></li>
+<li><a href="#"></a><a href="OurServices.aspx">Services</a>
+<ul>
+    <li><a href="OurServices.aspx#vintage-designs">Vintage Designs</a></li>
+    <li><a href="OurServices.aspx#high-performance">High Performance</a></li>
+    <li><a href="OurServices.aspx#electric-bicycles">Electric Bicycles</a></li>
+</ul>
+</li>
+<li><a href="NewsPromotions.aspx">News and Promotions</a></li>
+</ul><!--END SEO-->
+</div>

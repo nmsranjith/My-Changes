@@ -1,0 +1,19 @@
+<div id="dnn_ctr1512_HtmlModule_lblContent" class="Normal">
+	&lt;add key="ProRateRuleInclMonth" value="INCL_CUR_MONTH" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="ProRateRuleDays360" value="DAYS_360" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="ProRateRuleDays365" value="DAYS_365" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="LogInName" value="11837" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="TradingAccount_Sk" value="12" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="Personal_PartnerType" value="PERSONAL CUSTOMER" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="Cengage_AU_PartnerType" value="CENGAGE STAFF CUSTOMER - AU" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="Cengage_NZ_PartnerType" value="CENGAGE STAFF CUSTOMER - NZ" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="Business_PartnerType" value="BUSINESS CUSTOMER" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="EcollType" value="ECO" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="PersonalShopper" value="PERS SHOPR" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="SalesRepRoleID" value="SALES REPRESENTATIVE" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="transpwd" value="knu7p3zz" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="MerchantID" value="THL0009" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="ShippingCost" value="18.00" /&gt;<br />
+&nbsp; &nbsp; &lt;add key="QuoteExpiryDays" value="90" /&gt;<br />
+&nbsp; &nbsp; &lt;!-- &nbsp; &nbsp;&lt;add key="RepSK" value="15" /&gt;
+</div>

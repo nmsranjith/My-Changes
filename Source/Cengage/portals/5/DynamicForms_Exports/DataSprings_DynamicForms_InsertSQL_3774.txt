@@ -1,0 +1,30 @@
+/******  This script was created using the Data Springs Dynamic Forms Insert Data SQL Routine ******/
+/******  - This SQL Script should be executed as a SQL Completion Event to store data into your custom table. ******/
+/******  - You should always review your SQL query created. ******/
+/******  - Note: Creating insert SQL queries and using SQL events is not required to capture data, your form data is alreay stored in standard related tables.  ******/
+/******    Inserting data into a custom table should only be used for advanced data manipulation or custom application requirements.  ******/
+/******  - Example implementations might include insert/update/delete custom workflow implementation requirements, backup log of data, or other related implementations.  ******/
+
+INSERT INTO  {databaseOwner}[{objectQualifier}DynamicForms_CustomTable_3774](
+[UniqueCompletionID],
+[ResponseDateTime],
+[UserID],
+[IPAddress],
+[FirstNa],
+[LastNam],
+[Employee],
+[EmailID],
+[Male]
+)
+VALUES (
+'$(UniqueCompletionID)',
+GetDate(),
+$(UserID),
+'$(IPAddress)',
+'$(FirstNa)',
+'$(LastNam)',
+'$(Employee)',
+'$(EmailID)',
+'$(Male)'
+)
+

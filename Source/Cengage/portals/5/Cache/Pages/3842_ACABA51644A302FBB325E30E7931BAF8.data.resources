@@ -1,0 +1,51 @@
+<div id="dnn_ctr3941_HtmlModule_lblContent" class="Normal">
+	<!--
+<div style="float: left; width: 48%;">
+	<h3 style="color: #0089C5;">Customer Service</h3>
+	<table cellpadding="2">
+	    <tbody>
+	        <tr>
+	            <th></th>
+	            <th>Australia</th>
+	            <th>New Zealand</th>
+	        </tr>
+	        <tr>
+	            <td><strong>Hours:</strong></td>
+	            <td>7:00am-5:00pm</td>
+	            <td>9:00am-7:00pm</td>
+	        </tr>
+	        <tr>
+	            <td><strong>Phone:</strong></td>
+	            <td>1300 790 853</td>
+	            <td> 0800 449 725</td>
+	        </tr>
+	        <tr>
+	            <td><strong>Fax:</strong></td>
+	            <td>1300 790 852 </td>
+	            <td>0800 442 104</td>
+	        </tr>
+	        <tr>
+	            <td><strong>Email:</strong></td>
+	            <td colspan="2"><a href="mailto:anz.customerservice@cengage.com" style="color: #0089C5;">anz.customerservice@cengage.com</a></td>
+	        </tr>
+	    </tbody>
+	</table>
+</div>
+<div style="float: right; width: 48%;">
+	<h3 style="color: #0089C5;">Head Office</h3>
+	<p>
+		Level 7, 80 Dorcas Street<br />
+		South Melbourne<br />
+		Victoria 3205<br />
+		Australia
+	</p>
+	<p>
+		<strong>Office Hours:</strong> 8:30am-5:00pm AEST<br>
+		<strong>Phone:</strong> +61 3 9685 4111<br>
+		<strong>Fax:</strong> +61 3 9685 4199
+	</p>
+</div>
+-->
+<h3 style="color: #0089c5;">Head Office</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1575.6303023619457!2d144.96745315529483!3d-37.83078450034441!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642a9892029f5%3A0xe56f765ee783496d!2sLevel+7%2C+80+Dorcas+Street+South+Melbourne+Victoria+3205!5e0!3m2!1sen!2sau!4v1386286780567" width="960" height="250" frameborder="0" style="border: 0px; margin-bottom: 10px;"></iframe>
+</div>

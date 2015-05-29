@@ -1,0 +1,92 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path>DNNMobileNav/</path>
+      <name>DNNMobileNav-menudef.xml</name>
+    </file>
+    <file>
+      <path>DNNMobileNav/</path>
+      <name>DNNMobileNav.xslt</name>
+    </file>
+    <file>
+      <path>DNNMobileSubNav/</path>
+      <name>DNNMobileSubNav-menudef.xml</name>
+    </file>
+    <file>
+      <path>DNNMobileSubNav/</path>
+      <name>DNNMobileSubNav.xslt</name>
+    </file>
+    <file>
+      <path />
+      <name>home.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>home.doctype.xml</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>1-icn.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>2-icn.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>3-icn.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>d-arrow.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>DKLogo.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>Logo.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>mbg.jpg</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>r-arrow.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>social-icns.png</name>
+    </file>
+    <file>
+      <path />
+      <name>interior.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>interior.doctype.xml</name>
+    </file>
+    <file>
+      <path />
+      <name>microsite_home.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>microsite_home.doctype.xml</name>
+    </file>
+    <file>
+      <path />
+      <name>microsite_interior.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>microsite_interior.doctype.xml</name>
+    </file>
+    <file>
+      <path />
+      <name>skin.css</name>
+    </file>
+  </files>
+</dotnetnuke>

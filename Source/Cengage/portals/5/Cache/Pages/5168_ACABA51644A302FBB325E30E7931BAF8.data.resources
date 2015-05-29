@@ -1,0 +1,16 @@
+<div id="dnn_ctr4970_HtmlModule_lblContent" class="Normal">
+	<table style="width: 100%;">
+    <tbody>
+        <tr>
+            <td style="background-color: #92d050; width: 450px; height: 200px; padding: 10px;"><a href="/primary/the-staffroom"><span style="background-color: #92d050;">
+            </span>
+            <h3 style="text-align: center;"><span style="color: #ffffff;">Primary</span></h3>
+            </a></td>
+            <td style="background-color: #ffc000; width: 450px; height: 200px; padding: 10px;"><a href="/secondary/teachers">
+            <h3 style="text-align: center;"><span style="color: #ffffff;">Secondary</span> </h3>
+            </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

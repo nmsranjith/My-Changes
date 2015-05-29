@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?><Sidebar><Images DisplayMode="0" ContentSource="0" Orientation="0" WrapperAutoWidth="True" WrapperWidth="600" WrapperAutoHeight="True" WrapperHeight="170" WrapperBackgroundTransparent="True" WrapperBackgroundColor="#ffffff" WrapperBackgroundImageUrl="" WrapperBackgroundImageRepeat="no-repeat" WrapperBackgroundImageLeft="0" WrapperBackgroundImageTop="0" WrapperBorderWidth="0" WrapperBorderRadius="0" WrapperBorderStyle="solid" WrapperBorderColor="#000000" SliderSlideWidth="150" SliderSlideTemplateKey="2013-01-01T00:00:00.007" SliderMarginTop="0" SliderMarginRight="40" SliderMarginBottom="0" SliderMarginLeft="40" SliderExpire="1" NavigationSpeed="500" NavigationCSS="True" NavigationTransitionCSS="ease" NavigationTransition="easeOutQuad" NavigationStartSlide="0" NavigationInfiniteLoop="True" NavigationHideControlOnEnd="False" NavigationDelay="3000" NavigationStartDelay="0" NavigationDirection="next" NavigationPauseOnEnter="True" NavigationButtonVisible="True" NavigationButtonType="0" NavigationButtonStyle="h01" NavigationButtonColor="#333333" NavigationButtonSize="32" NavigationButtonOpacity="50" NavigationButtonPrevHDir="left" NavigationButtonPrevHValue="-30" NavigationButtonPrevHUnit="px" NavigationButtonPrevVDir="top" NavigationButtonPrevVValue="45" NavigationButtonPrevVUnit="%" NavigationButtonPrevUrl="" NavigationButtonNextHDir="right" NavigationButtonNextHValue="-30" NavigationButtonNextHUnit="px" NavigationButtonNextVDir="top" NavigationButtonNextVValue="45" NavigationButtonNextVUnit="%" NavigationButtonNextUrl="" SlideshowAutoStart="True" SlideshowSlidesMin="3" SlideshowMoveSlideQty="1" SearchVisible="False" SearchCategoryType="0" SearchLeft="0" SearchTop="0" SearchWidth="200" SearchHeight="14" SearchButtonType="0" SearchButtonText="Go" SearchButtonFontSize="0.85" SearchButtonFontFamily="Arial, sans-serif" SearchButtonFontBold="True" SearchButtonFontColor="#666666" SearchButtonImageUrl="" SearchButtonMarginLeft="3" TickerSpeed="55000" TickerDirection="next" TickerPauseOnEnter="True" CaptionVisible="False" CaptionAlignmentVertical="bottom" CaptionAutoWidth="True" CaptionWidth="600" CaptionHeight="40" CaptionLeft="0" CaptionTop="0" CaptionBackgroundStyle="0" CaptionBackgroundColor="#333333" CaptionBackgroundColorOpacity="50" CaptionBackgroundImageUrl="" CaptionBackgroundImageRepeat="no-repeat" CaptionBackgroundImageLeft="0" CaptionBackgroundImageTop="0" CaptionBorderTopVisible="False" CaptionBorderRightVisible="False" CaptionBorderBottomVisible="False" CaptionBorderLeftVisible="False" CaptionBorderWidth="0" CaptionBorderStyle="solid" CaptionBorderColor="#000000" PagerVisible="True" PagerType="0" PagerPosition="0" PagerAlignmentHorizontal="center" PagerMarginTop="5" PagerMarginRight="0" PagerMarginBottom="5" PagerMarginLeft="0" PagerItemSpace="10" PagerButtonType="0" PagerButtonStandardColor="#333333" PagerButtonStandardOpacity="50" PagerButtonStandardWidth="10" PagerButtonUrl="" PagerButtonUrlActive="" PagerNumbersFontSize="0.85" PagerNumbersFontFamily="Arial, sans-serif" PagerNumbersFontBold="True" PagerNumbersFontColor="#666666" PagerNumbersSeparator=" / " JSOnSliderLoadEnabled="False" JSOnSlideBeforeEnabled="False" JSOnSlideAfterEnabled="False" JSOnSlideNextEnabled="False" JSOnSlidePrevEnabled="False" AwsAmazonAccessKey="" AwsAmazonSecretAccessKey="" AwsAssociateTagCA="" AwsAssociateTagCN="" AwsAssociateTagDE="" AwsAssociateTagES="" AwsAssociateTagFR="" AwsAssociateTagIT="" AwsAssociateTagJP="" AwsAssociateTagUK="" AwsAssociateTagUS="" AwsExportKeys="True" AwsSearchType="ITEM" AwsASINs="" AwsServiceLocation="us" AwsAutoDetectLanguage="False" AwsSearchIndex="Books" AwsSearchIndexBrowseNode="1000" AwsSubcategoryBrowseNode="" AwsSortValue="Default" AwsSearchValueKeywords="ASP.net" AwsSearchValueTitle="" AwsSearchValueActor="" AwsSearchValueArtist="" AwsSearchValueAuthor="" AwsSearchValuePublisher="" AwsSearchValueDirector="" AwsSearchValueMusicLabel="" AwsSearchValueOrchestra="" AwsSearchValueComposer="" AwsSearchValueConductor="" AwsSearchValueBrand="" AwsSearchValueManufacturer="" AwsSearchValueCondition="New" AwsSearchValueMaximumPrice="" AwsSearchValueMinimumPrice="" AwsSearchValueMinPercentageOff="" AwsSearchValuePower="" AwsTopSearchValue="TopSellers" AwsNodeSearchValue="" AwsExceptAsins="" AwsMaxItemsCount="1" ><Image><Visible><![CDATA[true]]></Visible><Title><![CDATA[]]></Title><ImageUrl><![CDATA[[%PATH%]Chrysanthemum.jpg]]></ImageUrl><DetailPageUrl><![CDATA[]]></DetailPageUrl><Content1><![CDATA[]]></Content1><Content2><![CDATA[]]></Content2><Content3><![CDATA[]]></Content3><Content4><![CDATA[]]></Content4></Image><Image><Visible><![CDATA[true]]></Visible><Title><![CDATA[]]></Title><ImageUrl><![CDATA[[%PATH%]Desert.jpg]]></ImageUrl><DetailPageUrl><![CDATA[]]></DetailPageUrl><Content1><![CDATA[]]></Content1><Content2><![CDATA[]]></Content2><Content3><![CDATA[]]></Content3><Content4><![CDATA[]]></Content4></Image></Images><SlideTemplates><SlideTemplate TemplateKey="2013-01-01T00:00:00.001"><![CDATA[Slider - Amazon Content - Standard 01 - Small[%-templatesep-%]+Small Image, Title, Price<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px;">[%TITLE!MAX:44%]</div>
+	</a>
+	<div style="font-size:11px; color:#990000;">[%PRICE%]</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.002"><![CDATA[Slider - Amazon Content - Standard 02 - Small[%-templatesep-%]+Small Image, Title, Price<br />
++Title with fixed color<br />
++Tooltip<br />
++'Buy Now' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]
+	</div>
+	<div style="font-size:11px; color:#555555; padding-top:3px;">
+		<span style="font-weight:bold;">Amazon Price:</span> [%PRICE%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/buynow.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.003"><![CDATA[Slider - Amazon Content - Standard 01 - Medium[%-templatesep-%]+Medium Image, Title, Price<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px;">[%TITLE!MAX:44%]</div>
+	</a>
+	<div style="font-size:11px; color:#990000;">[%PRICE%]</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.004"><![CDATA[Slider - Amazon Content - Standard 02 - Medium[%-templatesep-%]+Medium Image, Title, Price<br />
++Title with fixed color<br />
++Tooltip<br />
++'Buy Now' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]
+	</div>
+	<div style="font-size:11px; color:#555555; padding-top:3px;">
+		<span style="font-weight:bold;">Amazon Price:</span> [%PRICE%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/buynow.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.005"><![CDATA[Slider - Amazon Content - Books 01 - Small[%-templatesep-%]+Small Image, Title, Authors, Binding, Number of Pages, Price<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px;">[%TITLE!MAX:44%]</div>
+	</a>
+	<div style="font-size:11px; color:#000000;">[%AUTHORS!MAX:22%]</div>
+	<div style="font-size:11px; color:#666666;">[%BINDING%] - [%NUMBEROFPAGES%] pages</div>
+	<div style="font-size:11px; color:#990000;">[%PRICE%]</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.006"><![CDATA[Slider - Amazon Content - Books 02 - Small[%-templatesep-%]+Small Image, Title, Authors, Price<br />
++Title with fixed color<br />
++Tooltip<br />
++'Buy Now' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]"
+	</div>
+	<div style="font-size:11px; color:#555555; line-height:125%;">
+		<span style="font-weight:bold;">by</span>: [%AUTHORS!MAX:22%]
+	</div>
+	<div style="font-size:11px; color:#555555; padding-top:3px;">
+		<span style="font-weight:bold;">Amazon Price:</span> [%PRICE%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/buynow.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.007"><![CDATA[Slider - Amazon Content - Books 03 - Small[%-templatesep-%]+Small Image, Title<br />
++Large Tooltip<br />
++'More' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]
+by [%AUTHORS%]
+Publisher: [%PUBLISHER%] ([%PUBLICATIONDATE%])
+Pages: [%NUMBEROFPAGES%]
+Binding: [%BINDING%]
+Price: [%PRICE%]
+Availability: [%AVAILABILITY%]" style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/more.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.008"><![CDATA[Slider - Amazon Content - Books 01 - Medium[%-templatesep-%]+Small Image, Title, Authors, Binding, Number of Pages, Price<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px;">[%TITLE!MAX:44%]</div>
+	</a>
+	<div style="font-size:11px; color:#000000;">[%AUTHORS!MAX:22%]</div>
+	<div style="font-size:11px; color:#666666;">[%BINDING%] - [%NUMBEROFPAGES%] pages</div>
+	<div style="font-size:11px; color:#990000;">[%PRICE%]</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.009"><![CDATA[Slider - Amazon Content - Books 02 - Medium[%-templatesep-%]+Small Image, Title, Authors, Price<br />
++Title with fixed color<br />
++Tooltip<br />
++'Buy Now' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold;
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]"
+	</div>
+	<div style="font-size:11px; color:#555555; line-height:125%;">
+		<span style="font-weight:bold;">by</span>: [%AUTHORS!MAX:22%]
+	</div>
+	<div style="font-size:11px; color:#555555; padding-top:3px;">
+		<span style="font-weight:bold;">Amazon Price:</span> [%PRICE%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/buynow.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.010"><![CDATA[Slider - Amazon Content - Books 03 - Medium[%-templatesep-%]+Small Image, Title<br />
++Large Tooltip<br />
++'More' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]
+by [%AUTHORS%]
+Publisher: [%PUBLISHER%] ([%PUBLICATIONDATE%])
+Pages: [%NUMBEROFPAGES%]
+Binding: [%BINDING%]
+Price: [%PRICE%]
+Availability: [%AVAILABILITY%]" style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/more.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.011"><![CDATA[Slider - Amazon Content - DVD 01 - Small[%-templatesep-%]+Small Image, Title, Actors, Release Year, Binding, Price<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px;">[%TITLE!MAX:44%]</div>
+	</a>
+	<div style="font-size:11px; color:#000000;">
+		Starring [%ACTORS!MAX:50%] ([%RELEASEYEAR%])
+	</div>
+	<div style="font-size:11px; color:#666666;">[%BINDING%]</div>
+	<div style="font-size:11px; color:#990000;">[%PRICE%]</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.012"><![CDATA[Slider - Amazon Content - DVD 02 - Small[%-templatesep-%]+Small Image, Title, Actors, Price<br />
++Title with fixed color<br />
++Tooltip<br />
++'Buy Now' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold;
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]"
+	</div>
+	<div style="font-size:11px; color:#555555; line-height:125%;">
+		Starring [%ACTORS!MAX:44%]<br />[%BINDING%]
+	</div>
+	<div style="font-size:11px; color:#555555; padding-top:3px;">
+		<span style="font-weight:bold;">Amazon Price:</span> [%PRICE%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/buynow.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.013"><![CDATA[Slider - Amazon Content - DVD 03 - Small[%-templatesep-%]+Small Image, Title, Binding<br />
++Large Tooltip<br />
++'More' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%SMALLIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]
+Starring [%ACTORS%]
+Directed by: [%DIRECTORS%]
+Runtime: [%RUNNINGTIME%] [%RUNNINGTIMEUNIT%]
+Release year: [%RELEASEYEAR%]
+Studio: [%STUDIO%]
+Disks: [%NUMBEROFDISCS%]
+Price: [%PRICE%]
+Rating: [%AUDIENCERATING%]
+Availability: [%AVAILABILITY%]" style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]
+	</div>
+	<div style="font-size:10px; color:#666666; 
+		line-height:120%; padding-top:5px;">[%BINDING%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/more.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.014"><![CDATA[Slider - Amazon Content - DVD 01 - Medium[%-templatesep-%]+Medium Image, Title, Actors, Release Year, Binding, Price<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]"
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px;">[%TITLE!MAX:44%]</div>
+	</a>
+	<div style="font-size:11px; color:#000000;">
+		Starring [%ACTORS!MAX:50%] ([%RELEASEYEAR%])
+	</div>
+	<div style="font-size:11px; color:#666666;">[%BINDING%]</div>
+	<div style="font-size:11px; color:#990000;">[%PRICE%]</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.015"><![CDATA[Slider - Amazon Content - DVD 02 - Medium[%-templatesep-%]+Medium Image, Title, Actors, Price<br />
++Title with fixed color<br />
++Tooltip<br />
++'Buy Now' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]"
+	</div>
+	<div style="font-size:11px; color:#555555; line-height:125%;">
+		Starring [%ACTORS!MAX:44%]<br />[%BINDING%]
+	</div>
+	<div style="font-size:11px; color:#555555; padding-top:3px;">
+		<span style="font-weight:bold;">Amazon Price:</span> [%PRICE%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/buynow.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.016"><![CDATA[Slider - Amazon Content - DVD 03 - Medium[%-templatesep-%]+Medium Image, Title, Binding<br />
++Large Tooltip<br />
++'More' button[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]
+Starring [%ACTORS%]
+Directed by: [%DIRECTORS%]
+Runtime: [%RUNNINGTIME%] [%RUNNINGTIMEUNIT%]
+Release year: [%RELEASEYEAR%]
+Studio: [%STUDIO%]
+Disks: [%NUMBEROFDISCS%]
+Price: [%PRICE%]
+Rating: [%AUDIENCERATING%]
+Availability: [%AVAILABILITY%]" style="border-style:none;"/>
+		</div>
+	</a>
+	<div style="font-size:12px; color:#1a67b8; font-weight:bold; 
+		line-height:125%; padding-top:5px;">[%TITLE!MAX:38%]
+	</div>
+	<div style="font-size:10px; color:#666666; 
+		line-height:120%; padding-top:5px;">[%BINDING%]
+	</div>
+	<div>
+		<a href="[%DETAILPAGEURL%]" target="_blank">
+			<img src="[%MODULEPATH%]resources/misc/more.png" alt="[%TITLE%]" />
+		</a>
+	</div>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.017"><![CDATA[Slider - Custom Content - Standard 01[%-templatesep-%]+Image, Title<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+	</a>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.018"><![CDATA[Slider - Custom Content - Standard 02[%-templatesep-%]+Image, Title,<br />
++Content 1,<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+		<div style="font-size:11px;">[%CONTENT1%]</div>
+	</a>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.019"><![CDATA[Slider - Custom Content - Standard 03[%-templatesep-%]+Image, Title,<br />
++Content 1, Content 2,<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+		<div style="font-size:11px;">[%CONTENT1%]</div>
+		<div style="font-size:11px;">[%CONTENT2%]</div>
+	</a>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.020"><![CDATA[Slider - Custom Content - Standard 04[%-templatesep-%]+Image, Title,<br />
++Content 1, Content 2, Content 3,<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+		<div style="font-size:11px;">[%CONTENT1%]</div>
+		<div style="font-size:11px;">[%CONTENT2%]</div>
+		<div style="font-size:11px;">[%CONTENT3%]</div>
+	</a>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.021"><![CDATA[Slider - Custom Content - Standard 05[%-templatesep-%]+Image, Title,<br />
++Content 1, Content 2, Content 3, Content 4,<br />
++Tooltip[%-templatesep-%][%-templatesep-%]<div style="padding:5px">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+		<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+		<div style="font-size:11px;">[%CONTENT1%]</div>
+		<div style="font-size:11px;">[%CONTENT2%]</div>
+		<div style="font-size:11px;">[%CONTENT3%]</div>
+		<div style="font-size:11px;">[%CONTENT4%]</div>
+	</a>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.022"><![CDATA[Banner - Custom Content - Standard 01[%-templatesep-%]+Image<br />
++Tooltip:
+[%-templatesep-%][%-templatesep-%]<div style="padding:0">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+</div>[%-templatesep-%]]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.023"><![CDATA[Banner - Custom Content - Standard 02[%-templatesep-%]+Image<br />
++Tooltip:<br />
+Transparent Caption:<br />
++Title
+[%-templatesep-%][%-templatesep-%]<div style="padding:0">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%MEDIUMIMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+</div>[%-templatesep-%]<div style="padding:10px; color:#ffffff;">
+	<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+</div>]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.024"><![CDATA[Banner - Custom Content - Standard 03[%-templatesep-%]+Image<br />
++Tooltip:<br />
+Transparent Caption:<br />
++Title<br />
++Content 1,[%-templatesep-%][%-templatesep-%]<div style="padding:0">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+</div>[%-templatesep-%]<div style="padding:10px; color:#ffffff;">
+	<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+	<div style="font-size:10px;">[%CONTENT1%]</div>
+</div>]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.025"><![CDATA[Banner - Custom Content - Standard 04[%-templatesep-%]+Image<br />
++Tooltip:<br />
+Transparent Caption:<br />
++Title<br />
++Content 1, Content 2[%-templatesep-%][%-templatesep-%]<div style="padding:0">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+</div>[%-templatesep-%]<div style="padding:10px; color:#ffffff;">
+	<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+	<div style="font-size:10px;">[%CONTENT1%]</div>
+	<div style="font-size:10px;">[%CONTENT2%]</div>
+</div>]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.026"><![CDATA[Banner - Custom Content - Standard 05[%-templatesep-%]+Image<br />
++Tooltip:<br />
+Transparent Caption:<br />
++Title<br />
++Content 1, Content 2, Content 3[%-templatesep-%][%-templatesep-%]<div style="padding:0">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+</div>[%-templatesep-%]<div style="padding:10px; color:#ffffff;">
+	<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+	<div style="font-size:10px;">[%CONTENT1%]</div>
+	<div style="font-size:10px;">[%CONTENT2%]</div>
+	<div style="font-size:10px;">[%CONTENT3%]</div>
+</div>]]></SlideTemplate><SlideTemplate TemplateKey="2013-01-01T00:00:00.027"><![CDATA[Banner - Custom Content - Standard 06[%-templatesep-%]+Image<br />
++Tooltip:<br />
+Transparent Caption:<br />
++Title<br />
++Content 1, Content 2, Content 3, Content 4[%-templatesep-%][%-templatesep-%]<div style="padding:0">
+	<a href="[%DETAILPAGEURL%]" target="_blank" style="text-decoration:none;">
+		<div style="text-align:left; padding-left:0;">
+			<img src="[%IMAGEURL%]" alt="[%TITLE%]" title="[%TITLE%]" 
+				style="border-style:none;"/>
+		</div>
+	</a>
+</div>[%-templatesep-%]<div style="padding:10px; color:#ffffff;">
+	<div style="font-size:12px; font-weight:bold;">[%TITLE%]</div>
+	<div style="font-size:10px;">[%CONTENT1%]</div>
+	<div style="font-size:10px;">[%CONTENT2%]</div>
+	<div style="font-size:10px;">[%CONTENT3%]</div>
+	<div style="font-size:10px;">[%CONTENT4%]</div>
+</div>]]></SlideTemplate></SlideTemplates><JSFunctionsContent><JSOnSliderLoad><![CDATA[]]></JSOnSliderLoad><JSOnSlideBefore><![CDATA[]]></JSOnSlideBefore><JSOnSlideAfter><![CDATA[]]></JSOnSlideAfter><JSOnSlideNext><![CDATA[]]></JSOnSlideNext><JSOnSlidePrev><![CDATA[]]></JSOnSlidePrev></JSFunctionsContent></Sidebar>

@@ -1,0 +1,32 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>container.css</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>DKLogo.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>minus-icn.png</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>plus-icn.png</name>
+    </file>
+    <file>
+      <path />
+      <name>NoTitle.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>Simple.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>ToggledContentContainer.ascx</name>
+    </file>
+  </files>
+</dotnetnuke>

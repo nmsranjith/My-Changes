@@ -1,0 +1,1238 @@
+<portal version="3.0">
+  <description>pmecollection of s2.cengagelearning.com.au</description>
+  <tabs>
+    <tab>
+      <content>pmecollection</content>
+      <contentKey />
+      <permanentredirect>false</permanentredirect>
+      <cultureCode />
+      <containersrc />
+      <description />
+      <disabled>false</disabled>
+      <enddate>0001-01-01T00:00:00</enddate>
+      <issecure>false</issecure>
+      <visible>true</visible>
+      <keywords />
+      <pageheadtext />
+      <refreshinterval>-1</refreshinterval>
+      <sitemappriority>0.5</sitemappriority>
+      <skinsrc>[L]Skins/Cengage/SecondarySkin.ascx</skinsrc>
+      <startdate>0001-01-01T00:00:00</startdate>
+      <name>pmecollection</name>
+      <title />
+      <url type="Normal" />
+      <tabpermissions>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>VIEW</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>ADD</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>CONTENT</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>COPY</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>DELETE</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>EXPORT</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>IMPORT</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>MANAGE</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>NAVIGATE</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>EDIT</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+          <permissioncode>SYSTEM_TAB</permissioncode>
+          <permissionkey>VIEW</permissionkey>
+          <allowaccess>true</allowaccess>
+          <rolename>All Users</rolename>
+        </permission>
+      </tabpermissions>
+      <tabsettings>
+        <tabsetting>
+          <settingname>CacheDuration</settingname>
+          <settingvalue>
+          </settingvalue>
+        </tabsetting>
+        <tabsetting>
+          <settingname>ExcludeVaryBy</settingname>
+          <settingvalue>
+          </settingvalue>
+        </tabsetting>
+        <tabsetting>
+          <settingname>LinkNewWindow</settingname>
+          <settingvalue>False</settingvalue>
+        </tabsetting>
+        <tabsetting>
+          <settingname>CacheProvider</settingname>
+          <settingvalue>
+          </settingvalue>
+        </tabsetting>
+        <tabsetting>
+          <settingname>IncludeVaryBy</settingname>
+          <settingvalue>
+          </settingvalue>
+        </tabsetting>
+        <tabsetting>
+          <settingname>MaxVaryByCount</settingname>
+          <settingvalue>
+          </settingvalue>
+        </tabsetting>
+        <tabsetting>
+          <settingname>CacheIncludeExclude</settingname>
+          <settingvalue>
+          </settingvalue>
+        </tabsetting>
+      </tabsettings>
+      <panes>
+        <pane>
+          <name>eCollectionSliderPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3562</moduleID>
+              <title>Nivo Slider</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>0</cachetime>
+              <cachemethod>FileModuleCachingProvider</cachemethod>
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <modulesettings>
+                <modulesetting>
+                  <settingname>ControlNavThumbsSearch</settingname>
+                  <settingvalue>.jpg</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>CaptionOpactity</settingname>
+                  <settingvalue>0.01</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>LastSlide</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>AfterChange</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>PauseTime</settingname>
+                  <settingvalue>8000</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>KeyboardNav</settingname>
+                  <settingvalue>true</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>PauseOnHover</settingname>
+                  <settingvalue>true</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Width</settingname>
+                  <settingvalue>937</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ControlNavThumbsReplace</settingname>
+                  <settingvalue>_thumb.jpg</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>StartSlide</settingname>
+                  <settingvalue>0</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>AfterLoad</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Effect</settingname>
+                  <settingvalue>fade</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>AnimSpeed</settingname>
+                  <settingvalue>500</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ImagePath</settingname>
+                  <settingvalue>/DesktopModules/NivoSlider/Images/3562</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Height</settingname>
+                  <settingvalue>358</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ControlNavThumbsFromRel</settingname>
+                  <settingvalue>false</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ControlNav</settingname>
+                  <settingvalue>true</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>SlideshowEnd</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>DirectionNavHide</settingname>
+                  <settingvalue>false</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>DirectionNav</settingname>
+                  <settingvalue>false</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ManualAdvance</settingname>
+                  <settingvalue>false</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Slices</settingname>
+                  <settingvalue>15</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>BeforeChange</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+              </modulesettings>
+              <tabmodulesettings>
+                <tabmodulesetting>
+                  <settingname>searchonce</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+                <tabmodulesetting>
+                  <settingname>hideadminborder</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+              </tabmodulesettings>
+              <definition>NivoSlider</definition>
+              <moduledefinition>Nivo Slider</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>eCollectionDescriptionPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3563</moduleID>
+              <title>Text/HTML</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>1200</cachetime>
+              <cachemethod>FileModuleCachingProvider</cachemethod>
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <content type="DNNHTML" version="06.02.09"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;width: 100%; margin-left: 21px; float: left;&amp;quot;&amp;gt;
+&amp;lt;h2 style=&amp;quot;width: 78%; color: #0089c5; font-weight: 700; float: left;&amp;quot;&amp;gt;
+The PM eCollection is a brand new platform that &amp;lt;br /&amp;gt;
+re-imagines guided and independent &amp;lt;br /&amp;gt;
+reading for the digital age.&amp;lt;/h2&amp;gt;
+&amp;lt;div style=&amp;quot;margin-top: 30px; float: left; margin-left: 20px;&amp;quot; id=&amp;quot;sample5&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;request-access.aspx&amp;quot; style=&amp;quot;padding: 80px 80px 60px 76px;&amp;quot; target=&amp;quot;blank&amp;quot;&amp;gt; &amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+              <modulesettings>
+                <modulesetting>
+                  <settingname>HtmlText_ReplaceTokens</settingname>
+                  <settingvalue>False</settingvalue>
+                </modulesetting>
+              </modulesettings>
+              <tabmodulesettings>
+                <tabmodulesetting>
+                  <settingname>searchonce</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+                <tabmodulesetting>
+                  <settingname>hideadminborder</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+              </tabmodulesettings>
+              <definition>DNN_HTML</definition>
+              <moduledefinition>Text/HTML</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>eCollectionPillarPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3564</moduleID>
+              <title>Text/HTML</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>1200</cachetime>
+              <cachemethod>FileModuleCachingProvider</cachemethod>
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <content type="DNNHTML" version="06.02.09"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;hr style=&amp;quot;height: 0px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: white; color: #bdbdbd; float: left; width: 95.4%; margin-left: 16px;&amp;quot; /&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; width: 95%; margin-top: -5px; margin-left: 15px;&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color: #4cacd6; word-spacing: 6px;&amp;quot;&amp;gt;The  PM eCollection comprises three pillars:&amp;lt;/h3&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; width: 45%;&amp;quot;&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; margin-bottom: 20px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; margin-right: 6px; float: left; padding: 0px; margin-top: -2px; margin-bottom: 0px; font-weight: 700;&amp;quot;&amp;gt;The Content -&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; margin-top: 45px; display: inline; width: 68%;&amp;quot;&amp;gt;we&amp;#39;ve taken the proven strength of our&amp;lt;br /&amp;gt;
+pedagogically sound, carefully levelled PM eCollection&amp;lt;br /&amp;gt;
+and digitised them for use on ipads. The 200 titles in the&amp;lt;br /&amp;gt;
+first release of PM eCollection are from PM levels 1 to 24 &amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; margin-bottom: 20px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; margin-right: 6px; float: left; padding: 0px; margin-top: -2px; margin-bottom: 0px; font-weight: 700;&amp;quot;&amp;gt;The eReader app -&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; margin-top: 45px; display: inline; width: 68%;&amp;quot;&amp;gt;we&amp;#39;ve designed an eReader&amp;lt;br /&amp;gt;
+specifically for guided and independent reading. The&amp;lt;br /&amp;gt;
+features of our eReader support students using PM&amp;lt;br /&amp;gt;
+eBooks to learn to read.&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; margin-bottom: 20px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; margin-right: 6px; float: left; padding: 0px; margin-top: -2px; margin-bottom: 0px; font-weight: 700;&amp;quot;&amp;gt;The website -&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; margin-top: 45px; display: inline; width: 68%;&amp;quot;&amp;gt;we&amp;#39;ve created a sophisticated website for&amp;lt;br /&amp;gt;
+teachers and administrators to easily manage students&amp;#39;&amp;lt;br /&amp;gt;
+guided and independent reading experiences.
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;float: right; width: 44%; margin-top: 3px; margin-right: 100px;&amp;quot;&amp;gt;
+&amp;lt;iframe width=&amp;quot;510&amp;quot; height=&amp;quot;300&amp;quot; src=&amp;quot;https://www.youtube.com/embed/MtBAptQVho8?feature=player_detailpage&amp;amp;amp;rel=0&amp;amp;amp;&amp;amp;amp;loop=1&amp;quot; frameborder=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;hr style=&amp;quot;height: 0px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: white; color: #bdbdbd; float: left; width: 95.4%; margin-left: 16px;&amp;quot; /&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+              <modulesettings>
+                <modulesetting>
+                  <settingname>HtmlText_ReplaceTokens</settingname>
+                  <settingvalue>False</settingvalue>
+                </modulesetting>
+              </modulesettings>
+              <tabmodulesettings>
+                <tabmodulesetting>
+                  <settingname>searchonce</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+                <tabmodulesetting>
+                  <settingname>hideadminborder</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+              </tabmodulesettings>
+              <definition>DNN_HTML</definition>
+              <moduledefinition>Text/HTML</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>PMeBookPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3565</moduleID>
+              <title>Text/HTML</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>1200</cachetime>
+              <cachemethod />
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <content type="DNNHTML" version="06.02.09"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;width: 108%; float: left; margin-left: 16px;&amp;quot;&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; width: 50%; margin-top: 60px;&amp;quot;&amp;gt;
+&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;/portals/0/Images/PMeBookCat.png&amp;quot; style=&amp;quot;width: 430px; height: 344px;&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;width: 50%; float: right;&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color: #4cacd6; font-weight: 700;&amp;quot;&amp;gt;THE CONTENT&amp;lt;/h3&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070;&amp;quot;&amp;gt;
+Each PM eCollection eBook is completely redesigned for&amp;lt;br /&amp;gt;
+iPad compatibility, though retains the same pedagogical&amp;lt;br /&amp;gt;
+underpinnings as the original PM Collection.
+&amp;lt;/p&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070;&amp;quot;&amp;gt;
+Purpose-built features to enhance students&amp;#39; experience&amp;lt;br /&amp;gt;
+with the PM eBooks include:
+&amp;lt;/p&amp;gt;
+&amp;lt;ul style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; margin-left: -22px;&amp;quot;&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; margin: 0px; padding-left: 15px;&amp;quot;&amp;gt;audio support - students tap to hear a word, swipe&amp;lt;br /&amp;gt;
+    down to hear a page&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; margin: 0px; padding-left: 15px;&amp;quot;&amp;gt;
+    My Words - students touch and swipe a word to add it&amp;lt;br /&amp;gt;
+    to their My Words list&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; margin: 0px; padding-left: 15px;&amp;quot;&amp;gt;ability for students to record their own version of the&amp;lt;br /&amp;gt;
+    PM eBook&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; margin: 0px; padding-left: 15px;&amp;quot;&amp;gt;edit text function&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; margin: 0px; padding-left: 15px;&amp;quot;&amp;gt;draw and add notes to PM eBooks.&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;portals/0/Files/eCollection titles.xlsx&amp;quot; style=&amp;quot;font-family: Raleway; text-decoration: none; font-size: 11pt; color: #0581b8 !important;&amp;quot;&amp;gt;To view a list of the 200 PM eCollection ebooks click &amp;lt;strong&amp;gt;here&amp;lt;strong&amp;gt;.&amp;lt;/strong&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;strong&amp;gt;&amp;lt;strong&amp;gt;
+&amp;lt;/strong&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;strong&amp;gt;&amp;lt;strong&amp;gt;
+&amp;lt;/strong&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+              <modulesettings />
+              <tabmodulesettings />
+              <definition>DNN_HTML</definition>
+              <moduledefinition>Text/HTML</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>EReaderPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3566</moduleID>
+              <title>Text/HTML</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>1200</cachetime>
+              <cachemethod />
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <content type="DNNHTML" version="06.02.09"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;float: left; width: 100%;&amp;quot;&amp;gt;
+&amp;lt;hr style=&amp;quot;height: 0px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: white; color: #bdbdbd; float: left; width: 95.4%; margin-left: 15px;&amp;quot; /&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; width: 47%; margin-left: 15px;&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color: #4cacd6; font-weight: 700;&amp;quot;&amp;gt;
+THE eREADER APP
+&amp;lt;/h3&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070;&amp;quot;&amp;gt;
+The PM eCollection eReader app allows students and&amp;lt;br /&amp;gt;
+teachers to choose a reading profile based on the needs of&amp;lt;br /&amp;gt;
+learners in specific situations.
+&amp;lt;/p&amp;gt;
+&amp;lt;ul style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; padding-left: 21px;&amp;quot;&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;
+    The Guided Reading profile disables the audio&amp;lt;br /&amp;gt;
+    record functionality so that distractions are minimised.&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;
+    The Independent Reading profile enables the audio and&amp;lt;br /&amp;gt;
+    record functionality. offering full support for students&amp;lt;br /&amp;gt;
+    reading on their own.&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;    The Custom Reading profile allows the user to enable or&amp;lt;br /&amp;gt;
+    disable My Words and audio functionality, and&amp;lt;br /&amp;gt;
+    show/hide the text to create opportunities for retelling&amp;lt;br /&amp;gt;
+    and other oral literacy activities.&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070;&amp;quot;&amp;gt;
+The intuitive controls and navigation are perfectly suited to&amp;lt;br /&amp;gt;
+today&amp;#39;s digital learners. The gestures used for choosing and&amp;lt;br /&amp;gt;
+reading eBooks in the PM eCollection are already well&amp;lt;br /&amp;gt;
+known by today&amp;#39;s students.
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;float: right; width: 50%; margin-top: 60px;&amp;quot;&amp;gt;
+&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;/portals/0/Images/PMeReader.png&amp;quot; style=&amp;quot;width: 458px; height: 345px;&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;hr style=&amp;quot;float: left; margin-top: 25px; height: 0px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: white; color: #bdbdbd; width: 95.4%; margin-left: 15px;&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+              <modulesettings />
+              <tabmodulesettings />
+              <definition>DNN_HTML</definition>
+              <moduledefinition>Text/HTML</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>eCollectionWebPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3567</moduleID>
+              <title>Text/HTML</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>1200</cachetime>
+              <cachemethod />
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <content type="DNNHTML" version="06.02.09"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;float: left; width: 109%; margin-left: 15px;&amp;quot;&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; width: 50%; margin-top: 58px;&amp;quot;&amp;gt;
+&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;/portals/0/Images/ecollWebsite.png&amp;quot; style=&amp;quot;width: 475px;&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;float: right; width: 50%; margin-right: -8px; padding-bottom: 10px;&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;color: #4cacd6; font-weight: 700;&amp;quot;&amp;gt;THE WEBSITE&amp;lt;/h3&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070;&amp;quot;&amp;gt;
+The PM eCollection website offers teachers and&amp;lt;br /&amp;gt;
+administrators powerful planning, management and&amp;lt;br /&amp;gt;
+assessment functionality. It is here you are able to create,&amp;lt;br /&amp;gt;
+edit and manage:
+&amp;lt;/p&amp;gt;
+&amp;lt;ul style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; margin-left: -17px; margin-top: -10px;&amp;quot;&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt; student profiles&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;    reading groups (both class and small groups)&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;    reading sessions for guided or independent reading.&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;p style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; padding-top: 15px;&amp;quot;&amp;gt;
+Rich assessment data is stored in students&amp;#39; profiles. Each&amp;lt;br /&amp;gt;
+profile includes the student&amp;#39;s:
+&amp;lt;/p&amp;gt;
+&amp;lt;ul style=&amp;quot;font-size: 11pt; font-family: Raleway, Arial; color: #707070; margin-left: -17px; margin-top: -10px;&amp;quot;&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;  current PM level and reading age&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;  the number of eBooks opened&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;    the recordings they made the ability for a&amp;lt;br /&amp;gt;
+    teacher to listen to the recordings&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt; the words that the student has added to their My&amp;lt;br /&amp;gt;
+    Words list&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt;a graph showing student&amp;#39;s progress over time&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+    &amp;lt;li style=&amp;quot;list-style: inherit; padding-bottom: 5px; font-size: 18pt;&amp;quot;&amp;gt;
+    &amp;lt;p style=&amp;quot;font-size: 11pt; padding-left: 5px; margin: 0px;&amp;quot;&amp;gt; reading history&amp;lt;/p&amp;gt;
+    &amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;hr style=&amp;quot;float: left; height: 0px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: white; width: 95.4%; color: #bdbdbd; margin-left: 2px;&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+              <modulesettings />
+              <tabmodulesettings />
+              <definition>DNN_HTML</definition>
+              <moduledefinition>Text/HTML</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>OtherFeatureContentPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3568</moduleID>
+              <title>Text/HTML</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>1200</cachetime>
+              <cachemethod />
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <content type="DNNHTML" version="06.02.09"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;float: left; margin-top: 10px; margin-left: 15px;&amp;quot;&amp;gt;
+&amp;lt;h3 style=&amp;quot;font-weight: 700; color: #0089c5;&amp;quot;&amp;gt;
+OUR FAVOURITE FEATURES:
+&amp;lt;/h3&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;div id=&amp;quot;1&amp;quot; style=&amp;quot;display: block; height: 128px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; font-weight: 700; margin-bottom: 0px; padding-top: 25px;&amp;quot;&amp;gt;
+Custom Reading profile
+&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;color: #707070; font-family: Raleway, Arial; font-size: 11pt;&amp;quot;&amp;gt;
+Turn functions on or off including the ability to hide the text to turn a book into a re-telling opportunity&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;2&amp;quot; style=&amp;quot;display: none; height: 128px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; font-weight: 700; margin-bottom: 0px; padding-top: 25px;&amp;quot;&amp;gt;
+Edit
+&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;color: #707070; font-family: Raleway, Arial; font-size: 11pt;&amp;quot;&amp;gt;
+Students can edit the text
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;3&amp;quot; style=&amp;quot;display: none; height: 128px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; font-weight: 700; margin-bottom: 0px; padding-top: 25px;&amp;quot;&amp;gt;
+My Words
+&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;color: #707070; font-family: Raleway, Arial; font-size: 11pt;&amp;quot;&amp;gt;
+Students can create a customised word list for&amp;lt;br /&amp;gt;
+spelling or word study
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;4&amp;quot; style=&amp;quot;display: none; height: 128px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; font-weight: 700; margin-bottom: 0px; padding-top: 25px;&amp;quot;&amp;gt;
+Record
+&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;color: #707070; font-family: Raleway, Arial; font-size: 11pt;&amp;quot;&amp;gt;
+Students can record themselves reading a text
+&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;5&amp;quot; style=&amp;quot;display: none; height: 128px;&amp;quot;&amp;gt;
+&amp;lt;h4 style=&amp;quot;color: #90bf60; font-weight: 700; margin-bottom: 0px; padding-top: 25px;&amp;quot;&amp;gt;
+Reading sessions
+&amp;lt;/h4&amp;gt;
+&amp;lt;p style=&amp;quot;color: #707070; font-family: Raleway, Arial; font-size: 11pt;&amp;quot;&amp;gt;Teachers can allocate books, set reading profiles and include a personalised note to a student or group of students&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;float: left; margin-left: -3px;&amp;quot;&amp;gt;
+&amp;lt;input type=&amp;quot;button&amp;quot; id=&amp;quot;eCollPrevButton&amp;quot; value=&amp;quot;PREV&amp;quot; class=&amp;quot;eCollectionsliderButton ActiveAddButtonsHolder&amp;quot; /&amp;gt;
+&amp;lt;input type=&amp;quot;button&amp;quot; id=&amp;quot;eCollNextButton&amp;quot; value=&amp;quot;NEXT&amp;quot; class=&amp;quot;eCollectionsliderButton ActiveAddButtonsHolder&amp;quot; /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+              <modulesettings />
+              <tabmodulesettings />
+              <definition>DNN_HTML</definition>
+              <moduledefinition>Text/HTML</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>UsersPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3569</moduleID>
+              <title>Text/HTML</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>1200</cachetime>
+              <cachemethod />
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <content type="DNNHTML" version="06.02.09"><![CDATA[&lt;htmltext&gt;&lt;content&gt;&lt;![CDATA[&amp;lt;hr style=&amp;quot;border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: white; width: 123%; height: 0px; color: #bdbdbd; margin-left: 15px;&amp;quot; /&amp;gt;
+&amp;lt;div style=&amp;quot;margin-top: 50px; float: left; margin-left: 220px;&amp;quot; id=&amp;quot;sample&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;http://cengage.com.au/install-pmecollection&amp;quot; style=&amp;quot;padding: 80px 80px 60px 76px;&amp;quot; target=&amp;quot;blank&amp;quot;&amp;gt; &amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;margin-top: 50px; float: left; margin-left: 20px;&amp;quot; id=&amp;quot;sample1&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;request-access.aspx&amp;quot; style=&amp;quot;padding: 80px 80px 60px 76px;&amp;quot; target=&amp;quot;blank&amp;quot;&amp;gt; &amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;margin-top: 50px; float: left; margin-left: 20px;&amp;quot; id=&amp;quot;sample2&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;feedback.aspx&amp;quot; style=&amp;quot;padding: 80px 80px 60px 76px;&amp;quot; target=&amp;quot;blank&amp;quot;&amp;gt; &amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;]]&gt;&lt;/content&gt;&lt;/htmltext&gt;]]></content>
+              <modulesettings />
+              <tabmodulesettings />
+              <definition>DNN_HTML</definition>
+              <moduledefinition>Text/HTML</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+        <pane>
+          <name>OtherFeatureSliderPane</name>
+          <modules>
+            <module>
+              <contentKey />
+              <moduleID>3571</moduleID>
+              <title>Nivo Slider</title>
+              <alltabs>false</alltabs>
+              <inheritviewpermissions>true</inheritviewpermissions>
+              <header />
+              <footer />
+              <startdate>0001-01-01T00:00:00</startdate>
+              <enddate>0001-01-01T00:00:00</enddate>
+              <cachetime>0</cachetime>
+              <cachemethod>FileModuleCachingProvider</cachemethod>
+              <alignment />
+              <color />
+              <border />
+              <iconfile />
+              <visibility>Maximized</visibility>
+              <containersrc />
+              <displaytitle>true</displaytitle>
+              <displayprint>false</displayprint>
+              <displaysyndicate>false</displaysyndicate>
+              <iswebslice>false</iswebslice>
+              <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+              <webslicettl>0</webslicettl>
+              <modulepermissions>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EDIT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>CONTENT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>DELETE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>EXPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>IMPORT</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+                <permission>
+                  <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+                  <permissionkey>MANAGE</permissionkey>
+                  <allowaccess>true</allowaccess>
+                  <rolename>Administrators</rolename>
+                </permission>
+              </modulepermissions>
+              <modulesettings>
+                <modulesetting>
+                  <settingname>DirectionNavHide</settingname>
+                  <settingvalue>false</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>LastSlide</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>CaptionOpactity</settingname>
+                  <settingvalue>0.8</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ControlNavThumbsSearch</settingname>
+                  <settingvalue>.jpg</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>AfterChange</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>DirectionNav</settingname>
+                  <settingvalue>true</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>PauseTime</settingname>
+                  <settingvalue>3000</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>KeyboardNav</settingname>
+                  <settingvalue>true</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Width</settingname>
+                  <settingvalue>400</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ControlNavThumbsReplace</settingname>
+                  <settingvalue>_thumb.jpg</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>StartSlide</settingname>
+                  <settingvalue>0</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>AfterLoad</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Effect</settingname>
+                  <settingvalue>slideInLeft</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>AnimSpeed</settingname>
+                  <settingvalue>10</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ImagePath</settingname>
+                  <settingvalue>/DesktopModules/NivoSlider/Images/3571</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Height</settingname>
+                  <settingvalue>300</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ControlNavThumbsFromRel</settingname>
+                  <settingvalue>false</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ControlNav</settingname>
+                  <settingvalue>false</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>SlideshowEnd</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>PauseOnHover</settingname>
+                  <settingvalue>true</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>ManualAdvance</settingname>
+                  <settingvalue>true</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>Slices</settingname>
+                  <settingvalue>15</settingvalue>
+                </modulesetting>
+                <modulesetting>
+                  <settingname>BeforeChange</settingname>
+                  <settingvalue>function(){}</settingvalue>
+                </modulesetting>
+              </modulesettings>
+              <tabmodulesettings>
+                <tabmodulesetting>
+                  <settingname>searchonce</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+                <tabmodulesetting>
+                  <settingname>hideadminborder</settingname>
+                  <settingvalue>False</settingvalue>
+                </tabmodulesetting>
+              </tabmodulesettings>
+              <definition>NivoSlider</definition>
+              <moduledefinition>Nivo Slider</moduledefinition>
+            </module>
+          </modules>
+        </pane>
+      </panes>
+    </tab>
+  </tabs>
+</portal>

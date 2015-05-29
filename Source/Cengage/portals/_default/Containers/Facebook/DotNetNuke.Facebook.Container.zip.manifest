@@ -1,0 +1,12 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>container.css</name>
+    </file>
+    <file>
+      <path>images/</path>
+      <name>FacebookLogo.png</name>
+    </file>
+  </files>
+</dotnetnuke>

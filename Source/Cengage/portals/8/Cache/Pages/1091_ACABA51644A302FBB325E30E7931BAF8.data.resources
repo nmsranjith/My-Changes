@@ -1,0 +1,25 @@
+
+<div id="dnn_ctr1224_HtmlModule_lblContent" class="Normal">
+	<ul id="RightLinks">
+    <li><a target="_blank" href="http://www.dotnetnuke.com/Resources/Manuals.aspx"><img class="dnnsprite Manuals" src="/portals/6/Images/DNN/Spacer.gif" alt="Manuals Icon" />
+    <p><span>Get Manuals</span>Download the DotNetNuke User and SuperUser Manuals</p>
+    </a>
+    </li>
+    <li><a target="_blank" href="http://www.dotnetnuke.com/Resources/Training.aspx"><img class="dnnsprite Training" src="/portals/6/Images/DNN/Spacer.gif" alt="Training Icon" />
+    <p><span>Get Training</span>View training videos or register for upcoming sessions</p>
+    </a>
+    </li>
+    <li><a target="_blank" href="http://www.snowcovered.com/Snowcovered2/Default.aspx"><img class="dnnsprite Marketplace" src="/portals/6/Images/DNN/Spacer.gif" alt="Marketplace Icon" />
+    <p><span>Find Apps</span>Select from nearly 10,000 commercial and open source apps</p>
+    </a>
+    </li>
+    <li><a target="_blank" href="http://www.dotnetnuke.com/Community/Community-Overview.aspx"><img class="dnnsprite Community" src="/portals/6/Images/DNN/Spacer.gif" alt="Community Icon" />
+    <p><span>Engage with Community</span>Engage with other members of the DotNetNuke community</p>
+    </a>
+    </li>
+    <li class="last"><a target="_blank" href="http://www.dotnetnuke.com/News/Events.aspx"><img class="dnnsprite Conferences" src="/portals/6/Images/DNN/Spacer.gif" alt="Conferences Icon" />
+    <p><span>Attend Conferences</span>Look for DotNetNuke conferences and events in your area</p>
+    </a>
+    </li>
+</ul>
+</div>

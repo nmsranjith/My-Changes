@@ -1,0 +1,287 @@
+/* DATA SPRINGS Inc. - DYNAMIC FORMS STYLE SHEET */
+
+
+.DynamicForms_Maintable {
+
+      width: 100%;
+      padding: 2px;
+}
+
+.DynamicForms_TableRow td:hover {
+ 
+}
+
+
+.DynamicForms_QuestionTableCell { 
+white-space: normal; 
+} 
+
+
+
+
+.DynamicForms_RequiredFieldAsterik
+{
+     font-size: 6.5pt;
+     color: #CC0202;
+}
+
+
+.DynamicForms_AJAXModalMessage
+{
+     font-size: 15.5pt;
+     color: #08498C;
+}
+
+
+.DynamicForms_GridColumn{ background-color: #6DBCDD;  }
+.DynamicForms_GridHeaderColumn{ background-color: #FBF1A5;  }
+.DynamicForms_GridItem{ background-color: #F1BC48;  }
+.DynamicForms_GridColumn{ background-color: #6DBCDD;  }
+.DynamicForms_GridView{ background-color: white; }
+
+.Dynamicforms_DataGridEdit{ background-color: #6DBCDD;  }
+.DynamicForms_DataGridHeader{ background-color: #FBF1A5;  }
+.DynamicForms_DataGridFooter{ background-color: #F1BC48;  }
+.DynamicForms_DataGridItem{ background-color: #6DBCDD;  }
+.DynamicForms_DataGrid{background-color: #6DBCDD;  }
+
+
+
+.DynamicForms_Label
+{
+    font-weight: Normal;
+    font-size: 10.5pt;
+    color: #000000;
+    font-family: Tahoma, Arial, Helvetica;
+    text-decoration: none;
+}
+
+
+
+/* Dynamic Forms jQuery Ratings Control */ 
+div.rating-cancel,div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel,div.rating-cancel a{background:url(/desktopmodules/Dynamic%20Forms/images/delete.gif) no-repeat 0 -16px}
+div.star-rating,div.star-rating a{background:url(/desktopmodules/Dynamic%20Forms/images/star.gif) no-repeat 0 0px}
+div.rating-cancel a,div.star-rating a{display:block;width:16px;height:100%;background-position:0 0px;border:0}
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END Dynamic Forms jQuery Ratings CSS */
+
+
+
+.DynamicForms_Link
+{
+
+}
+
+
+.DynamicForms_RequiredField
+{
+
+}
+
+.DynamicForms_Compare
+{
+
+}
+
+.DynamicForms_RegularExpression
+{
+
+}
+
+
+.DynamicForms_Textbox
+{
+
+}
+
+.DynamicForms_NormalTextbox
+{
+
+}
+
+.DynamicForms_ComboBox
+{
+
+}
+
+
+.DynamicForms_Dropdownlist
+{
+
+}
+
+.DynamicForms_Captcha
+{
+
+}
+
+
+.DynamicForms_RadioButton
+{
+
+}
+
+.DynamicForms_Listbox
+{
+
+}
+
+.DynamicForms_RichText{
+
+}
+
+
+
+.DynamicForms_Checkbox
+{
+
+}
+
+.DynamicForms_Country
+{
+
+}
+
+
+
+.DynamicForms_CheckBoxList
+{
+   
+
+}
+
+.DynamicForms_DisabledCheckBoxList
+{
+
+     background-color: #efefef;
+
+
+  }
+
+.DynamicForms_DisabledTextBox
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledListBox
+{
+     background-color: #efefef;
+
+}
+
+
+
+.DynamicForms_DisabledRadioButton
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledCountry
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledRichTextbox
+{
+
+     background-color: #efefef;
+}
+
+.DynamicForms_FieldError
+{
+
+     background-color: red;
+}
+
+
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid black;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid black;
+border-bottom: 3px solid black;
+visibility: hidden;
+}
+
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+font-weight: bold;
+color: navy;
+margin: 3px 8px;
+}
+/******** FOR THE AUTOSUGGEST BOX *******/
+.NodeDefault {font-size:12px;cursor:hand;text-decoration:none;color:#555;}
+.NodeIconDefault {cursor:hand;}
+.ChildNodeDefault, .SpecialNode {font-size:12px;cursor:hand;text-decoration:none;color:#555;
+.SpecialNodeHover{background-color:green;color:#fff;}
+.DisabledNode {color:Gray;}
+.SelClass {background-color:#fc2f00;color:White;}
+.HoverClass {background-color:#fc2f00;color:#fff;}
+.MenuBarClass {border-right:1px outset;border-top:1px outset;border-left:1px outset;width:140px;border-bottom: 1px outset;background-color:#ededed;}
+.MenuClass {background-color: silver;border: outset 1px;}
+.SpecialNode {color: Yellow;}
+
+
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+	background: transparent url('/desktopmodules/Dynamic%20Forms/images/checkbox-red.png') 0 1px no-repeat;
+	display:inline-block;
+}
+
+.ez-radio {
+	background: transparent url('/desktopmodules/Dynamic%20Forms/imagesradio-black.png') 0 1px no-repeat;
+	display:inline-block;
+}
+
+.ez-checked { background-position: 0 -18px; }
+.ez-selected { background-position: 0 -19px; }
+
+.ez-checkbox-green {
+	background: transparent url('/desktopmodules/Dynamic%20Forms/images/checkbox-green.png') 0 1px no-repeat;
+	display:inline-block;
+	*display: inline;
+}
+.ez-checked-green { background-position: 0 -18px; }
+.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

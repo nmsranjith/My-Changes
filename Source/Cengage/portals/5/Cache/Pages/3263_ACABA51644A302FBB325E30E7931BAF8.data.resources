@@ -1,0 +1,159 @@
+<div id="dnn_ctr3364_HtmlModule_lblContent" class="Normal">
+	<div id="verdiSection14" class="verdiSection">
+<div style="width: 1px; height: 1px; visibility: hidden; position: absolute; z-index: 100000;" id="_atssh"> </div>
+</div>
+<div id="verdiSection15" class="verdiSection">
+<div class="cdfFormsCon">
+<div class="cBox cengDynamicFrm">
+<div class="cBoxHead">
+<h3 class="cBoxTitle"><span style="font-family: 'MS Sans Serif'; color: #005092;">PD Booklet and Poster Requests</span></h3>
+</div>
+<div class="cBoxCopy">
+<div class="cdfRight">
+<div style="display: none;"><input name="ASPIP15_0_Form_Name" value="PD Booklet and Poster Requests" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_HTML_Form_Name" value="DynamicForm1" type="hidden" /></div>
+<div class="dFormTable verdiForm">
+<div class="dFormField">
+<div class="cengFrmBox"><span style="font-family: 'MS Sans Serif';"><label for="ASPIP15_0_fName">Name</label><input id="ASPIP15_0_fName" title="Name" name="ASPIP15_0_fName" maxlength="100" size="25" type="text" /><br />
+<br />
+</span></div>
+<div style="display: none;"><input name="ASPIP15_0_fName_required" value="Name" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fName_type" value="Text" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fName_fFieldID" value="8" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fName_dfDefID" value="1588" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmBox"><span style="font-family: 'MS Sans Serif';"><label for="ASPIP15_0_fPosition">Position</label><input id="ASPIP15_0_fPosition" title="Position" name="ASPIP15_0_fPosition" maxlength="100" size="25" type="text" /><br />
+<br />
+</span></div>
+<div style="display: none;"><input name="ASPIP15_0_fPosition_required" value="Position" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fPosition_type" value="Text" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fPosition_fFieldID" value="8" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fPosition_dfDefID" value="1589" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmBox"><span style="font-family: 'MS Sans Serif';"><label for="ASPIP15_0_fSchool">School</label><input id="ASPIP15_0_fSchool" title="School" name="ASPIP15_0_fSchool" maxlength="100" size="25" type="text" /><br />
+<br />
+</span></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchool_required" value="School" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchool_type" value="Text" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchool_fFieldID" value="8" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchool_dfDefID" value="1590" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmBox"><span style="font-family: 'MS Sans Serif';"><label for="ASPIP15_0_fSchoolAddress">School Address</label><input id="ASPIP15_0_fSchoolAddress" title="School Address" name="ASPIP15_0_fSchoolAddress" maxlength="200" size="25" type="text" /><br />
+<br />
+</span></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchoolAddress_required" value="School Address" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchoolAddress_type" value="Text" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchoolAddress_fFieldID" value="8" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fSchoolAddress_dfDefID" value="1591" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmBox"><span style="font-family: 'MS Sans Serif';"><label for="ASPIP15_0_fPostcode">Postcode</label><input id="ASPIP15_0_fPostcode" title="Postcode" name="ASPIP15_0_fPostcode" maxlength="50" size="25" type="text" /><br />
+<br />
+</span></div>
+<div style="display: none;"><input name="ASPIP15_0_fPostcode_required" value="Postcode" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fPostcode_type" value="Text" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fPostcode_fFieldID" value="8" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fPostcode_dfDefID" value="1592" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmBox"><span style="font-family: 'MS Sans Serif';"><label for="ASPIP15_0_fCountry">Country</label><input id="ASPIP15_0_fCountry" title="Country" name="ASPIP15_0_fCountry" maxlength="50" size="25" type="text" /><br />
+<br />
+</span></div>
+<div style="display: none;"><input name="ASPIP15_0_fCountry_required" value="Country" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fCountry_type" value="Text" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fCountry_fFieldID" value="8" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fCountry_dfDefID" value="1593" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmBox"><span style="font-family: 'MS Sans Serif';"><label for="ASPIP15_0_fEmail">Email</label><input id="ASPIP15_0_fEmail" title="Email" name="ASPIP15_0_fEmail" maxlength="100" size="25" type="text" /><br />
+<br />
+</span></div>
+<div style="display: none;"><input name="ASPIP15_0_fEmail_required" value="Email" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fEmail_type" value="Text" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fEmail_fFieldID" value="8" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fEmail_dfDefID" value="1594" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_dfDefinitionEmailAddress" value="fEmail" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fEmail_validEmail" value="Email is not a valid email" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmStdLabel"><label class="checkboxSetLabel"><span style="font-family: 'MS Sans Serif';"><strong>May I please order:</strong><br />
+<br />
+</span></label>
+<div class="dfCheckRadioCon">
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder1" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Guided Reading in the classroom PRI 8074" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder1">Guided Reading in the classroom PRI 8074<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder2" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Comprehending Text PRI 7565" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder2">Comprehending Text PRI 7565<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder3" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="PHON-O-LOG-I-CAL PRI 6426" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder3">PHON-O-LOG-I-CAL PRI 6426<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder4" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Explicitly Teaching Grammar in context PRI 7488" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder4">Explicitly Teaching Grammar in context PRI 7488<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder5" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Explicitly Teaching Spelling as a tool for writing PRI 7734" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder5">Explicitly Teaching Spelling as a tool for writing PRI 7734<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder6" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Explicitly Teaching Writing PRI 8075" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder6">Explicitly Teaching Writing PRI 8075<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder7" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Early Childhood Assessments PRI 7649" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder7">Early Childhood Assessments PRI 7649<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder8" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Assessing Students with Explanations PRI 7654" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder8">Assessing Students with Explanations PRI 7654<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder9" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Assessing Students with Expositions PRI 7653" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder9">Assessing Students with Expositions PRI 7653<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder10" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Assessing Students with Narratives PRI 7652" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder10">Assessing Students with Narratives PRI 7652<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder11" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Assessing Students with Responses PRI 7650" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder11">Assessing Students with Responses PRI 7650<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder12" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Assessing Students with Information Reports PRI 8064" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder12">Assessing Students with Information Reports PRI 8064<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder13" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Exposition/Persuasive Texts Supplementary Booklet PRI 7829" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder13">Exposition/Persuasive Texts Supplementary Booklet PRI 7829<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder14" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Response Booklet PRI 7746" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder14">Response Booklet PRI 7746<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder15" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Information Report Booklet PRI 7744" type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder15">Information Report Booklet PRI 7744<br />
+<br />
+</label></span></div>
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fMayIpleaseorder16" class="dfCheckbox" name="ASPIP15_0_fMayIpleaseorder" value="Fast Forward/Text Type Poster PRI 7193 " type="checkbox" /> <label id="chkLblfMayIpleaseorder2" class="checkboxDesription" for="ASPIP15_0_fMayIpleaseorder16">Fast Forward/Text Type Poster PRI 7193 <br />
+<br />
+</label></span></div>
+</div>
+</div>
+<div style="display: none;"><input name="ASPIP15_0_fMayIpleaseorder_fFieldID" value="2" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fMayIpleaseorder_dfDefID" value="1601" type="hidden" /></div>
+</div>
+<div class="dFormField">
+<div class="cengFrmStdLabel"><label class="checkboxSetLabel"><span style="font-family: 'MS Sans Serif';"><strong>Please register me:</strong><br />
+<br />
+</span></label>
+<div class="dfCheckRadioCon">
+<div class="dfCheckDiv checkBoxContainer"><span style="font-family: 'MS Sans Serif';"><input id="ASPIP15_0_fPleaseregisterme1" class="dfCheckbox" name="ASPIP15_0_fPleaseregisterme" value="Nelson eNews" type="checkbox" /> <label id="chkLblfPleaseregisterme2" class="checkboxDesription" for="ASPIP15_0_fPleaseregisterme1">Nelson eNews<br />
+<br />
+</label></span></div>
+</div>
+</div>
+<div style="display: none;"><input name="ASPIP15_0_fPleaseregisterme_fFieldID" value="2" type="hidden" /></div>
+<div style="display: none;"><input name="ASPIP15_0_fPleaseregisterme_dfDefID" value="1600" type="hidden" /></div>
+</div>
+<div class="submitRow"><span style="font-family: 'MS Sans Serif';"><input class="dFormSubmit inputButton" name="ASPIP15_0_dynFormSubmit_button" value="Submit" type="submit" /></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

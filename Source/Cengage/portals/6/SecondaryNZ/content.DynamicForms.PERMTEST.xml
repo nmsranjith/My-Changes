@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" ?><content type="DynamicForms" version="05.00.10"><dynamicforms><modulesettings><DisableQuickStats><![CDATA[False]]></DisableQuickStats><AlternateExportFolder><![CDATA[]]></AlternateExportFolder><AllowNonAdminToManageTemplate><![CDATA[False]]></AllowNonAdminToManageTemplate><AltModalPopupMessage><![CDATA[]]></AltModalPopupMessage><VAlignLabels><![CDATA[Top]]></VAlignLabels><VerifiPassword><![CDATA[]]></VerifiPassword><PayPalLogin><![CDATA[]]></PayPalLogin><InitialSQLBindConnection><![CDATA[]]></InitialSQLBindConnection><USEDWIZARD><![CDATA[TRUE]]></USEDWIZARD><PayPalGateway><![CDATA[https://www.paypal.com/cgi-bin/webscr]]></PayPalGateway><PayFlowProPartner><![CDATA[]]></PayFlowProPartner><PayPalStatusField><![CDATA[- Select Dynamic Field -]]></PayPalStatusField><CalcField><![CDATA[]]></CalcField><ClearButtonURL><![CDATA[_363368_brain_parts300.gif]]></ClearButtonURL><PayFlowProPassword><![CDATA[]]></PayFlowProPassword><InitialSQLBindQuerystringParam><![CDATA[]]></InitialSQLBindQuerystringParam><ImageButtonURL><![CDATA[_363368_brain_parts300.gif]]></ImageButtonURL><AllowNonAdminToDelete><![CDATA[False]]></AllowNonAdminToDelete><ClearMessage><![CDATA[]]></ClearMessage><SQLValidationErrorMessage><![CDATA[]]></SQLValidationErrorMessage><ExportShortFieldName><![CDATA[False]]></ExportShortFieldName><AuthCode><![CDATA[]]></AuthCode><PayFlowProPost><![CDATA[]]></PayFlowProPost><wrapallfieldswithindiv><![CDATA[False]]></wrapallfieldswithindiv><SaveText><![CDATA[Submit]]></SaveText><SummaryField><![CDATA[-1]]></SummaryField><DisplayResultsOnUserFacingModule><![CDATA[None]]></DisplayResultsOnUserFacingModule><InitialHideSubmit><![CDATA[False]]></InitialHideSubmit><ExcelExportDelimiter><![CDATA[]]></ExcelExportDelimiter><AuthPost><![CDATA[]]></AuthPost><AlignButtons><![CDATA[Left]]></AlignButtons><saveforlatertext><![CDATA[]]></saveforlatertext><DisableDragDrop><![CDATA[False]]></DisableDragDrop><LineBreakHTML><![CDATA[]]></LineBreakHTML><FormLayoutMethod><![CDATA[Tables]]></FormLayoutMethod><SQLValidationQuery><![CDATA[]]></SQLValidationQuery><BlackListItemText><![CDATA[Site Administrator: Set this message up under Layout Settings.]]></BlackListItemText><enablesaveforlaterbutton><![CDATA[False]]></enablesaveforlaterbutton><PassCompletionID><![CDATA[False]]></PassCompletionID><DisplayAfterMessageContinue><![CDATA[Continue...]]></DisplayAfterMessageContinue><FocusFirstField><![CDATA[False]]></FocusFirstField><VerifiPost><![CDATA[]]></VerifiPost><SaveType><![CDATA[LinkButton]]></SaveType><DisableFormAJAX><![CDATA[True]]></DisableFormAJAX><AltModalPopupImage><![CDATA[]]></AltModalPopupImage><PayFlowProGateway><![CDATA[https://cms.paypal.com/us/cgi-bin/?cmd=_render-content&content_ID=developer/gateway_update]]></PayFlowProGateway><HideValidationSummary><![CDATA[False]]></HideValidationSummary><VAlignFields><![CDATA[Top]]></VAlignFields><DBType><![CDATA[SQL]]></DBType><ClearText><![CDATA[Clear]]></ClearText><DisableEdit><![CDATA[False]]></DisableEdit><SameLine><![CDATA[False]]></SameLine><PayFlowProLogin><![CDATA[]]></PayFlowProLogin><FieldSuffix><![CDATA[:]]></FieldSuffix><ServerValidation><![CDATA[True]]></ServerValidation><ExportType><![CDATA[Excel]]></ExportType><ValErrorMessageLocation><![CDATA[Right]]></ValErrorMessageLocation><DynamicInitialUpgrade><![CDATA[Yes]]></DynamicInitialUpgrade><DynamicStyleSheet><![CDATA[Custom]]></DynamicStyleSheet><SetDefaults><![CDATA[True]]></SetDefaults><CheckBlackList><![CDATA[True]]></CheckBlackList><EnableClearButton><![CDATA[True]]></EnableClearButton><PaymentGateway><![CDATA[Authorizenet]]></PaymentGateway><PayPalPost><![CDATA[]]></PayPalPost><ClearType><![CDATA[LinkButton]]></ClearType><LimitBySubmissionCount><![CDATA[]]></LimitBySubmissionCount><HideModalImage><![CDATA[False]]></HideModalImage><SubmitRight><![CDATA[False]]></SubmitRight><AllowNonAdminToExport><![CDATA[False]]></AllowNonAdminToExport><DisableEditor><![CDATA[True]]></DisableEditor><ClearFunctionality><![CDATA[PageRefresh]]></ClearFunctionality><EnablePaymentGateway><![CDATA[No]]></EnablePaymentGateway><ShowAsterik><![CDATA[False]]></ShowAsterik><EnableSQLValidation><![CDATA[False]]></EnableSQLValidation><UseErrorCSS><![CDATA[False]]></UseErrorCSS><EnableValMessage><![CDATA[False]]></EnableValMessage><AuthLogin><![CDATA[]]></AuthLogin><SaveJavaScript><![CDATA[]]></SaveJavaScript><ViewResultsSecurityRole><![CDATA[Disabled]]></ViewResultsSecurityRole><HideModal><![CDATA[False]]></HideModal><ValLocation><![CDATA[Top]]></ValLocation><DisableConfigAJAX><![CDATA[True]]></DisableConfigAJAX><DisableHelpMenu><![CDATA[False]]></DisableHelpMenu><PanelType><![CDATA[Disabled]]></PanelType><PayFlowProVendor><![CDATA[]]></PayFlowProVendor><donotsaveresultsglobal><![CDATA[False]]></donotsaveresultsglobal><LabelCellWidth><![CDATA[125]]></LabelCellWidth><ClientValidation><![CDATA[True]]></ClientValidation><AlignLabels><![CDATA[Left]]></AlignLabels><DatabaseProviderExternalConnection><![CDATA[]]></DatabaseProviderExternalConnection><HideHelp><![CDATA[True]]></HideHelp><logdetailsofallevents><![CDATA[False]]></logdetailsofallevents><SetDefaults2><![CDATA[True]]></SetDefaults2><InitialSQLBindEnabled><![CDATA[False]]></InitialSQLBindEnabled><OnlyAllowOnce><![CDATA[False]]></OnlyAllowOnce><EnableWordWrap><![CDATA[True]]></EnableWordWrap><EnablejQueryHighlights><![CDATA[False]]></EnablejQueryHighlights><VerifiLogin><![CDATA[]]></VerifiLogin><EnablejQueryEZCheckbox><![CDATA[False]]></EnablejQueryEZCheckbox><DisplayAfterMessageLiteral><![CDATA[Site Administrator: Set this message up under Layout Settings.]]></DisplayAfterMessageLiteral><DisplayAfterMessage><![CDATA[False]]></DisplayAfterMessage><PayPalPaymentType><![CDATA[Purchase]]></PayPalPaymentType><DefaultLong><![CDATA[400]]></DefaultLong><RegisterURL><![CDATA[316]]></RegisterURL><ValScroll><![CDATA[None]]></ValScroll><PaymentTestMode><![CDATA[False]]></PaymentTestMode><SetFocusAfterVal><![CDATA[False]]></SetFocusAfterVal><imageforlater><![CDATA[_363368_brain_parts300.gif]]></imageforlater><DefaultShort><![CDATA[200]]></DefaultShort><EnterKeySave><![CDATA[False]]></EnterKeySave><TestMode><![CDATA[False]]></TestMode><AlternateExportMapPath><![CDATA[]]></AlternateExportMapPath><SetCheckIn><![CDATA[True]]></SetCheckIn><InitialSQLBind><![CDATA[]]></InitialSQLBind><AuthGateway><![CDATA[https://secure.authorize.net/gateway/transact.dll]]></AuthGateway><DisableQuickEdit><![CDATA[True]]></DisableQuickEdit></modulesettings><extendedmodulesettings><formheader><![CDATA[]]></formheader><formfooter><![CDATA[]]></formfooter><initialjavascript><![CDATA[]]></initialjavascript><formdisplayafter><![CDATA[Site Administrator: Set this message up under Layout Settings. Specifically, you can navigate to the control panel under "Module Configuration", and then the "Header / Footer / System Messages". ]]></formdisplayafter><formdisplayaftersaveforlater><![CDATA[]]></formdisplayaftersaveforlater><formcssfile><![CDATA[/* DATA SPRINGS Inc. - DYNAMIC FORMS STYLE SHEET */
+
+
+.DynamicForms_Maintable {
+
+      width: 100%;
+      padding: 2px;
+}
+
+.DynamicForms_TableRow td:hover {
+ 
+}
+
+
+.DynamicForms_QuestionTableCell { 
+white-space: normal; 
+} 
+
+
+
+
+.DynamicForms_RequiredFieldAsterik
+{
+     font-size: 6.5pt;
+     color: #CC0202;
+}
+
+
+.DynamicForms_AJAXModalMessage
+{
+     font-size: 15.5pt;
+     color: #08498C;
+}
+
+
+.DynamicForms_GridColumn{ background-color: #6DBCDD;  }
+.DynamicForms_GridHeaderColumn{ background-color: #FBF1A5;  }
+.DynamicForms_GridItem{ background-color: #F1BC48;  }
+.DynamicForms_GridColumn{ background-color: #6DBCDD;  }
+.DynamicForms_GridView{ background-color: white; }
+
+.Dynamicforms_DataGridEdit{ background-color: #6DBCDD;  }
+.DynamicForms_DataGridHeader{ background-color: #FBF1A5;  }
+.DynamicForms_DataGridFooter{ background-color: #F1BC48;  }
+.DynamicForms_DataGridItem{ background-color: #6DBCDD;  }
+.DynamicForms_DataGrid{background-color: #6DBCDD;  }
+
+
+
+.DynamicForms_Label
+{
+    font-weight: Normal;
+    font-size: 10.5pt;
+    color: #000000;
+    font-family: Tahoma, Arial, Helvetica;
+    text-decoration: none;
+}
+
+
+
+/* Dynamic Forms jQuery Ratings Control */ 
+div.rating-cancel,div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel,div.rating-cancel a{background:url(/desktopmodules/Dynamic%20Forms/images/delete.gif) no-repeat 0 -16px}
+div.star-rating,div.star-rating a{background:url(/desktopmodules/Dynamic%20Forms/images/star.gif) no-repeat 0 0px}
+div.rating-cancel a,div.star-rating a{display:block;width:16px;height:100%;background-position:0 0px;border:0}
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END Dynamic Forms jQuery Ratings CSS */
+
+
+
+.DynamicForms_Link
+{
+
+}
+
+
+.DynamicForms_RequiredField
+{
+
+}
+
+.DynamicForms_Compare
+{
+
+}
+
+.DynamicForms_RegularExpression
+{
+
+}
+
+
+.DynamicForms_Textbox
+{
+
+}
+
+.DynamicForms_NormalTextbox
+{
+
+}
+
+.DynamicForms_ComboBox
+{
+
+}
+
+
+.DynamicForms_Dropdownlist
+{
+
+}
+
+.DynamicForms_Captcha
+{
+
+}
+
+
+.DynamicForms_RadioButton
+{
+
+}
+
+.DynamicForms_Listbox
+{
+
+}
+
+.DynamicForms_RichText{
+
+}
+
+
+
+.DynamicForms_Checkbox
+{
+
+}
+
+.DynamicForms_Country
+{
+
+}
+
+
+
+.DynamicForms_CheckBoxList
+{
+   
+
+}
+
+.DynamicForms_DisabledCheckBoxList
+{
+
+     background-color: #efefef;
+
+
+  }
+
+.DynamicForms_DisabledTextBox
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledListBox
+{
+     background-color: #efefef;
+
+}
+
+
+
+.DynamicForms_DisabledRadioButton
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledCountry
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledRichTextbox
+{
+
+     background-color: #efefef;
+}
+
+.DynamicForms_FieldError
+{
+
+     background-color: red;
+}
+
+
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid black;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid black;
+border-bottom: 3px solid black;
+visibility: hidden;
+}
+
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+font-weight: bold;
+color: navy;
+margin: 3px 8px;
+}
+/******** FOR THE AUTOSUGGEST BOX *******/
+.NodeDefault {font-size:12px;cursor:hand;text-decoration:none;color:#555;}
+.NodeIconDefault {cursor:hand;}
+.ChildNodeDefault, .SpecialNode {font-size:12px;cursor:hand;text-decoration:none;color:#555;
+.SpecialNodeHover{background-color:green;color:#fff;}
+.DisabledNode {color:Gray;}
+.SelClass {background-color:#fc2f00;color:White;}
+.HoverClass {background-color:#fc2f00;color:#fff;}
+.MenuBarClass {border-right:1px outset;border-top:1px outset;border-left:1px outset;width:140px;border-bottom: 1px outset;background-color:#ededed;}
+.MenuClass {background-color: silver;border: outset 1px;}
+.SpecialNode {color: Yellow;}
+
+
+/**
+ * CSS File for ezMark jQuery Plugin
+ *
+ **/
+.ez-hide { opacity: 0; filter:alpha(opacity=0); }
+.ez-checkbox {
+	background: transparent url('/desktopmodules/Dynamic%20Forms/images/checkbox-red.png') 0 1px no-repeat;
+	display:inline-block;
+}
+
+.ez-radio {
+	background: transparent url('/desktopmodules/Dynamic%20Forms/imagesradio-black.png') 0 1px no-repeat;
+	display:inline-block;
+}
+
+.ez-checked { background-position: 0 -18px; }
+.ez-selected { background-position: 0 -19px; }
+
+.ez-checkbox-green {
+	background: transparent url('/desktopmodules/Dynamic%20Forms/images/checkbox-green.png') 0 1px no-repeat;
+	display:inline-block;
+	*display: inline;
+}
+.ez-checked-green { background-position: 0 -18px; }
+.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></formcssfile><formjsfile><![CDATA[/***********************************************
+* Data Springs Custom Javascript File
+* Insert any custom client side javascript to be rendered for Dynamic Forms
+* for demonstrations of Dynamic Forms please visit: http://www.datasprings.com/Products/DNNModules/DynamicForms/DynamicFormsDemonstration1/tabid/754/Default.aspx
+***********************************************/
+
+
+/***********************************************
+* This function call is used to add validate that a field is an integer. 
+* Example use: validateNumber($(DynamicForms_ShortFieldName))
+***********************************************/
+
+
+function validateNumber(fieldvalue){
+if (!isNaN(fieldvalue) && (fieldvalue>0))
+alert('This is a number greater than 0');
+else
+alert('This is not a number greater than 0');
+}
+
+/***********************************************
+* This function call is used to add two decimal places to a field. For example 50.4 would be returned as 50.40 
+* Example use: toTwoDecimals($(DynamicForms_ShortFieldName))
+***********************************************/
+
+function toTwoDecimals(n) {
+  var s = "" + Math.round(n * 100) / 100
+  var i = s.indexOf('.')
+  if (i < 0) return s + ".00"
+  var t = s.substring(0, i + 1) + s.substring(i + 1, i + 3)
+  if (i + 2 == s.length) t += "0"
+  return t
+}
+
+
+/***********************************************
+* This function call is used to add commas to a number. For example 100000 would be returned as 100,000 
+* Example use: addCommas($(DynamicForms_ShortFieldName))
+***********************************************/
+
+function addCommas(nStr)
+{
+	nStr += '';
+	x = nStr.split('.');
+	x1 = x[0];
+	x2 = x.length > 1 ? '.' + x[1] : '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}
+
+
+/***********************************************
+* This function call is used to return the value of a radio button. This function can be called for using calculations with radio buttons
+* Example use: funcRadioCalc($(ShortFieldName_FieldID))
+***********************************************/
+
+
+function  funcRadioCalc(RadioName)
+
+ {
+var chkList1= document.getElementById (RadioName);
+var arrayOfCheckBoxes= chkList1.getElementsByTagName("input");
+for(var i=0;i<arrayOfCheckBoxes.length;i++)
+{
+
+if (arrayOfCheckBoxes[i].checked) {
+return arrayOfCheckBoxes[i].value;
+}
+  }
+}
+
+
+
+function  fucRadioCalc(RadioName)
+
+ {
+var chkList1= document.getElementById (RadioName);
+var arrayOfCheckBoxes= chkList1.getElementsByTagName("input");
+for(var i=0;i<arrayOfCheckBoxes.length;i++)
+{
+
+if (arrayOfCheckBoxes[i].checked) {
+return arrayOfCheckBoxes[i].value;
+}
+  }
+}
+
+
+
+ /***********************************************
+* This is a client side event function call is used to verify the email address via a client side event 
+* Example use: verifyEmail($(ShortFieldName))
+***********************************************/
+
+function verifyEmail(emaddress){
+var status = false;    
+var emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+     if (emaddress.search(emailRegEx) == -1) {
+          alert("Please enter a valid email address.");
+     }
+     return status;
+}
+
+
+
+ /***********************************************
+* This is a client side event function call is used to verify the a required field via a client side event 
+* Example use: Verifyrequired($(ShortFieldName), 'Your alert message here'))
+***********************************************/
+
+
+function Verifyrequired(reqfield,alerttxt){
+var status = false;
+ if (reqfield.value==null||reqfield.value==""){
+ alert(alerttxt);
+ }
+ return status;
+}
+
+
+
+/***********************************************
+* This function call is used to calculate the total number of characters and notify the user that they exceeded their limitations. For more details
+*please  visit this URL: http://www.datasprings.com/Products/DNNModules/DynamicForms/DynamicFormsDemonstration6/tabid/842/Default.aspx
+***********************************************/
+
+
+ function countChars(dId,txtVal,limit)
+  {
+      var totalLen = txtVal.length; 
+      if (totalLen < limit)
+      {
+          document.getElementById(dId).innerHTML = "<font color='red'>You have used " + totalLen + " of " + limit + " characters available.<br>You have " + (limit - totalLen) + " characters remaining.</font>"; 
+      }
+      else
+      {
+          document.getElementById(dId).innerHTML = "<font color='red'>You have exceeded the character limit for this field.</font>";
+      }
+  }
+
+
+
+
+/***********************************************
+* This function call will format the number into a currency format
+***********************************************/
+
+
+
+function formatCurrency(num) {
+num = num.toString().replace(/\$|\,/g,'');
+if(isNaN(num))
+num = "0";
+sign = (num == (num = Math.abs(num)));
+num = Math.floor(num*100+0.50000000001);
+cents = num%100;
+num = Math.floor(num/100).toString();
+if(cents<10)
+cents = "0" + cents;
+for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+num = num.substring(0,num.length-(4*i+3))+','+
+num.substring(num.length-(4*i+3));
+return (((sign)?'':'-') + '$' + num + '.' + cents);
+}
+
+
+
+function validate_required(field,alerttxt)
+{
+with (field)
+{
+if (value==null||value=="")
+{
+alert(alerttxt);return false;
+}
+else
+{
+return true;
+}
+}
+} 
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@");
+dotpos=value.lastIndexOf(".");
+if (apos<1||dotpos-apos<2) 
+{alert(alerttxt);return false;}
+else {return true;}
+}
+}
+
+function CalculateCheckBoxList(CheckBoxList) {
+var objChkBoxLst = document.getElementById(CheckBoxList);
+if(objChkBoxLst) {
+var objChkBoxes = objChkBoxLst.getElementsByTagName('input');
+var objChkLabels = objChkBoxLst.getElementsByTagName('label');
+var i; var numSum = 0;            
+for(i=0;i<objChkBoxes.length;i++) {                    
+if(objChkBoxes[i].checked) {                    
+numSum += GetLabelValue(objChkLabels, objChkBoxes[i].id);
+}
+}
+}
+numSum = Math.round(numSum * 100)/100;                
+return (numSum);
+}
+function GetLabelValue(objLabelList, strForValue) {
+if(objLabelList) {
+var i; var numActualVal; var strElemForValue;
+for(i=0;i<objLabelList.length;i++) {
+if(objLabelList[i].htmlFor)
+strElemForValue = objLabelList[i].htmlFor;
+else
+strElemForValue = objLabelList[i].getAttribute('for');
+if(strElemForValue==strForValue) {                        
+numActualVal = objLabelList[i].innerHTML;
+if(numActualVal.indexOf('$')!=-1); {
+numActualVal = numActualVal.substring(numActualVal.indexOf('$')+1, numActualVal.length);
+} 
+return(numActualVal*1);
+}
+}
+}
+return(0);
+}
+function CalculateCheckBoxListValues(CheckBoxList, CheckBoxValField) {
+var objChkBoxLst = document.getElementById(CheckBoxList);
+var objChkBoxVals = document.getElementById(CheckBoxValField);
+var arrChkBoxVals = '';
+if(objChkBoxVals)
+arrChkBoxVals = objChkBoxVals.value.split('|');
+if(objChkBoxLst) {
+var objChkBoxes = objChkBoxLst.getElementsByTagName('input');                
+var i; var numSum = 0;            
+for(i=0;i<objChkBoxes.length;i++) {                    
+if(objChkBoxes[i].checked) {                    
+numSum += GetCBValue(i, arrChkBoxVals);
+}
+}
+}
+numSum = Math.round(numSum * 100)/100;                
+return (numSum);
+}
+function GetCBValue(intIndex, arrChkValues) {            
+if(arrChkValues) {
+var i;
+var arrTempVals;
+var numRetVal = 0;
+for(i=0;i<arrChkValues.length;i++) {
+arrTempVals = arrChkValues[i].split(':');
+if(arrTempVals) {
+if(arrTempVals[0]==intIndex) {
+numRetVal = arrTempVals[1];
+if(numRetVal.indexOf('$')!=-1); {
+numRetVal = numRetVal.substring(numRetVal.indexOf('$')+1, numRetVal.length);
+} 
+return(numRetVal*1);
+}                        
+}
+}
+}
+return(0);
+}      
+/***********************************************
+* Show Hint script- � Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+		
+var horizontal_offset="9px" //horizontal offset of hint box from anchor link
+
+/////No further editting needed
+
+var vertical_offset="0" //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&&!document.all
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge=="rightedge")? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge=="rightedge"){
+var windowedge=ie && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) && document.getElementById("hintbox")){
+dropmenuobj=document.getElementById("hintbox")
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+dropmenuobj.style.visibility="visible"
+obj.onmouseout=hidetip
+}
+}
+
+function hidetip(e){
+dropmenuobj.style.visibility="hidden"
+dropmenuobj.style.left="-500px"
+}
+
+function createhintbox(){
+var divblock=document.createElement("div")
+divblock.setAttribute("id", "hintbox")
+document.body.appendChild(divblock)
+}
+
+if (window.addEventListener)
+window.addEventListener("load", createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent("onload", createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+
+
+]]></formjsfile></extendedmodulesettings><dynamicquestions><dynamicquestion><dynamicquestionid><![CDATA[0547aa4b-b160-4a1f-8e08-becd6cb49e01]]></dynamicquestionid><question><![CDATA[Date:]]></question><shortfieldname><![CDATA[date]]></shortfieldname><sortorder><![CDATA[10]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter today's date.]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[Single]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[f14b0f5e-5d0f-41de-bc9b-201bd5916bf7]]></dynamicquestionid><question><![CDATA[Name:]]></question><shortfieldname><![CDATA[name]]></shortfieldname><sortorder><![CDATA[20]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your name]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[77c5ef05-1e2d-464b-8c03-0528c79eecea]]></dynamicquestionid><question><![CDATA[Institution:]]></question><shortfieldname><![CDATA[institution]]></shortfieldname><sortorder><![CDATA[30]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your institution]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[7472bbc8-b739-4e8c-abce-86e80164a4aa]]></dynamicquestionid><question><![CDATA[Email Address]]></question><shortfieldname><![CDATA[Email]]></shortfieldname><sortorder><![CDATA[40]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your email address]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[0e27057e-5e48-4847-b5fc-5fe03b6d5faa]]></dynamicquestionid><question><![CDATA[Address:]]></question><shortfieldname><![CDATA[address]]></shortfieldname><sortorder><![CDATA[50]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your address]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[506ab0ab-fad9-42ea-95d8-2a48ca8fb9a8]]></dynamicquestionid><question><![CDATA[Suburb]]></question><shortfieldname><![CDATA[suburb]]></shortfieldname><sortorder><![CDATA[60]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your suburb]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[ca03d5a0-534a-44ea-bb5d-f0214c3c2b2c]]></dynamicquestionid><question><![CDATA[State]]></question><shortfieldname><![CDATA[state]]></shortfieldname><sortorder><![CDATA[65]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your state]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[7e5a552d-eef1-4a9d-8bfa-6cc53ba3c81d]]></dynamicquestionid><question><![CDATA[Postcode]]></question><shortfieldname><![CDATA[postcode]]></shortfieldname><sortorder><![CDATA[80]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your postcode]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[24cd80c4-05a2-48e9-ae29-a13780b0947f]]></dynamicquestionid><question><![CDATA[Title of our work]]></question><shortfieldname><![CDATA[work title]]></shortfieldname><sortorder><![CDATA[90]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter the title of our work]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[2b5f0e36-b42b-401e-a4b4-7f80699e6328]]></dynamicquestionid><question><![CDATA[ISBN (13 digit )]]></question><shortfieldname><![CDATA[ISBN]]></shortfieldname><sortorder><![CDATA[100]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter the ISBN]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[13]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[94b2f2c5-41e0-40f9-bfaf-409609cae4fe]]></dynamicquestionid><question><![CDATA[Edition Number]]></question><shortfieldname><![CDATA[edition number]]></shortfieldname><sortorder><![CDATA[110]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please select the edition number]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[0]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[0]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[4b0b5715-a9ce-4232-9807-ef8e81b63217]]></dynamicquestionid><question><![CDATA[Page Number/s]]></question><shortfieldname><![CDATA[page number]]></shortfieldname><sortorder><![CDATA[120]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter the page number]]></helptext><usesql><![CDATA[-1]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[dnnregion]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[0]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[0]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[8489b9d6-d12b-408b-9e7a-d72928bcb188]]></dynamicquestionid><question><![CDATA[Your Request:]]></question><shortfieldname><![CDATA[your request]]></shortfieldname><sortorder><![CDATA[130]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter your request]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[Multi]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[100]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[100]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[17fdb716-6454-4b8e-ada3-a3af2ce34778]]></dynamicquestionid><question><![CDATA[Number of Words]]></question><shortfieldname><![CDATA[number of words]]></shortfieldname><sortorder><![CDATA[140]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Please enter the number of words]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[SingleShort]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[200]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion><dynamicquestion><dynamicquestionid><![CDATA[c04f2bcb-6555-4e0b-83e5-0f67e8089538]]></dynamicquestionid><question><![CDATA[Forthcoming Title/Course Title]]></question><shortfieldname><![CDATA[datefield]]></shortfieldname><sortorder><![CDATA[150]]></sortorder><exampletext><![CDATA[]]></exampletext><defaultvalue><![CDATA[]]></defaultvalue><helptext><![CDATA[Your forthcoming title / or intended use, Course Number (if applicable), Number of Students (if applicable)]]></helptext><usesql><![CDATA[0]]></usesql><sqltext><![CDATA[]]></sqltext><javavalidation><![CDATA[]]></javavalidation><isreadonly><![CDATA[0]]></isreadonly><ishidden><![CDATA[0]]></ishidden><textboxlength><![CDATA[200]]></textboxlength><pullinquery><![CDATA[0]]></pullinquery><pushtoquery><![CDATA[0]]></pushtoquery><pullinsession><![CDATA[0]]></pullinsession><pushtosession><![CDATA[0]]></pushtosession><optiontype><![CDATA[Multi]]></optiontype><requiredfieldtext><![CDATA[]]></requiredfieldtext><questiontype><![CDATA[TextBox]]></questiontype><isrequired><![CDATA[0]]></isrequired><maxlength><![CDATA[0]]></maxlength><useregularexpression><![CDATA[0]]></useregularexpression><regularexpressiontext><![CDATA[]]></regularexpressiontext><regularexpression><![CDATA[]]></regularexpression><questionheader><![CDATA[]]></questionheader><questionfooter><![CDATA[]]></questionfooter><hiddenuntilevent><![CDATA[0]]></hiddenuntilevent><optiontypetwo><![CDATA[100]]></optiontypetwo><userviewable><![CDATA[0]]></userviewable><optiontype2><![CDATA[100]]></optiontype2><dnnfield><![CDATA[0]]></dnnfield><requiredfieldtext><![CDATA[]]></requiredfieldtext><requiredfielderror><![CDATA[]]></requiredfielderror><comparevalidatorquestionid><![CDATA[00000000-0000-0000-0000-000000000000]]></comparevalidatorquestionid><comparevalidatortext><![CDATA[]]></comparevalidatortext><comparevalidatorerror><![CDATA[]]></comparevalidatorerror><issameline><![CDATA[0]]></issameline><issamecell><![CDATA[0]]></issamecell><labelclass><![CDATA[]]></labelclass><fieldclass><![CDATA[]]></fieldclass><fieldlabelsameline><![CDATA[0]]></fieldlabelsameline><hidefieldlabel><![CDATA[0]]></hidefieldlabel><colspan><![CDATA[1]]></colspan><rowspan><![CDATA[1]]></rowspan><showhelpaspopuptext><![CDATA[0]]></showhelpaspopuptext><popuptextwidth><![CDATA[200]]></popuptextwidth><pullincookie><![CDATA[0]]></pullincookie><pushtocookie><![CDATA[0]]></pushtocookie><hidefromresults><![CDATA[0]]></hidefromresults><nosave><![CDATA[0]]></nosave><optiontype3><![CDATA[False]]></optiontype3><maskededit><![CDATA[]]></maskededit><regularexpressionerror><![CDATA[]]></regularexpressionerror><enablesqlvalidation><![CDATA[0]]></enablesqlvalidation><sqlvalidation><![CDATA[]]></sqlvalidation><sqlvalidationerror><![CDATA[]]></sqlvalidationerror><questionoptions></questionoptions></dynamicquestion></dynamicquestions><dynamicevents></dynamicevents><dynamicquestionevents></dynamicquestionevents><localization><formslocal></formslocal><questionslocal></questionslocal></localization><resultstemplate></resultstemplate></dynamicforms></content>

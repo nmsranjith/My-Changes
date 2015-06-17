@@ -1,6 +1,0 @@
-#!/usr/bin/ksh
-echo hello
-
-function test {
-bcp a b d
-}

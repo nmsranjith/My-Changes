@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.multidimensional.Level parentClass="oracle.dbtools.crest.model.design.multidimensional.AbstractMDObject">
+   <property name="defaultAttribute" dataType="oracle.dbtools.crest.model.design.DesignObject" defaultValue="" xmlName="defaultAttribute" xmlType="element" getter="getDefaultAttribute" setter="setDefaultAttribute" reffered="true"/>
+   <property name="identificationValue" dataType="java.lang.String" defaultValue="" xmlName="identificationValue" xmlType="element" getter="getIdentificationValue" setter="setIdentificationValue" reffered="false"/>
+   <property name="levelEntity" dataType="oracle.dbtools.crest.model.design.ContainerObject" defaultValue="" xmlName="levelEntity" xmlType="element" getter="getLevelEntity" setter="setLevelEntity" reffered="true"/>
+   <property name="nameColumn" dataType="oracle.dbtools.crest.model.design.ContainedObject" defaultValue="" xmlName="nameColumn" xmlType="element" getter="getNameColumn" setter="setNameColumn" reffered="true"/>
+   <property name="oraDimension" dataType="java.lang.String" defaultValue="" xmlName="oraDimension" xmlType="element" getter="getOraDimension" setter="setOraDimension" reffered="false"/>
+   <property name="rootIdentification" dataType="java.lang.String" defaultValue="" xmlName="rootIdentification" xmlType="element" getter="getRootIdentification" setter="setRootIdentification" reffered="false"/>
+   <property name="selectionCriteria" dataType="java.lang.String" defaultValue="" xmlName="selectionCriteria" xmlType="element" getter="getSelectionCriteria" setter="setSelectionCriteria" reffered="false"/>
+   <property name="selectionCriteriaDescription" dataType="java.lang.String" defaultValue="" xmlName="selectionCriteriaDescription" xmlType="element" getter="getSelectionCriteriaDescription" setter="setSelectionCriteriaDescription" reffered="false"/>
+   <property name="valueBasedHierarchy" dataType="boolean" defaultValue="" xmlName="valueBasedHierarchy" xmlType="element" getter="isValueBasedHierarchy" setter="setValueBasedHierarchy" reffered="false"/>
+   <property name="valueColumn" dataType="oracle.dbtools.crest.model.design.ContainedObject" defaultValue="" xmlName="valueColumn" xmlType="element" getter="getValueColumn" setter="setValueColumn" reffered="true"/>
+   <property name="oraAWAttributes" dataType="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes" defaultValue="" xmlName="oraAWAttributes" xmlType="element" getter="getOraAWAttributes" createItem="getOraAWAttributes" reffered="false"/>
+   <collection name="levelKey" dataType="java.util.List" xmlName="levelKey" itemXmlName="attribute" itemIsRef="true" getter="getLevelKey" nativeList="true" orderTheList="true"/>
+   <collection name="parentKey" dataType="java.util.List" xmlName="parentKey" itemXmlName="attribute" itemIsRef="true" getter="getParentKey" nativeList="true" orderTheList="true"/>
+   <collection name="descriptiveAttributes" dataType="java.util.List" xmlName="descriptiveAttributes" itemXmlName="descrAttribute" getter="getSlowChangingAttributes" removeItem="removeDescriptiveAttribute" addItem="addDescriptiveAttribute" createItem="createDescriptiveAttribute" getItemByID="getDescriptiveAttrByID" nativeList="true" orderTheList="true"/>
+   <collection name="calculatedAttributes" dataType="java.util.List" xmlName="calculatedAttributes" itemXmlName="attribute" getter="getCalculatedAttributes" removeItem="ramoveCalculatedAttribute" addItem="addCalculatedAttribute" createItem="createCalculatedAttribute" nativeList="true" orderTheList="true"/>
+   <roproperty name="allattributes" dataType="interface java.util.List" getter="getAllAttributes"/>
+   <roproperty name="attributeById" dataType="oracle.dbtools.crest.model.design.DesignObject" getter="getAttributeById"/>
+   <roproperty name="calculatedAttributes" dataType="interface java.util.List" getter="getCalculatedAttributes"/>
+   <roproperty name="defaultAttributeCandidates" dataType="interface java.util.List" getter="getDefaultAttributeCandidates"/>
+   <roproperty name="descriptiveAttributes" dataType="interface java.util.List" getter="getDescriptiveAttributes"/>
+   <roproperty name="editableFonts" dataType="interface java.util.List" getter="getEditableFonts"/>
+   <roproperty name="firstRaggedHLinkTo" dataType="oracle.dbtools.crest.model.design.multidimensional.RaggedHLink" getter="getFirstRaggedHLinkTo"/>
+   <roproperty name="fontObject" dataType="oracle.dbtools.crest.model.design.FontObject" getter="getFontObject"/>
+   <roproperty name="inputRaggedHLinks" dataType="interface java.util.List" getter="getInputRaggedHLinks"/>
+   <roproperty name="joinAttributes" dataType="interface java.util.List" getter="getJoinAttributes"/>
+   <roproperty name="levelKey" dataType="interface java.util.List" getter="getLevelKey"/>
+   <roproperty name="oraAWAttributes" dataType="oracle.dbtools.crest.model.design.multidimensional.Level$OraAWAttributes" getter="getOraAWAttributes"/>
+   <roproperty name="parentKey" dataType="interface java.util.List" getter="getParentKey"/>
+   <roproperty name="raggedHLinks" dataType="interface java.util.List" getter="getRaggedHLinks"/>
+   <roproperty name="slowChangingAttributes" dataType="interface java.util.List" getter="getSlowChangingAttributes"/>
+</oracle.dbtools.crest.model.design.multidimensional.Level>

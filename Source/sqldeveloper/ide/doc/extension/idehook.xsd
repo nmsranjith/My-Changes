@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           targetNamespace="http://xmlns.oracle.com/jdeveloper/1013/extension"
+           xmlns="http://xmlns.oracle.com/jdeveloper/1013/extension"
+           xmlns:ex="http://jcp.org/jsr/198/extension-manifest"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://jcp.org/jsr/198/extension-manifest"
+             schemaLocation="extension.xsd"/>
+  <xs:element name="jdeveloper-hook" substitutionGroup="ex:custom-hook"
+              type="jdeveloperHookType">
+    <xs:annotation>
+      <xs:documentation>JDeveloper custom hook</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="jdeveloperHookType">
+    <xs:complexContent>
+      <xs:extension base="ex:customHookType">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="hook-handler" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:attribute name="tag-name" use="required"/>
+              <xs:attribute name="handler-class" use="required"/>
+              <xs:attribute name="namespace" use="required"/>
+              <xs:attribute name="schema-location"/>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="user-data" type="userDataType" maxOccurs="1"
+                      minOccurs="0"/>
+          <xs:element name="addins" type="addinsType" maxOccurs="1"
+                      minOccurs="0"/>
+          <xs:element name="gallery" type="galleryType" minOccurs="0"/>
+          <xs:element name="palette" type="palettePageType" minOccurs="0"/>
+          <xs:element name="help" type="helpType" minOccurs="0"/>
+          <xs:element name="commands" type="commandsType" maxOccurs="1"
+                      minOccurs="0"/>
+          <xs:element name="settings-migrators" type="settingsMigratorsType"
+                      minOccurs="0"/>
+          <xs:element name="debugger-hook" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>
+                Can be used to register custom debugger behavior
+              </xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="object-expression" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                    <xs:documentation>
+                      Specify what the debugger will display in the data,
+                      watch and inspector windows for the value of an instance
+                      of the specified class.  By default, the debugger shows
+                      the value of primitive types, but not other class types.
+                    </xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType>
+                    <xs:annotation>
+                      <xs:documentation>
+                        For the class attribute, specify a fully qualified
+                        name, such as "java.util.Map"
+
+                        For the expression attribute, use any expression
+                        that can be evaluated in the context of the instance
+                        of the class, such as: "size + &quot; mappings&quot;"
+                        which for a Map with 2 members would print '2 mappings'
+
+                        For the selected attribute, use "true" if the expression
+                        should actually be used.  Use "false" if you want to
+                        add the expression to the list of expressions the user
+                        can pick for the class during debugging in the
+                        Object Preferences dialog
+                      </xs:documentation>
+                    </xs:annotation>
+                    <xs:attribute name="class" use="required" type="ex:className"/>
+                    <xs:attribute name="expression" use="required" type="xs:string"/>
+                    <xs:attribute name="selected" type="xs:boolean"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="object-expansion" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                    <xs:documentation>
+                      Used to add 'synthetic' fields to a class.  When an
+                      instance of the specified class is expanded in the data,
+                      watch and inspector windows, the expressions are evaluated
+                      in the context of the instance of the class, and the
+                      resulting Objects are added to the class as 'synthetic'
+                      fields.
+                    </xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType>
+                    <xs:annotation>
+                      <xs:documentation>
+                        For the class attribute, specify a fully qualified
+                        name, such as "java.util.Map$Entry"
+
+                        For the expressions attribute, use expressions
+                        that can be evaluated in the context of the instance
+                        of the class.  Multiple expressions can be added as
+                        long as they are separated by semi-colons, such as:
+                        "getKey();getValue()"
+
+                        For the selected attribute, use "true" if the expressions
+                        should actually be used.  Use "false" if you want to
+                        add the expressions to the list of expressions the user
+                        can pick for the class during debugging in the
+                        Object Preferences dialog
+                      </xs:documentation>
+                    </xs:annotation>
+                    <xs:attribute name="class" use="required" type="ex:className"/>
+                    <xs:attribute name="expressions" use="required" type="xs:string"/>
+                    <xs:attribute name="selected" type="xs:boolean"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="object-hide-field" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                    <xs:documentation>
+                      Used to hide a field of a class when an instance of
+                      the specified class is expanded in the data, watch and
+                      inspector windows.
+                    </xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType>
+                    <xs:annotation>
+                      <xs:documentation>
+                        For the class attribute, specify a fully qualified
+                        name, such as "java.lang.String"
+
+                        For the field attribute, use any field of the
+                        specified class, such as "hash"
+                      </xs:documentation>
+                    </xs:annotation>
+                    <xs:attribute name="class" use="required" type="ex:className"/>
+                    <xs:attribute name="field" use="required" type="xs:string"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="object-hide-all-fields" minOccurs="0" maxOccurs="unbounded">
+                  <xs:annotation>
+                    <xs:documentation>
+                      Used to hide all fields of a class when an instance of
+                      the specified class is expanded in the data, watch and
+                      inspector windows.  It's probably best to add some
+                      'synthetic' fields when hiding all fields
+                    </xs:documentation>
+                  </xs:annotation>
+                  <xs:complexType>
+                    <xs:annotation>
+                      <xs:documentation>
+                        For the class attribute, specify a fully qualified
+                        name, such as "java.lang.String"
+                      </xs:documentation>
+                    </xs:annotation>
+                    <xs:attribute name="class" use="required" type="ex:className"/>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="object-icon" minOccurs="0" maxOccurs="unbounded">
+                 <xs:annotation>
+                   <xs:documentation>
+                     Used to specify the icon of a class when an instance
+                     of the specified class is shown in debugger data windows.
+                   </xs:documentation>
+                 </xs:annotation>
+                 <xs:complexType>
+                   <xs:annotation>
+                     <xs:documentation>
+                       For the class attribute, specify a fully qualified
+                       name, such as "java.lang.String"
+
+                       An icon is first looked up as a resource on the classpath
+                       If that fails, it will be loaded as a URL
+                       Examples of usage:
+                       icon="/oracle/jdevimpl/runner/debug/images/verifiedbreakpoint.png"
+                       icon="${OracleIcons.QUICK_NAV}"
+                     </xs:documentation>
+                   </xs:annotation>
+                   <xs:attribute name="class" use="required" type="ex:className"/>
+                   <xs:attribute name="icon" use="required" type="xs:string"/>
+                 </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="actions" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="action" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="properties" minOccurs="0">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="property" maxOccurs="unbounded"
+                                        minOccurs="1">
+                              <xs:complexType>
+                                <xs:simpleContent>
+                                  <xs:extension base="xs:string">
+                                    <xs:attribute name="name" use="required"
+                                                  type="xs:string"/>
+                                    <xs:attribute name="rskey"
+                                                  type="xs:string"/>
+                                  </xs:extension>
+                                </xs:simpleContent>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="controller-class" maxOccurs="unbounded"
+                                  minOccurs="0" type="ex:className"/>
+                      <xs:element name="command-class" minOccurs="0"
+                                  type="ex:className"/>
+                      <xs:element name="commands" maxOccurs="1" minOccurs="0">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="command" maxOccurs="unbounded"
+                                        minOccurs="1">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element name="condition" maxOccurs="1"
+                                              minOccurs="1">
+                                    <xs:complexType>
+                                      <xs:sequence>
+                                        <xs:element name="parameter"
+                                                    minOccurs="0"
+                                                    maxOccurs="unbounded">
+                                          <xs:complexType>
+                                            <xs:simpleContent>
+                                              <xs:extension base="xs:string">
+                                                <xs:attribute name="name"
+                                                              use="required"
+                                                              type="xs:string"/>
+                                                <xs:attribute name="value"
+                                                              use="required"
+                                                              type="xs:string"/>
+                                              </xs:extension>
+                                            </xs:simpleContent>
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:sequence>
+                                      <xs:attribute name="classname"
+                                                    type="xs:string"
+                                                    use="required"/>
+                                    </xs:complexType>
+                                  </xs:element>
+                                  <xs:element name="command-class"
+                                              type="ex:className" maxOccurs="1"
+                                              minOccurs="1"/>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="label-updater" minOccurs="0"
+                                  maxOccurs="1">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="when-enabled" minOccurs="1"
+                                        maxOccurs="1">
+                              <xs:complexType>
+                                <xs:attribute name="format" use="required"/>
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element name="when-disabled" minOccurs="1"
+                                        maxOccurs="1">
+                              <xs:complexType>
+                                <xs:attribute name="format" use="required"/>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                          <xs:attribute name="class" use="optional"/>
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="id" use="required" type="xs:string"/>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="system-properties" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="property" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:attribute name="name" use="required" type="xs:string"/>
+                    <xs:attribute name="value" use="required" type="xs:string"/>
+                    <xs:attribute name="force" type="xs:boolean"/>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="context-menu-listeners" minOccurs="0">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="site" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="listener-class" type="ex:className"
+                                  maxOccurs="unbounded">
+                        <xs:annotation>
+                          <xs:documentation>The fully qualified name of a class
+                                            implementing
+                                            oracle.ide.controller.ContextMenuListener</xs:documentation>
+                        </xs:annotation>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="idref" use="required" type="xs:string">
+                      <xs:annotation>
+                        <xs:documentation>The id of a context menu site.</xs:documentation>
+                      </xs:annotation>
+                    </xs:attribute>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <!-- Type declarations -->
+  <xs:complexType name="addinsType">
+    <xs:sequence>
+      <xs:element name="addin" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="ex:className">
+              <xs:attribute name="loadset" type="xs:string"/>
+              <xs:attribute name="headless" type="xs:boolean" default="false"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="commandsType">
+    <xs:sequence>
+      <xs:element name="command" type="commandType" maxOccurs="unbounded"
+                  minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="commandType">
+    <xs:all>
+      <xs:element name="action-ref" type="xs:string" minOccurs="1"/>
+      <xs:element name="command-class" type="ex:className" minOccurs="1"/>
+    </xs:all>
+  </xs:complexType>
+  <xs:complexType name="galleryType">
+    <xs:sequence>
+      <xs:element name="generators" minOccurs="0" maxOccurs="1"
+                  type="generatorType"/>
+      <xs:element name="folders" type="folderType" minOccurs="0"
+                  maxOccurs="unbounded"/>
+      <xs:element name="item" type="galleryItemType" maxOccurs="unbounded"
+                  minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="galleryItemType">
+    <xs:annotation>
+      <xs:documentation>Gallery item</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="name" type="ex:className"/>
+      <xs:element name="resClass" minOccurs="0" type="ex:className"/>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" name="help" type="xs:string"/>
+      <xs:element minOccurs="0" name="icon" type="xs:string"/>
+      <xs:element minOccurs="0" name="unsorted" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="category" type="xs:string"/>
+      <xs:element name="folder" type="xs:string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="parameter"
+                  type="xs:string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="technologyKey"
+                  type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="generatorType">
+    <xs:sequence>
+      <xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="key" type="xs:string"/>
+            <xs:element name="value" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="folderType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute name="label" use="optional" type="xs:string"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="unsorted" type="xs:boolean" minOccurs="0"
+                  default="false"/>
+      <xs:element name="category" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helpType">
+    <xs:sequence>
+      <xs:element name="item" type="helpItemType" maxOccurs="unbounded"
+                  minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helpItemType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="helpName" type="xs:string"/>
+      <xs:element default="add_update" minOccurs="0" name="helpAction"
+                  type="helpActionType"/>
+      <xs:element minOccurs="0" name="helpURL" type="xs:string"/>
+      <xs:element name="book" minOccurs="0" maxOccurs="1" type="helpBookType"/>
+      <xs:element minOccurs="0" name="relativeTo" type="xs:string"/>
+      <xs:element default="AFTER" minOccurs="0" name="relativePosition"
+                  type="helpLocation"/>
+      <xs:element minOccurs="0" name="browseSymbolResolver-class"
+                  type="xs:string"/>
+      <xs:element minOccurs="0" name="tipOfDayURL" type="xs:string"/>
+      <xs:element minOccurs="0" name="callbackWizardHandler-class" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helpBookType">
+    <xs:sequence>
+      <xs:element name="book" minOccurs="1" maxOccurs="1" type="xs:string"/>
+      <xs:element name="viewLabel" minOccurs="1" maxOccurs="1" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="palettePageType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="page">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="pageEditor" type="xs:string" minOccurs="0"/>
+            <xs:element name="projectConfiguration" type="xs:string"
+                        minOccurs="0"/>
+            <xs:element minOccurs="0" name="showForTypes" type="xs:string"/>
+            <xs:element minOccurs="0" name="technologyScope" type="xs:string"/>
+            <xs:element minOccurs="0" name="type" type="xs:string"/>
+            <xs:element minOccurs="0" name="view" type="xs:string"/>
+            <xs:element minOccurs="0" name="canRemove" type="xs:boolean"
+                        default="false"/>
+            <xs:element name="canShow" minOccurs="0" type="xs:boolean"
+                        default="true"/>
+            <xs:element name="draggable" minOccurs="0" type="xs:boolean"
+                        default="true"/>
+            <xs:element name="paletteContext" minOccurs="0" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="item">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="canRemove" type="xs:boolean" default="false"
+                              minOccurs="0"/>
+                  <xs:element minOccurs="0" name="editor" type="xs:string"/>
+                  <xs:element name="icon" type="xs:string"/>
+                  <xs:element name="info" type="xs:string"/>
+                  <xs:element minOccurs="0" name="isPersistent"
+                              type="xs:boolean"/>
+                  <xs:element minOccurs="0" name="library" type="xs:string"/>
+                  <xs:element name="longLabel" type="xs:string"/>
+                  <xs:element name="shortLabel" type="xs:string"/>
+                  <xs:element minOccurs="0" name="technologyScope"
+                              type="xs:string"/>
+                  <xs:element name="type" type="xs:string"/>
+                  <xs:element minOccurs="0" name="helpable" type="xs:string"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="helpLocation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AFTER"/>
+      <xs:enumeration value="BEFORE"/>
+      <xs:enumeration value="after"/>
+      <xs:enumeration value="before"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="helpActionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ADD_UPDATE"/>
+      <xs:enumeration value="REMOVE"/>
+      <xs:enumeration value="add_update"/>
+      <xs:enumeration value="remove"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="contextMenuSite">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="navigator"/>
+      <xs:enumeration value="explorer"/>
+      <xs:enumeration value="editor"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Data to copy to the feature user home -->
+  <xs:complexType name="userDataType">
+    <xs:sequence>
+      <xs:element name="path" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Extension specific files to be copied to the
+                            extension user home directory</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string"/>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Settings migrator classes -->
+  <xs:complexType name="settingsMigratorsType">
+    <xs:sequence>
+      <xs:element name="migrator-class" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Class used to migrate extension specific files from
+                            a previous version of this extension</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string"/>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
